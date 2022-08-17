@@ -1,0 +1,370 @@
+[
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.transformedPredicate(org.apache.commons.collections4.Transformer\u003c? super T, ? extends T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testTransformedPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 529,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 686,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.eitherPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testEitherPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 348,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 337,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.notPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNotPredicateEx()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 446,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 134,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nonePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 485,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.onePredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOnePredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 375,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nullIsExceptionPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNullIsExceptionPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 483,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 632,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.anyPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nullIsFalsePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNullIsFalsePredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 497,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 661,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.orPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOrPredicateEx()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 300,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 246,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.anyPredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.invokerPredicate(java.lang.String)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicateEx1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 205,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 585,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.andPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAndPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 251,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 144,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nonePredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 472,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.neitherPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNeitherPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 391,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 437,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.identityPredicate(T)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testIdentityPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 156,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 90,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.uniquePredicate()",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testUniquePredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 185,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 544,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.onePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOnePredicateEx1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 397,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.instanceofPredicate(java.lang.Class\u003c?\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInstanceOfPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 165,
+          "column": 45
+        },
+        "testCodeLocation": {
+          "line": 535,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nullIsTruePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNullIsTruePredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 513,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 646,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.asPredicate(org.apache.commons.collections4.Transformer\u003c? super T, java.lang.Boolean\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAsPredicateTransformerEx2()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 465,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 569,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.exceptionPredicate()",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testExceptionPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 83,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 55,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.notNullPredicate()",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testIsNotNullPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 127,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 76,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.invokerPredicate(java.lang.String, java.lang.Class\u003c?\u003e[], java.lang.Object[])",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicate2Ex3()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 217,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 623,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

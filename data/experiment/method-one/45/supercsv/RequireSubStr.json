@@ -1,0 +1,34 @@
+[
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.RequireSubStr.RequireSubStr(java.lang.String...)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireSubStrTest.testConstructionWithEmptyArray()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 45,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 102,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.RequireSubStr.RequireSubStr(java.util.List\u003cjava.lang.String\u003e, org.supercsv.cellprocessor.ift.CellProcessor)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireSubStrTest.testConstructionWithNullList()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 66,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 110,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

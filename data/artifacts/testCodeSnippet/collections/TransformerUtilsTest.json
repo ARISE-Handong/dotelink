@@ -1,0 +1,2604 @@
+[
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testExceptionTransformer()",
+    "annotation": "@Test",
+    "code": "assertNotNull(TransformerUtils.exceptionTransformer());assertSame(TransformerUtils.exceptionTransformer(), TransformerUtils.exceptionTransformer());try {\n    TransformerUtils.exceptionTransformer().transform(null);\n} catch (final FunctorException ex) {\n    try {\n        TransformerUtils.exceptionTransformer().transform(cString);\n    } catch (final FunctorException ex2) {\n        return;\n    }\n}fail();",
+    "offset": [
+      {
+        "line": 57,
+        "column": 9
+      },
+      {
+        "line": 57,
+        "column": 23
+      },
+      {
+        "line": 58,
+        "column": 9
+      },
+      {
+        "line": 58,
+        "column": 20
+      },
+      {
+        "line": 58,
+        "column": 61
+      },
+      {
+        "line": 60,
+        "column": 13
+      },
+      {
+        "line": 60,
+        "column": 13
+      },
+      {
+        "line": 63,
+        "column": 17
+      },
+      {
+        "line": 63,
+        "column": 17
+      },
+      {
+        "line": 68,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 57,
+          "column": 9
+        },
+        "assert": "assertNotNull(TransformerUtils.exceptionTransformer());",
+        "slice": "assertNotNull(TransformerUtils.exceptionTransformer());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 58,
+          "column": 9
+        },
+        "assert": "assertSame(TransformerUtils.exceptionTransformer(), TransformerUtils.exceptionTransformer());",
+        "slice": "assertSame(TransformerUtils.exceptionTransformer(), TransformerUtils.exceptionTransformer());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 59,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.exceptionTransformer().transform(null);\n} catch (final FunctorException ex) {\n    try {\n        TransformerUtils.exceptionTransformer().transform(cString);\n    } catch (final FunctorException ex2) {\n        return;\n    }\n}fail();",
+        "slice": "try {\n    TransformerUtils.exceptionTransformer().transform(null);\n} catch (final FunctorException ex) {\n    try {\n        TransformerUtils.exceptionTransformer().transform(cString);\n    } catch (final FunctorException ex2) {\n        return;\n    }\n}fail();"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testNullTransformer()",
+    "annotation": "@Test",
+    "code": "assertNotNull(TransformerUtils.nullTransformer());assertSame(TransformerUtils.nullTransformer(), TransformerUtils.nullTransformer());assertEquals(null, TransformerUtils.nullTransformer().transform(null));assertEquals(null, TransformerUtils.nullTransformer().transform(cObject));assertEquals(null, TransformerUtils.nullTransformer().transform(cString));assertEquals(null, TransformerUtils.nullTransformer().transform(cInteger));",
+    "offset": [
+      {
+        "line": 76,
+        "column": 9
+      },
+      {
+        "line": 76,
+        "column": 23
+      },
+      {
+        "line": 77,
+        "column": 9
+      },
+      {
+        "line": 77,
+        "column": 20
+      },
+      {
+        "line": 77,
+        "column": 56
+      },
+      {
+        "line": 78,
+        "column": 9
+      },
+      {
+        "line": 78,
+        "column": 28
+      },
+      {
+        "line": 78,
+        "column": 28
+      },
+      {
+        "line": 79,
+        "column": 9
+      },
+      {
+        "line": 79,
+        "column": 28
+      },
+      {
+        "line": 79,
+        "column": 28
+      },
+      {
+        "line": 80,
+        "column": 9
+      },
+      {
+        "line": 80,
+        "column": 28
+      },
+      {
+        "line": 80,
+        "column": 28
+      },
+      {
+        "line": 81,
+        "column": 9
+      },
+      {
+        "line": 81,
+        "column": 28
+      },
+      {
+        "line": 81,
+        "column": 28
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 80,
+          "column": 9
+        },
+        "assert": "assertEquals(null, TransformerUtils.nullTransformer().transform(cString));",
+        "slice": "assertEquals(null, TransformerUtils.nullTransformer().transform(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 81,
+          "column": 9
+        },
+        "assert": "assertEquals(null, TransformerUtils.nullTransformer().transform(cInteger));",
+        "slice": "assertEquals(null, TransformerUtils.nullTransformer().transform(cInteger));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 76,
+          "column": 9
+        },
+        "assert": "assertNotNull(TransformerUtils.nullTransformer());",
+        "slice": "assertNotNull(TransformerUtils.nullTransformer());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 77,
+          "column": 9
+        },
+        "assert": "assertSame(TransformerUtils.nullTransformer(), TransformerUtils.nullTransformer());",
+        "slice": "assertSame(TransformerUtils.nullTransformer(), TransformerUtils.nullTransformer());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 78,
+          "column": 9
+        },
+        "assert": "assertEquals(null, TransformerUtils.nullTransformer().transform(null));",
+        "slice": "assertEquals(null, TransformerUtils.nullTransformer().transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 79,
+          "column": 9
+        },
+        "assert": "assertEquals(null, TransformerUtils.nullTransformer().transform(cObject));",
+        "slice": "assertEquals(null, TransformerUtils.nullTransformer().transform(cObject));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testNopTransformer()",
+    "annotation": "@Test",
+    "code": "assertNotNull(TransformerUtils.nullTransformer());assertSame(TransformerUtils.nullTransformer(), TransformerUtils.nullTransformer());assertEquals(null, TransformerUtils.nopTransformer().transform(null));assertEquals(cObject, TransformerUtils.nopTransformer().transform(cObject));assertEquals(cString, TransformerUtils.nopTransformer().transform(cString));assertEquals(cInteger, TransformerUtils.nopTransformer().transform(cInteger));",
+    "offset": [
+      {
+        "line": 89,
+        "column": 9
+      },
+      {
+        "line": 89,
+        "column": 23
+      },
+      {
+        "line": 90,
+        "column": 9
+      },
+      {
+        "line": 90,
+        "column": 20
+      },
+      {
+        "line": 90,
+        "column": 56
+      },
+      {
+        "line": 91,
+        "column": 9
+      },
+      {
+        "line": 91,
+        "column": 28
+      },
+      {
+        "line": 91,
+        "column": 28
+      },
+      {
+        "line": 92,
+        "column": 9
+      },
+      {
+        "line": 92,
+        "column": 31
+      },
+      {
+        "line": 92,
+        "column": 31
+      },
+      {
+        "line": 93,
+        "column": 9
+      },
+      {
+        "line": 93,
+        "column": 31
+      },
+      {
+        "line": 93,
+        "column": 31
+      },
+      {
+        "line": 94,
+        "column": 9
+      },
+      {
+        "line": 94,
+        "column": 32
+      },
+      {
+        "line": 94,
+        "column": 32
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 89,
+          "column": 9
+        },
+        "assert": "assertNotNull(TransformerUtils.nullTransformer());",
+        "slice": "assertNotNull(TransformerUtils.nullTransformer());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 90,
+          "column": 9
+        },
+        "assert": "assertSame(TransformerUtils.nullTransformer(), TransformerUtils.nullTransformer());",
+        "slice": "assertSame(TransformerUtils.nullTransformer(), TransformerUtils.nullTransformer());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 91,
+          "column": 9
+        },
+        "assert": "assertEquals(null, TransformerUtils.nopTransformer().transform(null));",
+        "slice": "assertEquals(null, TransformerUtils.nopTransformer().transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 92,
+          "column": 9
+        },
+        "assert": "assertEquals(cObject, TransformerUtils.nopTransformer().transform(cObject));",
+        "slice": "assertEquals(cObject, TransformerUtils.nopTransformer().transform(cObject));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 93,
+          "column": 9
+        },
+        "assert": "assertEquals(cString, TransformerUtils.nopTransformer().transform(cString));",
+        "slice": "assertEquals(cString, TransformerUtils.nopTransformer().transform(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 94,
+          "column": 9
+        },
+        "assert": "assertEquals(cInteger, TransformerUtils.nopTransformer().transform(cInteger));",
+        "slice": "assertEquals(cInteger, TransformerUtils.nopTransformer().transform(cInteger));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testConstantTransformer()",
+    "annotation": "@Test",
+    "code": "assertEquals(cObject, TransformerUtils.constantTransformer(cObject).transform(null));assertEquals(cObject, TransformerUtils.constantTransformer(cObject).transform(cObject));assertEquals(cObject, TransformerUtils.constantTransformer(cObject).transform(cString));assertEquals(cObject, TransformerUtils.constantTransformer(cObject).transform(cInteger));assertSame(ConstantTransformer.NULL_INSTANCE, TransformerUtils.constantTransformer(null));",
+    "offset": [
+      {
+        "line": 102,
+        "column": 9
+      },
+      {
+        "line": 102,
+        "column": 31
+      },
+      {
+        "line": 102,
+        "column": 31
+      },
+      {
+        "line": 103,
+        "column": 9
+      },
+      {
+        "line": 103,
+        "column": 31
+      },
+      {
+        "line": 103,
+        "column": 31
+      },
+      {
+        "line": 104,
+        "column": 9
+      },
+      {
+        "line": 104,
+        "column": 31
+      },
+      {
+        "line": 104,
+        "column": 31
+      },
+      {
+        "line": 105,
+        "column": 9
+      },
+      {
+        "line": 105,
+        "column": 31
+      },
+      {
+        "line": 105,
+        "column": 31
+      },
+      {
+        "line": 106,
+        "column": 9
+      },
+      {
+        "line": 106,
+        "column": 55
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 102,
+          "column": 9
+        },
+        "assert": "assertEquals(cObject, TransformerUtils.constantTransformer(cObject).transform(null));",
+        "slice": "assertEquals(cObject, TransformerUtils.constantTransformer(cObject).transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 103,
+          "column": 9
+        },
+        "assert": "assertEquals(cObject, TransformerUtils.constantTransformer(cObject).transform(cObject));",
+        "slice": "assertEquals(cObject, TransformerUtils.constantTransformer(cObject).transform(cObject));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 104,
+          "column": 9
+        },
+        "assert": "assertEquals(cObject, TransformerUtils.constantTransformer(cObject).transform(cString));",
+        "slice": "assertEquals(cObject, TransformerUtils.constantTransformer(cObject).transform(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 105,
+          "column": 9
+        },
+        "assert": "assertEquals(cObject, TransformerUtils.constantTransformer(cObject).transform(cInteger));",
+        "slice": "assertEquals(cObject, TransformerUtils.constantTransformer(cObject).transform(cInteger));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 106,
+          "column": 9
+        },
+        "assert": "assertSame(ConstantTransformer.NULL_INSTANCE, TransformerUtils.constantTransformer(null));",
+        "slice": "assertSame(ConstantTransformer.NULL_INSTANCE, TransformerUtils.constantTransformer(null));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testCloneTransformer()",
+    "annotation": "@Test",
+    "code": "assertEquals(null, TransformerUtils.cloneTransformer().transform(null));assertEquals(cString, TransformerUtils.cloneTransformer().transform(cString));assertEquals(cInteger, TransformerUtils.cloneTransformer().transform(cInteger));try {\n    assertEquals(cObject, TransformerUtils.cloneTransformer().transform(cObject));\n} catch (final IllegalArgumentException ex) {\n    return;\n}fail();",
+    "offset": [
+      {
+        "line": 114,
+        "column": 9
+      },
+      {
+        "line": 114,
+        "column": 28
+      },
+      {
+        "line": 114,
+        "column": 28
+      },
+      {
+        "line": 115,
+        "column": 9
+      },
+      {
+        "line": 115,
+        "column": 31
+      },
+      {
+        "line": 115,
+        "column": 31
+      },
+      {
+        "line": 116,
+        "column": 9
+      },
+      {
+        "line": 116,
+        "column": 32
+      },
+      {
+        "line": 116,
+        "column": 32
+      },
+      {
+        "line": 118,
+        "column": 13
+      },
+      {
+        "line": 118,
+        "column": 35
+      },
+      {
+        "line": 118,
+        "column": 35
+      },
+      {
+        "line": 122,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 114,
+          "column": 9
+        },
+        "assert": "assertEquals(null, TransformerUtils.cloneTransformer().transform(null));",
+        "slice": "assertEquals(null, TransformerUtils.cloneTransformer().transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 115,
+          "column": 9
+        },
+        "assert": "assertEquals(cString, TransformerUtils.cloneTransformer().transform(cString));",
+        "slice": "assertEquals(cString, TransformerUtils.cloneTransformer().transform(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 116,
+          "column": 9
+        },
+        "assert": "assertEquals(cInteger, TransformerUtils.cloneTransformer().transform(cInteger));",
+        "slice": "assertEquals(cInteger, TransformerUtils.cloneTransformer().transform(cInteger));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 117,
+          "column": 9
+        },
+        "assert": "try {\n    assertEquals(cObject, TransformerUtils.cloneTransformer().transform(cObject));\n} catch (final IllegalArgumentException ex) {\n    return;\n}",
+        "slice": "try {\n    assertEquals(cObject, TransformerUtils.cloneTransformer().transform(cObject));\n} catch (final IllegalArgumentException ex) {\n    return;\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 122,
+          "column": 9
+        },
+        "assert": "fail();",
+        "slice": "fail();"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testMapTransformer()",
+    "annotation": "@Test",
+    "code": "final Map\u003cObject, Integer\u003e map \u003d new HashMap\u003c\u003e();map.put(null, 0);map.put(cObject, 1);map.put(cString, 2);assertEquals(Integer.valueOf(0), TransformerUtils.mapTransformer(map).transform(null));assertEquals(Integer.valueOf(1), TransformerUtils.mapTransformer(map).transform(cObject));assertEquals(Integer.valueOf(2), TransformerUtils.mapTransformer(map).transform(cString));assertEquals(null, TransformerUtils.mapTransformer(map).transform(cInteger));assertSame(ConstantTransformer.NULL_INSTANCE, TransformerUtils.mapTransformer(null));",
+    "offset": [
+      {
+        "line": 131,
+        "column": 42
+      },
+      {
+        "line": 132,
+        "column": 9
+      },
+      {
+        "line": 133,
+        "column": 9
+      },
+      {
+        "line": 134,
+        "column": 9
+      },
+      {
+        "line": 135,
+        "column": 9
+      },
+      {
+        "line": 135,
+        "column": 22
+      },
+      {
+        "line": 135,
+        "column": 42
+      },
+      {
+        "line": 135,
+        "column": 42
+      },
+      {
+        "line": 136,
+        "column": 9
+      },
+      {
+        "line": 136,
+        "column": 22
+      },
+      {
+        "line": 136,
+        "column": 42
+      },
+      {
+        "line": 136,
+        "column": 42
+      },
+      {
+        "line": 137,
+        "column": 9
+      },
+      {
+        "line": 137,
+        "column": 22
+      },
+      {
+        "line": 137,
+        "column": 42
+      },
+      {
+        "line": 137,
+        "column": 42
+      },
+      {
+        "line": 138,
+        "column": 9
+      },
+      {
+        "line": 138,
+        "column": 28
+      },
+      {
+        "line": 138,
+        "column": 28
+      },
+      {
+        "line": 139,
+        "column": 9
+      },
+      {
+        "line": 139,
+        "column": 55
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 131,
+          "column": 9
+        },
+        "assert": "final Map\u003cObject, Integer\u003e map \u003d new HashMap\u003c\u003e();map.put(null, 0);map.put(cObject, 1);map.put(cString, 2);assertEquals(Integer.valueOf(0), TransformerUtils.mapTransformer(map).transform(null));",
+        "slice": "final Map\u003cObject, Integer\u003e map \u003d new HashMap\u003c\u003e();map.put(null, 0);map.put(cObject, 1);map.put(cString, 2);assertEquals(Integer.valueOf(0), TransformerUtils.mapTransformer(map).transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 136,
+          "column": 9
+        },
+        "assert": "assertEquals(Integer.valueOf(1), TransformerUtils.mapTransformer(map).transform(cObject));",
+        "slice": "final Map\u003cObject, Integer\u003e map \u003d new HashMap\u003c\u003e();map.put(null, 0);map.put(cObject, 1);map.put(cString, 2);assertEquals(Integer.valueOf(1), TransformerUtils.mapTransformer(map).transform(cObject));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 137,
+          "column": 9
+        },
+        "assert": "assertEquals(Integer.valueOf(2), TransformerUtils.mapTransformer(map).transform(cString));",
+        "slice": "final Map\u003cObject, Integer\u003e map \u003d new HashMap\u003c\u003e();map.put(null, 0);map.put(cObject, 1);map.put(cString, 2);assertEquals(Integer.valueOf(2), TransformerUtils.mapTransformer(map).transform(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 138,
+          "column": 9
+        },
+        "assert": "assertEquals(null, TransformerUtils.mapTransformer(map).transform(cInteger));",
+        "slice": "final Map\u003cObject, Integer\u003e map \u003d new HashMap\u003c\u003e();map.put(null, 0);map.put(cObject, 1);map.put(cString, 2);assertEquals(null, TransformerUtils.mapTransformer(map).transform(cInteger));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 139,
+          "column": 9
+        },
+        "assert": "assertSame(ConstantTransformer.NULL_INSTANCE, TransformerUtils.mapTransformer(null));",
+        "slice": "assertSame(ConstantTransformer.NULL_INSTANCE, TransformerUtils.mapTransformer(null));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testExecutorTransformer()",
+    "annotation": "@Test",
+    "code": "assertEquals(null, TransformerUtils.asTransformer(ClosureUtils.nopClosure()).transform(null));assertEquals(cObject, TransformerUtils.asTransformer(ClosureUtils.nopClosure()).transform(cObject));assertEquals(cString, TransformerUtils.asTransformer(ClosureUtils.nopClosure()).transform(cString));assertEquals(cInteger, TransformerUtils.asTransformer(ClosureUtils.nopClosure()).transform(cInteger));try {\n    TransformerUtils.asTransformer((Closure\u003cObject\u003e) null);\n} catch (final NullPointerException ex) {\n    return;\n}fail();",
+    "offset": [
+      {
+        "line": 147,
+        "column": 9
+      },
+      {
+        "line": 147,
+        "column": 28
+      },
+      {
+        "line": 147,
+        "column": 28
+      },
+      {
+        "line": 147,
+        "column": 59
+      },
+      {
+        "line": 148,
+        "column": 9
+      },
+      {
+        "line": 148,
+        "column": 31
+      },
+      {
+        "line": 148,
+        "column": 31
+      },
+      {
+        "line": 148,
+        "column": 62
+      },
+      {
+        "line": 149,
+        "column": 9
+      },
+      {
+        "line": 149,
+        "column": 31
+      },
+      {
+        "line": 149,
+        "column": 31
+      },
+      {
+        "line": 149,
+        "column": 62
+      },
+      {
+        "line": 150,
+        "column": 9
+      },
+      {
+        "line": 150,
+        "column": 32
+      },
+      {
+        "line": 150,
+        "column": 32
+      },
+      {
+        "line": 150,
+        "column": 63
+      },
+      {
+        "line": 152,
+        "column": 13
+      },
+      {
+        "line": 156,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 147,
+          "column": 9
+        },
+        "assert": "assertEquals(null, TransformerUtils.asTransformer(ClosureUtils.nopClosure()).transform(null));",
+        "slice": "assertEquals(null, TransformerUtils.asTransformer(ClosureUtils.nopClosure()).transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 148,
+          "column": 9
+        },
+        "assert": "assertEquals(cObject, TransformerUtils.asTransformer(ClosureUtils.nopClosure()).transform(cObject));",
+        "slice": "assertEquals(cObject, TransformerUtils.asTransformer(ClosureUtils.nopClosure()).transform(cObject));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 149,
+          "column": 9
+        },
+        "assert": "assertEquals(cString, TransformerUtils.asTransformer(ClosureUtils.nopClosure()).transform(cString));",
+        "slice": "assertEquals(cString, TransformerUtils.asTransformer(ClosureUtils.nopClosure()).transform(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 150,
+          "column": 9
+        },
+        "assert": "assertEquals(cInteger, TransformerUtils.asTransformer(ClosureUtils.nopClosure()).transform(cInteger));",
+        "slice": "assertEquals(cInteger, TransformerUtils.asTransformer(ClosureUtils.nopClosure()).transform(cInteger));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 151,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.asTransformer((Closure\u003cObject\u003e) null);\n} catch (final NullPointerException ex) {\n    return;\n}fail();",
+        "slice": "try {\n    TransformerUtils.asTransformer((Closure\u003cObject\u003e) null);\n} catch (final NullPointerException ex) {\n    return;\n}fail();"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testPredicateTransformer()",
+    "annotation": "@Test",
+    "code": "assertEquals(Boolean.TRUE, TransformerUtils.asTransformer(TruePredicate.truePredicate()).transform(null));assertEquals(Boolean.TRUE, TransformerUtils.asTransformer(TruePredicate.truePredicate()).transform(cObject));assertEquals(Boolean.TRUE, TransformerUtils.asTransformer(TruePredicate.truePredicate()).transform(cString));assertEquals(Boolean.TRUE, TransformerUtils.asTransformer(TruePredicate.truePredicate()).transform(cInteger));try {\n    TransformerUtils.asTransformer((Predicate\u003cObject\u003e) null);\n} catch (final IllegalArgumentException ex) {\n    return;\n}fail();",
+    "offset": [
+      {
+        "line": 164,
+        "column": 9
+      },
+      {
+        "line": 164,
+        "column": 36
+      },
+      {
+        "line": 164,
+        "column": 36
+      },
+      {
+        "line": 164,
+        "column": 67
+      },
+      {
+        "line": 165,
+        "column": 9
+      },
+      {
+        "line": 165,
+        "column": 36
+      },
+      {
+        "line": 165,
+        "column": 36
+      },
+      {
+        "line": 165,
+        "column": 67
+      },
+      {
+        "line": 166,
+        "column": 9
+      },
+      {
+        "line": 166,
+        "column": 36
+      },
+      {
+        "line": 166,
+        "column": 36
+      },
+      {
+        "line": 166,
+        "column": 67
+      },
+      {
+        "line": 167,
+        "column": 9
+      },
+      {
+        "line": 167,
+        "column": 36
+      },
+      {
+        "line": 167,
+        "column": 36
+      },
+      {
+        "line": 167,
+        "column": 67
+      },
+      {
+        "line": 169,
+        "column": 13
+      },
+      {
+        "line": 173,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 164,
+          "column": 9
+        },
+        "assert": "assertEquals(Boolean.TRUE, TransformerUtils.asTransformer(TruePredicate.truePredicate()).transform(null));",
+        "slice": "assertEquals(Boolean.TRUE, TransformerUtils.asTransformer(TruePredicate.truePredicate()).transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 165,
+          "column": 9
+        },
+        "assert": "assertEquals(Boolean.TRUE, TransformerUtils.asTransformer(TruePredicate.truePredicate()).transform(cObject));",
+        "slice": "assertEquals(Boolean.TRUE, TransformerUtils.asTransformer(TruePredicate.truePredicate()).transform(cObject));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 166,
+          "column": 9
+        },
+        "assert": "assertEquals(Boolean.TRUE, TransformerUtils.asTransformer(TruePredicate.truePredicate()).transform(cString));",
+        "slice": "assertEquals(Boolean.TRUE, TransformerUtils.asTransformer(TruePredicate.truePredicate()).transform(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 167,
+          "column": 9
+        },
+        "assert": "assertEquals(Boolean.TRUE, TransformerUtils.asTransformer(TruePredicate.truePredicate()).transform(cInteger));",
+        "slice": "assertEquals(Boolean.TRUE, TransformerUtils.asTransformer(TruePredicate.truePredicate()).transform(cInteger));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 168,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.asTransformer((Predicate\u003cObject\u003e) null);\n} catch (final IllegalArgumentException ex) {\n    return;\n}fail();",
+        "slice": "try {\n    TransformerUtils.asTransformer((Predicate\u003cObject\u003e) null);\n} catch (final IllegalArgumentException ex) {\n    return;\n}fail();"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testFactoryTransformer()",
+    "annotation": "@Test",
+    "code": "assertEquals(null, TransformerUtils.asTransformer(FactoryUtils.nullFactory()).transform(null));assertEquals(null, TransformerUtils.asTransformer(FactoryUtils.nullFactory()).transform(cObject));assertEquals(null, TransformerUtils.asTransformer(FactoryUtils.nullFactory()).transform(cString));assertEquals(null, TransformerUtils.asTransformer(FactoryUtils.nullFactory()).transform(cInteger));try {\n    TransformerUtils.asTransformer((Factory\u003cObject\u003e) null);\n} catch (final NullPointerException ex) {\n    return;\n}fail();",
+    "offset": [
+      {
+        "line": 181,
+        "column": 9
+      },
+      {
+        "line": 181,
+        "column": 28
+      },
+      {
+        "line": 181,
+        "column": 28
+      },
+      {
+        "line": 181,
+        "column": 59
+      },
+      {
+        "line": 182,
+        "column": 9
+      },
+      {
+        "line": 182,
+        "column": 28
+      },
+      {
+        "line": 182,
+        "column": 28
+      },
+      {
+        "line": 182,
+        "column": 59
+      },
+      {
+        "line": 183,
+        "column": 9
+      },
+      {
+        "line": 183,
+        "column": 28
+      },
+      {
+        "line": 183,
+        "column": 28
+      },
+      {
+        "line": 183,
+        "column": 59
+      },
+      {
+        "line": 184,
+        "column": 9
+      },
+      {
+        "line": 184,
+        "column": 28
+      },
+      {
+        "line": 184,
+        "column": 28
+      },
+      {
+        "line": 184,
+        "column": 59
+      },
+      {
+        "line": 186,
+        "column": 13
+      },
+      {
+        "line": 190,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 181,
+          "column": 9
+        },
+        "assert": "assertEquals(null, TransformerUtils.asTransformer(FactoryUtils.nullFactory()).transform(null));",
+        "slice": "assertEquals(null, TransformerUtils.asTransformer(FactoryUtils.nullFactory()).transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 182,
+          "column": 9
+        },
+        "assert": "assertEquals(null, TransformerUtils.asTransformer(FactoryUtils.nullFactory()).transform(cObject));",
+        "slice": "assertEquals(null, TransformerUtils.asTransformer(FactoryUtils.nullFactory()).transform(cObject));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 183,
+          "column": 9
+        },
+        "assert": "assertEquals(null, TransformerUtils.asTransformer(FactoryUtils.nullFactory()).transform(cString));",
+        "slice": "assertEquals(null, TransformerUtils.asTransformer(FactoryUtils.nullFactory()).transform(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 184,
+          "column": 9
+        },
+        "assert": "assertEquals(null, TransformerUtils.asTransformer(FactoryUtils.nullFactory()).transform(cInteger));",
+        "slice": "assertEquals(null, TransformerUtils.asTransformer(FactoryUtils.nullFactory()).transform(cInteger));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 185,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.asTransformer((Factory\u003cObject\u003e) null);\n} catch (final NullPointerException ex) {\n    return;\n}fail();",
+        "slice": "try {\n    TransformerUtils.asTransformer((Factory\u003cObject\u003e) null);\n} catch (final NullPointerException ex) {\n    return;\n}fail();"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testChainedTransformer()",
+    "annotation": "@Test",
+    "code": "final Transformer\u003cObject, Object\u003e a \u003d TransformerUtils.\u003cObject, Object\u003econstantTransformer(\"A\");final Transformer\u003cObject, Object\u003e b \u003d TransformerUtils.constantTransformer((Object) \"B\");assertEquals(\"A\", TransformerUtils.chainedTransformer(b, a).transform(null));assertEquals(\"B\", TransformerUtils.chainedTransformer(a, b).transform(null));assertEquals(\"A\", TransformerUtils.chainedTransformer(new Transformer[] { b, a }).transform(null));Collection\u003cTransformer\u003cObject, Object\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(b);coll.add(a);assertEquals(\"A\", TransformerUtils.chainedTransformer(coll).transform(null));assertSame(NOPTransformer.INSTANCE, TransformerUtils.chainedTransformer(new Transformer[0]));assertSame(NOPTransformer.INSTANCE, TransformerUtils.chainedTransformer(Collections.\u003cTransformer\u003cObject, Object\u003e\u003eemptyList()));try {\n    TransformerUtils.chainedTransformer(null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}try {\n    TransformerUtils.chainedTransformer((Transformer[]) null);\n    fail();\n} catch (final NullPointerException ex) {\n}try {\n    TransformerUtils.chainedTransformer((Collection\u003cTransformer\u003cObject, Object\u003e\u003e) null);\n    fail();\n} catch (final NullPointerException ex) {\n}try {\n    TransformerUtils.chainedTransformer(new Transformer[] { null, null });\n    fail();\n} catch (final NullPointerException ex) {\n}try {\n    coll \u003d new ArrayList\u003c\u003e();\n    coll.add(null);\n    coll.add(null);\n    TransformerUtils.chainedTransformer(coll);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+    "offset": [
+      {
+        "line": 199,
+        "column": 47
+      },
+      {
+        "line": 200,
+        "column": 47
+      },
+      {
+        "line": 202,
+        "column": 9
+      },
+      {
+        "line": 202,
+        "column": 27
+      },
+      {
+        "line": 202,
+        "column": 27
+      },
+      {
+        "line": 203,
+        "column": 9
+      },
+      {
+        "line": 203,
+        "column": 27
+      },
+      {
+        "line": 203,
+        "column": 27
+      },
+      {
+        "line": 204,
+        "column": 9
+      },
+      {
+        "line": 204,
+        "column": 27
+      },
+      {
+        "line": 204,
+        "column": 27
+      },
+      {
+        "line": 205,
+        "column": 56
+      },
+      {
+        "line": 206,
+        "column": 9
+      },
+      {
+        "line": 207,
+        "column": 9
+      },
+      {
+        "line": 208,
+        "column": 9
+      },
+      {
+        "line": 208,
+        "column": 27
+      },
+      {
+        "line": 208,
+        "column": 27
+      },
+      {
+        "line": 210,
+        "column": 9
+      },
+      {
+        "line": 210,
+        "column": 45
+      },
+      {
+        "line": 211,
+        "column": 9
+      },
+      {
+        "line": 211,
+        "column": 45
+      },
+      {
+        "line": 211,
+        "column": 81
+      },
+      {
+        "line": 214,
+        "column": 13
+      },
+      {
+        "line": 215,
+        "column": 13
+      },
+      {
+        "line": 218,
+        "column": 13
+      },
+      {
+        "line": 219,
+        "column": 13
+      },
+      {
+        "line": 222,
+        "column": 13
+      },
+      {
+        "line": 223,
+        "column": 13
+      },
+      {
+        "line": 226,
+        "column": 13
+      },
+      {
+        "line": 227,
+        "column": 13
+      },
+      {
+        "line": 230,
+        "column": 20
+      },
+      {
+        "line": 231,
+        "column": 13
+      },
+      {
+        "line": 232,
+        "column": 13
+      },
+      {
+        "line": 233,
+        "column": 13
+      },
+      {
+        "line": 234,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 225,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.chainedTransformer(new Transformer[] { null, null });\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "final Transformer\u003cObject, Object\u003e a \u003d TransformerUtils.\u003cObject, Object\u003econstantTransformer(\"A\");final Transformer\u003cObject, Object\u003e b \u003d TransformerUtils.constantTransformer((Object) \"B\");try {\n    TransformerUtils.chainedTransformer(new Transformer[] { null, null });\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 210,
+          "column": 9
+        },
+        "assert": "assertSame(NOPTransformer.INSTANCE, TransformerUtils.chainedTransformer(new Transformer[0]));",
+        "slice": "final Transformer\u003cObject, Object\u003e a \u003d TransformerUtils.\u003cObject, Object\u003econstantTransformer(\"A\");final Transformer\u003cObject, Object\u003e b \u003d TransformerUtils.constantTransformer((Object) \"B\");assertSame(NOPTransformer.INSTANCE, TransformerUtils.chainedTransformer(new Transformer[0]));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 211,
+          "column": 9
+        },
+        "assert": "assertSame(NOPTransformer.INSTANCE, TransformerUtils.chainedTransformer(Collections.\u003cTransformer\u003cObject, Object\u003e\u003eemptyList()));",
+        "slice": "final Transformer\u003cObject, Object\u003e a \u003d TransformerUtils.\u003cObject, Object\u003econstantTransformer(\"A\");final Transformer\u003cObject, Object\u003e b \u003d TransformerUtils.constantTransformer((Object) \"B\");assertSame(NOPTransformer.INSTANCE, TransformerUtils.chainedTransformer(Collections.\u003cTransformer\u003cObject, Object\u003e\u003eemptyList()));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 213,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.chainedTransformer(null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "final Transformer\u003cObject, Object\u003e a \u003d TransformerUtils.\u003cObject, Object\u003econstantTransformer(\"A\");final Transformer\u003cObject, Object\u003e b \u003d TransformerUtils.constantTransformer((Object) \"B\");try {\n    TransformerUtils.chainedTransformer(null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 229,
+          "column": 9
+        },
+        "assert": "try {\n    coll \u003d new ArrayList\u003c\u003e();\n    coll.add(null);\n    coll.add(null);\n    TransformerUtils.chainedTransformer(coll);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "final Transformer\u003cObject, Object\u003e a \u003d TransformerUtils.\u003cObject, Object\u003econstantTransformer(\"A\");final Transformer\u003cObject, Object\u003e b \u003d TransformerUtils.constantTransformer((Object) \"B\");Collection\u003cTransformer\u003cObject, Object\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(b);coll.add(a);try {\n    coll \u003d new ArrayList\u003c\u003e();\n    coll.add(null);\n    coll.add(null);\n    TransformerUtils.chainedTransformer(coll);\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 199,
+          "column": 9
+        },
+        "assert": "final Transformer\u003cObject, Object\u003e a \u003d TransformerUtils.\u003cObject, Object\u003econstantTransformer(\"A\");final Transformer\u003cObject, Object\u003e b \u003d TransformerUtils.constantTransformer((Object) \"B\");assertEquals(\"A\", TransformerUtils.chainedTransformer(b, a).transform(null));",
+        "slice": "final Transformer\u003cObject, Object\u003e a \u003d TransformerUtils.\u003cObject, Object\u003econstantTransformer(\"A\");final Transformer\u003cObject, Object\u003e b \u003d TransformerUtils.constantTransformer((Object) \"B\");assertEquals(\"A\", TransformerUtils.chainedTransformer(b, a).transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 217,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.chainedTransformer((Transformer[]) null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "final Transformer\u003cObject, Object\u003e a \u003d TransformerUtils.\u003cObject, Object\u003econstantTransformer(\"A\");final Transformer\u003cObject, Object\u003e b \u003d TransformerUtils.constantTransformer((Object) \"B\");try {\n    TransformerUtils.chainedTransformer((Transformer[]) null);\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 203,
+          "column": 9
+        },
+        "assert": "assertEquals(\"B\", TransformerUtils.chainedTransformer(a, b).transform(null));",
+        "slice": "final Transformer\u003cObject, Object\u003e a \u003d TransformerUtils.\u003cObject, Object\u003econstantTransformer(\"A\");final Transformer\u003cObject, Object\u003e b \u003d TransformerUtils.constantTransformer((Object) \"B\");assertEquals(\"B\", TransformerUtils.chainedTransformer(a, b).transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 204,
+          "column": 9
+        },
+        "assert": "assertEquals(\"A\", TransformerUtils.chainedTransformer(new Transformer[] { b, a }).transform(null));",
+        "slice": "final Transformer\u003cObject, Object\u003e a \u003d TransformerUtils.\u003cObject, Object\u003econstantTransformer(\"A\");final Transformer\u003cObject, Object\u003e b \u003d TransformerUtils.constantTransformer((Object) \"B\");assertEquals(\"A\", TransformerUtils.chainedTransformer(new Transformer[] { b, a }).transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 205,
+          "column": 9
+        },
+        "assert": "Collection\u003cTransformer\u003cObject, Object\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(b);coll.add(a);assertEquals(\"A\", TransformerUtils.chainedTransformer(coll).transform(null));",
+        "slice": "final Transformer\u003cObject, Object\u003e a \u003d TransformerUtils.\u003cObject, Object\u003econstantTransformer(\"A\");final Transformer\u003cObject, Object\u003e b \u003d TransformerUtils.constantTransformer((Object) \"B\");Collection\u003cTransformer\u003cObject, Object\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(b);coll.add(a);assertEquals(\"A\", TransformerUtils.chainedTransformer(coll).transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 221,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.chainedTransformer((Collection\u003cTransformer\u003cObject, Object\u003e\u003e) null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "final Transformer\u003cObject, Object\u003e a \u003d TransformerUtils.\u003cObject, Object\u003econstantTransformer(\"A\");final Transformer\u003cObject, Object\u003e b \u003d TransformerUtils.constantTransformer((Object) \"B\");try {\n    TransformerUtils.chainedTransformer((Collection\u003cTransformer\u003cObject, Object\u003e\u003e) null);\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testIfTransformer()",
+    "annotation": "@Test",
+    "code": "final Transformer\u003cObject, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cObject, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cObject, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");assertEquals(\"A\", TransformerUtils.ifTransformer(TruePredicate.truePredicate(), a, b).transform(null));assertEquals(\"B\", TransformerUtils.ifTransformer(FalsePredicate.falsePredicate(), a, b).transform(null));final Predicate\u003cInteger\u003e lessThanFivePredicate \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer value) {\n        return value \u003c 5;\n    }\n};// if/else tests\nassertEquals(\"A\", TransformerUtils.\u003cInteger, String\u003eifTransformer(lessThanFivePredicate, a, b).transform(1));assertEquals(\"B\", TransformerUtils.\u003cInteger, String\u003eifTransformer(lessThanFivePredicate, a, b).transform(5));// if tests\nfinal Predicate\u003cString\u003e equalsAPredicate \u003d EqualPredicate.equalPredicate(\"A\");assertEquals(\"C\", TransformerUtils.\u003cString\u003eifTransformer(equalsAPredicate, c).transform(\"A\"));assertEquals(\"B\", TransformerUtils.\u003cString\u003eifTransformer(equalsAPredicate, c).transform(\"B\"));try {\n    TransformerUtils.ifTransformer(null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}try {\n    TransformerUtils.ifTransformer(TruePredicate.truePredicate(), null);\n    fail();\n} catch (final NullPointerException ex) {\n}try {\n    TransformerUtils.ifTransformer(null, ConstantTransformer.constantTransformer(\"A\"));\n    fail();\n} catch (final NullPointerException ex) {\n}try {\n    TransformerUtils.ifTransformer(null, null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+    "offset": [
+      {
+        "line": 243,
+        "column": 47
+      },
+      {
+        "line": 244,
+        "column": 47
+      },
+      {
+        "line": 245,
+        "column": 47
+      },
+      {
+        "line": 247,
+        "column": 9
+      },
+      {
+        "line": 247,
+        "column": 27
+      },
+      {
+        "line": 247,
+        "column": 27
+      },
+      {
+        "line": 247,
+        "column": 58
+      },
+      {
+        "line": 248,
+        "column": 9
+      },
+      {
+        "line": 248,
+        "column": 27
+      },
+      {
+        "line": 248,
+        "column": 27
+      },
+      {
+        "line": 248,
+        "column": 58
+      },
+      {
+        "line": 250,
+        "column": 58
+      },
+      {
+        "line": 257,
+        "column": 9
+      },
+      {
+        "line": 257,
+        "column": 27
+      },
+      {
+        "line": 257,
+        "column": 27
+      },
+      {
+        "line": 258,
+        "column": 9
+      },
+      {
+        "line": 258,
+        "column": 27
+      },
+      {
+        "line": 258,
+        "column": 27
+      },
+      {
+        "line": 261,
+        "column": 52
+      },
+      {
+        "line": 262,
+        "column": 9
+      },
+      {
+        "line": 262,
+        "column": 27
+      },
+      {
+        "line": 262,
+        "column": 27
+      },
+      {
+        "line": 263,
+        "column": 9
+      },
+      {
+        "line": 263,
+        "column": 27
+      },
+      {
+        "line": 263,
+        "column": 27
+      },
+      {
+        "line": 266,
+        "column": 13
+      },
+      {
+        "line": 267,
+        "column": 13
+      },
+      {
+        "line": 270,
+        "column": 13
+      },
+      {
+        "line": 270,
+        "column": 44
+      },
+      {
+        "line": 271,
+        "column": 13
+      },
+      {
+        "line": 274,
+        "column": 13
+      },
+      {
+        "line": 274,
+        "column": 50
+      },
+      {
+        "line": 275,
+        "column": 13
+      },
+      {
+        "line": 278,
+        "column": 13
+      },
+      {
+        "line": 279,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 273,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.ifTransformer(null, ConstantTransformer.constantTransformer(\"A\"));\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "final Transformer\u003cObject, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cObject, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cObject, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");try {\n    TransformerUtils.ifTransformer(null, ConstantTransformer.constantTransformer(\"A\"));\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 258,
+          "column": 9
+        },
+        "assert": "assertEquals(\"B\", TransformerUtils.\u003cInteger, String\u003eifTransformer(lessThanFivePredicate, a, b).transform(5));",
+        "slice": "final Transformer\u003cObject, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cObject, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cObject, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");final Predicate\u003cInteger\u003e lessThanFivePredicate \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer value) {\n        return value \u003c 5;\n    }\n};assertEquals(\"B\", TransformerUtils.\u003cInteger, String\u003eifTransformer(lessThanFivePredicate, a, b).transform(5));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 243,
+          "column": 9
+        },
+        "assert": "final Transformer\u003cObject, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cObject, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cObject, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");assertEquals(\"A\", TransformerUtils.ifTransformer(TruePredicate.truePredicate(), a, b).transform(null));",
+        "slice": "final Transformer\u003cObject, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cObject, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cObject, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");assertEquals(\"A\", TransformerUtils.ifTransformer(TruePredicate.truePredicate(), a, b).transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        },
+        "assert": "// if tests\nfinal Predicate\u003cString\u003e equalsAPredicate \u003d EqualPredicate.equalPredicate(\"A\");assertEquals(\"C\", TransformerUtils.\u003cString\u003eifTransformer(equalsAPredicate, c).transform(\"A\"));",
+        "slice": "final Transformer\u003cObject, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cObject, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cObject, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");// if tests\nfinal Predicate\u003cString\u003e equalsAPredicate \u003d EqualPredicate.equalPredicate(\"A\");assertEquals(\"C\", TransformerUtils.\u003cString\u003eifTransformer(equalsAPredicate, c).transform(\"A\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 277,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.ifTransformer(null, null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "final Transformer\u003cObject, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cObject, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cObject, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");try {\n    TransformerUtils.ifTransformer(null, null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        },
+        "assert": "assertEquals(\"B\", TransformerUtils.\u003cString\u003eifTransformer(equalsAPredicate, c).transform(\"B\"));",
+        "slice": "final Transformer\u003cObject, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cObject, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cObject, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");// if tests\nfinal Predicate\u003cString\u003e equalsAPredicate \u003d EqualPredicate.equalPredicate(\"A\");assertEquals(\"B\", TransformerUtils.\u003cString\u003eifTransformer(equalsAPredicate, c).transform(\"B\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 248,
+          "column": 9
+        },
+        "assert": "assertEquals(\"B\", TransformerUtils.ifTransformer(FalsePredicate.falsePredicate(), a, b).transform(null));",
+        "slice": "final Transformer\u003cObject, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cObject, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cObject, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");assertEquals(\"B\", TransformerUtils.ifTransformer(FalsePredicate.falsePredicate(), a, b).transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.ifTransformer(null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "final Transformer\u003cObject, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cObject, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cObject, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");try {\n    TransformerUtils.ifTransformer(null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 250,
+          "column": 9
+        },
+        "assert": "final Predicate\u003cInteger\u003e lessThanFivePredicate \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer value) {\n        return value \u003c 5;\n    }\n};// if/else tests\nassertEquals(\"A\", TransformerUtils.\u003cInteger, String\u003eifTransformer(lessThanFivePredicate, a, b).transform(1));",
+        "slice": "final Transformer\u003cObject, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cObject, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cObject, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");final Predicate\u003cInteger\u003e lessThanFivePredicate \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer value) {\n        return value \u003c 5;\n    }\n};// if/else tests\nassertEquals(\"A\", TransformerUtils.\u003cInteger, String\u003eifTransformer(lessThanFivePredicate, a, b).transform(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 269,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.ifTransformer(TruePredicate.truePredicate(), null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "final Transformer\u003cObject, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cObject, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cObject, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");try {\n    TransformerUtils.ifTransformer(TruePredicate.truePredicate(), null);\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testSwitchTransformer()",
+    "annotation": "@Test",
+    "code": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");assertEquals(\"A\", TransformerUtils.switchTransformer(TruePredicate.truePredicate(), a, b).transform(null));assertEquals(\"B\", TransformerUtils.switchTransformer(FalsePredicate.falsePredicate(), a, b).transform(null));assertEquals(null, TransformerUtils.\u003cObject, String\u003eswitchTransformer(new Predicate[] { EqualPredicate.equalPredicate(\"HELLO\"), EqualPredicate.equalPredicate(\"THERE\") }, new Transformer[] { a, b }).transform(\"WELL\"));assertEquals(\"A\", TransformerUtils.switchTransformer(new Predicate[] { EqualPredicate.equalPredicate(\"HELLO\"), EqualPredicate.equalPredicate(\"THERE\") }, new Transformer[] { a, b }).transform(\"HELLO\"));assertEquals(\"B\", TransformerUtils.switchTransformer(new Predicate[] { EqualPredicate.equalPredicate(\"HELLO\"), EqualPredicate.equalPredicate(\"THERE\") }, new Transformer[] { a, b }).transform(\"THERE\"));assertEquals(\"C\", TransformerUtils.switchTransformer(new Predicate[] { EqualPredicate.equalPredicate(\"HELLO\"), EqualPredicate.equalPredicate(\"THERE\") }, new Transformer[] { a, b }, c).transform(\"WELL\"));Map\u003cPredicate\u003cString\u003e, Transformer\u003cString, String\u003e\u003e map \u003d new HashMap\u003c\u003e();map.put(EqualPredicate.equalPredicate(\"HELLO\"), a);map.put(EqualPredicate.equalPredicate(\"THERE\"), b);assertEquals(null, TransformerUtils.switchTransformer(map).transform(\"WELL\"));assertEquals(\"A\", TransformerUtils.switchTransformer(map).transform(\"HELLO\"));assertEquals(\"B\", TransformerUtils.switchTransformer(map).transform(\"THERE\"));map.put(null, c);assertEquals(\"C\", TransformerUtils.switchTransformer(map).transform(\"WELL\"));assertEquals(ConstantTransformer.NULL_INSTANCE, TransformerUtils.switchTransformer(new Predicate[0], new Transformer[0]));assertEquals(ConstantTransformer.NULL_INSTANCE, TransformerUtils.switchTransformer(new HashMap\u003cPredicate\u003cObject\u003e, Transformer\u003cObject, Object\u003e\u003e()));map \u003d new HashMap\u003c\u003e();map.put(null, null);assertEquals(ConstantTransformer.NULL_INSTANCE, TransformerUtils.switchTransformer(map));try {\n    TransformerUtils.switchTransformer(null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}try {\n    TransformerUtils.switchTransformer((Predicate[]) null, (Transformer[]) null);\n    fail();\n} catch (final NullPointerException ex) {\n}try {\n    TransformerUtils.switchTransformer((Map\u003cPredicate\u003cObject\u003e, Transformer\u003cObject, Object\u003e\u003e) null);\n    fail();\n} catch (final NullPointerException ex) {\n}try {\n    TransformerUtils.switchTransformer(new Predicate[2], new Transformer[2]);\n    fail();\n} catch (final NullPointerException ex) {\n}try {\n    TransformerUtils.switchTransformer(new Predicate[] { TruePredicate.truePredicate() }, new Transformer[] { a, b });\n    fail();\n} catch (final IllegalArgumentException ex) {\n}",
+    "offset": [
+      {
+        "line": 289,
+        "column": 47
+      },
+      {
+        "line": 290,
+        "column": 47
+      },
+      {
+        "line": 291,
+        "column": 47
+      },
+      {
+        "line": 293,
+        "column": 9
+      },
+      {
+        "line": 293,
+        "column": 27
+      },
+      {
+        "line": 293,
+        "column": 27
+      },
+      {
+        "line": 293,
+        "column": 62
+      },
+      {
+        "line": 294,
+        "column": 9
+      },
+      {
+        "line": 294,
+        "column": 27
+      },
+      {
+        "line": 294,
+        "column": 27
+      },
+      {
+        "line": 294,
+        "column": 62
+      },
+      {
+        "line": 296,
+        "column": 9
+      },
+      {
+        "line": 296,
+        "column": 28
+      },
+      {
+        "line": 296,
+        "column": 28
+      },
+      {
+        "line": 297,
+        "column": 31
+      },
+      {
+        "line": 297,
+        "column": 71
+      },
+      {
+        "line": 299,
+        "column": 9
+      },
+      {
+        "line": 299,
+        "column": 27
+      },
+      {
+        "line": 299,
+        "column": 27
+      },
+      {
+        "line": 300,
+        "column": 31
+      },
+      {
+        "line": 300,
+        "column": 71
+      },
+      {
+        "line": 302,
+        "column": 9
+      },
+      {
+        "line": 302,
+        "column": 27
+      },
+      {
+        "line": 302,
+        "column": 27
+      },
+      {
+        "line": 303,
+        "column": 31
+      },
+      {
+        "line": 303,
+        "column": 71
+      },
+      {
+        "line": 306,
+        "column": 9
+      },
+      {
+        "line": 306,
+        "column": 27
+      },
+      {
+        "line": 306,
+        "column": 27
+      },
+      {
+        "line": 307,
+        "column": 31
+      },
+      {
+        "line": 307,
+        "column": 71
+      },
+      {
+        "line": 310,
+        "column": 67
+      },
+      {
+        "line": 311,
+        "column": 9
+      },
+      {
+        "line": 311,
+        "column": 17
+      },
+      {
+        "line": 312,
+        "column": 9
+      },
+      {
+        "line": 312,
+        "column": 17
+      },
+      {
+        "line": 313,
+        "column": 9
+      },
+      {
+        "line": 313,
+        "column": 28
+      },
+      {
+        "line": 313,
+        "column": 28
+      },
+      {
+        "line": 314,
+        "column": 9
+      },
+      {
+        "line": 314,
+        "column": 27
+      },
+      {
+        "line": 314,
+        "column": 27
+      },
+      {
+        "line": 315,
+        "column": 9
+      },
+      {
+        "line": 315,
+        "column": 27
+      },
+      {
+        "line": 315,
+        "column": 27
+      },
+      {
+        "line": 316,
+        "column": 9
+      },
+      {
+        "line": 317,
+        "column": 9
+      },
+      {
+        "line": 317,
+        "column": 27
+      },
+      {
+        "line": 317,
+        "column": 27
+      },
+      {
+        "line": 319,
+        "column": 9
+      },
+      {
+        "line": 319,
+        "column": 57
+      },
+      {
+        "line": 320,
+        "column": 9
+      },
+      {
+        "line": 320,
+        "column": 57
+      },
+      {
+        "line": 320,
+        "column": 92
+      },
+      {
+        "line": 321,
+        "column": 15
+      },
+      {
+        "line": 322,
+        "column": 9
+      },
+      {
+        "line": 323,
+        "column": 9
+      },
+      {
+        "line": 323,
+        "column": 57
+      },
+      {
+        "line": 326,
+        "column": 13
+      },
+      {
+        "line": 327,
+        "column": 13
+      },
+      {
+        "line": 330,
+        "column": 13
+      },
+      {
+        "line": 331,
+        "column": 13
+      },
+      {
+        "line": 334,
+        "column": 13
+      },
+      {
+        "line": 335,
+        "column": 13
+      },
+      {
+        "line": 338,
+        "column": 13
+      },
+      {
+        "line": 339,
+        "column": 13
+      },
+      {
+        "line": 342,
+        "column": 13
+      },
+      {
+        "line": 343,
+        "column": 39
+      },
+      {
+        "line": 345,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 320,
+          "column": 9
+        },
+        "assert": "assertEquals(ConstantTransformer.NULL_INSTANCE, TransformerUtils.switchTransformer(new HashMap\u003cPredicate\u003cObject\u003e, Transformer\u003cObject, Object\u003e\u003e()));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");assertEquals(ConstantTransformer.NULL_INSTANCE, TransformerUtils.switchTransformer(new HashMap\u003cPredicate\u003cObject\u003e, Transformer\u003cObject, Object\u003e\u003e()));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 289,
+          "column": 9
+        },
+        "assert": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");assertEquals(\"A\", TransformerUtils.switchTransformer(TruePredicate.truePredicate(), a, b).transform(null));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");assertEquals(\"A\", TransformerUtils.switchTransformer(TruePredicate.truePredicate(), a, b).transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 321,
+          "column": 9
+        },
+        "assert": "map \u003d new HashMap\u003c\u003e();map.put(null, null);assertEquals(ConstantTransformer.NULL_INSTANCE, TransformerUtils.switchTransformer(map));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");Map\u003cPredicate\u003cString\u003e, Transformer\u003cString, String\u003e\u003e map \u003d new HashMap\u003c\u003e();map.put(EqualPredicate.equalPredicate(\"HELLO\"), a);map.put(EqualPredicate.equalPredicate(\"THERE\"), b);map.put(null, c);map \u003d new HashMap\u003c\u003e();map.put(null, null);assertEquals(ConstantTransformer.NULL_INSTANCE, TransformerUtils.switchTransformer(map));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 325,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.switchTransformer(null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");try {\n    TransformerUtils.switchTransformer(null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 294,
+          "column": 9
+        },
+        "assert": "assertEquals(\"B\", TransformerUtils.switchTransformer(FalsePredicate.falsePredicate(), a, b).transform(null));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");assertEquals(\"B\", TransformerUtils.switchTransformer(FalsePredicate.falsePredicate(), a, b).transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 296,
+          "column": 9
+        },
+        "assert": "assertEquals(null, TransformerUtils.\u003cObject, String\u003eswitchTransformer(new Predicate[] { EqualPredicate.equalPredicate(\"HELLO\"), EqualPredicate.equalPredicate(\"THERE\") }, new Transformer[] { a, b }).transform(\"WELL\"));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");assertEquals(null, TransformerUtils.\u003cObject, String\u003eswitchTransformer(new Predicate[] { EqualPredicate.equalPredicate(\"HELLO\"), EqualPredicate.equalPredicate(\"THERE\") }, new Transformer[] { a, b }).transform(\"WELL\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 329,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.switchTransformer((Predicate[]) null, (Transformer[]) null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");try {\n    TransformerUtils.switchTransformer((Predicate[]) null, (Transformer[]) null);\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 299,
+          "column": 9
+        },
+        "assert": "assertEquals(\"A\", TransformerUtils.switchTransformer(new Predicate[] { EqualPredicate.equalPredicate(\"HELLO\"), EqualPredicate.equalPredicate(\"THERE\") }, new Transformer[] { a, b }).transform(\"HELLO\"));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");assertEquals(\"A\", TransformerUtils.switchTransformer(new Predicate[] { EqualPredicate.equalPredicate(\"HELLO\"), EqualPredicate.equalPredicate(\"THERE\") }, new Transformer[] { a, b }).transform(\"HELLO\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 333,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.switchTransformer((Map\u003cPredicate\u003cObject\u003e, Transformer\u003cObject, Object\u003e\u003e) null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");try {\n    TransformerUtils.switchTransformer((Map\u003cPredicate\u003cObject\u003e, Transformer\u003cObject, Object\u003e\u003e) null);\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 302,
+          "column": 9
+        },
+        "assert": "assertEquals(\"B\", TransformerUtils.switchTransformer(new Predicate[] { EqualPredicate.equalPredicate(\"HELLO\"), EqualPredicate.equalPredicate(\"THERE\") }, new Transformer[] { a, b }).transform(\"THERE\"));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");assertEquals(\"B\", TransformerUtils.switchTransformer(new Predicate[] { EqualPredicate.equalPredicate(\"HELLO\"), EqualPredicate.equalPredicate(\"THERE\") }, new Transformer[] { a, b }).transform(\"THERE\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 337,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.switchTransformer(new Predicate[2], new Transformer[2]);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");try {\n    TransformerUtils.switchTransformer(new Predicate[2], new Transformer[2]);\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 306,
+          "column": 9
+        },
+        "assert": "assertEquals(\"C\", TransformerUtils.switchTransformer(new Predicate[] { EqualPredicate.equalPredicate(\"HELLO\"), EqualPredicate.equalPredicate(\"THERE\") }, new Transformer[] { a, b }, c).transform(\"WELL\"));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");assertEquals(\"C\", TransformerUtils.switchTransformer(new Predicate[] { EqualPredicate.equalPredicate(\"HELLO\"), EqualPredicate.equalPredicate(\"THERE\") }, new Transformer[] { a, b }, c).transform(\"WELL\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 341,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.switchTransformer(new Predicate[] { TruePredicate.truePredicate() }, new Transformer[] { a, b });\n    fail();\n} catch (final IllegalArgumentException ex) {\n}",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");try {\n    TransformerUtils.switchTransformer(new Predicate[] { TruePredicate.truePredicate() }, new Transformer[] { a, b });\n    fail();\n} catch (final IllegalArgumentException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 310,
+          "column": 9
+        },
+        "assert": "Map\u003cPredicate\u003cString\u003e, Transformer\u003cString, String\u003e\u003e map \u003d new HashMap\u003c\u003e();map.put(EqualPredicate.equalPredicate(\"HELLO\"), a);map.put(EqualPredicate.equalPredicate(\"THERE\"), b);assertEquals(null, TransformerUtils.switchTransformer(map).transform(\"WELL\"));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");Map\u003cPredicate\u003cString\u003e, Transformer\u003cString, String\u003e\u003e map \u003d new HashMap\u003c\u003e();map.put(EqualPredicate.equalPredicate(\"HELLO\"), a);map.put(EqualPredicate.equalPredicate(\"THERE\"), b);assertEquals(null, TransformerUtils.switchTransformer(map).transform(\"WELL\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 314,
+          "column": 9
+        },
+        "assert": "assertEquals(\"A\", TransformerUtils.switchTransformer(map).transform(\"HELLO\"));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");Map\u003cPredicate\u003cString\u003e, Transformer\u003cString, String\u003e\u003e map \u003d new HashMap\u003c\u003e();map.put(EqualPredicate.equalPredicate(\"HELLO\"), a);map.put(EqualPredicate.equalPredicate(\"THERE\"), b);assertEquals(\"A\", TransformerUtils.switchTransformer(map).transform(\"HELLO\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 315,
+          "column": 9
+        },
+        "assert": "assertEquals(\"B\", TransformerUtils.switchTransformer(map).transform(\"THERE\"));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");Map\u003cPredicate\u003cString\u003e, Transformer\u003cString, String\u003e\u003e map \u003d new HashMap\u003c\u003e();map.put(EqualPredicate.equalPredicate(\"HELLO\"), a);map.put(EqualPredicate.equalPredicate(\"THERE\"), b);assertEquals(\"B\", TransformerUtils.switchTransformer(map).transform(\"THERE\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 316,
+          "column": 9
+        },
+        "assert": "map.put(null, c);assertEquals(\"C\", TransformerUtils.switchTransformer(map).transform(\"WELL\"));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");Map\u003cPredicate\u003cString\u003e, Transformer\u003cString, String\u003e\u003e map \u003d new HashMap\u003c\u003e();map.put(EqualPredicate.equalPredicate(\"HELLO\"), a);map.put(EqualPredicate.equalPredicate(\"THERE\"), b);map.put(null, c);assertEquals(\"C\", TransformerUtils.switchTransformer(map).transform(\"WELL\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 319,
+          "column": 9
+        },
+        "assert": "assertEquals(ConstantTransformer.NULL_INSTANCE, TransformerUtils.switchTransformer(new Predicate[0], new Transformer[0]));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");assertEquals(ConstantTransformer.NULL_INSTANCE, TransformerUtils.switchTransformer(new Predicate[0], new Transformer[0]));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testSwitchMapTransformer()",
+    "annotation": "@Test",
+    "code": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");Map\u003cString, Transformer\u003cString, String\u003e\u003e map \u003d new HashMap\u003c\u003e();map.put(\"HELLO\", a);map.put(\"THERE\", b);assertEquals(null, TransformerUtils.switchMapTransformer(map).transform(\"WELL\"));assertEquals(\"A\", TransformerUtils.switchMapTransformer(map).transform(\"HELLO\"));assertEquals(\"B\", TransformerUtils.switchMapTransformer(map).transform(\"THERE\"));map.put(null, c);assertEquals(\"C\", TransformerUtils.switchMapTransformer(map).transform(\"WELL\"));assertSame(ConstantTransformer.NULL_INSTANCE, TransformerUtils.switchMapTransformer(new HashMap\u003cObject, Transformer\u003cObject, Object\u003e\u003e()));map \u003d new HashMap\u003c\u003e();map.put(null, null);assertSame(ConstantTransformer.NULL_INSTANCE, TransformerUtils.switchMapTransformer(map));try {\n    TransformerUtils.switchMapTransformer(null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+    "offset": [
+      {
+        "line": 354,
+        "column": 47
+      },
+      {
+        "line": 355,
+        "column": 47
+      },
+      {
+        "line": 356,
+        "column": 47
+      },
+      {
+        "line": 358,
+        "column": 56
+      },
+      {
+        "line": 359,
+        "column": 9
+      },
+      {
+        "line": 360,
+        "column": 9
+      },
+      {
+        "line": 361,
+        "column": 9
+      },
+      {
+        "line": 361,
+        "column": 28
+      },
+      {
+        "line": 361,
+        "column": 28
+      },
+      {
+        "line": 362,
+        "column": 9
+      },
+      {
+        "line": 362,
+        "column": 27
+      },
+      {
+        "line": 362,
+        "column": 27
+      },
+      {
+        "line": 363,
+        "column": 9
+      },
+      {
+        "line": 363,
+        "column": 27
+      },
+      {
+        "line": 363,
+        "column": 27
+      },
+      {
+        "line": 364,
+        "column": 9
+      },
+      {
+        "line": 365,
+        "column": 9
+      },
+      {
+        "line": 365,
+        "column": 27
+      },
+      {
+        "line": 365,
+        "column": 27
+      },
+      {
+        "line": 367,
+        "column": 9
+      },
+      {
+        "line": 367,
+        "column": 55
+      },
+      {
+        "line": 367,
+        "column": 93
+      },
+      {
+        "line": 368,
+        "column": 15
+      },
+      {
+        "line": 369,
+        "column": 9
+      },
+      {
+        "line": 370,
+        "column": 9
+      },
+      {
+        "line": 370,
+        "column": 55
+      },
+      {
+        "line": 373,
+        "column": 13
+      },
+      {
+        "line": 374,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 368,
+          "column": 9
+        },
+        "assert": "map \u003d new HashMap\u003c\u003e();map.put(null, null);assertSame(ConstantTransformer.NULL_INSTANCE, TransformerUtils.switchMapTransformer(map));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");Map\u003cString, Transformer\u003cString, String\u003e\u003e map \u003d new HashMap\u003c\u003e();map.put(\"HELLO\", a);map.put(\"THERE\", b);map.put(null, c);map \u003d new HashMap\u003c\u003e();map.put(null, null);assertSame(ConstantTransformer.NULL_INSTANCE, TransformerUtils.switchMapTransformer(map));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 354,
+          "column": 9
+        },
+        "assert": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");Map\u003cString, Transformer\u003cString, String\u003e\u003e map \u003d new HashMap\u003c\u003e();map.put(\"HELLO\", a);map.put(\"THERE\", b);assertEquals(null, TransformerUtils.switchMapTransformer(map).transform(\"WELL\"));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");Map\u003cString, Transformer\u003cString, String\u003e\u003e map \u003d new HashMap\u003c\u003e();map.put(\"HELLO\", a);map.put(\"THERE\", b);assertEquals(null, TransformerUtils.switchMapTransformer(map).transform(\"WELL\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 372,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.switchMapTransformer(null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");try {\n    TransformerUtils.switchMapTransformer(null);\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 362,
+          "column": 9
+        },
+        "assert": "assertEquals(\"A\", TransformerUtils.switchMapTransformer(map).transform(\"HELLO\"));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");Map\u003cString, Transformer\u003cString, String\u003e\u003e map \u003d new HashMap\u003c\u003e();map.put(\"HELLO\", a);map.put(\"THERE\", b);assertEquals(\"A\", TransformerUtils.switchMapTransformer(map).transform(\"HELLO\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 363,
+          "column": 9
+        },
+        "assert": "assertEquals(\"B\", TransformerUtils.switchMapTransformer(map).transform(\"THERE\"));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");Map\u003cString, Transformer\u003cString, String\u003e\u003e map \u003d new HashMap\u003c\u003e();map.put(\"HELLO\", a);map.put(\"THERE\", b);assertEquals(\"B\", TransformerUtils.switchMapTransformer(map).transform(\"THERE\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 364,
+          "column": 9
+        },
+        "assert": "map.put(null, c);assertEquals(\"C\", TransformerUtils.switchMapTransformer(map).transform(\"WELL\"));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");Map\u003cString, Transformer\u003cString, String\u003e\u003e map \u003d new HashMap\u003c\u003e();map.put(\"HELLO\", a);map.put(\"THERE\", b);map.put(null, c);assertEquals(\"C\", TransformerUtils.switchMapTransformer(map).transform(\"WELL\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 367,
+          "column": 9
+        },
+        "assert": "assertSame(ConstantTransformer.NULL_INSTANCE, TransformerUtils.switchMapTransformer(new HashMap\u003cObject, Transformer\u003cObject, Object\u003e\u003e()));",
+        "slice": "final Transformer\u003cString, String\u003e a \u003d TransformerUtils.constantTransformer(\"A\");final Transformer\u003cString, String\u003e b \u003d TransformerUtils.constantTransformer(\"B\");final Transformer\u003cString, String\u003e c \u003d TransformerUtils.constantTransformer(\"C\");assertSame(ConstantTransformer.NULL_INSTANCE, TransformerUtils.switchMapTransformer(new HashMap\u003cObject, Transformer\u003cObject, Object\u003e\u003e()));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testInvokerTransformer()",
+    "annotation": "@Test",
+    "code": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();assertEquals(Integer.valueOf(0), TransformerUtils.invokerTransformer(\"size\").transform(list));list.add(new Object());assertEquals(Integer.valueOf(1), TransformerUtils.invokerTransformer(\"size\").transform(list));assertEquals(null, TransformerUtils.invokerTransformer(\"size\").transform(null));try {\n    TransformerUtils.invokerTransformer(null);\n    fail();\n} catch (final NullPointerException ex) {\n}try {\n    TransformerUtils.invokerTransformer(\"noSuchMethod\").transform(new Object());\n    fail();\n} catch (final FunctorException ex) {\n}",
+    "offset": [
+      {
+        "line": 383,
+        "column": 35
+      },
+      {
+        "line": 384,
+        "column": 9
+      },
+      {
+        "line": 384,
+        "column": 22
+      },
+      {
+        "line": 384,
+        "column": 42
+      },
+      {
+        "line": 384,
+        "column": 42
+      },
+      {
+        "line": 385,
+        "column": 9
+      },
+      {
+        "line": 385,
+        "column": 18
+      },
+      {
+        "line": 386,
+        "column": 9
+      },
+      {
+        "line": 386,
+        "column": 22
+      },
+      {
+        "line": 386,
+        "column": 42
+      },
+      {
+        "line": 386,
+        "column": 42
+      },
+      {
+        "line": 387,
+        "column": 9
+      },
+      {
+        "line": 387,
+        "column": 28
+      },
+      {
+        "line": 387,
+        "column": 28
+      },
+      {
+        "line": 390,
+        "column": 13
+      },
+      {
+        "line": 391,
+        "column": 13
+      },
+      {
+        "line": 394,
+        "column": 13
+      },
+      {
+        "line": 394,
+        "column": 13
+      },
+      {
+        "line": 394,
+        "column": 75
+      },
+      {
+        "line": 395,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 385,
+          "column": 9
+        },
+        "assert": "list.add(new Object());assertEquals(Integer.valueOf(1), TransformerUtils.invokerTransformer(\"size\").transform(list));",
+        "slice": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();list.add(new Object());assertEquals(Integer.valueOf(1), TransformerUtils.invokerTransformer(\"size\").transform(list));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 387,
+          "column": 9
+        },
+        "assert": "assertEquals(null, TransformerUtils.invokerTransformer(\"size\").transform(null));",
+        "slice": "assertEquals(null, TransformerUtils.invokerTransformer(\"size\").transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 389,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.invokerTransformer(null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "try {\n    TransformerUtils.invokerTransformer(null);\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 393,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.invokerTransformer(\"noSuchMethod\").transform(new Object());\n    fail();\n} catch (final FunctorException ex) {\n}",
+        "slice": "try {\n    TransformerUtils.invokerTransformer(\"noSuchMethod\").transform(new Object());\n    fail();\n} catch (final FunctorException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 383,
+          "column": 9
+        },
+        "assert": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();assertEquals(Integer.valueOf(0), TransformerUtils.invokerTransformer(\"size\").transform(list));",
+        "slice": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();assertEquals(Integer.valueOf(0), TransformerUtils.invokerTransformer(\"size\").transform(list));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testInvokerTransformer2()",
+    "annotation": "@Test",
+    "code": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();assertEquals(Boolean.FALSE, TransformerUtils.invokerTransformer(\"contains\", new Class[] { Object.class }, new Object[] { cString }).transform(list));list.add(cString);assertEquals(Boolean.TRUE, TransformerUtils.invokerTransformer(\"contains\", new Class[] { Object.class }, new Object[] { cString }).transform(list));assertEquals(null, TransformerUtils.invokerTransformer(\"contains\", new Class[] { Object.class }, new Object[] { cString }).transform(null));try {\n    TransformerUtils.invokerTransformer(null, null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}try {\n    TransformerUtils.invokerTransformer(\"noSuchMethod\", new Class[] { Object.class }, new Object[] { cString }).transform(new Object());\n    fail();\n} catch (final FunctorException ex) {\n}try {\n    TransformerUtils.invokerTransformer(\"badArgs\", null, new Object[] { cString });\n    fail();\n} catch (final IllegalArgumentException ex) {\n}try {\n    TransformerUtils.invokerTransformer(\"badArgs\", new Class[] { Object.class }, null);\n    fail();\n} catch (final IllegalArgumentException ex) {\n}try {\n    TransformerUtils.invokerTransformer(\"badArgs\", new Class[] {}, new Object[] { cString });\n    fail();\n} catch (final IllegalArgumentException ex) {\n}",
+    "offset": [
+      {
+        "line": 404,
+        "column": 35
+      },
+      {
+        "line": 405,
+        "column": 9
+      },
+      {
+        "line": 405,
+        "column": 37
+      },
+      {
+        "line": 405,
+        "column": 37
+      },
+      {
+        "line": 407,
+        "column": 9
+      },
+      {
+        "line": 408,
+        "column": 9
+      },
+      {
+        "line": 408,
+        "column": 36
+      },
+      {
+        "line": 408,
+        "column": 36
+      },
+      {
+        "line": 410,
+        "column": 9
+      },
+      {
+        "line": 410,
+        "column": 28
+      },
+      {
+        "line": 410,
+        "column": 28
+      },
+      {
+        "line": 414,
+        "column": 13
+      },
+      {
+        "line": 415,
+        "column": 13
+      },
+      {
+        "line": 418,
+        "column": 13
+      },
+      {
+        "line": 418,
+        "column": 13
+      },
+      {
+        "line": 419,
+        "column": 57
+      },
+      {
+        "line": 420,
+        "column": 13
+      },
+      {
+        "line": 423,
+        "column": 13
+      },
+      {
+        "line": 424,
+        "column": 13
+      },
+      {
+        "line": 427,
+        "column": 13
+      },
+      {
+        "line": 428,
+        "column": 13
+      },
+      {
+        "line": 431,
+        "column": 13
+      },
+      {
+        "line": 432,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 417,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.invokerTransformer(\"noSuchMethod\", new Class[] { Object.class }, new Object[] { cString }).transform(new Object());\n    fail();\n} catch (final FunctorException ex) {\n}",
+        "slice": "try {\n    TransformerUtils.invokerTransformer(\"noSuchMethod\", new Class[] { Object.class }, new Object[] { cString }).transform(new Object());\n    fail();\n} catch (final FunctorException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 404,
+          "column": 9
+        },
+        "assert": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();assertEquals(Boolean.FALSE, TransformerUtils.invokerTransformer(\"contains\", new Class[] { Object.class }, new Object[] { cString }).transform(list));",
+        "slice": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();assertEquals(Boolean.FALSE, TransformerUtils.invokerTransformer(\"contains\", new Class[] { Object.class }, new Object[] { cString }).transform(list));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 422,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.invokerTransformer(\"badArgs\", null, new Object[] { cString });\n    fail();\n} catch (final IllegalArgumentException ex) {\n}",
+        "slice": "try {\n    TransformerUtils.invokerTransformer(\"badArgs\", null, new Object[] { cString });\n    fail();\n} catch (final IllegalArgumentException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 407,
+          "column": 9
+        },
+        "assert": "list.add(cString);assertEquals(Boolean.TRUE, TransformerUtils.invokerTransformer(\"contains\", new Class[] { Object.class }, new Object[] { cString }).transform(list));",
+        "slice": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();list.add(cString);assertEquals(Boolean.TRUE, TransformerUtils.invokerTransformer(\"contains\", new Class[] { Object.class }, new Object[] { cString }).transform(list));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 410,
+          "column": 9
+        },
+        "assert": "assertEquals(null, TransformerUtils.invokerTransformer(\"contains\", new Class[] { Object.class }, new Object[] { cString }).transform(null));",
+        "slice": "assertEquals(null, TransformerUtils.invokerTransformer(\"contains\", new Class[] { Object.class }, new Object[] { cString }).transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 426,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.invokerTransformer(\"badArgs\", new Class[] { Object.class }, null);\n    fail();\n} catch (final IllegalArgumentException ex) {\n}",
+        "slice": "try {\n    TransformerUtils.invokerTransformer(\"badArgs\", new Class[] { Object.class }, null);\n    fail();\n} catch (final IllegalArgumentException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 413,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.invokerTransformer(null, null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "try {\n    TransformerUtils.invokerTransformer(null, null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 430,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.invokerTransformer(\"badArgs\", new Class[] {}, new Object[] { cString });\n    fail();\n} catch (final IllegalArgumentException ex) {\n}",
+        "slice": "try {\n    TransformerUtils.invokerTransformer(\"badArgs\", new Class[] {}, new Object[] { cString });\n    fail();\n} catch (final IllegalArgumentException ex) {\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testStringValueTransformer()",
+    "annotation": "@Test",
+    "code": "assertNotNull(\"StringValueTransformer should NEVER return a null value.\", TransformerUtils.stringValueTransformer().transform(null));assertEquals(\"StringValueTransformer should return \\\"null\\\" when given a null argument.\", \"null\", TransformerUtils.stringValueTransformer().transform(null));assertEquals(\"StringValueTransformer should return toString value\", \"6\", TransformerUtils.stringValueTransformer().transform(Integer.valueOf(6)));",
+    "offset": [
+      {
+        "line": 441,
+        "column": 9
+      },
+      {
+        "line": 442,
+        "column": 12
+      },
+      {
+        "line": 442,
+        "column": 12
+      },
+      {
+        "line": 443,
+        "column": 9
+      },
+      {
+        "line": 444,
+        "column": 13
+      },
+      {
+        "line": 444,
+        "column": 13
+      },
+      {
+        "line": 445,
+        "column": 9
+      },
+      {
+        "line": 446,
+        "column": 13
+      },
+      {
+        "line": 446,
+        "column": 13
+      },
+      {
+        "line": 446,
+        "column": 65
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 441,
+          "column": 9
+        },
+        "assert": "assertNotNull(\"StringValueTransformer should NEVER return a null value.\", TransformerUtils.stringValueTransformer().transform(null));",
+        "slice": "assertNotNull(\"StringValueTransformer should NEVER return a null value.\", TransformerUtils.stringValueTransformer().transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 443,
+          "column": 9
+        },
+        "assert": "assertEquals(\"StringValueTransformer should return \\\"null\\\" when given a null argument.\", \"null\", TransformerUtils.stringValueTransformer().transform(null));",
+        "slice": "assertEquals(\"StringValueTransformer should return \\\"null\\\" when given a null argument.\", \"null\", TransformerUtils.stringValueTransformer().transform(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 445,
+          "column": 9
+        },
+        "assert": "assertEquals(\"StringValueTransformer should return toString value\", \"6\", TransformerUtils.stringValueTransformer().transform(Integer.valueOf(6)));",
+        "slice": "assertEquals(\"StringValueTransformer should return toString value\", \"6\", TransformerUtils.stringValueTransformer().transform(Integer.valueOf(6)));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testInstantiateTransformerNull()",
+    "annotation": "@Test",
+    "code": "try {\n    TransformerUtils.instantiateTransformer(null, new Object[] { \"str\" });\n    fail();\n} catch (final IllegalArgumentException ex) {\n}try {\n    TransformerUtils.instantiateTransformer(new Class[] {}, new Object[] { \"str\" });\n    fail();\n} catch (final IllegalArgumentException ex) {\n}Transformer\u003cClass\u003c?\u003e, Object\u003e trans \u003d TransformerUtils.instantiateTransformer(new Class[] { Long.class }, new Object[] { null });try {\n    trans.transform(String.class);\n    fail();\n} catch (final FunctorException ex) {\n}trans \u003d TransformerUtils.instantiateTransformer();assertEquals(\"\", trans.transform(String.class));trans \u003d TransformerUtils.instantiateTransformer(new Class[] { Long.TYPE }, new Object[] { new Long(1000L) });assertEquals(new Date(1000L), trans.transform(Date.class));",
+    "offset": [
+      {
+        "line": 455,
+        "column": 13
+      },
+      {
+        "line": 456,
+        "column": 13
+      },
+      {
+        "line": 459,
+        "column": 13
+      },
+      {
+        "line": 460,
+        "column": 13
+      },
+      {
+        "line": 463,
+        "column": 47
+      },
+      {
+        "line": 465,
+        "column": 13
+      },
+      {
+        "line": 466,
+        "column": 13
+      },
+      {
+        "line": 469,
+        "column": 17
+      },
+      {
+        "line": 470,
+        "column": 9
+      },
+      {
+        "line": 470,
+        "column": 26
+      },
+      {
+        "line": 472,
+        "column": 17
+      },
+      {
+        "line": 472,
+        "column": 99
+      },
+      {
+        "line": 473,
+        "column": 9
+      },
+      {
+        "line": 473,
+        "column": 22
+      },
+      {
+        "line": 473,
+        "column": 39
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 469,
+          "column": 9
+        },
+        "assert": "trans \u003d TransformerUtils.instantiateTransformer();assertEquals(\"\", trans.transform(String.class));",
+        "slice": "Transformer\u003cClass\u003c?\u003e, Object\u003e trans \u003d TransformerUtils.instantiateTransformer(new Class[] { Long.class }, new Object[] { null });trans \u003d TransformerUtils.instantiateTransformer();assertEquals(\"\", trans.transform(String.class));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 454,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.instantiateTransformer(null, new Object[] { \"str\" });\n    fail();\n} catch (final IllegalArgumentException ex) {\n}",
+        "slice": "try {\n    TransformerUtils.instantiateTransformer(null, new Object[] { \"str\" });\n    fail();\n} catch (final IllegalArgumentException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 472,
+          "column": 9
+        },
+        "assert": "trans \u003d TransformerUtils.instantiateTransformer(new Class[] { Long.TYPE }, new Object[] { new Long(1000L) });assertEquals(new Date(1000L), trans.transform(Date.class));",
+        "slice": "Transformer\u003cClass\u003c?\u003e, Object\u003e trans \u003d TransformerUtils.instantiateTransformer(new Class[] { Long.class }, new Object[] { null });trans \u003d TransformerUtils.instantiateTransformer();trans \u003d TransformerUtils.instantiateTransformer(new Class[] { Long.TYPE }, new Object[] { new Long(1000L) });assertEquals(new Date(1000L), trans.transform(Date.class));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 458,
+          "column": 9
+        },
+        "assert": "try {\n    TransformerUtils.instantiateTransformer(new Class[] {}, new Object[] { \"str\" });\n    fail();\n} catch (final IllegalArgumentException ex) {\n}",
+        "slice": "try {\n    TransformerUtils.instantiateTransformer(new Class[] {}, new Object[] { \"str\" });\n    fail();\n} catch (final IllegalArgumentException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 463,
+          "column": 9
+        },
+        "assert": "Transformer\u003cClass\u003c?\u003e, Object\u003e trans \u003d TransformerUtils.instantiateTransformer(new Class[] { Long.class }, new Object[] { null });try {\n    trans.transform(String.class);\n    fail();\n} catch (final FunctorException ex) {\n}",
+        "slice": "Transformer\u003cClass\u003c?\u003e, Object\u003e trans \u003d TransformerUtils.instantiateTransformer(new Class[] { Long.class }, new Object[] { null });try {\n    trans.transform(String.class);\n    fail();\n} catch (final FunctorException ex) {\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testSingletonPatternInSerialization()",
+    "annotation": "@Test",
+    "code": "final Object[] singletones \u003d new Object[] { ExceptionTransformer.INSTANCE, NOPTransformer.INSTANCE, StringValueTransformer.stringValueTransformer() };for (final Object original : singletones) {\n    TestUtils.assertSameAfterSerialization(\"Singleton pattern broken for \" + original.getClass(), original);\n}",
+    "offset": [
+      {
+        "line": 488,
+        "column": 17
+      },
+      {
+        "line": 492,
+        "column": 13
+      },
+      {
+        "line": 492,
+        "column": 86
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 485,
+          "column": 9
+        },
+        "assert": "final Object[] singletones \u003d new Object[] { ExceptionTransformer.INSTANCE, NOPTransformer.INSTANCE, StringValueTransformer.stringValueTransformer() };for (final Object original : singletones) {\n    TestUtils.assertSameAfterSerialization(\"Singleton pattern broken for \" + original.getClass(), original);\n}",
+        "slice": "final Object[] singletones \u003d new Object[] { ExceptionTransformer.INSTANCE, NOPTransformer.INSTANCE, StringValueTransformer.stringValueTransformer() };for (final Object original : singletones) {\n    TestUtils.assertSameAfterSerialization(\"Singleton pattern broken for \" + original.getClass(), original);\n}"
+      }
+    ]
+  }
+]

@@ -1,0 +1,370 @@
+[
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.clear()",
+    "comment": "\r\n     * Clears all values from the collection.\r\n     *\r\n     * @since 1.0.7\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Clears all values from the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 272,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.clone()",
+    "comment": "\r\n     * Returns a clone of this object.  Keys in the list should be immutable\r\n     * and are not cloned.  Objects in the list are cloned only if they\r\n     * implement {@link PublicCloneable}.\r\n     *\r\n     * @return A clone.\r\n     *\r\n     * @throws CloneNotSupportedException if there is a problem cloning.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a clone of this object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 281,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Keys in the list should be immutable and are not cloned.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 281,
+          "column": 41
+        }
+      },
+      {
+        "sentenceText": "Objects in the list are cloned only if they implement {@link PublicCloneable}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 282,
+          "column": 29
+        }
+      },
+      {
+        "sentenceText": "@return A clone.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 285,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws CloneNotSupportedException if there is a problem cloning.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 287,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.getKey(int)",
+    "comment": "\r\n     * Returns the key at the specified position in the list.\r\n     *\r\n     * @param index  the item index (zero-based).\r\n     *\r\n     * @return The row key.\r\n     *\r\n     * @throws IndexOutOfBoundsException if \u003ccode\u003eitem\u003c/code\u003e is out of bounds.\r\n     *\r\n     * @see #getIndex(Comparable)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the key at the specified position in the list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 100,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The row key.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 104,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IndexOutOfBoundsException if \u003ccode\u003eitem\u003c/code\u003e is out of bounds.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 106,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.addObject(java.lang.Comparable, java.lang.Object)",
+    "comment": "\r\n     * Adds a new object to the collection, or overwrites an existing object.\r\n     * This is the same as the {@link #setObject(Comparable, Object)} method.\r\n     *\r\n     * @param key  the key.\r\n     * @param object  the object.\r\n     *\r\n     * @see #getObject(Comparable)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Adds a new object to the collection, or overwrites an existing object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 177,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This is the same as the {@link #setObject(Comparable, Object)} method.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 178,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.KeyedObjects()",
+    "comment": "\r\n     * Creates a new collection (initially empty).\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a new collection (initially empty).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 66,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.getIndex(java.lang.Comparable)",
+    "comment": "\r\n     * Returns the index for a given key, or \u003ccode\u003e-1\u003c/code\u003e.\r\n     *\r\n     * @param key  the key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     *\r\n     * @return The index, or \u003ccode\u003e-1\u003c/code\u003e if the key is unrecognised.\r\n     *\r\n     * @see #getKey(int)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the index for a given key, or \u003ccode\u003e-1\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 120,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The index, or \u003ccode\u003e-1\u003c/code\u003e if the key is unrecognised.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 124,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.getObject(java.lang.Comparable)",
+    "comment": "\r\n     * Returns the object for a given key. If the key is not recognised, the\r\n     * method should return \u003ccode\u003enull\u003c/code\u003e.\r\n     *\r\n     * @param key  the key.\r\n     *\r\n     * @return The object (possibly \u003ccode\u003enull\u003c/code\u003e).\r\n     *\r\n     * @see #addObject(Comparable, Object)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the object for a given key.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 158,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the key is not recognised, the method should return \u003ccode\u003enull\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 158,
+          "column": 44
+        }
+      },
+      {
+        "sentenceText": "@return The object (possibly \u003ccode\u003enull\u003c/code\u003e).",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 163,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.setObject(java.lang.Comparable, java.lang.Object)",
+    "comment": "\r\n     * Replaces an existing object, or adds a new object to the collection.\r\n     * This is the same as the {@link #addObject(Comparable, Object)}\r\n     * method.\r\n     *\r\n     * @param key  the key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param object  the object.\r\n     *\r\n     * @see #getObject(Comparable)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Replaces an existing object, or adds a new object to the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 190,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This is the same as the {@link #addObject(Comparable, Object)} method.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 191,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.insertValue(int, java.lang.Comparable, java.lang.Object)",
+    "comment": "\r\n     * Inserts a new value at the specified position in the dataset or, if\r\n     * there is an existing item with the specified key, updates the value\r\n     * for that item and moves it to the specified position.\r\n     *\r\n     * @param position  the position (in the range \u003ccode\u003e0\u003c/code\u003e to\r\n     *                  \u003ccode\u003egetItemCount()\u003c/code\u003e).\r\n     * @param key  the key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param value  the value (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     *\r\n     * @since 1.0.7\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Inserts a new value at the specified position in the dataset or, if there is an existing item with the specified key, updates the value for that item and moves it to the specified position.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 212,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.removeValue(java.lang.Comparable)",
+    "comment": "\r\n     * Removes a value from the collection.\r\n     *\r\n     * @param key  the key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     *\r\n     * @see #removeValue(int)\r\n     *\r\n     * @throws UnknownKeyException if the key is not recognised.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Removes a value from the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 253,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws UnknownKeyException if the key is not recognised.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 259,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.hashCode()",
+    "comment": "\r\n     * Returns a hash code.\r\n     *\r\n     * @return A hash code.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a hash code.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 347,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A hash code.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 349,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.getObject(int)",
+    "comment": "\r\n     * Returns an object from the list.\r\n     *\r\n     * @param item  the item index (zero-based).\r\n     *\r\n     * @return The object (possibly \u003ccode\u003enull\u003c/code\u003e).\r\n     *\r\n     * @throws IndexOutOfBoundsException if \u003ccode\u003eitem\u003c/code\u003e is out of bounds.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns an object from the list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 82,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The object (possibly \u003ccode\u003enull\u003c/code\u003e).",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 86,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IndexOutOfBoundsException if \u003ccode\u003eitem\u003c/code\u003e is out of bounds.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 88,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.equals(java.lang.Object)",
+    "comment": "\r\n     * Tests this object for equality with an arbitrary object.\r\n     *\r\n     * @param obj  the object (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     *\r\n     * @return A boolean.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Tests this object for equality with an arbitrary object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 302,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A boolean.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 306,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.getItemCount()",
+    "comment": "\r\n     * Returns the number of items (values) in the collection.\r\n     *\r\n     * @return The item count.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the number of items (values) in the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 73,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The item count.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 75,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.getKeys()",
+    "comment": "\r\n     * Returns a list containing all the keys in the list.\r\n     *\r\n     * @return The keys (never \u003ccode\u003enull\u003c/code\u003e).\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a list containing all the keys in the list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 143,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The keys (never \u003ccode\u003enull\u003c/code\u003e).",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 145,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects.removeValue(int)",
+    "comment": "\r\n     * Removes a value from the collection.\r\n     *\r\n     * @param index  the index of the item to remove.\r\n     *\r\n     * @see #removeValue(Comparable)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Removes a value from the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 242,
+          "column": 8
+        }
+      }
+    ]
+  }
+]

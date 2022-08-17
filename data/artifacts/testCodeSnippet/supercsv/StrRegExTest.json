@@ -1,0 +1,205 @@
+[
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrRegExTest.testValidInput()",
+    "annotation": "@Test",
+    "code": "String input \u003d \"$123.45\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));assertEquals(input, processorChain.execute(input, ANONYMOUS_CSVCONTEXT));",
+    "offset": [
+      {
+        "line": 62,
+        "column": 3
+      },
+      {
+        "line": 62,
+        "column": 23
+      },
+      {
+        "line": 63,
+        "column": 3
+      },
+      {
+        "line": 63,
+        "column": 23
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 61,
+          "column": 3
+        },
+        "assert": "String input \u003d \"$123.45\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"$123.45\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 63,
+          "column": 3
+        },
+        "assert": "assertEquals(input, processorChain.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"$123.45\";assertEquals(input, processorChain.execute(input, ANONYMOUS_CSVCONTEXT));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrRegExTest.testInvalidInput()",
+    "annotation": "@Test",
+    "code": "String input \u003d \"12345\";try {\n    processor.execute(input, ANONYMOUS_CSVCONTEXT);\n    fail(\"should have thrown SuperCsvConstraintViolationException\");\n} catch (SuperCsvConstraintViolationException e) {\n    // exception msg should contain registered message\n    assertTrue(e.getMessage().contains(MSG));\n}",
+    "offset": [
+      {
+        "line": 73,
+        "column": 4
+      },
+      {
+        "line": 74,
+        "column": 4
+      },
+      {
+        "line": 78,
+        "column": 4
+      },
+      {
+        "line": 78,
+        "column": 15
+      },
+      {
+        "line": 78,
+        "column": 15
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 71,
+          "column": 3
+        },
+        "assert": "String input \u003d \"12345\";try {\n    processor.execute(input, ANONYMOUS_CSVCONTEXT);\n    fail(\"should have thrown SuperCsvConstraintViolationException\");\n} catch (SuperCsvConstraintViolationException e) {\n    // exception msg should contain registered message\n    assertTrue(e.getMessage().contains(MSG));\n}",
+        "slice": "String input \u003d \"12345\";try {\n    processor.execute(input, ANONYMOUS_CSVCONTEXT);\n    fail(\"should have thrown SuperCsvConstraintViolationException\");\n} catch (SuperCsvConstraintViolationException e) {\n    // exception msg should contain registered message\n    assertTrue(e.getMessage().contains(MSG));\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrRegExTest.testInvalidInputWithNoMessage()",
+    "annotation": "@Test",
+    "code": "// only whitespace\nprocessor \u003d new StrRegEx(\"\\\\s\");String input \u003d \"12345\";try {\n    processor.execute(input, ANONYMOUS_CSVCONTEXT);\n    fail(\"should have thrown SuperCsvConstraintViolationException\");\n} catch (SuperCsvConstraintViolationException e) {\n    // exception msg should not contain the registered message (it\u0027s a different regex)\n    assertFalse(e.getMessage().contains(MSG));\n}",
+    "offset": [
+      {
+        "line": 87,
+        "column": 15
+      },
+      {
+        "line": 90,
+        "column": 4
+      },
+      {
+        "line": 91,
+        "column": 4
+      },
+      {
+        "line": 95,
+        "column": 4
+      },
+      {
+        "line": 95,
+        "column": 16
+      },
+      {
+        "line": 95,
+        "column": 16
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 87,
+          "column": 3
+        },
+        "assert": "// only whitespace\nprocessor \u003d new StrRegEx(\"\\\\s\");String input \u003d \"12345\";try {\n    processor.execute(input, ANONYMOUS_CSVCONTEXT);\n    fail(\"should have thrown SuperCsvConstraintViolationException\");\n} catch (SuperCsvConstraintViolationException e) {\n    // exception msg should not contain the registered message (it\u0027s a different regex)\n    assertFalse(e.getMessage().contains(MSG));\n}",
+        "slice": "// only whitespace\nprocessor \u003d new StrRegEx(\"\\\\s\");String input \u003d \"12345\";try {\n    processor.execute(input, ANONYMOUS_CSVCONTEXT);\n    fail(\"should have thrown SuperCsvConstraintViolationException\");\n} catch (SuperCsvConstraintViolationException e) {\n    // exception msg should not contain the registered message (it\u0027s a different regex)\n    assertFalse(e.getMessage().contains(MSG));\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrRegExTest.testWithNullRegex()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "new StrRegEx(null);",
+    "offset": [
+      {
+        "line": 104,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 104,
+          "column": 3
+        },
+        "assert": "new StrRegEx(null);",
+        "slice": "new StrRegEx(null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrRegExTest.testWithEmptyRegex()",
+    "annotation": "@Test(expected \u003d IllegalArgumentException.class)",
+    "code": "new StrRegEx(\"\");",
+    "offset": [
+      {
+        "line": 112,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 112,
+          "column": 3
+        },
+        "assert": "new StrRegEx(\"\");",
+        "slice": "new StrRegEx(\"\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrRegExTest.testWithInvalidRegex()",
+    "annotation": "@Test(expected \u003d PatternSyntaxException.class)",
+    "code": "new StrRegEx(\"*****\");",
+    "offset": [
+      {
+        "line": 120,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 120,
+          "column": 3
+        },
+        "assert": "new StrRegEx(\"*****\");",
+        "slice": "new StrRegEx(\"*****\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrRegExTest.testWithNull()",
+    "annotation": "@Test(expected \u003d SuperCsvCellProcessorException.class)",
+    "code": "processor.execute(null, ANONYMOUS_CSVCONTEXT);",
+    "offset": [
+      {
+        "line": 128,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 128,
+          "column": 3
+        },
+        "assert": "processor.execute(null, ANONYMOUS_CSVCONTEXT);",
+        "slice": "processor.execute(null, ANONYMOUS_CSVCONTEXT);"
+      }
+    ]
+  }
+]

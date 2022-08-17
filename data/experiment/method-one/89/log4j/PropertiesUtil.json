@@ -1,0 +1,82 @@
+[
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getStringProperty(java.lang.String)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testNonStringSystemProperties()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 364,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 99,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.extractSubset(java.util.Properties, java.lang.String)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testExtractSubset()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 517,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 47,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.PropertiesUtil(java.util.Properties)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testNonStringSystemProperties()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 59,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 99,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getCharsetProperty(java.lang.String)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testGetCharsetProperty()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 179,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 80,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.partitionOnCommonPrefixes(java.util.Properties)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testPartitionOnCommonPrefix()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 556,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 59,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

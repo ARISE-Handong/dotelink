@@ -1,0 +1,34 @@
+[
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findSetter(java.lang.Object, java.lang.String, java.lang.Class\u003c?\u003e)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithMethodOfSameName()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 146,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 133,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findGetter(java.lang.Object, java.lang.String)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindAlternateBooleanGetter()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 70,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 83,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

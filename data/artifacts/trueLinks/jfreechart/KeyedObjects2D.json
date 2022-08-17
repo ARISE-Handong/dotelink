@@ -1,0 +1,80 @@
+[
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.getObject(java.lang.Comparable, java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testGetValueByKey()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 216,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 182,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 216,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 200,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 216,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 173,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 216,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 191,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.removeRow(java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testRemoveRowByKey()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 326,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.removeColumn(java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testRemoveColumnByKey()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 395,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 359,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

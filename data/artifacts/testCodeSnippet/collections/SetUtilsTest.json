@@ -1,0 +1,1570 @@
+[
+  {
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.difference()",
+    "annotation": "@Test",
+    "code": "final SetView\u003cInteger\u003e set \u003d SetUtils.difference(setA, setB);assertEquals(2, set.size());assertTrue(set.contains(1));assertTrue(set.contains(2));for (final Integer i : setB) {\n    assertFalse(set.contains(i));\n}final Set\u003cInteger\u003e set2 \u003d SetUtils.difference(setA, SetUtils.\u003cInteger\u003eemptySet());assertEquals(setA, set2);try {\n    SetUtils.difference(setA, null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}try {\n    SetUtils.difference(null, setA);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 46,
+        "column": 38
+      },
+      {
+        "line": 47,
+        "column": 9
+      },
+      {
+        "line": 47,
+        "column": 25
+      },
+      {
+        "line": 48,
+        "column": 9
+      },
+      {
+        "line": 48,
+        "column": 20
+      },
+      {
+        "line": 49,
+        "column": 9
+      },
+      {
+        "line": 49,
+        "column": 20
+      },
+      {
+        "line": 51,
+        "column": 13
+      },
+      {
+        "line": 51,
+        "column": 25
+      },
+      {
+        "line": 54,
+        "column": 35
+      },
+      {
+        "line": 54,
+        "column": 61
+      },
+      {
+        "line": 55,
+        "column": 9
+      },
+      {
+        "line": 58,
+        "column": 13
+      },
+      {
+        "line": 59,
+        "column": 13
+      },
+      {
+        "line": 65,
+        "column": 13
+      },
+      {
+        "line": 66,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 48,
+          "column": 9
+        },
+        "assert": "assertTrue(set.contains(1));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.difference(setA, setB);assertTrue(set.contains(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 64,
+          "column": 9
+        },
+        "assert": "try {\n    SetUtils.difference(null, setA);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.difference(setA, setB);final Set\u003cInteger\u003e set2 \u003d SetUtils.difference(setA, SetUtils.\u003cInteger\u003eemptySet());try {\n    SetUtils.difference(null, setA);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 49,
+          "column": 9
+        },
+        "assert": "assertTrue(set.contains(2));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.difference(setA, setB);assertTrue(set.contains(2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 50,
+          "column": 9
+        },
+        "assert": "for (final Integer i : setB) {\n    assertFalse(set.contains(i));\n}",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.difference(setA, setB);for (final Integer i : setB) {\n    assertFalse(set.contains(i));\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 54,
+          "column": 9
+        },
+        "assert": "final Set\u003cInteger\u003e set2 \u003d SetUtils.difference(setA, SetUtils.\u003cInteger\u003eemptySet());assertEquals(setA, set2);",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.difference(setA, setB);final Set\u003cInteger\u003e set2 \u003d SetUtils.difference(setA, SetUtils.\u003cInteger\u003eemptySet());assertEquals(setA, set2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 57,
+          "column": 9
+        },
+        "assert": "try {\n    SetUtils.difference(setA, null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.difference(setA, setB);final Set\u003cInteger\u003e set2 \u003d SetUtils.difference(setA, SetUtils.\u003cInteger\u003eemptySet());try {\n    SetUtils.difference(setA, null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 46,
+          "column": 9
+        },
+        "assert": "final SetView\u003cInteger\u003e set \u003d SetUtils.difference(setA, setB);assertEquals(2, set.size());",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.difference(setA, setB);assertEquals(2, set.size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.disjunction()",
+    "annotation": "@Test",
+    "code": "final SetView\u003cInteger\u003e set \u003d SetUtils.disjunction(setA, setB);assertEquals(4, set.size());assertTrue(set.contains(1));assertTrue(set.contains(2));assertTrue(set.contains(6));assertTrue(set.contains(7));assertFalse(set.contains(3));assertFalse(set.contains(4));assertFalse(set.contains(5));final Set\u003cInteger\u003e set2 \u003d SetUtils.disjunction(setA, SetUtils.\u003cInteger\u003eemptySet());assertEquals(setA, set2);try {\n    SetUtils.disjunction(setA, null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}try {\n    SetUtils.disjunction(null, setA);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 74,
+        "column": 38
+      },
+      {
+        "line": 75,
+        "column": 9
+      },
+      {
+        "line": 75,
+        "column": 25
+      },
+      {
+        "line": 76,
+        "column": 9
+      },
+      {
+        "line": 76,
+        "column": 20
+      },
+      {
+        "line": 77,
+        "column": 9
+      },
+      {
+        "line": 77,
+        "column": 20
+      },
+      {
+        "line": 78,
+        "column": 9
+      },
+      {
+        "line": 78,
+        "column": 20
+      },
+      {
+        "line": 79,
+        "column": 9
+      },
+      {
+        "line": 79,
+        "column": 20
+      },
+      {
+        "line": 80,
+        "column": 9
+      },
+      {
+        "line": 80,
+        "column": 21
+      },
+      {
+        "line": 81,
+        "column": 9
+      },
+      {
+        "line": 81,
+        "column": 21
+      },
+      {
+        "line": 82,
+        "column": 9
+      },
+      {
+        "line": 82,
+        "column": 21
+      },
+      {
+        "line": 84,
+        "column": 35
+      },
+      {
+        "line": 84,
+        "column": 62
+      },
+      {
+        "line": 85,
+        "column": 9
+      },
+      {
+        "line": 88,
+        "column": 13
+      },
+      {
+        "line": 89,
+        "column": 13
+      },
+      {
+        "line": 95,
+        "column": 13
+      },
+      {
+        "line": 96,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 80,
+          "column": 9
+        },
+        "assert": "assertFalse(set.contains(3));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.disjunction(setA, setB);assertFalse(set.contains(3));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 81,
+          "column": 9
+        },
+        "assert": "assertFalse(set.contains(4));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.disjunction(setA, setB);assertFalse(set.contains(4));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 82,
+          "column": 9
+        },
+        "assert": "assertFalse(set.contains(5));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.disjunction(setA, setB);assertFalse(set.contains(5));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 84,
+          "column": 9
+        },
+        "assert": "final Set\u003cInteger\u003e set2 \u003d SetUtils.disjunction(setA, SetUtils.\u003cInteger\u003eemptySet());assertEquals(setA, set2);",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.disjunction(setA, setB);final Set\u003cInteger\u003e set2 \u003d SetUtils.disjunction(setA, SetUtils.\u003cInteger\u003eemptySet());assertEquals(setA, set2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 87,
+          "column": 9
+        },
+        "assert": "try {\n    SetUtils.disjunction(setA, null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.disjunction(setA, setB);final Set\u003cInteger\u003e set2 \u003d SetUtils.disjunction(setA, SetUtils.\u003cInteger\u003eemptySet());try {\n    SetUtils.disjunction(setA, null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 74,
+          "column": 9
+        },
+        "assert": "final SetView\u003cInteger\u003e set \u003d SetUtils.disjunction(setA, setB);assertEquals(4, set.size());",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.disjunction(setA, setB);assertEquals(4, set.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 76,
+          "column": 9
+        },
+        "assert": "assertTrue(set.contains(1));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.disjunction(setA, setB);assertTrue(set.contains(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 77,
+          "column": 9
+        },
+        "assert": "assertTrue(set.contains(2));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.disjunction(setA, setB);assertTrue(set.contains(2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 78,
+          "column": 9
+        },
+        "assert": "assertTrue(set.contains(6));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.disjunction(setA, setB);assertTrue(set.contains(6));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 94,
+          "column": 9
+        },
+        "assert": "try {\n    SetUtils.disjunction(null, setA);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.disjunction(setA, setB);final Set\u003cInteger\u003e set2 \u003d SetUtils.disjunction(setA, SetUtils.\u003cInteger\u003eemptySet());try {\n    SetUtils.disjunction(null, setA);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 79,
+          "column": 9
+        },
+        "assert": "assertTrue(set.contains(7));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.disjunction(setA, setB);assertTrue(set.contains(7));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.intersection()",
+    "annotation": "@Test",
+    "code": "final SetView\u003cInteger\u003e set \u003d SetUtils.intersection(setA, setB);assertEquals(3, set.size());assertTrue(set.contains(3));assertTrue(set.contains(4));assertTrue(set.contains(5));assertFalse(set.contains(1));assertFalse(set.contains(2));assertFalse(set.contains(6));assertFalse(set.contains(7));final Set\u003cInteger\u003e set2 \u003d SetUtils.intersection(setA, SetUtils.\u003cInteger\u003eemptySet());assertEquals(SetUtils.\u003cInteger\u003eemptySet(), set2);try {\n    SetUtils.intersection(setA, null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}try {\n    SetUtils.intersection(null, setA);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 104,
+        "column": 38
+      },
+      {
+        "line": 105,
+        "column": 9
+      },
+      {
+        "line": 105,
+        "column": 25
+      },
+      {
+        "line": 106,
+        "column": 9
+      },
+      {
+        "line": 106,
+        "column": 20
+      },
+      {
+        "line": 107,
+        "column": 9
+      },
+      {
+        "line": 107,
+        "column": 20
+      },
+      {
+        "line": 108,
+        "column": 9
+      },
+      {
+        "line": 108,
+        "column": 20
+      },
+      {
+        "line": 109,
+        "column": 9
+      },
+      {
+        "line": 109,
+        "column": 21
+      },
+      {
+        "line": 110,
+        "column": 9
+      },
+      {
+        "line": 110,
+        "column": 21
+      },
+      {
+        "line": 111,
+        "column": 9
+      },
+      {
+        "line": 111,
+        "column": 21
+      },
+      {
+        "line": 112,
+        "column": 9
+      },
+      {
+        "line": 112,
+        "column": 21
+      },
+      {
+        "line": 114,
+        "column": 35
+      },
+      {
+        "line": 114,
+        "column": 63
+      },
+      {
+        "line": 115,
+        "column": 9
+      },
+      {
+        "line": 115,
+        "column": 22
+      },
+      {
+        "line": 118,
+        "column": 13
+      },
+      {
+        "line": 119,
+        "column": 13
+      },
+      {
+        "line": 125,
+        "column": 13
+      },
+      {
+        "line": 126,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 112,
+          "column": 9
+        },
+        "assert": "assertFalse(set.contains(7));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.intersection(setA, setB);assertFalse(set.contains(7));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 114,
+          "column": 9
+        },
+        "assert": "final Set\u003cInteger\u003e set2 \u003d SetUtils.intersection(setA, SetUtils.\u003cInteger\u003eemptySet());assertEquals(SetUtils.\u003cInteger\u003eemptySet(), set2);",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.intersection(setA, setB);final Set\u003cInteger\u003e set2 \u003d SetUtils.intersection(setA, SetUtils.\u003cInteger\u003eemptySet());assertEquals(SetUtils.\u003cInteger\u003eemptySet(), set2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 117,
+          "column": 9
+        },
+        "assert": "try {\n    SetUtils.intersection(setA, null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.intersection(setA, setB);final Set\u003cInteger\u003e set2 \u003d SetUtils.intersection(setA, SetUtils.\u003cInteger\u003eemptySet());try {\n    SetUtils.intersection(setA, null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 104,
+          "column": 9
+        },
+        "assert": "final SetView\u003cInteger\u003e set \u003d SetUtils.intersection(setA, setB);assertEquals(3, set.size());",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.intersection(setA, setB);assertEquals(3, set.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 106,
+          "column": 9
+        },
+        "assert": "assertTrue(set.contains(3));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.intersection(setA, setB);assertTrue(set.contains(3));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 107,
+          "column": 9
+        },
+        "assert": "assertTrue(set.contains(4));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.intersection(setA, setB);assertTrue(set.contains(4));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 108,
+          "column": 9
+        },
+        "assert": "assertTrue(set.contains(5));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.intersection(setA, setB);assertTrue(set.contains(5));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 124,
+          "column": 9
+        },
+        "assert": "try {\n    SetUtils.intersection(null, setA);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.intersection(setA, setB);final Set\u003cInteger\u003e set2 \u003d SetUtils.intersection(setA, SetUtils.\u003cInteger\u003eemptySet());try {\n    SetUtils.intersection(null, setA);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 109,
+          "column": 9
+        },
+        "assert": "assertFalse(set.contains(1));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.intersection(setA, setB);assertFalse(set.contains(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 110,
+          "column": 9
+        },
+        "assert": "assertFalse(set.contains(2));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.intersection(setA, setB);assertFalse(set.contains(2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 111,
+          "column": 9
+        },
+        "assert": "assertFalse(set.contains(6));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.intersection(setA, setB);assertFalse(set.contains(6));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testEmptyIfNull()",
+    "annotation": "@Test",
+    "code": "assertTrue(SetUtils.emptyIfNull(null).isEmpty());final Set\u003cLong\u003e set \u003d new HashSet\u003c\u003e();assertSame(set, SetUtils.emptyIfNull(set));",
+    "offset": [
+      {
+        "line": 151,
+        "column": 9
+      },
+      {
+        "line": 151,
+        "column": 20
+      },
+      {
+        "line": 151,
+        "column": 20
+      },
+      {
+        "line": 153,
+        "column": 31
+      },
+      {
+        "line": 154,
+        "column": 9
+      },
+      {
+        "line": 154,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 151,
+          "column": 9
+        },
+        "assert": "assertTrue(SetUtils.emptyIfNull(null).isEmpty());",
+        "slice": "assertTrue(SetUtils.emptyIfNull(null).isEmpty());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 153,
+          "column": 9
+        },
+        "assert": "final Set\u003cLong\u003e set \u003d new HashSet\u003c\u003e();assertSame(set, SetUtils.emptyIfNull(set));",
+        "slice": "final Set\u003cLong\u003e set \u003d new HashSet\u003c\u003e();assertSame(set, SetUtils.emptyIfNull(set));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testEquals()",
+    "annotation": "@Test",
+    "code": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final Set\u003cString\u003e a \u003d new HashSet\u003c\u003e(data);final Set\u003cString\u003e b \u003d new HashSet\u003c\u003e(data);assertEquals(true, a.equals(b));assertEquals(true, SetUtils.isEqualSet(a, b));a.clear();assertEquals(false, SetUtils.isEqualSet(a, b));assertEquals(false, SetUtils.isEqualSet(a, null));assertEquals(false, SetUtils.isEqualSet(null, b));assertEquals(true, SetUtils.isEqualSet(null, null));",
+    "offset": [
+      {
+        "line": 159,
+        "column": 41
+      },
+      {
+        "line": 161,
+        "column": 31
+      },
+      {
+        "line": 162,
+        "column": 31
+      },
+      {
+        "line": 164,
+        "column": 9
+      },
+      {
+        "line": 164,
+        "column": 28
+      },
+      {
+        "line": 165,
+        "column": 9
+      },
+      {
+        "line": 165,
+        "column": 28
+      },
+      {
+        "line": 166,
+        "column": 9
+      },
+      {
+        "line": 167,
+        "column": 9
+      },
+      {
+        "line": 167,
+        "column": 29
+      },
+      {
+        "line": 168,
+        "column": 9
+      },
+      {
+        "line": 168,
+        "column": 29
+      },
+      {
+        "line": 169,
+        "column": 9
+      },
+      {
+        "line": 169,
+        "column": 29
+      },
+      {
+        "line": 170,
+        "column": 9
+      },
+      {
+        "line": 170,
+        "column": 28
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 165,
+          "column": 9
+        },
+        "assert": "assertEquals(true, SetUtils.isEqualSet(a, b));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final Set\u003cString\u003e a \u003d new HashSet\u003c\u003e(data);final Set\u003cString\u003e b \u003d new HashSet\u003c\u003e(data);assertEquals(true, SetUtils.isEqualSet(a, b));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 166,
+          "column": 9
+        },
+        "assert": "a.clear();assertEquals(false, SetUtils.isEqualSet(a, b));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final Set\u003cString\u003e a \u003d new HashSet\u003c\u003e(data);final Set\u003cString\u003e b \u003d new HashSet\u003c\u003e(data);a.clear();assertEquals(false, SetUtils.isEqualSet(a, b));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 168,
+          "column": 9
+        },
+        "assert": "assertEquals(false, SetUtils.isEqualSet(a, null));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final Set\u003cString\u003e a \u003d new HashSet\u003c\u003e(data);a.clear();assertEquals(false, SetUtils.isEqualSet(a, null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 169,
+          "column": 9
+        },
+        "assert": "assertEquals(false, SetUtils.isEqualSet(null, b));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final Set\u003cString\u003e b \u003d new HashSet\u003c\u003e(data);assertEquals(false, SetUtils.isEqualSet(null, b));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 170,
+          "column": 9
+        },
+        "assert": "assertEquals(true, SetUtils.isEqualSet(null, null));",
+        "slice": "assertEquals(true, SetUtils.isEqualSet(null, null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 159,
+          "column": 9
+        },
+        "assert": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final Set\u003cString\u003e a \u003d new HashSet\u003c\u003e(data);final Set\u003cString\u003e b \u003d new HashSet\u003c\u003e(data);assertEquals(true, a.equals(b));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final Set\u003cString\u003e a \u003d new HashSet\u003c\u003e(data);final Set\u003cString\u003e b \u003d new HashSet\u003c\u003e(data);assertEquals(true, a.equals(b));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testHashCode()",
+    "annotation": "@Test",
+    "code": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final Set\u003cString\u003e a \u003d new HashSet\u003c\u003e(data);final Set\u003cString\u003e b \u003d new HashSet\u003c\u003e(data);assertEquals(true, a.hashCode() \u003d\u003d b.hashCode());assertEquals(true, a.hashCode() \u003d\u003d SetUtils.hashCodeForSet(a));assertEquals(true, b.hashCode() \u003d\u003d SetUtils.hashCodeForSet(b));assertEquals(true, SetUtils.hashCodeForSet(a) \u003d\u003d SetUtils.hashCodeForSet(b));a.clear();assertEquals(false, SetUtils.hashCodeForSet(a) \u003d\u003d SetUtils.hashCodeForSet(b));assertEquals(0, SetUtils.hashCodeForSet(null));",
+    "offset": [
+      {
+        "line": 175,
+        "column": 41
+      },
+      {
+        "line": 177,
+        "column": 31
+      },
+      {
+        "line": 178,
+        "column": 31
+      },
+      {
+        "line": 180,
+        "column": 9
+      },
+      {
+        "line": 180,
+        "column": 28
+      },
+      {
+        "line": 180,
+        "column": 44
+      },
+      {
+        "line": 181,
+        "column": 9
+      },
+      {
+        "line": 181,
+        "column": 28
+      },
+      {
+        "line": 181,
+        "column": 44
+      },
+      {
+        "line": 182,
+        "column": 9
+      },
+      {
+        "line": 182,
+        "column": 28
+      },
+      {
+        "line": 182,
+        "column": 44
+      },
+      {
+        "line": 183,
+        "column": 9
+      },
+      {
+        "line": 183,
+        "column": 28
+      },
+      {
+        "line": 183,
+        "column": 58
+      },
+      {
+        "line": 184,
+        "column": 9
+      },
+      {
+        "line": 185,
+        "column": 9
+      },
+      {
+        "line": 185,
+        "column": 29
+      },
+      {
+        "line": 185,
+        "column": 59
+      },
+      {
+        "line": 186,
+        "column": 9
+      },
+      {
+        "line": 186,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 181,
+          "column": 9
+        },
+        "assert": "assertEquals(true, a.hashCode() \u003d\u003d SetUtils.hashCodeForSet(a));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final Set\u003cString\u003e a \u003d new HashSet\u003c\u003e(data);assertEquals(true, a.hashCode() \u003d\u003d SetUtils.hashCodeForSet(a));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 182,
+          "column": 9
+        },
+        "assert": "assertEquals(true, b.hashCode() \u003d\u003d SetUtils.hashCodeForSet(b));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final Set\u003cString\u003e b \u003d new HashSet\u003c\u003e(data);assertEquals(true, b.hashCode() \u003d\u003d SetUtils.hashCodeForSet(b));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 183,
+          "column": 9
+        },
+        "assert": "assertEquals(true, SetUtils.hashCodeForSet(a) \u003d\u003d SetUtils.hashCodeForSet(b));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final Set\u003cString\u003e a \u003d new HashSet\u003c\u003e(data);final Set\u003cString\u003e b \u003d new HashSet\u003c\u003e(data);assertEquals(true, SetUtils.hashCodeForSet(a) \u003d\u003d SetUtils.hashCodeForSet(b));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 184,
+          "column": 9
+        },
+        "assert": "a.clear();assertEquals(false, SetUtils.hashCodeForSet(a) \u003d\u003d SetUtils.hashCodeForSet(b));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final Set\u003cString\u003e a \u003d new HashSet\u003c\u003e(data);final Set\u003cString\u003e b \u003d new HashSet\u003c\u003e(data);a.clear();assertEquals(false, SetUtils.hashCodeForSet(a) \u003d\u003d SetUtils.hashCodeForSet(b));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 186,
+          "column": 9
+        },
+        "assert": "assertEquals(0, SetUtils.hashCodeForSet(null));",
+        "slice": "assertEquals(0, SetUtils.hashCodeForSet(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 175,
+          "column": 9
+        },
+        "assert": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final Set\u003cString\u003e a \u003d new HashSet\u003c\u003e(data);final Set\u003cString\u003e b \u003d new HashSet\u003c\u003e(data);assertEquals(true, a.hashCode() \u003d\u003d b.hashCode());",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final Set\u003cString\u003e a \u003d new HashSet\u003c\u003e(data);final Set\u003cString\u003e b \u003d new HashSet\u003c\u003e(data);assertEquals(true, a.hashCode() \u003d\u003d b.hashCode());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testHashSet()",
+    "annotation": "@Test",
+    "code": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();assertTrue(\"set is empty\", set1.isEmpty());Set\u003cInteger\u003e set2 \u003d SetUtils.hashSet(1, 2, 2, 3);assertEquals(\"set has 3 elements\", 3, set2.size());assertTrue(\"set contains 1\", set2.contains(1));assertTrue(\"set contains 2\", set2.contains(2));assertTrue(\"set contains 3\", set2.contains(3));Set\u003cString\u003e set3 \u003d SetUtils.hashSet(\"1\", \"2\", \"2\", \"3\");assertEquals(\"set has 3 elements\", 3, set3.size());assertTrue(\"set contains 1\", set3.contains(\"1\"));assertTrue(\"set contains 2\", set3.contains(\"2\"));assertTrue(\"set contains 3\", set3.contains(\"3\"));Set\u003c?\u003e set4 \u003d SetUtils.hashSet(null, null);assertEquals(\"set has 1 element\", 1, set4.size());assertTrue(\"set contains null\", set4.contains(null));Set\u003c?\u003e set5 \u003d SetUtils.hashSet((Object[]) null);assertEquals(\"set is null\", null, set5);",
+    "offset": [
+      {
+        "line": 192,
+        "column": 23
+      },
+      {
+        "line": 193,
+        "column": 9
+      },
+      {
+        "line": 193,
+        "column": 36
+      },
+      {
+        "line": 195,
+        "column": 29
+      },
+      {
+        "line": 196,
+        "column": 9
+      },
+      {
+        "line": 196,
+        "column": 47
+      },
+      {
+        "line": 197,
+        "column": 9
+      },
+      {
+        "line": 197,
+        "column": 38
+      },
+      {
+        "line": 198,
+        "column": 9
+      },
+      {
+        "line": 198,
+        "column": 38
+      },
+      {
+        "line": 199,
+        "column": 9
+      },
+      {
+        "line": 199,
+        "column": 38
+      },
+      {
+        "line": 201,
+        "column": 28
+      },
+      {
+        "line": 202,
+        "column": 9
+      },
+      {
+        "line": 202,
+        "column": 47
+      },
+      {
+        "line": 203,
+        "column": 9
+      },
+      {
+        "line": 203,
+        "column": 38
+      },
+      {
+        "line": 204,
+        "column": 9
+      },
+      {
+        "line": 204,
+        "column": 38
+      },
+      {
+        "line": 205,
+        "column": 9
+      },
+      {
+        "line": 205,
+        "column": 38
+      },
+      {
+        "line": 207,
+        "column": 23
+      },
+      {
+        "line": 208,
+        "column": 9
+      },
+      {
+        "line": 208,
+        "column": 46
+      },
+      {
+        "line": 209,
+        "column": 9
+      },
+      {
+        "line": 209,
+        "column": 41
+      },
+      {
+        "line": 211,
+        "column": 23
+      },
+      {
+        "line": 212,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 192,
+          "column": 9
+        },
+        "assert": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();assertTrue(\"set is empty\", set1.isEmpty());",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();assertTrue(\"set is empty\", set1.isEmpty());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 209,
+          "column": 9
+        },
+        "assert": "assertTrue(\"set contains null\", set4.contains(null));",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.hashSet(1, 2, 2, 3);Set\u003cString\u003e set3 \u003d SetUtils.hashSet(\"1\", \"2\", \"2\", \"3\");Set\u003c?\u003e set4 \u003d SetUtils.hashSet(null, null);assertTrue(\"set contains null\", set4.contains(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 195,
+          "column": 9
+        },
+        "assert": "Set\u003cInteger\u003e set2 \u003d SetUtils.hashSet(1, 2, 2, 3);assertEquals(\"set has 3 elements\", 3, set2.size());",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.hashSet(1, 2, 2, 3);assertEquals(\"set has 3 elements\", 3, set2.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 211,
+          "column": 9
+        },
+        "assert": "Set\u003c?\u003e set5 \u003d SetUtils.hashSet((Object[]) null);assertEquals(\"set is null\", null, set5);",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.hashSet(1, 2, 2, 3);Set\u003cString\u003e set3 \u003d SetUtils.hashSet(\"1\", \"2\", \"2\", \"3\");Set\u003c?\u003e set4 \u003d SetUtils.hashSet(null, null);Set\u003c?\u003e set5 \u003d SetUtils.hashSet((Object[]) null);assertEquals(\"set is null\", null, set5);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 197,
+          "column": 9
+        },
+        "assert": "assertTrue(\"set contains 1\", set2.contains(1));",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.hashSet(1, 2, 2, 3);assertTrue(\"set contains 1\", set2.contains(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 198,
+          "column": 9
+        },
+        "assert": "assertTrue(\"set contains 2\", set2.contains(2));",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.hashSet(1, 2, 2, 3);assertTrue(\"set contains 2\", set2.contains(2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 199,
+          "column": 9
+        },
+        "assert": "assertTrue(\"set contains 3\", set2.contains(3));",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.hashSet(1, 2, 2, 3);assertTrue(\"set contains 3\", set2.contains(3));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 201,
+          "column": 9
+        },
+        "assert": "Set\u003cString\u003e set3 \u003d SetUtils.hashSet(\"1\", \"2\", \"2\", \"3\");assertEquals(\"set has 3 elements\", 3, set3.size());",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.hashSet(1, 2, 2, 3);Set\u003cString\u003e set3 \u003d SetUtils.hashSet(\"1\", \"2\", \"2\", \"3\");assertEquals(\"set has 3 elements\", 3, set3.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 203,
+          "column": 9
+        },
+        "assert": "assertTrue(\"set contains 1\", set3.contains(\"1\"));",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.hashSet(1, 2, 2, 3);Set\u003cString\u003e set3 \u003d SetUtils.hashSet(\"1\", \"2\", \"2\", \"3\");assertTrue(\"set contains 1\", set3.contains(\"1\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 204,
+          "column": 9
+        },
+        "assert": "assertTrue(\"set contains 2\", set3.contains(\"2\"));",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.hashSet(1, 2, 2, 3);Set\u003cString\u003e set3 \u003d SetUtils.hashSet(\"1\", \"2\", \"2\", \"3\");assertTrue(\"set contains 2\", set3.contains(\"2\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 205,
+          "column": 9
+        },
+        "assert": "assertTrue(\"set contains 3\", set3.contains(\"3\"));",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.hashSet(1, 2, 2, 3);Set\u003cString\u003e set3 \u003d SetUtils.hashSet(\"1\", \"2\", \"2\", \"3\");assertTrue(\"set contains 3\", set3.contains(\"3\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 207,
+          "column": 9
+        },
+        "assert": "Set\u003c?\u003e set4 \u003d SetUtils.hashSet(null, null);assertEquals(\"set has 1 element\", 1, set4.size());",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.hashSet(1, 2, 2, 3);Set\u003cString\u003e set3 \u003d SetUtils.hashSet(\"1\", \"2\", \"2\", \"3\");Set\u003c?\u003e set4 \u003d SetUtils.hashSet(null, null);assertEquals(\"set has 1 element\", 1, set4.size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testNewIdentityHashSet()",
+    "annotation": "@Test",
+    "code": "final Set\u003cString\u003e set \u003d SetUtils.newIdentityHashSet();final String a \u003d new String(\"a\");set.add(a);set.add(new String(\"b\"));set.add(a);assertEquals(2, set.size());set.add(new String(\"a\"));assertEquals(3, set.size());set.remove(a);assertEquals(2, set.size());",
+    "offset": [
+      {
+        "line": 217,
+        "column": 33
+      },
+      {
+        "line": 218,
+        "column": 26
+      },
+      {
+        "line": 219,
+        "column": 9
+      },
+      {
+        "line": 220,
+        "column": 9
+      },
+      {
+        "line": 220,
+        "column": 17
+      },
+      {
+        "line": 221,
+        "column": 9
+      },
+      {
+        "line": 223,
+        "column": 9
+      },
+      {
+        "line": 223,
+        "column": 25
+      },
+      {
+        "line": 225,
+        "column": 9
+      },
+      {
+        "line": 225,
+        "column": 17
+      },
+      {
+        "line": 226,
+        "column": 9
+      },
+      {
+        "line": 226,
+        "column": 25
+      },
+      {
+        "line": 228,
+        "column": 9
+      },
+      {
+        "line": 229,
+        "column": 9
+      },
+      {
+        "line": 229,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 225,
+          "column": 9
+        },
+        "assert": "set.add(new String(\"a\"));assertEquals(3, set.size());",
+        "slice": "final Set\u003cString\u003e set \u003d SetUtils.newIdentityHashSet();final String a \u003d new String(\"a\");set.add(a);set.add(new String(\"b\"));set.add(a);set.add(new String(\"a\"));assertEquals(3, set.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 228,
+          "column": 9
+        },
+        "assert": "set.remove(a);assertEquals(2, set.size());",
+        "slice": "final Set\u003cString\u003e set \u003d SetUtils.newIdentityHashSet();final String a \u003d new String(\"a\");set.add(a);set.add(new String(\"b\"));set.add(a);set.add(new String(\"a\"));set.remove(a);assertEquals(2, set.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 217,
+          "column": 9
+        },
+        "assert": "final Set\u003cString\u003e set \u003d SetUtils.newIdentityHashSet();final String a \u003d new String(\"a\");set.add(a);set.add(new String(\"b\"));set.add(a);assertEquals(2, set.size());",
+        "slice": "final Set\u003cString\u003e set \u003d SetUtils.newIdentityHashSet();final String a \u003d new String(\"a\");set.add(a);set.add(new String(\"b\"));set.add(a);assertEquals(2, set.size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testpredicatedSet()",
+    "annotation": "@Test",
+    "code": "final Predicate\u003cObject\u003e predicate \u003d new Predicate\u003cObject\u003e() {\n\n    @Override\n    public boolean evaluate(final Object o) {\n        return o instanceof String;\n    }\n};final Set\u003cObject\u003e set \u003d SetUtils.predicatedSet(new HashSet\u003c\u003e(), predicate);assertTrue(\"returned object should be a PredicatedSet\", set instanceof PredicatedSet);try {\n    SetUtils.predicatedSet(new HashSet\u003c\u003e(), null);\n    fail(\"Expecting NullPointerException for null predicate.\");\n} catch (final NullPointerException ex) {\n    // expected\n}try {\n    SetUtils.predicatedSet(null, predicate);\n    fail(\"Expecting NullPointerException for null set.\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 234,
+        "column": 45
+      },
+      {
+        "line": 240,
+        "column": 33
+      },
+      {
+        "line": 240,
+        "column": 56
+      },
+      {
+        "line": 241,
+        "column": 9
+      },
+      {
+        "line": 243,
+        "column": 13
+      },
+      {
+        "line": 243,
+        "column": 36
+      },
+      {
+        "line": 244,
+        "column": 13
+      },
+      {
+        "line": 249,
+        "column": 13
+      },
+      {
+        "line": 250,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 242,
+          "column": 9
+        },
+        "assert": "try {\n    SetUtils.predicatedSet(new HashSet\u003c\u003e(), null);\n    fail(\"Expecting NullPointerException for null predicate.\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+        "slice": "final Predicate\u003cObject\u003e predicate \u003d new Predicate\u003cObject\u003e() {\n\n    @Override\n    public boolean evaluate(final Object o) {\n        return o instanceof String;\n    }\n};final Set\u003cObject\u003e set \u003d SetUtils.predicatedSet(new HashSet\u003c\u003e(), predicate);try {\n    SetUtils.predicatedSet(new HashSet\u003c\u003e(), null);\n    fail(\"Expecting NullPointerException for null predicate.\");\n} catch (final NullPointerException ex) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 248,
+          "column": 9
+        },
+        "assert": "try {\n    SetUtils.predicatedSet(null, predicate);\n    fail(\"Expecting NullPointerException for null set.\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+        "slice": "final Predicate\u003cObject\u003e predicate \u003d new Predicate\u003cObject\u003e() {\n\n    @Override\n    public boolean evaluate(final Object o) {\n        return o instanceof String;\n    }\n};final Set\u003cObject\u003e set \u003d SetUtils.predicatedSet(new HashSet\u003c\u003e(), predicate);try {\n    SetUtils.predicatedSet(null, predicate);\n    fail(\"Expecting NullPointerException for null set.\");\n} catch (final NullPointerException ex) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 234,
+          "column": 9
+        },
+        "assert": "final Predicate\u003cObject\u003e predicate \u003d new Predicate\u003cObject\u003e() {\n\n    @Override\n    public boolean evaluate(final Object o) {\n        return o instanceof String;\n    }\n};final Set\u003cObject\u003e set \u003d SetUtils.predicatedSet(new HashSet\u003c\u003e(), predicate);assertTrue(\"returned object should be a PredicatedSet\", set instanceof PredicatedSet);",
+        "slice": "final Predicate\u003cObject\u003e predicate \u003d new Predicate\u003cObject\u003e() {\n\n    @Override\n    public boolean evaluate(final Object o) {\n        return o instanceof String;\n    }\n};final Set\u003cObject\u003e set \u003d SetUtils.predicatedSet(new HashSet\u003c\u003e(), predicate);assertTrue(\"returned object should be a PredicatedSet\", set instanceof PredicatedSet);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testUnmodifiableSet()",
+    "annotation": "@Test",
+    "code": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();assertTrue(\"set is empty\", set1.isEmpty());Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);assertEquals(\"set has 3 elements\", 3, set2.size());assertTrue(\"set contains 1\", set2.contains(1));assertTrue(\"set contains 2\", set2.contains(2));assertTrue(\"set contains 3\", set2.contains(3));Set\u003cString\u003e set3 \u003d SetUtils.unmodifiableSet(\"1\", \"2\", \"2\", \"3\");assertEquals(\"set has 3 elements\", 3, set3.size());assertTrue(\"set contains 1\", set3.contains(\"1\"));assertTrue(\"set contains 2\", set3.contains(\"2\"));assertTrue(\"set contains 3\", set3.contains(\"3\"));Set\u003c?\u003e set4 \u003d SetUtils.unmodifiableSet(null, null);assertEquals(\"set has 1 element\", 1, set4.size());assertTrue(\"set contains null\", set4.contains(null));Set\u003c?\u003e set5 \u003d SetUtils.unmodifiableSet((Object[]) null);assertEquals(\"set is null\", null, set5);",
+    "offset": [
+      {
+        "line": 259,
+        "column": 23
+      },
+      {
+        "line": 260,
+        "column": 9
+      },
+      {
+        "line": 260,
+        "column": 36
+      },
+      {
+        "line": 262,
+        "column": 29
+      },
+      {
+        "line": 263,
+        "column": 9
+      },
+      {
+        "line": 263,
+        "column": 47
+      },
+      {
+        "line": 264,
+        "column": 9
+      },
+      {
+        "line": 264,
+        "column": 38
+      },
+      {
+        "line": 265,
+        "column": 9
+      },
+      {
+        "line": 265,
+        "column": 38
+      },
+      {
+        "line": 266,
+        "column": 9
+      },
+      {
+        "line": 266,
+        "column": 38
+      },
+      {
+        "line": 268,
+        "column": 28
+      },
+      {
+        "line": 269,
+        "column": 9
+      },
+      {
+        "line": 269,
+        "column": 47
+      },
+      {
+        "line": 270,
+        "column": 9
+      },
+      {
+        "line": 270,
+        "column": 38
+      },
+      {
+        "line": 271,
+        "column": 9
+      },
+      {
+        "line": 271,
+        "column": 38
+      },
+      {
+        "line": 272,
+        "column": 9
+      },
+      {
+        "line": 272,
+        "column": 38
+      },
+      {
+        "line": 274,
+        "column": 23
+      },
+      {
+        "line": 275,
+        "column": 9
+      },
+      {
+        "line": 275,
+        "column": 46
+      },
+      {
+        "line": 276,
+        "column": 9
+      },
+      {
+        "line": 276,
+        "column": 41
+      },
+      {
+        "line": 278,
+        "column": 23
+      },
+      {
+        "line": 279,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 272,
+          "column": 9
+        },
+        "assert": "assertTrue(\"set contains 3\", set3.contains(\"3\"));",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);Set\u003cString\u003e set3 \u003d SetUtils.unmodifiableSet(\"1\", \"2\", \"2\", \"3\");assertTrue(\"set contains 3\", set3.contains(\"3\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 274,
+          "column": 9
+        },
+        "assert": "Set\u003c?\u003e set4 \u003d SetUtils.unmodifiableSet(null, null);assertEquals(\"set has 1 element\", 1, set4.size());",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);Set\u003cString\u003e set3 \u003d SetUtils.unmodifiableSet(\"1\", \"2\", \"2\", \"3\");Set\u003c?\u003e set4 \u003d SetUtils.unmodifiableSet(null, null);assertEquals(\"set has 1 element\", 1, set4.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 259,
+          "column": 9
+        },
+        "assert": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();assertTrue(\"set is empty\", set1.isEmpty());",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();assertTrue(\"set is empty\", set1.isEmpty());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 276,
+          "column": 9
+        },
+        "assert": "assertTrue(\"set contains null\", set4.contains(null));",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);Set\u003cString\u003e set3 \u003d SetUtils.unmodifiableSet(\"1\", \"2\", \"2\", \"3\");Set\u003c?\u003e set4 \u003d SetUtils.unmodifiableSet(null, null);assertTrue(\"set contains null\", set4.contains(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 262,
+          "column": 9
+        },
+        "assert": "Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);assertEquals(\"set has 3 elements\", 3, set2.size());",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);assertEquals(\"set has 3 elements\", 3, set2.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 278,
+          "column": 9
+        },
+        "assert": "Set\u003c?\u003e set5 \u003d SetUtils.unmodifiableSet((Object[]) null);assertEquals(\"set is null\", null, set5);",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);Set\u003cString\u003e set3 \u003d SetUtils.unmodifiableSet(\"1\", \"2\", \"2\", \"3\");Set\u003c?\u003e set4 \u003d SetUtils.unmodifiableSet(null, null);Set\u003c?\u003e set5 \u003d SetUtils.unmodifiableSet((Object[]) null);assertEquals(\"set is null\", null, set5);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 264,
+          "column": 9
+        },
+        "assert": "assertTrue(\"set contains 1\", set2.contains(1));",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);assertTrue(\"set contains 1\", set2.contains(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        },
+        "assert": "assertTrue(\"set contains 2\", set2.contains(2));",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);assertTrue(\"set contains 2\", set2.contains(2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 266,
+          "column": 9
+        },
+        "assert": "assertTrue(\"set contains 3\", set2.contains(3));",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);assertTrue(\"set contains 3\", set2.contains(3));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 268,
+          "column": 9
+        },
+        "assert": "Set\u003cString\u003e set3 \u003d SetUtils.unmodifiableSet(\"1\", \"2\", \"2\", \"3\");assertEquals(\"set has 3 elements\", 3, set3.size());",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);Set\u003cString\u003e set3 \u003d SetUtils.unmodifiableSet(\"1\", \"2\", \"2\", \"3\");assertEquals(\"set has 3 elements\", 3, set3.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 270,
+          "column": 9
+        },
+        "assert": "assertTrue(\"set contains 1\", set3.contains(\"1\"));",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);Set\u003cString\u003e set3 \u003d SetUtils.unmodifiableSet(\"1\", \"2\", \"2\", \"3\");assertTrue(\"set contains 1\", set3.contains(\"1\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 271,
+          "column": 9
+        },
+        "assert": "assertTrue(\"set contains 2\", set3.contains(\"2\"));",
+        "slice": "Set\u003c?\u003e set1 \u003d SetUtils.unmodifiableSet();Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);Set\u003cString\u003e set3 \u003d SetUtils.unmodifiableSet(\"1\", \"2\", \"2\", \"3\");assertTrue(\"set contains 2\", set3.contains(\"2\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testUnmodifiableSetWrap()",
+    "annotation": "@Test",
+    "code": "Set\u003cInteger\u003e set1 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(set1);assertSame(set1, set2);",
+    "offset": [
+      {
+        "line": 285,
+        "column": 29
+      },
+      {
+        "line": 286,
+        "column": 29
+      },
+      {
+        "line": 287,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        },
+        "assert": "Set\u003cInteger\u003e set1 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(set1);assertSame(set1, set2);",
+        "slice": "Set\u003cInteger\u003e set1 \u003d SetUtils.unmodifiableSet(1, 2, 2, 3);Set\u003cInteger\u003e set2 \u003d SetUtils.unmodifiableSet(set1);assertSame(set1, set2);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.union()",
+    "annotation": "@Test",
+    "code": "final SetView\u003cInteger\u003e set \u003d SetUtils.union(setA, setB);assertEquals(7, set.size());assertTrue(set.containsAll(setA));assertTrue(set.containsAll(setB));final Set\u003cInteger\u003e set2 \u003d SetUtils.union(setA, SetUtils.\u003cInteger\u003eemptySet());assertEquals(setA, set2);try {\n    SetUtils.union(setA, null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}try {\n    SetUtils.union(null, setA);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 292,
+        "column": 38
+      },
+      {
+        "line": 293,
+        "column": 9
+      },
+      {
+        "line": 293,
+        "column": 25
+      },
+      {
+        "line": 294,
+        "column": 9
+      },
+      {
+        "line": 294,
+        "column": 20
+      },
+      {
+        "line": 295,
+        "column": 9
+      },
+      {
+        "line": 295,
+        "column": 20
+      },
+      {
+        "line": 297,
+        "column": 35
+      },
+      {
+        "line": 297,
+        "column": 56
+      },
+      {
+        "line": 298,
+        "column": 9
+      },
+      {
+        "line": 301,
+        "column": 13
+      },
+      {
+        "line": 302,
+        "column": 13
+      },
+      {
+        "line": 308,
+        "column": 13
+      },
+      {
+        "line": 309,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 307,
+          "column": 9
+        },
+        "assert": "try {\n    SetUtils.union(null, setA);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.union(setA, setB);final Set\u003cInteger\u003e set2 \u003d SetUtils.union(setA, SetUtils.\u003cInteger\u003eemptySet());try {\n    SetUtils.union(null, setA);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 292,
+          "column": 9
+        },
+        "assert": "final SetView\u003cInteger\u003e set \u003d SetUtils.union(setA, setB);assertEquals(7, set.size());",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.union(setA, setB);assertEquals(7, set.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 294,
+          "column": 9
+        },
+        "assert": "assertTrue(set.containsAll(setA));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.union(setA, setB);assertTrue(set.containsAll(setA));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 295,
+          "column": 9
+        },
+        "assert": "assertTrue(set.containsAll(setB));",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.union(setA, setB);assertTrue(set.containsAll(setB));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 297,
+          "column": 9
+        },
+        "assert": "final Set\u003cInteger\u003e set2 \u003d SetUtils.union(setA, SetUtils.\u003cInteger\u003eemptySet());assertEquals(setA, set2);",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.union(setA, setB);final Set\u003cInteger\u003e set2 \u003d SetUtils.union(setA, SetUtils.\u003cInteger\u003eemptySet());assertEquals(setA, set2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 300,
+          "column": 9
+        },
+        "assert": "try {\n    SetUtils.union(setA, null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final SetView\u003cInteger\u003e set \u003d SetUtils.union(setA, setB);final Set\u003cInteger\u003e set2 \u003d SetUtils.union(setA, SetUtils.\u003cInteger\u003eemptySet());try {\n    SetUtils.union(setA, null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      }
+    ]
+  }
+]

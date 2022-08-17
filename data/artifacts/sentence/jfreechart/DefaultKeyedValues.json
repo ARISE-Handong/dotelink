@@ -1,0 +1,462 @@
+[
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.insertValue(int, java.lang.Comparable, double)",
+    "comment": "\r\n     * Inserts a new value at the specified position in the dataset or, if\r\n     * there is an existing item with the specified key, updates the value\r\n     * for that item and moves it to the specified position.\r\n     *\r\n     * @param position  the position (in the range 0 to getItemCount()).\r\n     * @param key  the key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param value  the value.\r\n     *\r\n     * @since 1.0.6\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Inserts a new value at the specified position in the dataset or, if there is an existing item with the specified key, updates the value for that item and moves it to the specified position.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 248,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.getItemCount()",
+    "comment": "\r\n     * Returns the number of items (values) in the collection.\r\n     *\r\n     * @return The item count.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the number of items (values) in the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 106,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The item count.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 108,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.addValue(java.lang.Comparable, double)",
+    "comment": "\r\n     * Updates an existing value, or adds a new value to the collection.\r\n     *\r\n     * @param key  the key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param value  the value.\r\n     *\r\n     * @see #addValue(Comparable, Number)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Updates an existing value, or adds a new value to the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 194,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.setValue(java.lang.Comparable, java.lang.Number)",
+    "comment": "\r\n     * Updates an existing value, or adds a new value to the collection.\r\n     *\r\n     * @param key  the key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param value  the value (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Updates an existing value, or adds a new value to the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 228,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.getKeys()",
+    "comment": "\r\n     * Returns the keys for the values in the collection.\r\n     *\r\n     * @return The keys (never \u003ccode\u003enull\u003c/code\u003e).\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the keys for the values in the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 164,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The keys (never \u003ccode\u003enull\u003c/code\u003e).",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 166,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.hashCode()",
+    "comment": "\r\n     * Returns a hash code.\r\n     *\r\n     * @return A hash code.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a hash code.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 448,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A hash code.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 450,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.getIndex(java.lang.Comparable)",
+    "comment": "\r\n     * Returns the index for a given key.\r\n     *\r\n     * @param key  the key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     *\r\n     * @return The index, or \u003ccode\u003e-1\u003c/code\u003e if the key is not recognised.\r\n     *\t\t\t\r\n     * @throws IllegalArgumentException if \u003ccode\u003ekey\u003c/code\u003e is\r\n     *     \u003ccode\u003enull\u003c/code\u003e.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the index for a given key.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 144,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The index, or \u003ccode\u003e-1\u003c/code\u003e if the key is not recognised.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 148,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if \u003ccode\u003ekey\u003c/code\u003e is \u003ccode\u003enull\u003c/code\u003e.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 150,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.clear()",
+    "comment": "\r\n     * Clears all values from the collection.\r\n     *\r\n     * @since 1.0.2\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Clears all values from the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 341,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.insertValue(int, java.lang.Comparable, java.lang.Number)",
+    "comment": "\r\n     * Inserts a new value at the specified position in the dataset or, if\r\n     * there is an existing item with the specified key, updates the value\r\n     * for that item and moves it to the specified position.\r\n     *\r\n     * @param position  the position (in the range 0 to getItemCount()).\r\n     * @param key  the key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param value  the value (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     *\r\n     * @since 1.0.6\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Inserts a new value at the specified position in the dataset or, if there is an existing item with the specified key, updates the value for that item and moves it to the specified position.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 263,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.equals(java.lang.Object)",
+    "comment": "\r\n     * Tests if this object is equal to another.\r\n     *\r\n     * @param obj  the object (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     *\r\n     * @return A boolean.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Tests if this object is equal to another.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 403,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A boolean.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 407,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.DefaultKeyedValues()",
+    "comment": "\r\n     * Creates a new collection (initially empty).\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a new collection (initially empty).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 97,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.getValue(java.lang.Comparable)",
+    "comment": "\r\n     * Returns the value for a given key.\r\n     *\r\n     * @param key  the key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     *\r\n     * @return The value (possibly \u003ccode\u003enull\u003c/code\u003e).\r\n     *\r\n     * @throws UnknownKeyException if the key is not recognised.\r\n     *\r\n     * @see #getValue(int)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the value for a given key.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 174,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The value (possibly \u003ccode\u003enull\u003c/code\u003e).",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 178,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws UnknownKeyException if the key is not recognised.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 180,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.removeValue(int)",
+    "comment": "\r\n     * Removes a value from the collection.\r\n     *\r\n     * @param index  the index of the item to remove (in the range\r\n     *     \u003ccode\u003e0\u003c/code\u003e to \u003ccode\u003egetItemCount() - 1\u003c/code\u003e).\r\n     *\r\n     * @throws IndexOutOfBoundsException if \u003ccode\u003eindex\u003c/code\u003e is not within\r\n     *     the specified range.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Removes a value from the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 308,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IndexOutOfBoundsException if \u003ccode\u003eindex\u003c/code\u003e is not within the specified range.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 313,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.clone()",
+    "comment": "\r\n     * Returns a clone.\r\n     *\r\n     * @return A clone.\r\n     *\r\n     * @throws CloneNotSupportedException  this class will not throw this\r\n     *         exception, but subclasses might.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a clone.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 458,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A clone.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 460,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws CloneNotSupportedException  this class will not throw this exception, but subclasses might.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 462,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.removeValue(java.lang.Comparable)",
+    "comment": "\r\n     * Removes a value from the collection.\r\n     *\r\n     * @param key  the item key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     *\r\n     * @throws IllegalArgumentException if \u003ccode\u003ekey\u003c/code\u003e is\r\n     *     \u003ccode\u003enull\u003c/code\u003e.\r\n     * @throws UnknownKeyException if \u003ccode\u003ekey\u003c/code\u003e is not recognised.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Removes a value from the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 323,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if \u003ccode\u003ekey\u003c/code\u003e is \u003ccode\u003enull\u003c/code\u003e.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws UnknownKeyException if \u003ccode\u003ekey\u003c/code\u003e is not recognised.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 329,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.sortByValues(org.jfree.util.SortOrder)",
+    "comment": "\r\n     * Sorts the items in the list by value.  If the list contains\r\n     * \u003ccode\u003enull\u003c/code\u003e values, they will sort to the end of the list,\r\n     * irrespective of the sort order.\r\n     *\r\n     * @param order  the sort order (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Sorts the items in the list by value.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the list contains \u003ccode\u003enull\u003c/code\u003e values, they will sort to the end of the list, irrespective of the sort order.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 377,
+          "column": 47
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.sortByKeys(org.jfree.util.SortOrder)",
+    "comment": "\r\n     * Sorts the items in the list by key.\r\n     *\r\n     * @param order  the sort order (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Sorts the items in the list by key.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 352,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.addValue(java.lang.Comparable, java.lang.Number)",
+    "comment": "\r\n     * Adds a new value to the collection, or updates an existing value.\r\n     * This method passes control directly to the\r\n     * {@link #setValue(Comparable, Number)} method.\r\n     *\r\n     * @param key  the key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param value  the value (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Adds a new value to the collection, or updates an existing value.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 206,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This method passes control directly to the {@link #setValue(Comparable, Number)} method.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 207,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.setValue(java.lang.Comparable, double)",
+    "comment": "\r\n     * Updates an existing value, or adds a new value to the collection.\r\n     *\r\n     * @param key  the key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param value  the value.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Updates an existing value, or adds a new value to the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 218,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.getKey(int)",
+    "comment": "\r\n     * Returns a key.\r\n     *\r\n     * @param index  the item index (zero-based).\r\n     *\r\n     * @return The row key.\r\n     *\r\n     * @throws IndexOutOfBoundsException if \u003ccode\u003eitem\u003c/code\u003e is out of bounds.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a key.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 130,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The row key.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 134,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IndexOutOfBoundsException if \u003ccode\u003eitem\u003c/code\u003e is out of bounds.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 136,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.rebuildIndex()",
+    "comment": "\r\n     * Rebuilds the key to indexed-position mapping after an positioned insert\r\n     * or a remove operation.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Rebuilds the key to indexed-position mapping after an positioned insert or a remove operation.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 296,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.getValue(int)",
+    "comment": "\r\n     * Returns a value.\r\n     *\r\n     * @param item  the item of interest (zero-based index).\r\n     *\r\n     * @return The value (possibly \u003ccode\u003enull\u003c/code\u003e).\r\n     *\r\n     * @throws IndexOutOfBoundsException if \u003ccode\u003eitem\u003c/code\u003e is out of bounds.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a value.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 116,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The value (possibly \u003ccode\u003enull\u003c/code\u003e).",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 120,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IndexOutOfBoundsException if \u003ccode\u003eitem\u003c/code\u003e is out of bounds.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 122,
+          "column": 8
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,315 @@
+[
+  {
+    "unitTestMethod": "org.apache.logging.log4j.util.StringBuildersTest.trimToMaxSize()",
+    "annotation": "@Test",
+    "code": "final StringBuilder sb \u003d new StringBuilder();final char[] value \u003d new char[4 * 1024];sb.append(value);assertTrue(\"needs trimming\", sb.length() \u003e Constants.MAX_REUSABLE_MESSAGE_SIZE);StringBuilders.trimToMaxSize(sb, Constants.MAX_REUSABLE_MESSAGE_SIZE);assertTrue(\"trimmed OK\", sb.length() \u003c\u003d Constants.MAX_REUSABLE_MESSAGE_SIZE);",
+    "offset": [
+      {
+        "line": 29,
+        "column": 34
+      },
+      {
+        "line": 31,
+        "column": 9
+      },
+      {
+        "line": 33,
+        "column": 9
+      },
+      {
+        "line": 33,
+        "column": 38
+      },
+      {
+        "line": 34,
+        "column": 9
+      },
+      {
+        "line": 35,
+        "column": 9
+      },
+      {
+        "line": 35,
+        "column": 34
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 34,
+          "column": 9
+        },
+        "assert": "StringBuilders.trimToMaxSize(sb, Constants.MAX_REUSABLE_MESSAGE_SIZE);assertTrue(\"trimmed OK\", sb.length() \u003c\u003d Constants.MAX_REUSABLE_MESSAGE_SIZE);",
+        "slice": "final StringBuilder sb \u003d new StringBuilder();final char[] value \u003d new char[4 * 1024];sb.append(value);StringBuilders.trimToMaxSize(sb, Constants.MAX_REUSABLE_MESSAGE_SIZE);assertTrue(\"trimmed OK\", sb.length() \u003c\u003d Constants.MAX_REUSABLE_MESSAGE_SIZE);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 29,
+          "column": 9
+        },
+        "assert": "final StringBuilder sb \u003d new StringBuilder();final char[] value \u003d new char[4 * 1024];sb.append(value);assertTrue(\"needs trimming\", sb.length() \u003e Constants.MAX_REUSABLE_MESSAGE_SIZE);",
+        "slice": "final StringBuilder sb \u003d new StringBuilder();final char[] value \u003d new char[4 * 1024];sb.append(value);assertTrue(\"needs trimming\", sb.length() \u003e Constants.MAX_REUSABLE_MESSAGE_SIZE);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.logging.log4j.util.StringBuildersTest.trimToMaxSizeWithLargeCapacity()",
+    "annotation": "@Test",
+    "code": "final StringBuilder sb \u003d new StringBuilder();final char[] value \u003d new char[4 * 1024];sb.append(value);sb.setLength(0);assertTrue(\"needs trimming\", sb.capacity() \u003e Constants.MAX_REUSABLE_MESSAGE_SIZE);StringBuilders.trimToMaxSize(sb, Constants.MAX_REUSABLE_MESSAGE_SIZE);assertTrue(\"trimmed OK\", sb.capacity() \u003c\u003d Constants.MAX_REUSABLE_MESSAGE_SIZE);",
+    "offset": [
+      {
+        "line": 40,
+        "column": 34
+      },
+      {
+        "line": 42,
+        "column": 9
+      },
+      {
+        "line": 43,
+        "column": 9
+      },
+      {
+        "line": 45,
+        "column": 9
+      },
+      {
+        "line": 45,
+        "column": 38
+      },
+      {
+        "line": 46,
+        "column": 9
+      },
+      {
+        "line": 47,
+        "column": 9
+      },
+      {
+        "line": 47,
+        "column": 34
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 40,
+          "column": 9
+        },
+        "assert": "final StringBuilder sb \u003d new StringBuilder();final char[] value \u003d new char[4 * 1024];sb.append(value);sb.setLength(0);assertTrue(\"needs trimming\", sb.capacity() \u003e Constants.MAX_REUSABLE_MESSAGE_SIZE);",
+        "slice": "final StringBuilder sb \u003d new StringBuilder();final char[] value \u003d new char[4 * 1024];sb.append(value);sb.setLength(0);assertTrue(\"needs trimming\", sb.capacity() \u003e Constants.MAX_REUSABLE_MESSAGE_SIZE);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 46,
+          "column": 9
+        },
+        "assert": "StringBuilders.trimToMaxSize(sb, Constants.MAX_REUSABLE_MESSAGE_SIZE);assertTrue(\"trimmed OK\", sb.capacity() \u003c\u003d Constants.MAX_REUSABLE_MESSAGE_SIZE);",
+        "slice": "final StringBuilder sb \u003d new StringBuilder();final char[] value \u003d new char[4 * 1024];sb.append(value);sb.setLength(0);StringBuilders.trimToMaxSize(sb, Constants.MAX_REUSABLE_MESSAGE_SIZE);assertTrue(\"trimmed OK\", sb.capacity() \u003c\u003d Constants.MAX_REUSABLE_MESSAGE_SIZE);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.logging.log4j.util.StringBuildersTest.escapeJsonCharactersCorrectly()",
+    "annotation": "@Test",
+    "code": "final String jsonValueNotEscaped \u003d \"{\\\"field\\n1\\\":\\\"value_1\\\"}\";final String jsonValueEscaped \u003d \"{\\\\\\\"field\\\\n1\\\\\\\":\\\\\\\"value_1\\\\\\\"}\";StringBuilder sb \u003d new StringBuilder();sb.append(jsonValueNotEscaped);assertEquals(jsonValueNotEscaped, sb.toString());StringBuilders.escapeJson(sb, 0);assertEquals(jsonValueEscaped, sb.toString());sb \u003d new StringBuilder();final String jsonValuePartiallyEscaped \u003d \"{\\\"field\\n1\\\":\\\\\\\"value_1\\\\\\\"}\";sb.append(jsonValueNotEscaped);assertEquals(jsonValueNotEscaped, sb.toString());StringBuilders.escapeJson(sb, 10);assertEquals(jsonValuePartiallyEscaped, sb.toString());",
+    "offset": [
+      {
+        "line": 55,
+        "column": 28
+      },
+      {
+        "line": 56,
+        "column": 9
+      },
+      {
+        "line": 57,
+        "column": 9
+      },
+      {
+        "line": 57,
+        "column": 43
+      },
+      {
+        "line": 58,
+        "column": 9
+      },
+      {
+        "line": 59,
+        "column": 9
+      },
+      {
+        "line": 59,
+        "column": 40
+      },
+      {
+        "line": 61,
+        "column": 14
+      },
+      {
+        "line": 63,
+        "column": 9
+      },
+      {
+        "line": 64,
+        "column": 9
+      },
+      {
+        "line": 64,
+        "column": 43
+      },
+      {
+        "line": 65,
+        "column": 9
+      },
+      {
+        "line": 66,
+        "column": 9
+      },
+      {
+        "line": 66,
+        "column": 49
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 65,
+          "column": 9
+        },
+        "assert": "StringBuilders.escapeJson(sb, 10);assertEquals(jsonValuePartiallyEscaped, sb.toString());",
+        "slice": "final String jsonValueNotEscaped \u003d \"{\\\"field\\n1\\\":\\\"value_1\\\"}\";StringBuilder sb \u003d new StringBuilder();sb.append(jsonValueNotEscaped);StringBuilders.escapeJson(sb, 0);sb \u003d new StringBuilder();final String jsonValuePartiallyEscaped \u003d \"{\\\"field\\n1\\\":\\\\\\\"value_1\\\\\\\"}\";sb.append(jsonValueNotEscaped);StringBuilders.escapeJson(sb, 10);assertEquals(jsonValuePartiallyEscaped, sb.toString());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 52,
+          "column": 9
+        },
+        "assert": "final String jsonValueNotEscaped \u003d \"{\\\"field\\n1\\\":\\\"value_1\\\"}\";final String jsonValueEscaped \u003d \"{\\\\\\\"field\\\\n1\\\\\\\":\\\\\\\"value_1\\\\\\\"}\";StringBuilder sb \u003d new StringBuilder();sb.append(jsonValueNotEscaped);assertEquals(jsonValueNotEscaped, sb.toString());",
+        "slice": "final String jsonValueNotEscaped \u003d \"{\\\"field\\n1\\\":\\\"value_1\\\"}\";final String jsonValueEscaped \u003d \"{\\\\\\\"field\\\\n1\\\\\\\":\\\\\\\"value_1\\\\\\\"}\";StringBuilder sb \u003d new StringBuilder();sb.append(jsonValueNotEscaped);assertEquals(jsonValueNotEscaped, sb.toString());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 58,
+          "column": 9
+        },
+        "assert": "StringBuilders.escapeJson(sb, 0);assertEquals(jsonValueEscaped, sb.toString());",
+        "slice": "final String jsonValueNotEscaped \u003d \"{\\\"field\\n1\\\":\\\"value_1\\\"}\";final String jsonValueEscaped \u003d \"{\\\\\\\"field\\\\n1\\\\\\\":\\\\\\\"value_1\\\\\\\"}\";StringBuilder sb \u003d new StringBuilder();sb.append(jsonValueNotEscaped);StringBuilders.escapeJson(sb, 0);assertEquals(jsonValueEscaped, sb.toString());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 61,
+          "column": 9
+        },
+        "assert": "sb \u003d new StringBuilder();final String jsonValuePartiallyEscaped \u003d \"{\\\"field\\n1\\\":\\\\\\\"value_1\\\\\\\"}\";sb.append(jsonValueNotEscaped);assertEquals(jsonValueNotEscaped, sb.toString());",
+        "slice": "final String jsonValueNotEscaped \u003d \"{\\\"field\\n1\\\":\\\"value_1\\\"}\";StringBuilder sb \u003d new StringBuilder();sb.append(jsonValueNotEscaped);sb \u003d new StringBuilder();final String jsonValuePartiallyEscaped \u003d \"{\\\"field\\n1\\\":\\\\\\\"value_1\\\\\\\"}\";sb.append(jsonValueNotEscaped);assertEquals(jsonValueNotEscaped, sb.toString());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.logging.log4j.util.StringBuildersTest.escapeJsonCharactersISOControl()",
+    "annotation": "@Test",
+    "code": "final String jsonValueNotEscaped \u003d \"{\\\"field\\n1\\\":\\\"value\" + (char) 0x8F + \"_1\\\"}\";final String jsonValueEscaped \u003d \"{\\\\\\\"field\\\\n1\\\\\\\":\\\\\\\"value\\\\u008F_1\\\\\\\"}\";final StringBuilder sb \u003d new StringBuilder();sb.append(jsonValueNotEscaped);assertEquals(jsonValueNotEscaped, sb.toString());StringBuilders.escapeJson(sb, 0);assertEquals(jsonValueEscaped, sb.toString());",
+    "offset": [
+      {
+        "line": 74,
+        "column": 34
+      },
+      {
+        "line": 75,
+        "column": 9
+      },
+      {
+        "line": 76,
+        "column": 9
+      },
+      {
+        "line": 76,
+        "column": 43
+      },
+      {
+        "line": 77,
+        "column": 9
+      },
+      {
+        "line": 78,
+        "column": 9
+      },
+      {
+        "line": 78,
+        "column": 40
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 71,
+          "column": 9
+        },
+        "assert": "final String jsonValueNotEscaped \u003d \"{\\\"field\\n1\\\":\\\"value\" + (char) 0x8F + \"_1\\\"}\";final String jsonValueEscaped \u003d \"{\\\\\\\"field\\\\n1\\\\\\\":\\\\\\\"value\\\\u008F_1\\\\\\\"}\";final StringBuilder sb \u003d new StringBuilder();sb.append(jsonValueNotEscaped);assertEquals(jsonValueNotEscaped, sb.toString());",
+        "slice": "final String jsonValueNotEscaped \u003d \"{\\\"field\\n1\\\":\\\"value\" + (char) 0x8F + \"_1\\\"}\";final String jsonValueEscaped \u003d \"{\\\\\\\"field\\\\n1\\\\\\\":\\\\\\\"value\\\\u008F_1\\\\\\\"}\";final StringBuilder sb \u003d new StringBuilder();sb.append(jsonValueNotEscaped);assertEquals(jsonValueNotEscaped, sb.toString());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 77,
+          "column": 9
+        },
+        "assert": "StringBuilders.escapeJson(sb, 0);assertEquals(jsonValueEscaped, sb.toString());",
+        "slice": "final String jsonValueNotEscaped \u003d \"{\\\"field\\n1\\\":\\\"value\" + (char) 0x8F + \"_1\\\"}\";final String jsonValueEscaped \u003d \"{\\\\\\\"field\\\\n1\\\\\\\":\\\\\\\"value\\\\u008F_1\\\\\\\"}\";final StringBuilder sb \u003d new StringBuilder();sb.append(jsonValueNotEscaped);StringBuilders.escapeJson(sb, 0);assertEquals(jsonValueEscaped, sb.toString());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.logging.log4j.util.StringBuildersTest.escapeXMLCharactersCorrectly()",
+    "annotation": "@Test",
+    "code": "final String xmlValueNotEscaped \u003d \"\u003c\\\"Salt\u0026Peppa\u0027\\\"\u003e\";final String xmlValueEscaped \u003d \"\u0026lt;\u0026quot;Salt\u0026amp;Peppa\u0026apos;\u0026quot;\u0026gt;\";final StringBuilder sb \u003d new StringBuilder();sb.append(xmlValueNotEscaped);assertEquals(xmlValueNotEscaped, sb.toString());StringBuilders.escapeXml(sb, 0);assertEquals(xmlValueEscaped, sb.toString());",
+    "offset": [
+      {
+        "line": 86,
+        "column": 34
+      },
+      {
+        "line": 87,
+        "column": 9
+      },
+      {
+        "line": 88,
+        "column": 9
+      },
+      {
+        "line": 88,
+        "column": 42
+      },
+      {
+        "line": 89,
+        "column": 9
+      },
+      {
+        "line": 90,
+        "column": 9
+      },
+      {
+        "line": 90,
+        "column": 39
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 83,
+          "column": 9
+        },
+        "assert": "final String xmlValueNotEscaped \u003d \"\u003c\\\"Salt\u0026Peppa\u0027\\\"\u003e\";final String xmlValueEscaped \u003d \"\u0026lt;\u0026quot;Salt\u0026amp;Peppa\u0026apos;\u0026quot;\u0026gt;\";final StringBuilder sb \u003d new StringBuilder();sb.append(xmlValueNotEscaped);assertEquals(xmlValueNotEscaped, sb.toString());",
+        "slice": "final String xmlValueNotEscaped \u003d \"\u003c\\\"Salt\u0026Peppa\u0027\\\"\u003e\";final String xmlValueEscaped \u003d \"\u0026lt;\u0026quot;Salt\u0026amp;Peppa\u0026apos;\u0026quot;\u0026gt;\";final StringBuilder sb \u003d new StringBuilder();sb.append(xmlValueNotEscaped);assertEquals(xmlValueNotEscaped, sb.toString());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 89,
+          "column": 9
+        },
+        "assert": "StringBuilders.escapeXml(sb, 0);assertEquals(xmlValueEscaped, sb.toString());",
+        "slice": "final String xmlValueNotEscaped \u003d \"\u003c\\\"Salt\u0026Peppa\u0027\\\"\u003e\";final String xmlValueEscaped \u003d \"\u0026lt;\u0026quot;Salt\u0026amp;Peppa\u0026apos;\u0026quot;\u0026gt;\";final StringBuilder sb \u003d new StringBuilder();sb.append(xmlValueNotEscaped);StringBuilders.escapeXml(sb, 0);assertEquals(xmlValueEscaped, sb.toString());"
+      }
+    ]
+  }
+]

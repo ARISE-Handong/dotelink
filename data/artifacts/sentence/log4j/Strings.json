@@ -1,0 +1,361 @@
+[
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.toRootUpperCase(java.lang.String)",
+    "comment": "\n     * Shorthand for {@code str.toUpperCase(Locale.ROOT);}\n     * @param str The string to upper case.\n     * @return a new string\n     * @see String#toLowerCase(Locale)\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Shorthand for {@code str.toUpperCase(Locale.ROOT);}",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 267,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a new string",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 269,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.join(java.util.Iterator\u003c?\u003e, char)",
+    "comment": "\n     * \u003cp\u003eJoins the elements of the provided {@code Iterator} into\n     * a single String containing the provided elements.\u003c/p\u003e\n     *\n     * \u003cp\u003eNo delimiter is added before or after the list. Null objects or empty\n     * strings within the iteration are represented by empty strings.\u003c/p\u003e\n     *\n     * @param iterator  the {@code Iterator} of values to join together, may be null\n     * @param separator  the separator character to use\n     * @return the joined String, {@code null} if null iterator input\n     ",
+    "sentences": [
+      {
+        "sentenceText": "\u003cp\u003eJoins the elements of the provided {@code Iterator} into a single String containing the provided elements.\u003c/p\u003e \u003cp\u003eNo delimiter is added before or after the list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 145,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Null objects or empty strings within the iteration are represented by empty strings.\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 148,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the joined String, {@code null} if null iterator input",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 153,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.isNotEmpty(java.lang.CharSequence)",
+    "comment": "\n     * \u003cp\u003e\n     * Checks if a CharSequence is not empty (\"\") and not null.\n     * \u003c/p\u003e\n     *\n     * \u003cpre\u003e\n     * Strings.isNotEmpty(null)      \u003d false\n     * Strings.isNotEmpty(\"\")        \u003d false\n     * Strings.isNotEmpty(\" \")       \u003d true\n     * Strings.isNotEmpty(\"bob\")     \u003d true\n     * Strings.isNotEmpty(\"  bob  \") \u003d true\n     * \u003c/pre\u003e\n     *\n     * \u003cp\u003e\n     * Copied from Apache Commons Lang org.apache.commons.lang3.StringUtils.isNotEmpty(CharSequence)\n     * \u003c/p\u003e\n     *\n     * @param cs the CharSequence to check, may be null\n     * @return {@code true} if the CharSequence is not empty and not null\n     ",
+    "sentences": [
+      {
+        "sentenceText": "\u003cp\u003e Checks if a CharSequence is not empty (\"\") and not null.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 103,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cpre\u003e Strings.isNotEmpty(null)      \u003d false Strings.isNotEmpty(\"\")        \u003d false Strings.isNotEmpty(\" \")       \u003d true Strings.isNotEmpty(\"bob\")     \u003d true Strings.isNotEmpty(\"  bob  \") \u003d true \u003c/pre\u003e \u003cp\u003e Copied from Apache Commons Lang org.apache.commons.lang3.StringUtils.isNotEmpty(CharSequence) \u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 105,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return {@code true} if the CharSequence is not empty and not null",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 120,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.isBlank(java.lang.String)",
+    "comment": "\n     * Checks if a String is blank. A blank string is one that is {@code null}, empty, or when trimmed using\n     * {@link String#trim()} is empty.\n     *\n     * @param s the String to check, may be {@code null}\n     * @return {@code true} if the String is {@code null}, empty, or trims to empty.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Checks if a String is blank.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 53,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "A blank string is one that is {@code null}, empty, or when trimmed using {@link String#trim()} is empty.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 53,
+          "column": 37
+        }
+      },
+      {
+        "sentenceText": "@return {@code true} if the String is {@code null}, empty, or trims to empty.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 57,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.left(java.lang.String, int)",
+    "comment": "\n     * \u003cp\u003eGets the leftmost {@code len} characters of a String.\u003c/p\u003e\n     *\n     * \u003cp\u003eIf {@code len} characters are not available, or the\n     * String is {@code null}, the String will be returned without\n     * an exception. An empty String is returned if len is negative.\u003c/p\u003e\n     *\n     * \u003cpre\u003e\n     * StringUtils.left(null, *)    \u003d null\n     * StringUtils.left(*, -ve)     \u003d \"\"\n     * StringUtils.left(\"\", *)      \u003d \"\"\n     * StringUtils.left(\"abc\", 0)   \u003d \"\"\n     * StringUtils.left(\"abc\", 2)   \u003d \"ab\"\n     * StringUtils.left(\"abc\", 4)   \u003d \"abc\"\n     * \u003c/pre\u003e\n     *\n     * \u003cp\u003e\n     * Copied from Apache Commons Lang org.apache.commons.lang3.StringUtils.\n     * \u003c/p\u003e\n     * \n     * @param str  the String to get the leftmost characters from, may be null\n     * @param len  the length of the required String\n     * @return the leftmost characters, {@code null} if null String input\n     ",
+    "sentences": [
+      {
+        "sentenceText": "\u003cp\u003eGets the leftmost {@code len} characters of a String.\u003c/p\u003e \u003cp\u003eIf {@code len} characters are not available, or the String is {@code null}, the String will be returned without an exception.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 187,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "An empty String is returned if len is negative.\u003c/p\u003e \u003cpre\u003e StringUtils.left(null, *)    \u003d null StringUtils.left(*, -ve)     \u003d \"\" StringUtils.left(\"\", *)      \u003d \"\" StringUtils.left(\"abc\", 0)   \u003d \"\" StringUtils.left(\"abc\", 2)   \u003d \"ab\" StringUtils.left(\"abc\", 4)   \u003d \"abc\" \u003c/pre\u003e \u003cp\u003e Copied from Apache Commons Lang org.apache.commons.lang3.StringUtils.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 191,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 202,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the leftmost characters, {@code null} if null String input",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 208,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.dquote(java.lang.String)",
+    "comment": "\n     * Returns a double quoted string.\n     * \n     * @param str a String\n     * @return {@code \"str\"}\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a double quoted string.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 43,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return {@code \"str\"}",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 46,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.quote(java.lang.String)",
+    "comment": "\n     * Returns a quoted string.\n     * \n     * @param str a String\n     * @return {@code \u0027str\u0027}\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a quoted string.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 224,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return {@code \u0027str\u0027}",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 227,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.isEmpty(java.lang.CharSequence)",
+    "comment": "\n     * \u003cp\u003e\n     * Checks if a CharSequence is empty (\"\") or null.\n     * \u003c/p\u003e\n     *\n     * \u003cpre\u003e\n     * Strings.isEmpty(null)      \u003d true\n     * Strings.isEmpty(\"\")        \u003d true\n     * Strings.isEmpty(\" \")       \u003d false\n     * Strings.isEmpty(\"bob\")     \u003d false\n     * Strings.isEmpty(\"  bob  \") \u003d false\n     * \u003c/pre\u003e\n     *\n     * \u003cp\u003e\n     * NOTE: This method changed in Lang version 2.0. It no longer trims the CharSequence. That functionality is\n     * available in isBlank().\n     * \u003c/p\u003e\n     *\n     * \u003cp\u003e\n     * Copied from Apache Commons Lang org.apache.commons.lang3.StringUtils.isEmpty(CharSequence)\n     * \u003c/p\u003e\n     *\n     * @param cs the CharSequence to check, may be null\n     * @return {@code true} if the CharSequence is empty or null\n     ",
+    "sentences": [
+      {
+        "sentenceText": "\u003cp\u003e Checks if a CharSequence is empty (\"\") or null.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 64,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cpre\u003e Strings.isEmpty(null)      \u003d true Strings.isEmpty(\"\")        \u003d true Strings.isEmpty(\" \")       \u003d false Strings.isEmpty(\"bob\")     \u003d false Strings.isEmpty(\"  bob  \") \u003d false \u003c/pre\u003e \u003cp\u003e NOTE: This method changed in Lang version 2.0.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 66,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "It no longer trims the CharSequence.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 76,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "That functionality is available in isBlank().",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 76,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cp\u003e Copied from Apache Commons Lang org.apache.commons.lang3.StringUtils.isEmpty(CharSequence) \u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 77,
+          "column": 55
+        }
+      },
+      {
+        "sentenceText": "@return {@code true} if the CharSequence is empty or null",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 86,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.join(java.lang.Iterable\u003c?\u003e, char)",
+    "comment": "\n     * \u003cp\u003eJoins the elements of the provided {@code Iterable} into\n     * a single String containing the provided elements.\u003c/p\u003e\n     *\n     * \u003cp\u003eNo delimiter is added before or after the list. Null objects or empty\n     * strings within the iteration are represented by empty strings.\u003c/p\u003e\n     *\n     * @param iterable  the {@code Iterable} providing the values to join together, may be null\n     * @param separator  the separator character to use\n     * @return the joined String, {@code null} if null iterator input\n     ",
+    "sentences": [
+      {
+        "sentenceText": "\u003cp\u003eJoins the elements of the provided {@code Iterable} into a single String containing the provided elements.\u003c/p\u003e \u003cp\u003eNo delimiter is added before or after the list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 127,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Null objects or empty strings within the iteration are represented by empty strings.\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 130,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the joined String, {@code null} if null iterator input",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 135,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.Strings()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.isNotBlank(java.lang.String)",
+    "comment": "\n     * Checks if a String is not blank. The opposite of {@link #isBlank(String)}.\n     *\n     * @param s the String to check, may be {@code null}\n     * @return {@code true} if the String is non-{@code null} and has content after being trimmed.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Checks if a String is not blank.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 93,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The opposite of {@link #isBlank(String)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 94,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return {@code true} if the String is non-{@code null} and has content after being trimmed.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 96,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.trimToNull(java.lang.String)",
+    "comment": "\n     * \u003cp\u003e\n     * Removes control characters (char \u0026lt;\u003d 32) from both ends of this String returning {@code null} if the String is\n     * empty (\"\") after the trim or if it is {@code null}.\n     *\n     * \u003cp\u003e\n     * The String is trimmed using {@link String#trim()}. Trim removes start and end characters \u0026lt;\u003d 32.\n     * \u003c/p\u003e\n     *\n     * \u003cpre\u003e\n     * Strings.trimToNull(null)          \u003d null\n     * Strings.trimToNull(\"\")            \u003d null\n     * Strings.trimToNull(\"     \")       \u003d null\n     * Strings.trimToNull(\"abc\")         \u003d \"abc\"\n     * Strings.trimToNull(\"    abc    \") \u003d \"abc\"\n     * \u003c/pre\u003e\n     *\n     * \u003cp\u003e\n     * Copied from Apache Commons Lang org.apache.commons.lang3.StringUtils.trimToNull(String)\n     * \u003c/p\u003e\n     *\n     * @param str the String to be trimmed, may be null\n     * @return the trimmed String, {@code null} if only chars \u0026lt;\u003d 32, empty or null String input\n     ",
+    "sentences": [
+      {
+        "sentenceText": "\u003cp\u003e Removes control characters (char \u0026lt;\u003d 32) from both ends of this String returning {@code null} if the String is empty (\"\") after the trim or if it is {@code null}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 234,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The String is trimmed using {@link String#trim()}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 237,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Trim removes start and end characters \u0026lt;\u003d 32.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 239,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cpre\u003e Strings.trimToNull(null)          \u003d null Strings.trimToNull(\"\")            \u003d null Strings.trimToNull(\"     \")       \u003d null Strings.trimToNull(\"abc\")         \u003d \"abc\" Strings.trimToNull(\"    abc    \") \u003d \"abc\" \u003c/pre\u003e \u003cp\u003e Copied from Apache Commons Lang org.apache.commons.lang3.StringUtils.trimToNull(String) \u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 240,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the trimmed String, {@code null} if only chars \u0026lt;\u003d 32, empty or null String input",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 255,
+          "column": 8
+        }
+      }
+    ]
+  }
+]

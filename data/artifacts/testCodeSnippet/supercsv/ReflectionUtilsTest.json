@@ -1,0 +1,1166 @@
+[
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindGetter()",
+    "annotation": "@Test",
+    "code": "final String name \u003d \"Bob\";bean.setName(name);assertEquals(name, findGetter(bean, \"name\").invoke(bean));",
+    "offset": [
+      {
+        "line": 64,
+        "column": 3
+      },
+      {
+        "line": 65,
+        "column": 3
+      },
+      {
+        "line": 65,
+        "column": 22
+      },
+      {
+        "line": 65,
+        "column": 22
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 63,
+          "column": 3
+        },
+        "assert": "final String name \u003d \"Bob\";bean.setName(name);assertEquals(name, findGetter(bean, \"name\").invoke(bean));",
+        "slice": "final String name \u003d \"Bob\";bean.setName(name);assertEquals(name, findGetter(bean, \"name\").invoke(bean));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindBooleanGetter()",
+    "annotation": "@Test",
+    "code": "final Boolean boolValue \u003d true;bean.setBooleanWrapper(boolValue);assertEquals(boolValue, findGetter(bean, \"booleanWrapper\").invoke(bean));",
+    "offset": [
+      {
+        "line": 74,
+        "column": 3
+      },
+      {
+        "line": 75,
+        "column": 3
+      },
+      {
+        "line": 75,
+        "column": 27
+      },
+      {
+        "line": 75,
+        "column": 27
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 73,
+          "column": 3
+        },
+        "assert": "final Boolean boolValue \u003d true;bean.setBooleanWrapper(boolValue);assertEquals(boolValue, findGetter(bean, \"booleanWrapper\").invoke(bean));",
+        "slice": "final Boolean boolValue \u003d true;bean.setBooleanWrapper(boolValue);assertEquals(boolValue, findGetter(bean, \"booleanWrapper\").invoke(bean));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindAlternateBooleanGetter()",
+    "annotation": "@Test",
+    "code": "final boolean boolValue \u003d true;bean.setPrimitiveBoolean(boolValue);assertEquals(boolValue, findGetter(bean, \"primitiveBoolean\").invoke(bean));",
+    "offset": [
+      {
+        "line": 84,
+        "column": 3
+      },
+      {
+        "line": 85,
+        "column": 3
+      },
+      {
+        "line": 85,
+        "column": 27
+      },
+      {
+        "line": 85,
+        "column": 27
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 83,
+          "column": 3
+        },
+        "assert": "final boolean boolValue \u003d true;bean.setPrimitiveBoolean(boolValue);assertEquals(boolValue, findGetter(bean, \"primitiveBoolean\").invoke(bean));",
+        "slice": "final boolean boolValue \u003d true;bean.setPrimitiveBoolean(boolValue);assertEquals(boolValue, findGetter(bean, \"primitiveBoolean\").invoke(bean));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindAlternateBooleanWrapperGetter()",
+    "annotation": "@Test",
+    "code": "final Boolean boolValue \u003d Boolean.TRUE;bean.setBooleanWrapper2(boolValue);assertEquals(boolValue, findGetter(bean, \"booleanWrapper2\").invoke(bean));",
+    "offset": [
+      {
+        "line": 94,
+        "column": 3
+      },
+      {
+        "line": 95,
+        "column": 3
+      },
+      {
+        "line": 95,
+        "column": 27
+      },
+      {
+        "line": 95,
+        "column": 27
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 93,
+          "column": 3
+        },
+        "assert": "final Boolean boolValue \u003d Boolean.TRUE;bean.setBooleanWrapper2(boolValue);assertEquals(boolValue, findGetter(bean, \"booleanWrapper2\").invoke(bean));",
+        "slice": "final Boolean boolValue \u003d Boolean.TRUE;bean.setBooleanWrapper2(boolValue);assertEquals(boolValue, findGetter(bean, \"booleanWrapper2\").invoke(bean));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetter()",
+    "annotation": "@Test",
+    "code": "final String name \u003d \"Bob\";findSetter(bean, \"name\", String.class).invoke(bean, name);assertEquals(name, bean.getName());",
+    "offset": [
+      {
+        "line": 104,
+        "column": 3
+      },
+      {
+        "line": 104,
+        "column": 3
+      },
+      {
+        "line": 105,
+        "column": 3
+      },
+      {
+        "line": 105,
+        "column": 22
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 103,
+          "column": 3
+        },
+        "assert": "final String name \u003d \"Bob\";findSetter(bean, \"name\", String.class).invoke(bean, name);assertEquals(name, bean.getName());",
+        "slice": "final String name \u003d \"Bob\";findSetter(bean, \"name\", String.class).invoke(bean, name);assertEquals(name, bean.getName());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithSubtype()",
+    "annotation": "@Test",
+    "code": "findSetter(bean, \"favouriteNumber\", Integer.class).invoke(bean, Integer.valueOf(123));assertEquals(123, bean.getFavouriteNumber().intValue());",
+    "offset": [
+      {
+        "line": 113,
+        "column": 3
+      },
+      {
+        "line": 113,
+        "column": 3
+      },
+      {
+        "line": 113,
+        "column": 67
+      },
+      {
+        "line": 114,
+        "column": 3
+      },
+      {
+        "line": 114,
+        "column": 21
+      },
+      {
+        "line": 114,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 113,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"favouriteNumber\", Integer.class).invoke(bean, Integer.valueOf(123));assertEquals(123, bean.getFavouriteNumber().intValue());",
+        "slice": "findSetter(bean, \"favouriteNumber\", Integer.class).invoke(bean, Integer.valueOf(123));assertEquals(123, bean.getFavouriteNumber().intValue());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithTwoOptions()",
+    "annotation": "@Test",
+    "code": "findSetter(bean, \"overloaded\", Number.class).invoke(bean, Integer.valueOf(123));assertEquals(123, bean.getOverloaded().intValue());",
+    "offset": [
+      {
+        "line": 123,
+        "column": 3
+      },
+      {
+        "line": 123,
+        "column": 3
+      },
+      {
+        "line": 123,
+        "column": 61
+      },
+      {
+        "line": 124,
+        "column": 3
+      },
+      {
+        "line": 124,
+        "column": 21
+      },
+      {
+        "line": 124,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 123,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"overloaded\", Number.class).invoke(bean, Integer.valueOf(123));assertEquals(123, bean.getOverloaded().intValue());",
+        "slice": "findSetter(bean, \"overloaded\", Number.class).invoke(bean, Integer.valueOf(123));assertEquals(123, bean.getOverloaded().intValue());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithMethodOfSameName()",
+    "annotation": "@Test",
+    "code": "findSetter(bean, \"primitiveBoolean\", boolean.class).invoke(bean, true);assertTrue(bean.isPrimitiveBoolean());",
+    "offset": [
+      {
+        "line": 133,
+        "column": 3
+      },
+      {
+        "line": 133,
+        "column": 3
+      },
+      {
+        "line": 134,
+        "column": 3
+      },
+      {
+        "line": 134,
+        "column": 14
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 133,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"primitiveBoolean\", boolean.class).invoke(bean, true);assertTrue(bean.isPrimitiveBoolean());",
+        "slice": "findSetter(bean, \"primitiveBoolean\", boolean.class).invoke(bean, true);assertTrue(bean.isPrimitiveBoolean());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindURLGetter()",
+    "annotation": "@Test",
+    "code": "final String url \u003d \"www.google.com\";bean.setURL(url);assertEquals(url, findGetter(bean, \"URL\").invoke(bean));",
+    "offset": [
+      {
+        "line": 143,
+        "column": 3
+      },
+      {
+        "line": 144,
+        "column": 3
+      },
+      {
+        "line": 144,
+        "column": 21
+      },
+      {
+        "line": 144,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 142,
+          "column": 3
+        },
+        "assert": "final String url \u003d \"www.google.com\";bean.setURL(url);assertEquals(url, findGetter(bean, \"URL\").invoke(bean));",
+        "slice": "final String url \u003d \"www.google.com\";bean.setURL(url);assertEquals(url, findGetter(bean, \"URL\").invoke(bean));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindURLSetter()",
+    "annotation": "@Test",
+    "code": "final String url \u003d \"www.google.com\";findSetter(bean, \"URL\", String.class).invoke(bean, url);assertEquals(url, bean.getURL());",
+    "offset": [
+      {
+        "line": 153,
+        "column": 3
+      },
+      {
+        "line": 153,
+        "column": 3
+      },
+      {
+        "line": 154,
+        "column": 3
+      },
+      {
+        "line": 154,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 152,
+          "column": 3
+        },
+        "assert": "final String url \u003d \"www.google.com\";findSetter(bean, \"URL\", String.class).invoke(bean, url);assertEquals(url, bean.getURL());",
+        "slice": "final String url \u003d \"www.google.com\";findSetter(bean, \"URL\", String.class).invoke(bean, url);assertEquals(url, bean.getURL());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindiPhoneGetter()",
+    "annotation": "@Test",
+    "code": "final String value \u003d \"Apple\";bean.setiPad(value);assertEquals(value, findGetter(bean, \"iPad\").invoke(bean));",
+    "offset": [
+      {
+        "line": 163,
+        "column": 3
+      },
+      {
+        "line": 164,
+        "column": 3
+      },
+      {
+        "line": 164,
+        "column": 23
+      },
+      {
+        "line": 164,
+        "column": 23
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 162,
+          "column": 3
+        },
+        "assert": "final String value \u003d \"Apple\";bean.setiPad(value);assertEquals(value, findGetter(bean, \"iPad\").invoke(bean));",
+        "slice": "final String value \u003d \"Apple\";bean.setiPad(value);assertEquals(value, findGetter(bean, \"iPad\").invoke(bean));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindiPhoneSetter()",
+    "annotation": "@Test",
+    "code": "final String value \u003d \"Apple\";findSetter(bean, \"iPad\", String.class).invoke(bean, value);assertEquals(value, bean.getiPad());",
+    "offset": [
+      {
+        "line": 173,
+        "column": 3
+      },
+      {
+        "line": 173,
+        "column": 3
+      },
+      {
+        "line": 174,
+        "column": 3
+      },
+      {
+        "line": 174,
+        "column": 23
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 172,
+          "column": 3
+        },
+        "assert": "final String value \u003d \"Apple\";findSetter(bean, \"iPad\", String.class).invoke(bean, value);assertEquals(value, bean.getiPad());",
+        "slice": "final String value \u003d \"Apple\";findSetter(bean, \"iPad\", String.class).invoke(bean, value);assertEquals(value, bean.getiPad());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindIsTurkishGetter()",
+    "annotation": "@Test",
+    "code": "final boolean value \u003d true;bean.setIsTurkish(value);assertEquals(value, findGetter(bean, \"isTurkish\").invoke(bean));",
+    "offset": [
+      {
+        "line": 183,
+        "column": 3
+      },
+      {
+        "line": 184,
+        "column": 3
+      },
+      {
+        "line": 184,
+        "column": 23
+      },
+      {
+        "line": 184,
+        "column": 23
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 182,
+          "column": 3
+        },
+        "assert": "final boolean value \u003d true;bean.setIsTurkish(value);assertEquals(value, findGetter(bean, \"isTurkish\").invoke(bean));",
+        "slice": "final boolean value \u003d true;bean.setIsTurkish(value);assertEquals(value, findGetter(bean, \"isTurkish\").invoke(bean));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindIsTurkishSetter()",
+    "annotation": "@Test",
+    "code": "final boolean value \u003d true;findSetter(bean, \"isTurkish\", Boolean.class).invoke(bean, value);assertEquals(value, bean.getIsTurkish());",
+    "offset": [
+      {
+        "line": 193,
+        "column": 3
+      },
+      {
+        "line": 193,
+        "column": 3
+      },
+      {
+        "line": 194,
+        "column": 3
+      },
+      {
+        "line": 194,
+        "column": 23
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 192,
+          "column": 3
+        },
+        "assert": "final boolean value \u003d true;findSetter(bean, \"isTurkish\", Boolean.class).invoke(bean, value);assertEquals(value, bean.getIsTurkish());",
+        "slice": "final boolean value \u003d true;findSetter(bean, \"isTurkish\", Boolean.class).invoke(bean, value);assertEquals(value, bean.getIsTurkish());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testAutoboxing()",
+    "annotation": "@Test",
+    "code": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);assertEquals(true, bean.isPrimitiveBoolean());findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));assertEquals(1, bean.getPrimitiveInt());findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));assertEquals(Short.parseShort(\"2\"), bean.getPrimitiveShort());findSetter(bean, \"primitiveLong\", Long.class).invoke(bean, Long.valueOf(\"3\"));assertEquals(Long.parseLong(\"3\"), bean.getPrimitiveLong());findSetter(bean, \"primitiveDouble\", Double.class).invoke(bean, Double.valueOf(\"4.0\"));assertEquals(Double.parseDouble(\"4.0\"), bean.getPrimitiveDouble(), DOUBLE_ASSERT_DELTA);findSetter(bean, \"primitiveFloat\", Float.class).invoke(bean, Float.valueOf(\"5.0\"));assertEquals(Float.parseFloat(\"5.0\"), bean.getPrimitiveFloat(), DOUBLE_ASSERT_DELTA);findSetter(bean, \"primitiveChar\", Character.class).invoke(bean, Character.valueOf(\u0027a\u0027));assertEquals(\u0027a\u0027, bean.getPrimitiveChar());findSetter(bean, \"primitiveByte\", Byte.class).invoke(bean, Byte.valueOf(\"123\"));assertEquals(Byte.parseByte(\"123\"), bean.getPrimitiveByte());// now try setting primitive values onto the wrapper setters\nfindSetter(bean, \"booleanWrapper\", boolean.class).invoke(bean, true);assertEquals(Boolean.TRUE, bean.getBooleanWrapper());findSetter(bean, \"integerWrapper\", int.class).invoke(bean, 1);assertEquals(Integer.valueOf(1), bean.getIntegerWrapper());findSetter(bean, \"shortWrapper\", short.class).invoke(bean, Short.parseShort(\"2\"));assertEquals(Short.valueOf(\"2\"), bean.getShortWrapper());findSetter(bean, \"longWrapper\", long.class).invoke(bean, Long.parseLong(\"3\"));assertEquals(Long.valueOf(\"3\"), bean.getLongWrapper());findSetter(bean, \"doubleWrapper\", double.class).invoke(bean, Double.parseDouble(\"4.0\"));assertEquals(Double.valueOf(\"4.0\"), bean.getDoubleWrapper());findSetter(bean, \"floatWrapper\", float.class).invoke(bean, Float.parseFloat(\"5.0\"));assertEquals(Float.valueOf(\"5.0\"), bean.getFloatWrapper());findSetter(bean, \"charWrapper\", char.class).invoke(bean, \u0027a\u0027);assertEquals(Character.valueOf(\u0027a\u0027), bean.getCharWrapper());findSetter(bean, \"byteWrapper\", byte.class).invoke(bean, Byte.parseByte(\"123\"));assertEquals(Byte.valueOf(\"123\"), bean.getByteWrapper());",
+    "offset": [
+      {
+        "line": 206,
+        "column": 3
+      },
+      {
+        "line": 206,
+        "column": 3
+      },
+      {
+        "line": 207,
+        "column": 3
+      },
+      {
+        "line": 207,
+        "column": 22
+      },
+      {
+        "line": 209,
+        "column": 3
+      },
+      {
+        "line": 209,
+        "column": 3
+      },
+      {
+        "line": 209,
+        "column": 64
+      },
+      {
+        "line": 210,
+        "column": 3
+      },
+      {
+        "line": 210,
+        "column": 19
+      },
+      {
+        "line": 212,
+        "column": 3
+      },
+      {
+        "line": 212,
+        "column": 3
+      },
+      {
+        "line": 212,
+        "column": 64
+      },
+      {
+        "line": 213,
+        "column": 3
+      },
+      {
+        "line": 213,
+        "column": 16
+      },
+      {
+        "line": 213,
+        "column": 39
+      },
+      {
+        "line": 215,
+        "column": 3
+      },
+      {
+        "line": 215,
+        "column": 3
+      },
+      {
+        "line": 215,
+        "column": 62
+      },
+      {
+        "line": 216,
+        "column": 3
+      },
+      {
+        "line": 216,
+        "column": 16
+      },
+      {
+        "line": 216,
+        "column": 37
+      },
+      {
+        "line": 218,
+        "column": 3
+      },
+      {
+        "line": 218,
+        "column": 3
+      },
+      {
+        "line": 218,
+        "column": 66
+      },
+      {
+        "line": 219,
+        "column": 3
+      },
+      {
+        "line": 219,
+        "column": 16
+      },
+      {
+        "line": 219,
+        "column": 43
+      },
+      {
+        "line": 221,
+        "column": 3
+      },
+      {
+        "line": 221,
+        "column": 3
+      },
+      {
+        "line": 221,
+        "column": 64
+      },
+      {
+        "line": 222,
+        "column": 3
+      },
+      {
+        "line": 222,
+        "column": 16
+      },
+      {
+        "line": 222,
+        "column": 41
+      },
+      {
+        "line": 224,
+        "column": 3
+      },
+      {
+        "line": 224,
+        "column": 3
+      },
+      {
+        "line": 224,
+        "column": 67
+      },
+      {
+        "line": 225,
+        "column": 3
+      },
+      {
+        "line": 225,
+        "column": 21
+      },
+      {
+        "line": 227,
+        "column": 3
+      },
+      {
+        "line": 227,
+        "column": 3
+      },
+      {
+        "line": 227,
+        "column": 62
+      },
+      {
+        "line": 228,
+        "column": 3
+      },
+      {
+        "line": 228,
+        "column": 16
+      },
+      {
+        "line": 228,
+        "column": 39
+      },
+      {
+        "line": 232,
+        "column": 3
+      },
+      {
+        "line": 232,
+        "column": 3
+      },
+      {
+        "line": 233,
+        "column": 3
+      },
+      {
+        "line": 233,
+        "column": 30
+      },
+      {
+        "line": 235,
+        "column": 3
+      },
+      {
+        "line": 235,
+        "column": 3
+      },
+      {
+        "line": 236,
+        "column": 3
+      },
+      {
+        "line": 236,
+        "column": 16
+      },
+      {
+        "line": 236,
+        "column": 36
+      },
+      {
+        "line": 238,
+        "column": 3
+      },
+      {
+        "line": 238,
+        "column": 3
+      },
+      {
+        "line": 238,
+        "column": 62
+      },
+      {
+        "line": 239,
+        "column": 3
+      },
+      {
+        "line": 239,
+        "column": 16
+      },
+      {
+        "line": 239,
+        "column": 36
+      },
+      {
+        "line": 241,
+        "column": 3
+      },
+      {
+        "line": 241,
+        "column": 3
+      },
+      {
+        "line": 241,
+        "column": 60
+      },
+      {
+        "line": 242,
+        "column": 3
+      },
+      {
+        "line": 242,
+        "column": 16
+      },
+      {
+        "line": 242,
+        "column": 35
+      },
+      {
+        "line": 244,
+        "column": 3
+      },
+      {
+        "line": 244,
+        "column": 3
+      },
+      {
+        "line": 244,
+        "column": 64
+      },
+      {
+        "line": 245,
+        "column": 3
+      },
+      {
+        "line": 245,
+        "column": 16
+      },
+      {
+        "line": 245,
+        "column": 39
+      },
+      {
+        "line": 247,
+        "column": 3
+      },
+      {
+        "line": 247,
+        "column": 3
+      },
+      {
+        "line": 247,
+        "column": 62
+      },
+      {
+        "line": 248,
+        "column": 3
+      },
+      {
+        "line": 248,
+        "column": 16
+      },
+      {
+        "line": 248,
+        "column": 38
+      },
+      {
+        "line": 250,
+        "column": 3
+      },
+      {
+        "line": 250,
+        "column": 3
+      },
+      {
+        "line": 251,
+        "column": 3
+      },
+      {
+        "line": 251,
+        "column": 16
+      },
+      {
+        "line": 251,
+        "column": 40
+      },
+      {
+        "line": 253,
+        "column": 3
+      },
+      {
+        "line": 253,
+        "column": 3
+      },
+      {
+        "line": 253,
+        "column": 60
+      },
+      {
+        "line": 254,
+        "column": 3
+      },
+      {
+        "line": 254,
+        "column": 16
+      },
+      {
+        "line": 254,
+        "column": 37
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 224,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"primitiveChar\", Character.class).invoke(bean, Character.valueOf(\u0027a\u0027));assertEquals(\u0027a\u0027, bean.getPrimitiveChar());",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));findSetter(bean, \"primitiveLong\", Long.class).invoke(bean, Long.valueOf(\"3\"));findSetter(bean, \"primitiveDouble\", Double.class).invoke(bean, Double.valueOf(\"4.0\"));findSetter(bean, \"primitiveFloat\", Float.class).invoke(bean, Float.valueOf(\"5.0\"));findSetter(bean, \"primitiveChar\", Character.class).invoke(bean, Character.valueOf(\u0027a\u0027));assertEquals(\u0027a\u0027, bean.getPrimitiveChar());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 227,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"primitiveByte\", Byte.class).invoke(bean, Byte.valueOf(\"123\"));assertEquals(Byte.parseByte(\"123\"), bean.getPrimitiveByte());",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));findSetter(bean, \"primitiveLong\", Long.class).invoke(bean, Long.valueOf(\"3\"));findSetter(bean, \"primitiveDouble\", Double.class).invoke(bean, Double.valueOf(\"4.0\"));findSetter(bean, \"primitiveFloat\", Float.class).invoke(bean, Float.valueOf(\"5.0\"));findSetter(bean, \"primitiveChar\", Character.class).invoke(bean, Character.valueOf(\u0027a\u0027));findSetter(bean, \"primitiveByte\", Byte.class).invoke(bean, Byte.valueOf(\"123\"));assertEquals(Byte.parseByte(\"123\"), bean.getPrimitiveByte());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 232,
+          "column": 3
+        },
+        "assert": "// now try setting primitive values onto the wrapper setters\nfindSetter(bean, \"booleanWrapper\", boolean.class).invoke(bean, true);assertEquals(Boolean.TRUE, bean.getBooleanWrapper());",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));findSetter(bean, \"primitiveLong\", Long.class).invoke(bean, Long.valueOf(\"3\"));findSetter(bean, \"primitiveDouble\", Double.class).invoke(bean, Double.valueOf(\"4.0\"));findSetter(bean, \"primitiveFloat\", Float.class).invoke(bean, Float.valueOf(\"5.0\"));findSetter(bean, \"primitiveChar\", Character.class).invoke(bean, Character.valueOf(\u0027a\u0027));findSetter(bean, \"primitiveByte\", Byte.class).invoke(bean, Byte.valueOf(\"123\"));// now try setting primitive values onto the wrapper setters\nfindSetter(bean, \"booleanWrapper\", boolean.class).invoke(bean, true);assertEquals(Boolean.TRUE, bean.getBooleanWrapper());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 235,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"integerWrapper\", int.class).invoke(bean, 1);assertEquals(Integer.valueOf(1), bean.getIntegerWrapper());",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));findSetter(bean, \"primitiveLong\", Long.class).invoke(bean, Long.valueOf(\"3\"));findSetter(bean, \"primitiveDouble\", Double.class).invoke(bean, Double.valueOf(\"4.0\"));findSetter(bean, \"primitiveFloat\", Float.class).invoke(bean, Float.valueOf(\"5.0\"));findSetter(bean, \"primitiveChar\", Character.class).invoke(bean, Character.valueOf(\u0027a\u0027));findSetter(bean, \"primitiveByte\", Byte.class).invoke(bean, Byte.valueOf(\"123\"));// now try setting primitive values onto the wrapper setters\nfindSetter(bean, \"booleanWrapper\", boolean.class).invoke(bean, true);findSetter(bean, \"integerWrapper\", int.class).invoke(bean, 1);assertEquals(Integer.valueOf(1), bean.getIntegerWrapper());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 206,
+          "column": 3
+        },
+        "assert": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);assertEquals(true, bean.isPrimitiveBoolean());",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);assertEquals(true, bean.isPrimitiveBoolean());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 238,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"shortWrapper\", short.class).invoke(bean, Short.parseShort(\"2\"));assertEquals(Short.valueOf(\"2\"), bean.getShortWrapper());",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));findSetter(bean, \"primitiveLong\", Long.class).invoke(bean, Long.valueOf(\"3\"));findSetter(bean, \"primitiveDouble\", Double.class).invoke(bean, Double.valueOf(\"4.0\"));findSetter(bean, \"primitiveFloat\", Float.class).invoke(bean, Float.valueOf(\"5.0\"));findSetter(bean, \"primitiveChar\", Character.class).invoke(bean, Character.valueOf(\u0027a\u0027));findSetter(bean, \"primitiveByte\", Byte.class).invoke(bean, Byte.valueOf(\"123\"));// now try setting primitive values onto the wrapper setters\nfindSetter(bean, \"booleanWrapper\", boolean.class).invoke(bean, true);findSetter(bean, \"integerWrapper\", int.class).invoke(bean, 1);findSetter(bean, \"shortWrapper\", short.class).invoke(bean, Short.parseShort(\"2\"));assertEquals(Short.valueOf(\"2\"), bean.getShortWrapper());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 209,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));assertEquals(1, bean.getPrimitiveInt());",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));assertEquals(1, bean.getPrimitiveInt());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 241,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"longWrapper\", long.class).invoke(bean, Long.parseLong(\"3\"));assertEquals(Long.valueOf(\"3\"), bean.getLongWrapper());",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));findSetter(bean, \"primitiveLong\", Long.class).invoke(bean, Long.valueOf(\"3\"));findSetter(bean, \"primitiveDouble\", Double.class).invoke(bean, Double.valueOf(\"4.0\"));findSetter(bean, \"primitiveFloat\", Float.class).invoke(bean, Float.valueOf(\"5.0\"));findSetter(bean, \"primitiveChar\", Character.class).invoke(bean, Character.valueOf(\u0027a\u0027));findSetter(bean, \"primitiveByte\", Byte.class).invoke(bean, Byte.valueOf(\"123\"));// now try setting primitive values onto the wrapper setters\nfindSetter(bean, \"booleanWrapper\", boolean.class).invoke(bean, true);findSetter(bean, \"integerWrapper\", int.class).invoke(bean, 1);findSetter(bean, \"shortWrapper\", short.class).invoke(bean, Short.parseShort(\"2\"));findSetter(bean, \"longWrapper\", long.class).invoke(bean, Long.parseLong(\"3\"));assertEquals(Long.valueOf(\"3\"), bean.getLongWrapper());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 212,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));assertEquals(Short.parseShort(\"2\"), bean.getPrimitiveShort());",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));assertEquals(Short.parseShort(\"2\"), bean.getPrimitiveShort());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 244,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"doubleWrapper\", double.class).invoke(bean, Double.parseDouble(\"4.0\"));assertEquals(Double.valueOf(\"4.0\"), bean.getDoubleWrapper());",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));findSetter(bean, \"primitiveLong\", Long.class).invoke(bean, Long.valueOf(\"3\"));findSetter(bean, \"primitiveDouble\", Double.class).invoke(bean, Double.valueOf(\"4.0\"));findSetter(bean, \"primitiveFloat\", Float.class).invoke(bean, Float.valueOf(\"5.0\"));findSetter(bean, \"primitiveChar\", Character.class).invoke(bean, Character.valueOf(\u0027a\u0027));findSetter(bean, \"primitiveByte\", Byte.class).invoke(bean, Byte.valueOf(\"123\"));// now try setting primitive values onto the wrapper setters\nfindSetter(bean, \"booleanWrapper\", boolean.class).invoke(bean, true);findSetter(bean, \"integerWrapper\", int.class).invoke(bean, 1);findSetter(bean, \"shortWrapper\", short.class).invoke(bean, Short.parseShort(\"2\"));findSetter(bean, \"longWrapper\", long.class).invoke(bean, Long.parseLong(\"3\"));findSetter(bean, \"doubleWrapper\", double.class).invoke(bean, Double.parseDouble(\"4.0\"));assertEquals(Double.valueOf(\"4.0\"), bean.getDoubleWrapper());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 215,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"primitiveLong\", Long.class).invoke(bean, Long.valueOf(\"3\"));assertEquals(Long.parseLong(\"3\"), bean.getPrimitiveLong());",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));findSetter(bean, \"primitiveLong\", Long.class).invoke(bean, Long.valueOf(\"3\"));assertEquals(Long.parseLong(\"3\"), bean.getPrimitiveLong());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 247,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"floatWrapper\", float.class).invoke(bean, Float.parseFloat(\"5.0\"));assertEquals(Float.valueOf(\"5.0\"), bean.getFloatWrapper());",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));findSetter(bean, \"primitiveLong\", Long.class).invoke(bean, Long.valueOf(\"3\"));findSetter(bean, \"primitiveDouble\", Double.class).invoke(bean, Double.valueOf(\"4.0\"));findSetter(bean, \"primitiveFloat\", Float.class).invoke(bean, Float.valueOf(\"5.0\"));findSetter(bean, \"primitiveChar\", Character.class).invoke(bean, Character.valueOf(\u0027a\u0027));findSetter(bean, \"primitiveByte\", Byte.class).invoke(bean, Byte.valueOf(\"123\"));// now try setting primitive values onto the wrapper setters\nfindSetter(bean, \"booleanWrapper\", boolean.class).invoke(bean, true);findSetter(bean, \"integerWrapper\", int.class).invoke(bean, 1);findSetter(bean, \"shortWrapper\", short.class).invoke(bean, Short.parseShort(\"2\"));findSetter(bean, \"longWrapper\", long.class).invoke(bean, Long.parseLong(\"3\"));findSetter(bean, \"doubleWrapper\", double.class).invoke(bean, Double.parseDouble(\"4.0\"));findSetter(bean, \"floatWrapper\", float.class).invoke(bean, Float.parseFloat(\"5.0\"));assertEquals(Float.valueOf(\"5.0\"), bean.getFloatWrapper());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 218,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"primitiveDouble\", Double.class).invoke(bean, Double.valueOf(\"4.0\"));assertEquals(Double.parseDouble(\"4.0\"), bean.getPrimitiveDouble(), DOUBLE_ASSERT_DELTA);",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));findSetter(bean, \"primitiveLong\", Long.class).invoke(bean, Long.valueOf(\"3\"));findSetter(bean, \"primitiveDouble\", Double.class).invoke(bean, Double.valueOf(\"4.0\"));assertEquals(Double.parseDouble(\"4.0\"), bean.getPrimitiveDouble(), DOUBLE_ASSERT_DELTA);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 250,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"charWrapper\", char.class).invoke(bean, \u0027a\u0027);assertEquals(Character.valueOf(\u0027a\u0027), bean.getCharWrapper());",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));findSetter(bean, \"primitiveLong\", Long.class).invoke(bean, Long.valueOf(\"3\"));findSetter(bean, \"primitiveDouble\", Double.class).invoke(bean, Double.valueOf(\"4.0\"));findSetter(bean, \"primitiveFloat\", Float.class).invoke(bean, Float.valueOf(\"5.0\"));findSetter(bean, \"primitiveChar\", Character.class).invoke(bean, Character.valueOf(\u0027a\u0027));findSetter(bean, \"primitiveByte\", Byte.class).invoke(bean, Byte.valueOf(\"123\"));// now try setting primitive values onto the wrapper setters\nfindSetter(bean, \"booleanWrapper\", boolean.class).invoke(bean, true);findSetter(bean, \"integerWrapper\", int.class).invoke(bean, 1);findSetter(bean, \"shortWrapper\", short.class).invoke(bean, Short.parseShort(\"2\"));findSetter(bean, \"longWrapper\", long.class).invoke(bean, Long.parseLong(\"3\"));findSetter(bean, \"doubleWrapper\", double.class).invoke(bean, Double.parseDouble(\"4.0\"));findSetter(bean, \"floatWrapper\", float.class).invoke(bean, Float.parseFloat(\"5.0\"));findSetter(bean, \"charWrapper\", char.class).invoke(bean, \u0027a\u0027);assertEquals(Character.valueOf(\u0027a\u0027), bean.getCharWrapper());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 221,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"primitiveFloat\", Float.class).invoke(bean, Float.valueOf(\"5.0\"));assertEquals(Float.parseFloat(\"5.0\"), bean.getPrimitiveFloat(), DOUBLE_ASSERT_DELTA);",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));findSetter(bean, \"primitiveLong\", Long.class).invoke(bean, Long.valueOf(\"3\"));findSetter(bean, \"primitiveDouble\", Double.class).invoke(bean, Double.valueOf(\"4.0\"));findSetter(bean, \"primitiveFloat\", Float.class).invoke(bean, Float.valueOf(\"5.0\"));assertEquals(Float.parseFloat(\"5.0\"), bean.getPrimitiveFloat(), DOUBLE_ASSERT_DELTA);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 253,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"byteWrapper\", byte.class).invoke(bean, Byte.parseByte(\"123\"));assertEquals(Byte.valueOf(\"123\"), bean.getByteWrapper());",
+        "slice": "// first try setting wrapper values onto the primitive setters\nfindSetter(bean, \"primitiveBoolean\", Boolean.class).invoke(bean, Boolean.TRUE);findSetter(bean, \"primitiveInt\", Integer.class).invoke(bean, Integer.valueOf(1));findSetter(bean, \"primitiveShort\", Short.class).invoke(bean, Short.valueOf(\"2\"));findSetter(bean, \"primitiveLong\", Long.class).invoke(bean, Long.valueOf(\"3\"));findSetter(bean, \"primitiveDouble\", Double.class).invoke(bean, Double.valueOf(\"4.0\"));findSetter(bean, \"primitiveFloat\", Float.class).invoke(bean, Float.valueOf(\"5.0\"));findSetter(bean, \"primitiveChar\", Character.class).invoke(bean, Character.valueOf(\u0027a\u0027));findSetter(bean, \"primitiveByte\", Byte.class).invoke(bean, Byte.valueOf(\"123\"));// now try setting primitive values onto the wrapper setters\nfindSetter(bean, \"booleanWrapper\", boolean.class).invoke(bean, true);findSetter(bean, \"integerWrapper\", int.class).invoke(bean, 1);findSetter(bean, \"shortWrapper\", short.class).invoke(bean, Short.parseShort(\"2\"));findSetter(bean, \"longWrapper\", long.class).invoke(bean, Long.parseLong(\"3\"));findSetter(bean, \"doubleWrapper\", double.class).invoke(bean, Double.parseDouble(\"4.0\"));findSetter(bean, \"floatWrapper\", float.class).invoke(bean, Float.parseFloat(\"5.0\"));findSetter(bean, \"charWrapper\", char.class).invoke(bean, \u0027a\u0027);findSetter(bean, \"byteWrapper\", byte.class).invoke(bean, Byte.parseByte(\"123\"));assertEquals(Byte.valueOf(\"123\"), bean.getByteWrapper());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindGetterWithNullObject()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "findGetter(null, \"name\");",
+    "offset": [
+      {
+        "line": 263,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 263,
+          "column": 3
+        },
+        "assert": "findGetter(null, \"name\");",
+        "slice": "findGetter(null, \"name\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindGetterWithNullFieldName()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "findGetter(bean, null);",
+    "offset": [
+      {
+        "line": 271,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 271,
+          "column": 3
+        },
+        "assert": "findGetter(bean, null);",
+        "slice": "findGetter(bean, null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindGetterWithInvalidFieldName()",
+    "annotation": "@Test(expected \u003d SuperCsvReflectionException.class)",
+    "code": "findGetter(bean, \"invalid\");",
+    "offset": [
+      {
+        "line": 279,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 279,
+          "column": 3
+        },
+        "assert": "findGetter(bean, \"invalid\");",
+        "slice": "findGetter(bean, \"invalid\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithNullObject()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "findSetter(null, \"name\", String.class);",
+    "offset": [
+      {
+        "line": 287,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 287,
+          "column": 3
+        },
+        "assert": "findSetter(null, \"name\", String.class);",
+        "slice": "findSetter(null, \"name\", String.class);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithNullFieldName()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "findSetter(bean, null, String.class);",
+    "offset": [
+      {
+        "line": 295,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 295,
+          "column": 3
+        },
+        "assert": "findSetter(bean, null, String.class);",
+        "slice": "findSetter(bean, null, String.class);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithNullFieldType()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "findSetter(bean, \"name\", null);",
+    "offset": [
+      {
+        "line": 303,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 303,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"name\", null);",
+        "slice": "findSetter(bean, \"name\", null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithInvalidFieldName()",
+    "annotation": "@Test(expected \u003d SuperCsvReflectionException.class)",
+    "code": "findSetter(bean, \"invalid\", String.class);",
+    "offset": [
+      {
+        "line": 311,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 311,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"invalid\", String.class);",
+        "slice": "findSetter(bean, \"invalid\", String.class);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithInvalidFieldNameAndPrimitiveType()",
+    "annotation": "@Test(expected \u003d SuperCsvReflectionException.class)",
+    "code": "findSetter(bean, \"invalid\", int.class);",
+    "offset": [
+      {
+        "line": 320,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 320,
+          "column": 3
+        },
+        "assert": "findSetter(bean, \"invalid\", int.class);",
+        "slice": "findSetter(bean, \"invalid\", int.class);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testPrivateConstructor()",
+    "annotation": "@Test",
+    "code": "Constructor\u003c?\u003e c \u003d ReflectionUtils.class.getDeclaredConstructors()[0];c.setAccessible(true);c.newInstance();",
+    "offset": [
+      {
+        "line": 328,
+        "column": 22
+      },
+      {
+        "line": 329,
+        "column": 3
+      },
+      {
+        "line": 330,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 328,
+          "column": 3
+        },
+        "assert": "Constructor\u003c?\u003e c \u003d ReflectionUtils.class.getDeclaredConstructors()[0];c.setAccessible(true);c.newInstance();",
+        "slice": "Constructor\u003c?\u003e c \u003d ReflectionUtils.class.getDeclaredConstructors()[0];c.setAccessible(true);c.newInstance();"
+      }
+    ]
+  }
+]

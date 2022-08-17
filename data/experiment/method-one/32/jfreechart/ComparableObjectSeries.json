@@ -1,0 +1,114 @@
+[
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.getAutoSort()",
+    "unitTestMethod": "org.jfree.data.ComparableObjectSeriesTest.testConstructor1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 106,
+          "column": 31
+        },
+        "testCodeLocation": {
+          "line": 96,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.ComparableObjectSeries(java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.ComparableObjectSeriesTest.testConstructor1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 76,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 101,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.getItemCount()",
+    "unitTestMethod": "org.jfree.data.ComparableObjectSeriesTest.testConstructor1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 126,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 92,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.getMaximumItemCount()",
+    "unitTestMethod": "org.jfree.data.ComparableObjectSeriesTest.testConstructor1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 139,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 97,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.equals(java.lang.Object)",
+    "unitTestMethod": "org.jfree.data.ComparableObjectSeriesTest.testEquals()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 393,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 148,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.hashCode()",
+    "unitTestMethod": "org.jfree.data.ComparableObjectSeriesTest.testHashCode()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 211,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.getAllowDuplicateXValues()",
+    "unitTestMethod": "org.jfree.data.ComparableObjectSeriesTest.testConstructor1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 117,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 94,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

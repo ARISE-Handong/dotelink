@@ -1,0 +1,244 @@
+[
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.get(K1, K2, K3)",
+    "comment": "\n\t * Fetch a value from the Hashmap.\n\t * \n\t * @param firstKey\n\t *            first key\n\t * @param secondKey\n\t *            second key\n\t * @param thirdKey\n\t *            third key\n\t * @return the element or null.\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Fetch a value from the Hashmap.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 133,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return the element or null.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 141,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.getAs2d(K1)",
+    "comment": "\n\t * Fetch the outermost Hashmap as a TwoDHashMap.\n\t * \n\t * @param firstKey\n\t *            first key\n\t * @return the the innermost hashmap\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Fetch the outermost Hashmap as a TwoDHashMap.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 97,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return the the innermost hashmap",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 101,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.keySet()",
+    "comment": "\n\t * Returns a set of the keys of the outermost map.\n\t * \n\t * @return the key set for the outermost map\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a set of the keys of the outermost map.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 242,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return the key set for the outermost map",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 244,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.get(K1)",
+    "comment": "\n\t * Fetch the outermost Hashmap.\n\t * \n\t * @param firstKey\n\t *            first key\n\t * @return the the innermost hashmap\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Fetch the outermost Hashmap.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 86,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return the the innermost hashmap",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 90,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.containsKey(K1, K2, K3)",
+    "comment": "\n\t * Existence check of a value (or \u003ctt\u003enull\u003c/tt\u003e) mapped to the keys.\n\t * \n\t * @param firstKey\n\t *            first key\n\t * @param secondKey\n\t *            second key\n\t * @param thirdKey\n\t *            third key\n\t * @return true when an element (or \u003ctt\u003enull\u003c/tt\u003e) has been stored with the keys\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Existence check of a value (or \u003ctt\u003enull\u003c/tt\u003e) mapped to the keys.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 60,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return true when an element (or \u003ctt\u003enull\u003c/tt\u003e) has been stored with the keys",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 68,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.size(K1)",
+    "comment": "\n\t * Returns the number of key-value mappings in this map for the second key.\n\t * \n\t * @param firstKey\n\t *            the first key\n\t * @return Returns the number of key-value mappings in this map for the second key.\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the number of key-value mappings in this map for the second key.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 202,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return Returns the number of key-value mappings in this map for the second key.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 206,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.get(K1, K2)",
+    "comment": "\n\t * Fetch the innermost Hashmap.\n\t * \n\t * @param firstKey\n\t *            first key\n\t * @param secondKey\n\t *            second key\n\t * @return the the innermost hashmap\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Fetch the innermost Hashmap.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 114,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return the the innermost hashmap",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 120,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.containsKey(K1, K2)",
+    "comment": "\n\t * Existence check of a value (or \u003ctt\u003enull\u003c/tt\u003e) mapped to the keys.\n\t * \n\t * @param firstKey\n\t *            first key\n\t * @param secondKey\n\t *            second key\n\t * @return true when an element (or \u003ctt\u003enull\u003c/tt\u003e) has been stored with the keys\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Existence check of a value (or \u003ctt\u003enull\u003c/tt\u003e) mapped to the keys.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 41,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return true when an element (or \u003ctt\u003enull\u003c/tt\u003e) has been stored with the keys",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 47,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.size()",
+    "comment": "\n\t * Returns the number of key-value mappings in this map for the first key.\n\t * \n\t * @return Returns the number of key-value mappings in this map for the first key.\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the number of key-value mappings in this map for the first key.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 193,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return Returns the number of key-value mappings in this map for the first key.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 195,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.size(K1, K2)",
+    "comment": "\n\t * Returns the number of key-value mappings in this map for the third key.\n\t * \n\t * @param firstKey\n\t *            the first key\n\t * @param secondKey\n\t *            the second key\n\t * @return Returns the number of key-value mappings in this map for the third key.\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the number of key-value mappings in this map for the third key.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 218,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return Returns the number of key-value mappings in this map for the third key.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 224,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.set(K1, K2, K3, V)",
+    "comment": "\n\t * Insert a value\n\t * \n\t * @param firstKey\n\t *            first key\n\t * @param secondKey\n\t *            second key\n\t * @param thirdKey\n\t *            third key\n\t * @param value\n\t *            the value to be inserted. \u003ctt\u003enull\u003c/tt\u003e may be inserted as well.\n\t * @return null or the value the insert is replacing.\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Insert a value",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 159,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return null or the value the insert is replacing.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 169,
+          "column": 5
+        }
+      }
+    ]
+  }
+]

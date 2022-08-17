@@ -1,0 +1,1280 @@
+[
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testGetValue()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");assertEquals(new Double(1.0), d.getValue(\"R1\", \"C1\"));boolean pass \u003d false;try {\n    d.getValue(\"XX\", \"C1\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);pass \u003d false;try {\n    d.getValue(\"R1\", \"XX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 66,
+        "column": 34
+      },
+      {
+        "line": 67,
+        "column": 9
+      },
+      {
+        "line": 67,
+        "column": 20
+      },
+      {
+        "line": 68,
+        "column": 9
+      },
+      {
+        "line": 68,
+        "column": 22
+      },
+      {
+        "line": 68,
+        "column": 39
+      },
+      {
+        "line": 71,
+        "column": 13
+      },
+      {
+        "line": 76,
+        "column": 9
+      },
+      {
+        "line": 80,
+        "column": 13
+      },
+      {
+        "line": 85,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 66,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");assertEquals(new Double(1.0), d.getValue(\"R1\", \"C1\"));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");assertEquals(new Double(1.0), d.getValue(\"R1\", \"C1\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 69,
+          "column": 9
+        },
+        "assert": "boolean pass \u003d false;try {\n    d.getValue(\"XX\", \"C1\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");boolean pass \u003d false;try {\n    d.getValue(\"XX\", \"C1\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 78,
+          "column": 9
+        },
+        "assert": "pass \u003d false;try {\n    d.getValue(\"R1\", \"XX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");boolean pass \u003d false;try {\n    d.getValue(\"XX\", \"C1\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}pass \u003d false;try {\n    d.getValue(\"R1\", \"XX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testCloning()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues2D v1 \u003d new DefaultKeyedValues2D();v1.setValue(new Integer(1), \"V1\", \"C1\");v1.setValue(null, \"V2\", \"C1\");v1.setValue(new Integer(3), \"V3\", \"C2\");DefaultKeyedValues2D v2 \u003d (DefaultKeyedValues2D) v1.clone();assertTrue(v1 !\u003d v2);assertTrue(v1.getClass() \u003d\u003d v2.getClass());assertTrue(v1.equals(v2));// check that clone is independent of the original\nv2.setValue(new Integer(2), \"V2\", \"C1\");assertFalse(v1.equals(v2));",
+    "offset": [
+      {
+        "line": 93,
+        "column": 35
+      },
+      {
+        "line": 94,
+        "column": 9
+      },
+      {
+        "line": 94,
+        "column": 21
+      },
+      {
+        "line": 95,
+        "column": 9
+      },
+      {
+        "line": 96,
+        "column": 9
+      },
+      {
+        "line": 96,
+        "column": 21
+      },
+      {
+        "line": 97,
+        "column": 58
+      },
+      {
+        "line": 98,
+        "column": 9
+      },
+      {
+        "line": 99,
+        "column": 9
+      },
+      {
+        "line": 99,
+        "column": 20
+      },
+      {
+        "line": 99,
+        "column": 37
+      },
+      {
+        "line": 100,
+        "column": 9
+      },
+      {
+        "line": 100,
+        "column": 20
+      },
+      {
+        "line": 103,
+        "column": 9
+      },
+      {
+        "line": 103,
+        "column": 21
+      },
+      {
+        "line": 104,
+        "column": 9
+      },
+      {
+        "line": 104,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 99,
+          "column": 9
+        },
+        "assert": "assertTrue(v1.getClass() \u003d\u003d v2.getClass());",
+        "slice": "DefaultKeyedValues2D v1 \u003d new DefaultKeyedValues2D();v1.setValue(new Integer(1), \"V1\", \"C1\");v1.setValue(null, \"V2\", \"C1\");v1.setValue(new Integer(3), \"V3\", \"C2\");DefaultKeyedValues2D v2 \u003d (DefaultKeyedValues2D) v1.clone();assertTrue(v1.getClass() \u003d\u003d v2.getClass());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 100,
+          "column": 9
+        },
+        "assert": "assertTrue(v1.equals(v2));",
+        "slice": "DefaultKeyedValues2D v1 \u003d new DefaultKeyedValues2D();v1.setValue(new Integer(1), \"V1\", \"C1\");v1.setValue(null, \"V2\", \"C1\");v1.setValue(new Integer(3), \"V3\", \"C2\");DefaultKeyedValues2D v2 \u003d (DefaultKeyedValues2D) v1.clone();assertTrue(v1.equals(v2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 103,
+          "column": 9
+        },
+        "assert": "// check that clone is independent of the original\nv2.setValue(new Integer(2), \"V2\", \"C1\");assertFalse(v1.equals(v2));",
+        "slice": "DefaultKeyedValues2D v1 \u003d new DefaultKeyedValues2D();v1.setValue(new Integer(1), \"V1\", \"C1\");v1.setValue(null, \"V2\", \"C1\");v1.setValue(new Integer(3), \"V3\", \"C2\");DefaultKeyedValues2D v2 \u003d (DefaultKeyedValues2D) v1.clone();// check that clone is independent of the original\nv2.setValue(new Integer(2), \"V2\", \"C1\");assertFalse(v1.equals(v2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 93,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues2D v1 \u003d new DefaultKeyedValues2D();v1.setValue(new Integer(1), \"V1\", \"C1\");v1.setValue(null, \"V2\", \"C1\");v1.setValue(new Integer(3), \"V3\", \"C2\");DefaultKeyedValues2D v2 \u003d (DefaultKeyedValues2D) v1.clone();assertTrue(v1 !\u003d v2);",
+        "slice": "DefaultKeyedValues2D v1 \u003d new DefaultKeyedValues2D();v1.setValue(new Integer(1), \"V1\", \"C1\");v1.setValue(null, \"V2\", \"C1\");v1.setValue(new Integer(3), \"V3\", \"C2\");DefaultKeyedValues2D v2 \u003d (DefaultKeyedValues2D) v1.clone();assertTrue(v1 !\u003d v2);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testSerialization()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues2D kv2D1 \u003d new DefaultKeyedValues2D();kv2D1.addValue(new Double(234.2), \"Row1\", \"Col1\");kv2D1.addValue(null, \"Row1\", \"Col2\");kv2D1.addValue(new Double(345.9), \"Row2\", \"Col1\");kv2D1.addValue(new Double(452.7), \"Row2\", \"Col2\");DefaultKeyedValues2D kv2D2 \u003d (DefaultKeyedValues2D) TestUtilities.serialised(kv2D1);assertEquals(kv2D1, kv2D2);",
+    "offset": [
+      {
+        "line": 112,
+        "column": 38
+      },
+      {
+        "line": 113,
+        "column": 9
+      },
+      {
+        "line": 113,
+        "column": 24
+      },
+      {
+        "line": 114,
+        "column": 9
+      },
+      {
+        "line": 115,
+        "column": 9
+      },
+      {
+        "line": 115,
+        "column": 24
+      },
+      {
+        "line": 116,
+        "column": 9
+      },
+      {
+        "line": 116,
+        "column": 24
+      },
+      {
+        "line": 119,
+        "column": 17
+      },
+      {
+        "line": 120,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 112,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues2D kv2D1 \u003d new DefaultKeyedValues2D();kv2D1.addValue(new Double(234.2), \"Row1\", \"Col1\");kv2D1.addValue(null, \"Row1\", \"Col2\");kv2D1.addValue(new Double(345.9), \"Row2\", \"Col1\");kv2D1.addValue(new Double(452.7), \"Row2\", \"Col2\");DefaultKeyedValues2D kv2D2 \u003d (DefaultKeyedValues2D) TestUtilities.serialised(kv2D1);assertEquals(kv2D1, kv2D2);",
+        "slice": "DefaultKeyedValues2D kv2D1 \u003d new DefaultKeyedValues2D();kv2D1.addValue(new Double(234.2), \"Row1\", \"Col1\");kv2D1.addValue(null, \"Row1\", \"Col2\");kv2D1.addValue(new Double(345.9), \"Row2\", \"Col1\");kv2D1.addValue(new Double(452.7), \"Row2\", \"Col2\");DefaultKeyedValues2D kv2D2 \u003d (DefaultKeyedValues2D) TestUtilities.serialised(kv2D1);assertEquals(kv2D1, kv2D2);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testEquals()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues2D d1 \u003d new DefaultKeyedValues2D();DefaultKeyedValues2D d2 \u003d new DefaultKeyedValues2D();assertTrue(d1.equals(d2));assertTrue(d2.equals(d1));d1.addValue(new Double(1.0), new Double(2.0), \"S1\");assertFalse(d1.equals(d2));d2.addValue(new Double(1.0), new Double(2.0), \"S1\");assertTrue(d1.equals(d2));",
+    "offset": [
+      {
+        "line": 128,
+        "column": 35
+      },
+      {
+        "line": 129,
+        "column": 35
+      },
+      {
+        "line": 130,
+        "column": 9
+      },
+      {
+        "line": 130,
+        "column": 20
+      },
+      {
+        "line": 131,
+        "column": 9
+      },
+      {
+        "line": 131,
+        "column": 20
+      },
+      {
+        "line": 133,
+        "column": 9
+      },
+      {
+        "line": 133,
+        "column": 21
+      },
+      {
+        "line": 133,
+        "column": 38
+      },
+      {
+        "line": 134,
+        "column": 9
+      },
+      {
+        "line": 134,
+        "column": 21
+      },
+      {
+        "line": 135,
+        "column": 9
+      },
+      {
+        "line": 135,
+        "column": 21
+      },
+      {
+        "line": 135,
+        "column": 38
+      },
+      {
+        "line": 136,
+        "column": 9
+      },
+      {
+        "line": 136,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 128,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues2D d1 \u003d new DefaultKeyedValues2D();DefaultKeyedValues2D d2 \u003d new DefaultKeyedValues2D();assertTrue(d1.equals(d2));",
+        "slice": "DefaultKeyedValues2D d1 \u003d new DefaultKeyedValues2D();DefaultKeyedValues2D d2 \u003d new DefaultKeyedValues2D();assertTrue(d1.equals(d2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 131,
+          "column": 9
+        },
+        "assert": "assertTrue(d2.equals(d1));",
+        "slice": "DefaultKeyedValues2D d1 \u003d new DefaultKeyedValues2D();DefaultKeyedValues2D d2 \u003d new DefaultKeyedValues2D();assertTrue(d2.equals(d1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 133,
+          "column": 9
+        },
+        "assert": "d1.addValue(new Double(1.0), new Double(2.0), \"S1\");assertFalse(d1.equals(d2));",
+        "slice": "DefaultKeyedValues2D d1 \u003d new DefaultKeyedValues2D();DefaultKeyedValues2D d2 \u003d new DefaultKeyedValues2D();d1.addValue(new Double(1.0), new Double(2.0), \"S1\");assertFalse(d1.equals(d2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 135,
+          "column": 9
+        },
+        "assert": "d2.addValue(new Double(1.0), new Double(2.0), \"S1\");assertTrue(d1.equals(d2));",
+        "slice": "DefaultKeyedValues2D d1 \u003d new DefaultKeyedValues2D();DefaultKeyedValues2D d2 \u003d new DefaultKeyedValues2D();d1.addValue(new Double(1.0), new Double(2.0), \"S1\");d2.addValue(new Double(1.0), new Double(2.0), \"S1\");assertTrue(d1.equals(d2));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testSparsePopulation()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Integer(11), \"R1\", \"C1\");d.addValue(new Integer(22), \"R2\", \"C2\");assertEquals(new Integer(11), d.getValue(\"R1\", \"C1\"));assertNull(d.getValue(\"R1\", \"C2\"));assertEquals(new Integer(22), d.getValue(\"R2\", \"C2\"));assertNull(d.getValue(\"R2\", \"C1\"));",
+    "offset": [
+      {
+        "line": 145,
+        "column": 34
+      },
+      {
+        "line": 146,
+        "column": 9
+      },
+      {
+        "line": 146,
+        "column": 20
+      },
+      {
+        "line": 147,
+        "column": 9
+      },
+      {
+        "line": 147,
+        "column": 20
+      },
+      {
+        "line": 149,
+        "column": 9
+      },
+      {
+        "line": 149,
+        "column": 22
+      },
+      {
+        "line": 149,
+        "column": 39
+      },
+      {
+        "line": 150,
+        "column": 9
+      },
+      {
+        "line": 150,
+        "column": 20
+      },
+      {
+        "line": 151,
+        "column": 9
+      },
+      {
+        "line": 151,
+        "column": 22
+      },
+      {
+        "line": 151,
+        "column": 39
+      },
+      {
+        "line": 152,
+        "column": 9
+      },
+      {
+        "line": 152,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 145,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Integer(11), \"R1\", \"C1\");d.addValue(new Integer(22), \"R2\", \"C2\");assertEquals(new Integer(11), d.getValue(\"R1\", \"C1\"));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Integer(11), \"R1\", \"C1\");d.addValue(new Integer(22), \"R2\", \"C2\");assertEquals(new Integer(11), d.getValue(\"R1\", \"C1\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 150,
+          "column": 9
+        },
+        "assert": "assertNull(d.getValue(\"R1\", \"C2\"));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Integer(11), \"R1\", \"C1\");d.addValue(new Integer(22), \"R2\", \"C2\");assertNull(d.getValue(\"R1\", \"C2\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 151,
+          "column": 9
+        },
+        "assert": "assertEquals(new Integer(22), d.getValue(\"R2\", \"C2\"));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Integer(11), \"R1\", \"C1\");d.addValue(new Integer(22), \"R2\", \"C2\");assertEquals(new Integer(22), d.getValue(\"R2\", \"C2\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 152,
+          "column": 9
+        },
+        "assert": "assertNull(d.getValue(\"R2\", \"C1\"));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Integer(11), \"R1\", \"C1\");d.addValue(new Integer(22), \"R2\", \"C2\");assertNull(d.getValue(\"R2\", \"C1\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testRowCount()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();assertEquals(0, d.getRowCount());d.addValue(new Double(1.0), \"R1\", \"C1\");assertEquals(1, d.getRowCount());d.addValue(new Double(2.0), \"R2\", \"C1\");assertEquals(2, d.getRowCount());",
+    "offset": [
+      {
+        "line": 160,
+        "column": 34
+      },
+      {
+        "line": 161,
+        "column": 9
+      },
+      {
+        "line": 161,
+        "column": 25
+      },
+      {
+        "line": 162,
+        "column": 9
+      },
+      {
+        "line": 162,
+        "column": 20
+      },
+      {
+        "line": 163,
+        "column": 9
+      },
+      {
+        "line": 163,
+        "column": 25
+      },
+      {
+        "line": 164,
+        "column": 9
+      },
+      {
+        "line": 164,
+        "column": 20
+      },
+      {
+        "line": 165,
+        "column": 9
+      },
+      {
+        "line": 165,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 160,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();assertEquals(0, d.getRowCount());",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();assertEquals(0, d.getRowCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 162,
+          "column": 9
+        },
+        "assert": "d.addValue(new Double(1.0), \"R1\", \"C1\");assertEquals(1, d.getRowCount());",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");assertEquals(1, d.getRowCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 164,
+          "column": 9
+        },
+        "assert": "d.addValue(new Double(2.0), \"R2\", \"C1\");assertEquals(2, d.getRowCount());",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C1\");assertEquals(2, d.getRowCount());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testColumnCount()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();assertEquals(0, d.getColumnCount());d.addValue(new Double(1.0), \"R1\", \"C1\");assertEquals(1, d.getColumnCount());d.addValue(new Double(2.0), \"R1\", \"C2\");assertEquals(2, d.getColumnCount());",
+    "offset": [
+      {
+        "line": 173,
+        "column": 34
+      },
+      {
+        "line": 174,
+        "column": 9
+      },
+      {
+        "line": 174,
+        "column": 25
+      },
+      {
+        "line": 175,
+        "column": 9
+      },
+      {
+        "line": 175,
+        "column": 20
+      },
+      {
+        "line": 176,
+        "column": 9
+      },
+      {
+        "line": 176,
+        "column": 25
+      },
+      {
+        "line": 177,
+        "column": 9
+      },
+      {
+        "line": 177,
+        "column": 20
+      },
+      {
+        "line": 178,
+        "column": 9
+      },
+      {
+        "line": 178,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 177,
+          "column": 9
+        },
+        "assert": "d.addValue(new Double(2.0), \"R1\", \"C2\");assertEquals(2, d.getColumnCount());",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R1\", \"C2\");assertEquals(2, d.getColumnCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 173,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();assertEquals(0, d.getColumnCount());",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();assertEquals(0, d.getColumnCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 175,
+          "column": 9
+        },
+        "assert": "d.addValue(new Double(1.0), \"R1\", \"C1\");assertEquals(1, d.getColumnCount());",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");assertEquals(1, d.getColumnCount());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testGetValue2()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getValue(0, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);d.addValue(new Double(1.0), \"R1\", \"C1\");assertEquals(1.0, d.getValue(0, 0).doubleValue(), EPSILON);d.addValue(new Double(2.0), \"R2\", \"C2\");assertEquals(2.0, d.getValue(1, 1).doubleValue(), EPSILON);assertNull(d.getValue(1, 0));assertNull(d.getValue(0, 1));pass \u003d false;try {\n    d.getValue(2, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 188,
+        "column": 34
+      },
+      {
+        "line": 191,
+        "column": 13
+      },
+      {
+        "line": 196,
+        "column": 9
+      },
+      {
+        "line": 197,
+        "column": 9
+      },
+      {
+        "line": 197,
+        "column": 20
+      },
+      {
+        "line": 198,
+        "column": 9
+      },
+      {
+        "line": 198,
+        "column": 27
+      },
+      {
+        "line": 198,
+        "column": 27
+      },
+      {
+        "line": 199,
+        "column": 9
+      },
+      {
+        "line": 199,
+        "column": 20
+      },
+      {
+        "line": 200,
+        "column": 9
+      },
+      {
+        "line": 200,
+        "column": 27
+      },
+      {
+        "line": 200,
+        "column": 27
+      },
+      {
+        "line": 201,
+        "column": 9
+      },
+      {
+        "line": 201,
+        "column": 20
+      },
+      {
+        "line": 202,
+        "column": 9
+      },
+      {
+        "line": 202,
+        "column": 20
+      },
+      {
+        "line": 206,
+        "column": 13
+      },
+      {
+        "line": 211,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 197,
+          "column": 9
+        },
+        "assert": "d.addValue(new Double(1.0), \"R1\", \"C1\");assertEquals(1.0, d.getValue(0, 0).doubleValue(), EPSILON);",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getValue(0, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}d.addValue(new Double(1.0), \"R1\", \"C1\");assertEquals(1.0, d.getValue(0, 0).doubleValue(), EPSILON);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 199,
+          "column": 9
+        },
+        "assert": "d.addValue(new Double(2.0), \"R2\", \"C2\");assertEquals(2.0, d.getValue(1, 1).doubleValue(), EPSILON);",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getValue(0, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C2\");assertEquals(2.0, d.getValue(1, 1).doubleValue(), EPSILON);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 201,
+          "column": 9
+        },
+        "assert": "assertNull(d.getValue(1, 0));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getValue(0, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C2\");assertNull(d.getValue(1, 0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 202,
+          "column": 9
+        },
+        "assert": "assertNull(d.getValue(0, 1));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getValue(0, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C2\");assertNull(d.getValue(0, 1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 188,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getValue(0, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getValue(0, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 204,
+          "column": 9
+        },
+        "assert": "pass \u003d false;try {\n    d.getValue(2, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getValue(0, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C2\");pass \u003d false;try {\n    d.getValue(2, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testGetRowKey()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getRowKey(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(1.0), \"R2\", \"C1\");assertEquals(\"R1\", d.getRowKey(0));assertEquals(\"R2\", d.getRowKey(1));// check sorted rows\nd \u003d new DefaultKeyedValues2D(true);d.addValue(new Double(1.0), \"R1\", \"C1\");assertEquals(\"R1\", d.getRowKey(0));d.addValue(new Double(0.0), \"R0\", \"C1\");assertEquals(\"R0\", d.getRowKey(0));assertEquals(\"R1\", d.getRowKey(1));",
+    "offset": [
+      {
+        "line": 219,
+        "column": 34
+      },
+      {
+        "line": 222,
+        "column": 13
+      },
+      {
+        "line": 227,
+        "column": 9
+      },
+      {
+        "line": 228,
+        "column": 9
+      },
+      {
+        "line": 228,
+        "column": 20
+      },
+      {
+        "line": 229,
+        "column": 9
+      },
+      {
+        "line": 229,
+        "column": 20
+      },
+      {
+        "line": 230,
+        "column": 9
+      },
+      {
+        "line": 230,
+        "column": 28
+      },
+      {
+        "line": 231,
+        "column": 9
+      },
+      {
+        "line": 231,
+        "column": 28
+      },
+      {
+        "line": 234,
+        "column": 13
+      },
+      {
+        "line": 235,
+        "column": 9
+      },
+      {
+        "line": 235,
+        "column": 20
+      },
+      {
+        "line": 236,
+        "column": 9
+      },
+      {
+        "line": 236,
+        "column": 28
+      },
+      {
+        "line": 237,
+        "column": 9
+      },
+      {
+        "line": 237,
+        "column": 20
+      },
+      {
+        "line": 238,
+        "column": 9
+      },
+      {
+        "line": 238,
+        "column": 28
+      },
+      {
+        "line": 239,
+        "column": 9
+      },
+      {
+        "line": 239,
+        "column": 28
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 228,
+          "column": 9
+        },
+        "assert": "d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(1.0), \"R2\", \"C1\");assertEquals(\"R1\", d.getRowKey(0));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getRowKey(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(1.0), \"R2\", \"C1\");assertEquals(\"R1\", d.getRowKey(0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 231,
+          "column": 9
+        },
+        "assert": "assertEquals(\"R2\", d.getRowKey(1));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getRowKey(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(1.0), \"R2\", \"C1\");assertEquals(\"R2\", d.getRowKey(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 234,
+          "column": 9
+        },
+        "assert": "// check sorted rows\nd \u003d new DefaultKeyedValues2D(true);d.addValue(new Double(1.0), \"R1\", \"C1\");assertEquals(\"R1\", d.getRowKey(0));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getRowKey(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(1.0), \"R2\", \"C1\");// check sorted rows\nd \u003d new DefaultKeyedValues2D(true);d.addValue(new Double(1.0), \"R1\", \"C1\");assertEquals(\"R1\", d.getRowKey(0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 219,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getRowKey(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getRowKey(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 237,
+          "column": 9
+        },
+        "assert": "d.addValue(new Double(0.0), \"R0\", \"C1\");assertEquals(\"R0\", d.getRowKey(0));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getRowKey(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(1.0), \"R2\", \"C1\");// check sorted rows\nd \u003d new DefaultKeyedValues2D(true);d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(0.0), \"R0\", \"C1\");assertEquals(\"R0\", d.getRowKey(0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 239,
+          "column": 9
+        },
+        "assert": "assertEquals(\"R1\", d.getRowKey(1));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getRowKey(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(1.0), \"R2\", \"C1\");// check sorted rows\nd \u003d new DefaultKeyedValues2D(true);d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(0.0), \"R0\", \"C1\");assertEquals(\"R1\", d.getRowKey(1));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testGetColumnKey()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getColumnKey(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(1.0), \"R1\", \"C2\");assertEquals(\"C1\", d.getColumnKey(0));assertEquals(\"C2\", d.getColumnKey(1));",
+    "offset": [
+      {
+        "line": 247,
+        "column": 34
+      },
+      {
+        "line": 250,
+        "column": 13
+      },
+      {
+        "line": 255,
+        "column": 9
+      },
+      {
+        "line": 256,
+        "column": 9
+      },
+      {
+        "line": 256,
+        "column": 20
+      },
+      {
+        "line": 257,
+        "column": 9
+      },
+      {
+        "line": 257,
+        "column": 20
+      },
+      {
+        "line": 258,
+        "column": 9
+      },
+      {
+        "line": 258,
+        "column": 28
+      },
+      {
+        "line": 259,
+        "column": 9
+      },
+      {
+        "line": 259,
+        "column": 28
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 256,
+          "column": 9
+        },
+        "assert": "d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(1.0), \"R1\", \"C2\");assertEquals(\"C1\", d.getColumnKey(0));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getColumnKey(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(1.0), \"R1\", \"C2\");assertEquals(\"C1\", d.getColumnKey(0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 259,
+          "column": 9
+        },
+        "assert": "assertEquals(\"C2\", d.getColumnKey(1));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getColumnKey(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(1.0), \"R1\", \"C2\");assertEquals(\"C2\", d.getColumnKey(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 247,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getColumnKey(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.getColumnKey(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testRemoveValue()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.removeValue(\"R1\", \"C1\");d.addValue(new Double(1.0), \"R1\", \"C1\");d.removeValue(\"R1\", \"C1\");assertEquals(0, d.getRowCount());assertEquals(0, d.getColumnCount());d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C1\");d.removeValue(\"R1\", \"C1\");assertEquals(new Double(2.0), d.getValue(0, 0));",
+    "offset": [
+      {
+        "line": 267,
+        "column": 34
+      },
+      {
+        "line": 268,
+        "column": 9
+      },
+      {
+        "line": 269,
+        "column": 9
+      },
+      {
+        "line": 269,
+        "column": 20
+      },
+      {
+        "line": 270,
+        "column": 9
+      },
+      {
+        "line": 271,
+        "column": 9
+      },
+      {
+        "line": 271,
+        "column": 25
+      },
+      {
+        "line": 272,
+        "column": 9
+      },
+      {
+        "line": 272,
+        "column": 25
+      },
+      {
+        "line": 274,
+        "column": 9
+      },
+      {
+        "line": 274,
+        "column": 20
+      },
+      {
+        "line": 275,
+        "column": 9
+      },
+      {
+        "line": 275,
+        "column": 20
+      },
+      {
+        "line": 276,
+        "column": 9
+      },
+      {
+        "line": 277,
+        "column": 9
+      },
+      {
+        "line": 277,
+        "column": 22
+      },
+      {
+        "line": 277,
+        "column": 39
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 272,
+          "column": 9
+        },
+        "assert": "assertEquals(0, d.getColumnCount());",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.removeValue(\"R1\", \"C1\");d.addValue(new Double(1.0), \"R1\", \"C1\");d.removeValue(\"R1\", \"C1\");assertEquals(0, d.getColumnCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 274,
+          "column": 9
+        },
+        "assert": "d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C1\");d.removeValue(\"R1\", \"C1\");assertEquals(new Double(2.0), d.getValue(0, 0));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.removeValue(\"R1\", \"C1\");d.addValue(new Double(1.0), \"R1\", \"C1\");d.removeValue(\"R1\", \"C1\");d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C1\");d.removeValue(\"R1\", \"C1\");assertEquals(new Double(2.0), d.getValue(0, 0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 267,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.removeValue(\"R1\", \"C1\");d.addValue(new Double(1.0), \"R1\", \"C1\");d.removeValue(\"R1\", \"C1\");assertEquals(0, d.getRowCount());",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.removeValue(\"R1\", \"C1\");d.addValue(new Double(1.0), \"R1\", \"C1\");d.removeValue(\"R1\", \"C1\");assertEquals(0, d.getRowCount());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testRemoveValueBug1690654()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C2\");assertEquals(2, d.getColumnCount());assertEquals(2, d.getRowCount());d.removeValue(\"R2\", \"C2\");assertEquals(1, d.getColumnCount());assertEquals(1, d.getRowCount());assertEquals(new Double(1.0), d.getValue(0, 0));",
+    "offset": [
+      {
+        "line": 285,
+        "column": 34
+      },
+      {
+        "line": 286,
+        "column": 9
+      },
+      {
+        "line": 286,
+        "column": 20
+      },
+      {
+        "line": 287,
+        "column": 9
+      },
+      {
+        "line": 287,
+        "column": 20
+      },
+      {
+        "line": 288,
+        "column": 9
+      },
+      {
+        "line": 288,
+        "column": 25
+      },
+      {
+        "line": 289,
+        "column": 9
+      },
+      {
+        "line": 289,
+        "column": 25
+      },
+      {
+        "line": 290,
+        "column": 9
+      },
+      {
+        "line": 291,
+        "column": 9
+      },
+      {
+        "line": 291,
+        "column": 25
+      },
+      {
+        "line": 292,
+        "column": 9
+      },
+      {
+        "line": 292,
+        "column": 25
+      },
+      {
+        "line": 293,
+        "column": 9
+      },
+      {
+        "line": 293,
+        "column": 22
+      },
+      {
+        "line": 293,
+        "column": 39
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 289,
+          "column": 9
+        },
+        "assert": "assertEquals(2, d.getRowCount());",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C2\");assertEquals(2, d.getRowCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 290,
+          "column": 9
+        },
+        "assert": "d.removeValue(\"R2\", \"C2\");assertEquals(1, d.getColumnCount());",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C2\");d.removeValue(\"R2\", \"C2\");assertEquals(1, d.getColumnCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 292,
+          "column": 9
+        },
+        "assert": "assertEquals(1, d.getRowCount());",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C2\");d.removeValue(\"R2\", \"C2\");assertEquals(1, d.getRowCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 293,
+          "column": 9
+        },
+        "assert": "assertEquals(new Double(1.0), d.getValue(0, 0));",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C2\");d.removeValue(\"R2\", \"C2\");assertEquals(new Double(1.0), d.getValue(0, 0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C2\");assertEquals(2, d.getColumnCount());",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C2\");assertEquals(2, d.getColumnCount());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testRemoveRow()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.removeRow(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 301,
+        "column": 34
+      },
+      {
+        "line": 304,
+        "column": 13
+      },
+      {
+        "line": 309,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 301,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.removeRow(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();boolean pass \u003d false;try {\n    d.removeRow(0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testRemoveColumnByKey()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C2\");d.removeColumn(\"C2\");d.addValue(new Double(3.0), \"R2\", \"C2\");assertEquals(3.0, d.getValue(\"R2\", \"C2\").doubleValue(), EPSILON);// check for unknown column\nboolean pass \u003d false;try {\n    d.removeColumn(\"XXX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 317,
+        "column": 34
+      },
+      {
+        "line": 318,
+        "column": 9
+      },
+      {
+        "line": 318,
+        "column": 20
+      },
+      {
+        "line": 319,
+        "column": 9
+      },
+      {
+        "line": 319,
+        "column": 20
+      },
+      {
+        "line": 320,
+        "column": 9
+      },
+      {
+        "line": 321,
+        "column": 9
+      },
+      {
+        "line": 321,
+        "column": 20
+      },
+      {
+        "line": 322,
+        "column": 9
+      },
+      {
+        "line": 322,
+        "column": 27
+      },
+      {
+        "line": 322,
+        "column": 27
+      },
+      {
+        "line": 327,
+        "column": 13
+      },
+      {
+        "line": 332,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 325,
+          "column": 9
+        },
+        "assert": "// check for unknown column\nboolean pass \u003d false;try {\n    d.removeColumn(\"XXX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C2\");d.removeColumn(\"C2\");d.addValue(new Double(3.0), \"R2\", \"C2\");// check for unknown column\nboolean pass \u003d false;try {\n    d.removeColumn(\"XXX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 317,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C2\");d.removeColumn(\"C2\");d.addValue(new Double(3.0), \"R2\", \"C2\");assertEquals(3.0, d.getValue(\"R2\", \"C2\").doubleValue(), EPSILON);",
+        "slice": "DefaultKeyedValues2D d \u003d new DefaultKeyedValues2D();d.addValue(new Double(1.0), \"R1\", \"C1\");d.addValue(new Double(2.0), \"R2\", \"C2\");d.removeColumn(\"C2\");d.addValue(new Double(3.0), \"R2\", \"C2\");assertEquals(3.0, d.getValue(\"R2\", \"C2\").doubleValue(), EPSILON);"
+      }
+    ]
+  }
+]

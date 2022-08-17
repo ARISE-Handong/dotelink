@@ -1,0 +1,272 @@
+[
+  {
+    "productionMethod": "org.apache.commons.collections4.IteratorUtils.indexOf(java.util.Iterator<E>, org.apache.commons.collections4.Predicate<? super E>)",
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testIndexOf()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1287,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 865,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1289,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 871,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1295,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 868,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1295,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 871,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1296,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 872,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IteratorUtils.get(java.util.Iterator<E>, int)",
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testGetAtIndexFromIterator()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1389,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 838,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1399,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 838,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IteratorUtils.toArray(java.util.Iterator<?>)",
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testToArray()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1055,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 936,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IteratorUtils.forEach(java.util.Iterator<E>, org.apache.commons.collections4.Closure<? super E>)",
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testForEach()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1213,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 783,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IteratorUtils.forEachButLast(java.util.Iterator<E>, org.apache.commons.collections4.Closure<? super E>)",
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testForEachButLast()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1230,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 811,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1230,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 799,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1238,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 813,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IteratorUtils.toArray(java.util.Iterator<? extends E>, java.lang.Class<E>)",
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testToArray2()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1075,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 960,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1075,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 953,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IteratorUtils.asMultipleUseIterable(java.util.Iterator<? extends E>)",
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testAsMultipleIterableNull()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1020,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 501,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IteratorUtils.asIterable(java.util.Iterator<? extends E>)",
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testAsIterableNull()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1004,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 463,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IteratorUtils.toListIterator(java.util.Iterator<? extends E>)",
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testToListIteratorNull()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1038,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 996,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IteratorUtils.find(java.util.Iterator<E>, org.apache.commons.collections4.Predicate<? super E>)",
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testFind()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1259,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 746,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1260,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 752,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1266,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 749,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1267,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 753,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

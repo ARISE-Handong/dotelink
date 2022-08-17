@@ -1,0 +1,173 @@
+[
+  {
+    "productionMethod": "org.apache.logging.log4j.util.StringBuilders.appendKeyDqValue(java.lang.StringBuilder, java.lang.String, java.lang.Object)",
+    "comment": "\n     * Appends in the following format: key\u003ddouble quoted value.\n     *\n     * @param sb a string builder\n     * @param key a key\n     * @param value a value\n     * @return the specified StringBuilder\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Appends in the following format: key\u003ddouble quoted value.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 53,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the specified StringBuilder",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 58,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.StringBuilders.equalsIgnoreCase(java.lang.CharSequence, int, int, java.lang.CharSequence, int, int)",
+    "comment": "\n     * Returns true if the specified section of the left CharSequence equals, ignoring case, the specified section of\n     * the right CharSequence.\n     *\n     * @param left the left CharSequence\n     * @param leftOffset start index in the left CharSequence\n     * @param leftLength length of the section in the left CharSequence\n     * @param right the right CharSequence to compare a section of\n     * @param rightOffset start index in the right CharSequence\n     * @param rightLength length of the section in the right CharSequence\n     * @return true if equal ignoring case, false otherwise\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns true if the specified section of the left CharSequence equals, ignoring case, the specified section of the right CharSequence.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 132,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if equal ignoring case, false otherwise",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 141,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.StringBuilders.escapeAndDecrement(java.lang.StringBuilder, int, char)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.StringBuilders.appendKeyDqValue(java.lang.StringBuilder, java.util.Map.Entry\u003cjava.lang.String, java.lang.String\u003e)",
+    "comment": "\n     * Appends in the following format: key\u003ddouble quoted value.\n     *\n     * @param sb a string builder\n     * @param entry a map entry\n     * @return {@code key\u003d\"value\"}\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Appends in the following format: key\u003ddouble quoted value.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 42,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return {@code key\u003d\"value\"}",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 46,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.StringBuilders.escapeJson(java.lang.StringBuilder, int)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.StringBuilders.appendValue(java.lang.StringBuilder, java.lang.Object)",
+    "comment": "\n     * Appends a text representation of the specified object to the specified StringBuilder,\n     * if possible without allocating temporary objects.\n     *\n     * @param stringBuilder the StringBuilder to append the value to\n     * @param obj the object whose text representation to append to the StringBuilder\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Appends a text representation of the specified object to the specified StringBuilder, if possible without allocating temporary objects.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 65,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.StringBuilders.appendDqValue(java.lang.StringBuilder, java.lang.Object)",
+    "comment": "\n     * Appends in the following format: double quoted value.\n     *\n     * @param sb a string builder\n     * @param value a value\n     * @return {@code \"value\"}\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Appends in the following format: double quoted value.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 31,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return {@code \"value\"}",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 35,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.StringBuilders.escapeXml(java.lang.StringBuilder, int)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.StringBuilders.equals(java.lang.CharSequence, int, int, java.lang.CharSequence, int, int)",
+    "comment": "\n     * Returns true if the specified section of the left CharSequence equals the specified section of the right\n     * CharSequence.\n     *\n     * @param left the left CharSequence\n     * @param leftOffset start index in the left CharSequence\n     * @param leftLength length of the section in the left CharSequence\n     * @param right the right CharSequence to compare a section of\n     * @param rightOffset start index in the right CharSequence\n     * @param rightLength length of the section in the right CharSequence\n     * @return true if equal, false otherwise\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns true if the specified section of the left CharSequence equals the specified section of the right CharSequence.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 107,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if equal, false otherwise",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 116,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.StringBuilders.trimToMaxSize(java.lang.StringBuilder, int)",
+    "comment": "\n     * Ensures that the char[] array of the specified StringBuilder does not exceed the specified number of characters.\n     * This method is useful to ensure that excessively long char[] arrays are not kept in memory forever.\n     *\n     * @param stringBuilder the StringBuilder to check\n     * @param maxSize the maximum number of characters the StringBuilder is allowed to have\n     * @since 2.9\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Ensures that the char[] array of the specified StringBuilder does not exceed the specified number of characters.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 157,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This method is useful to ensure that excessively long char[] arrays are not kept in memory forever.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 158,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.StringBuilders.appendSpecificTypes(java.lang.StringBuilder, java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.StringBuilders.StringBuilders()",
+    "comment": "",
+    "sentences": []
+  }
+]

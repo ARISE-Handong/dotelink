@@ -1,0 +1,34 @@
+[
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.join(java.lang.Iterable\u003c?\u003e, char)",
+    "unitTestMethod": "org.apache.logging.log4j.util.StringsTest.testJoin()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 135,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 40,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.join(java.util.Iterator\u003c?\u003e, char)",
+    "unitTestMethod": "org.apache.logging.log4j.util.StringsTest.testJoin()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 153,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 40,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

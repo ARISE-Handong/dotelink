@@ -1,0 +1,82 @@
+[
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getStringProperty(java.lang.String)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testNonStringSystemProperties()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 99,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.extractSubset(java.util.Properties, java.lang.String)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testExtractSubset()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 517,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 47,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.PropertiesUtil(java.util.Properties)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testGetMappedProperty_sun_stderr_encoding()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 59,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 92,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getCharsetProperty(java.lang.String)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testGetMappedProperty_sun_stderr_encoding()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 179,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 92,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.partitionOnCommonPrefixes(java.util.Properties)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testPartitionOnCommonPrefix()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 553,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 55,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "productionMethod": "org.supercsv.util.TwoDHashMap.TwoDHashMap(java.util.HashMap<K1, java.util.HashMap<K2, V>>)",
+    "unitTestMethod": "org.supercsv.util.TwoDHashMapTest.testConstructorWithNull()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 51,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 194,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

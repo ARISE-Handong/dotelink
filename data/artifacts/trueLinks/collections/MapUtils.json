@@ -1,0 +1,732 @@
+[
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.safeAddToMap(java.util.Map<? super K, java.lang.Object>, K, java.lang.Object)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testSafeAddToMap()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1079,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1147,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.getLongValue(java.util.Map<? super K, ?>, K, long)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testgetLongValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 795,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 994,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 804,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 994,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.getBooleanValue(java.util.Map<? super K, ?>, K, boolean)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testgetBooleanValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 710,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1108,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 714,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1116,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.getByteValue(java.util.Map<? super K, ?>, K, byte)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testgetByteValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 735,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1052,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.debugPrint(java.io.PrintStream, java.lang.Object, java.util.Map<?, ?>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testDebugPrintNullStream()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 943,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 440,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.iterableMap(java.util.Map<K, V>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testIterableMap()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1770,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 875,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.getMap(java.util.Map<? super K, ?>, K, java.util.Map<?, ?>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testgetMap()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 567,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1136,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.iterableSortedMap(java.util.SortedMap<K, V>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testIterableSortedMap()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1787,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 893,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.size(java.util.Map<?, ?>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testSizeNull()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1799,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 915,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1801,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 915,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.getString(java.util.Map<? super K, ?>, K)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testgetString()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 127,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1082,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.getShortValue(java.util.Map<? super K, ?>, K, short)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testgetShortValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 755,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1033,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.getString(java.util.Map<? super K, ?>, K, java.lang.String)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testgetString()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 379,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1083,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 379,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1084,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 387,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1083,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 387,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1084,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.getFloatValue(java.util.Map<? super K, ?>, K, float)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testgetFloatValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 815,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 975,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.lazyMap(java.util.Map<K, V>, org.apache.commons.collections4.Factory<? extends V>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testLazyMapFactory()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1371,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 97,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1371,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 91,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.getNumber(java.util.Map<? super K, ?>, K, java.lang.Number)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testgetNumber()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 419,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1071,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1071,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.emptyIfNull(java.util.Map<K, V>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testEmptyIfNull()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1193,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 747,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1193,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 749,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1199,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 747,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.getDoubleValue(java.util.Map<? super K, ?>, K, double)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testgetDoubleValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 835,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 955,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 844,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 955,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.lazyMap(java.util.Map<K, V>, org.apache.commons.collections4.Transformer<? super K, ? extends V>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testLazyMapFactory()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1412,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 112,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1412,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 106,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.getObject(java.util.Map<? super K, V>, K)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testgetObject()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 110,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1095,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.toProperties(java.util.Map<K, V>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testToPropertiesEmpty()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 858,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 942,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.isEmpty(java.util.Map<?, ?>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testIsEmptyWithEmptyMap()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1206,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 755,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1211,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 755,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.isEmpty(java.util.Map<?, ?>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testIsEmptyWithNonEmptyMap()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1206,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 761,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1211,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 761,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.isEmpty(java.util.Map<?, ?>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testIsEmptyWithNull()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1206,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 768,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1207,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 768,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1211,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 768,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.putAll(java.util.Map<K, V>, java.lang.Object[])",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testPutAll_Map_array()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1146,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 171,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1146,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 175,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1147,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 197,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1147,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 206,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1147,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 215,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.getIntValue(java.util.Map<? super K, ?>, K, int)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testgetIntValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 775,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1014,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.predicatedMap(java.util.Map<K, V>, org.apache.commons.collections4.Predicate<? super K>, org.apache.commons.collections4.Predicate<? super V>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testPredicatedMap()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1291,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 78,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.getObject(java.util.Map<K, V>, K, V)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testgetObject()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 357,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1097,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 1097,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.isNotEmpty(java.util.Map<?, ?>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testIsNotEmptyWithEmptyMap()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1219,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 774,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1224,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 774,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.isNotEmpty(java.util.Map<?, ?>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testIsNotEmptyWithNonEmptyMap()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1219,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 780,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1224,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 780,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.MapUtils.isNotEmpty(java.util.Map<?, ?>)",
+    "unitTestMethod": "org.apache.commons.collections4.MapUtilsTest.testIsNotEmptyWithNull()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 1219,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 787,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1220,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 787,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 1224,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 787,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

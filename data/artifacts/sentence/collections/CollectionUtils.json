@@ -1,0 +1,2681 @@
+[
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.EquatorWrapper.equals(java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.get(java.util.Map\u003cK, V\u003e, int)",
+    "comment": "\r\n     * Returns the \u003ccode\u003eindex\u003c/code\u003e-th \u003ccode\u003eMap.Entry\u003c/code\u003e in the \u003ccode\u003emap\u003c/code\u003e\u0027s \u003ccode\u003eentrySet\u003c/code\u003e,\r\n     * throwing \u003ccode\u003eIndexOutOfBoundsException\u003c/code\u003e if there is no such element.\r\n     *\r\n     * @param \u003cK\u003e  the key type in the {@link Map}\r\n     * @param \u003cV\u003e  the key type in the {@link Map}\r\n     * @param map  the object to get a value from\r\n     * @param index  the index to get\r\n     * @return the object at the specified index\r\n     * @throws IndexOutOfBoundsException if the index is invalid\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the \u003ccode\u003eindex\u003c/code\u003e-th \u003ccode\u003eMap.Entry\u003c/code\u003e in the \u003ccode\u003emap\u003c/code\u003e\u0027s \u003ccode\u003eentrySet\u003c/code\u003e, throwing \u003ccode\u003eIndexOutOfBoundsException\u003c/code\u003e if there is no such element.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1359,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the object at the specified index",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1366,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IndexOutOfBoundsException if the index is invalid",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1367,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.select(java.lang.Iterable\u003c? extends O\u003e, org.apache.commons.collections4.Predicate\u003c? super O\u003e)",
+    "comment": "\r\n     * Selects all elements from input collection which match the given\r\n     * predicate into an output collection.\r\n     * \u003cp\u003e\r\n     * A \u003ccode\u003enull\u003c/code\u003e predicate matches no elements.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cO\u003e  the type of object the {@link Iterable} contains\r\n     * @param inputCollection  the collection to get the input from, may not be null\r\n     * @param predicate  the predicate to use, may be null\r\n     * @return the elements matching the predicate (new list)\r\n     * @throws NullPointerException if the input collection is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Selects all elements from input collection which match the given predicate into an output collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 918,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e A \u003ccode\u003enull\u003c/code\u003e predicate matches no elements.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 920,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 922,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the elements matching the predicate (new list)",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 927,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the input collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 928,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.containsAny(java.util.Collection\u003c?\u003e, java.util.Collection\u003c?\u003e)",
+    "comment": "\r\n     * Returns \u003ccode\u003etrue\u003c/code\u003e iff at least one element is in both collections.\r\n     * \u003cp\u003e\r\n     * In other words, this method returns \u003ccode\u003etrue\u003c/code\u003e iff the\r\n     * {@link #intersection} of \u003ci\u003ecoll1\u003c/i\u003e and \u003ci\u003ecoll2\u003c/i\u003e is not empty.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param coll1  the first collection, must not be null\r\n     * @param coll2  the second collection, must not be null\r\n     * @return \u003ccode\u003etrue\u003c/code\u003e iff the intersection of the collections is non-empty\r\n     * @since 2.1\r\n     * @see #intersection\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns \u003ccode\u003etrue\u003c/code\u003e iff at least one element is in both collections.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 440,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e In other words, this method returns \u003ccode\u003etrue\u003c/code\u003e iff the {@link #intersection} of \u003ci\u003ecoll1\u003c/i\u003e and \u003ci\u003ecoll2\u003c/i\u003e is not empty.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 441,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 444,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return \u003ccode\u003etrue\u003c/code\u003e iff the intersection of the collections is non-empty",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 448,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.permutations(java.util.Collection\u003cE\u003e)",
+    "comment": "\r\n     * Returns a {@link Collection} of all the permutations of the input collection.\r\n     * \u003cp\u003e\r\n     * NOTE: the number of permutations of a given collection is equal to n!, where\r\n     * n is the size of the collection. Thus, the resulting collection will become\r\n     * \u003cb\u003every\u003c/b\u003e large for collections \u0026gt; 10 (e.g. 10! \u003d 3628800, 15! \u003d 1307674368000).\r\n     * \u003c/p\u003e\r\n     * \u003cp\u003e\r\n     * For larger collections it is advised to use a {@link PermutationIterator} to\r\n     * iterate over all permutations.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @see PermutationIterator\r\n     *\r\n     * @param \u003cE\u003e  the element type\r\n     * @param collection  the collection to create permutations for, may not be null\r\n     * @return an unordered collection of all permutations of the input collection\r\n     * @throws NullPointerException if collection is null\r\n     * @since 4.0\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a {@link Collection} of all the permutations of the input collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1699,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e NOTE: the number of permutations of a given collection is equal to n!, where n is the size of the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1700,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Thus, the resulting collection will become \u003cb\u003every\u003c/b\u003e large for collections \u0026gt; 10 (e.g.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1702,
+          "column": 41
+        }
+      },
+      {
+        "sentenceText": "10! \u003d 3628800, 15! \u003d 1307674368000).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1703,
+          "column": 56
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cp\u003e For larger collections it is advised to use a {@link PermutationIterator} to iterate over all permutations.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1704,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1708,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an unordered collection of all permutations of the input collection",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1714,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1715,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.intersection(java.lang.Iterable\u003c? extends O\u003e, java.lang.Iterable\u003c? extends O\u003e)",
+    "comment": "\r\n     * Returns a {@link Collection} containing the intersection of the given\r\n     * {@link Iterable}s.\r\n     * \u003cp\u003e\r\n     * The cardinality of each element in the returned {@link Collection} will\r\n     * be equal to the minimum of the cardinality of that element in the two\r\n     * given {@link Iterable}s.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param a the first collection, must not be null\r\n     * @param b the second collection, must not be null\r\n     * @param \u003cO\u003e the generic type that is able to represent the types contained\r\n     *        in both input collections.\r\n     * @return the intersection of the two collections\r\n     * @see Collection#retainAll\r\n     * @see #containsAny\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a {@link Collection} containing the intersection of the given {@link Iterable}s.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 241,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The cardinality of each element in the returned {@link Collection} will be equal to the minimum of the cardinality of that element in the two given {@link Iterable}s.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 243,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 247,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the intersection of the two collections",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 253,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.Anonymous-f6aa0233-baec-48b2-89df-4637eac8c086.transform(E)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.filterInverse(java.lang.Iterable\u003cT\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "comment": "\r\n     * Filter the collection by applying a Predicate to each element. If the\r\n     * predicate returns true, remove the element.\r\n     * \u003cp\u003e\r\n     * This is equivalent to \u003ccode\u003efilter(collection, PredicateUtils.notPredicate(predicate))\u003c/code\u003e\r\n     * if predicate is !\u003d null.\r\n     * \u003c/p\u003e\r\n     * \u003cp\u003e\r\n     * If the input collection or predicate is null, there is no change made.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cT\u003e  the type of object the {@link Iterable} contains\r\n     * @param collection  the collection to get the input from, may be null\r\n     * @param predicate  the predicate to use as a filter, may be null\r\n     * @return true if the collection is modified by this call, false otherwise.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Filter the collection by applying a Predicate to each element.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 801,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the predicate returns true, remove the element.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 801,
+          "column": 71
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This is equivalent to \u003ccode\u003efilter(collection, PredicateUtils.notPredicate(predicate))\u003c/code\u003e if predicate is !\u003d null.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 803,
+          "column": 71
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cp\u003e If the input collection or predicate is null, there is no change made.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 806,
+          "column": 71
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 809,
+          "column": 71
+        }
+      },
+      {
+        "sentenceText": "@return true if the collection is modified by this call, false otherwise.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 814,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.isFull(java.util.Collection\u003c? extends java.lang.Object\u003e)",
+    "comment": "\r\n     * Returns true if no more elements can be added to the Collection.\r\n     * \u003cp\u003e\r\n     * This method uses the {@link BoundedCollection} interface to determine the\r\n     * full status. If the collection does not implement this interface then\r\n     * false is returned.\r\n     * \u003c/p\u003e\r\n     * \u003cp\u003e\r\n     * The collection does not have to implement this interface directly.\r\n     * If the collection has been decorated using the decorators subpackage\r\n     * then these will be removed to access the BoundedCollection.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param coll  the collection to check\r\n     * @return true if the BoundedCollection is full\r\n     * @throws NullPointerException if the collection is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns true if no more elements can be added to the Collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1519,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This method uses the {@link BoundedCollection} interface to determine the full status.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1520,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the collection does not implement this interface then false is returned.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1522,
+          "column": 21
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cp\u003e The collection does not have to implement this interface directly.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1524,
+          "column": 21
+        }
+      },
+      {
+        "sentenceText": "If the collection has been decorated using the decorators subpackage then these will be removed to access the BoundedCollection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1527,
+          "column": 21
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1529,
+          "column": 21
+        }
+      },
+      {
+        "sentenceText": "@return true if the BoundedCollection is full",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1532,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1533,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.retainAll(java.lang.Iterable\u003cE\u003e, java.lang.Iterable\u003c? extends E\u003e, org.apache.commons.collections4.Equator\u003c? super E\u003e)",
+    "comment": "\r\n     * Returns a collection containing all the elements in\r\n     * \u003ccode\u003ecollection\u003c/code\u003e that are also in \u003ccode\u003eretain\u003c/code\u003e. The\r\n     * cardinality of an element \u003ccode\u003ee\u003c/code\u003e in the returned collection is\r\n     * the same as the cardinality of \u003ccode\u003ee\u003c/code\u003e in \u003ccode\u003ecollection\u003c/code\u003e\r\n     * unless \u003ccode\u003eretain\u003c/code\u003e does not contain \u003ccode\u003ee\u003c/code\u003e, in which case\r\n     * the cardinality is zero. This method is useful if you do not wish to\r\n     * modify the collection \u003ccode\u003ec\u003c/code\u003e and thus cannot call\r\n     * \u003ccode\u003ec.retainAll(retain);\u003c/code\u003e.\r\n     * \u003cp\u003e\r\n     * Moreover this method uses an {@link Equator} instead of\r\n     * {@link Object#equals(Object)} to determine the equality of the elements\r\n     * in \u003ccode\u003ecollection\u003c/code\u003e and \u003ccode\u003eretain\u003c/code\u003e. Hence this method is\r\n     * useful in cases where the equals behavior of an object needs to be\r\n     * modified without changing the object itself.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cE\u003e the type of object the {@link Collection} contains\r\n     * @param collection the collection whose contents are the target of the {@code retainAll} operation\r\n     * @param retain the collection containing the elements to be retained in the returned collection\r\n     * @param equator the Equator used for testing equality\r\n     * @return a \u003ccode\u003eCollection\u003c/code\u003e containing all the elements of \u003ccode\u003ecollection\u003c/code\u003e\r\n     * that occur at least once in \u003ccode\u003eretain\u003c/code\u003e according to the \u003ccode\u003eequator\u003c/code\u003e\r\n     * @throws NullPointerException if any of the parameters is null\r\n     * @since 4.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a collection containing all the elements in \u003ccode\u003ecollection\u003c/code\u003e that are also in \u003ccode\u003eretain\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1756,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The cardinality of an element \u003ccode\u003ee\u003c/code\u003e in the returned collection is the same as the cardinality of \u003ccode\u003ee\u003c/code\u003e in \u003ccode\u003ecollection\u003c/code\u003e unless \u003ccode\u003eretain\u003c/code\u003e does not contain \u003ccode\u003ee\u003c/code\u003e, in which case the cardinality is zero.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1757,
+          "column": 70
+        }
+      },
+      {
+        "sentenceText": "This method is useful if you do not wish to modify the collection \u003ccode\u003ec\u003c/code\u003e and thus cannot call \u003ccode\u003ec.retainAll(retain);\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1761,
+          "column": 33
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Moreover this method uses an {@link Equator} instead of {@link Object#equals(Object)} to determine the equality of the elements in \u003ccode\u003ecollection\u003c/code\u003e and \u003ccode\u003eretain\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1764,
+          "column": 33
+        }
+      },
+      {
+        "sentenceText": "Hence this method is useful in cases where the equals behavior of an object needs to be modified without changing the object itself.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1767,
+          "column": 60
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1770,
+          "column": 60
+        }
+      },
+      {
+        "sentenceText": "@return a \u003ccode\u003eCollection\u003c/code\u003e containing all the elements of \u003ccode\u003ecollection\u003c/code\u003e that occur at least once in \u003ccode\u003eretain\u003c/code\u003e according to the \u003ccode\u003eequator\u003c/code\u003e",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1776,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any of the parameters is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1778,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.select(java.lang.Iterable\u003c? extends O\u003e, org.apache.commons.collections4.Predicate\u003c? super O\u003e, R)",
+    "comment": "\r\n     * Selects all elements from input collection which match the given\r\n     * predicate and adds them to outputCollection.\r\n     * \u003cp\u003e\r\n     * If the input collection or predicate is null, there is no change to the\r\n     * output collection.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cO\u003e  the type of object the {@link Iterable} contains\r\n     * @param \u003cR\u003e  the type of the output {@link Collection}\r\n     * @param inputCollection  the collection to get the input from, may be null\r\n     * @param predicate  the predicate to use, may be null\r\n     * @param outputCollection  the collection to output into, may not be null if the inputCollection\r\n     *   and predicate or not null\r\n     * @return the outputCollection\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Selects all elements from input collection which match the given predicate and adds them to outputCollection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 938,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If the input collection or predicate is null, there is no change to the output collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 940,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 943,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the outputCollection",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 951,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.isEmpty(java.util.Collection\u003c?\u003e)",
+    "comment": "\r\n     * Null-safe check if the specified collection is empty.\r\n     * \u003cp\u003e\r\n     * Null returns true.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param coll  the collection to check, may be null\r\n     * @return true if empty or null\r\n     * @since 3.2\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Null-safe check if the specified collection is empty.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1471,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Null returns true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1472,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1474,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if empty or null",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1477,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.CardinalityHelper.max(java.lang.Object)",
+    "comment": "\r\n         * Returns the maximum frequency of an object.\r\n         * @param obj  the object\r\n         * @return the maximum frequency of the object\r\n         ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the maximum frequency of an object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 81,
+          "column": 12
+        }
+      },
+      {
+        "sentenceText": "@return the maximum frequency of the object",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 83,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.filter(java.lang.Iterable\u003cT\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "comment": "\r\n     * Filter the collection by applying a Predicate to each element. If the\r\n     * predicate returns false, remove the element.\r\n     * \u003cp\u003e\r\n     * If the input collection or predicate is null, there is no change made.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cT\u003e  the type of object the {@link Iterable} contains\r\n     * @param collection  the collection to get the input from, may be null\r\n     * @param predicate  the predicate to use as a filter, may be null\r\n     * @return true if the collection is modified by this call, false otherwise.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Filter the collection by applying a Predicate to each element.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 776,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the predicate returns false, remove the element.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 776,
+          "column": 71
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If the input collection or predicate is null, there is no change made.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 778,
+          "column": 71
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 780,
+          "column": 71
+        }
+      },
+      {
+        "sentenceText": "@return true if the collection is modified by this call, false otherwise.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 785,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.subtract(java.lang.Iterable\u003c? extends O\u003e, java.lang.Iterable\u003c? extends O\u003e)",
+    "comment": "\r\n     * Returns a new {@link Collection} containing {@code \u003ci\u003ea\u003c/i\u003e - \u003ci\u003eb\u003c/i\u003e}.\r\n     * The cardinality of each element \u003ci\u003ee\u003c/i\u003e in the returned {@link Collection}\r\n     * will be the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e minus the cardinality\r\n     * of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003eb\u003c/i\u003e, or zero, whichever is greater.\r\n     *\r\n     * @param a  the collection to subtract from, must not be null\r\n     * @param b  the collection to subtract, must not be null\r\n     * @param \u003cO\u003e the generic type that is able to represent the types contained\r\n     *        in both input collections.\r\n     * @return a new collection with the results\r\n     * @see Collection#removeAll\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a new {@link Collection} containing {@code \u003ci\u003ea\u003c/i\u003e - \u003ci\u003eb\u003c/i\u003e}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 296,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The cardinality of each element \u003ci\u003ee\u003c/i\u003e in the returned {@link Collection} will be the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e minus the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003eb\u003c/i\u003e, or zero, whichever is greater.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 297,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a new collection with the results",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 305,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.isEqualCollection(java.util.Collection\u003c? extends E\u003e, java.util.Collection\u003c? extends E\u003e, org.apache.commons.collections4.Equator\u003c? super E\u003e)",
+    "comment": "\r\n     * Returns {@code true} iff the given {@link Collection}s contain\r\n     * exactly the same elements with exactly the same cardinalities.\r\n     * \u003cp\u003e\r\n     * That is, iff the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e is\r\n     * equal to the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003eb\u003c/i\u003e,\r\n     * for each element \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e or \u003ci\u003eb\u003c/i\u003e.\r\n     * \u003c/p\u003e\r\n     * \u003cp\u003e\r\n     * \u003cb\u003eNote:\u003c/b\u003e from version 4.1 onwards this method requires the input\r\n     * collections and equator to be of compatible type (using bounded wildcards).\r\n     * Providing incompatible arguments (e.g. by casting to their rawtypes)\r\n     * will result in a {@code ClassCastException} thrown at runtime.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cE\u003e  the element type\r\n     * @param a  the first collection, must not be null\r\n     * @param b  the second collection, must not be null\r\n     * @param equator  the Equator used for testing equality\r\n     * @return \u003ccode\u003etrue\u003c/code\u003e iff the collections contain the same elements with the same cardinalities.\r\n     * @throws NullPointerException if the equator is null\r\n     * @since 4.0\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns {@code true} iff the given {@link Collection}s contain exactly the same elements with exactly the same cardinalities.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 573,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e That is, iff the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e is equal to the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003eb\u003c/i\u003e, for each element \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e or \u003ci\u003eb\u003c/i\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 575,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cp\u003e \u003cb\u003eNote:\u003c/b\u003e from version 4.1 onwards this method requires the input collections and equator to be of compatible type (using bounded wildcards).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 579,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Providing incompatible arguments (e.g.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 583,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "by casting to their rawtypes) will result in a {@code ClassCastException} thrown at runtime.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 583,
+          "column": 47
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 585,
+          "column": 47
+        }
+      },
+      {
+        "sentenceText": "@return \u003ccode\u003etrue\u003c/code\u003e iff the collections contain the same elements with the same cardinalities.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 591,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the equator is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 592,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.collect(java.util.Iterator\u003c? extends I\u003e, org.apache.commons.collections4.Transformer\u003c? super I, ? extends O\u003e, R)",
+    "comment": "\r\n     * Transforms all elements from the input iterator with the given transformer\r\n     * and adds them to the output collection.\r\n     * \u003cp\u003e\r\n     * If the input iterator or transformer is null, there is no change to the\r\n     * output collection.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cI\u003e  the type of object in the input collection\r\n     * @param \u003cO\u003e  the type of object in the output collection\r\n     * @param \u003cR\u003e  the type of the output collection\r\n     * @param inputIterator  the iterator to get the input from, may be null\r\n     * @param transformer  the transformer to use, may be null\r\n     * @param outputCollection  the collection to output into, may not be null if inputIterator\r\n     *   and transformer are not null\r\n     * @return the outputCollection with the transformed input added\r\n     * @throws NullPointerException if the output collection is null and both, inputIterator and\r\n     *   transformer are not null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Transforms all elements from the input iterator with the given transformer and adds them to the output collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1128,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If the input iterator or transformer is null, there is no change to the output collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1130,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1133,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the outputCollection with the transformed input added",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1142,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the output collection is null and both, inputIterator and transformer are not null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1143,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.isSubCollection(java.util.Collection\u003c?\u003e, java.util.Collection\u003c?\u003e)",
+    "comment": "\r\n     * Returns {@code true} iff \u003ci\u003ea\u003c/i\u003e is a sub-collection of \u003ci\u003eb\u003c/i\u003e,\r\n     * that is, iff the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e is less than or\r\n     * equal to the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003eb\u003c/i\u003e, for each element \u003ci\u003ee\u003c/i\u003e\r\n     * in \u003ci\u003ea\u003c/i\u003e.\r\n     *\r\n     * @param a the first (sub?) collection, must not be null\r\n     * @param b the second (super?) collection, must not be null\r\n     * @return \u003ccode\u003etrue\u003c/code\u003e iff \u003ci\u003ea\u003c/i\u003e is a sub-collection of \u003ci\u003eb\u003c/i\u003e\r\n     * @see #isProperSubCollection\r\n     * @see Collection#containsAll\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns {@code true} iff \u003ci\u003ea\u003c/i\u003e is a sub-collection of \u003ci\u003eb\u003c/i\u003e, that is, iff the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e is less than or equal to the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003eb\u003c/i\u003e, for each element \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 496,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return \u003ccode\u003etrue\u003c/code\u003e iff \u003ci\u003ea\u003c/i\u003e is a sub-collection of \u003ci\u003eb\u003c/i\u003e",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 503,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.removeAll(java.lang.Iterable\u003cE\u003e, java.lang.Iterable\u003c? extends E\u003e, org.apache.commons.collections4.Equator\u003c? super E\u003e)",
+    "comment": "\r\n     * Removes all elements in \u003ccode\u003eremove\u003c/code\u003e from \u003ccode\u003ecollection\u003c/code\u003e.\r\n     * That is, this method returns a collection containing all the elements in\r\n     * \u003ccode\u003ecollection\u003c/code\u003e that are not in \u003ccode\u003eremove\u003c/code\u003e. The\r\n     * cardinality of an element \u003ccode\u003ee\u003c/code\u003e in the returned collection is\r\n     * the same as the cardinality of \u003ccode\u003ee\u003c/code\u003e in \u003ccode\u003ecollection\u003c/code\u003e\r\n     * unless \u003ccode\u003eremove\u003c/code\u003e contains \u003ccode\u003ee\u003c/code\u003e, in which case the\r\n     * cardinality is zero. This method is useful if you do not wish to modify\r\n     * the collection \u003ccode\u003ec\u003c/code\u003e and thus cannot call\r\n     * \u003ccode\u003ecollection.removeAll(remove)\u003c/code\u003e.\r\n     * \u003cp\u003e\r\n     * Moreover this method uses an {@link Equator} instead of\r\n     * {@link Object#equals(Object)} to determine the equality of the elements\r\n     * in \u003ccode\u003ecollection\u003c/code\u003e and \u003ccode\u003eremove\u003c/code\u003e. Hence this method is\r\n     * useful in cases where the equals behavior of an object needs to be\r\n     * modified without changing the object itself.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cE\u003e the type of object the {@link Collection} contains\r\n     * @param collection the collection from which items are removed (in the returned collection)\r\n     * @param remove the items to be removed from the returned collection\r\n     * @param equator the Equator used for testing equality\r\n     * @return a \u003ccode\u003eCollection\u003c/code\u003e containing all the elements of \u003ccode\u003ecollection\u003c/code\u003e\r\n     * except any element that if equal according to the \u003ccode\u003eequator\u003c/code\u003e\r\n     * @throws NullPointerException if any of the parameters is null\r\n     * @since 4.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Removes all elements in \u003ccode\u003eremove\u003c/code\u003e from \u003ccode\u003ecollection\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1833,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "That is, this method returns a collection containing all the elements in \u003ccode\u003ecollection\u003c/code\u003e that are not in \u003ccode\u003eremove\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1834,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The cardinality of an element \u003ccode\u003ee\u003c/code\u003e in the returned collection is the same as the cardinality of \u003ccode\u003ee\u003c/code\u003e in \u003ccode\u003ecollection\u003c/code\u003e unless \u003ccode\u003eremove\u003c/code\u003e contains \u003ccode\u003ee\u003c/code\u003e, in which case the cardinality is zero.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1835,
+          "column": 69
+        }
+      },
+      {
+        "sentenceText": "This method is useful if you do not wish to modify the collection \u003ccode\u003ec\u003c/code\u003e and thus cannot call \u003ccode\u003ecollection.removeAll(remove)\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1839,
+          "column": 29
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Moreover this method uses an {@link Equator} instead of {@link Object#equals(Object)} to determine the equality of the elements in \u003ccode\u003ecollection\u003c/code\u003e and \u003ccode\u003eremove\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1842,
+          "column": 29
+        }
+      },
+      {
+        "sentenceText": "Hence this method is useful in cases where the equals behavior of an object needs to be modified without changing the object itself.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1845,
+          "column": 60
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1848,
+          "column": 60
+        }
+      },
+      {
+        "sentenceText": "@return a \u003ccode\u003eCollection\u003c/code\u003e containing all the elements of \u003ccode\u003ecollection\u003c/code\u003e except any element that if equal according to the \u003ccode\u003eequator\u003c/code\u003e",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1854,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any of the parameters is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1856,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.addAll(java.util.Collection\u003cC\u003e, java.lang.Iterable\u003c? extends C\u003e)",
+    "comment": "\r\n     * Adds all elements in the {@link Iterable} to the given collection. If the\r\n     * {@link Iterable} is a {@link Collection} then it is cast and will be\r\n     * added using {@link Collection#addAll(Collection)} instead of iterating.\r\n     *\r\n     * @param \u003cC\u003e  the type of object the {@link Collection} contains\r\n     * @param collection  the collection to add to, must not be null\r\n     * @param iterable  the iterable of elements to add, must not be null\r\n     * @return a boolean indicating whether the collection has changed or not.\r\n     * @throws NullPointerException if the collection or iterator is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Adds all elements in the {@link Iterable} to the given collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1177,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the {@link Iterable} is a {@link Collection} then it is cast and will be added using {@link Collection#addAll(Collection)} instead of iterating.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1177,
+          "column": 75
+        }
+      },
+      {
+        "sentenceText": "@return a boolean indicating whether the collection has changed or not.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1184,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the collection or iterator is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1185,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.maxSize(java.util.Collection\u003c? extends java.lang.Object\u003e)",
+    "comment": "\r\n     * Get the maximum number of elements that the Collection can contain.\r\n     * \u003cp\u003e\r\n     * This method uses the {@link BoundedCollection} interface to determine the\r\n     * maximum size. If the collection does not implement this interface then\r\n     * -1 is returned.\r\n     * \u003c/p\u003e\r\n     * \u003cp\u003e\r\n     * The collection does not have to implement this interface directly.\r\n     * If the collection has been decorated using the decorators subpackage\r\n     * then these will be removed to access the BoundedCollection.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param coll  the collection to check\r\n     * @return the maximum size of the BoundedCollection, -1 if no maximum size\r\n     * @throws NullPointerException if the collection is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Get the maximum number of elements that the Collection can contain.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1552,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This method uses the {@link BoundedCollection} interface to determine the maximum size.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1553,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the collection does not implement this interface then -1 is returned.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1555,
+          "column": 22
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cp\u003e The collection does not have to implement this interface directly.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1557,
+          "column": 22
+        }
+      },
+      {
+        "sentenceText": "If the collection has been decorated using the decorators subpackage then these will be removed to access the BoundedCollection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1560,
+          "column": 22
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1562,
+          "column": 22
+        }
+      },
+      {
+        "sentenceText": "@return the maximum size of the BoundedCollection, -1 if no maximum size",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1565,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1566,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.transformingCollection(java.util.Collection\u003cE\u003e, org.apache.commons.collections4.Transformer\u003c? super E, ? extends E\u003e)",
+    "comment": "\r\n     * Returns a transformed bag backed by the given collection.\r\n     * \u003cp\u003e\r\n     * Each object is passed through the transformer as it is added to the\r\n     * Collection. It is important not to use the original collection after invoking this\r\n     * method, as it is a backdoor for adding untransformed objects.\r\n     * \u003c/p\u003e\r\n     * \u003cp\u003e\r\n     * Existing entries in the specified collection will not be transformed.\r\n     * If you want that behaviour, see {@link TransformedCollection#transformedCollection}.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cE\u003e the type of object the {@link Collection} contains\r\n     * @param collection  the collection to predicate, must not be null\r\n     * @param transformer  the transformer for the collection, must not be null\r\n     * @return a transformed collection backed by the given collection\r\n     * @throws NullPointerException if the Collection or Transformer is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a transformed bag backed by the given collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1951,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Each object is passed through the transformer as it is added to the Collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1952,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "It is important not to use the original collection after invoking this method, as it is a backdoor for adding untransformed objects.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1954,
+          "column": 20
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cp\u003e Existing entries in the specified collection will not be transformed.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1956,
+          "column": 20
+        }
+      },
+      {
+        "sentenceText": "If you want that behaviour, see {@link TransformedCollection#transformedCollection}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1959,
+          "column": 20
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1960,
+          "column": 20
+        }
+      },
+      {
+        "sentenceText": "@return a transformed collection backed by the given collection",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1965,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the Collection or Transformer is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1966,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.union(java.lang.Iterable\u003c? extends O\u003e, java.lang.Iterable\u003c? extends O\u003e)",
+    "comment": "\r\n     * Returns a {@link Collection} containing the union of the given\r\n     * {@link Iterable}s.\r\n     * \u003cp\u003e\r\n     * The cardinality of each element in the returned {@link Collection} will\r\n     * be equal to the maximum of the cardinality of that element in the two\r\n     * given {@link Iterable}s.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param a the first collection, must not be null\r\n     * @param b the second collection, must not be null\r\n     * @param \u003cO\u003e the generic type that is able to represent the types contained\r\n     *        in both input collections.\r\n     * @return the union of the two collections\r\n     * @see Collection#addAll\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a {@link Collection} containing the union of the given {@link Iterable}s.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 217,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The cardinality of each element in the returned {@link Collection} will be equal to the maximum of the cardinality of that element in the two given {@link Iterable}s.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 219,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 223,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the union of the two collections",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 229,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.addAll(java.util.Collection\u003cC\u003e, C...)",
+    "comment": "\r\n     * Adds all elements in the array to the given collection.\r\n     *\r\n     * @param \u003cC\u003e  the type of object the {@link Collection} contains\r\n     * @param collection  the collection to add to, must not be null\r\n     * @param elements  the array of elements to add, must not be null\r\n     * @return {@code true} if the collection was changed, {@code false} otherwise\r\n     * @throws NullPointerException if the collection or array is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Adds all elements in the array to the given collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1229,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return {@code true} if the collection was changed, {@code false} otherwise",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1234,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the collection or array is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1235,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.CardinalityHelper.freqA(java.lang.Object)",
+    "comment": "\r\n         * Returns the frequency of this object in collection A.\r\n         * @param obj  the object\r\n         * @return the frequency of the object in collection A\r\n         ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the frequency of this object in collection A.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 99,
+          "column": 12
+        }
+      },
+      {
+        "sentenceText": "@return the frequency of the object in collection A",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 101,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.disjunction(java.lang.Iterable\u003c? extends O\u003e, java.lang.Iterable\u003c? extends O\u003e)",
+    "comment": "\r\n     * Returns a {@link Collection} containing the exclusive disjunction\r\n     * (symmetric difference) of the given {@link Iterable}s.\r\n     * \u003cp\u003e\r\n     * The cardinality of each element \u003ci\u003ee\u003c/i\u003e in the returned\r\n     * {@link Collection} will be equal to\r\n     * \u003ccode\u003emax(cardinality(\u003ci\u003ee\u003c/i\u003e,\u003ci\u003ea\u003c/i\u003e),cardinality(\u003ci\u003ee\u003c/i\u003e,\u003ci\u003eb\u003c/i\u003e)) - min(cardinality(\u003ci\u003ee\u003c/i\u003e,\u003ci\u003ea\u003c/i\u003e),\r\n     * cardinality(\u003ci\u003ee\u003c/i\u003e,\u003ci\u003eb\u003c/i\u003e))\u003c/code\u003e.\r\n     * \u003c/p\u003e\r\n     * \u003cp\u003e\r\n     * This is equivalent to\r\n     * {@code {@link #subtract subtract}({@link #union union(a,b)},{@link #intersection intersection(a,b)})}\r\n     * or\r\n     * {@code {@link #union union}({@link #subtract subtract(a,b)},{@link #subtract subtract(b,a)})}.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param a the first collection, must not be null\r\n     * @param b the second collection, must not be null\r\n     * @param \u003cO\u003e the generic type that is able to represent the types contained\r\n     *        in both input collections.\r\n     * @return the symmetric difference of the two collections\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a {@link Collection} containing the exclusive disjunction (symmetric difference) of the given {@link Iterable}s.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 266,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The cardinality of each element \u003ci\u003ee\u003c/i\u003e in the returned {@link Collection} will be equal to \u003ccode\u003emax(cardinality(\u003ci\u003ee\u003c/i\u003e,\u003ci\u003ea\u003c/i\u003e),cardinality(\u003ci\u003ee\u003c/i\u003e,\u003ci\u003eb\u003c/i\u003e)) - min(cardinality(\u003ci\u003ee\u003c/i\u003e,\u003ci\u003ea\u003c/i\u003e), cardinality(\u003ci\u003ee\u003c/i\u003e,\u003ci\u003eb\u003c/i\u003e))\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 268,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cp\u003e This is equivalent to {@code {@link #subtract subtract}({@link #union union(a,b)},{@link #intersection intersection(a,b)})} or {@code {@link #union union}({@link #subtract subtract(a,b)},{@link #subtract subtract(b,a)})}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 273,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 279,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the symmetric difference of the two collections",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 285,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.isProperSubCollection(java.util.Collection\u003c?\u003e, java.util.Collection\u003c?\u003e)",
+    "comment": "\r\n     * Returns {@code true} iff \u003ci\u003ea\u003c/i\u003e is a \u003ci\u003eproper\u003c/i\u003e sub-collection of \u003ci\u003eb\u003c/i\u003e,\r\n     * that is, iff the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e is less\r\n     * than or equal to the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003eb\u003c/i\u003e,\r\n     * for each element \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e, and there is at least one\r\n     * element \u003ci\u003ef\u003c/i\u003e such that the cardinality of \u003ci\u003ef\u003c/i\u003e in \u003ci\u003eb\u003c/i\u003e\r\n     * is strictly greater than the cardinality of \u003ci\u003ef\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e.\r\n     * \u003cp\u003e\r\n     * The implementation assumes\r\n     * \u003c/p\u003e\r\n     * \u003cul\u003e\r\n     *    \u003cli\u003e\u003ccode\u003ea.size()\u003c/code\u003e and \u003ccode\u003eb.size()\u003c/code\u003e represent the\r\n     *    total cardinality of \u003ci\u003ea\u003c/i\u003e and \u003ci\u003eb\u003c/i\u003e, resp. \u003c/li\u003e\r\n     *    \u003cli\u003e\u003ccode\u003ea.size() \u0026lt; Integer.MAXVALUE\u003c/code\u003e\u003c/li\u003e\r\n     * \u003c/ul\u003e\r\n     *\r\n     * @param a  the first (sub?) collection, must not be null\r\n     * @param b  the second (super?) collection, must not be null\r\n     * @return \u003ccode\u003etrue\u003c/code\u003e iff \u003ci\u003ea\u003c/i\u003e is a \u003ci\u003eproper\u003c/i\u003e sub-collection of \u003ci\u003eb\u003c/i\u003e\r\n     * @see #isSubCollection\r\n     * @see Collection#containsAll\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns {@code true} iff \u003ci\u003ea\u003c/i\u003e is a \u003ci\u003eproper\u003c/i\u003e sub-collection of \u003ci\u003eb\u003c/i\u003e, that is, iff the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e is less than or equal to the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003eb\u003c/i\u003e, for each element \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e, and there is at least one element \u003ci\u003ef\u003c/i\u003e such that the cardinality of \u003ci\u003ef\u003c/i\u003e in \u003ci\u003eb\u003c/i\u003e is strictly greater than the cardinality of \u003ci\u003ef\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 518,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The implementation assumes \u003c/p\u003e \u003cul\u003e \u003cli\u003e\u003ccode\u003ea.size()\u003c/code\u003e and \u003ccode\u003eb.size()\u003c/code\u003e represent the total cardinality of \u003ci\u003ea\u003c/i\u003e and \u003ci\u003eb\u003c/i\u003e, resp.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 524,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/li\u003e \u003cli\u003e\u003ccode\u003ea.size() \u0026lt; Integer.MAXVALUE\u003c/code\u003e\u003c/li\u003e \u003c/ul\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 529,
+          "column": 61
+        }
+      },
+      {
+        "sentenceText": "@return \u003ccode\u003etrue\u003c/code\u003e iff \u003ci\u003ea\u003c/i\u003e is a \u003ci\u003eproper\u003c/i\u003e sub-collection of \u003ci\u003eb\u003c/i\u003e",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 535,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.isNotEmpty(java.util.Collection\u003c?\u003e)",
+    "comment": "\r\n     * Null-safe check if the specified collection is not empty.\r\n     * \u003cp\u003e\r\n     * Null returns false.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param coll  the collection to check, may be null\r\n     * @return true if non-null and non-empty\r\n     * @since 3.2\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Null-safe check if the specified collection is not empty.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1485,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Null returns false.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1486,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1488,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if non-null and non-empty",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1491,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.CardinalityHelper.CardinalityHelper(java.lang.Iterable\u003c? extends O\u003e, java.lang.Iterable\u003c? extends O\u003e)",
+    "comment": "\r\n         * Create a new CardinalityHelper for two collections.\r\n         * @param a  the first collection\r\n         * @param b  the second collection\r\n         ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new CardinalityHelper for two collections.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 71,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.collect(java.util.Iterator\u003cI\u003e, org.apache.commons.collections4.Transformer\u003c? super I, ? extends O\u003e)",
+    "comment": "\r\n     * Transforms all elements from the input iterator with the given transformer\r\n     * and adds them to the output collection.\r\n     * \u003cp\u003e\r\n     * If the input iterator or transformer is null, the result is an empty list.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cI\u003e  the type of object in the input collection\r\n     * @param \u003cO\u003e  the type of object in the output collection\r\n     * @param inputIterator  the iterator to get the input from, may be null\r\n     * @param transformer  the transformer to use, may be null\r\n     * @return the transformed result (new list)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Transforms all elements from the input iterator with the given transformer and adds them to the output collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1083,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If the input iterator or transformer is null, the result is an empty list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1085,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1087,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the transformed result (new list)",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1093,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.collate(java.lang.Iterable\u003c? extends O\u003e, java.lang.Iterable\u003c? extends O\u003e, boolean)",
+    "comment": "\r\n     * Merges two sorted Collections, a and b, into a single, sorted List\r\n     * such that the natural ordering of the elements is retained.\r\n     * \u003cp\u003e\r\n     * Uses the standard O(n) merge algorithm for combining two sorted lists.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cO\u003e  the element type\r\n     * @param a  the first collection, must not be null\r\n     * @param b  the second collection, must not be null\r\n     * @param includeDuplicates  if {@code true} duplicate elements will be retained, otherwise\r\n     *   they will be removed in the output collection\r\n     * @return a new sorted List, containing the elements of Collection a and b\r\n     * @throws NullPointerException if either collection is null\r\n     * @since 4.0\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Merges two sorted Collections, a and b, into a single, sorted List such that the natural ordering of the elements is retained.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1605,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Uses the standard O(n) merge algorithm for combining two sorted lists.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1607,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1609,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a new sorted List, containing the elements of Collection a and b",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1616,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1617,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.Anonymous-bc3d5dca-2bcc-4078-84d1-6f005ba312bb.transform(E)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.Anonymous-4684438e-3798-4bfb-a8f9-5bd78a181147.transform(java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.extractSingleton(java.util.Collection\u003cE\u003e)",
+    "comment": "\r\n     * Extract the lone element of the specified Collection.\r\n     *\r\n     * @param \u003cE\u003e collection type\r\n     * @param collection to read\r\n     * @return sole member of collection\r\n     * @throws NullPointerException if collection is null\r\n     * @throws IllegalArgumentException if collection is empty or contains more than one element\r\n     * @since 4.0\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Extract the lone element of the specified Collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1974,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return sole member of collection",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1978,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1979,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if collection is empty or contains more than one element",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1980,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.EquatorWrapper.getObject()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.SetOperationCardinalityHelper.list()",
+    "comment": "\r\n         * Returns the resulting collection.\r\n         * @return the result\r\n         ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the resulting collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 168,
+          "column": 12
+        }
+      },
+      {
+        "sentenceText": "@return the result",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 169,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.collate(java.lang.Iterable\u003c? extends O\u003e, java.lang.Iterable\u003c? extends O\u003e)",
+    "comment": "\r\n     * Merges two sorted Collections, a and b, into a single, sorted List\r\n     * such that the natural ordering of the elements is retained.\r\n     * \u003cp\u003e\r\n     * Uses the standard O(n) merge algorithm for combining two sorted lists.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cO\u003e  the element type\r\n     * @param a  the first collection, must not be null\r\n     * @param b  the second collection, must not be null\r\n     * @return a new sorted List, containing the elements of Collection a and b\r\n     * @throws NullPointerException if either collection is null\r\n     * @since 4.0\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Merges two sorted Collections, a and b, into a single, sorted List such that the natural ordering of the elements is retained.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1586,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Uses the standard O(n) merge algorithm for combining two sorted lists.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1588,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1590,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a new sorted List, containing the elements of Collection a and b",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1595,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1596,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.selectRejected(java.lang.Iterable\u003c? extends O\u003e, org.apache.commons.collections4.Predicate\u003c? super O\u003e)",
+    "comment": "\r\n     * Selects all elements from inputCollection which don\u0027t match the given\r\n     * predicate into an output collection.\r\n     * \u003cp\u003e\r\n     * If the input predicate is \u003ccode\u003enull\u003c/code\u003e, the result is an empty\r\n     * list.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cO\u003e  the type of object the {@link Iterable} contains\r\n     * @param inputCollection  the collection to get the input from, may not be null\r\n     * @param predicate  the predicate to use, may be null\r\n     * @return the elements \u003cb\u003enot\u003c/b\u003e matching the predicate (new list)\r\n     * @throws NullPointerException if the input collection is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Selects all elements from inputCollection which don\u0027t match the given predicate into an output collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1012,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If the input predicate is \u003ccode\u003enull\u003c/code\u003e, the result is an empty list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1014,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1017,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the elements \u003cb\u003enot\u003c/b\u003e matching the predicate (new list)",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1022,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the input collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1023,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.size(java.lang.Object)",
+    "comment": "\r\n     * Gets the size of the collection/iterator specified.\r\n     * \u003cp\u003e\r\n     * This method can handles objects as follows\r\n     * \u003c/p\u003e\r\n     * \u003cul\u003e\r\n     * \u003cli\u003eCollection - the collection size\r\n     * \u003cli\u003eMap - the map size\r\n     * \u003cli\u003eArray - the array size\r\n     * \u003cli\u003eIterator - the number of elements remaining in the iterator\r\n     * \u003cli\u003eEnumeration - the number of elements remaining in the enumeration\r\n     * \u003c/ul\u003e\r\n     *\r\n     * @param object  the object to get the size of, may be null\r\n     * @return the size of the specified collection or 0 if the object was null\r\n     * @throws IllegalArgumentException thrown if object is not recognized\r\n     * @since 3.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets the size of the collection/iterator specified.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1375,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This method can handles objects as follows \u003c/p\u003e \u003cul\u003e \u003cli\u003eCollection - the collection size \u003cli\u003eMap - the map size \u003cli\u003eArray - the array size \u003cli\u003eIterator - the number of elements remaining in the iterator \u003cli\u003eEnumeration - the number of elements remaining in the enumeration \u003c/ul\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1376,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the size of the specified collection or 0 if the object was null",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1388,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException thrown if object is not recognized",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1389,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.SetOperationCardinalityHelper.setCardinality(O, int)",
+    "comment": "\r\n         * Add the object {@code count} times to the result collection.\r\n         * @param obj  the object to add\r\n         * @param count  the count\r\n         ",
+    "sentences": [
+      {
+        "sentenceText": "Add the object {@code count} times to the result collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 157,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.EquatorWrapper.hashCode()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.predicatedCollection(java.util.Collection\u003cC\u003e, org.apache.commons.collections4.Predicate\u003c? super C\u003e)",
+    "comment": "\r\n     * Returns a predicated (validating) collection backed by the given collection.\r\n     * \u003cp\u003e\r\n     * Only objects that pass the test in the given predicate can be added to the collection.\r\n     * Trying to add an invalid object results in an IllegalArgumentException.\r\n     * It is important not to use the original collection after invoking this method,\r\n     * as it is a backdoor for adding invalid objects.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cC\u003e the type of objects in the Collection.\r\n     * @param collection  the collection to predicate, must not be null\r\n     * @param predicate  the predicate for the collection, must not be null\r\n     * @return a predicated collection backed by the given collection\r\n     * @throws NullPointerException if the Collection is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a predicated (validating) collection backed by the given collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1931,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Only objects that pass the test in the given predicate can be added to the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1932,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Trying to add an invalid object results in an IllegalArgumentException.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1934,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "It is important not to use the original collection after invoking this method, as it is a backdoor for adding invalid objects.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1935,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1937,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a predicated collection backed by the given collection",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1942,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the Collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1943,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.EquatorWrapper.EquatorWrapper(org.apache.commons.collections4.Equator\u003c? super O\u003e, O)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.containsAny(java.util.Collection\u003c?\u003e, T...)",
+    "comment": "\r\n     * Returns \u003ccode\u003etrue\u003c/code\u003e iff at least one element is in both collections.\r\n     * \u003cp\u003e\r\n     * In other words, this method returns \u003ccode\u003etrue\u003c/code\u003e iff the\r\n     * {@link #intersection} of \u003ci\u003ecoll1\u003c/i\u003e and \u003ci\u003ecoll2\u003c/i\u003e is not empty.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cT\u003e the type of object to lookup in \u003ccode\u003ecoll1\u003c/code\u003e.\r\n     * @param coll1  the first collection, must not be null\r\n     * @param coll2  the second collection, must not be null\r\n     * @return \u003ccode\u003etrue\u003c/code\u003e iff the intersection of the collections is non-empty\r\n     * @since 4.2\r\n     * @see #intersection\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns \u003ccode\u003etrue\u003c/code\u003e iff at least one element is in both collections.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e In other words, this method returns \u003ccode\u003etrue\u003c/code\u003e iff the {@link #intersection} of \u003ci\u003ecoll1\u003c/i\u003e and \u003ci\u003ecoll2\u003c/i\u003e is not empty.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 410,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 413,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return \u003ccode\u003etrue\u003c/code\u003e iff the intersection of the collections is non-empty",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 418,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.reverseArray(java.lang.Object[])",
+    "comment": "\r\n     * Reverses the order of the given array.\r\n     *\r\n     * @param array  the array to reverse\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Reverses the order of the given array.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1500,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.collect(java.lang.Iterable\u003c? extends I\u003e, org.apache.commons.collections4.Transformer\u003c? super I, ? extends O\u003e, R)",
+    "comment": "\r\n     * Transforms all elements from input collection with the given transformer\r\n     * and adds them to the output collection.\r\n     * \u003cp\u003e\r\n     * If the input collection or transformer is null, there is no change to the\r\n     * output collection.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cI\u003e  the type of object in the input collection\r\n     * @param \u003cO\u003e  the type of object in the output collection\r\n     * @param \u003cR\u003e  the type of the output collection\r\n     * @param inputCollection  the collection to get the input from, may be null\r\n     * @param transformer  the transformer to use, may be null\r\n     * @param outputCollection  the collection to output into, may not be null if inputCollection\r\n     *   and transformer are not null\r\n     * @return the output collection with the transformed input added\r\n     * @throws NullPointerException if the outputCollection is null and both, inputCollection and\r\n     *   transformer are not null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Transforms all elements from input collection with the given transformer and adds them to the output collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1101,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If the input collection or transformer is null, there is no change to the output collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1103,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1106,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the output collection with the transformed input added",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1115,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the outputCollection is null and both, inputCollection and transformer are not null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1116,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.SetOperationCardinalityHelper.SetOperationCardinalityHelper(java.lang.Iterable\u003c? extends O\u003e, java.lang.Iterable\u003c? extends O\u003e)",
+    "comment": "\r\n         * Create a new set operation helper from the two collections.\r\n         * @param a  the first collection\r\n         * @param b  the second collection\r\n         ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new set operation helper from the two collections.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 138,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.CollectionUtils()",
+    "comment": "\r\n     * \u003ccode\u003eCollectionUtils\u003c/code\u003e should not normally be instantiated.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "\u003ccode\u003eCollectionUtils\u003c/code\u003e should not normally be instantiated.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 187,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.emptyCollection()",
+    "comment": "\r\n     * Returns the immutable EMPTY_COLLECTION with generic type safety.\r\n     *\r\n     * @see #EMPTY_COLLECTION\r\n     * @since 4.0\r\n     * @param \u003cT\u003e the element type\r\n     * @return immutable empty collection\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the immutable EMPTY_COLLECTION with generic type safety.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 192,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return immutable empty collection",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 197,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.containsAll(java.util.Collection\u003c?\u003e, java.util.Collection\u003c?\u003e)",
+    "comment": "\r\n     * Returns \u003ccode\u003etrue\u003c/code\u003e iff all elements of {@code coll2} are also contained\r\n     * in {@code coll1}. The cardinality of values in {@code coll2} is not taken into account,\r\n     * which is the same behavior as {@link Collection#containsAll(Collection)}.\r\n     * \u003cp\u003e\r\n     * In other words, this method returns \u003ccode\u003etrue\u003c/code\u003e iff the\r\n     * {@link #intersection} of \u003ci\u003ecoll1\u003c/i\u003e and \u003ci\u003ecoll2\u003c/i\u003e has the same cardinality as\r\n     * the set of unique values from {@code coll2}. In case {@code coll2} is empty, {@code true}\r\n     * will be returned.\r\n     * \u003c/p\u003e\r\n     * \u003cp\u003e\r\n     * This method is intended as a replacement for {@link Collection#containsAll(Collection)}\r\n     * with a guaranteed runtime complexity of {@code O(n + m)}. Depending on the type of\r\n     * {@link Collection} provided, this method will be much faster than calling\r\n     * {@link Collection#containsAll(Collection)} instead, though this will come at the\r\n     * cost of an additional space complexity O(n).\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param coll1  the first collection, must not be null\r\n     * @param coll2  the second collection, must not be null\r\n     * @return \u003ccode\u003etrue\u003c/code\u003e iff the intersection of the collections has the same cardinality\r\n     *   as the set of unique elements from the second collection\r\n     * @since 4.0\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns \u003ccode\u003etrue\u003c/code\u003e iff all elements of {@code coll2} are also contained in {@code coll1}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 357,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The cardinality of values in {@code coll2} is not taken into account, which is the same behavior as {@link Collection#containsAll(Collection)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 358,
+          "column": 26
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e In other words, this method returns \u003ccode\u003etrue\u003c/code\u003e iff the {@link #intersection} of \u003ci\u003ecoll1\u003c/i\u003e and \u003ci\u003ecoll2\u003c/i\u003e has the same cardinality as the set of unique values from {@code coll2}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 360,
+          "column": 26
+        }
+      },
+      {
+        "sentenceText": "In case {@code coll2} is empty, {@code true} will be returned.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 363,
+          "column": 53
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cp\u003e This method is intended as a replacement for {@link Collection#containsAll(Collection)} with a guaranteed runtime complexity of {@code O(n + m)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 365,
+          "column": 53
+        }
+      },
+      {
+        "sentenceText": "Depending on the type of {@link Collection} provided, this method will be much faster than calling {@link Collection#containsAll(Collection)} instead, though this will come at the cost of an additional space complexity O(n).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 368,
+          "column": 66
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 372,
+          "column": 66
+        }
+      },
+      {
+        "sentenceText": "@return \u003ccode\u003etrue\u003c/code\u003e iff the intersection of the collections has the same cardinality as the set of unique elements from the second collection",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 376,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.get(java.lang.Object, int)",
+    "comment": "\r\n     * Returns the \u003ccode\u003eindex\u003c/code\u003e-th value in \u003ccode\u003eobject\u003c/code\u003e, throwing\r\n     * \u003ccode\u003eIndexOutOfBoundsException\u003c/code\u003e if there is no such element or\r\n     * \u003ccode\u003eIllegalArgumentException\u003c/code\u003e if \u003ccode\u003eobject\u003c/code\u003e is not an\r\n     * instance of one of the supported types.\r\n     * \u003cp\u003e\r\n     * The supported types, and associated semantics are:\r\n     * \u003c/p\u003e\r\n     * \u003cul\u003e\r\n     * \u003cli\u003e Map -- the value returned is the \u003ccode\u003eMap.Entry\u003c/code\u003e in position\r\n     *      \u003ccode\u003eindex\u003c/code\u003e in the map\u0027s \u003ccode\u003eentrySet\u003c/code\u003e iterator,\r\n     *      if there is such an entry.\u003c/li\u003e\r\n     * \u003cli\u003e List -- this method is equivalent to the list\u0027s get method.\u003c/li\u003e\r\n     * \u003cli\u003e Array -- the \u003ccode\u003eindex\u003c/code\u003e-th array entry is returned,\r\n     *      if there is such an entry; otherwise an \u003ccode\u003eIndexOutOfBoundsException\u003c/code\u003e\r\n     *      is thrown.\u003c/li\u003e\r\n     * \u003cli\u003e Collection -- the value returned is the \u003ccode\u003eindex\u003c/code\u003e-th object\r\n     *      returned by the collection\u0027s default iterator, if there is such an element.\u003c/li\u003e\r\n     * \u003cli\u003e Iterator or Enumeration -- the value returned is the\r\n     *      \u003ccode\u003eindex\u003c/code\u003e-th object in the Iterator/Enumeration, if there\r\n     *      is such an element.  The Iterator/Enumeration is advanced to\r\n     *      \u003ccode\u003eindex\u003c/code\u003e (or to the end, if \u003ccode\u003eindex\u003c/code\u003e exceeds the\r\n     *      number of entries) as a side effect of this method.\u003c/li\u003e\r\n     * \u003c/ul\u003e\r\n     *\r\n     * @param object  the object to get a value from\r\n     * @param index  the index to get\r\n     * @return the object at the specified index\r\n     * @throws IndexOutOfBoundsException if the index is invalid\r\n     * @throws IllegalArgumentException if the object type is invalid\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the \u003ccode\u003eindex\u003c/code\u003e-th value in \u003ccode\u003eobject\u003c/code\u003e, throwing \u003ccode\u003eIndexOutOfBoundsException\u003c/code\u003e if there is no such element or \u003ccode\u003eIllegalArgumentException\u003c/code\u003e if \u003ccode\u003eobject\u003c/code\u003e is not an instance of one of the supported types.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1297,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The supported types, and associated semantics are: \u003c/p\u003e \u003cul\u003e \u003cli\u003e Map -- the value returned is the \u003ccode\u003eMap.Entry\u003c/code\u003e in position \u003ccode\u003eindex\u003c/code\u003e in the map\u0027s \u003ccode\u003eentrySet\u003c/code\u003e iterator, if there is such an entry.\u003c/li\u003e \u003cli\u003e List -- this method is equivalent to the list\u0027s get method.\u003c/li\u003e \u003cli\u003e Array -- the \u003ccode\u003eindex\u003c/code\u003e-th array entry is returned, if there is such an entry; otherwise an \u003ccode\u003eIndexOutOfBoundsException\u003c/code\u003e is thrown.\u003c/li\u003e \u003cli\u003e Collection -- the value returned is the \u003ccode\u003eindex\u003c/code\u003e-th object returned by the collection\u0027s default iterator, if there is such an element.\u003c/li\u003e \u003cli\u003e Iterator or Enumeration -- the value returned is the \u003ccode\u003eindex\u003c/code\u003e-th object in the Iterator/Enumeration, if there is such an element.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1301,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The Iterator/Enumeration is advanced to \u003ccode\u003eindex\u003c/code\u003e (or to the end, if \u003ccode\u003eindex\u003c/code\u003e exceeds the number of entries) as a side effect of this method.\u003c/li\u003e \u003c/ul\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1316,
+          "column": 34
+        }
+      },
+      {
+        "sentenceText": "@return the object at the specified index",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1323,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IndexOutOfBoundsException if the index is invalid",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1324,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if the object type is invalid",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1325,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.CardinalityHelper.freqB(java.lang.Object)",
+    "comment": "\r\n         * Returns the frequency of this object in collection B.\r\n         * @param obj  the object\r\n         * @return the frequency of the object in collection B\r\n         ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the frequency of this object in collection B.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 108,
+          "column": 12
+        }
+      },
+      {
+        "sentenceText": "@return the frequency of the object in collection B",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 110,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.collect(java.lang.Iterable\u003cI\u003e, org.apache.commons.collections4.Transformer\u003c? super I, ? extends O\u003e)",
+    "comment": "\r\n     * Returns a new Collection containing all elements of the input collection\r\n     * transformed by the given transformer.\r\n     * \u003cp\u003e\r\n     * If the input collection or transformer is null, the result is an empty list.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cI\u003e  the type of object in the input collection\r\n     * @param \u003cO\u003e  the type of object in the output collection\r\n     * @param inputCollection  the collection to get the input from, may not be null\r\n     * @param transformer  the transformer to use, may be null\r\n     * @return the transformed result (new list)\r\n     * @throws NullPointerException if the input collection is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a new Collection containing all elements of the input collection transformed by the given transformer.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1062,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If the input collection or transformer is null, the result is an empty list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1064,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1066,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the transformed result (new list)",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1072,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the input collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1073,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.checkIndexBounds(int)",
+    "comment": "\r\n     * Ensures an index is not negative.\r\n     * @param index the index to check.\r\n     * @throws IndexOutOfBoundsException if the index is negative.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Ensures an index is not negative.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1267,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IndexOutOfBoundsException if the index is negative.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1269,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.CardinalityHelper.getFreq(java.lang.Object, java.util.Map\u003c?, java.lang.Integer\u003e)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.selectRejected(java.lang.Iterable\u003c? extends O\u003e, org.apache.commons.collections4.Predicate\u003c? super O\u003e, R)",
+    "comment": "\r\n     * Selects all elements from inputCollection which don\u0027t match the given\r\n     * predicate and adds them to outputCollection.\r\n     * \u003cp\u003e\r\n     * If the input predicate is \u003ccode\u003enull\u003c/code\u003e, no elements are added to\r\n     * \u003ccode\u003eoutputCollection\u003c/code\u003e.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cO\u003e  the type of object the {@link Iterable} contains\r\n     * @param \u003cR\u003e  the type of the output {@link Collection}\r\n     * @param inputCollection  the collection to get the input from, may be null\r\n     * @param predicate  the predicate to use, may be null\r\n     * @param outputCollection  the collection to output into, may not be null if the inputCollection\r\n     *   and predicate or not null\r\n     * @return outputCollection\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Selects all elements from inputCollection which don\u0027t match the given predicate and adds them to outputCollection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1033,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If the input predicate is \u003ccode\u003enull\u003c/code\u003e, no elements are added to \u003ccode\u003eoutputCollection\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1035,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1038,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return outputCollection",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1046,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.collate(java.lang.Iterable\u003c? extends O\u003e, java.lang.Iterable\u003c? extends O\u003e, java.util.Comparator\u003c? super O\u003e, boolean)",
+    "comment": "\r\n     * Merges two sorted Collections, a and b, into a single, sorted List\r\n     * such that the ordering of the elements according to Comparator c is retained.\r\n     * \u003cp\u003e\r\n     * Uses the standard O(n) merge algorithm for combining two sorted lists.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cO\u003e  the element type\r\n     * @param a  the first collection, must not be null\r\n     * @param b  the second collection, must not be null\r\n     * @param c  the comparator to use for the merge.\r\n     * @param includeDuplicates  if {@code true} duplicate elements will be retained, otherwise\r\n     *   they will be removed in the output collection\r\n     * @return a new sorted List, containing the elements of Collection a and b\r\n     * @throws NullPointerException if either collection or the comparator is null\r\n     * @since 4.0\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Merges two sorted Collections, a and b, into a single, sorted List such that the ordering of the elements according to Comparator c is retained.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1647,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Uses the standard O(n) merge algorithm for combining two sorted lists.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1649,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1651,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a new sorted List, containing the elements of Collection a and b",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1659,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either collection or the comparator is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1660,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.isEqualCollection(java.util.Collection\u003c?\u003e, java.util.Collection\u003c?\u003e)",
+    "comment": "\r\n     * Returns {@code true} iff the given {@link Collection}s contain\r\n     * exactly the same elements with exactly the same cardinalities.\r\n     * \u003cp\u003e\r\n     * That is, iff the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e is\r\n     * equal to the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003eb\u003c/i\u003e,\r\n     * for each element \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e or \u003ci\u003eb\u003c/i\u003e.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param a  the first collection, must not be null\r\n     * @param b  the second collection, must not be null\r\n     * @return \u003ccode\u003etrue\u003c/code\u003e iff the collections contain the same elements with the same cardinalities.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns {@code true} iff the given {@link Collection}s contain exactly the same elements with exactly the same cardinalities.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 544,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e That is, iff the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e is equal to the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003eb\u003c/i\u003e, for each element \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e or \u003ci\u003eb\u003c/i\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 546,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 550,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return \u003ccode\u003etrue\u003c/code\u003e iff the collections contain the same elements with the same cardinalities.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 554,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.addAll(java.util.Collection\u003cC\u003e, java.util.Enumeration\u003c? extends C\u003e)",
+    "comment": "\r\n     * Adds all elements in the enumeration to the given collection.\r\n     *\r\n     * @param \u003cC\u003e  the type of object the {@link Collection} contains\r\n     * @param collection  the collection to add to, must not be null\r\n     * @param enumeration  the enumeration of elements to add, must not be null\r\n     * @return {@code true} if the collections was changed, {@code false} otherwise\r\n     * @throws NullPointerException if the collection or enumeration is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Adds all elements in the enumeration to the given collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1212,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return {@code true} if the collections was changed, {@code false} otherwise",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1217,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the collection or enumeration is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1218,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.emptyIfNull(java.util.Collection\u003cT\u003e)",
+    "comment": "\r\n     * Returns an immutable empty collection if the argument is \u003ccode\u003enull\u003c/code\u003e,\r\n     * or the argument itself otherwise.\r\n     *\r\n     * @param \u003cT\u003e the element type\r\n     * @param collection the collection, possibly \u003ccode\u003enull\u003c/code\u003e\r\n     * @return an empty collection if the argument is \u003ccode\u003enull\u003c/code\u003e\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns an immutable empty collection if the argument is \u003ccode\u003enull\u003c/code\u003e, or the argument itself otherwise.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 205,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an empty collection if the argument is \u003ccode\u003enull\u003c/code\u003e",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 210,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.addAll(java.util.Collection\u003cC\u003e, java.util.Iterator\u003c? extends C\u003e)",
+    "comment": "\r\n     * Adds all elements in the iteration to the given collection.\r\n     *\r\n     * @param \u003cC\u003e  the type of object the {@link Collection} contains\r\n     * @param collection  the collection to add to, must not be null\r\n     * @param iterator  the iterator of elements to add, must not be null\r\n     * @return a boolean indicating whether the collection has changed or not.\r\n     * @throws NullPointerException if the collection or iterator is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Adds all elements in the iteration to the given collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1195,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a boolean indicating whether the collection has changed or not.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1200,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the collection or iterator is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1201,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.sizeIsEmpty(java.lang.Object)",
+    "comment": "\r\n     * Checks if the specified collection/array/iterator is empty.\r\n     * \u003cp\u003e\r\n     * This method can handles objects as follows\r\n     * \u003c/p\u003e\r\n     * \u003cul\u003e\r\n     * \u003cli\u003eCollection - via collection isEmpty\r\n     * \u003cli\u003eMap - via map isEmpty\r\n     * \u003cli\u003eArray - using array size\r\n     * \u003cli\u003eIterator - via hasNext\r\n     * \u003cli\u003eEnumeration - via hasMoreElements\r\n     * \u003c/ul\u003e\r\n     * \u003cp\u003e\r\n     * Note: This method is named to avoid clashing with\r\n     * {@link #isEmpty(Collection)}.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param object  the object to get the size of, may be null\r\n     * @return true if empty or null\r\n     * @throws IllegalArgumentException thrown if object is not recognized\r\n     * @since 3.2\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Checks if the specified collection/array/iterator is empty.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1424,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This method can handles objects as follows \u003c/p\u003e \u003cul\u003e \u003cli\u003eCollection - via collection isEmpty \u003cli\u003eMap - via map isEmpty \u003cli\u003eArray - using array size \u003cli\u003eIterator - via hasNext \u003cli\u003eEnumeration - via hasMoreElements \u003c/ul\u003e \u003cp\u003e Note: This method is named to avoid clashing with {@link #isEmpty(Collection)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1425,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1438,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if empty or null",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1441,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException thrown if object is not recognized",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1442,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.subtract(java.lang.Iterable\u003c? extends O\u003e, java.lang.Iterable\u003c? extends O\u003e, org.apache.commons.collections4.Predicate\u003cO\u003e)",
+    "comment": "\r\n     * Returns a new {@link Collection} containing \u003ci\u003ea\u003c/i\u003e minus a subset of\r\n     * \u003ci\u003eb\u003c/i\u003e.  Only the elements of \u003ci\u003eb\u003c/i\u003e that satisfy the predicate\r\n     * condition, \u003ci\u003ep\u003c/i\u003e are subtracted from \u003ci\u003ea\u003c/i\u003e.\r\n     *\r\n     * \u003cp\u003e\r\n     * The cardinality of each element \u003ci\u003ee\u003c/i\u003e in the returned {@link Collection}\r\n     * that satisfies the predicate condition will be the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e\r\n     * minus the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003eb\u003c/i\u003e, or zero, whichever is greater.\r\n     * \u003c/p\u003e\r\n     * \u003cp\u003e\r\n     * The cardinality of each element \u003ci\u003ee\u003c/i\u003e in the returned {@link Collection} that does \u003cb\u003enot\u003c/b\u003e\r\n     * satisfy the predicate condition will be equal to the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param a  the collection to subtract from, must not be null\r\n     * @param b  the collection to subtract, must not be null\r\n     * @param p  the condition used to determine which elements of \u003ci\u003eb\u003c/i\u003e are\r\n     *        subtracted.\r\n     * @param \u003cO\u003e the generic type that is able to represent the types contained\r\n     *        in both input collections.\r\n     * @return a new collection with the results\r\n     * @since 4.0\r\n     * @see Collection#removeAll\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a new {@link Collection} containing \u003ci\u003ea\u003c/i\u003e minus a subset of \u003ci\u003eb\u003c/i\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 314,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Only the elements of \u003ci\u003eb\u003c/i\u003e that satisfy the predicate condition, \u003ci\u003ep\u003c/i\u003e are subtracted from \u003ci\u003ea\u003c/i\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 315,
+          "column": 19
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The cardinality of each element \u003ci\u003ee\u003c/i\u003e in the returned {@link Collection} that satisfies the predicate condition will be the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e minus the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003eb\u003c/i\u003e, or zero, whichever is greater.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 317,
+          "column": 19
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cp\u003e The cardinality of each element \u003ci\u003ee\u003c/i\u003e in the returned {@link Collection} that does \u003cb\u003enot\u003c/b\u003e satisfy the predicate condition will be equal to the cardinality of \u003ci\u003ee\u003c/i\u003e in \u003ci\u003ea\u003c/i\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 321,
+          "column": 19
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 325,
+          "column": 19
+        }
+      },
+      {
+        "sentenceText": "@return a new collection with the results",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 334,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.getCardinalityMap(java.lang.Iterable\u003c? extends O\u003e)",
+    "comment": "\r\n     * Returns a {@link Map} mapping each unique element in the given\r\n     * {@link Collection} to an {@link Integer} representing the number\r\n     * of occurrences of that element in the {@link Collection}.\r\n     * \u003cp\u003e\r\n     * Only those elements present in the collection will appear as\r\n     * keys in the map.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cO\u003e  the type of object in the returned {@link Map}. This is a super type of \u0026lt;I\u0026gt;.\r\n     * @param coll  the collection to get the cardinality map for, must not be null\r\n     * @return the populated cardinality map\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a {@link Map} mapping each unique element in the given {@link Collection} to an {@link Integer} representing the number of occurrences of that element in the {@link Collection}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 470,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Only those elements present in the collection will appear as keys in the map.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 473,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 476,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the populated cardinality map",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 480,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.CardinalityHelper.min(java.lang.Object)",
+    "comment": "\r\n         * Returns the minimum frequency of an object.\r\n         * @param obj  the object\r\n         * @return the minimum frequency of the object\r\n         ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the minimum frequency of an object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 90,
+          "column": 12
+        }
+      },
+      {
+        "sentenceText": "@return the minimum frequency of the object",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 92,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.transform(java.util.Collection\u003cC\u003e, org.apache.commons.collections4.Transformer\u003c? super C, ? extends C\u003e)",
+    "comment": "\r\n     * Transform the collection by applying a Transformer to each element.\r\n     * \u003cp\u003e\r\n     * If the input collection or transformer is null, there is no change made.\r\n     * \u003c/p\u003e\r\n     * \u003cp\u003e\r\n     * This routine is best for Lists, for which set() is used to do the\r\n     * transformations \"in place.\" For other Collections, clear() and addAll()\r\n     * are used to replace elements.\r\n     * \u003c/p\u003e\r\n     * \u003cp\u003e\r\n     * If the input collection controls its input, such as a Set, and the\r\n     * Transformer creates duplicates (or are otherwise invalid), the collection\r\n     * may reduce in size due to calling this method.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cC\u003e  the type of object the {@link Collection} contains\r\n     * @param collection  the {@link Collection} to get the input from, may be null\r\n     * @param transformer  the transformer to perform, may be null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Transform the collection by applying a Transformer to each element.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 821,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If the input collection or transformer is null, there is no change made.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 822,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cp\u003e This routine is best for Lists, for which set() is used to do the transformations \"in place.\" For other Collections, clear() and addAll() are used to replace elements.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 824,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cp\u003e If the input collection controls its input, such as a Set, and the Transformer creates duplicates (or are otherwise invalid), the collection may reduce in size due to calling this method.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 829,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 834,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.SetOperationCardinalityHelper.iterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.select(java.lang.Iterable\u003c? extends O\u003e, org.apache.commons.collections4.Predicate\u003c? super O\u003e, R, R)",
+    "comment": "\r\n     * Selects all elements from inputCollection into an output and rejected collection,\r\n     * based on the evaluation of the given predicate.\r\n     * \u003cp\u003e\r\n     * Elements matching the predicate are added to the \u003ccode\u003eoutputCollection\u003c/code\u003e,\r\n     * all other elements are added to the \u003ccode\u003erejectedCollection\u003c/code\u003e.\r\n     * \u003c/p\u003e\r\n     * \u003cp\u003e\r\n     * If the input predicate is \u003ccode\u003enull\u003c/code\u003e, no elements are added to\r\n     * \u003ccode\u003eoutputCollection\u003c/code\u003e or \u003ccode\u003erejectedCollection\u003c/code\u003e.\r\n     * \u003c/p\u003e\r\n     * \u003cp\u003e\r\n     * Note: calling the method is equivalent to the following code snippet:\r\n     * \u003c/p\u003e\r\n     * \u003cpre\u003e\r\n     *   select(inputCollection, predicate, outputCollection);\r\n     *   selectRejected(inputCollection, predicate, rejectedCollection);\r\n     * \u003c/pre\u003e\r\n     *\r\n     * @param \u003cO\u003e  the type of object the {@link Iterable} contains\r\n     * @param \u003cR\u003e  the type of the output {@link Collection}\r\n     * @param inputCollection  the collection to get the input from, may be null\r\n     * @param predicate  the predicate to use, may be null\r\n     * @param outputCollection  the collection to output selected elements into, may not be null if the\r\n     *   inputCollection and predicate are not null\r\n     * @param rejectedCollection  the collection to output rejected elements into, may not be null if the\r\n     *   inputCollection or predicate are not null\r\n     * @return the outputCollection\r\n     * @since 4.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Selects all elements from inputCollection into an output and rejected collection, based on the evaluation of the given predicate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 967,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Elements matching the predicate are added to the \u003ccode\u003eoutputCollection\u003c/code\u003e, all other elements are added to the \u003ccode\u003erejectedCollection\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 969,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cp\u003e If the input predicate is \u003ccode\u003enull\u003c/code\u003e, no elements are added to \u003ccode\u003eoutputCollection\u003c/code\u003e or \u003ccode\u003erejectedCollection\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 972,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cp\u003e Note: calling the method is equivalent to the following code snippet: \u003c/p\u003e \u003cpre\u003e select(inputCollection, predicate, outputCollection); selectRejected(inputCollection, predicate, rejectedCollection); \u003c/pre\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 976,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the outputCollection",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 993,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.addIgnoreNull(java.util.Collection\u003cT\u003e, T)",
+    "comment": "\r\n     * Adds an element to the collection unless the element is null.\r\n     *\r\n     * @param \u003cT\u003e  the type of object the {@link Collection} contains\r\n     * @param collection  the collection to add to, must not be null\r\n     * @param object  the object to add, if null it will not be added\r\n     * @return true if the collection changed\r\n     * @throws NullPointerException if the collection is null\r\n     * @since 3.2\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Adds an element to the collection unless the element is null.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1160,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if the collection changed",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1165,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1166,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.removeAll(java.util.Collection\u003cE\u003e, java.util.Collection\u003c?\u003e)",
+    "comment": "\r\n     * Removes the elements in \u003ccode\u003eremove\u003c/code\u003e from \u003ccode\u003ecollection\u003c/code\u003e. That is, this\r\n     * method returns a collection containing all the elements in \u003ccode\u003ec\u003c/code\u003e\r\n     * that are not in \u003ccode\u003eremove\u003c/code\u003e. The cardinality of an element \u003ccode\u003ee\u003c/code\u003e\r\n     * in the returned collection is the same as the cardinality of \u003ccode\u003ee\u003c/code\u003e\r\n     * in \u003ccode\u003ecollection\u003c/code\u003e unless \u003ccode\u003eremove\u003c/code\u003e contains \u003ccode\u003ee\u003c/code\u003e, in which\r\n     * case the cardinality is zero. This method is useful if you do not wish to modify\r\n     * the collection \u003ccode\u003ec\u003c/code\u003e and thus cannot call \u003ccode\u003ecollection.removeAll(remove);\u003c/code\u003e.\r\n     * \u003cp\u003e\r\n     * This implementation iterates over \u003ccode\u003ecollection\u003c/code\u003e, checking each element in\r\n     * turn to see if it\u0027s contained in \u003ccode\u003eremove\u003c/code\u003e. If it\u0027s not contained, it\u0027s added\r\n     * to the returned list. As a consequence, it is advised to use a collection type for\r\n     * \u003ccode\u003eremove\u003c/code\u003e that provides a fast (e.g. O(1)) implementation of\r\n     * {@link Collection#contains(Object)}.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cE\u003e  the type of object the {@link Collection} contains\r\n     * @param collection  the collection from which items are removed (in the returned collection)\r\n     * @param remove  the items to be removed from the returned \u003ccode\u003ecollection\u003c/code\u003e\r\n     * @return a \u003ccode\u003eCollection\u003c/code\u003e containing all the elements of \u003ccode\u003ecollection\u003c/code\u003e except\r\n     * any elements that also occur in \u003ccode\u003eremove\u003c/code\u003e.\r\n     * @throws NullPointerException if either parameter is null\r\n     * @since 4.0 (method existed in 3.2 but was completely broken)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Removes the elements in \u003ccode\u003eremove\u003c/code\u003e from \u003ccode\u003ecollection\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1805,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "That is, this method returns a collection containing all the elements in \u003ccode\u003ec\u003c/code\u003e that are not in \u003ccode\u003eremove\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1805,
+          "column": 82
+        }
+      },
+      {
+        "sentenceText": "The cardinality of an element \u003ccode\u003ee\u003c/code\u003e in the returned collection is the same as the cardinality of \u003ccode\u003ee\u003c/code\u003e in \u003ccode\u003ecollection\u003c/code\u003e unless \u003ccode\u003eremove\u003c/code\u003e contains \u003ccode\u003ee\u003c/code\u003e, in which case the cardinality is zero.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1807,
+          "column": 45
+        }
+      },
+      {
+        "sentenceText": "This method is useful if you do not wish to modify the collection \u003ccode\u003ec\u003c/code\u003e and thus cannot call \u003ccode\u003ecollection.removeAll(remove);\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1810,
+          "column": 38
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This implementation iterates over \u003ccode\u003ecollection\u003c/code\u003e, checking each element in turn to see if it\u0027s contained in \u003ccode\u003eremove\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1812,
+          "column": 38
+        }
+      },
+      {
+        "sentenceText": "If it\u0027s not contained, it\u0027s added to the returned list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1814,
+          "column": 62
+        }
+      },
+      {
+        "sentenceText": "As a consequence, it is advised to use a collection type for \u003ccode\u003eremove\u003c/code\u003e that provides a fast (e.g.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1815,
+          "column": 30
+        }
+      },
+      {
+        "sentenceText": "O(1)) implementation of {@link Collection#contains(Object)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1816,
+          "column": 55
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1818,
+          "column": 55
+        }
+      },
+      {
+        "sentenceText": "@return a \u003ccode\u003eCollection\u003c/code\u003e containing all the elements of \u003ccode\u003ecollection\u003c/code\u003e except any elements that also occur in \u003ccode\u003eremove\u003c/code\u003e.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1823,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either parameter is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1825,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.retainAll(java.util.Collection\u003cC\u003e, java.util.Collection\u003c?\u003e)",
+    "comment": "\r\n     * Returns a collection containing all the elements in \u003ccode\u003ecollection\u003c/code\u003e\r\n     * that are also in \u003ccode\u003eretain\u003c/code\u003e. The cardinality of an element \u003ccode\u003ee\u003c/code\u003e\r\n     * in the returned collection is the same as the cardinality of \u003ccode\u003ee\u003c/code\u003e\r\n     * in \u003ccode\u003ecollection\u003c/code\u003e unless \u003ccode\u003eretain\u003c/code\u003e does not contain \u003ccode\u003ee\u003c/code\u003e, in which\r\n     * case the cardinality is zero. This method is useful if you do not wish to modify\r\n     * the collection \u003ccode\u003ec\u003c/code\u003e and thus cannot call \u003ccode\u003ec.retainAll(retain);\u003c/code\u003e.\r\n     * \u003cp\u003e\r\n     * This implementation iterates over \u003ccode\u003ecollection\u003c/code\u003e, checking each element in\r\n     * turn to see if it\u0027s contained in \u003ccode\u003eretain\u003c/code\u003e. If it\u0027s contained, it\u0027s added\r\n     * to the returned list. As a consequence, it is advised to use a collection type for\r\n     * \u003ccode\u003eretain\u003c/code\u003e that provides a fast (e.g. O(1)) implementation of\r\n     * {@link Collection#contains(Object)}.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cC\u003e  the type of object the {@link Collection} contains\r\n     * @param collection  the collection whose contents are the target of the #retailAll operation\r\n     * @param retain  the collection containing the elements to be retained in the returned collection\r\n     * @return a \u003ccode\u003eCollection\u003c/code\u003e containing all the elements of \u003ccode\u003ecollection\u003c/code\u003e\r\n     * that occur at least once in \u003ccode\u003eretain\u003c/code\u003e.\r\n     * @throws NullPointerException if either parameter is null\r\n     * @since 3.2\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a collection containing all the elements in \u003ccode\u003ecollection\u003c/code\u003e that are also in \u003ccode\u003eretain\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1729,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The cardinality of an element \u003ccode\u003ee\u003c/code\u003e in the returned collection is the same as the cardinality of \u003ccode\u003ee\u003c/code\u003e in \u003ccode\u003ecollection\u003c/code\u003e unless \u003ccode\u003eretain\u003c/code\u003e does not contain \u003ccode\u003ee\u003c/code\u003e, in which case the cardinality is zero.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1730,
+          "column": 46
+        }
+      },
+      {
+        "sentenceText": "This method is useful if you do not wish to modify the collection \u003ccode\u003ec\u003c/code\u003e and thus cannot call \u003ccode\u003ec.retainAll(retain);\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1733,
+          "column": 38
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This implementation iterates over \u003ccode\u003ecollection\u003c/code\u003e, checking each element in turn to see if it\u0027s contained in \u003ccode\u003eretain\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1735,
+          "column": 38
+        }
+      },
+      {
+        "sentenceText": "If it\u0027s contained, it\u0027s added to the returned list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1737,
+          "column": 62
+        }
+      },
+      {
+        "sentenceText": "As a consequence, it is advised to use a collection type for \u003ccode\u003eretain\u003c/code\u003e that provides a fast (e.g.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1738,
+          "column": 30
+        }
+      },
+      {
+        "sentenceText": "O(1)) implementation of {@link Collection#contains(Object)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1739,
+          "column": 55
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1741,
+          "column": 55
+        }
+      },
+      {
+        "sentenceText": "@return a \u003ccode\u003eCollection\u003c/code\u003e containing all the elements of \u003ccode\u003ecollection\u003c/code\u003e that occur at least once in \u003ccode\u003eretain\u003c/code\u003e.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1746,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either parameter is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1748,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.CollectionUtils.collate(java.lang.Iterable\u003c? extends O\u003e, java.lang.Iterable\u003c? extends O\u003e, java.util.Comparator\u003c? super O\u003e)",
+    "comment": "\r\n     * Merges two sorted Collections, a and b, into a single, sorted List\r\n     * such that the ordering of the elements according to Comparator c is retained.\r\n     * \u003cp\u003e\r\n     * Uses the standard O(n) merge algorithm for combining two sorted lists.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cO\u003e  the element type\r\n     * @param a  the first collection, must not be null\r\n     * @param b  the second collection, must not be null\r\n     * @param c  the comparator to use for the merge.\r\n     * @return a new sorted List, containing the elements of Collection a and b\r\n     * @throws NullPointerException if either collection or the comparator is null\r\n     * @since 4.0\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Merges two sorted Collections, a and b, into a single, sorted List such that the ordering of the elements according to Comparator c is retained.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1627,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Uses the standard O(n) merge algorithm for combining two sorted lists.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1629,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1631,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a new sorted List, containing the elements of Collection a and b",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1637,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either collection or the comparator is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1638,
+          "column": 8
+        }
+      }
+    ]
+  }
+]

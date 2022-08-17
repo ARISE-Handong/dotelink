@@ -1,0 +1,212 @@
+[
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.IsIncludedIn.checkPreconditions(java.lang.Object...)",
+    "comment": "\n\t * Checks the preconditions for creating a new IsIncludedIn processor with a array of Objects.\n\t * \n\t * @param possibleValues\n\t *            the array of possible values\n\t * @throws NullPointerException\n\t *             if possibleValues is null\n\t * @throws IllegalArgumentException\n\t *             if possibleValues is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Checks the preconditions for creating a new IsIncludedIn processor with a array of Objects.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 137,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if possibleValues is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 141,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if possibleValues is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 143,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.IsIncludedIn.IsIncludedIn(java.lang.Object[])",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eIsIncludedIn\u003c/tt\u003e processor, which ensures that the input value belongs to a specific set of\n\t * given values.\n\t * \n\t * @param possibleValues\n\t *            the array of values\n\t * @throws NullPointerException\n\t *             if possibleValues is null\n\t * @throws IllegalArgumentException\n\t *             if possibleValues is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eIsIncludedIn\u003c/tt\u003e processor, which ensures that the input value belongs to a specific set of given values.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 83,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if possibleValues is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 88,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if possibleValues is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 90,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.IsIncludedIn.execute(java.lang.Object, org.supercsv.util.CsvContext)",
+    "comment": "\n\t * {@inheritDoc}\n\t * \n\t * @throws SuperCsvCellProcessorException\n\t *             if value is null\n\t * @throws SuperCsvConstraintViolationException\n\t *             if value isn\u0027t one of the possible values\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "{@inheritDoc}",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 155,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws SuperCsvCellProcessorException if value is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 157,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws SuperCsvConstraintViolationException if value isn\u0027t one of the possible values",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 159,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.IsIncludedIn.IsIncludedIn(java.lang.Object[], org.supercsv.cellprocessor.ift.CellProcessor)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eIsIncludedIn\u003c/tt\u003e processor, which ensures that the input value belongs to a specific set of\n\t * given values, then calls the next processor in the chain.\n\t * \n\t * @param possibleValues\n\t *            the array of values\n\t * @param next\n\t *            the next processor in the chain\n\t * @throws NullPointerException\n\t *             if possibleValues or next is null\n\t * @throws IllegalArgumentException\n\t *             if possibleValues is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eIsIncludedIn\u003c/tt\u003e processor, which ensures that the input value belongs to a specific set of given values, then calls the next processor in the chain.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 100,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if possibleValues or next is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 107,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if possibleValues is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 109,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.IsIncludedIn.checkPreconditions(java.util.Set\u003cjava.lang.Object\u003e)",
+    "comment": "\n\t * Checks the preconditions for creating a new IsIncludedIn processor with a Set of Objects.\n\t * \n\t * @param possibleValues\n\t *            the Set of possible values\n\t * @throws NullPointerException\n\t *             if possibleValues is null\n\t * @throws IllegalArgumentException\n\t *             if possibleValues is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Checks the preconditions for creating a new IsIncludedIn processor with a Set of Objects.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 119,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if possibleValues is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 123,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if possibleValues is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 125,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.IsIncludedIn.IsIncludedIn(java.util.Set\u003cjava.lang.Object\u003e, org.supercsv.cellprocessor.ift.CellProcessor)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eIsIncludedIn\u003c/tt\u003e processor, which ensures that the input value belongs to a specific set of\n\t * given values, then calls the next processor in the chain.\n\t * \n\t * @param possibleValues\n\t *            the Set of values\n\t * @param next\n\t *            the next processor in the chain\n\t * @throws NullPointerException\n\t *             if possibleValues or next is null\n\t * @throws IllegalArgumentException\n\t *             if possibleValues is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eIsIncludedIn\u003c/tt\u003e processor, which ensures that the input value belongs to a specific set of given values, then calls the next processor in the chain.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 64,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if possibleValues or next is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 71,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if possibleValues is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 73,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.IsIncludedIn.IsIncludedIn(java.util.Set\u003cjava.lang.Object\u003e)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eIsIncludedIn\u003c/tt\u003e processor, which ensures that the input value belongs to a specific set of\n\t * given values.\n\t * \n\t * @param possibleValues\n\t *            the Set of values\n\t * @throws NullPointerException\n\t *             if possibleValues is null\n\t * @throws IllegalArgumentException\n\t *             if possibleValues is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eIsIncludedIn\u003c/tt\u003e processor, which ensures that the input value belongs to a specific set of given values.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 47,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if possibleValues is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 52,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if possibleValues is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 54,
+          "column": 5
+        }
+      }
+    ]
+  }
+]

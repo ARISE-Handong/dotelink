@@ -1,0 +1,34 @@
+[
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.getMaximumItemCount()",
+    "unitTestMethod": "org.jfree.data.ComparableObjectSeriesTest.testConstructor1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 137,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 98,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.ComparableObjectSeries(java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.ComparableObjectSeriesTest.testConstructor1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 76,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 97,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

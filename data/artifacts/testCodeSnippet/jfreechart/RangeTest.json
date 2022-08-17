@@ -1,0 +1,1735 @@
+[
+  {
+    "unitTestMethod": "org.jfree.data.RangeTest.testConstructor()",
+    "annotation": "@Test",
+    "code": "Range r1 \u003d new Range(0.1, 1000.0);assertEquals(r1.getLowerBound(), 0.1, 0.0d);assertEquals(r1.getUpperBound(), 1000.0, 0.0d);try {\n    /*Range r2 \u003d*/\n    new Range(10.0, 0.0);\n    fail(\"Lower bound cannot be greater than the upper\");\n} catch (Exception e) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 64,
+        "column": 20
+      },
+      {
+        "line": 65,
+        "column": 9
+      },
+      {
+        "line": 65,
+        "column": 22
+      },
+      {
+        "line": 66,
+        "column": 9
+      },
+      {
+        "line": 66,
+        "column": 22
+      },
+      {
+        "line": 69,
+        "column": 28
+      },
+      {
+        "line": 70,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 64,
+          "column": 9
+        },
+        "assert": "Range r1 \u003d new Range(0.1, 1000.0);assertEquals(r1.getLowerBound(), 0.1, 0.0d);",
+        "slice": "Range r1 \u003d new Range(0.1, 1000.0);assertEquals(r1.getLowerBound(), 0.1, 0.0d);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 66,
+          "column": 9
+        },
+        "assert": "assertEquals(r1.getUpperBound(), 1000.0, 0.0d);",
+        "slice": "Range r1 \u003d new Range(0.1, 1000.0);assertEquals(r1.getUpperBound(), 1000.0, 0.0d);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 68,
+          "column": 9
+        },
+        "assert": "try {\n    /*Range r2 \u003d*/\n    new Range(10.0, 0.0);\n    fail(\"Lower bound cannot be greater than the upper\");\n} catch (Exception e) {\n    // expected\n}",
+        "slice": "try {\n    /*Range r2 \u003d*/\n    new Range(10.0, 0.0);\n    fail(\"Lower bound cannot be greater than the upper\");\n} catch (Exception e) {\n    // expected\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.RangeTest.testEquals()",
+    "annotation": "@Test",
+    "code": "Range r1 \u003d new Range(0.0, 1.0);Range r2 \u003d new Range(0.0, 1.0);assertEquals(r1, r2);assertEquals(r2, r1);r1 \u003d new Range(0.0, 1.0);r2 \u003d new Range(0.5, 1.0);assertFalse(r1.equals(r2));r1 \u003d new Range(0.0, 1.0);r2 \u003d new Range(0.0, 2.0);assertFalse(r1.equals(r2));// a Range object cannot be equal to a different object type\nassertFalse(r1.equals(new Double(0.0)));",
+    "offset": [
+      {
+        "line": 82,
+        "column": 20
+      },
+      {
+        "line": 83,
+        "column": 20
+      },
+      {
+        "line": 84,
+        "column": 9
+      },
+      {
+        "line": 85,
+        "column": 9
+      },
+      {
+        "line": 87,
+        "column": 14
+      },
+      {
+        "line": 88,
+        "column": 14
+      },
+      {
+        "line": 89,
+        "column": 9
+      },
+      {
+        "line": 89,
+        "column": 21
+      },
+      {
+        "line": 91,
+        "column": 14
+      },
+      {
+        "line": 92,
+        "column": 14
+      },
+      {
+        "line": 93,
+        "column": 9
+      },
+      {
+        "line": 93,
+        "column": 21
+      },
+      {
+        "line": 96,
+        "column": 9
+      },
+      {
+        "line": 96,
+        "column": 21
+      },
+      {
+        "line": 96,
+        "column": 31
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 96,
+          "column": 9
+        },
+        "assert": "// a Range object cannot be equal to a different object type\nassertFalse(r1.equals(new Double(0.0)));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);r1 \u003d new Range(0.0, 1.0);r1 \u003d new Range(0.0, 1.0);// a Range object cannot be equal to a different object type\nassertFalse(r1.equals(new Double(0.0)));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 82,
+          "column": 9
+        },
+        "assert": "Range r1 \u003d new Range(0.0, 1.0);Range r2 \u003d new Range(0.0, 1.0);assertEquals(r1, r2);",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);Range r2 \u003d new Range(0.0, 1.0);assertEquals(r1, r2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 85,
+          "column": 9
+        },
+        "assert": "assertEquals(r2, r1);",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);Range r2 \u003d new Range(0.0, 1.0);assertEquals(r2, r1);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 87,
+          "column": 9
+        },
+        "assert": "r1 \u003d new Range(0.0, 1.0);r2 \u003d new Range(0.5, 1.0);assertFalse(r1.equals(r2));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);Range r2 \u003d new Range(0.0, 1.0);r1 \u003d new Range(0.0, 1.0);r2 \u003d new Range(0.5, 1.0);assertFalse(r1.equals(r2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 91,
+          "column": 9
+        },
+        "assert": "r1 \u003d new Range(0.0, 1.0);r2 \u003d new Range(0.0, 2.0);assertFalse(r1.equals(r2));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);Range r2 \u003d new Range(0.0, 1.0);r1 \u003d new Range(0.0, 1.0);r2 \u003d new Range(0.5, 1.0);r1 \u003d new Range(0.0, 1.0);r2 \u003d new Range(0.0, 2.0);assertFalse(r1.equals(r2));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.RangeTest.testHashCode()",
+    "annotation": "@Test",
+    "code": "Range a1 \u003d new Range(1.0, 100.0);Range a2 \u003d new Range(1.0, 100.0);assertEquals(a1.hashCode(), a2.hashCode());a1 \u003d new Range(-100.0, 2.0);a2 \u003d new Range(-100.0, 2.0);assertEquals(a1.hashCode(), a2.hashCode());",
+    "offset": [
+      {
+        "line": 104,
+        "column": 20
+      },
+      {
+        "line": 105,
+        "column": 20
+      },
+      {
+        "line": 106,
+        "column": 9
+      },
+      {
+        "line": 106,
+        "column": 22
+      },
+      {
+        "line": 106,
+        "column": 37
+      },
+      {
+        "line": 108,
+        "column": 14
+      },
+      {
+        "line": 109,
+        "column": 14
+      },
+      {
+        "line": 110,
+        "column": 9
+      },
+      {
+        "line": 110,
+        "column": 22
+      },
+      {
+        "line": 110,
+        "column": 37
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 104,
+          "column": 9
+        },
+        "assert": "Range a1 \u003d new Range(1.0, 100.0);Range a2 \u003d new Range(1.0, 100.0);assertEquals(a1.hashCode(), a2.hashCode());",
+        "slice": "Range a1 \u003d new Range(1.0, 100.0);Range a2 \u003d new Range(1.0, 100.0);assertEquals(a1.hashCode(), a2.hashCode());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 108,
+          "column": 9
+        },
+        "assert": "a1 \u003d new Range(-100.0, 2.0);a2 \u003d new Range(-100.0, 2.0);assertEquals(a1.hashCode(), a2.hashCode());",
+        "slice": "Range a1 \u003d new Range(1.0, 100.0);Range a2 \u003d new Range(1.0, 100.0);a1 \u003d new Range(-100.0, 2.0);a2 \u003d new Range(-100.0, 2.0);assertEquals(a1.hashCode(), a2.hashCode());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.RangeTest.testContains()",
+    "annotation": "@Test",
+    "code": "Range r1 \u003d new Range(0.0, 1.0);assertFalse(r1.contains(Double.NaN));assertFalse(r1.contains(Double.NEGATIVE_INFINITY));assertFalse(r1.contains(-1.0));assertTrue(r1.contains(0.0));assertTrue(r1.contains(0.5));assertTrue(r1.contains(1.0));assertFalse(r1.contains(2.0));assertFalse(r1.contains(Double.POSITIVE_INFINITY));",
+    "offset": [
+      {
+        "line": 118,
+        "column": 20
+      },
+      {
+        "line": 119,
+        "column": 9
+      },
+      {
+        "line": 119,
+        "column": 21
+      },
+      {
+        "line": 120,
+        "column": 9
+      },
+      {
+        "line": 120,
+        "column": 21
+      },
+      {
+        "line": 121,
+        "column": 9
+      },
+      {
+        "line": 121,
+        "column": 21
+      },
+      {
+        "line": 122,
+        "column": 9
+      },
+      {
+        "line": 122,
+        "column": 20
+      },
+      {
+        "line": 123,
+        "column": 9
+      },
+      {
+        "line": 123,
+        "column": 20
+      },
+      {
+        "line": 124,
+        "column": 9
+      },
+      {
+        "line": 124,
+        "column": 20
+      },
+      {
+        "line": 125,
+        "column": 9
+      },
+      {
+        "line": 125,
+        "column": 21
+      },
+      {
+        "line": 126,
+        "column": 9
+      },
+      {
+        "line": 126,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 118,
+          "column": 9
+        },
+        "assert": "Range r1 \u003d new Range(0.0, 1.0);assertFalse(r1.contains(Double.NaN));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertFalse(r1.contains(Double.NaN));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 120,
+          "column": 9
+        },
+        "assert": "assertFalse(r1.contains(Double.NEGATIVE_INFINITY));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertFalse(r1.contains(Double.NEGATIVE_INFINITY));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 121,
+          "column": 9
+        },
+        "assert": "assertFalse(r1.contains(-1.0));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertFalse(r1.contains(-1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 122,
+          "column": 9
+        },
+        "assert": "assertTrue(r1.contains(0.0));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertTrue(r1.contains(0.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 123,
+          "column": 9
+        },
+        "assert": "assertTrue(r1.contains(0.5));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertTrue(r1.contains(0.5));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 124,
+          "column": 9
+        },
+        "assert": "assertTrue(r1.contains(1.0));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertTrue(r1.contains(1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 125,
+          "column": 9
+        },
+        "assert": "assertFalse(r1.contains(2.0));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertFalse(r1.contains(2.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 126,
+          "column": 9
+        },
+        "assert": "assertFalse(r1.contains(Double.POSITIVE_INFINITY));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertFalse(r1.contains(Double.POSITIVE_INFINITY));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.RangeTest.testConstrain()",
+    "annotation": "@Test",
+    "code": "Range r1 \u003d new Range(0.0, 1.0);double d \u003d r1.constrain(0.5);assertEquals(0.5, d, 0.0000001);d \u003d r1.constrain(0.0);assertEquals(0.0, d, 0.0000001);d \u003d r1.constrain(1.0);assertEquals(1.0, d, 0.0000001);d \u003d r1.constrain(-1.0);assertEquals(0.0, d, 0.0000001);d \u003d r1.constrain(2.0);assertEquals(1.0, d, 0.0000001);d \u003d r1.constrain(Double.POSITIVE_INFINITY);assertEquals(1.0, d, 0.0000001);d \u003d r1.constrain(Double.NEGATIVE_INFINITY);assertEquals(0.0, d, 0.0000001);d \u003d r1.constrain(Double.NaN);assertTrue(Double.isNaN(d));",
+    "offset": [
+      {
+        "line": 134,
+        "column": 20
+      },
+      {
+        "line": 136,
+        "column": 20
+      },
+      {
+        "line": 137,
+        "column": 9
+      },
+      {
+        "line": 139,
+        "column": 13
+      },
+      {
+        "line": 140,
+        "column": 9
+      },
+      {
+        "line": 142,
+        "column": 13
+      },
+      {
+        "line": 143,
+        "column": 9
+      },
+      {
+        "line": 145,
+        "column": 13
+      },
+      {
+        "line": 146,
+        "column": 9
+      },
+      {
+        "line": 148,
+        "column": 13
+      },
+      {
+        "line": 149,
+        "column": 9
+      },
+      {
+        "line": 151,
+        "column": 13
+      },
+      {
+        "line": 152,
+        "column": 9
+      },
+      {
+        "line": 154,
+        "column": 13
+      },
+      {
+        "line": 155,
+        "column": 9
+      },
+      {
+        "line": 157,
+        "column": 13
+      },
+      {
+        "line": 158,
+        "column": 9
+      },
+      {
+        "line": 158,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 145,
+          "column": 9
+        },
+        "assert": "d \u003d r1.constrain(-1.0);assertEquals(0.0, d, 0.0000001);",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);double d \u003d r1.constrain(0.5);d \u003d r1.constrain(0.0);d \u003d r1.constrain(1.0);d \u003d r1.constrain(-1.0);assertEquals(0.0, d, 0.0000001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 148,
+          "column": 9
+        },
+        "assert": "d \u003d r1.constrain(2.0);assertEquals(1.0, d, 0.0000001);",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);double d \u003d r1.constrain(0.5);d \u003d r1.constrain(0.0);d \u003d r1.constrain(1.0);d \u003d r1.constrain(-1.0);d \u003d r1.constrain(2.0);assertEquals(1.0, d, 0.0000001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 134,
+          "column": 9
+        },
+        "assert": "Range r1 \u003d new Range(0.0, 1.0);double d \u003d r1.constrain(0.5);assertEquals(0.5, d, 0.0000001);",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);double d \u003d r1.constrain(0.5);assertEquals(0.5, d, 0.0000001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 151,
+          "column": 9
+        },
+        "assert": "d \u003d r1.constrain(Double.POSITIVE_INFINITY);assertEquals(1.0, d, 0.0000001);",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);double d \u003d r1.constrain(0.5);d \u003d r1.constrain(0.0);d \u003d r1.constrain(1.0);d \u003d r1.constrain(-1.0);d \u003d r1.constrain(2.0);d \u003d r1.constrain(Double.POSITIVE_INFINITY);assertEquals(1.0, d, 0.0000001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 154,
+          "column": 9
+        },
+        "assert": "d \u003d r1.constrain(Double.NEGATIVE_INFINITY);assertEquals(0.0, d, 0.0000001);",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);double d \u003d r1.constrain(0.5);d \u003d r1.constrain(0.0);d \u003d r1.constrain(1.0);d \u003d r1.constrain(-1.0);d \u003d r1.constrain(2.0);d \u003d r1.constrain(Double.POSITIVE_INFINITY);d \u003d r1.constrain(Double.NEGATIVE_INFINITY);assertEquals(0.0, d, 0.0000001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 139,
+          "column": 9
+        },
+        "assert": "d \u003d r1.constrain(0.0);assertEquals(0.0, d, 0.0000001);",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);double d \u003d r1.constrain(0.5);d \u003d r1.constrain(0.0);assertEquals(0.0, d, 0.0000001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 157,
+          "column": 9
+        },
+        "assert": "d \u003d r1.constrain(Double.NaN);assertTrue(Double.isNaN(d));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);double d \u003d r1.constrain(0.5);d \u003d r1.constrain(0.0);d \u003d r1.constrain(1.0);d \u003d r1.constrain(-1.0);d \u003d r1.constrain(2.0);d \u003d r1.constrain(Double.POSITIVE_INFINITY);d \u003d r1.constrain(Double.NEGATIVE_INFINITY);d \u003d r1.constrain(Double.NaN);assertTrue(Double.isNaN(d));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 142,
+          "column": 9
+        },
+        "assert": "d \u003d r1.constrain(1.0);assertEquals(1.0, d, 0.0000001);",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);double d \u003d r1.constrain(0.5);d \u003d r1.constrain(0.0);d \u003d r1.constrain(1.0);assertEquals(1.0, d, 0.0000001);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.RangeTest.testIntersects()",
+    "annotation": "@Test",
+    "code": "Range r1 \u003d new Range(0.0, 1.0);assertFalse(r1.intersects(-2.0, -1.0));assertFalse(r1.intersects(-2.0, 0.0));assertTrue(r1.intersects(-2.0, 0.5));assertTrue(r1.intersects(-2.0, 1.0));assertTrue(r1.intersects(-2.0, 1.5));assertTrue(r1.intersects(0.0, 0.5));assertTrue(r1.intersects(0.0, 1.0));assertTrue(r1.intersects(0.0, 1.5));assertTrue(r1.intersects(0.5, 0.6));assertTrue(r1.intersects(0.5, 1.0));assertTrue(r1.intersects(0.5, 1.5));assertFalse(r1.intersects(1.0, 1.1));assertFalse(r1.intersects(1.5, 2.0));",
+    "offset": [
+      {
+        "line": 166,
+        "column": 20
+      },
+      {
+        "line": 167,
+        "column": 9
+      },
+      {
+        "line": 167,
+        "column": 21
+      },
+      {
+        "line": 168,
+        "column": 9
+      },
+      {
+        "line": 168,
+        "column": 21
+      },
+      {
+        "line": 169,
+        "column": 9
+      },
+      {
+        "line": 169,
+        "column": 20
+      },
+      {
+        "line": 170,
+        "column": 9
+      },
+      {
+        "line": 170,
+        "column": 20
+      },
+      {
+        "line": 171,
+        "column": 9
+      },
+      {
+        "line": 171,
+        "column": 20
+      },
+      {
+        "line": 172,
+        "column": 9
+      },
+      {
+        "line": 172,
+        "column": 20
+      },
+      {
+        "line": 173,
+        "column": 9
+      },
+      {
+        "line": 173,
+        "column": 20
+      },
+      {
+        "line": 174,
+        "column": 9
+      },
+      {
+        "line": 174,
+        "column": 20
+      },
+      {
+        "line": 175,
+        "column": 9
+      },
+      {
+        "line": 175,
+        "column": 20
+      },
+      {
+        "line": 176,
+        "column": 9
+      },
+      {
+        "line": 176,
+        "column": 20
+      },
+      {
+        "line": 177,
+        "column": 9
+      },
+      {
+        "line": 177,
+        "column": 20
+      },
+      {
+        "line": 178,
+        "column": 9
+      },
+      {
+        "line": 178,
+        "column": 21
+      },
+      {
+        "line": 179,
+        "column": 9
+      },
+      {
+        "line": 179,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 166,
+          "column": 9
+        },
+        "assert": "Range r1 \u003d new Range(0.0, 1.0);assertFalse(r1.intersects(-2.0, -1.0));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertFalse(r1.intersects(-2.0, -1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 168,
+          "column": 9
+        },
+        "assert": "assertFalse(r1.intersects(-2.0, 0.0));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertFalse(r1.intersects(-2.0, 0.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 169,
+          "column": 9
+        },
+        "assert": "assertTrue(r1.intersects(-2.0, 0.5));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertTrue(r1.intersects(-2.0, 0.5));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 170,
+          "column": 9
+        },
+        "assert": "assertTrue(r1.intersects(-2.0, 1.0));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertTrue(r1.intersects(-2.0, 1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 171,
+          "column": 9
+        },
+        "assert": "assertTrue(r1.intersects(-2.0, 1.5));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertTrue(r1.intersects(-2.0, 1.5));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 172,
+          "column": 9
+        },
+        "assert": "assertTrue(r1.intersects(0.0, 0.5));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertTrue(r1.intersects(0.0, 0.5));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 173,
+          "column": 9
+        },
+        "assert": "assertTrue(r1.intersects(0.0, 1.0));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertTrue(r1.intersects(0.0, 1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 174,
+          "column": 9
+        },
+        "assert": "assertTrue(r1.intersects(0.0, 1.5));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertTrue(r1.intersects(0.0, 1.5));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 175,
+          "column": 9
+        },
+        "assert": "assertTrue(r1.intersects(0.5, 0.6));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertTrue(r1.intersects(0.5, 0.6));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 176,
+          "column": 9
+        },
+        "assert": "assertTrue(r1.intersects(0.5, 1.0));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertTrue(r1.intersects(0.5, 1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 177,
+          "column": 9
+        },
+        "assert": "assertTrue(r1.intersects(0.5, 1.5));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertTrue(r1.intersects(0.5, 1.5));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 178,
+          "column": 9
+        },
+        "assert": "assertFalse(r1.intersects(1.0, 1.1));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertFalse(r1.intersects(1.0, 1.1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 179,
+          "column": 9
+        },
+        "assert": "assertFalse(r1.intersects(1.5, 2.0));",
+        "slice": "Range r1 \u003d new Range(0.0, 1.0);assertFalse(r1.intersects(1.5, 2.0));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.RangeTest.testExpand()",
+    "annotation": "@Test",
+    "code": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.expand(r1, 0.10, 0.10);assertEquals(-10.0, r2.getLowerBound(), 0.001);assertEquals(110.0, r2.getUpperBound(), 0.001);// Expand by 0% does not change the range\nr2 \u003d Range.expand(r1, 0.0, 0.0);assertEquals(r1, r2);try {\n    Range.expand(null, 0.1, 0.1);\n    fail(\"Null value is accepted\");\n} catch (Exception e) {\n}// Lower \u003e upper: mid point is used\nr2 \u003d Range.expand(r1, -0.8, -0.5);assertEquals(65.0, r2.getLowerBound(), 0.001);assertEquals(65.0, r2.getUpperBound(), 0.001);",
+    "offset": [
+      {
+        "line": 187,
+        "column": 20
+      },
+      {
+        "line": 188,
+        "column": 20
+      },
+      {
+        "line": 189,
+        "column": 9
+      },
+      {
+        "line": 189,
+        "column": 29
+      },
+      {
+        "line": 190,
+        "column": 9
+      },
+      {
+        "line": 190,
+        "column": 29
+      },
+      {
+        "line": 193,
+        "column": 14
+      },
+      {
+        "line": 194,
+        "column": 9
+      },
+      {
+        "line": 197,
+        "column": 13
+      },
+      {
+        "line": 198,
+        "column": 13
+      },
+      {
+        "line": 204,
+        "column": 14
+      },
+      {
+        "line": 205,
+        "column": 9
+      },
+      {
+        "line": 205,
+        "column": 28
+      },
+      {
+        "line": 206,
+        "column": 9
+      },
+      {
+        "line": 206,
+        "column": 28
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 193,
+          "column": 9
+        },
+        "assert": "// Expand by 0% does not change the range\nr2 \u003d Range.expand(r1, 0.0, 0.0);assertEquals(r1, r2);",
+        "slice": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.expand(r1, 0.10, 0.10);// Expand by 0% does not change the range\nr2 \u003d Range.expand(r1, 0.0, 0.0);assertEquals(r1, r2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 196,
+          "column": 9
+        },
+        "assert": "try {\n    Range.expand(null, 0.1, 0.1);\n    fail(\"Null value is accepted\");\n} catch (Exception e) {\n}",
+        "slice": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.expand(r1, 0.10, 0.10);// Expand by 0% does not change the range\nr2 \u003d Range.expand(r1, 0.0, 0.0);try {\n    Range.expand(null, 0.1, 0.1);\n    fail(\"Null value is accepted\");\n} catch (Exception e) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 187,
+          "column": 9
+        },
+        "assert": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.expand(r1, 0.10, 0.10);assertEquals(-10.0, r2.getLowerBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.expand(r1, 0.10, 0.10);assertEquals(-10.0, r2.getLowerBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 204,
+          "column": 9
+        },
+        "assert": "// Lower \u003e upper: mid point is used\nr2 \u003d Range.expand(r1, -0.8, -0.5);assertEquals(65.0, r2.getLowerBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.expand(r1, 0.10, 0.10);// Expand by 0% does not change the range\nr2 \u003d Range.expand(r1, 0.0, 0.0);// Lower \u003e upper: mid point is used\nr2 \u003d Range.expand(r1, -0.8, -0.5);assertEquals(65.0, r2.getLowerBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 190,
+          "column": 9
+        },
+        "assert": "assertEquals(110.0, r2.getUpperBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.expand(r1, 0.10, 0.10);assertEquals(110.0, r2.getUpperBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 206,
+          "column": 9
+        },
+        "assert": "assertEquals(65.0, r2.getUpperBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.expand(r1, 0.10, 0.10);// Expand by 0% does not change the range\nr2 \u003d Range.expand(r1, 0.0, 0.0);// Lower \u003e upper: mid point is used\nr2 \u003d Range.expand(r1, -0.8, -0.5);assertEquals(65.0, r2.getUpperBound(), 0.001);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.RangeTest.testShift()",
+    "annotation": "@Test",
+    "code": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);assertEquals(30.0, r2.getLowerBound(), 0.001);assertEquals(40.0, r2.getUpperBound(), 0.001);r1 \u003d new Range(0.0, 100.0);r2 \u003d Range.shift(r1, -50.0, true);assertEquals(-50.0, r2.getLowerBound(), 0.001);assertEquals(50.0, r2.getUpperBound(), 0.001);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, true);assertEquals(10.0, r2.getLowerBound(), 0.001);assertEquals(40.0, r2.getUpperBound(), 0.001);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, true);assertEquals(-40.0, r2.getLowerBound(), 0.001);assertEquals(-10.0, r2.getUpperBound(), 0.001);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, false);assertEquals(0.0, r2.getLowerBound(), 0.001);assertEquals(40.0, r2.getUpperBound(), 0.001);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, false);assertEquals(-40.0, r2.getLowerBound(), 0.001);assertEquals(0.0, r2.getUpperBound(), 0.001);// Shifting with a delta of 0 does not change the range\nr2 \u003d Range.shift(r1, 0.0);assertEquals(r1, r2);try {\n    Range.shift(null, 0.1);\n    fail(\"Null value is accepted\");\n} catch (Exception e) {\n}",
+    "offset": [
+      {
+        "line": 214,
+        "column": 20
+      },
+      {
+        "line": 215,
+        "column": 20
+      },
+      {
+        "line": 216,
+        "column": 9
+      },
+      {
+        "line": 216,
+        "column": 28
+      },
+      {
+        "line": 217,
+        "column": 9
+      },
+      {
+        "line": 217,
+        "column": 28
+      },
+      {
+        "line": 219,
+        "column": 14
+      },
+      {
+        "line": 220,
+        "column": 14
+      },
+      {
+        "line": 221,
+        "column": 9
+      },
+      {
+        "line": 221,
+        "column": 29
+      },
+      {
+        "line": 222,
+        "column": 9
+      },
+      {
+        "line": 222,
+        "column": 28
+      },
+      {
+        "line": 224,
+        "column": 14
+      },
+      {
+        "line": 225,
+        "column": 14
+      },
+      {
+        "line": 226,
+        "column": 9
+      },
+      {
+        "line": 226,
+        "column": 28
+      },
+      {
+        "line": 227,
+        "column": 9
+      },
+      {
+        "line": 227,
+        "column": 28
+      },
+      {
+        "line": 229,
+        "column": 14
+      },
+      {
+        "line": 230,
+        "column": 14
+      },
+      {
+        "line": 231,
+        "column": 9
+      },
+      {
+        "line": 231,
+        "column": 29
+      },
+      {
+        "line": 232,
+        "column": 9
+      },
+      {
+        "line": 232,
+        "column": 29
+      },
+      {
+        "line": 234,
+        "column": 14
+      },
+      {
+        "line": 235,
+        "column": 14
+      },
+      {
+        "line": 236,
+        "column": 9
+      },
+      {
+        "line": 236,
+        "column": 27
+      },
+      {
+        "line": 237,
+        "column": 9
+      },
+      {
+        "line": 237,
+        "column": 28
+      },
+      {
+        "line": 239,
+        "column": 14
+      },
+      {
+        "line": 240,
+        "column": 14
+      },
+      {
+        "line": 241,
+        "column": 9
+      },
+      {
+        "line": 241,
+        "column": 29
+      },
+      {
+        "line": 242,
+        "column": 9
+      },
+      {
+        "line": 242,
+        "column": 27
+      },
+      {
+        "line": 245,
+        "column": 14
+      },
+      {
+        "line": 246,
+        "column": 9
+      },
+      {
+        "line": 249,
+        "column": 13
+      },
+      {
+        "line": 250,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 224,
+          "column": 9
+        },
+        "assert": "r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, true);assertEquals(10.0, r2.getLowerBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);r1 \u003d new Range(0.0, 100.0);r2 \u003d Range.shift(r1, -50.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, true);assertEquals(10.0, r2.getLowerBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 227,
+          "column": 9
+        },
+        "assert": "assertEquals(40.0, r2.getUpperBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);r1 \u003d new Range(0.0, 100.0);r2 \u003d Range.shift(r1, -50.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, true);assertEquals(40.0, r2.getUpperBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 229,
+          "column": 9
+        },
+        "assert": "r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, true);assertEquals(-40.0, r2.getLowerBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);r1 \u003d new Range(0.0, 100.0);r2 \u003d Range.shift(r1, -50.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, true);assertEquals(-40.0, r2.getLowerBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 232,
+          "column": 9
+        },
+        "assert": "assertEquals(-10.0, r2.getUpperBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);r1 \u003d new Range(0.0, 100.0);r2 \u003d Range.shift(r1, -50.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, true);assertEquals(-10.0, r2.getUpperBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 234,
+          "column": 9
+        },
+        "assert": "r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, false);assertEquals(0.0, r2.getLowerBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);r1 \u003d new Range(0.0, 100.0);r2 \u003d Range.shift(r1, -50.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, false);assertEquals(0.0, r2.getLowerBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 237,
+          "column": 9
+        },
+        "assert": "assertEquals(40.0, r2.getUpperBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);r1 \u003d new Range(0.0, 100.0);r2 \u003d Range.shift(r1, -50.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, false);assertEquals(40.0, r2.getUpperBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 239,
+          "column": 9
+        },
+        "assert": "r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, false);assertEquals(-40.0, r2.getLowerBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);r1 \u003d new Range(0.0, 100.0);r2 \u003d Range.shift(r1, -50.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, false);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, false);assertEquals(-40.0, r2.getLowerBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 242,
+          "column": 9
+        },
+        "assert": "assertEquals(0.0, r2.getUpperBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);r1 \u003d new Range(0.0, 100.0);r2 \u003d Range.shift(r1, -50.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, false);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, false);assertEquals(0.0, r2.getUpperBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 245,
+          "column": 9
+        },
+        "assert": "// Shifting with a delta of 0 does not change the range\nr2 \u003d Range.shift(r1, 0.0);assertEquals(r1, r2);",
+        "slice": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);r1 \u003d new Range(0.0, 100.0);r2 \u003d Range.shift(r1, -50.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, false);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, false);// Shifting with a delta of 0 does not change the range\nr2 \u003d Range.shift(r1, 0.0);assertEquals(r1, r2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 214,
+          "column": 9
+        },
+        "assert": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);assertEquals(30.0, r2.getLowerBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);assertEquals(30.0, r2.getLowerBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 248,
+          "column": 9
+        },
+        "assert": "try {\n    Range.shift(null, 0.1);\n    fail(\"Null value is accepted\");\n} catch (Exception e) {\n}",
+        "slice": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);r1 \u003d new Range(0.0, 100.0);r2 \u003d Range.shift(r1, -50.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, true);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, 20.0, false);r1 \u003d new Range(-10.0, 20.0);r2 \u003d Range.shift(r1, -30.0, false);// Shifting with a delta of 0 does not change the range\nr2 \u003d Range.shift(r1, 0.0);try {\n    Range.shift(null, 0.1);\n    fail(\"Null value is accepted\");\n} catch (Exception e) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 217,
+          "column": 9
+        },
+        "assert": "assertEquals(40.0, r2.getUpperBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);assertEquals(40.0, r2.getUpperBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 219,
+          "column": 9
+        },
+        "assert": "r1 \u003d new Range(0.0, 100.0);r2 \u003d Range.shift(r1, -50.0, true);assertEquals(-50.0, r2.getLowerBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);r1 \u003d new Range(0.0, 100.0);r2 \u003d Range.shift(r1, -50.0, true);assertEquals(-50.0, r2.getLowerBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 222,
+          "column": 9
+        },
+        "assert": "assertEquals(50.0, r2.getUpperBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(10.0, 20.0);Range r2 \u003d Range.shift(r1, 20.0);r1 \u003d new Range(0.0, 100.0);r2 \u003d Range.shift(r1, -50.0, true);assertEquals(50.0, r2.getUpperBound(), 0.001);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.RangeTest.testScale()",
+    "annotation": "@Test",
+    "code": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.scale(r1, 0.10);assertEquals(0.0, r2.getLowerBound(), 0.001);assertEquals(10.0, r2.getUpperBound(), 0.001);r1 \u003d new Range(-10.0, 100.0);r2 \u003d Range.scale(r1, 2.0);assertEquals(-20.0, r2.getLowerBound(), 0.001);assertEquals(200.0, r2.getUpperBound(), 0.001);// Scaling with a factor of 1 does not change the range\nr2 \u003d Range.scale(r1, 1.0);assertEquals(r1, r2);try {\n    Range.scale(null, 0.1);\n    fail(\"Null value is accepted\");\n} catch (Exception e) {\n}try {\n    Range.scale(r1, -0.5);\n    fail(\"Negative factor accepted\");\n} catch (Exception e) {\n}",
+    "offset": [
+      {
+        "line": 261,
+        "column": 20
+      },
+      {
+        "line": 262,
+        "column": 20
+      },
+      {
+        "line": 263,
+        "column": 9
+      },
+      {
+        "line": 263,
+        "column": 27
+      },
+      {
+        "line": 264,
+        "column": 9
+      },
+      {
+        "line": 264,
+        "column": 28
+      },
+      {
+        "line": 266,
+        "column": 14
+      },
+      {
+        "line": 267,
+        "column": 14
+      },
+      {
+        "line": 268,
+        "column": 9
+      },
+      {
+        "line": 268,
+        "column": 29
+      },
+      {
+        "line": 269,
+        "column": 9
+      },
+      {
+        "line": 269,
+        "column": 29
+      },
+      {
+        "line": 272,
+        "column": 14
+      },
+      {
+        "line": 273,
+        "column": 9
+      },
+      {
+        "line": 276,
+        "column": 13
+      },
+      {
+        "line": 277,
+        "column": 13
+      },
+      {
+        "line": 283,
+        "column": 13
+      },
+      {
+        "line": 284,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 272,
+          "column": 9
+        },
+        "assert": "// Scaling with a factor of 1 does not change the range\nr2 \u003d Range.scale(r1, 1.0);assertEquals(r1, r2);",
+        "slice": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.scale(r1, 0.10);r1 \u003d new Range(-10.0, 100.0);r2 \u003d Range.scale(r1, 2.0);// Scaling with a factor of 1 does not change the range\nr2 \u003d Range.scale(r1, 1.0);assertEquals(r1, r2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 275,
+          "column": 9
+        },
+        "assert": "try {\n    Range.scale(null, 0.1);\n    fail(\"Null value is accepted\");\n} catch (Exception e) {\n}",
+        "slice": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.scale(r1, 0.10);r1 \u003d new Range(-10.0, 100.0);r2 \u003d Range.scale(r1, 2.0);// Scaling with a factor of 1 does not change the range\nr2 \u003d Range.scale(r1, 1.0);try {\n    Range.scale(null, 0.1);\n    fail(\"Null value is accepted\");\n} catch (Exception e) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        },
+        "assert": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.scale(r1, 0.10);assertEquals(0.0, r2.getLowerBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.scale(r1, 0.10);assertEquals(0.0, r2.getLowerBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 264,
+          "column": 9
+        },
+        "assert": "assertEquals(10.0, r2.getUpperBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.scale(r1, 0.10);assertEquals(10.0, r2.getUpperBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 266,
+          "column": 9
+        },
+        "assert": "r1 \u003d new Range(-10.0, 100.0);r2 \u003d Range.scale(r1, 2.0);assertEquals(-20.0, r2.getLowerBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.scale(r1, 0.10);r1 \u003d new Range(-10.0, 100.0);r2 \u003d Range.scale(r1, 2.0);assertEquals(-20.0, r2.getLowerBound(), 0.001);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 282,
+          "column": 9
+        },
+        "assert": "try {\n    Range.scale(r1, -0.5);\n    fail(\"Negative factor accepted\");\n} catch (Exception e) {\n}",
+        "slice": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.scale(r1, 0.10);r1 \u003d new Range(-10.0, 100.0);r2 \u003d Range.scale(r1, 2.0);// Scaling with a factor of 1 does not change the range\nr2 \u003d Range.scale(r1, 1.0);try {\n    Range.scale(r1, -0.5);\n    fail(\"Negative factor accepted\");\n} catch (Exception e) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 269,
+          "column": 9
+        },
+        "assert": "assertEquals(200.0, r2.getUpperBound(), 0.001);",
+        "slice": "Range r1 \u003d new Range(0.0, 100.0);Range r2 \u003d Range.scale(r1, 0.10);r1 \u003d new Range(-10.0, 100.0);r2 \u003d Range.scale(r1, 2.0);assertEquals(200.0, r2.getUpperBound(), 0.001);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.RangeTest.testSerialization()",
+    "annotation": "@Test",
+    "code": "Range r1 \u003d new Range(25.0, 133.42);Range r2 \u003d (Range) TestUtilities.serialised(r1);assertEquals(r1, r2);",
+    "offset": [
+      {
+        "line": 295,
+        "column": 20
+      },
+      {
+        "line": 296,
+        "column": 28
+      },
+      {
+        "line": 297,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 295,
+          "column": 9
+        },
+        "assert": "Range r1 \u003d new Range(25.0, 133.42);Range r2 \u003d (Range) TestUtilities.serialised(r1);assertEquals(r1, r2);",
+        "slice": "Range r1 \u003d new Range(25.0, 133.42);Range r2 \u003d (Range) TestUtilities.serialised(r1);assertEquals(r1, r2);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.RangeTest.testCombine()",
+    "annotation": "@Test",
+    "code": "Range r1 \u003d new Range(1.0, 2.0);Range r2 \u003d new Range(1.5, 2.5);assertNull(Range.combine(null, null));assertEquals(r1, Range.combine(r1, null));assertEquals(r2, Range.combine(null, r2));assertEquals(new Range(1.0, 2.5), Range.combine(r1, r2));Range r3 \u003d new Range(Double.NaN, 1.3);Range rr \u003d Range.combine(r1, r3);assertTrue(Double.isNaN(rr.getLowerBound()));assertEquals(2.0, rr.getUpperBound(), EPSILON);Range r4 \u003d new Range(1.7, Double.NaN);rr \u003d Range.combine(r4, r1);assertEquals(1.0, rr.getLowerBound(), EPSILON);assertTrue(Double.isNaN(rr.getUpperBound()));",
+    "offset": [
+      {
+        "line": 307,
+        "column": 20
+      },
+      {
+        "line": 308,
+        "column": 20
+      },
+      {
+        "line": 310,
+        "column": 9
+      },
+      {
+        "line": 310,
+        "column": 20
+      },
+      {
+        "line": 311,
+        "column": 9
+      },
+      {
+        "line": 311,
+        "column": 26
+      },
+      {
+        "line": 312,
+        "column": 9
+      },
+      {
+        "line": 312,
+        "column": 26
+      },
+      {
+        "line": 313,
+        "column": 9
+      },
+      {
+        "line": 313,
+        "column": 22
+      },
+      {
+        "line": 313,
+        "column": 43
+      },
+      {
+        "line": 315,
+        "column": 20
+      },
+      {
+        "line": 316,
+        "column": 20
+      },
+      {
+        "line": 317,
+        "column": 9
+      },
+      {
+        "line": 317,
+        "column": 20
+      },
+      {
+        "line": 317,
+        "column": 33
+      },
+      {
+        "line": 318,
+        "column": 9
+      },
+      {
+        "line": 318,
+        "column": 27
+      },
+      {
+        "line": 320,
+        "column": 20
+      },
+      {
+        "line": 321,
+        "column": 14
+      },
+      {
+        "line": 322,
+        "column": 9
+      },
+      {
+        "line": 322,
+        "column": 27
+      },
+      {
+        "line": 323,
+        "column": 9
+      },
+      {
+        "line": 323,
+        "column": 20
+      },
+      {
+        "line": 323,
+        "column": 33
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 320,
+          "column": 9
+        },
+        "assert": "Range r4 \u003d new Range(1.7, Double.NaN);rr \u003d Range.combine(r4, r1);assertEquals(1.0, rr.getLowerBound(), EPSILON);",
+        "slice": "Range r1 \u003d new Range(1.0, 2.0);Range r3 \u003d new Range(Double.NaN, 1.3);Range rr \u003d Range.combine(r1, r3);Range r4 \u003d new Range(1.7, Double.NaN);rr \u003d Range.combine(r4, r1);assertEquals(1.0, rr.getLowerBound(), EPSILON);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 307,
+          "column": 9
+        },
+        "assert": "Range r1 \u003d new Range(1.0, 2.0);Range r2 \u003d new Range(1.5, 2.5);assertNull(Range.combine(null, null));",
+        "slice": "Range r1 \u003d new Range(1.0, 2.0);Range r2 \u003d new Range(1.5, 2.5);assertNull(Range.combine(null, null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 323,
+          "column": 9
+        },
+        "assert": "assertTrue(Double.isNaN(rr.getUpperBound()));",
+        "slice": "Range r1 \u003d new Range(1.0, 2.0);Range r3 \u003d new Range(Double.NaN, 1.3);Range rr \u003d Range.combine(r1, r3);Range r4 \u003d new Range(1.7, Double.NaN);rr \u003d Range.combine(r4, r1);assertTrue(Double.isNaN(rr.getUpperBound()));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 311,
+          "column": 9
+        },
+        "assert": "assertEquals(r1, Range.combine(r1, null));",
+        "slice": "Range r1 \u003d new Range(1.0, 2.0);assertEquals(r1, Range.combine(r1, null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 312,
+          "column": 9
+        },
+        "assert": "assertEquals(r2, Range.combine(null, r2));",
+        "slice": "Range r2 \u003d new Range(1.5, 2.5);assertEquals(r2, Range.combine(null, r2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 313,
+          "column": 9
+        },
+        "assert": "assertEquals(new Range(1.0, 2.5), Range.combine(r1, r2));",
+        "slice": "Range r1 \u003d new Range(1.0, 2.0);Range r2 \u003d new Range(1.5, 2.5);assertEquals(new Range(1.0, 2.5), Range.combine(r1, r2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 315,
+          "column": 9
+        },
+        "assert": "Range r3 \u003d new Range(Double.NaN, 1.3);Range rr \u003d Range.combine(r1, r3);assertTrue(Double.isNaN(rr.getLowerBound()));",
+        "slice": "Range r1 \u003d new Range(1.0, 2.0);Range r3 \u003d new Range(Double.NaN, 1.3);Range rr \u003d Range.combine(r1, r3);assertTrue(Double.isNaN(rr.getLowerBound()));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 318,
+          "column": 9
+        },
+        "assert": "assertEquals(2.0, rr.getUpperBound(), EPSILON);",
+        "slice": "Range r1 \u003d new Range(1.0, 2.0);Range r3 \u003d new Range(Double.NaN, 1.3);Range rr \u003d Range.combine(r1, r3);assertEquals(2.0, rr.getUpperBound(), EPSILON);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.RangeTest.testCombineIgnoringNaN()",
+    "annotation": "@Test",
+    "code": "Range r1 \u003d new Range(1.0, 2.0);Range r2 \u003d new Range(1.5, 2.5);assertNull(Range.combineIgnoringNaN(null, null));assertEquals(r1, Range.combineIgnoringNaN(r1, null));assertEquals(r2, Range.combineIgnoringNaN(null, r2));assertEquals(new Range(1.0, 2.5), Range.combineIgnoringNaN(r1, r2));Range r3 \u003d new Range(Double.NaN, 1.3);Range rr \u003d Range.combineIgnoringNaN(r1, r3);assertEquals(1.0, rr.getLowerBound(), EPSILON);assertEquals(2.0, rr.getUpperBound(), EPSILON);Range r4 \u003d new Range(1.7, Double.NaN);rr \u003d Range.combineIgnoringNaN(r4, r1);assertEquals(1.0, rr.getLowerBound(), EPSILON);assertEquals(2.0, rr.getUpperBound(), EPSILON);",
+    "offset": [
+      {
+        "line": 331,
+        "column": 20
+      },
+      {
+        "line": 332,
+        "column": 20
+      },
+      {
+        "line": 334,
+        "column": 9
+      },
+      {
+        "line": 334,
+        "column": 20
+      },
+      {
+        "line": 335,
+        "column": 9
+      },
+      {
+        "line": 335,
+        "column": 26
+      },
+      {
+        "line": 336,
+        "column": 9
+      },
+      {
+        "line": 336,
+        "column": 26
+      },
+      {
+        "line": 337,
+        "column": 9
+      },
+      {
+        "line": 337,
+        "column": 22
+      },
+      {
+        "line": 337,
+        "column": 43
+      },
+      {
+        "line": 339,
+        "column": 20
+      },
+      {
+        "line": 340,
+        "column": 20
+      },
+      {
+        "line": 341,
+        "column": 9
+      },
+      {
+        "line": 341,
+        "column": 27
+      },
+      {
+        "line": 342,
+        "column": 9
+      },
+      {
+        "line": 342,
+        "column": 27
+      },
+      {
+        "line": 344,
+        "column": 20
+      },
+      {
+        "line": 345,
+        "column": 14
+      },
+      {
+        "line": 346,
+        "column": 9
+      },
+      {
+        "line": 346,
+        "column": 27
+      },
+      {
+        "line": 347,
+        "column": 9
+      },
+      {
+        "line": 347,
+        "column": 27
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 336,
+          "column": 9
+        },
+        "assert": "assertEquals(r2, Range.combineIgnoringNaN(null, r2));",
+        "slice": "Range r2 \u003d new Range(1.5, 2.5);assertEquals(r2, Range.combineIgnoringNaN(null, r2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 337,
+          "column": 9
+        },
+        "assert": "assertEquals(new Range(1.0, 2.5), Range.combineIgnoringNaN(r1, r2));",
+        "slice": "Range r1 \u003d new Range(1.0, 2.0);Range r2 \u003d new Range(1.5, 2.5);assertEquals(new Range(1.0, 2.5), Range.combineIgnoringNaN(r1, r2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 339,
+          "column": 9
+        },
+        "assert": "Range r3 \u003d new Range(Double.NaN, 1.3);Range rr \u003d Range.combineIgnoringNaN(r1, r3);assertEquals(1.0, rr.getLowerBound(), EPSILON);",
+        "slice": "Range r1 \u003d new Range(1.0, 2.0);Range r3 \u003d new Range(Double.NaN, 1.3);Range rr \u003d Range.combineIgnoringNaN(r1, r3);assertEquals(1.0, rr.getLowerBound(), EPSILON);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 342,
+          "column": 9
+        },
+        "assert": "assertEquals(2.0, rr.getUpperBound(), EPSILON);",
+        "slice": "Range r1 \u003d new Range(1.0, 2.0);Range r3 \u003d new Range(Double.NaN, 1.3);Range rr \u003d Range.combineIgnoringNaN(r1, r3);assertEquals(2.0, rr.getUpperBound(), EPSILON);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 344,
+          "column": 9
+        },
+        "assert": "Range r4 \u003d new Range(1.7, Double.NaN);rr \u003d Range.combineIgnoringNaN(r4, r1);assertEquals(1.0, rr.getLowerBound(), EPSILON);",
+        "slice": "Range r1 \u003d new Range(1.0, 2.0);Range r3 \u003d new Range(Double.NaN, 1.3);Range rr \u003d Range.combineIgnoringNaN(r1, r3);Range r4 \u003d new Range(1.7, Double.NaN);rr \u003d Range.combineIgnoringNaN(r4, r1);assertEquals(1.0, rr.getLowerBound(), EPSILON);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 331,
+          "column": 9
+        },
+        "assert": "Range r1 \u003d new Range(1.0, 2.0);Range r2 \u003d new Range(1.5, 2.5);assertNull(Range.combineIgnoringNaN(null, null));",
+        "slice": "Range r1 \u003d new Range(1.0, 2.0);Range r2 \u003d new Range(1.5, 2.5);assertNull(Range.combineIgnoringNaN(null, null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 347,
+          "column": 9
+        },
+        "assert": "assertEquals(2.0, rr.getUpperBound(), EPSILON);",
+        "slice": "Range r1 \u003d new Range(1.0, 2.0);Range r3 \u003d new Range(Double.NaN, 1.3);Range rr \u003d Range.combineIgnoringNaN(r1, r3);Range r4 \u003d new Range(1.7, Double.NaN);rr \u003d Range.combineIgnoringNaN(r4, r1);assertEquals(2.0, rr.getUpperBound(), EPSILON);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 335,
+          "column": 9
+        },
+        "assert": "assertEquals(r1, Range.combineIgnoringNaN(r1, null));",
+        "slice": "Range r1 \u003d new Range(1.0, 2.0);assertEquals(r1, Range.combineIgnoringNaN(r1, null));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.RangeTest.testIsNaNRange()",
+    "annotation": "@Test",
+    "code": "assertTrue(new Range(Double.NaN, Double.NaN).isNaNRange());assertFalse(new Range(1.0, 2.0).isNaNRange());assertFalse(new Range(Double.NaN, 2.0).isNaNRange());assertFalse(new Range(1.0, Double.NaN).isNaNRange());",
+    "offset": [
+      {
+        "line": 352,
+        "column": 9
+      },
+      {
+        "line": 352,
+        "column": 20
+      },
+      {
+        "line": 352,
+        "column": 20
+      },
+      {
+        "line": 353,
+        "column": 9
+      },
+      {
+        "line": 353,
+        "column": 21
+      },
+      {
+        "line": 353,
+        "column": 21
+      },
+      {
+        "line": 354,
+        "column": 9
+      },
+      {
+        "line": 354,
+        "column": 21
+      },
+      {
+        "line": 354,
+        "column": 21
+      },
+      {
+        "line": 355,
+        "column": 9
+      },
+      {
+        "line": 355,
+        "column": 21
+      },
+      {
+        "line": 355,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 352,
+          "column": 9
+        },
+        "assert": "assertTrue(new Range(Double.NaN, Double.NaN).isNaNRange());",
+        "slice": "assertTrue(new Range(Double.NaN, Double.NaN).isNaNRange());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 353,
+          "column": 9
+        },
+        "assert": "assertFalse(new Range(1.0, 2.0).isNaNRange());",
+        "slice": "assertFalse(new Range(1.0, 2.0).isNaNRange());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 354,
+          "column": 9
+        },
+        "assert": "assertFalse(new Range(Double.NaN, 2.0).isNaNRange());",
+        "slice": "assertFalse(new Range(Double.NaN, 2.0).isNaNRange());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 355,
+          "column": 9
+        },
+        "assert": "assertFalse(new Range(1.0, Double.NaN).isNaNRange());",
+        "slice": "assertFalse(new Range(1.0, Double.NaN).isNaNRange());"
+      }
+    ]
+  }
+]

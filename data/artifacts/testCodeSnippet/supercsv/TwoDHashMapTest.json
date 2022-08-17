@@ -1,0 +1,548 @@
+[
+  {
+    "unitTestMethod": "org.supercsv.util.TwoDHashMapTest.testContainsKey()",
+    "annotation": "@Test",
+    "code": "final String key1 \u003d \"Woodwind\";final String key2 \u003d \"Bassoon\";// both keys exist\nassertTrue(orchestraMap.containsKey(key1, key2));assertTrue(orchestraMap2.containsKey(key1, key2));// first key doesn\u0027t exist\nassertFalse(orchestraMap.containsKey(\"invalid\", key2));assertFalse(orchestraMap2.containsKey(\"invalid\", key2));// second key doesn\u0027t exist\nassertFalse(orchestraMap.containsKey(key1, \"invalid\"));assertFalse(orchestraMap2.containsKey(key1, \"invalid\"));",
+    "offset": [
+      {
+        "line": 102,
+        "column": 3
+      },
+      {
+        "line": 102,
+        "column": 14
+      },
+      {
+        "line": 103,
+        "column": 3
+      },
+      {
+        "line": 103,
+        "column": 14
+      },
+      {
+        "line": 106,
+        "column": 3
+      },
+      {
+        "line": 106,
+        "column": 15
+      },
+      {
+        "line": 107,
+        "column": 3
+      },
+      {
+        "line": 107,
+        "column": 15
+      },
+      {
+        "line": 110,
+        "column": 3
+      },
+      {
+        "line": 110,
+        "column": 15
+      },
+      {
+        "line": 111,
+        "column": 3
+      },
+      {
+        "line": 111,
+        "column": 15
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 98,
+          "column": 3
+        },
+        "assert": "final String key1 \u003d \"Woodwind\";final String key2 \u003d \"Bassoon\";// both keys exist\nassertTrue(orchestraMap.containsKey(key1, key2));",
+        "slice": "final String key1 \u003d \"Woodwind\";final String key2 \u003d \"Bassoon\";// both keys exist\nassertTrue(orchestraMap.containsKey(key1, key2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 103,
+          "column": 3
+        },
+        "assert": "assertTrue(orchestraMap2.containsKey(key1, key2));",
+        "slice": "final String key1 \u003d \"Woodwind\";final String key2 \u003d \"Bassoon\";assertTrue(orchestraMap2.containsKey(key1, key2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 106,
+          "column": 3
+        },
+        "assert": "// first key doesn\u0027t exist\nassertFalse(orchestraMap.containsKey(\"invalid\", key2));",
+        "slice": "final String key2 \u003d \"Bassoon\";// first key doesn\u0027t exist\nassertFalse(orchestraMap.containsKey(\"invalid\", key2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 107,
+          "column": 3
+        },
+        "assert": "assertFalse(orchestraMap2.containsKey(\"invalid\", key2));",
+        "slice": "final String key2 \u003d \"Bassoon\";assertFalse(orchestraMap2.containsKey(\"invalid\", key2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 110,
+          "column": 3
+        },
+        "assert": "// second key doesn\u0027t exist\nassertFalse(orchestraMap.containsKey(key1, \"invalid\"));",
+        "slice": "final String key1 \u003d \"Woodwind\";// second key doesn\u0027t exist\nassertFalse(orchestraMap.containsKey(key1, \"invalid\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 111,
+          "column": 3
+        },
+        "assert": "assertFalse(orchestraMap2.containsKey(key1, \"invalid\"));",
+        "slice": "final String key1 \u003d \"Woodwind\";assertFalse(orchestraMap2.containsKey(key1, \"invalid\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.TwoDHashMapTest.testGet()",
+    "annotation": "@Test",
+    "code": "final String key1 \u003d \"Percussion\";final String key2 \u003d \"Timpani\";final Integer expectedNo \u003d 2;// both keys exist\nassertEquals(expectedNo, orchestraMap.get(key1, key2));assertEquals(expectedNo, orchestraMap2.get(key1, key2));// first key doesn\u0027t exist\nassertNull(orchestraMap.get(\"invalid\", key2));assertNull(orchestraMap2.get(\"invalid\", key2));// second key doesn\u0027t exist\nassertNull(orchestraMap.get(key1, \"invalid\"));assertNull(orchestraMap2.get(key1, \"invalid\"));",
+    "offset": [
+      {
+        "line": 126,
+        "column": 3
+      },
+      {
+        "line": 126,
+        "column": 28
+      },
+      {
+        "line": 127,
+        "column": 3
+      },
+      {
+        "line": 127,
+        "column": 28
+      },
+      {
+        "line": 130,
+        "column": 3
+      },
+      {
+        "line": 130,
+        "column": 14
+      },
+      {
+        "line": 131,
+        "column": 3
+      },
+      {
+        "line": 131,
+        "column": 14
+      },
+      {
+        "line": 134,
+        "column": 3
+      },
+      {
+        "line": 134,
+        "column": 14
+      },
+      {
+        "line": 135,
+        "column": 3
+      },
+      {
+        "line": 135,
+        "column": 14
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 130,
+          "column": 3
+        },
+        "assert": "// first key doesn\u0027t exist\nassertNull(orchestraMap.get(\"invalid\", key2));",
+        "slice": "final String key2 \u003d \"Timpani\";// first key doesn\u0027t exist\nassertNull(orchestraMap.get(\"invalid\", key2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 131,
+          "column": 3
+        },
+        "assert": "assertNull(orchestraMap2.get(\"invalid\", key2));",
+        "slice": "final String key2 \u003d \"Timpani\";assertNull(orchestraMap2.get(\"invalid\", key2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 134,
+          "column": 3
+        },
+        "assert": "// second key doesn\u0027t exist\nassertNull(orchestraMap.get(key1, \"invalid\"));",
+        "slice": "final String key1 \u003d \"Percussion\";// second key doesn\u0027t exist\nassertNull(orchestraMap.get(key1, \"invalid\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 135,
+          "column": 3
+        },
+        "assert": "assertNull(orchestraMap2.get(key1, \"invalid\"));",
+        "slice": "final String key1 \u003d \"Percussion\";assertNull(orchestraMap2.get(key1, \"invalid\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 121,
+          "column": 3
+        },
+        "assert": "final String key1 \u003d \"Percussion\";final String key2 \u003d \"Timpani\";final Integer expectedNo \u003d 2;// both keys exist\nassertEquals(expectedNo, orchestraMap.get(key1, key2));",
+        "slice": "final String key1 \u003d \"Percussion\";final String key2 \u003d \"Timpani\";final Integer expectedNo \u003d 2;// both keys exist\nassertEquals(expectedNo, orchestraMap.get(key1, key2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 127,
+          "column": 3
+        },
+        "assert": "assertEquals(expectedNo, orchestraMap2.get(key1, key2));",
+        "slice": "final String key1 \u003d \"Percussion\";final String key2 \u003d \"Timpani\";final Integer expectedNo \u003d 2;assertEquals(expectedNo, orchestraMap2.get(key1, key2));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.TwoDHashMapTest.testSize()",
+    "annotation": "@Test",
+    "code": "final int expectedSize \u003d 4;assertEquals(expectedSize, orchestraMap.size());assertEquals(expectedSize, orchestraMap2.size());",
+    "offset": [
+      {
+        "line": 145,
+        "column": 3
+      },
+      {
+        "line": 145,
+        "column": 30
+      },
+      {
+        "line": 146,
+        "column": 3
+      },
+      {
+        "line": 146,
+        "column": 30
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 144,
+          "column": 3
+        },
+        "assert": "final int expectedSize \u003d 4;assertEquals(expectedSize, orchestraMap.size());",
+        "slice": "final int expectedSize \u003d 4;assertEquals(expectedSize, orchestraMap.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 146,
+          "column": 3
+        },
+        "assert": "assertEquals(expectedSize, orchestraMap2.size());",
+        "slice": "final int expectedSize \u003d 4;assertEquals(expectedSize, orchestraMap2.size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.TwoDHashMapTest.testSizeWithParam()",
+    "annotation": "@Test",
+    "code": "final int expectedWoodwinds \u003d 12;final int expectedBrass \u003d 4;final int expectedPercussion \u003d 5;final int expectedStrings \u003d 6;// first key doesn\u0027t exist\nassertEquals(0, orchestraMap.size(\"invalid\"));assertEquals(0, orchestraMap2.size(\"invalid\"));assertEquals(expectedWoodwinds, orchestraMap.size(\"Woodwind\"));assertEquals(expectedWoodwinds, orchestraMap2.size(\"Woodwind\"));assertEquals(expectedBrass, orchestraMap.size(\"Brass\"));assertEquals(expectedBrass, orchestraMap2.size(\"Brass\"));assertEquals(expectedPercussion, orchestraMap.size(\"Percussion\"));assertEquals(expectedPercussion, orchestraMap2.size(\"Percussion\"));assertEquals(expectedStrings, orchestraMap.size(\"Strings\"));assertEquals(expectedStrings, orchestraMap2.size(\"Strings\"));",
+    "offset": [
+      {
+        "line": 160,
+        "column": 3
+      },
+      {
+        "line": 160,
+        "column": 19
+      },
+      {
+        "line": 161,
+        "column": 3
+      },
+      {
+        "line": 161,
+        "column": 19
+      },
+      {
+        "line": 163,
+        "column": 3
+      },
+      {
+        "line": 163,
+        "column": 35
+      },
+      {
+        "line": 164,
+        "column": 3
+      },
+      {
+        "line": 164,
+        "column": 35
+      },
+      {
+        "line": 166,
+        "column": 3
+      },
+      {
+        "line": 166,
+        "column": 31
+      },
+      {
+        "line": 167,
+        "column": 3
+      },
+      {
+        "line": 167,
+        "column": 31
+      },
+      {
+        "line": 169,
+        "column": 3
+      },
+      {
+        "line": 169,
+        "column": 36
+      },
+      {
+        "line": 170,
+        "column": 3
+      },
+      {
+        "line": 170,
+        "column": 36
+      },
+      {
+        "line": 172,
+        "column": 3
+      },
+      {
+        "line": 172,
+        "column": 33
+      },
+      {
+        "line": 173,
+        "column": 3
+      },
+      {
+        "line": 173,
+        "column": 33
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 161,
+          "column": 3
+        },
+        "assert": "assertEquals(0, orchestraMap2.size(\"invalid\"));",
+        "slice": "assertEquals(0, orchestraMap2.size(\"invalid\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 163,
+          "column": 3
+        },
+        "assert": "assertEquals(expectedWoodwinds, orchestraMap.size(\"Woodwind\"));",
+        "slice": "final int expectedWoodwinds \u003d 12;assertEquals(expectedWoodwinds, orchestraMap.size(\"Woodwind\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 164,
+          "column": 3
+        },
+        "assert": "assertEquals(expectedWoodwinds, orchestraMap2.size(\"Woodwind\"));",
+        "slice": "final int expectedWoodwinds \u003d 12;assertEquals(expectedWoodwinds, orchestraMap2.size(\"Woodwind\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 166,
+          "column": 3
+        },
+        "assert": "assertEquals(expectedBrass, orchestraMap.size(\"Brass\"));",
+        "slice": "final int expectedBrass \u003d 4;assertEquals(expectedBrass, orchestraMap.size(\"Brass\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 167,
+          "column": 3
+        },
+        "assert": "assertEquals(expectedBrass, orchestraMap2.size(\"Brass\"));",
+        "slice": "final int expectedBrass \u003d 4;assertEquals(expectedBrass, orchestraMap2.size(\"Brass\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 169,
+          "column": 3
+        },
+        "assert": "assertEquals(expectedPercussion, orchestraMap.size(\"Percussion\"));",
+        "slice": "final int expectedPercussion \u003d 5;assertEquals(expectedPercussion, orchestraMap.size(\"Percussion\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 154,
+          "column": 3
+        },
+        "assert": "final int expectedWoodwinds \u003d 12;final int expectedBrass \u003d 4;final int expectedPercussion \u003d 5;final int expectedStrings \u003d 6;// first key doesn\u0027t exist\nassertEquals(0, orchestraMap.size(\"invalid\"));",
+        "slice": "final int expectedWoodwinds \u003d 12;final int expectedBrass \u003d 4;final int expectedPercussion \u003d 5;final int expectedStrings \u003d 6;// first key doesn\u0027t exist\nassertEquals(0, orchestraMap.size(\"invalid\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 170,
+          "column": 3
+        },
+        "assert": "assertEquals(expectedPercussion, orchestraMap2.size(\"Percussion\"));",
+        "slice": "final int expectedPercussion \u003d 5;assertEquals(expectedPercussion, orchestraMap2.size(\"Percussion\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 172,
+          "column": 3
+        },
+        "assert": "assertEquals(expectedStrings, orchestraMap.size(\"Strings\"));",
+        "slice": "final int expectedStrings \u003d 6;assertEquals(expectedStrings, orchestraMap.size(\"Strings\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 173,
+          "column": 3
+        },
+        "assert": "assertEquals(expectedStrings, orchestraMap2.size(\"Strings\"));",
+        "slice": "final int expectedStrings \u003d 6;assertEquals(expectedStrings, orchestraMap2.size(\"Strings\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.TwoDHashMapTest.keySet()",
+    "annotation": "@Test",
+    "code": "final Set\u003cString\u003e expectedKeys \u003d new HashSet\u003cString\u003e(Arrays.asList(\"Woodwind\", \"Brass\", \"Percussion\", \"Strings\"));assertEquals(expectedKeys.size(), orchestraMap.keySet().size());assertEquals(expectedKeys.size(), orchestraMap2.keySet().size());assertTrue(orchestraMap.keySet().containsAll(expectedKeys));assertTrue(orchestraMap2.keySet().containsAll(expectedKeys));",
+    "offset": [
+      {
+        "line": 181,
+        "column": 36
+      },
+      {
+        "line": 182,
+        "column": 4
+      },
+      {
+        "line": 183,
+        "column": 3
+      },
+      {
+        "line": 183,
+        "column": 16
+      },
+      {
+        "line": 183,
+        "column": 37
+      },
+      {
+        "line": 183,
+        "column": 37
+      },
+      {
+        "line": 184,
+        "column": 3
+      },
+      {
+        "line": 184,
+        "column": 16
+      },
+      {
+        "line": 184,
+        "column": 37
+      },
+      {
+        "line": 184,
+        "column": 37
+      },
+      {
+        "line": 185,
+        "column": 3
+      },
+      {
+        "line": 185,
+        "column": 14
+      },
+      {
+        "line": 185,
+        "column": 14
+      },
+      {
+        "line": 186,
+        "column": 3
+      },
+      {
+        "line": 186,
+        "column": 14
+      },
+      {
+        "line": 186,
+        "column": 14
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 181,
+          "column": 3
+        },
+        "assert": "final Set\u003cString\u003e expectedKeys \u003d new HashSet\u003cString\u003e(Arrays.asList(\"Woodwind\", \"Brass\", \"Percussion\", \"Strings\"));assertEquals(expectedKeys.size(), orchestraMap.keySet().size());",
+        "slice": "final Set\u003cString\u003e expectedKeys \u003d new HashSet\u003cString\u003e(Arrays.asList(\"Woodwind\", \"Brass\", \"Percussion\", \"Strings\"));assertEquals(expectedKeys.size(), orchestraMap.keySet().size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 184,
+          "column": 3
+        },
+        "assert": "assertEquals(expectedKeys.size(), orchestraMap2.keySet().size());",
+        "slice": "final Set\u003cString\u003e expectedKeys \u003d new HashSet\u003cString\u003e(Arrays.asList(\"Woodwind\", \"Brass\", \"Percussion\", \"Strings\"));assertEquals(expectedKeys.size(), orchestraMap2.keySet().size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 185,
+          "column": 3
+        },
+        "assert": "assertTrue(orchestraMap.keySet().containsAll(expectedKeys));",
+        "slice": "final Set\u003cString\u003e expectedKeys \u003d new HashSet\u003cString\u003e(Arrays.asList(\"Woodwind\", \"Brass\", \"Percussion\", \"Strings\"));assertTrue(orchestraMap.keySet().containsAll(expectedKeys));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 186,
+          "column": 3
+        },
+        "assert": "assertTrue(orchestraMap2.keySet().containsAll(expectedKeys));",
+        "slice": "final Set\u003cString\u003e expectedKeys \u003d new HashSet\u003cString\u003e(Arrays.asList(\"Woodwind\", \"Brass\", \"Percussion\", \"Strings\"));assertTrue(orchestraMap2.keySet().containsAll(expectedKeys));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.TwoDHashMapTest.testConstructorWithNull()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "new TwoDHashMap\u003cString, String, Integer\u003e(null);",
+    "offset": [
+      {
+        "line": 194,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 194,
+          "column": 3
+        },
+        "assert": "new TwoDHashMap\u003cString, String, Integer\u003e(null);",
+        "slice": "new TwoDHashMap\u003cString, String, Integer\u003e(null);"
+      }
+    ]
+  }
+]

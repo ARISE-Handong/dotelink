@@ -1,0 +1,1951 @@
+[
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testIsDynamic()",
+    "annotation": "@Test",
+    "code": "assertFalse(\"Not dynamic\", ih.isDynamic());",
+    "offset": [
+      {
+        "line": 72,
+        "column": 9
+      },
+      {
+        "line": 72,
+        "column": 36
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 72,
+          "column": 9
+        },
+        "assert": "assertFalse(\"Not dynamic\", ih.isDynamic());",
+        "slice": "assertFalse(\"Not dynamic\", ih.isDynamic());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testIsContainer()",
+    "annotation": "@Test",
+    "code": "assertFalse(\"Not a container\", ih.isContainer());",
+    "offset": [
+      {
+        "line": 77,
+        "column": 9
+      },
+      {
+        "line": 77,
+        "column": 40
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 77,
+          "column": 9
+        },
+        "assert": "assertFalse(\"Not a container\", ih.isContainer());",
+        "slice": "assertFalse(\"Not a container\", ih.isContainer());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAddText()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(ComparisonFailure.class)));ih.addText(p, this, \"test\");ih.addText(p, this, \"test2\");",
+    "offset": [
+      {
+        "line": 82,
+        "column": 9
+      },
+      {
+        "line": 83,
+        "column": 9
+      },
+      {
+        "line": 83,
+        "column": 23
+      },
+      {
+        "line": 83,
+        "column": 44
+      },
+      {
+        "line": 84,
+        "column": 9
+      },
+      {
+        "line": 85,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 82,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(ComparisonFailure.class)));ih.addText(p, this, \"test\");ih.addText(p, this, \"test2\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(ComparisonFailure.class)));ih.addText(p, this, \"test\");ih.addText(p, this, \"test2\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAddTextToString()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih \u003d IntrospectionHelper.getHelper(String.class);ih.addText(p, \"\", \"test\");",
+    "offset": [
+      {
+        "line": 90,
+        "column": 14
+      },
+      {
+        "line": 91,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 90,
+          "column": 9
+        },
+        "assert": "ih \u003d IntrospectionHelper.getHelper(String.class);ih.addText(p, \"\", \"test\");",
+        "slice": "ih \u003d IntrospectionHelper.getHelper(String.class);ih.addText(p, \"\", \"test\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testGetAddTextMethod()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "Method m \u003d ih.getAddTextMethod();assertMethod(m, \"addText\", String.class, \"test\", \"bing!\");IntrospectionHelper.getHelper(String.class).getAddTextMethod();",
+    "offset": [
+      {
+        "line": 97,
+        "column": 20
+      },
+      {
+        "line": 98,
+        "column": 9
+      },
+      {
+        "line": 99,
+        "column": 9
+      },
+      {
+        "line": 99,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 97,
+          "column": 9
+        },
+        "assert": "Method m \u003d ih.getAddTextMethod();assertMethod(m, \"addText\", String.class, \"test\", \"bing!\");",
+        "slice": "Method m \u003d ih.getAddTextMethod();assertMethod(m, \"addText\", String.class, \"test\", \"bing!\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 99,
+          "column": 9
+        },
+        "assert": "IntrospectionHelper.getHelper(String.class).getAddTextMethod();",
+        "slice": "IntrospectionHelper.getHelper(String.class).getAddTextMethod();"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testSupportsCharacters()",
+    "annotation": "@Test",
+    "code": "assertTrue(\"IntrospectionHelperTest supports addText\", ih.supportsCharacters());ih \u003d IntrospectionHelper.getHelper(String.class);assertFalse(\"String doesn\\\u0027t support addText\", ih.supportsCharacters());",
+    "offset": [
+      {
+        "line": 104,
+        "column": 9
+      },
+      {
+        "line": 104,
+        "column": 64
+      },
+      {
+        "line": 105,
+        "column": 14
+      },
+      {
+        "line": 106,
+        "column": 9
+      },
+      {
+        "line": 106,
+        "column": 56
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 104,
+          "column": 9
+        },
+        "assert": "assertTrue(\"IntrospectionHelperTest supports addText\", ih.supportsCharacters());",
+        "slice": "assertTrue(\"IntrospectionHelperTest supports addText\", ih.supportsCharacters());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 105,
+          "column": 9
+        },
+        "assert": "ih \u003d IntrospectionHelper.getHelper(String.class);assertFalse(\"String doesn\\\u0027t support addText\", ih.supportsCharacters());",
+        "slice": "ih \u003d IntrospectionHelper.getHelper(String.class);assertFalse(\"String doesn\\\u0027t support addText\", ih.supportsCharacters());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorOne()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.getElementType(\"one\");",
+    "offset": [
+      {
+        "line": 118,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 118,
+          "column": 9
+        },
+        "assert": "ih.getElementType(\"one\");",
+        "slice": "ih.getElementType(\"one\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorTwo()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.getElementType(\"two\");",
+    "offset": [
+      {
+        "line": 127,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 127,
+          "column": 9
+        },
+        "assert": "ih.getElementType(\"two\");",
+        "slice": "ih.getElementType(\"two\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorThree()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.getElementType(\"three\");",
+    "offset": [
+      {
+        "line": 136,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 136,
+          "column": 9
+        },
+        "assert": "ih.getElementType(\"three\");",
+        "slice": "ih.getElementType(\"three\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorFour()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.getElementType(\"four\");",
+    "offset": [
+      {
+        "line": 145,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 145,
+          "column": 9
+        },
+        "assert": "ih.getElementType(\"four\");",
+        "slice": "ih.getElementType(\"four\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorFive()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.getElementType(\"five\");",
+    "offset": [
+      {
+        "line": 154,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 154,
+          "column": 9
+        },
+        "assert": "ih.getElementType(\"five\");",
+        "slice": "ih.getElementType(\"five\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorSix()",
+    "annotation": "@Test",
+    "code": "assertEquals(String.class, ih.getElementType(\"six\"));assertEquals(\"test\", ih.createElement(p, this, \"six\"));",
+    "offset": [
+      {
+        "line": 160,
+        "column": 9
+      },
+      {
+        "line": 160,
+        "column": 36
+      },
+      {
+        "line": 161,
+        "column": 9
+      },
+      {
+        "line": 161,
+        "column": 30
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 160,
+          "column": 9
+        },
+        "assert": "assertEquals(String.class, ih.getElementType(\"six\"));",
+        "slice": "assertEquals(String.class, ih.getElementType(\"six\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 161,
+          "column": 9
+        },
+        "assert": "assertEquals(\"test\", ih.createElement(p, this, \"six\"));",
+        "slice": "assertEquals(\"test\", ih.createElement(p, this, \"six\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorSeven()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.getElementType(\"seven\");",
+    "offset": [
+      {
+        "line": 169,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 169,
+          "column": 9
+        },
+        "assert": "ih.getElementType(\"seven\");",
+        "slice": "ih.getElementType(\"seven\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorEight()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.getElementType(\"eight\");",
+    "offset": [
+      {
+        "line": 178,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 178,
+          "column": 9
+        },
+        "assert": "ih.getElementType(\"eight\");",
+        "slice": "ih.getElementType(\"eight\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorNine()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.getElementType(\"nine\");",
+    "offset": [
+      {
+        "line": 187,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 187,
+          "column": 9
+        },
+        "assert": "ih.getElementType(\"nine\");",
+        "slice": "ih.getElementType(\"nine\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorTen()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.getElementType(\"ten\");",
+    "offset": [
+      {
+        "line": 196,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 196,
+          "column": 9
+        },
+        "assert": "ih.getElementType(\"ten\");",
+        "slice": "ih.getElementType(\"ten\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorEleven()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.getElementType(\"eleven\");",
+    "offset": [
+      {
+        "line": 205,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 205,
+          "column": 9
+        },
+        "assert": "ih.getElementType(\"eleven\");",
+        "slice": "ih.getElementType(\"eleven\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorTwelve()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.getElementType(\"twelve\");",
+    "offset": [
+      {
+        "line": 214,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 214,
+          "column": 9
+        },
+        "assert": "ih.getElementType(\"twelve\");",
+        "slice": "ih.getElementType(\"twelve\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorThirteen()",
+    "annotation": "@Test",
+    "code": "assertEquals(StringBuffer.class, ih.getElementType(\"thirteen\"));assertEquals(\"test\", ih.createElement(p, this, \"thirteen\").toString());",
+    "offset": [
+      {
+        "line": 220,
+        "column": 9
+      },
+      {
+        "line": 220,
+        "column": 42
+      },
+      {
+        "line": 221,
+        "column": 9
+      },
+      {
+        "line": 221,
+        "column": 30
+      },
+      {
+        "line": 221,
+        "column": 30
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 220,
+          "column": 9
+        },
+        "assert": "assertEquals(StringBuffer.class, ih.getElementType(\"thirteen\"));",
+        "slice": "assertEquals(StringBuffer.class, ih.getElementType(\"thirteen\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 221,
+          "column": 9
+        },
+        "assert": "assertEquals(\"test\", ih.createElement(p, this, \"thirteen\").toString());",
+        "slice": "assertEquals(\"test\", ih.createElement(p, this, \"thirteen\").toString());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorFourteen()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(NullPointerException.class)));ih.createElement(p, this, \"fourteen\");",
+    "offset": [
+      {
+        "line": 229,
+        "column": 9
+      },
+      {
+        "line": 230,
+        "column": 9
+      },
+      {
+        "line": 230,
+        "column": 23
+      },
+      {
+        "line": 230,
+        "column": 44
+      },
+      {
+        "line": 231,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 229,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(NullPointerException.class)));ih.createElement(p, this, \"fourteen\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(NullPointerException.class)));ih.createElement(p, this, \"fourteen\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorFifteen()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(NullPointerException.class)));ih.createElement(p, this, \"fifteen\");",
+    "offset": [
+      {
+        "line": 239,
+        "column": 9
+      },
+      {
+        "line": 240,
+        "column": 9
+      },
+      {
+        "line": 240,
+        "column": 23
+      },
+      {
+        "line": 240,
+        "column": 44
+      },
+      {
+        "line": 241,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 239,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(NullPointerException.class)));ih.createElement(p, this, \"fifteen\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(NullPointerException.class)));ih.createElement(p, this, \"fifteen\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testGetNestedElements()",
+    "annotation": "@Test",
+    "code": "Map\u003cString, Class\u003c?\u003e\u003e elemMap \u003d getExpectedNestedElements();for (String name : Collections.list(ih.getNestedElements())) {\n    Class\u003c?\u003e expect \u003d elemMap.get(name);\n    assertNotNull(\"Support for \" + name + \" in IntrospectionHelperTest?\", expect);\n    assertEquals(\"Return type of \" + name, expect, ih.getElementType(name));\n    elemMap.remove(name);\n}assertTrue(\"Found all\", elemMap.isEmpty());",
+    "offset": [
+      {
+        "line": 255,
+        "column": 41
+      },
+      {
+        "line": 256,
+        "column": 28
+      },
+      {
+        "line": 256,
+        "column": 45
+      },
+      {
+        "line": 257,
+        "column": 31
+      },
+      {
+        "line": 258,
+        "column": 13
+      },
+      {
+        "line": 260,
+        "column": 13
+      },
+      {
+        "line": 260,
+        "column": 60
+      },
+      {
+        "line": 261,
+        "column": 13
+      },
+      {
+        "line": 263,
+        "column": 9
+      },
+      {
+        "line": 263,
+        "column": 33
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        },
+        "assert": "assertTrue(\"Found all\", elemMap.isEmpty());",
+        "slice": "Map\u003cString, Class\u003c?\u003e\u003e elemMap \u003d getExpectedNestedElements();assertTrue(\"Found all\", elemMap.isEmpty());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        },
+        "assert": "Map\u003cString, Class\u003c?\u003e\u003e elemMap \u003d getExpectedNestedElements();for (String name : Collections.list(ih.getNestedElements())) {\n    Class\u003c?\u003e expect \u003d elemMap.get(name);\n    assertNotNull(\"Support for \" + name + \" in IntrospectionHelperTest?\", expect);\n    assertEquals(\"Return type of \" + name, expect, ih.getElementType(name));\n    elemMap.remove(name);\n}",
+        "slice": "Map\u003cString, Class\u003c?\u003e\u003e elemMap \u003d getExpectedNestedElements();for (String name : Collections.list(ih.getNestedElements())) {\n    Class\u003c?\u003e expect \u003d elemMap.get(name);\n    assertNotNull(\"Support for \" + name + \" in IntrospectionHelperTest?\", expect);\n    assertEquals(\"Return type of \" + name, expect, ih.getElementType(name));\n    elemMap.remove(name);\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testGetNestedElementMap()",
+    "annotation": "@Test(expected \u003d UnsupportedOperationException.class)",
+    "code": "Map\u003cString, Class\u003c?\u003e\u003e elemMap \u003d getExpectedNestedElements();Map\u003cString, Class\u003c?\u003e\u003e actualMap \u003d ih.getNestedElementMap();actualMap.forEach((elemName, value) -\u003e {\n    Class\u003c?\u003e elemClass \u003d elemMap.get(elemName);\n    assertNotNull(\"Support for \" + elemName + \" in IntrospectionHelperTest?\", elemClass);\n    assertEquals(\"Type of \" + elemName, elemClass, value);\n    elemMap.remove(elemName);\n});assertTrue(\"Found all\", elemMap.isEmpty());// Check it\u0027s a read-only map.\nactualMap.clear();",
+    "offset": [
+      {
+        "line": 268,
+        "column": 41
+      },
+      {
+        "line": 269,
+        "column": 43
+      },
+      {
+        "line": 270,
+        "column": 9
+      },
+      {
+        "line": 271,
+        "column": 34
+      },
+      {
+        "line": 272,
+        "column": 13
+      },
+      {
+        "line": 273,
+        "column": 13
+      },
+      {
+        "line": 274,
+        "column": 13
+      },
+      {
+        "line": 276,
+        "column": 9
+      },
+      {
+        "line": 276,
+        "column": 33
+      },
+      {
+        "line": 279,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 276,
+          "column": 9
+        },
+        "assert": "assertTrue(\"Found all\", elemMap.isEmpty());",
+        "slice": "Map\u003cString, Class\u003c?\u003e\u003e elemMap \u003d getExpectedNestedElements();assertTrue(\"Found all\", elemMap.isEmpty());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 279,
+          "column": 9
+        },
+        "assert": "// Check it\u0027s a read-only map.\nactualMap.clear();",
+        "slice": "Map\u003cString, Class\u003c?\u003e\u003e actualMap \u003d ih.getNestedElementMap();// Check it\u0027s a read-only map.\nactualMap.clear();"
+      },
+      {
+        "testCodeLocation": {
+          "line": 268,
+          "column": 9
+        },
+        "assert": "Map\u003cString, Class\u003c?\u003e\u003e elemMap \u003d getExpectedNestedElements();Map\u003cString, Class\u003c?\u003e\u003e actualMap \u003d ih.getNestedElementMap();actualMap.forEach((elemName, value) -\u003e {\n    Class\u003c?\u003e elemClass \u003d elemMap.get(elemName);\n    assertNotNull(\"Support for \" + elemName + \" in IntrospectionHelperTest?\", elemClass);\n    assertEquals(\"Type of \" + elemName, elemClass, value);\n    elemMap.remove(elemName);\n});",
+        "slice": "Map\u003cString, Class\u003c?\u003e\u003e elemMap \u003d getExpectedNestedElements();Map\u003cString, Class\u003c?\u003e\u003e actualMap \u003d ih.getNestedElementMap();actualMap.forEach((elemName, value) -\u003e {\n    Class\u003c?\u003e elemClass \u003d elemMap.get(elemName);\n    assertNotNull(\"Support for \" + elemName + \" in IntrospectionHelperTest?\", elemClass);\n    assertEquals(\"Type of \" + elemName, elemClass, value);\n    elemMap.remove(elemName);\n});"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testGetElementMethod()",
+    "annotation": "@Test",
+    "code": "assertElemMethod(\"six\", \"createSix\", String.class, null);assertElemMethod(\"thirteen\", \"addThirteen\", null, StringBuffer.class);assertElemMethod(\"fourteen\", \"addFourteen\", null, StringBuffer.class);assertElemMethod(\"fifteen\", \"createFifteen\", StringBuffer.class, null);",
+    "offset": [
+      {
+        "line": 285,
+        "column": 9
+      },
+      {
+        "line": 286,
+        "column": 9
+      },
+      {
+        "line": 287,
+        "column": 9
+      },
+      {
+        "line": 288,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 288,
+          "column": 9
+        },
+        "assert": "assertElemMethod(\"fifteen\", \"createFifteen\", StringBuffer.class, null);",
+        "slice": "assertElemMethod(\"fifteen\", \"createFifteen\", StringBuffer.class, null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        },
+        "assert": "assertElemMethod(\"six\", \"createSix\", String.class, null);",
+        "slice": "assertElemMethod(\"six\", \"createSix\", String.class, null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 286,
+          "column": 9
+        },
+        "assert": "assertElemMethod(\"thirteen\", \"addThirteen\", null, StringBuffer.class);",
+        "slice": "assertElemMethod(\"thirteen\", \"addThirteen\", null, StringBuffer.class);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 287,
+          "column": 9
+        },
+        "assert": "assertElemMethod(\"fourteen\", \"addFourteen\", null, StringBuffer.class);",
+        "slice": "assertElemMethod(\"fourteen\", \"addFourteen\", null, StringBuffer.class);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterOne()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.setAttribute(p, this, \"one\", \"test\");",
+    "offset": [
+      {
+        "line": 361,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 361,
+          "column": 9
+        },
+        "assert": "ih.setAttribute(p, this, \"one\", \"test\");",
+        "slice": "ih.setAttribute(p, this, \"one\", \"test\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterTwo()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.setAttribute(p, this, \"two\", \"test\");",
+    "offset": [
+      {
+        "line": 370,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 370,
+          "column": 9
+        },
+        "assert": "ih.setAttribute(p, this, \"two\", \"test\");",
+        "slice": "ih.setAttribute(p, this, \"two\", \"test\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterThree()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.setAttribute(p, this, \"three\", \"test\");",
+    "offset": [
+      {
+        "line": 379,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 379,
+          "column": 9
+        },
+        "assert": "ih.setAttribute(p, this, \"three\", \"test\");",
+        "slice": "ih.setAttribute(p, this, \"three\", \"test\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterFour()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.setAttribute(p, this, \"four\", \"test\");",
+    "offset": [
+      {
+        "line": 388,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 388,
+          "column": 9
+        },
+        "assert": "ih.setAttribute(p, this, \"four\", \"test\");",
+        "slice": "ih.setAttribute(p, this, \"four\", \"test\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterFive()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.setAttribute(p, this, \"five\", \"test\");",
+    "offset": [
+      {
+        "line": 397,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 397,
+          "column": 9
+        },
+        "assert": "ih.setAttribute(p, this, \"five\", \"test\");",
+        "slice": "ih.setAttribute(p, this, \"five\", \"test\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterSix()",
+    "annotation": "@Test(expected \u003d BuildException.class)",
+    "code": "ih.setAttribute(p, this, \"six\", \"test\");",
+    "offset": [
+      {
+        "line": 406,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 406,
+          "column": 9
+        },
+        "assert": "ih.setAttribute(p, this, \"six\", \"test\");",
+        "slice": "ih.setAttribute(p, this, \"six\", \"test\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterSeven()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(ComparisonFailure.class)));ih.setAttribute(p, this, \"seven\", \"2\");ih.setAttribute(p, this, \"seven\", \"3\");",
+    "offset": [
+      {
+        "line": 415,
+        "column": 9
+      },
+      {
+        "line": 416,
+        "column": 9
+      },
+      {
+        "line": 416,
+        "column": 23
+      },
+      {
+        "line": 416,
+        "column": 44
+      },
+      {
+        "line": 417,
+        "column": 9
+      },
+      {
+        "line": 418,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 415,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(ComparisonFailure.class)));ih.setAttribute(p, this, \"seven\", \"2\");ih.setAttribute(p, this, \"seven\", \"3\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(ComparisonFailure.class)));ih.setAttribute(p, this, \"seven\", \"2\");ih.setAttribute(p, this, \"seven\", \"3\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterEight()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"eight\", \"2\");ih.setAttribute(p, this, \"eight\", \"3\");",
+    "offset": [
+      {
+        "line": 426,
+        "column": 9
+      },
+      {
+        "line": 427,
+        "column": 9
+      },
+      {
+        "line": 427,
+        "column": 23
+      },
+      {
+        "line": 427,
+        "column": 44
+      },
+      {
+        "line": 428,
+        "column": 9
+      },
+      {
+        "line": 429,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 426,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"eight\", \"2\");ih.setAttribute(p, this, \"eight\", \"3\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"eight\", \"2\");ih.setAttribute(p, this, \"eight\", \"3\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterNine()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"nine\", \"2\");ih.setAttribute(p, this, \"nine\", \"3\");",
+    "offset": [
+      {
+        "line": 437,
+        "column": 9
+      },
+      {
+        "line": 438,
+        "column": 9
+      },
+      {
+        "line": 438,
+        "column": 23
+      },
+      {
+        "line": 438,
+        "column": 44
+      },
+      {
+        "line": 439,
+        "column": 9
+      },
+      {
+        "line": 440,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 437,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"nine\", \"2\");ih.setAttribute(p, this, \"nine\", \"3\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"nine\", \"2\");ih.setAttribute(p, this, \"nine\", \"3\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterTen()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"ten\", \"2\");ih.setAttribute(p, this, \"ten\", \"3\");",
+    "offset": [
+      {
+        "line": 448,
+        "column": 9
+      },
+      {
+        "line": 449,
+        "column": 9
+      },
+      {
+        "line": 449,
+        "column": 23
+      },
+      {
+        "line": 449,
+        "column": 44
+      },
+      {
+        "line": 450,
+        "column": 9
+      },
+      {
+        "line": 451,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 448,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"ten\", \"2\");ih.setAttribute(p, this, \"ten\", \"3\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"ten\", \"2\");ih.setAttribute(p, this, \"ten\", \"3\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterEleven()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"eleven\", \"2\");ih.setAttribute(p, this, \"eleven\", \"on\");",
+    "offset": [
+      {
+        "line": 459,
+        "column": 9
+      },
+      {
+        "line": 460,
+        "column": 9
+      },
+      {
+        "line": 460,
+        "column": 23
+      },
+      {
+        "line": 460,
+        "column": 44
+      },
+      {
+        "line": 461,
+        "column": 9
+      },
+      {
+        "line": 462,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 459,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"eleven\", \"2\");ih.setAttribute(p, this, \"eleven\", \"on\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"eleven\", \"2\");ih.setAttribute(p, this, \"eleven\", \"on\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterTwelve()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"twelve\", \"2\");ih.setAttribute(p, this, \"twelve\", \"on\");",
+    "offset": [
+      {
+        "line": 470,
+        "column": 9
+      },
+      {
+        "line": 471,
+        "column": 9
+      },
+      {
+        "line": 471,
+        "column": 23
+      },
+      {
+        "line": 471,
+        "column": 44
+      },
+      {
+        "line": 472,
+        "column": 9
+      },
+      {
+        "line": 473,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 470,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"twelve\", \"2\");ih.setAttribute(p, this, \"twelve\", \"on\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"twelve\", \"2\");ih.setAttribute(p, this, \"twelve\", \"on\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterThirteen()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"thirteen\", \"org.apache.tools.ant.Project\");ih.setAttribute(p, this, \"thirteen\", \"org.apache.tools.ant.ProjectHelper\");",
+    "offset": [
+      {
+        "line": 481,
+        "column": 9
+      },
+      {
+        "line": 482,
+        "column": 9
+      },
+      {
+        "line": 482,
+        "column": 23
+      },
+      {
+        "line": 482,
+        "column": 44
+      },
+      {
+        "line": 483,
+        "column": 9
+      },
+      {
+        "line": 484,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 481,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"thirteen\", \"org.apache.tools.ant.Project\");ih.setAttribute(p, this, \"thirteen\", \"org.apache.tools.ant.ProjectHelper\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"thirteen\", \"org.apache.tools.ant.Project\");ih.setAttribute(p, this, \"thirteen\", \"org.apache.tools.ant.ProjectHelper\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterThirteenNonExistentClass()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(ClassNotFoundException.class)));ih.setAttribute(p, this, \"thirteen\", \"org.apache.tools.ant.Project2\");",
+    "offset": [
+      {
+        "line": 492,
+        "column": 9
+      },
+      {
+        "line": 493,
+        "column": 9
+      },
+      {
+        "line": 493,
+        "column": 23
+      },
+      {
+        "line": 493,
+        "column": 44
+      },
+      {
+        "line": 494,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 492,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(ClassNotFoundException.class)));ih.setAttribute(p, this, \"thirteen\", \"org.apache.tools.ant.Project2\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(ClassNotFoundException.class)));ih.setAttribute(p, this, \"thirteen\", \"org.apache.tools.ant.Project2\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterFourteen()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(ComparisonFailure.class)));ih.setAttribute(p, this, \"fourteen\", \"2\");ih.setAttribute(p, this, \"fourteen\", \"on\");",
+    "offset": [
+      {
+        "line": 502,
+        "column": 9
+      },
+      {
+        "line": 503,
+        "column": 9
+      },
+      {
+        "line": 503,
+        "column": 23
+      },
+      {
+        "line": 503,
+        "column": 44
+      },
+      {
+        "line": 504,
+        "column": 9
+      },
+      {
+        "line": 505,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 502,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(ComparisonFailure.class)));ih.setAttribute(p, this, \"fourteen\", \"2\");ih.setAttribute(p, this, \"fourteen\", \"on\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(ComparisonFailure.class)));ih.setAttribute(p, this, \"fourteen\", \"2\");ih.setAttribute(p, this, \"fourteen\", \"on\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterFifteen()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"fifteen\", \"abcd\");ih.setAttribute(p, this, \"fifteen\", \"on\");",
+    "offset": [
+      {
+        "line": 513,
+        "column": 9
+      },
+      {
+        "line": 514,
+        "column": 9
+      },
+      {
+        "line": 514,
+        "column": 23
+      },
+      {
+        "line": 514,
+        "column": 44
+      },
+      {
+        "line": 515,
+        "column": 9
+      },
+      {
+        "line": 516,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 513,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"fifteen\", \"abcd\");ih.setAttribute(p, this, \"fifteen\", \"on\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"fifteen\", \"abcd\");ih.setAttribute(p, this, \"fifteen\", \"on\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterSixteen()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"sixteen\", \"abcd\");ih.setAttribute(p, this, \"sixteen\", \"on\");",
+    "offset": [
+      {
+        "line": 524,
+        "column": 9
+      },
+      {
+        "line": 525,
+        "column": 9
+      },
+      {
+        "line": 525,
+        "column": 23
+      },
+      {
+        "line": 525,
+        "column": 44
+      },
+      {
+        "line": 526,
+        "column": 9
+      },
+      {
+        "line": 527,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 524,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"sixteen\", \"abcd\");ih.setAttribute(p, this, \"sixteen\", \"on\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"sixteen\", \"abcd\");ih.setAttribute(p, this, \"sixteen\", \"on\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterSeventeen()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"seventeen\", \"17\");ih.setAttribute(p, this, \"seventeen\", \"3\");",
+    "offset": [
+      {
+        "line": 535,
+        "column": 9
+      },
+      {
+        "line": 536,
+        "column": 9
+      },
+      {
+        "line": 536,
+        "column": 23
+      },
+      {
+        "line": 536,
+        "column": 44
+      },
+      {
+        "line": 537,
+        "column": 9
+      },
+      {
+        "line": 538,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 535,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"seventeen\", \"17\");ih.setAttribute(p, this, \"seventeen\", \"3\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"seventeen\", \"17\");ih.setAttribute(p, this, \"seventeen\", \"3\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterEighteen()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"eightteen\", \"18\");ih.setAttribute(p, this, \"eightteen\", \"3\");",
+    "offset": [
+      {
+        "line": 546,
+        "column": 9
+      },
+      {
+        "line": 547,
+        "column": 9
+      },
+      {
+        "line": 547,
+        "column": 23
+      },
+      {
+        "line": 547,
+        "column": 44
+      },
+      {
+        "line": 548,
+        "column": 9
+      },
+      {
+        "line": 549,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 546,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"eightteen\", \"18\");ih.setAttribute(p, this, \"eightteen\", \"3\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"eightteen\", \"18\");ih.setAttribute(p, this, \"eightteen\", \"3\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterNineteen()",
+    "annotation": "@Test",
+    "code": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"nineteen\", \"19\");ih.setAttribute(p, this, \"nineteen\", \"3\");",
+    "offset": [
+      {
+        "line": 557,
+        "column": 9
+      },
+      {
+        "line": 558,
+        "column": 9
+      },
+      {
+        "line": 558,
+        "column": 23
+      },
+      {
+        "line": 558,
+        "column": 44
+      },
+      {
+        "line": 559,
+        "column": 9
+      },
+      {
+        "line": 560,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 557,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"nineteen\", \"19\");ih.setAttribute(p, this, \"nineteen\", \"3\");",
+        "slice": "thrown.expect(BuildException.class);thrown.expect(hasProperty(\"cause\", instanceOf(AssertionError.class)));ih.setAttribute(p, this, \"nineteen\", \"19\");ih.setAttribute(p, this, \"nineteen\", \"3\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testGetAttributes()",
+    "annotation": "@Test",
+    "code": "Map\u003cString, Class\u003c?\u003e\u003e attrMap \u003d getExpectedAttributes();for (String name : Collections.list(ih.getAttributes())) {\n    Class\u003c?\u003e expect \u003d attrMap.get(name);\n    assertNotNull(\"Support for \" + name + \" in IntrospectionHelperTest?\", expect);\n    assertEquals(\"Type of \" + name, expect, ih.getAttributeType(name));\n    attrMap.remove(name);\n}attrMap.remove(\"name\");assertTrue(\"Found all\", attrMap.isEmpty());",
+    "offset": [
+      {
+        "line": 593,
+        "column": 41
+      },
+      {
+        "line": 594,
+        "column": 28
+      },
+      {
+        "line": 594,
+        "column": 45
+      },
+      {
+        "line": 595,
+        "column": 31
+      },
+      {
+        "line": 596,
+        "column": 13
+      },
+      {
+        "line": 598,
+        "column": 13
+      },
+      {
+        "line": 598,
+        "column": 53
+      },
+      {
+        "line": 599,
+        "column": 13
+      },
+      {
+        "line": 601,
+        "column": 9
+      },
+      {
+        "line": 602,
+        "column": 9
+      },
+      {
+        "line": 602,
+        "column": 33
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 593,
+          "column": 9
+        },
+        "assert": "Map\u003cString, Class\u003c?\u003e\u003e attrMap \u003d getExpectedAttributes();for (String name : Collections.list(ih.getAttributes())) {\n    Class\u003c?\u003e expect \u003d attrMap.get(name);\n    assertNotNull(\"Support for \" + name + \" in IntrospectionHelperTest?\", expect);\n    assertEquals(\"Type of \" + name, expect, ih.getAttributeType(name));\n    attrMap.remove(name);\n}",
+        "slice": "Map\u003cString, Class\u003c?\u003e\u003e attrMap \u003d getExpectedAttributes();for (String name : Collections.list(ih.getAttributes())) {\n    Class\u003c?\u003e expect \u003d attrMap.get(name);\n    assertNotNull(\"Support for \" + name + \" in IntrospectionHelperTest?\", expect);\n    assertEquals(\"Type of \" + name, expect, ih.getAttributeType(name));\n    attrMap.remove(name);\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 601,
+          "column": 9
+        },
+        "assert": "attrMap.remove(\"name\");assertTrue(\"Found all\", attrMap.isEmpty());",
+        "slice": "Map\u003cString, Class\u003c?\u003e\u003e attrMap \u003d getExpectedAttributes();attrMap.remove(\"name\");assertTrue(\"Found all\", attrMap.isEmpty());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testGetAttributeMap()",
+    "annotation": "@Test",
+    "code": "Map\u003cString, Class\u003c?\u003e\u003e attrMap \u003d getExpectedAttributes();ih.getAttributeMap().forEach((attrName, value) -\u003e {\n    Class\u003c?\u003e attrClass \u003d attrMap.get(attrName);\n    assertNotNull(\"Support for \" + attrName + \" in IntrospectionHelperTest?\", attrClass);\n    assertEquals(\"Type of \" + attrName, attrClass, value);\n    attrMap.remove(attrName);\n});attrMap.remove(\"name\");assertTrue(\"Found all\", attrMap.isEmpty());",
+    "offset": [
+      {
+        "line": 607,
+        "column": 41
+      },
+      {
+        "line": 608,
+        "column": 9
+      },
+      {
+        "line": 608,
+        "column": 9
+      },
+      {
+        "line": 609,
+        "column": 34
+      },
+      {
+        "line": 610,
+        "column": 13
+      },
+      {
+        "line": 611,
+        "column": 13
+      },
+      {
+        "line": 612,
+        "column": 13
+      },
+      {
+        "line": 614,
+        "column": 9
+      },
+      {
+        "line": 615,
+        "column": 9
+      },
+      {
+        "line": 615,
+        "column": 33
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 614,
+          "column": 9
+        },
+        "assert": "attrMap.remove(\"name\");assertTrue(\"Found all\", attrMap.isEmpty());",
+        "slice": "Map\u003cString, Class\u003c?\u003e\u003e attrMap \u003d getExpectedAttributes();attrMap.remove(\"name\");assertTrue(\"Found all\", attrMap.isEmpty());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 607,
+          "column": 9
+        },
+        "assert": "Map\u003cString, Class\u003c?\u003e\u003e attrMap \u003d getExpectedAttributes();ih.getAttributeMap().forEach((attrName, value) -\u003e {\n    Class\u003c?\u003e attrClass \u003d attrMap.get(attrName);\n    assertNotNull(\"Support for \" + attrName + \" in IntrospectionHelperTest?\", attrClass);\n    assertEquals(\"Type of \" + attrName, attrClass, value);\n    attrMap.remove(attrName);\n});",
+        "slice": "Map\u003cString, Class\u003c?\u003e\u003e attrMap \u003d getExpectedAttributes();ih.getAttributeMap().forEach((attrName, value) -\u003e {\n    Class\u003c?\u003e attrClass \u003d attrMap.get(attrName);\n    assertNotNull(\"Support for \" + attrName + \" in IntrospectionHelperTest?\", attrClass);\n    assertEquals(\"Type of \" + attrName, attrClass, value);\n    attrMap.remove(attrName);\n});"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testClearGetAttributeMap()",
+    "annotation": "@Test",
+    "code": "thrown.expect(UnsupportedOperationException.class);// TODO we should be asserting a value somewhere in here\n// Check it\u0027s a read-only map.\nih.getAttributeMap().clear();",
+    "offset": [
+      {
+        "line": 620,
+        "column": 9
+      },
+      {
+        "line": 623,
+        "column": 9
+      },
+      {
+        "line": 623,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 620,
+          "column": 9
+        },
+        "assert": "thrown.expect(UnsupportedOperationException.class);// TODO we should be asserting a value somewhere in here\n// Check it\u0027s a read-only map.\nih.getAttributeMap().clear();",
+        "slice": "thrown.expect(UnsupportedOperationException.class);// TODO we should be asserting a value somewhere in here\n// Check it\u0027s a read-only map.\nih.getAttributeMap().clear();"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testGetAttributeMethod()",
+    "annotation": "@Test",
+    "code": "assertAttrMethod(\"seven\", \"setSeven\", String.class, \"2\", \"3\");assertAttrMethod(\"eight\", \"setEight\", Integer.TYPE, 2, 3);assertAttrMethod(\"nine\", \"setNine\", Integer.class, 2, 3);assertAttrMethod(\"ten\", \"setTen\", File.class, new File(projectBasedir + 2), new File(\"toto\"));assertAttrMethod(\"eleven\", \"setEleven\", Boolean.TYPE, Boolean.FALSE, Boolean.TRUE);assertAttrMethod(\"twelve\", \"setTwelve\", Boolean.class, Boolean.FALSE, Boolean.TRUE);assertAttrMethod(\"thirteen\", \"setThirteen\", Class.class, Project.class, Map.class);assertAttrMethod(\"fourteen\", \"setFourteen\", StringBuffer.class, new StringBuffer(\"2\"), new StringBuffer(\"3\"));assertAttrMethod(\"fifteen\", \"setFifteen\", Character.TYPE, \u0027a\u0027, \u0027b\u0027);assertAttrMethod(\"sixteen\", \"setSixteen\", Character.class, \u0027a\u0027, \u0027b\u0027);assertAttrMethod(\"seventeen\", \"setSeventeen\", Byte.TYPE, (byte) 17, (byte) 10);assertAttrMethod(\"eightteen\", \"setEightteen\", Short.TYPE, (short) 18, (short) 10);assertAttrMethod(\"nineteen\", \"setNineteen\", Double.TYPE, 19d, (double) (short) 10);assertAttrMethod(\"twenty\", \"setTwenty\", Path.class, new File(projectBasedir + 20).toPath(), Paths.get(\"toto\"));thrown.expect(BuildException.class);thrown.expectMessage(\"doesn\u0027t support the \\\"onehundred\\\" attribute.\");assertAttrMethod(\"onehundred\", null, null, null, null);",
+    "offset": [
+      {
+        "line": 628,
+        "column": 9
+      },
+      {
+        "line": 630,
+        "column": 9
+      },
+      {
+        "line": 632,
+        "column": 9
+      },
+      {
+        "line": 634,
+        "column": 9
+      },
+      {
+        "line": 635,
+        "column": 17
+      },
+      {
+        "line": 635,
+        "column": 47
+      },
+      {
+        "line": 636,
+        "column": 9
+      },
+      {
+        "line": 638,
+        "column": 9
+      },
+      {
+        "line": 640,
+        "column": 9
+      },
+      {
+        "line": 642,
+        "column": 9
+      },
+      {
+        "line": 643,
+        "column": 17
+      },
+      {
+        "line": 643,
+        "column": 40
+      },
+      {
+        "line": 644,
+        "column": 9
+      },
+      {
+        "line": 646,
+        "column": 9
+      },
+      {
+        "line": 648,
+        "column": 9
+      },
+      {
+        "line": 650,
+        "column": 9
+      },
+      {
+        "line": 652,
+        "column": 9
+      },
+      {
+        "line": 654,
+        "column": 9
+      },
+      {
+        "line": 655,
+        "column": 17
+      },
+      {
+        "line": 655,
+        "column": 17
+      },
+      {
+        "line": 655,
+        "column": 57
+      },
+      {
+        "line": 657,
+        "column": 9
+      },
+      {
+        "line": 658,
+        "column": 9
+      },
+      {
+        "line": 659,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 640,
+          "column": 9
+        },
+        "assert": "assertAttrMethod(\"thirteen\", \"setThirteen\", Class.class, Project.class, Map.class);",
+        "slice": "assertAttrMethod(\"thirteen\", \"setThirteen\", Class.class, Project.class, Map.class);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 642,
+          "column": 9
+        },
+        "assert": "assertAttrMethod(\"fourteen\", \"setFourteen\", StringBuffer.class, new StringBuffer(\"2\"), new StringBuffer(\"3\"));",
+        "slice": "assertAttrMethod(\"fourteen\", \"setFourteen\", StringBuffer.class, new StringBuffer(\"2\"), new StringBuffer(\"3\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 644,
+          "column": 9
+        },
+        "assert": "assertAttrMethod(\"fifteen\", \"setFifteen\", Character.TYPE, \u0027a\u0027, \u0027b\u0027);",
+        "slice": "assertAttrMethod(\"fifteen\", \"setFifteen\", Character.TYPE, \u0027a\u0027, \u0027b\u0027);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 646,
+          "column": 9
+        },
+        "assert": "assertAttrMethod(\"sixteen\", \"setSixteen\", Character.class, \u0027a\u0027, \u0027b\u0027);",
+        "slice": "assertAttrMethod(\"sixteen\", \"setSixteen\", Character.class, \u0027a\u0027, \u0027b\u0027);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 648,
+          "column": 9
+        },
+        "assert": "assertAttrMethod(\"seventeen\", \"setSeventeen\", Byte.TYPE, (byte) 17, (byte) 10);",
+        "slice": "assertAttrMethod(\"seventeen\", \"setSeventeen\", Byte.TYPE, (byte) 17, (byte) 10);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 650,
+          "column": 9
+        },
+        "assert": "assertAttrMethod(\"eightteen\", \"setEightteen\", Short.TYPE, (short) 18, (short) 10);",
+        "slice": "assertAttrMethod(\"eightteen\", \"setEightteen\", Short.TYPE, (short) 18, (short) 10);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 652,
+          "column": 9
+        },
+        "assert": "assertAttrMethod(\"nineteen\", \"setNineteen\", Double.TYPE, 19d, (double) (short) 10);",
+        "slice": "assertAttrMethod(\"nineteen\", \"setNineteen\", Double.TYPE, 19d, (double) (short) 10);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 654,
+          "column": 9
+        },
+        "assert": "assertAttrMethod(\"twenty\", \"setTwenty\", Path.class, new File(projectBasedir + 20).toPath(), Paths.get(\"toto\"));",
+        "slice": "assertAttrMethod(\"twenty\", \"setTwenty\", Path.class, new File(projectBasedir + 20).toPath(), Paths.get(\"toto\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 657,
+          "column": 9
+        },
+        "assert": "thrown.expect(BuildException.class);thrown.expectMessage(\"doesn\u0027t support the \\\"onehundred\\\" attribute.\");assertAttrMethod(\"onehundred\", null, null, null, null);",
+        "slice": "thrown.expect(BuildException.class);thrown.expectMessage(\"doesn\u0027t support the \\\"onehundred\\\" attribute.\");assertAttrMethod(\"onehundred\", null, null, null, null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 628,
+          "column": 9
+        },
+        "assert": "assertAttrMethod(\"seven\", \"setSeven\", String.class, \"2\", \"3\");",
+        "slice": "assertAttrMethod(\"seven\", \"setSeven\", String.class, \"2\", \"3\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 630,
+          "column": 9
+        },
+        "assert": "assertAttrMethod(\"eight\", \"setEight\", Integer.TYPE, 2, 3);",
+        "slice": "assertAttrMethod(\"eight\", \"setEight\", Integer.TYPE, 2, 3);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 632,
+          "column": 9
+        },
+        "assert": "assertAttrMethod(\"nine\", \"setNine\", Integer.class, 2, 3);",
+        "slice": "assertAttrMethod(\"nine\", \"setNine\", Integer.class, 2, 3);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 634,
+          "column": 9
+        },
+        "assert": "assertAttrMethod(\"ten\", \"setTen\", File.class, new File(projectBasedir + 2), new File(\"toto\"));",
+        "slice": "assertAttrMethod(\"ten\", \"setTen\", File.class, new File(projectBasedir + 2), new File(\"toto\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 636,
+          "column": 9
+        },
+        "assert": "assertAttrMethod(\"eleven\", \"setEleven\", Boolean.TYPE, Boolean.FALSE, Boolean.TRUE);",
+        "slice": "assertAttrMethod(\"eleven\", \"setEleven\", Boolean.TYPE, Boolean.FALSE, Boolean.TRUE);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 638,
+          "column": 9
+        },
+        "assert": "assertAttrMethod(\"twelve\", \"setTwelve\", Boolean.class, Boolean.FALSE, Boolean.TRUE);",
+        "slice": "assertAttrMethod(\"twelve\", \"setTwelve\", Boolean.class, Boolean.FALSE, Boolean.TRUE);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testGetExtensionPoints()",
+    "annotation": "@Test",
+    "code": "List\u003cMethod\u003e extensions \u003d ih.getExtensionPoints();final int adders \u003d 2;assertEquals(\"extension count\", adders, extensions.size());// this original test assumed something about the order of\n// add(Number) and addConfigured(Map) returned by reflection.\n// Unfortunately the assumption doesn\u0027t hold for all VMs\n// (failed on MacOS X using JDK 1.4.2_05) and the possible\n// combinatorics are too hard to check.  We really only want\n// to ensure that the more derived Hashtable can be found\n// before Map.\n// assertMethod(extensions.get(0), \"add\", Number.class, new Integer(2), new Integer(3));\n// addConfigured(Hashtable) should come before addConfigured(Map)\nassertMethod(extensions.get(adders - 2), \"addConfigured\", Hashtable.class, makeTable(\"key\", \"value\"), makeTable(\"1\", \"2\"));assertMethod(extensions.get(adders - 1), \"addConfigured\", Map.class, new HashMap\u003cString, String\u003e(), makeTable(\"1\", \"2\"));",
+    "offset": [
+      {
+        "line": 758,
+        "column": 35
+      },
+      {
+        "line": 760,
+        "column": 9
+      },
+      {
+        "line": 760,
+        "column": 49
+      },
+      {
+        "line": 772,
+        "column": 9
+      },
+      {
+        "line": 772,
+        "column": 22
+      },
+      {
+        "line": 774,
+        "column": 25
+      },
+      {
+        "line": 774,
+        "column": 52
+      },
+      {
+        "line": 776,
+        "column": 9
+      },
+      {
+        "line": 776,
+        "column": 22
+      },
+      {
+        "line": 777,
+        "column": 25
+      },
+      {
+        "line": 777,
+        "column": 56
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 772,
+          "column": 9
+        },
+        "assert": "// this original test assumed something about the order of\n// add(Number) and addConfigured(Map) returned by reflection.\n// Unfortunately the assumption doesn\u0027t hold for all VMs\n// (failed on MacOS X using JDK 1.4.2_05) and the possible\n// combinatorics are too hard to check.  We really only want\n// to ensure that the more derived Hashtable can be found\n// before Map.\n// assertMethod(extensions.get(0), \"add\", Number.class, new Integer(2), new Integer(3));\n// addConfigured(Hashtable) should come before addConfigured(Map)\nassertMethod(extensions.get(adders - 2), \"addConfigured\", Hashtable.class, makeTable(\"key\", \"value\"), makeTable(\"1\", \"2\"));",
+        "slice": "List\u003cMethod\u003e extensions \u003d ih.getExtensionPoints();final int adders \u003d 2;// this original test assumed something about the order of\n// add(Number) and addConfigured(Map) returned by reflection.\n// Unfortunately the assumption doesn\u0027t hold for all VMs\n// (failed on MacOS X using JDK 1.4.2_05) and the possible\n// combinatorics are too hard to check.  We really only want\n// to ensure that the more derived Hashtable can be found\n// before Map.\n// assertMethod(extensions.get(0), \"add\", Number.class, new Integer(2), new Integer(3));\n// addConfigured(Hashtable) should come before addConfigured(Map)\nassertMethod(extensions.get(adders - 2), \"addConfigured\", Hashtable.class, makeTable(\"key\", \"value\"), makeTable(\"1\", \"2\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 758,
+          "column": 9
+        },
+        "assert": "List\u003cMethod\u003e extensions \u003d ih.getExtensionPoints();final int adders \u003d 2;assertEquals(\"extension count\", adders, extensions.size());",
+        "slice": "List\u003cMethod\u003e extensions \u003d ih.getExtensionPoints();final int adders \u003d 2;assertEquals(\"extension count\", adders, extensions.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 776,
+          "column": 9
+        },
+        "assert": "assertMethod(extensions.get(adders - 1), \"addConfigured\", Map.class, new HashMap\u003cString, String\u003e(), makeTable(\"1\", \"2\"));",
+        "slice": "List\u003cMethod\u003e extensions \u003d ih.getExtensionPoints();final int adders \u003d 2;assertMethod(extensions.get(adders - 1), \"addConfigured\", Map.class, new HashMap\u003cString, String\u003e(), makeTable(\"1\", \"2\"));"
+      }
+    ]
+  }
+]

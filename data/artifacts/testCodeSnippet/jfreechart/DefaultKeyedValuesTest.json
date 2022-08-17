@@ -1,0 +1,2600 @@
+[
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testConstructor()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues d \u003d new DefaultKeyedValues();assertEquals(0, d.getItemCount());",
+    "offset": [
+      {
+        "line": 68,
+        "column": 32
+      },
+      {
+        "line": 69,
+        "column": 9
+      },
+      {
+        "line": 69,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 68,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues d \u003d new DefaultKeyedValues();assertEquals(0, d.getItemCount());",
+        "slice": "DefaultKeyedValues d \u003d new DefaultKeyedValues();assertEquals(0, d.getItemCount());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testGetItemCount()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues d \u003d new DefaultKeyedValues();assertEquals(0, d.getItemCount());d.addValue(\"A\", 1.0);assertEquals(1, d.getItemCount());d.addValue(\"B\", 2.0);assertEquals(2, d.getItemCount());d.clear();assertEquals(0, d.getItemCount());",
+    "offset": [
+      {
+        "line": 77,
+        "column": 32
+      },
+      {
+        "line": 78,
+        "column": 9
+      },
+      {
+        "line": 78,
+        "column": 25
+      },
+      {
+        "line": 79,
+        "column": 9
+      },
+      {
+        "line": 80,
+        "column": 9
+      },
+      {
+        "line": 80,
+        "column": 25
+      },
+      {
+        "line": 81,
+        "column": 9
+      },
+      {
+        "line": 82,
+        "column": 9
+      },
+      {
+        "line": 82,
+        "column": 25
+      },
+      {
+        "line": 83,
+        "column": 9
+      },
+      {
+        "line": 84,
+        "column": 9
+      },
+      {
+        "line": 84,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 81,
+          "column": 9
+        },
+        "assert": "d.addValue(\"B\", 2.0);assertEquals(2, d.getItemCount());",
+        "slice": "DefaultKeyedValues d \u003d new DefaultKeyedValues();d.addValue(\"A\", 1.0);d.addValue(\"B\", 2.0);assertEquals(2, d.getItemCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 83,
+          "column": 9
+        },
+        "assert": "d.clear();assertEquals(0, d.getItemCount());",
+        "slice": "DefaultKeyedValues d \u003d new DefaultKeyedValues();d.addValue(\"A\", 1.0);d.addValue(\"B\", 2.0);d.clear();assertEquals(0, d.getItemCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 77,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues d \u003d new DefaultKeyedValues();assertEquals(0, d.getItemCount());",
+        "slice": "DefaultKeyedValues d \u003d new DefaultKeyedValues();assertEquals(0, d.getItemCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 79,
+          "column": 9
+        },
+        "assert": "d.addValue(\"A\", 1.0);assertEquals(1, d.getItemCount());",
+        "slice": "DefaultKeyedValues d \u003d new DefaultKeyedValues();d.addValue(\"A\", 1.0);assertEquals(1, d.getItemCount());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testGetKeys()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues d \u003d new DefaultKeyedValues();List keys \u003d d.getKeys();assertTrue(keys.isEmpty());d.addValue(\"A\", 1.0);keys \u003d d.getKeys();assertEquals(1, keys.size());assertTrue(keys.contains(\"A\"));d.addValue(\"B\", 2.0);keys \u003d d.getKeys();assertEquals(2, keys.size());assertTrue(keys.contains(\"A\"));assertTrue(keys.contains(\"B\"));d.clear();keys \u003d d.getKeys();assertEquals(0, keys.size());",
+    "offset": [
+      {
+        "line": 92,
+        "column": 32
+      },
+      {
+        "line": 93,
+        "column": 21
+      },
+      {
+        "line": 94,
+        "column": 9
+      },
+      {
+        "line": 94,
+        "column": 20
+      },
+      {
+        "line": 95,
+        "column": 9
+      },
+      {
+        "line": 96,
+        "column": 16
+      },
+      {
+        "line": 97,
+        "column": 9
+      },
+      {
+        "line": 97,
+        "column": 25
+      },
+      {
+        "line": 98,
+        "column": 9
+      },
+      {
+        "line": 98,
+        "column": 20
+      },
+      {
+        "line": 99,
+        "column": 9
+      },
+      {
+        "line": 100,
+        "column": 16
+      },
+      {
+        "line": 101,
+        "column": 9
+      },
+      {
+        "line": 101,
+        "column": 25
+      },
+      {
+        "line": 102,
+        "column": 9
+      },
+      {
+        "line": 102,
+        "column": 20
+      },
+      {
+        "line": 103,
+        "column": 9
+      },
+      {
+        "line": 103,
+        "column": 20
+      },
+      {
+        "line": 104,
+        "column": 9
+      },
+      {
+        "line": 105,
+        "column": 16
+      },
+      {
+        "line": 106,
+        "column": 9
+      },
+      {
+        "line": 106,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 98,
+          "column": 9
+        },
+        "assert": "assertTrue(keys.contains(\"A\"));",
+        "slice": "DefaultKeyedValues d \u003d new DefaultKeyedValues();List keys \u003d d.getKeys();d.addValue(\"A\", 1.0);keys \u003d d.getKeys();assertTrue(keys.contains(\"A\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 99,
+          "column": 9
+        },
+        "assert": "d.addValue(\"B\", 2.0);keys \u003d d.getKeys();assertEquals(2, keys.size());",
+        "slice": "DefaultKeyedValues d \u003d new DefaultKeyedValues();List keys \u003d d.getKeys();d.addValue(\"A\", 1.0);keys \u003d d.getKeys();d.addValue(\"B\", 2.0);keys \u003d d.getKeys();assertEquals(2, keys.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 102,
+          "column": 9
+        },
+        "assert": "assertTrue(keys.contains(\"A\"));",
+        "slice": "DefaultKeyedValues d \u003d new DefaultKeyedValues();List keys \u003d d.getKeys();d.addValue(\"A\", 1.0);keys \u003d d.getKeys();d.addValue(\"B\", 2.0);keys \u003d d.getKeys();assertTrue(keys.contains(\"A\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 103,
+          "column": 9
+        },
+        "assert": "assertTrue(keys.contains(\"B\"));",
+        "slice": "DefaultKeyedValues d \u003d new DefaultKeyedValues();List keys \u003d d.getKeys();d.addValue(\"A\", 1.0);keys \u003d d.getKeys();d.addValue(\"B\", 2.0);keys \u003d d.getKeys();assertTrue(keys.contains(\"B\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 104,
+          "column": 9
+        },
+        "assert": "d.clear();keys \u003d d.getKeys();assertEquals(0, keys.size());",
+        "slice": "DefaultKeyedValues d \u003d new DefaultKeyedValues();List keys \u003d d.getKeys();d.addValue(\"A\", 1.0);keys \u003d d.getKeys();d.addValue(\"B\", 2.0);keys \u003d d.getKeys();d.clear();keys \u003d d.getKeys();assertEquals(0, keys.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 92,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues d \u003d new DefaultKeyedValues();List keys \u003d d.getKeys();assertTrue(keys.isEmpty());",
+        "slice": "DefaultKeyedValues d \u003d new DefaultKeyedValues();List keys \u003d d.getKeys();assertTrue(keys.isEmpty());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 95,
+          "column": 9
+        },
+        "assert": "d.addValue(\"A\", 1.0);keys \u003d d.getKeys();assertEquals(1, keys.size());",
+        "slice": "DefaultKeyedValues d \u003d new DefaultKeyedValues();List keys \u003d d.getKeys();d.addValue(\"A\", 1.0);keys \u003d d.getKeys();assertEquals(1, keys.size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testClear()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"A\", 1.0);v1.addValue(\"B\", 2.0);assertEquals(2, v1.getItemCount());v1.clear();assertEquals(0, v1.getItemCount());",
+    "offset": [
+      {
+        "line": 114,
+        "column": 33
+      },
+      {
+        "line": 115,
+        "column": 9
+      },
+      {
+        "line": 116,
+        "column": 9
+      },
+      {
+        "line": 117,
+        "column": 9
+      },
+      {
+        "line": 117,
+        "column": 25
+      },
+      {
+        "line": 118,
+        "column": 9
+      },
+      {
+        "line": 119,
+        "column": 9
+      },
+      {
+        "line": 119,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 114,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"A\", 1.0);v1.addValue(\"B\", 2.0);assertEquals(2, v1.getItemCount());",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"A\", 1.0);v1.addValue(\"B\", 2.0);assertEquals(2, v1.getItemCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 118,
+          "column": 9
+        },
+        "assert": "v1.clear();assertEquals(0, v1.getItemCount());",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"A\", 1.0);v1.addValue(\"B\", 2.0);v1.clear();assertEquals(0, v1.getItemCount());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testGetValue()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();try {\n    /* Number n \u003d */\n    v1.getValue(-1);\n    assertTrue(false);\n} catch (IndexOutOfBoundsException e) {\n    // expected\n}try {\n    /* Number n \u003d */\n    v1.getValue(0);\n    assertTrue(false);\n} catch (IndexOutOfBoundsException e) {\n    // expected\n}DefaultKeyedValues v2 \u003d new DefaultKeyedValues();v2.addValue(\"K1\", new Integer(1));v2.addValue(\"K2\", new Integer(2));v2.addValue(\"K3\", new Integer(3));assertEquals(new Integer(3), v2.getValue(2));boolean pass \u003d false;try {\n    /* Number n \u003d */\n    v2.getValue(\"KK\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 127,
+        "column": 33
+      },
+      {
+        "line": 129,
+        "column": 30
+      },
+      {
+        "line": 130,
+        "column": 13
+      },
+      {
+        "line": 136,
+        "column": 30
+      },
+      {
+        "line": 137,
+        "column": 13
+      },
+      {
+        "line": 142,
+        "column": 33
+      },
+      {
+        "line": 143,
+        "column": 9
+      },
+      {
+        "line": 143,
+        "column": 27
+      },
+      {
+        "line": 144,
+        "column": 9
+      },
+      {
+        "line": 144,
+        "column": 27
+      },
+      {
+        "line": 145,
+        "column": 9
+      },
+      {
+        "line": 145,
+        "column": 27
+      },
+      {
+        "line": 146,
+        "column": 9
+      },
+      {
+        "line": 146,
+        "column": 22
+      },
+      {
+        "line": 146,
+        "column": 38
+      },
+      {
+        "line": 150,
+        "column": 30
+      },
+      {
+        "line": 155,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 148,
+          "column": 9
+        },
+        "assert": "boolean pass \u003d false;try {\n    /* Number n \u003d */\n    v2.getValue(\"KK\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "DefaultKeyedValues v2 \u003d new DefaultKeyedValues();v2.addValue(\"K1\", new Integer(1));v2.addValue(\"K2\", new Integer(2));v2.addValue(\"K3\", new Integer(3));boolean pass \u003d false;try {\n    /* Number n \u003d */\n    v2.getValue(\"KK\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 135,
+          "column": 9
+        },
+        "assert": "try {\n    /* Number n \u003d */\n    v1.getValue(0);\n    assertTrue(false);\n} catch (IndexOutOfBoundsException e) {\n    // expected\n}",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();try {\n    /* Number n \u003d */\n    v1.getValue(0);\n    assertTrue(false);\n} catch (IndexOutOfBoundsException e) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 142,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues v2 \u003d new DefaultKeyedValues();v2.addValue(\"K1\", new Integer(1));v2.addValue(\"K2\", new Integer(2));v2.addValue(\"K3\", new Integer(3));assertEquals(new Integer(3), v2.getValue(2));",
+        "slice": "DefaultKeyedValues v2 \u003d new DefaultKeyedValues();v2.addValue(\"K1\", new Integer(1));v2.addValue(\"K2\", new Integer(2));v2.addValue(\"K3\", new Integer(3));assertEquals(new Integer(3), v2.getValue(2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 127,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();try {\n    /* Number n \u003d */\n    v1.getValue(-1);\n    assertTrue(false);\n} catch (IndexOutOfBoundsException e) {\n    // expected\n}",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();try {\n    /* Number n \u003d */\n    v1.getValue(-1);\n    assertTrue(false);\n} catch (IndexOutOfBoundsException e) {\n    // expected\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testGetKey()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();try {\n    /* Comparable k \u003d */\n    v1.getKey(-1);\n    assertTrue(false);\n} catch (IndexOutOfBoundsException e) {\n    // expected\n}try {\n    /* Comparable k \u003d */\n    v1.getKey(0);\n    assertTrue(false);\n} catch (IndexOutOfBoundsException e) {\n    // expected\n}DefaultKeyedValues v2 \u003d new DefaultKeyedValues();v2.addValue(\"K1\", new Integer(1));v2.addValue(\"K2\", new Integer(2));v2.addValue(\"K3\", new Integer(3));assertEquals(\"K2\", v2.getKey(1));",
+    "offset": [
+      {
+        "line": 163,
+        "column": 33
+      },
+      {
+        "line": 165,
+        "column": 34
+      },
+      {
+        "line": 166,
+        "column": 13
+      },
+      {
+        "line": 172,
+        "column": 34
+      },
+      {
+        "line": 173,
+        "column": 13
+      },
+      {
+        "line": 178,
+        "column": 33
+      },
+      {
+        "line": 179,
+        "column": 9
+      },
+      {
+        "line": 179,
+        "column": 27
+      },
+      {
+        "line": 180,
+        "column": 9
+      },
+      {
+        "line": 180,
+        "column": 27
+      },
+      {
+        "line": 181,
+        "column": 9
+      },
+      {
+        "line": 181,
+        "column": 27
+      },
+      {
+        "line": 182,
+        "column": 9
+      },
+      {
+        "line": 182,
+        "column": 28
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 178,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues v2 \u003d new DefaultKeyedValues();v2.addValue(\"K1\", new Integer(1));v2.addValue(\"K2\", new Integer(2));v2.addValue(\"K3\", new Integer(3));assertEquals(\"K2\", v2.getKey(1));",
+        "slice": "DefaultKeyedValues v2 \u003d new DefaultKeyedValues();v2.addValue(\"K1\", new Integer(1));v2.addValue(\"K2\", new Integer(2));v2.addValue(\"K3\", new Integer(3));assertEquals(\"K2\", v2.getKey(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 163,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();try {\n    /* Comparable k \u003d */\n    v1.getKey(-1);\n    assertTrue(false);\n} catch (IndexOutOfBoundsException e) {\n    // expected\n}",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();try {\n    /* Comparable k \u003d */\n    v1.getKey(-1);\n    assertTrue(false);\n} catch (IndexOutOfBoundsException e) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 171,
+          "column": 9
+        },
+        "assert": "try {\n    /* Comparable k \u003d */\n    v1.getKey(0);\n    assertTrue(false);\n} catch (IndexOutOfBoundsException e) {\n    // expected\n}",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();try {\n    /* Comparable k \u003d */\n    v1.getKey(0);\n    assertTrue(false);\n} catch (IndexOutOfBoundsException e) {\n    // expected\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testGetIndex()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();assertEquals(-1, v1.getIndex(\"K1\"));DefaultKeyedValues v2 \u003d new DefaultKeyedValues();v2.addValue(\"K1\", new Integer(1));v2.addValue(\"K2\", new Integer(2));v2.addValue(\"K3\", new Integer(3));assertEquals(2, v2.getIndex(\"K3\"));// try null\nboolean pass \u003d false;try {\n    v2.getIndex(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 190,
+        "column": 33
+      },
+      {
+        "line": 191,
+        "column": 9
+      },
+      {
+        "line": 191,
+        "column": 26
+      },
+      {
+        "line": 193,
+        "column": 33
+      },
+      {
+        "line": 194,
+        "column": 9
+      },
+      {
+        "line": 194,
+        "column": 27
+      },
+      {
+        "line": 195,
+        "column": 9
+      },
+      {
+        "line": 195,
+        "column": 27
+      },
+      {
+        "line": 196,
+        "column": 9
+      },
+      {
+        "line": 196,
+        "column": 27
+      },
+      {
+        "line": 197,
+        "column": 9
+      },
+      {
+        "line": 197,
+        "column": 25
+      },
+      {
+        "line": 202,
+        "column": 13
+      },
+      {
+        "line": 207,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 193,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues v2 \u003d new DefaultKeyedValues();v2.addValue(\"K1\", new Integer(1));v2.addValue(\"K2\", new Integer(2));v2.addValue(\"K3\", new Integer(3));assertEquals(2, v2.getIndex(\"K3\"));",
+        "slice": "DefaultKeyedValues v2 \u003d new DefaultKeyedValues();v2.addValue(\"K1\", new Integer(1));v2.addValue(\"K2\", new Integer(2));v2.addValue(\"K3\", new Integer(3));assertEquals(2, v2.getIndex(\"K3\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 200,
+          "column": 9
+        },
+        "assert": "// try null\nboolean pass \u003d false;try {\n    v2.getIndex(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "DefaultKeyedValues v2 \u003d new DefaultKeyedValues();v2.addValue(\"K1\", new Integer(1));v2.addValue(\"K2\", new Integer(2));v2.addValue(\"K3\", new Integer(3));// try null\nboolean pass \u003d false;try {\n    v2.getIndex(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 190,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();assertEquals(-1, v1.getIndex(\"K1\"));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();assertEquals(-1, v1.getIndex(\"K1\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testGetIndex2()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues v \u003d new DefaultKeyedValues();assertEquals(-1, v.getIndex(\"K1\"));v.addValue(\"K1\", 1.0);assertEquals(0, v.getIndex(\"K1\"));v.removeValue(\"K1\");assertEquals(-1, v.getIndex(\"K1\"));",
+    "offset": [
+      {
+        "line": 215,
+        "column": 32
+      },
+      {
+        "line": 216,
+        "column": 9
+      },
+      {
+        "line": 216,
+        "column": 26
+      },
+      {
+        "line": 217,
+        "column": 9
+      },
+      {
+        "line": 218,
+        "column": 9
+      },
+      {
+        "line": 218,
+        "column": 25
+      },
+      {
+        "line": 219,
+        "column": 9
+      },
+      {
+        "line": 220,
+        "column": 9
+      },
+      {
+        "line": 220,
+        "column": 26
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 215,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues v \u003d new DefaultKeyedValues();assertEquals(-1, v.getIndex(\"K1\"));",
+        "slice": "DefaultKeyedValues v \u003d new DefaultKeyedValues();assertEquals(-1, v.getIndex(\"K1\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 217,
+          "column": 9
+        },
+        "assert": "v.addValue(\"K1\", 1.0);assertEquals(0, v.getIndex(\"K1\"));",
+        "slice": "DefaultKeyedValues v \u003d new DefaultKeyedValues();v.addValue(\"K1\", 1.0);assertEquals(0, v.getIndex(\"K1\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 219,
+          "column": 9
+        },
+        "assert": "v.removeValue(\"K1\");assertEquals(-1, v.getIndex(\"K1\"));",
+        "slice": "DefaultKeyedValues v \u003d new DefaultKeyedValues();v.addValue(\"K1\", 1.0);v.removeValue(\"K1\");assertEquals(-1, v.getIndex(\"K1\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testAddValue()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"A\", 1.0);assertEquals(new Double(1.0), v1.getValue(\"A\"));v1.addValue(\"B\", 2.0);assertEquals(new Double(2.0), v1.getValue(\"B\"));v1.addValue(\"B\", 3.0);assertEquals(new Double(3.0), v1.getValue(\"B\"));assertEquals(2, v1.getItemCount());v1.addValue(\"A\", null);assertNull(v1.getValue(\"A\"));assertEquals(2, v1.getItemCount());boolean pass \u003d false;try {\n    v1.addValue(null, 99.9);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 227,
+        "column": 33
+      },
+      {
+        "line": 228,
+        "column": 9
+      },
+      {
+        "line": 229,
+        "column": 9
+      },
+      {
+        "line": 229,
+        "column": 22
+      },
+      {
+        "line": 229,
+        "column": 39
+      },
+      {
+        "line": 230,
+        "column": 9
+      },
+      {
+        "line": 231,
+        "column": 9
+      },
+      {
+        "line": 231,
+        "column": 22
+      },
+      {
+        "line": 231,
+        "column": 39
+      },
+      {
+        "line": 232,
+        "column": 9
+      },
+      {
+        "line": 233,
+        "column": 9
+      },
+      {
+        "line": 233,
+        "column": 22
+      },
+      {
+        "line": 233,
+        "column": 39
+      },
+      {
+        "line": 234,
+        "column": 9
+      },
+      {
+        "line": 234,
+        "column": 25
+      },
+      {
+        "line": 235,
+        "column": 9
+      },
+      {
+        "line": 236,
+        "column": 9
+      },
+      {
+        "line": 236,
+        "column": 20
+      },
+      {
+        "line": 237,
+        "column": 9
+      },
+      {
+        "line": 237,
+        "column": 25
+      },
+      {
+        "line": 241,
+        "column": 13
+      },
+      {
+        "line": 246,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 227,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"A\", 1.0);assertEquals(new Double(1.0), v1.getValue(\"A\"));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"A\", 1.0);assertEquals(new Double(1.0), v1.getValue(\"A\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 230,
+          "column": 9
+        },
+        "assert": "v1.addValue(\"B\", 2.0);assertEquals(new Double(2.0), v1.getValue(\"B\"));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"A\", 1.0);v1.addValue(\"B\", 2.0);assertEquals(new Double(2.0), v1.getValue(\"B\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 232,
+          "column": 9
+        },
+        "assert": "v1.addValue(\"B\", 3.0);assertEquals(new Double(3.0), v1.getValue(\"B\"));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"A\", 1.0);v1.addValue(\"B\", 2.0);v1.addValue(\"B\", 3.0);assertEquals(new Double(3.0), v1.getValue(\"B\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 234,
+          "column": 9
+        },
+        "assert": "assertEquals(2, v1.getItemCount());",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"A\", 1.0);v1.addValue(\"B\", 2.0);v1.addValue(\"B\", 3.0);assertEquals(2, v1.getItemCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 235,
+          "column": 9
+        },
+        "assert": "v1.addValue(\"A\", null);assertNull(v1.getValue(\"A\"));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"A\", 1.0);v1.addValue(\"B\", 2.0);v1.addValue(\"B\", 3.0);v1.addValue(\"A\", null);assertNull(v1.getValue(\"A\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 237,
+          "column": 9
+        },
+        "assert": "assertEquals(2, v1.getItemCount());",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"A\", 1.0);v1.addValue(\"B\", 2.0);v1.addValue(\"B\", 3.0);v1.addValue(\"A\", null);assertEquals(2, v1.getItemCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 239,
+          "column": 9
+        },
+        "assert": "boolean pass \u003d false;try {\n    v1.addValue(null, 99.9);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"A\", 1.0);v1.addValue(\"B\", 2.0);v1.addValue(\"B\", 3.0);v1.addValue(\"A\", null);boolean pass \u003d false;try {\n    v1.addValue(null, 99.9);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testInsertValue()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.insertValue(0, \"A\", 1.0);assertEquals(new Double(1.0), v1.getValue(0));v1.insertValue(0, \"B\", 2.0);assertEquals(new Double(2.0), v1.getValue(0));assertEquals(new Double(1.0), v1.getValue(1));// it\u0027s OK to use an index equal to the size of the list\nv1.insertValue(2, \"C\", 3.0);assertEquals(new Double(2.0), v1.getValue(0));assertEquals(new Double(1.0), v1.getValue(1));assertEquals(new Double(3.0), v1.getValue(2));// try replacing an existing value\nv1.insertValue(2, \"B\", 4.0);assertEquals(new Double(1.0), v1.getValue(0));assertEquals(new Double(3.0), v1.getValue(1));assertEquals(new Double(4.0), v1.getValue(2));",
+    "offset": [
+      {
+        "line": 254,
+        "column": 33
+      },
+      {
+        "line": 255,
+        "column": 9
+      },
+      {
+        "line": 256,
+        "column": 9
+      },
+      {
+        "line": 256,
+        "column": 22
+      },
+      {
+        "line": 256,
+        "column": 39
+      },
+      {
+        "line": 257,
+        "column": 9
+      },
+      {
+        "line": 258,
+        "column": 9
+      },
+      {
+        "line": 258,
+        "column": 22
+      },
+      {
+        "line": 258,
+        "column": 39
+      },
+      {
+        "line": 259,
+        "column": 9
+      },
+      {
+        "line": 259,
+        "column": 22
+      },
+      {
+        "line": 259,
+        "column": 39
+      },
+      {
+        "line": 262,
+        "column": 9
+      },
+      {
+        "line": 263,
+        "column": 9
+      },
+      {
+        "line": 263,
+        "column": 22
+      },
+      {
+        "line": 263,
+        "column": 39
+      },
+      {
+        "line": 264,
+        "column": 9
+      },
+      {
+        "line": 264,
+        "column": 22
+      },
+      {
+        "line": 264,
+        "column": 39
+      },
+      {
+        "line": 265,
+        "column": 9
+      },
+      {
+        "line": 265,
+        "column": 22
+      },
+      {
+        "line": 265,
+        "column": 39
+      },
+      {
+        "line": 268,
+        "column": 9
+      },
+      {
+        "line": 269,
+        "column": 9
+      },
+      {
+        "line": 269,
+        "column": 22
+      },
+      {
+        "line": 269,
+        "column": 39
+      },
+      {
+        "line": 270,
+        "column": 9
+      },
+      {
+        "line": 270,
+        "column": 22
+      },
+      {
+        "line": 270,
+        "column": 39
+      },
+      {
+        "line": 271,
+        "column": 9
+      },
+      {
+        "line": 271,
+        "column": 22
+      },
+      {
+        "line": 271,
+        "column": 39
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 257,
+          "column": 9
+        },
+        "assert": "v1.insertValue(0, \"B\", 2.0);assertEquals(new Double(2.0), v1.getValue(0));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.insertValue(0, \"A\", 1.0);v1.insertValue(0, \"B\", 2.0);assertEquals(new Double(2.0), v1.getValue(0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 259,
+          "column": 9
+        },
+        "assert": "assertEquals(new Double(1.0), v1.getValue(1));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.insertValue(0, \"A\", 1.0);v1.insertValue(0, \"B\", 2.0);assertEquals(new Double(1.0), v1.getValue(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 262,
+          "column": 9
+        },
+        "assert": "// it\u0027s OK to use an index equal to the size of the list\nv1.insertValue(2, \"C\", 3.0);assertEquals(new Double(2.0), v1.getValue(0));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.insertValue(0, \"A\", 1.0);v1.insertValue(0, \"B\", 2.0);// it\u0027s OK to use an index equal to the size of the list\nv1.insertValue(2, \"C\", 3.0);assertEquals(new Double(2.0), v1.getValue(0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 264,
+          "column": 9
+        },
+        "assert": "assertEquals(new Double(1.0), v1.getValue(1));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.insertValue(0, \"A\", 1.0);v1.insertValue(0, \"B\", 2.0);// it\u0027s OK to use an index equal to the size of the list\nv1.insertValue(2, \"C\", 3.0);assertEquals(new Double(1.0), v1.getValue(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        },
+        "assert": "assertEquals(new Double(3.0), v1.getValue(2));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.insertValue(0, \"A\", 1.0);v1.insertValue(0, \"B\", 2.0);// it\u0027s OK to use an index equal to the size of the list\nv1.insertValue(2, \"C\", 3.0);assertEquals(new Double(3.0), v1.getValue(2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 268,
+          "column": 9
+        },
+        "assert": "// try replacing an existing value\nv1.insertValue(2, \"B\", 4.0);assertEquals(new Double(1.0), v1.getValue(0));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.insertValue(0, \"A\", 1.0);v1.insertValue(0, \"B\", 2.0);// it\u0027s OK to use an index equal to the size of the list\nv1.insertValue(2, \"C\", 3.0);// try replacing an existing value\nv1.insertValue(2, \"B\", 4.0);assertEquals(new Double(1.0), v1.getValue(0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 254,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.insertValue(0, \"A\", 1.0);assertEquals(new Double(1.0), v1.getValue(0));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.insertValue(0, \"A\", 1.0);assertEquals(new Double(1.0), v1.getValue(0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 270,
+          "column": 9
+        },
+        "assert": "assertEquals(new Double(3.0), v1.getValue(1));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.insertValue(0, \"A\", 1.0);v1.insertValue(0, \"B\", 2.0);// it\u0027s OK to use an index equal to the size of the list\nv1.insertValue(2, \"C\", 3.0);// try replacing an existing value\nv1.insertValue(2, \"B\", 4.0);assertEquals(new Double(3.0), v1.getValue(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 271,
+          "column": 9
+        },
+        "assert": "assertEquals(new Double(4.0), v1.getValue(2));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.insertValue(0, \"A\", 1.0);v1.insertValue(0, \"B\", 2.0);// it\u0027s OK to use an index equal to the size of the list\nv1.insertValue(2, \"C\", 3.0);// try replacing an existing value\nv1.insertValue(2, \"B\", 4.0);assertEquals(new Double(4.0), v1.getValue(2));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testCloning()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"V1\", new Integer(1));v1.addValue(\"V2\", null);v1.addValue(\"V3\", new Integer(3));DefaultKeyedValues v2 \u003d (DefaultKeyedValues) v1.clone();assertTrue(v1 !\u003d v2);assertTrue(v1.getClass() \u003d\u003d v2.getClass());assertTrue(v1.equals(v2));// confirm that the clone is independent of the original\nv2.setValue(\"V1\", new Integer(44));assertFalse(v1.equals(v2));",
+    "offset": [
+      {
+        "line": 279,
+        "column": 33
+      },
+      {
+        "line": 280,
+        "column": 9
+      },
+      {
+        "line": 280,
+        "column": 27
+      },
+      {
+        "line": 281,
+        "column": 9
+      },
+      {
+        "line": 282,
+        "column": 9
+      },
+      {
+        "line": 282,
+        "column": 27
+      },
+      {
+        "line": 283,
+        "column": 54
+      },
+      {
+        "line": 284,
+        "column": 9
+      },
+      {
+        "line": 285,
+        "column": 9
+      },
+      {
+        "line": 285,
+        "column": 20
+      },
+      {
+        "line": 285,
+        "column": 37
+      },
+      {
+        "line": 286,
+        "column": 9
+      },
+      {
+        "line": 286,
+        "column": 20
+      },
+      {
+        "line": 289,
+        "column": 9
+      },
+      {
+        "line": 289,
+        "column": 27
+      },
+      {
+        "line": 290,
+        "column": 9
+      },
+      {
+        "line": 290,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 289,
+          "column": 9
+        },
+        "assert": "// confirm that the clone is independent of the original\nv2.setValue(\"V1\", new Integer(44));assertFalse(v1.equals(v2));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"V1\", new Integer(1));v1.addValue(\"V2\", null);v1.addValue(\"V3\", new Integer(3));DefaultKeyedValues v2 \u003d (DefaultKeyedValues) v1.clone();// confirm that the clone is independent of the original\nv2.setValue(\"V1\", new Integer(44));assertFalse(v1.equals(v2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 279,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"V1\", new Integer(1));v1.addValue(\"V2\", null);v1.addValue(\"V3\", new Integer(3));DefaultKeyedValues v2 \u003d (DefaultKeyedValues) v1.clone();assertTrue(v1 !\u003d v2);",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"V1\", new Integer(1));v1.addValue(\"V2\", null);v1.addValue(\"V3\", new Integer(3));DefaultKeyedValues v2 \u003d (DefaultKeyedValues) v1.clone();assertTrue(v1 !\u003d v2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        },
+        "assert": "assertTrue(v1.getClass() \u003d\u003d v2.getClass());",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"V1\", new Integer(1));v1.addValue(\"V2\", null);v1.addValue(\"V3\", new Integer(3));DefaultKeyedValues v2 \u003d (DefaultKeyedValues) v1.clone();assertTrue(v1.getClass() \u003d\u003d v2.getClass());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 286,
+          "column": 9
+        },
+        "assert": "assertTrue(v1.equals(v2));",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"V1\", new Integer(1));v1.addValue(\"V2\", null);v1.addValue(\"V3\", new Integer(3));DefaultKeyedValues v2 \u003d (DefaultKeyedValues) v1.clone();assertTrue(v1.equals(v2));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testInsertAndRetrieve()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", new Double(2.0));data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", null);// check key order\nassertEquals(data.getKey(0), \"A\");assertEquals(data.getKey(1), \"B\");assertEquals(data.getKey(2), \"C\");assertEquals(data.getKey(3), \"D\");// check retrieve value by key\nassertEquals(data.getValue(\"A\"), new Double(1.0));assertEquals(data.getValue(\"B\"), new Double(2.0));assertEquals(data.getValue(\"C\"), new Double(3.0));assertEquals(data.getValue(\"D\"), null);// check retrieve value by index\nassertEquals(data.getValue(0), new Double(1.0));assertEquals(data.getValue(1), new Double(2.0));assertEquals(data.getValue(2), new Double(3.0));assertEquals(data.getValue(3), null);",
+    "offset": [
+      {
+        "line": 299,
+        "column": 35
+      },
+      {
+        "line": 300,
+        "column": 9
+      },
+      {
+        "line": 300,
+        "column": 28
+      },
+      {
+        "line": 301,
+        "column": 9
+      },
+      {
+        "line": 301,
+        "column": 28
+      },
+      {
+        "line": 302,
+        "column": 9
+      },
+      {
+        "line": 302,
+        "column": 28
+      },
+      {
+        "line": 303,
+        "column": 9
+      },
+      {
+        "line": 306,
+        "column": 9
+      },
+      {
+        "line": 306,
+        "column": 22
+      },
+      {
+        "line": 307,
+        "column": 9
+      },
+      {
+        "line": 307,
+        "column": 22
+      },
+      {
+        "line": 308,
+        "column": 9
+      },
+      {
+        "line": 308,
+        "column": 22
+      },
+      {
+        "line": 309,
+        "column": 9
+      },
+      {
+        "line": 309,
+        "column": 22
+      },
+      {
+        "line": 312,
+        "column": 9
+      },
+      {
+        "line": 312,
+        "column": 22
+      },
+      {
+        "line": 312,
+        "column": 42
+      },
+      {
+        "line": 313,
+        "column": 9
+      },
+      {
+        "line": 313,
+        "column": 22
+      },
+      {
+        "line": 313,
+        "column": 42
+      },
+      {
+        "line": 314,
+        "column": 9
+      },
+      {
+        "line": 314,
+        "column": 22
+      },
+      {
+        "line": 314,
+        "column": 42
+      },
+      {
+        "line": 315,
+        "column": 9
+      },
+      {
+        "line": 315,
+        "column": 22
+      },
+      {
+        "line": 318,
+        "column": 9
+      },
+      {
+        "line": 318,
+        "column": 22
+      },
+      {
+        "line": 318,
+        "column": 40
+      },
+      {
+        "line": 319,
+        "column": 9
+      },
+      {
+        "line": 319,
+        "column": 22
+      },
+      {
+        "line": 319,
+        "column": 40
+      },
+      {
+        "line": 320,
+        "column": 9
+      },
+      {
+        "line": 320,
+        "column": 22
+      },
+      {
+        "line": 320,
+        "column": 40
+      },
+      {
+        "line": 321,
+        "column": 9
+      },
+      {
+        "line": 321,
+        "column": 22
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 320,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(2), new Double(3.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", new Double(2.0));data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", null);assertEquals(data.getValue(2), new Double(3.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 321,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(3), null);",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", new Double(2.0));data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", null);assertEquals(data.getValue(3), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 307,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(1), \"B\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", new Double(2.0));data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", null);assertEquals(data.getKey(1), \"B\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 308,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(2), \"C\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", new Double(2.0));data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", null);assertEquals(data.getKey(2), \"C\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 309,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(3), \"D\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", new Double(2.0));data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", null);assertEquals(data.getKey(3), \"D\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 312,
+          "column": 9
+        },
+        "assert": "// check retrieve value by key\nassertEquals(data.getValue(\"A\"), new Double(1.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", new Double(2.0));data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", null);// check retrieve value by key\nassertEquals(data.getValue(\"A\"), new Double(1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 313,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(\"B\"), new Double(2.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", new Double(2.0));data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", null);assertEquals(data.getValue(\"B\"), new Double(2.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 314,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(\"C\"), new Double(3.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", new Double(2.0));data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", null);assertEquals(data.getValue(\"C\"), new Double(3.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 299,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", new Double(2.0));data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", null);// check key order\nassertEquals(data.getKey(0), \"A\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", new Double(2.0));data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", null);// check key order\nassertEquals(data.getKey(0), \"A\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 315,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(\"D\"), null);",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", new Double(2.0));data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", null);assertEquals(data.getValue(\"D\"), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 318,
+          "column": 9
+        },
+        "assert": "// check retrieve value by index\nassertEquals(data.getValue(0), new Double(1.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", new Double(2.0));data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", null);// check retrieve value by index\nassertEquals(data.getValue(0), new Double(1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 319,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(1), new Double(2.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", new Double(2.0));data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", null);assertEquals(data.getValue(1), new Double(2.0));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testRemoveValue()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", new Double(2.0));assertEquals(1, data.getIndex(\"B\"));data.removeValue(\"B\");assertEquals(-1, data.getIndex(\"B\"));boolean pass \u003d false;try {\n    data.removeValue(\"XXX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 330,
+        "column": 35
+      },
+      {
+        "line": 331,
+        "column": 9
+      },
+      {
+        "line": 331,
+        "column": 28
+      },
+      {
+        "line": 332,
+        "column": 9
+      },
+      {
+        "line": 333,
+        "column": 9
+      },
+      {
+        "line": 333,
+        "column": 28
+      },
+      {
+        "line": 334,
+        "column": 9
+      },
+      {
+        "line": 334,
+        "column": 28
+      },
+      {
+        "line": 335,
+        "column": 9
+      },
+      {
+        "line": 335,
+        "column": 25
+      },
+      {
+        "line": 336,
+        "column": 9
+      },
+      {
+        "line": 337,
+        "column": 9
+      },
+      {
+        "line": 337,
+        "column": 26
+      },
+      {
+        "line": 341,
+        "column": 13
+      },
+      {
+        "line": 346,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 336,
+          "column": 9
+        },
+        "assert": "data.removeValue(\"B\");assertEquals(-1, data.getIndex(\"B\"));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", new Double(2.0));data.removeValue(\"B\");assertEquals(-1, data.getIndex(\"B\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 339,
+          "column": 9
+        },
+        "assert": "boolean pass \u003d false;try {\n    data.removeValue(\"XXX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", new Double(2.0));data.removeValue(\"B\");boolean pass \u003d false;try {\n    data.removeValue(\"XXX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 330,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", new Double(2.0));assertEquals(1, data.getIndex(\"B\"));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"A\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"C\", new Double(3.0));data.addValue(\"D\", new Double(2.0));assertEquals(1, data.getIndex(\"B\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testSortByKeyAscending()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.ASCENDING);// check key order\nassertEquals(data.getKey(0), \"A\");assertEquals(data.getKey(1), \"B\");assertEquals(data.getKey(2), \"C\");assertEquals(data.getKey(3), \"D\");// check retrieve value by key\nassertEquals(data.getValue(\"A\"), new Double(2.0));assertEquals(data.getValue(\"B\"), null);assertEquals(data.getValue(\"C\"), new Double(1.0));assertEquals(data.getValue(\"D\"), new Double(3.0));// check retrieve value by index\nassertEquals(data.getValue(0), new Double(2.0));assertEquals(data.getValue(1), null);assertEquals(data.getValue(2), new Double(1.0));assertEquals(data.getValue(3), new Double(3.0));",
+    "offset": [
+      {
+        "line": 355,
+        "column": 35
+      },
+      {
+        "line": 356,
+        "column": 9
+      },
+      {
+        "line": 356,
+        "column": 28
+      },
+      {
+        "line": 357,
+        "column": 9
+      },
+      {
+        "line": 358,
+        "column": 9
+      },
+      {
+        "line": 358,
+        "column": 28
+      },
+      {
+        "line": 359,
+        "column": 9
+      },
+      {
+        "line": 359,
+        "column": 28
+      },
+      {
+        "line": 361,
+        "column": 9
+      },
+      {
+        "line": 364,
+        "column": 9
+      },
+      {
+        "line": 364,
+        "column": 22
+      },
+      {
+        "line": 365,
+        "column": 9
+      },
+      {
+        "line": 365,
+        "column": 22
+      },
+      {
+        "line": 366,
+        "column": 9
+      },
+      {
+        "line": 366,
+        "column": 22
+      },
+      {
+        "line": 367,
+        "column": 9
+      },
+      {
+        "line": 367,
+        "column": 22
+      },
+      {
+        "line": 370,
+        "column": 9
+      },
+      {
+        "line": 370,
+        "column": 22
+      },
+      {
+        "line": 370,
+        "column": 42
+      },
+      {
+        "line": 371,
+        "column": 9
+      },
+      {
+        "line": 371,
+        "column": 22
+      },
+      {
+        "line": 372,
+        "column": 9
+      },
+      {
+        "line": 372,
+        "column": 22
+      },
+      {
+        "line": 372,
+        "column": 42
+      },
+      {
+        "line": 373,
+        "column": 9
+      },
+      {
+        "line": 373,
+        "column": 22
+      },
+      {
+        "line": 373,
+        "column": 42
+      },
+      {
+        "line": 376,
+        "column": 9
+      },
+      {
+        "line": 376,
+        "column": 22
+      },
+      {
+        "line": 376,
+        "column": 40
+      },
+      {
+        "line": 377,
+        "column": 9
+      },
+      {
+        "line": 377,
+        "column": 22
+      },
+      {
+        "line": 378,
+        "column": 9
+      },
+      {
+        "line": 378,
+        "column": 22
+      },
+      {
+        "line": 378,
+        "column": 40
+      },
+      {
+        "line": 379,
+        "column": 9
+      },
+      {
+        "line": 379,
+        "column": 22
+      },
+      {
+        "line": 379,
+        "column": 40
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 370,
+          "column": 9
+        },
+        "assert": "// check retrieve value by key\nassertEquals(data.getValue(\"A\"), new Double(2.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.ASCENDING);// check retrieve value by key\nassertEquals(data.getValue(\"A\"), new Double(2.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 355,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.ASCENDING);// check key order\nassertEquals(data.getKey(0), \"A\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.ASCENDING);// check key order\nassertEquals(data.getKey(0), \"A\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 371,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(\"B\"), null);",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.ASCENDING);assertEquals(data.getValue(\"B\"), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 372,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(\"C\"), new Double(1.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.ASCENDING);assertEquals(data.getValue(\"C\"), new Double(1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 373,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(\"D\"), new Double(3.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.ASCENDING);assertEquals(data.getValue(\"D\"), new Double(3.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 376,
+          "column": 9
+        },
+        "assert": "// check retrieve value by index\nassertEquals(data.getValue(0), new Double(2.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.ASCENDING);// check retrieve value by index\nassertEquals(data.getValue(0), new Double(2.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 377,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(1), null);",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.ASCENDING);assertEquals(data.getValue(1), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 378,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(2), new Double(1.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.ASCENDING);assertEquals(data.getValue(2), new Double(1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 379,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(3), new Double(3.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.ASCENDING);assertEquals(data.getValue(3), new Double(3.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 365,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(1), \"B\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.ASCENDING);assertEquals(data.getKey(1), \"B\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 366,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(2), \"C\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.ASCENDING);assertEquals(data.getKey(2), \"C\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 367,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(3), \"D\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.ASCENDING);assertEquals(data.getKey(3), \"D\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testSortByKeyDescending()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.DESCENDING);// check key order\nassertEquals(data.getKey(0), \"D\");assertEquals(data.getKey(1), \"C\");assertEquals(data.getKey(2), \"B\");assertEquals(data.getKey(3), \"A\");// check retrieve value by key\nassertEquals(data.getValue(\"A\"), new Double(2.0));assertEquals(data.getValue(\"B\"), null);assertEquals(data.getValue(\"C\"), new Double(1.0));assertEquals(data.getValue(\"D\"), new Double(3.0));// check retrieve value by index\nassertEquals(data.getValue(0), new Double(3.0));assertEquals(data.getValue(1), new Double(1.0));assertEquals(data.getValue(2), null);assertEquals(data.getValue(3), new Double(2.0));",
+    "offset": [
+      {
+        "line": 389,
+        "column": 35
+      },
+      {
+        "line": 390,
+        "column": 9
+      },
+      {
+        "line": 390,
+        "column": 28
+      },
+      {
+        "line": 391,
+        "column": 9
+      },
+      {
+        "line": 392,
+        "column": 9
+      },
+      {
+        "line": 392,
+        "column": 28
+      },
+      {
+        "line": 393,
+        "column": 9
+      },
+      {
+        "line": 393,
+        "column": 28
+      },
+      {
+        "line": 395,
+        "column": 9
+      },
+      {
+        "line": 398,
+        "column": 9
+      },
+      {
+        "line": 398,
+        "column": 22
+      },
+      {
+        "line": 399,
+        "column": 9
+      },
+      {
+        "line": 399,
+        "column": 22
+      },
+      {
+        "line": 400,
+        "column": 9
+      },
+      {
+        "line": 400,
+        "column": 22
+      },
+      {
+        "line": 401,
+        "column": 9
+      },
+      {
+        "line": 401,
+        "column": 22
+      },
+      {
+        "line": 404,
+        "column": 9
+      },
+      {
+        "line": 404,
+        "column": 22
+      },
+      {
+        "line": 404,
+        "column": 42
+      },
+      {
+        "line": 405,
+        "column": 9
+      },
+      {
+        "line": 405,
+        "column": 22
+      },
+      {
+        "line": 406,
+        "column": 9
+      },
+      {
+        "line": 406,
+        "column": 22
+      },
+      {
+        "line": 406,
+        "column": 42
+      },
+      {
+        "line": 407,
+        "column": 9
+      },
+      {
+        "line": 407,
+        "column": 22
+      },
+      {
+        "line": 407,
+        "column": 42
+      },
+      {
+        "line": 410,
+        "column": 9
+      },
+      {
+        "line": 410,
+        "column": 22
+      },
+      {
+        "line": 410,
+        "column": 40
+      },
+      {
+        "line": 411,
+        "column": 9
+      },
+      {
+        "line": 411,
+        "column": 22
+      },
+      {
+        "line": 411,
+        "column": 40
+      },
+      {
+        "line": 412,
+        "column": 9
+      },
+      {
+        "line": 412,
+        "column": 22
+      },
+      {
+        "line": 413,
+        "column": 9
+      },
+      {
+        "line": 413,
+        "column": 22
+      },
+      {
+        "line": 413,
+        "column": 40
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 400,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(2), \"B\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.DESCENDING);assertEquals(data.getKey(2), \"B\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 401,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(3), \"A\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.DESCENDING);assertEquals(data.getKey(3), \"A\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 404,
+          "column": 9
+        },
+        "assert": "// check retrieve value by key\nassertEquals(data.getValue(\"A\"), new Double(2.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.DESCENDING);// check retrieve value by key\nassertEquals(data.getValue(\"A\"), new Double(2.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 389,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.DESCENDING);// check key order\nassertEquals(data.getKey(0), \"D\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.DESCENDING);// check key order\nassertEquals(data.getKey(0), \"D\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 405,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(\"B\"), null);",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.DESCENDING);assertEquals(data.getValue(\"B\"), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 406,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(\"C\"), new Double(1.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.DESCENDING);assertEquals(data.getValue(\"C\"), new Double(1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 407,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(\"D\"), new Double(3.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.DESCENDING);assertEquals(data.getValue(\"D\"), new Double(3.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 410,
+          "column": 9
+        },
+        "assert": "// check retrieve value by index\nassertEquals(data.getValue(0), new Double(3.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.DESCENDING);// check retrieve value by index\nassertEquals(data.getValue(0), new Double(3.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 411,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(1), new Double(1.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.DESCENDING);assertEquals(data.getValue(1), new Double(1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 412,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(2), null);",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.DESCENDING);assertEquals(data.getValue(2), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 413,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(3), new Double(2.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.DESCENDING);assertEquals(data.getValue(3), new Double(2.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 399,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(1), \"C\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByKeys(SortOrder.DESCENDING);assertEquals(data.getKey(1), \"C\");"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testSortByValueAscending()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.ASCENDING);// check key order\nassertEquals(data.getKey(0), \"C\");assertEquals(data.getKey(1), \"A\");assertEquals(data.getKey(2), \"D\");assertEquals(data.getKey(3), \"B\");// check retrieve value by key\nassertEquals(data.getValue(\"A\"), new Double(2.0));assertEquals(data.getValue(\"B\"), null);assertEquals(data.getValue(\"C\"), new Double(1.0));assertEquals(data.getValue(\"D\"), new Double(3.0));// check retrieve value by index\nassertEquals(data.getValue(0), new Double(1.0));assertEquals(data.getValue(1), new Double(2.0));assertEquals(data.getValue(2), new Double(3.0));assertEquals(data.getValue(3), null);",
+    "offset": [
+      {
+        "line": 423,
+        "column": 35
+      },
+      {
+        "line": 424,
+        "column": 9
+      },
+      {
+        "line": 424,
+        "column": 28
+      },
+      {
+        "line": 425,
+        "column": 9
+      },
+      {
+        "line": 426,
+        "column": 9
+      },
+      {
+        "line": 426,
+        "column": 28
+      },
+      {
+        "line": 427,
+        "column": 9
+      },
+      {
+        "line": 427,
+        "column": 28
+      },
+      {
+        "line": 429,
+        "column": 9
+      },
+      {
+        "line": 432,
+        "column": 9
+      },
+      {
+        "line": 432,
+        "column": 22
+      },
+      {
+        "line": 433,
+        "column": 9
+      },
+      {
+        "line": 433,
+        "column": 22
+      },
+      {
+        "line": 434,
+        "column": 9
+      },
+      {
+        "line": 434,
+        "column": 22
+      },
+      {
+        "line": 435,
+        "column": 9
+      },
+      {
+        "line": 435,
+        "column": 22
+      },
+      {
+        "line": 438,
+        "column": 9
+      },
+      {
+        "line": 438,
+        "column": 22
+      },
+      {
+        "line": 438,
+        "column": 42
+      },
+      {
+        "line": 439,
+        "column": 9
+      },
+      {
+        "line": 439,
+        "column": 22
+      },
+      {
+        "line": 440,
+        "column": 9
+      },
+      {
+        "line": 440,
+        "column": 22
+      },
+      {
+        "line": 440,
+        "column": 42
+      },
+      {
+        "line": 441,
+        "column": 9
+      },
+      {
+        "line": 441,
+        "column": 22
+      },
+      {
+        "line": 441,
+        "column": 42
+      },
+      {
+        "line": 444,
+        "column": 9
+      },
+      {
+        "line": 444,
+        "column": 22
+      },
+      {
+        "line": 444,
+        "column": 40
+      },
+      {
+        "line": 445,
+        "column": 9
+      },
+      {
+        "line": 445,
+        "column": 22
+      },
+      {
+        "line": 445,
+        "column": 40
+      },
+      {
+        "line": 446,
+        "column": 9
+      },
+      {
+        "line": 446,
+        "column": 22
+      },
+      {
+        "line": 446,
+        "column": 40
+      },
+      {
+        "line": 447,
+        "column": 9
+      },
+      {
+        "line": 447,
+        "column": 22
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 433,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(1), \"A\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.ASCENDING);assertEquals(data.getKey(1), \"A\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 434,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(2), \"D\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.ASCENDING);assertEquals(data.getKey(2), \"D\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 435,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(3), \"B\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.ASCENDING);assertEquals(data.getKey(3), \"B\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 438,
+          "column": 9
+        },
+        "assert": "// check retrieve value by key\nassertEquals(data.getValue(\"A\"), new Double(2.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.ASCENDING);// check retrieve value by key\nassertEquals(data.getValue(\"A\"), new Double(2.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 423,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.ASCENDING);// check key order\nassertEquals(data.getKey(0), \"C\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.ASCENDING);// check key order\nassertEquals(data.getKey(0), \"C\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 439,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(\"B\"), null);",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.ASCENDING);assertEquals(data.getValue(\"B\"), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 440,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(\"C\"), new Double(1.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.ASCENDING);assertEquals(data.getValue(\"C\"), new Double(1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 441,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(\"D\"), new Double(3.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.ASCENDING);assertEquals(data.getValue(\"D\"), new Double(3.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 444,
+          "column": 9
+        },
+        "assert": "// check retrieve value by index\nassertEquals(data.getValue(0), new Double(1.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.ASCENDING);// check retrieve value by index\nassertEquals(data.getValue(0), new Double(1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 445,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(1), new Double(2.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.ASCENDING);assertEquals(data.getValue(1), new Double(2.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 446,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(2), new Double(3.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.ASCENDING);assertEquals(data.getValue(2), new Double(3.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 447,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(3), null);",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.ASCENDING);assertEquals(data.getValue(3), null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testSortByValueDescending()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.DESCENDING);// check key order\nassertEquals(data.getKey(0), \"D\");assertEquals(data.getKey(1), \"A\");assertEquals(data.getKey(2), \"C\");assertEquals(data.getKey(3), \"B\");// check retrieve value by key\nassertEquals(data.getValue(\"A\"), new Double(2.0));assertEquals(data.getValue(\"B\"), null);assertEquals(data.getValue(\"C\"), new Double(1.0));assertEquals(data.getValue(\"D\"), new Double(3.0));// check retrieve value by index\nassertEquals(data.getValue(0), new Double(3.0));assertEquals(data.getValue(1), new Double(2.0));assertEquals(data.getValue(2), new Double(1.0));assertEquals(data.getValue(3), null);",
+    "offset": [
+      {
+        "line": 457,
+        "column": 35
+      },
+      {
+        "line": 458,
+        "column": 9
+      },
+      {
+        "line": 458,
+        "column": 28
+      },
+      {
+        "line": 459,
+        "column": 9
+      },
+      {
+        "line": 460,
+        "column": 9
+      },
+      {
+        "line": 460,
+        "column": 28
+      },
+      {
+        "line": 461,
+        "column": 9
+      },
+      {
+        "line": 461,
+        "column": 28
+      },
+      {
+        "line": 463,
+        "column": 9
+      },
+      {
+        "line": 466,
+        "column": 9
+      },
+      {
+        "line": 466,
+        "column": 22
+      },
+      {
+        "line": 467,
+        "column": 9
+      },
+      {
+        "line": 467,
+        "column": 22
+      },
+      {
+        "line": 468,
+        "column": 9
+      },
+      {
+        "line": 468,
+        "column": 22
+      },
+      {
+        "line": 469,
+        "column": 9
+      },
+      {
+        "line": 469,
+        "column": 22
+      },
+      {
+        "line": 472,
+        "column": 9
+      },
+      {
+        "line": 472,
+        "column": 22
+      },
+      {
+        "line": 472,
+        "column": 42
+      },
+      {
+        "line": 473,
+        "column": 9
+      },
+      {
+        "line": 473,
+        "column": 22
+      },
+      {
+        "line": 474,
+        "column": 9
+      },
+      {
+        "line": 474,
+        "column": 22
+      },
+      {
+        "line": 474,
+        "column": 42
+      },
+      {
+        "line": 475,
+        "column": 9
+      },
+      {
+        "line": 475,
+        "column": 22
+      },
+      {
+        "line": 475,
+        "column": 42
+      },
+      {
+        "line": 478,
+        "column": 9
+      },
+      {
+        "line": 478,
+        "column": 22
+      },
+      {
+        "line": 478,
+        "column": 40
+      },
+      {
+        "line": 479,
+        "column": 9
+      },
+      {
+        "line": 479,
+        "column": 22
+      },
+      {
+        "line": 479,
+        "column": 40
+      },
+      {
+        "line": 480,
+        "column": 9
+      },
+      {
+        "line": 480,
+        "column": 22
+      },
+      {
+        "line": 480,
+        "column": 40
+      },
+      {
+        "line": 481,
+        "column": 9
+      },
+      {
+        "line": 481,
+        "column": 22
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 480,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(2), new Double(1.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.DESCENDING);assertEquals(data.getValue(2), new Double(1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 481,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(3), null);",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.DESCENDING);assertEquals(data.getValue(3), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 467,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(1), \"A\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.DESCENDING);assertEquals(data.getKey(1), \"A\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 468,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(2), \"C\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.DESCENDING);assertEquals(data.getKey(2), \"C\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 469,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(3), \"B\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.DESCENDING);assertEquals(data.getKey(3), \"B\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 472,
+          "column": 9
+        },
+        "assert": "// check retrieve value by key\nassertEquals(data.getValue(\"A\"), new Double(2.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.DESCENDING);// check retrieve value by key\nassertEquals(data.getValue(\"A\"), new Double(2.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 457,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.DESCENDING);// check key order\nassertEquals(data.getKey(0), \"D\");",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.DESCENDING);// check key order\nassertEquals(data.getKey(0), \"D\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 473,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(\"B\"), null);",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.DESCENDING);assertEquals(data.getValue(\"B\"), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 474,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(\"C\"), new Double(1.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.DESCENDING);assertEquals(data.getValue(\"C\"), new Double(1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 475,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(\"D\"), new Double(3.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.DESCENDING);assertEquals(data.getValue(\"D\"), new Double(3.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 478,
+          "column": 9
+        },
+        "assert": "// check retrieve value by index\nassertEquals(data.getValue(0), new Double(3.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.DESCENDING);// check retrieve value by index\nassertEquals(data.getValue(0), new Double(3.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 479,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getValue(1), new Double(2.0));",
+        "slice": "DefaultKeyedValues data \u003d new DefaultKeyedValues();data.addValue(\"C\", new Double(1.0));data.addValue(\"B\", null);data.addValue(\"D\", new Double(3.0));data.addValue(\"A\", new Double(2.0));data.sortByValues(SortOrder.DESCENDING);assertEquals(data.getValue(1), new Double(2.0));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testSerialization()",
+    "annotation": "@Test",
+    "code": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"Key 1\", new Double(23));v1.addValue(\"Key 2\", null);v1.addValue(\"Key 3\", new Double(42));DefaultKeyedValues v2 \u003d (DefaultKeyedValues) TestUtilities.serialised(v1);assertEquals(v1, v2);",
+    "offset": [
+      {
+        "line": 490,
+        "column": 33
+      },
+      {
+        "line": 491,
+        "column": 9
+      },
+      {
+        "line": 491,
+        "column": 30
+      },
+      {
+        "line": 492,
+        "column": 9
+      },
+      {
+        "line": 493,
+        "column": 9
+      },
+      {
+        "line": 493,
+        "column": 30
+      },
+      {
+        "line": 496,
+        "column": 17
+      },
+      {
+        "line": 497,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 490,
+          "column": 9
+        },
+        "assert": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"Key 1\", new Double(23));v1.addValue(\"Key 2\", null);v1.addValue(\"Key 3\", new Double(42));DefaultKeyedValues v2 \u003d (DefaultKeyedValues) TestUtilities.serialised(v1);assertEquals(v1, v2);",
+        "slice": "DefaultKeyedValues v1 \u003d new DefaultKeyedValues();v1.addValue(\"Key 1\", new Double(23));v1.addValue(\"Key 2\", null);v1.addValue(\"Key 3\", new Double(42));DefaultKeyedValues v2 \u003d (DefaultKeyedValues) TestUtilities.serialised(v1);assertEquals(v1, v2);"
+      }
+    ]
+  }
+]

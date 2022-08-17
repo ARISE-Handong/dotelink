@@ -1,0 +1,196 @@
+[
+  {
+    "productionMethod": "org.supercsv.util.Util.executeCellProcessors(java.util.List\u003cjava.lang.Object\u003e, java.util.List\u003c?\u003e, org.supercsv.cellprocessor.ift.CellProcessor[], int, int)",
+    "comment": "\n\t * Processes each element in the source List (using the corresponding processor chain in the processors array) and\n\t * adds it to the destination List. A \u003ctt\u003enull\u003c/tt\u003e CellProcessor in the array indicates that no processing is\n\t * required and the element should be added as-is.\n\t * \n\t * @param destination\n\t *            the List to add the processed elements to (which is cleared before it\u0027s populated)\n\t * @param source\n\t *            the List of source elements to be processed\n\t * @param processors\n\t *            the array of CellProcessors used to process each element. The number of elements in this array must\n\t *            match the size of the source List. A \u003ctt\u003enull\u003c/tt\u003e CellProcessor in this array indicates that no\n\t *            processing is required and the element should be added as-is.\n\t * @param lineNo\n\t *            the current line number\n\t * @param rowNo\n\t *            the current row number\n\t * @throws NullPointerException\n\t *             if destination, source or processors is null\n\t * @throws SuperCsvConstraintViolationException\n\t *             if a CellProcessor constraint failed\n\t * @throws SuperCsvException\n\t *             if source.size() !\u003d processors.length, or CellProcessor execution failed\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Processes each element in the source List (using the corresponding processor chain in the processors array) and adds it to the destination List.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 39,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "A \u003ctt\u003enull\u003c/tt\u003e CellProcessor in the array indicates that no processing is required and the element should be added as-is.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 40,
+          "column": 38
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if destination, source or processors is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 55,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws SuperCsvConstraintViolationException if a CellProcessor constraint failed",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 57,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws SuperCsvException if source.size() !\u003d processors.length, or CellProcessor execution failed",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 59,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.Util.filterListToMap(java.util.Map\u003cjava.lang.String, T\u003e, java.lang.String[], java.util.List\u003c? extends T\u003e)",
+    "comment": "\n\t * Converts a List to a Map using the elements of the nameMapping array as the keys of the Map.\n\t * \n\t * @param destinationMap\n\t *            the destination Map (which is cleared before it\u0027s populated)\n\t * @param nameMapping\n\t *            the keys of the Map (corresponding with the elements in the sourceList). Cannot contain duplicates.\n\t * @param sourceList\n\t *            the List to convert\n\t * @param \u003cT\u003e\n\t *            the type of the values in the map\n\t * @throws NullPointerException\n\t *             if destinationMap, nameMapping or sourceList are null\n\t * @throws SuperCsvException\n\t *             if nameMapping and sourceList are not the same size\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Converts a List to a Map using the elements of the nameMapping array as the keys of the Map.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 99,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if destinationMap, nameMapping or sourceList are null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 109,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws SuperCsvException if nameMapping and sourceList are not the same size",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 111,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.Util.filterMapToList(java.util.Map\u003cjava.lang.String, ?\u003e, java.lang.String[])",
+    "comment": "\n\t * Returns a List of all of the values in the Map whose key matches an entry in the nameMapping array.\n\t * \n\t * @param map\n\t *            the map\n\t * @param nameMapping\n\t *            the keys of the Map values to add to the List\n\t * @return a List of all of the values in the Map whose key matches an entry in the nameMapping array\n\t * @throws NullPointerException\n\t *             if map or nameMapping is null\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a List of all of the values in the Map whose key matches an entry in the nameMapping array.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 149,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return a List of all of the values in the Map whose key matches an entry in the nameMapping array",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 155,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if map or nameMapping is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 156,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.Util.filterMapToObjectArray(java.util.Map\u003cjava.lang.String, ?\u003e, java.lang.String[])",
+    "comment": "\n\t * Converts a Map to an array of objects, adding only those entries whose key is in the nameMapping array.\n\t * \n\t * @param values\n\t *            the Map of values to convert\n\t * @param nameMapping\n\t *            the keys to extract from the Map (elements in the target array will be added in this order)\n\t * @return the array of Objects\n\t * @throws NullPointerException\n\t *             if values or nameMapping is null\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Converts a Map to an array of objects, adding only those entries whose key is in the nameMapping array.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 174,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return the array of Objects",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 180,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if values or nameMapping is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 181,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.Util.Util()",
+    "comment": " no instantiation",
+    "sentences": [
+      {
+        "sentenceText": "no instantiation",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 34,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.Util.objectListToStringArray(java.util.List\u003c?\u003e)",
+    "comment": "\n\t * Converts an {@code List\u003cObject\u003e} to a String array (null-safe), by calling {@code toString()} on each element.\n\t * \n\t * @param objectList\n\t *            the List\n\t * @return the String array, or null if objectList is null\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Converts an {@code List\u003cObject\u003e} to a String array (null-safe), by calling {@code toString()} on each element.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 221,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return the String array, or null if objectList is null",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 225,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.Util.objectArrayToStringArray(java.lang.Object[])",
+    "comment": "\n\t * Converts an Object array to a String array (null-safe), by calling toString() on each element.\n\t * \n\t * @param objectArray\n\t *            the Object array\n\t * @return the String array, or null if objectArray is null\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Converts an Object array to a String array (null-safe), by calling toString() on each element.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 201,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return the String array, or null if objectArray is null",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 205,
+          "column": 5
+        }
+      }
+    ]
+  }
+]

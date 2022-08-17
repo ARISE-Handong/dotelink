@@ -1,0 +1,456 @@
+[
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findSetter(java.lang.Object, java.lang.String, java.lang.Class\u003c?\u003e)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithInvalidFieldName()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 159,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 311,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findGetter(java.lang.Object, java.lang.String)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindIsTurkishGetter()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 70,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 182,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findSetter(java.lang.Object, java.lang.String, java.lang.Class\u003c?\u003e)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithInvalidFieldNameAndPrimitiveType()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 159,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 320,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findGetter(java.lang.Object, java.lang.String)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindBooleanGetter()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 70,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 73,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findGetter(java.lang.Object, java.lang.String)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindiPhoneGetter()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 70,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 162,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findSetter(java.lang.Object, java.lang.String, java.lang.Class\u003c?\u003e)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithNullFieldName()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 157,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 295,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findSetter(java.lang.Object, java.lang.String, java.lang.Class\u003c?\u003e)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithNullObject()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 157,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 287,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findSetter(java.lang.Object, java.lang.String, java.lang.Class\u003c?\u003e)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithMethodOfSameName()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 133,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findGetter(java.lang.Object, java.lang.String)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindGetterWithInvalidFieldName()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 73,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 279,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findGetter(java.lang.Object, java.lang.String)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindGetterWithNullFieldName()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 71,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 271,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findSetter(java.lang.Object, java.lang.String, java.lang.Class\u003c?\u003e)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testAutoboxing()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 235,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 250,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 215,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 218,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 206,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 227,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 244,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 238,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 232,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 247,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 253,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 221,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 209,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 212,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 224,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 241,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findGetter(java.lang.Object, java.lang.String)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindGetter()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 71,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 63,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findSetter(java.lang.Object, java.lang.String, java.lang.Class\u003c?\u003e)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithNullFieldType()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 157,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 303,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findSetter(java.lang.Object, java.lang.String, java.lang.Class\u003c?\u003e)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithTwoOptions()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 123,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findGetter(java.lang.Object, java.lang.String)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindAlternateBooleanGetter()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 70,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 83,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findSetter(java.lang.Object, java.lang.String, java.lang.Class\u003c?\u003e)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetterWithSubtype()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        },
+        "testCodeLocation": {
+          "line": 113,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findGetter(java.lang.Object, java.lang.String)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindAlternateBooleanWrapperGetter()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 70,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 93,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findSetter(java.lang.Object, java.lang.String, java.lang.Class\u003c?\u003e)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindSetter()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 157,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 103,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findGetter(java.lang.Object, java.lang.String)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindGetterWithNullObject()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 71,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 263,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

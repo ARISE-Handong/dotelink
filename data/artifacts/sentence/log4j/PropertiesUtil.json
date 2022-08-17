@@ -1,0 +1,661 @@
+[
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.Environment.Anonymous-0083dd35-49b6-4d23-8b98-062a7ee5fee8.accept(java.lang.String, java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getIntegerProperty(java.lang.String, int)",
+    "comment": "\n     * Gets the named property as an integer.\n     *\n     * @param name         the name of the property to look up\n     * @param defaultValue the default value to use if the property is undefined\n     * @return the parsed integer value of the property or {@code defaultValue} if it was undefined or could not be\n     * parsed.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets the named property as an integer.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 236,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the parsed integer value of the property or {@code defaultValue} if it was undefined or could not be parsed.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 240,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.TimeUnit.getDuration(java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getCharsetProperty(java.lang.String)",
+    "comment": "\n     * Gets the named property as a Charset value.\n     *\n     * @param name the name of the property to look up\n     * @return the Charset value of the property or {@link Charset#defaultCharset()} if undefined.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets the named property as a Charset value.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 179,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the Charset value of the property or {@link Charset#defaultCharset()} if undefined.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 182,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.PropertiesUtil(java.util.Properties)",
+    "comment": "\n     * Constructs a PropertiesUtil using a given Properties object as its source of defined properties.\n     *\n     * @param props the Properties to use by default\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a PropertiesUtil using a given Properties object as its source of defined properties.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 59,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getDurationProperty(java.lang.String[], java.lang.String, org.apache.logging.log4j.util.Supplier\u003cjava.time.Duration\u003e)",
+    "comment": "\n     * Retrieves a property that may be prefixed by more than one string.\n     * @param prefixes The array of prefixes.\n     * @param key The key to locate.\n     * @param supplier The method to call to derive the default value. If the value is null, null will be returned\n     * if no property is found.\n     * @return The value or null if it is not found.\n     * @since 2.13.0\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Retrieves a property that may be prefixed by more than one string.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The value or null if it is not found.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getStringProperty(java.lang.String[], java.lang.String, org.apache.logging.log4j.util.Supplier\u003cjava.lang.String\u003e)",
+    "comment": "\n     * Retrieves a property that may be prefixed by more than one string.\n     * @param prefixes The array of prefixes.\n     * @param key The key to locate.\n     * @param supplier The method to call to derive the default value. If the value is null, null will be returned\n     * if no property is found.\n     * @return The value or null if it is not found.\n     * @since 2.13.0\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Retrieves a property that may be prefixed by more than one string.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 345,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The value or null if it is not found.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 350,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getBooleanProperty(java.lang.String)",
+    "comment": "\n     * Gets the named property as a boolean value. If the property matches the string {@code \"true\"} (case-insensitive),\n     * then it is returned as the boolean value {@code true}. Any other non-{@code null} text in the property is\n     * considered {@code false}.\n     *\n     * @param name the name of the property to look up\n     * @return the boolean value of the property or {@code false} if undefined.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets the named property as a boolean value.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 122,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the property matches the string {@code \"true\"} (case-insensitive), then it is returned as the boolean value {@code true}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 122,
+          "column": 52
+        }
+      },
+      {
+        "sentenceText": "Any other non-{@code null} text in the property is considered {@code false}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 123,
+          "column": 63
+        }
+      },
+      {
+        "sentenceText": "@return the boolean value of the property or {@code false} if undefined.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 127,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getIntegerProperty(java.lang.String[], java.lang.String, org.apache.logging.log4j.util.Supplier\u003cjava.lang.Integer\u003e)",
+    "comment": "\n     * Retrieves a property that may be prefixed by more than one string.\n     * @param prefixes The array of prefixes.\n     * @param key The key to locate.\n     * @param supplier The method to call to derive the default value. If the value is null, null will be returned\n     * if no property is found.\n     * @return The value or null if it is not found.\n     * @since 2.13.0\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Retrieves a property that may be prefixed by more than one string.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 256,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The value or null if it is not found.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 261,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.Environment.get(java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getCharsetProperty(java.lang.String, java.nio.charset.Charset)",
+    "comment": "\n     * Gets the named property as a Charset value. If we cannot find the named Charset, see if it is mapped in\n     * file {@code Log4j-charsets.properties} on the class path.\n     *\n     * @param name         the name of the property to look up\n     * @param defaultValue the default value to use if the property is undefined\n     * @return the Charset value of the property or {@code defaultValue} if undefined.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets the named property as a Charset value.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 189,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If we cannot find the named Charset, see if it is mapped in file {@code Log4j-charsets.properties} on the class path.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 189,
+          "column": 52
+        }
+      },
+      {
+        "sentenceText": "@return the Charset value of the property or {@code defaultValue} if undefined.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 194,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.PropertiesUtil(java.lang.String)",
+    "comment": "\n     * Constructs a PropertiesUtil for a given properties file name on the classpath. The properties specified in this\n     * file are used by default. If a property is not defined in this file, then the equivalent system property is used.\n     *\n     * @param propertiesFileName the location of properties file to load\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a PropertiesUtil for a given properties file name on the classpath.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 68,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The properties specified in this file are used by default.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 68,
+          "column": 87
+        }
+      },
+      {
+        "sentenceText": "If a property is not defined in this file, then the equivalent system property is used.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 69,
+          "column": 34
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getProperties()",
+    "comment": "\n     * Returns the PropertiesUtil used by Log4j.\n     *\n     * @return the main Log4j PropertiesUtil instance.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the PropertiesUtil used by Log4j.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 103,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the main Log4j PropertiesUtil instance.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 105,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.Environment.reload()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getCharsetsResourceBundle()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.loadClose(java.io.InputStream, java.lang.Object)",
+    "comment": "\n     * Loads and closes the given property input stream. If an error occurs, log to the status logger.\n     *\n     * @param in     a property input stream.\n     * @param source a source object describing the source, like a resource string or a URL.\n     * @return a new Properties object\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Loads and closes the given property input stream.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 78,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If an error occurs, log to the status logger.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 79,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a new Properties object",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 82,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getBooleanProperty(java.lang.String, boolean, boolean)",
+    "comment": "\n     * Gets the named property as a boolean value.\n     *\n     * @param name                  the name of the property to look up\n     * @param defaultValueIfAbsent  the default value to use if the property is undefined\n     * @param defaultValueIfPresent the default value to use if the property is defined but not assigned\n     * @return the boolean value of the property or {@code defaultValue} if undefined.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets the named property as a boolean value.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 146,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the boolean value of the property or {@code defaultValue} if undefined.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 151,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.Environment.Anonymous-82fa9c28-da3a-4be0-999a-a301fc5cfc8d.accept(java.lang.String, java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.extractSubset(java.util.Properties, java.lang.String)",
+    "comment": "\n     * Extracts properties that start with or are equals to the specific prefix and returns them in a new Properties\n     * object with the prefix removed.\n     *\n     * @param properties The Properties to evaluate.\n     * @param prefix     The prefix to extract.\n     * @return The subset of properties.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Extracts properties that start with or are equals to the specific prefix and returns them in a new Properties object with the prefix removed.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 517,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The subset of properties.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 522,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.TimeUnit.TimeUnit(java.lang.String, java.time.temporal.ChronoUnit)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getSystemProperties()",
+    "comment": "\n     * Return the system properties or an empty Properties object if an error occurs.\n     *\n     * @return The system properties.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Return the system properties or an empty Properties object if an error occurs.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 386,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The system properties.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 388,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.Environment.Environment(org.apache.logging.log4j.util.PropertySource)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.isOsWindows()",
+    "comment": "\n     * Returns true if system properties tell us we are running on Windows.\n     *\n     * @return true if system properties tell us we are running on Windows.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns true if system properties tell us we are running on Windows.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 573,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if system properties tell us we are running on Windows.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 575,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.TimeUnit.getTimeUnit()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getStringProperty(java.lang.String)",
+    "comment": "\n     * Gets the named property as a String.\n     *\n     * @param name the name of the property to look up\n     * @return the String value of the property or {@code null} if undefined.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets the named property as a String.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 364,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the String value of the property or {@code null} if undefined.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getBooleanProperty(java.lang.String[], java.lang.String, org.apache.logging.log4j.util.Supplier\u003cjava.lang.Boolean\u003e)",
+    "comment": "\n     * Retrieves a property that may be prefixed by more than one string.\n     * @param prefixes The array of prefixes.\n     * @param key The key to locate.\n     * @param supplier The method to call to derive the default value. If the value is null, null will be returned\n     * if no property is found.\n     * @return The value or null if it is not found.\n     * @since 2.13.0\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Retrieves a property that may be prefixed by more than one string.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 161,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The value or null if it is not found.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 166,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getDoubleProperty(java.lang.String, double)",
+    "comment": "\n     * Gets the named property as a double.\n     *\n     * @param name         the name of the property to look up\n     * @param defaultValue the default value to use if the property is undefined\n     * @return the parsed double value of the property or {@code defaultValue} if it was undefined or could not be parsed.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets the named property as a double.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 217,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the parsed double value of the property or {@code defaultValue} if it was undefined or could not be parsed.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 221,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getDurationProperty(java.lang.String, java.time.Duration)",
+    "comment": "\n     * Retrieves a Duration where the String is of the format nnn[unit] where nnn represents an integer value\n     * and unit represents a time unit.\n     * @param name The property name.\n     * @param defaultValue The default value.\n     * @return The value of the String as a Duration or the default value, which may be null.\n     * @since 2.13.0\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Retrieves a Duration where the String is of the format nnn[unit] where nnn represents an integer value and unit represents a time unit.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The value of the String as a Duration or the default value, which may be null.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.reload()",
+    "comment": "\n     * Reloads all properties. This is primarily useful for unit tests.\n     *\n     * @since 2.10.0\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Reloads all properties.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 401,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This is primarily useful for unit tests.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 402,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.Environment.hasSystemProperty(java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.partitionOnCommonPrefixes(java.util.Properties)",
+    "comment": "\n     * Partitions a properties map based on common key prefixes up to the first period.\n     *\n     * @param properties properties to partition\n     * @return the partitioned properties where each key is the common prefix (minus the period) and the values are\n     * new property maps without the prefix and period in the key\n     * @since 2.6\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Partitions a properties map based on common key prefixes up to the first period.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 553,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the partitioned properties where each key is the common prefix (minus the period) and the values are new property maps without the prefix and period in the key",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 556,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getStringProperty(java.lang.String, java.lang.String)",
+    "comment": "\n     * Gets the named property as a String.\n     *\n     * @param name         the name of the property to look up\n     * @param defaultValue the default value to use if the property is undefined\n     * @return the String value of the property or {@code defaultValue} if undefined.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets the named property as a String.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 374,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the String value of the property or {@code defaultValue} if undefined.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 378,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.hasProperty(java.lang.String)",
+    "comment": "\n     * Returns {@code true} if the specified property is defined, regardless of its value (it may not have a value).\n     *\n     * @param name the name of the property to verify\n     * @return {@code true} if the specified property is defined, regardless of its value\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns {@code true} if the specified property is defined, regardless of its value (it may not have a value).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 112,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return {@code true} if the specified property is defined, regardless of its value",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 115,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getLongProperty(java.lang.String, long)",
+    "comment": "\n     * Gets the named property as a long.\n     *\n     * @param name         the name of the property to look up\n     * @param defaultValue the default value to use if the property is undefined\n     * @return the parsed long value of the property or {@code defaultValue} if it was undefined or could not be parsed.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets the named property as a long.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 274,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the parsed long value of the property or {@code defaultValue} if it was undefined or could not be parsed.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 278,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.Environment.containsKey(java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getBooleanProperty(java.lang.String, boolean)",
+    "comment": "\n     * Gets the named property as a boolean value.\n     *\n     * @param name         the name of the property to look up\n     * @param defaultValue the default value to use if the property is undefined\n     * @return the boolean value of the property or {@code defaultValue} if undefined.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets the named property as a boolean value.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 134,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the boolean value of the property or {@code defaultValue} if undefined.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 138,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getLongProperty(java.lang.String[], java.lang.String, org.apache.logging.log4j.util.Supplier\u003cjava.lang.Long\u003e)",
+    "comment": "\n     * Retrieves a property that may be prefixed by more than one string.\n     * @param prefixes The array of prefixes.\n     * @param key The key to locate.\n     * @param supplier The method to call to derive the default value. If the value is null, null will be returned\n     * if no property is found.\n     * @return The value or null if it is not found.\n     * @since 2.13.0\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Retrieves a property that may be prefixed by more than one string.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 293,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The value or null if it is not found.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 298,
+          "column": 8
+        }
+      }
+    ]
+  }
+]

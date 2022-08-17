@@ -1,0 +1,44 @@
+[
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getCharsetProperty(java.lang.String)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testGetCharsetProperty()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 182,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 80,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 182,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 73,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getStringProperty(java.lang.String)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testNonStringSystemProperties()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 99,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

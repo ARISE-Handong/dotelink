@@ -1,0 +1,2223 @@
+[
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.forEach()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);IterableUtils.forEach(col, testClosure);assertTrue(listA.isEmpty() \u0026\u0026 listB.isEmpty());try {\n    IterableUtils.forEach(col, null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}IterableUtils.forEach(null, testClosure);// null should be OK\ncol.add(null);IterableUtils.forEach(col, testClosure);",
+    "offset": [
+      {
+        "line": 111,
+        "column": 37
+      },
+      {
+        "line": 112,
+        "column": 9
+      },
+      {
+        "line": 114,
+        "column": 37
+      },
+      {
+        "line": 115,
+        "column": 9
+      },
+      {
+        "line": 117,
+        "column": 52
+      },
+      {
+        "line": 118,
+        "column": 47
+      },
+      {
+        "line": 119,
+        "column": 9
+      },
+      {
+        "line": 120,
+        "column": 9
+      },
+      {
+        "line": 121,
+        "column": 9
+      },
+      {
+        "line": 122,
+        "column": 9
+      },
+      {
+        "line": 122,
+        "column": 20
+      },
+      {
+        "line": 122,
+        "column": 39
+      },
+      {
+        "line": 124,
+        "column": 13
+      },
+      {
+        "line": 125,
+        "column": 13
+      },
+      {
+        "line": 130,
+        "column": 9
+      },
+      {
+        "line": 133,
+        "column": 9
+      },
+      {
+        "line": 134,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 130,
+          "column": 9
+        },
+        "assert": "IterableUtils.forEach(null, testClosure);// null should be OK\ncol.add(null);IterableUtils.forEach(col, testClosure);",
+        "slice": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);IterableUtils.forEach(col, testClosure);IterableUtils.forEach(null, testClosure);// null should be OK\ncol.add(null);IterableUtils.forEach(col, testClosure);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 123,
+          "column": 9
+        },
+        "assert": "try {\n    IterableUtils.forEach(col, null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);IterableUtils.forEach(col, testClosure);try {\n    IterableUtils.forEach(col, null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 111,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);IterableUtils.forEach(col, testClosure);assertTrue(listA.isEmpty() \u0026\u0026 listB.isEmpty());",
+        "slice": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);IterableUtils.forEach(col, testClosure);assertTrue(listA.isEmpty() \u0026\u0026 listB.isEmpty());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.forEachFailure()",
+    "annotation": "@Test(expected \u003d FunctorException.class)",
+    "code": "final Closure\u003cString\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cString\u003e col \u003d new ArrayList\u003c\u003e();col.add(\"x\");IterableUtils.forEach(col, testClosure);",
+    "offset": [
+      {
+        "line": 139,
+        "column": 45
+      },
+      {
+        "line": 140,
+        "column": 40
+      },
+      {
+        "line": 141,
+        "column": 9
+      },
+      {
+        "line": 142,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 139,
+          "column": 9
+        },
+        "assert": "final Closure\u003cString\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cString\u003e col \u003d new ArrayList\u003c\u003e();col.add(\"x\");IterableUtils.forEach(col, testClosure);",
+        "slice": "final Closure\u003cString\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cString\u003e col \u003d new ArrayList\u003c\u003e();col.add(\"x\");IterableUtils.forEach(col, testClosure);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.forEachButLast()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);List\u003cInteger\u003e last \u003d IterableUtils.forEachButLast(col, testClosure);assertTrue(listA.isEmpty() \u0026\u0026 !listB.isEmpty());assertSame(listB, last);try {\n    IterableUtils.forEachButLast(col, null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}IterableUtils.forEachButLast(null, testClosure);// null should be OK\ncol.add(null);col.add(null);last \u003d IterableUtils.forEachButLast(col, testClosure);assertNull(last);",
+    "offset": [
+      {
+        "line": 147,
+        "column": 37
+      },
+      {
+        "line": 148,
+        "column": 9
+      },
+      {
+        "line": 150,
+        "column": 37
+      },
+      {
+        "line": 151,
+        "column": 9
+      },
+      {
+        "line": 153,
+        "column": 52
+      },
+      {
+        "line": 154,
+        "column": 47
+      },
+      {
+        "line": 155,
+        "column": 9
+      },
+      {
+        "line": 156,
+        "column": 9
+      },
+      {
+        "line": 157,
+        "column": 30
+      },
+      {
+        "line": 158,
+        "column": 9
+      },
+      {
+        "line": 158,
+        "column": 20
+      },
+      {
+        "line": 158,
+        "column": 40
+      },
+      {
+        "line": 159,
+        "column": 9
+      },
+      {
+        "line": 162,
+        "column": 13
+      },
+      {
+        "line": 163,
+        "column": 13
+      },
+      {
+        "line": 168,
+        "column": 9
+      },
+      {
+        "line": 171,
+        "column": 9
+      },
+      {
+        "line": 172,
+        "column": 9
+      },
+      {
+        "line": 173,
+        "column": 16
+      },
+      {
+        "line": 174,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 161,
+          "column": 9
+        },
+        "assert": "try {\n    IterableUtils.forEachButLast(col, null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);List\u003cInteger\u003e last \u003d IterableUtils.forEachButLast(col, testClosure);try {\n    IterableUtils.forEachButLast(col, null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 147,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);List\u003cInteger\u003e last \u003d IterableUtils.forEachButLast(col, testClosure);assertTrue(listA.isEmpty() \u0026\u0026 !listB.isEmpty());",
+        "slice": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);List\u003cInteger\u003e last \u003d IterableUtils.forEachButLast(col, testClosure);assertTrue(listA.isEmpty() \u0026\u0026 !listB.isEmpty());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 168,
+          "column": 9
+        },
+        "assert": "IterableUtils.forEachButLast(null, testClosure);// null should be OK\ncol.add(null);col.add(null);last \u003d IterableUtils.forEachButLast(col, testClosure);assertNull(last);",
+        "slice": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);List\u003cInteger\u003e last \u003d IterableUtils.forEachButLast(col, testClosure);IterableUtils.forEachButLast(null, testClosure);// null should be OK\ncol.add(null);col.add(null);last \u003d IterableUtils.forEachButLast(col, testClosure);assertNull(last);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 159,
+          "column": 9
+        },
+        "assert": "assertSame(listB, last);",
+        "slice": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);List\u003cInteger\u003e last \u003d IterableUtils.forEachButLast(col, testClosure);assertSame(listB, last);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.containsWithEquator()",
+    "annotation": "@Test",
+    "code": "final List\u003cString\u003e base \u003d new ArrayList\u003c\u003e();base.add(\"AC\");base.add(\"BB\");base.add(\"CA\");final Equator\u003cString\u003e secondLetterEquator \u003d new Equator\u003cString\u003e() {\n\n    @Override\n    public boolean equate(final String o1, final String o2) {\n        return o1.charAt(1) \u003d\u003d o2.charAt(1);\n    }\n\n    @Override\n    public int hash(final String o) {\n        return o.charAt(1);\n    }\n};assertFalse(base.contains(\"CC\"));assertTrue(IterableUtils.contains(base, \"AC\", secondLetterEquator));assertTrue(IterableUtils.contains(base, \"CC\", secondLetterEquator));assertFalse(IterableUtils.contains(base, \"CX\", secondLetterEquator));assertFalse(IterableUtils.contains(null, null, secondLetterEquator));try {\n    IterableUtils.contains(base, \"AC\", null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n}",
+    "offset": [
+      {
+        "line": 179,
+        "column": 35
+      },
+      {
+        "line": 180,
+        "column": 9
+      },
+      {
+        "line": 181,
+        "column": 9
+      },
+      {
+        "line": 182,
+        "column": 9
+      },
+      {
+        "line": 184,
+        "column": 53
+      },
+      {
+        "line": 188,
+        "column": 24
+      },
+      {
+        "line": 188,
+        "column": 40
+      },
+      {
+        "line": 193,
+        "column": 24
+      },
+      {
+        "line": 198,
+        "column": 9
+      },
+      {
+        "line": 198,
+        "column": 21
+      },
+      {
+        "line": 199,
+        "column": 9
+      },
+      {
+        "line": 199,
+        "column": 20
+      },
+      {
+        "line": 200,
+        "column": 9
+      },
+      {
+        "line": 200,
+        "column": 20
+      },
+      {
+        "line": 201,
+        "column": 9
+      },
+      {
+        "line": 201,
+        "column": 21
+      },
+      {
+        "line": 202,
+        "column": 9
+      },
+      {
+        "line": 202,
+        "column": 21
+      },
+      {
+        "line": 205,
+        "column": 13
+      },
+      {
+        "line": 206,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 179,
+          "column": 9
+        },
+        "assert": "final List\u003cString\u003e base \u003d new ArrayList\u003c\u003e();base.add(\"AC\");base.add(\"BB\");base.add(\"CA\");final Equator\u003cString\u003e secondLetterEquator \u003d new Equator\u003cString\u003e() {\n\n    @Override\n    public boolean equate(final String o1, final String o2) {\n        return o1.charAt(1) \u003d\u003d o2.charAt(1);\n    }\n\n    @Override\n    public int hash(final String o) {\n        return o.charAt(1);\n    }\n};assertFalse(base.contains(\"CC\"));",
+        "slice": "final List\u003cString\u003e base \u003d new ArrayList\u003c\u003e();base.add(\"AC\");base.add(\"BB\");base.add(\"CA\");final Equator\u003cString\u003e secondLetterEquator \u003d new Equator\u003cString\u003e() {\n\n    @Override\n    public boolean equate(final String o1, final String o2) {\n        return o1.charAt(1) \u003d\u003d o2.charAt(1);\n    }\n\n    @Override\n    public int hash(final String o) {\n        return o.charAt(1);\n    }\n};assertFalse(base.contains(\"CC\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 199,
+          "column": 9
+        },
+        "assert": "assertTrue(IterableUtils.contains(base, \"AC\", secondLetterEquator));",
+        "slice": "final List\u003cString\u003e base \u003d new ArrayList\u003c\u003e();base.add(\"AC\");base.add(\"BB\");base.add(\"CA\");final Equator\u003cString\u003e secondLetterEquator \u003d new Equator\u003cString\u003e() {\n\n    @Override\n    public boolean equate(final String o1, final String o2) {\n        return o1.charAt(1) \u003d\u003d o2.charAt(1);\n    }\n\n    @Override\n    public int hash(final String o) {\n        return o.charAt(1);\n    }\n};assertTrue(IterableUtils.contains(base, \"AC\", secondLetterEquator));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 200,
+          "column": 9
+        },
+        "assert": "assertTrue(IterableUtils.contains(base, \"CC\", secondLetterEquator));",
+        "slice": "final List\u003cString\u003e base \u003d new ArrayList\u003c\u003e();base.add(\"AC\");base.add(\"BB\");base.add(\"CA\");final Equator\u003cString\u003e secondLetterEquator \u003d new Equator\u003cString\u003e() {\n\n    @Override\n    public boolean equate(final String o1, final String o2) {\n        return o1.charAt(1) \u003d\u003d o2.charAt(1);\n    }\n\n    @Override\n    public int hash(final String o) {\n        return o.charAt(1);\n    }\n};assertTrue(IterableUtils.contains(base, \"CC\", secondLetterEquator));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 201,
+          "column": 9
+        },
+        "assert": "assertFalse(IterableUtils.contains(base, \"CX\", secondLetterEquator));",
+        "slice": "final List\u003cString\u003e base \u003d new ArrayList\u003c\u003e();base.add(\"AC\");base.add(\"BB\");base.add(\"CA\");final Equator\u003cString\u003e secondLetterEquator \u003d new Equator\u003cString\u003e() {\n\n    @Override\n    public boolean equate(final String o1, final String o2) {\n        return o1.charAt(1) \u003d\u003d o2.charAt(1);\n    }\n\n    @Override\n    public int hash(final String o) {\n        return o.charAt(1);\n    }\n};assertFalse(IterableUtils.contains(base, \"CX\", secondLetterEquator));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 202,
+          "column": 9
+        },
+        "assert": "assertFalse(IterableUtils.contains(null, null, secondLetterEquator));",
+        "slice": "final Equator\u003cString\u003e secondLetterEquator \u003d new Equator\u003cString\u003e() {\n\n    @Override\n    public boolean equate(final String o1, final String o2) {\n        return o1.charAt(1) \u003d\u003d o2.charAt(1);\n    }\n\n    @Override\n    public int hash(final String o) {\n        return o.charAt(1);\n    }\n};assertFalse(IterableUtils.contains(null, null, secondLetterEquator));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 204,
+          "column": 9
+        },
+        "assert": "try {\n    IterableUtils.contains(base, \"AC\", null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n}",
+        "slice": "final List\u003cString\u003e base \u003d new ArrayList\u003c\u003e();base.add(\"AC\");base.add(\"BB\");base.add(\"CA\");try {\n    IterableUtils.contains(base, \"AC\", null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.frequency()",
+    "annotation": "@Test",
+    "code": "// null iterable test\nassertEquals(0, IterableUtils.frequency(null, 1));assertEquals(1, IterableUtils.frequency(iterableA, 1));assertEquals(2, IterableUtils.frequency(iterableA, 2));assertEquals(3, IterableUtils.frequency(iterableA, 3));assertEquals(4, IterableUtils.frequency(iterableA, 4));assertEquals(0, IterableUtils.frequency(iterableA, 5));assertEquals(0, IterableUtils.frequency(iterableB, 1L));assertEquals(4, IterableUtils.frequency(iterableB, 2L));assertEquals(3, IterableUtils.frequency(iterableB, 3L));assertEquals(2, IterableUtils.frequency(iterableB, 4L));assertEquals(1, IterableUtils.frequency(iterableB, 5L));// Ensure that generic bounds accept valid parameters, but return\n// expected results\n// e.g. no longs in the \"int\" Iterable\u003cNumber\u003e, and vice versa.\nfinal Iterable\u003cNumber\u003e iterableIntAsNumber \u003d Arrays.\u003cNumber\u003easList(1, 2, 3, 4, 5);final Iterable\u003cNumber\u003e iterableLongAsNumber \u003d Arrays.\u003cNumber\u003easList(1L, 2L, 3L, 4L, 5L);assertEquals(0, IterableUtils.frequency(iterableIntAsNumber, 2L));assertEquals(0, IterableUtils.frequency(iterableLongAsNumber, 2));final Set\u003cString\u003e set \u003d new HashSet\u003c\u003e();set.add(\"A\");set.add(\"C\");set.add(\"E\");set.add(\"E\");assertEquals(1, IterableUtils.frequency(set, \"A\"));assertEquals(0, IterableUtils.frequency(set, \"B\"));assertEquals(1, IterableUtils.frequency(set, \"C\"));assertEquals(0, IterableUtils.frequency(set, \"D\"));assertEquals(1, IterableUtils.frequency(set, \"E\"));final Bag\u003cString\u003e bag \u003d new HashBag\u003c\u003e();bag.add(\"A\", 3);bag.add(\"C\");bag.add(\"E\");bag.add(\"E\");assertEquals(3, IterableUtils.frequency(bag, \"A\"));assertEquals(0, IterableUtils.frequency(bag, \"B\"));assertEquals(1, IterableUtils.frequency(bag, \"C\"));assertEquals(0, IterableUtils.frequency(bag, \"D\"));assertEquals(2, IterableUtils.frequency(bag, \"E\"));",
+    "offset": [
+      {
+        "line": 214,
+        "column": 9
+      },
+      {
+        "line": 214,
+        "column": 25
+      },
+      {
+        "line": 216,
+        "column": 9
+      },
+      {
+        "line": 216,
+        "column": 25
+      },
+      {
+        "line": 217,
+        "column": 9
+      },
+      {
+        "line": 217,
+        "column": 25
+      },
+      {
+        "line": 218,
+        "column": 9
+      },
+      {
+        "line": 218,
+        "column": 25
+      },
+      {
+        "line": 219,
+        "column": 9
+      },
+      {
+        "line": 219,
+        "column": 25
+      },
+      {
+        "line": 220,
+        "column": 9
+      },
+      {
+        "line": 220,
+        "column": 25
+      },
+      {
+        "line": 222,
+        "column": 9
+      },
+      {
+        "line": 222,
+        "column": 25
+      },
+      {
+        "line": 223,
+        "column": 9
+      },
+      {
+        "line": 223,
+        "column": 25
+      },
+      {
+        "line": 224,
+        "column": 9
+      },
+      {
+        "line": 224,
+        "column": 25
+      },
+      {
+        "line": 225,
+        "column": 9
+      },
+      {
+        "line": 225,
+        "column": 25
+      },
+      {
+        "line": 226,
+        "column": 9
+      },
+      {
+        "line": 226,
+        "column": 25
+      },
+      {
+        "line": 231,
+        "column": 54
+      },
+      {
+        "line": 232,
+        "column": 55
+      },
+      {
+        "line": 233,
+        "column": 9
+      },
+      {
+        "line": 233,
+        "column": 25
+      },
+      {
+        "line": 234,
+        "column": 9
+      },
+      {
+        "line": 234,
+        "column": 25
+      },
+      {
+        "line": 236,
+        "column": 33
+      },
+      {
+        "line": 237,
+        "column": 9
+      },
+      {
+        "line": 238,
+        "column": 9
+      },
+      {
+        "line": 239,
+        "column": 9
+      },
+      {
+        "line": 240,
+        "column": 9
+      },
+      {
+        "line": 241,
+        "column": 9
+      },
+      {
+        "line": 241,
+        "column": 25
+      },
+      {
+        "line": 242,
+        "column": 9
+      },
+      {
+        "line": 242,
+        "column": 25
+      },
+      {
+        "line": 243,
+        "column": 9
+      },
+      {
+        "line": 243,
+        "column": 25
+      },
+      {
+        "line": 244,
+        "column": 9
+      },
+      {
+        "line": 244,
+        "column": 25
+      },
+      {
+        "line": 245,
+        "column": 9
+      },
+      {
+        "line": 245,
+        "column": 25
+      },
+      {
+        "line": 247,
+        "column": 33
+      },
+      {
+        "line": 248,
+        "column": 9
+      },
+      {
+        "line": 249,
+        "column": 9
+      },
+      {
+        "line": 250,
+        "column": 9
+      },
+      {
+        "line": 251,
+        "column": 9
+      },
+      {
+        "line": 252,
+        "column": 9
+      },
+      {
+        "line": 252,
+        "column": 25
+      },
+      {
+        "line": 253,
+        "column": 9
+      },
+      {
+        "line": 253,
+        "column": 25
+      },
+      {
+        "line": 254,
+        "column": 9
+      },
+      {
+        "line": 254,
+        "column": 25
+      },
+      {
+        "line": 255,
+        "column": 9
+      },
+      {
+        "line": 255,
+        "column": 25
+      },
+      {
+        "line": 256,
+        "column": 9
+      },
+      {
+        "line": 256,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 224,
+          "column": 9
+        },
+        "assert": "assertEquals(3, IterableUtils.frequency(iterableB, 3L));",
+        "slice": "assertEquals(3, IterableUtils.frequency(iterableB, 3L));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 256,
+          "column": 9
+        },
+        "assert": "assertEquals(2, IterableUtils.frequency(bag, \"E\"));",
+        "slice": "final Bag\u003cString\u003e bag \u003d new HashBag\u003c\u003e();bag.add(\"A\", 3);bag.add(\"C\");bag.add(\"E\");bag.add(\"E\");assertEquals(2, IterableUtils.frequency(bag, \"E\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 225,
+          "column": 9
+        },
+        "assert": "assertEquals(2, IterableUtils.frequency(iterableB, 4L));",
+        "slice": "assertEquals(2, IterableUtils.frequency(iterableB, 4L));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 226,
+          "column": 9
+        },
+        "assert": "assertEquals(1, IterableUtils.frequency(iterableB, 5L));",
+        "slice": "assertEquals(1, IterableUtils.frequency(iterableB, 5L));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 231,
+          "column": 9
+        },
+        "assert": "// Ensure that generic bounds accept valid parameters, but return\n// expected results\n// e.g. no longs in the \"int\" Iterable\u003cNumber\u003e, and vice versa.\nfinal Iterable\u003cNumber\u003e iterableIntAsNumber \u003d Arrays.\u003cNumber\u003easList(1, 2, 3, 4, 5);final Iterable\u003cNumber\u003e iterableLongAsNumber \u003d Arrays.\u003cNumber\u003easList(1L, 2L, 3L, 4L, 5L);assertEquals(0, IterableUtils.frequency(iterableIntAsNumber, 2L));",
+        "slice": "// Ensure that generic bounds accept valid parameters, but return\n// expected results\n// e.g. no longs in the \"int\" Iterable\u003cNumber\u003e, and vice versa.\nfinal Iterable\u003cNumber\u003e iterableIntAsNumber \u003d Arrays.\u003cNumber\u003easList(1, 2, 3, 4, 5);final Iterable\u003cNumber\u003e iterableLongAsNumber \u003d Arrays.\u003cNumber\u003easList(1L, 2L, 3L, 4L, 5L);assertEquals(0, IterableUtils.frequency(iterableIntAsNumber, 2L));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 234,
+          "column": 9
+        },
+        "assert": "assertEquals(0, IterableUtils.frequency(iterableLongAsNumber, 2));",
+        "slice": "// Ensure that generic bounds accept valid parameters, but return\n// expected results\n// e.g. no longs in the \"int\" Iterable\u003cNumber\u003e, and vice versa.\nfinal Iterable\u003cNumber\u003e iterableIntAsNumber \u003d Arrays.\u003cNumber\u003easList(1, 2, 3, 4, 5);final Iterable\u003cNumber\u003e iterableLongAsNumber \u003d Arrays.\u003cNumber\u003easList(1L, 2L, 3L, 4L, 5L);assertEquals(0, IterableUtils.frequency(iterableLongAsNumber, 2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 236,
+          "column": 9
+        },
+        "assert": "final Set\u003cString\u003e set \u003d new HashSet\u003c\u003e();set.add(\"A\");set.add(\"C\");set.add(\"E\");set.add(\"E\");assertEquals(1, IterableUtils.frequency(set, \"A\"));",
+        "slice": "final Set\u003cString\u003e set \u003d new HashSet\u003c\u003e();set.add(\"A\");set.add(\"C\");set.add(\"E\");set.add(\"E\");assertEquals(1, IterableUtils.frequency(set, \"A\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 242,
+          "column": 9
+        },
+        "assert": "assertEquals(0, IterableUtils.frequency(set, \"B\"));",
+        "slice": "final Set\u003cString\u003e set \u003d new HashSet\u003c\u003e();set.add(\"A\");set.add(\"C\");set.add(\"E\");set.add(\"E\");assertEquals(0, IterableUtils.frequency(set, \"B\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 243,
+          "column": 9
+        },
+        "assert": "assertEquals(1, IterableUtils.frequency(set, \"C\"));",
+        "slice": "final Set\u003cString\u003e set \u003d new HashSet\u003c\u003e();set.add(\"A\");set.add(\"C\");set.add(\"E\");set.add(\"E\");assertEquals(1, IterableUtils.frequency(set, \"C\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 244,
+          "column": 9
+        },
+        "assert": "assertEquals(0, IterableUtils.frequency(set, \"D\"));",
+        "slice": "final Set\u003cString\u003e set \u003d new HashSet\u003c\u003e();set.add(\"A\");set.add(\"C\");set.add(\"E\");set.add(\"E\");assertEquals(0, IterableUtils.frequency(set, \"D\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 245,
+          "column": 9
+        },
+        "assert": "assertEquals(1, IterableUtils.frequency(set, \"E\"));",
+        "slice": "final Set\u003cString\u003e set \u003d new HashSet\u003c\u003e();set.add(\"A\");set.add(\"C\");set.add(\"E\");set.add(\"E\");assertEquals(1, IterableUtils.frequency(set, \"E\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 214,
+          "column": 9
+        },
+        "assert": "// null iterable test\nassertEquals(0, IterableUtils.frequency(null, 1));",
+        "slice": "// null iterable test\nassertEquals(0, IterableUtils.frequency(null, 1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 247,
+          "column": 9
+        },
+        "assert": "final Bag\u003cString\u003e bag \u003d new HashBag\u003c\u003e();bag.add(\"A\", 3);bag.add(\"C\");bag.add(\"E\");bag.add(\"E\");assertEquals(3, IterableUtils.frequency(bag, \"A\"));",
+        "slice": "final Bag\u003cString\u003e bag \u003d new HashBag\u003c\u003e();bag.add(\"A\", 3);bag.add(\"C\");bag.add(\"E\");bag.add(\"E\");assertEquals(3, IterableUtils.frequency(bag, \"A\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 216,
+          "column": 9
+        },
+        "assert": "assertEquals(1, IterableUtils.frequency(iterableA, 1));",
+        "slice": "assertEquals(1, IterableUtils.frequency(iterableA, 1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 217,
+          "column": 9
+        },
+        "assert": "assertEquals(2, IterableUtils.frequency(iterableA, 2));",
+        "slice": "assertEquals(2, IterableUtils.frequency(iterableA, 2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 218,
+          "column": 9
+        },
+        "assert": "assertEquals(3, IterableUtils.frequency(iterableA, 3));",
+        "slice": "assertEquals(3, IterableUtils.frequency(iterableA, 3));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 219,
+          "column": 9
+        },
+        "assert": "assertEquals(4, IterableUtils.frequency(iterableA, 4));",
+        "slice": "assertEquals(4, IterableUtils.frequency(iterableA, 4));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 220,
+          "column": 9
+        },
+        "assert": "assertEquals(0, IterableUtils.frequency(iterableA, 5));",
+        "slice": "assertEquals(0, IterableUtils.frequency(iterableA, 5));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 253,
+          "column": 9
+        },
+        "assert": "assertEquals(0, IterableUtils.frequency(bag, \"B\"));",
+        "slice": "final Bag\u003cString\u003e bag \u003d new HashBag\u003c\u003e();bag.add(\"A\", 3);bag.add(\"C\");bag.add(\"E\");bag.add(\"E\");assertEquals(0, IterableUtils.frequency(bag, \"B\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 222,
+          "column": 9
+        },
+        "assert": "assertEquals(0, IterableUtils.frequency(iterableB, 1L));",
+        "slice": "assertEquals(0, IterableUtils.frequency(iterableB, 1L));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 254,
+          "column": 9
+        },
+        "assert": "assertEquals(1, IterableUtils.frequency(bag, \"C\"));",
+        "slice": "final Bag\u003cString\u003e bag \u003d new HashBag\u003c\u003e();bag.add(\"A\", 3);bag.add(\"C\");bag.add(\"E\");bag.add(\"E\");assertEquals(1, IterableUtils.frequency(bag, \"C\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 223,
+          "column": 9
+        },
+        "assert": "assertEquals(4, IterableUtils.frequency(iterableB, 2L));",
+        "slice": "assertEquals(4, IterableUtils.frequency(iterableB, 2L));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        },
+        "assert": "assertEquals(0, IterableUtils.frequency(bag, \"D\"));",
+        "slice": "final Bag\u003cString\u003e bag \u003d new HashBag\u003c\u003e();bag.add(\"A\", 3);bag.add(\"C\");bag.add(\"E\");bag.add(\"E\");assertEquals(0, IterableUtils.frequency(bag, \"D\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.frequencyOfNull()",
+    "annotation": "@Test",
+    "code": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();assertEquals(0, IterableUtils.frequency(list, null));list.add(\"A\");assertEquals(0, IterableUtils.frequency(list, null));list.add(null);assertEquals(1, IterableUtils.frequency(list, null));list.add(\"B\");assertEquals(1, IterableUtils.frequency(list, null));list.add(null);assertEquals(2, IterableUtils.frequency(list, null));list.add(\"B\");assertEquals(2, IterableUtils.frequency(list, null));list.add(null);assertEquals(3, IterableUtils.frequency(list, null));",
+    "offset": [
+      {
+        "line": 261,
+        "column": 35
+      },
+      {
+        "line": 262,
+        "column": 9
+      },
+      {
+        "line": 262,
+        "column": 25
+      },
+      {
+        "line": 263,
+        "column": 9
+      },
+      {
+        "line": 264,
+        "column": 9
+      },
+      {
+        "line": 264,
+        "column": 25
+      },
+      {
+        "line": 265,
+        "column": 9
+      },
+      {
+        "line": 266,
+        "column": 9
+      },
+      {
+        "line": 266,
+        "column": 25
+      },
+      {
+        "line": 267,
+        "column": 9
+      },
+      {
+        "line": 268,
+        "column": 9
+      },
+      {
+        "line": 268,
+        "column": 25
+      },
+      {
+        "line": 269,
+        "column": 9
+      },
+      {
+        "line": 270,
+        "column": 9
+      },
+      {
+        "line": 270,
+        "column": 25
+      },
+      {
+        "line": 271,
+        "column": 9
+      },
+      {
+        "line": 272,
+        "column": 9
+      },
+      {
+        "line": 272,
+        "column": 25
+      },
+      {
+        "line": 273,
+        "column": 9
+      },
+      {
+        "line": 274,
+        "column": 9
+      },
+      {
+        "line": 274,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 273,
+          "column": 9
+        },
+        "assert": "list.add(null);assertEquals(3, IterableUtils.frequency(list, null));",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(\"A\");list.add(null);list.add(\"B\");list.add(null);list.add(\"B\");list.add(null);assertEquals(3, IterableUtils.frequency(list, null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        },
+        "assert": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();assertEquals(0, IterableUtils.frequency(list, null));",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();assertEquals(0, IterableUtils.frequency(list, null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        },
+        "assert": "list.add(\"A\");assertEquals(0, IterableUtils.frequency(list, null));",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(\"A\");assertEquals(0, IterableUtils.frequency(list, null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        },
+        "assert": "list.add(null);assertEquals(1, IterableUtils.frequency(list, null));",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(\"A\");list.add(null);assertEquals(1, IterableUtils.frequency(list, null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 267,
+          "column": 9
+        },
+        "assert": "list.add(\"B\");assertEquals(1, IterableUtils.frequency(list, null));",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(\"A\");list.add(null);list.add(\"B\");assertEquals(1, IterableUtils.frequency(list, null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 269,
+          "column": 9
+        },
+        "assert": "list.add(null);assertEquals(2, IterableUtils.frequency(list, null));",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(\"A\");list.add(null);list.add(\"B\");list.add(null);assertEquals(2, IterableUtils.frequency(list, null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 271,
+          "column": 9
+        },
+        "assert": "list.add(\"B\");assertEquals(2, IterableUtils.frequency(list, null));",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(\"A\");list.add(null);list.add(\"B\");list.add(null);list.add(\"B\");assertEquals(2, IterableUtils.frequency(list, null));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.find()",
+    "annotation": "@Test",
+    "code": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);Integer test \u003d IterableUtils.find(iterableA, testPredicate);assertTrue(test.equals(4));testPredicate \u003d equalPredicate((Number) 45);test \u003d IterableUtils.find(iterableA, testPredicate);assertTrue(test \u003d\u003d null);assertNull(IterableUtils.find(null, testPredicate));try {\n    assertNull(IterableUtils.find(iterableA, null));\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 279,
+        "column": 43
+      },
+      {
+        "line": 280,
+        "column": 24
+      },
+      {
+        "line": 281,
+        "column": 9
+      },
+      {
+        "line": 281,
+        "column": 20
+      },
+      {
+        "line": 282,
+        "column": 25
+      },
+      {
+        "line": 283,
+        "column": 16
+      },
+      {
+        "line": 284,
+        "column": 9
+      },
+      {
+        "line": 285,
+        "column": 9
+      },
+      {
+        "line": 285,
+        "column": 20
+      },
+      {
+        "line": 287,
+        "column": 13
+      },
+      {
+        "line": 287,
+        "column": 24
+      },
+      {
+        "line": 288,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 279,
+          "column": 9
+        },
+        "assert": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);Integer test \u003d IterableUtils.find(iterableA, testPredicate);assertTrue(test.equals(4));",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);Integer test \u003d IterableUtils.find(iterableA, testPredicate);assertTrue(test.equals(4));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 282,
+          "column": 9
+        },
+        "assert": "testPredicate \u003d equalPredicate((Number) 45);test \u003d IterableUtils.find(iterableA, testPredicate);assertTrue(test \u003d\u003d null);",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);Integer test \u003d IterableUtils.find(iterableA, testPredicate);testPredicate \u003d equalPredicate((Number) 45);test \u003d IterableUtils.find(iterableA, testPredicate);assertTrue(test \u003d\u003d null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        },
+        "assert": "assertNull(IterableUtils.find(null, testPredicate));",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);Integer test \u003d IterableUtils.find(iterableA, testPredicate);testPredicate \u003d equalPredicate((Number) 45);test \u003d IterableUtils.find(iterableA, testPredicate);assertNull(IterableUtils.find(null, testPredicate));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 286,
+          "column": 9
+        },
+        "assert": "try {\n    assertNull(IterableUtils.find(iterableA, null));\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);Integer test \u003d IterableUtils.find(iterableA, testPredicate);testPredicate \u003d equalPredicate((Number) 45);test \u003d IterableUtils.find(iterableA, testPredicate);try {\n    assertNull(IterableUtils.find(iterableA, null));\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.indexOf()",
+    "annotation": "@Test",
+    "code": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);int index \u003d IterableUtils.indexOf(iterableA, testPredicate);assertEquals(6, index);testPredicate \u003d equalPredicate((Number) 45);index \u003d IterableUtils.indexOf(iterableA, testPredicate);assertEquals(-1, index);assertEquals(-1, IterableUtils.indexOf(null, testPredicate));try {\n    IterableUtils.indexOf(iterableA, null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 296,
+        "column": 43
+      },
+      {
+        "line": 297,
+        "column": 21
+      },
+      {
+        "line": 298,
+        "column": 9
+      },
+      {
+        "line": 299,
+        "column": 25
+      },
+      {
+        "line": 300,
+        "column": 17
+      },
+      {
+        "line": 301,
+        "column": 9
+      },
+      {
+        "line": 302,
+        "column": 9
+      },
+      {
+        "line": 302,
+        "column": 26
+      },
+      {
+        "line": 304,
+        "column": 13
+      },
+      {
+        "line": 305,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 296,
+          "column": 9
+        },
+        "assert": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);int index \u003d IterableUtils.indexOf(iterableA, testPredicate);assertEquals(6, index);",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);int index \u003d IterableUtils.indexOf(iterableA, testPredicate);assertEquals(6, index);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 299,
+          "column": 9
+        },
+        "assert": "testPredicate \u003d equalPredicate((Number) 45);index \u003d IterableUtils.indexOf(iterableA, testPredicate);assertEquals(-1, index);",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);int index \u003d IterableUtils.indexOf(iterableA, testPredicate);testPredicate \u003d equalPredicate((Number) 45);index \u003d IterableUtils.indexOf(iterableA, testPredicate);assertEquals(-1, index);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 302,
+          "column": 9
+        },
+        "assert": "assertEquals(-1, IterableUtils.indexOf(null, testPredicate));",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);int index \u003d IterableUtils.indexOf(iterableA, testPredicate);testPredicate \u003d equalPredicate((Number) 45);index \u003d IterableUtils.indexOf(iterableA, testPredicate);assertEquals(-1, IterableUtils.indexOf(null, testPredicate));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 303,
+          "column": 9
+        },
+        "assert": "try {\n    IterableUtils.indexOf(iterableA, null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);int index \u003d IterableUtils.indexOf(iterableA, testPredicate);testPredicate \u003d equalPredicate((Number) 45);index \u003d IterableUtils.indexOf(iterableA, testPredicate);try {\n    IterableUtils.indexOf(iterableA, null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.countMatches()",
+    "annotation": "@Test",
+    "code": "assertEquals(4, IterableUtils.countMatches(iterableB, EQUALS_TWO));assertEquals(0, IterableUtils.countMatches(null, EQUALS_TWO));try {\n    assertEquals(0, IterableUtils.countMatches(iterableA, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}try {\n    assertEquals(0, IterableUtils.countMatches(null, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 313,
+        "column": 9
+      },
+      {
+        "line": 313,
+        "column": 25
+      },
+      {
+        "line": 314,
+        "column": 9
+      },
+      {
+        "line": 314,
+        "column": 25
+      },
+      {
+        "line": 317,
+        "column": 13
+      },
+      {
+        "line": 317,
+        "column": 29
+      },
+      {
+        "line": 318,
+        "column": 13
+      },
+      {
+        "line": 324,
+        "column": 13
+      },
+      {
+        "line": 324,
+        "column": 29
+      },
+      {
+        "line": 325,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 323,
+          "column": 9
+        },
+        "assert": "try {\n    assertEquals(0, IterableUtils.countMatches(null, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+        "slice": "try {\n    assertEquals(0, IterableUtils.countMatches(null, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 313,
+          "column": 9
+        },
+        "assert": "assertEquals(4, IterableUtils.countMatches(iterableB, EQUALS_TWO));",
+        "slice": "assertEquals(4, IterableUtils.countMatches(iterableB, EQUALS_TWO));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 314,
+          "column": 9
+        },
+        "assert": "assertEquals(0, IterableUtils.countMatches(null, EQUALS_TWO));",
+        "slice": "assertEquals(0, IterableUtils.countMatches(null, EQUALS_TWO));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 316,
+          "column": 9
+        },
+        "assert": "try {\n    assertEquals(0, IterableUtils.countMatches(iterableA, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+        "slice": "try {\n    assertEquals(0, IterableUtils.countMatches(iterableA, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.matchesAny()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();try {\n    assertFalse(IterableUtils.matchesAny(null, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}try {\n    assertFalse(IterableUtils.matchesAny(list, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}assertFalse(IterableUtils.matchesAny(null, EQUALS_TWO));assertFalse(IterableUtils.matchesAny(list, EQUALS_TWO));list.add(1);list.add(3);list.add(4);assertFalse(IterableUtils.matchesAny(list, EQUALS_TWO));list.add(2);assertEquals(true, IterableUtils.matchesAny(list, EQUALS_TWO));",
+    "offset": [
+      {
+        "line": 333,
+        "column": 36
+      },
+      {
+        "line": 336,
+        "column": 13
+      },
+      {
+        "line": 336,
+        "column": 25
+      },
+      {
+        "line": 337,
+        "column": 13
+      },
+      {
+        "line": 343,
+        "column": 13
+      },
+      {
+        "line": 343,
+        "column": 25
+      },
+      {
+        "line": 344,
+        "column": 13
+      },
+      {
+        "line": 349,
+        "column": 9
+      },
+      {
+        "line": 349,
+        "column": 21
+      },
+      {
+        "line": 350,
+        "column": 9
+      },
+      {
+        "line": 350,
+        "column": 21
+      },
+      {
+        "line": 351,
+        "column": 9
+      },
+      {
+        "line": 352,
+        "column": 9
+      },
+      {
+        "line": 353,
+        "column": 9
+      },
+      {
+        "line": 354,
+        "column": 9
+      },
+      {
+        "line": 354,
+        "column": 21
+      },
+      {
+        "line": 356,
+        "column": 9
+      },
+      {
+        "line": 357,
+        "column": 9
+      },
+      {
+        "line": 357,
+        "column": 28
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 356,
+          "column": 9
+        },
+        "assert": "list.add(2);assertEquals(true, IterableUtils.matchesAny(list, EQUALS_TWO));",
+        "slice": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(1);list.add(3);list.add(4);list.add(2);assertEquals(true, IterableUtils.matchesAny(list, EQUALS_TWO));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 342,
+          "column": 9
+        },
+        "assert": "try {\n    assertFalse(IterableUtils.matchesAny(list, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+        "slice": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();try {\n    assertFalse(IterableUtils.matchesAny(list, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 333,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();try {\n    assertFalse(IterableUtils.matchesAny(null, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+        "slice": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();try {\n    assertFalse(IterableUtils.matchesAny(null, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 349,
+          "column": 9
+        },
+        "assert": "assertFalse(IterableUtils.matchesAny(null, EQUALS_TWO));",
+        "slice": "assertFalse(IterableUtils.matchesAny(null, EQUALS_TWO));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 350,
+          "column": 9
+        },
+        "assert": "assertFalse(IterableUtils.matchesAny(list, EQUALS_TWO));",
+        "slice": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();assertFalse(IterableUtils.matchesAny(list, EQUALS_TWO));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 351,
+          "column": 9
+        },
+        "assert": "list.add(1);list.add(3);list.add(4);assertFalse(IterableUtils.matchesAny(list, EQUALS_TWO));",
+        "slice": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(1);list.add(3);list.add(4);assertFalse(IterableUtils.matchesAny(list, EQUALS_TWO));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.matchesAll()",
+    "annotation": "@Test",
+    "code": "try {\n    assertFalse(IterableUtils.matchesAll(null, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}try {\n    assertFalse(IterableUtils.matchesAll(iterableA, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}final Predicate\u003cInteger\u003e lessThanFive \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer object) {\n        return object \u003c 5;\n    }\n};assertTrue(IterableUtils.matchesAll(iterableA, lessThanFive));final Predicate\u003cInteger\u003e lessThanFour \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer object) {\n        return object \u003c 4;\n    }\n};assertFalse(IterableUtils.matchesAll(iterableA, lessThanFour));assertTrue(IterableUtils.matchesAll(null, lessThanFour));assertTrue(IterableUtils.matchesAll(emptyIterable, lessThanFour));",
+    "offset": [
+      {
+        "line": 363,
+        "column": 13
+      },
+      {
+        "line": 363,
+        "column": 25
+      },
+      {
+        "line": 364,
+        "column": 13
+      },
+      {
+        "line": 370,
+        "column": 13
+      },
+      {
+        "line": 370,
+        "column": 25
+      },
+      {
+        "line": 371,
+        "column": 13
+      },
+      {
+        "line": 376,
+        "column": 49
+      },
+      {
+        "line": 382,
+        "column": 9
+      },
+      {
+        "line": 382,
+        "column": 20
+      },
+      {
+        "line": 384,
+        "column": 49
+      },
+      {
+        "line": 390,
+        "column": 9
+      },
+      {
+        "line": 390,
+        "column": 21
+      },
+      {
+        "line": 392,
+        "column": 9
+      },
+      {
+        "line": 392,
+        "column": 20
+      },
+      {
+        "line": 393,
+        "column": 9
+      },
+      {
+        "line": 393,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 384,
+          "column": 9
+        },
+        "assert": "final Predicate\u003cInteger\u003e lessThanFour \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer object) {\n        return object \u003c 4;\n    }\n};assertFalse(IterableUtils.matchesAll(iterableA, lessThanFour));",
+        "slice": "final Predicate\u003cInteger\u003e lessThanFour \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer object) {\n        return object \u003c 4;\n    }\n};assertFalse(IterableUtils.matchesAll(iterableA, lessThanFour));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 369,
+          "column": 9
+        },
+        "assert": "try {\n    assertFalse(IterableUtils.matchesAll(iterableA, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+        "slice": "try {\n    assertFalse(IterableUtils.matchesAll(iterableA, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 376,
+          "column": 9
+        },
+        "assert": "final Predicate\u003cInteger\u003e lessThanFive \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer object) {\n        return object \u003c 5;\n    }\n};assertTrue(IterableUtils.matchesAll(iterableA, lessThanFive));",
+        "slice": "final Predicate\u003cInteger\u003e lessThanFive \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer object) {\n        return object \u003c 5;\n    }\n};assertTrue(IterableUtils.matchesAll(iterableA, lessThanFive));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 392,
+          "column": 9
+        },
+        "assert": "assertTrue(IterableUtils.matchesAll(null, lessThanFour));",
+        "slice": "final Predicate\u003cInteger\u003e lessThanFour \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer object) {\n        return object \u003c 4;\n    }\n};assertTrue(IterableUtils.matchesAll(null, lessThanFour));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 393,
+          "column": 9
+        },
+        "assert": "assertTrue(IterableUtils.matchesAll(emptyIterable, lessThanFour));",
+        "slice": "final Predicate\u003cInteger\u003e lessThanFour \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer object) {\n        return object \u003c 4;\n    }\n};assertTrue(IterableUtils.matchesAll(emptyIterable, lessThanFour));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 362,
+          "column": 9
+        },
+        "assert": "try {\n    assertFalse(IterableUtils.matchesAll(null, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+        "slice": "try {\n    assertFalse(IterableUtils.matchesAll(null, null));\n    fail(\"predicate must not be null\");\n} catch (final NullPointerException ex) {\n    // expected\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.getFromIterableIndexOutOfBoundsException()",
+    "annotation": "@Test(expected \u003d IndexOutOfBoundsException.class)",
+    "code": "// Collection, entry exists\nfinal Bag\u003cString\u003e bag \u003d new HashBag\u003c\u003e();bag.add(\"element\", 1);// Collection, non-existent entry\nIterableUtils.get(bag, 1);",
+    "offset": [
+      {
+        "line": 406,
+        "column": 33
+      },
+      {
+        "line": 407,
+        "column": 9
+      },
+      {
+        "line": 409,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 406,
+          "column": 9
+        },
+        "assert": "// Collection, entry exists\nfinal Bag\u003cString\u003e bag \u003d new HashBag\u003c\u003e();bag.add(\"element\", 1);// Collection, non-existent entry\nIterableUtils.get(bag, 1);",
+        "slice": "// Collection, entry exists\nfinal Bag\u003cString\u003e bag \u003d new HashBag\u003c\u003e();bag.add(\"element\", 1);// Collection, non-existent entry\nIterableUtils.get(bag, 1);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.firstFromIterableIndexOutOfBoundsException()",
+    "annotation": "@Test(expected \u003d IndexOutOfBoundsException.class)",
+    "code": "// Collection, entry exists\nfinal Bag\u003cString\u003e bag \u003d new HashBag\u003c\u003e();// Collection, non-existent entry\nIterableUtils.first(bag);",
+    "offset": [
+      {
+        "line": 422,
+        "column": 33
+      },
+      {
+        "line": 424,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 422,
+          "column": 9
+        },
+        "assert": "// Collection, entry exists\nfinal Bag\u003cString\u003e bag \u003d new HashBag\u003c\u003e();// Collection, non-existent entry\nIterableUtils.first(bag);",
+        "slice": "// Collection, entry exists\nfinal Bag\u003cString\u003e bag \u003d new HashBag\u003c\u003e();// Collection, non-existent entry\nIterableUtils.first(bag);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.partition()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e input \u003d new ArrayList\u003c\u003e();input.add(1);input.add(2);input.add(3);input.add(4);List\u003cList\u003cInteger\u003e\u003e partitions \u003d IterableUtils.partition(input, EQUALS_TWO);assertEquals(2, partitions.size());// first partition contains 2\nCollection\u003cInteger\u003e partition \u003d partitions.get(0);assertEquals(1, partition.size());assertEquals(2, CollectionUtils.extractSingleton(partition).intValue());// second partition contains 1, 3, and 4\nfinal Integer[] expected \u003d { 1, 3, 4 };partition \u003d partitions.get(1);Assert.assertArrayEquals(expected, partition.toArray());partitions \u003d IterableUtils.partition((List\u003cInteger\u003e) null, EQUALS_TWO);assertEquals(2, partitions.size());assertTrue(partitions.get(0).isEmpty());assertTrue(partitions.get(1).isEmpty());partitions \u003d IterableUtils.partition(input);assertEquals(1, partitions.size());assertEquals(input, partitions.get(0));try {\n    IterableUtils.partition(input, (Predicate\u003cInteger\u003e) null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 430,
+        "column": 37
+      },
+      {
+        "line": 431,
+        "column": 9
+      },
+      {
+        "line": 432,
+        "column": 9
+      },
+      {
+        "line": 433,
+        "column": 9
+      },
+      {
+        "line": 434,
+        "column": 9
+      },
+      {
+        "line": 435,
+        "column": 42
+      },
+      {
+        "line": 436,
+        "column": 9
+      },
+      {
+        "line": 436,
+        "column": 25
+      },
+      {
+        "line": 439,
+        "column": 41
+      },
+      {
+        "line": 440,
+        "column": 9
+      },
+      {
+        "line": 440,
+        "column": 25
+      },
+      {
+        "line": 441,
+        "column": 9
+      },
+      {
+        "line": 441,
+        "column": 25
+      },
+      {
+        "line": 441,
+        "column": 25
+      },
+      {
+        "line": 445,
+        "column": 21
+      },
+      {
+        "line": 446,
+        "column": 9
+      },
+      {
+        "line": 446,
+        "column": 44
+      },
+      {
+        "line": 448,
+        "column": 22
+      },
+      {
+        "line": 449,
+        "column": 9
+      },
+      {
+        "line": 449,
+        "column": 25
+      },
+      {
+        "line": 450,
+        "column": 9
+      },
+      {
+        "line": 450,
+        "column": 20
+      },
+      {
+        "line": 450,
+        "column": 20
+      },
+      {
+        "line": 451,
+        "column": 9
+      },
+      {
+        "line": 451,
+        "column": 20
+      },
+      {
+        "line": 451,
+        "column": 20
+      },
+      {
+        "line": 453,
+        "column": 22
+      },
+      {
+        "line": 454,
+        "column": 9
+      },
+      {
+        "line": 454,
+        "column": 25
+      },
+      {
+        "line": 455,
+        "column": 9
+      },
+      {
+        "line": 455,
+        "column": 29
+      },
+      {
+        "line": 458,
+        "column": 13
+      },
+      {
+        "line": 459,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 448,
+          "column": 9
+        },
+        "assert": "partitions \u003d IterableUtils.partition((List\u003cInteger\u003e) null, EQUALS_TWO);assertEquals(2, partitions.size());",
+        "slice": "final List\u003cInteger\u003e input \u003d new ArrayList\u003c\u003e();input.add(1);input.add(2);input.add(3);input.add(4);List\u003cList\u003cInteger\u003e\u003e partitions \u003d IterableUtils.partition(input, EQUALS_TWO);// first partition contains 2\nCollection\u003cInteger\u003e partition \u003d partitions.get(0);partition \u003d partitions.get(1);partitions \u003d IterableUtils.partition((List\u003cInteger\u003e) null, EQUALS_TWO);assertEquals(2, partitions.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 450,
+          "column": 9
+        },
+        "assert": "assertTrue(partitions.get(0).isEmpty());",
+        "slice": "final List\u003cInteger\u003e input \u003d new ArrayList\u003c\u003e();input.add(1);input.add(2);input.add(3);input.add(4);List\u003cList\u003cInteger\u003e\u003e partitions \u003d IterableUtils.partition(input, EQUALS_TWO);// first partition contains 2\nCollection\u003cInteger\u003e partition \u003d partitions.get(0);partition \u003d partitions.get(1);partitions \u003d IterableUtils.partition((List\u003cInteger\u003e) null, EQUALS_TWO);assertTrue(partitions.get(0).isEmpty());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 451,
+          "column": 9
+        },
+        "assert": "assertTrue(partitions.get(1).isEmpty());",
+        "slice": "final List\u003cInteger\u003e input \u003d new ArrayList\u003c\u003e();input.add(1);input.add(2);input.add(3);input.add(4);List\u003cList\u003cInteger\u003e\u003e partitions \u003d IterableUtils.partition(input, EQUALS_TWO);// first partition contains 2\nCollection\u003cInteger\u003e partition \u003d partitions.get(0);partition \u003d partitions.get(1);partitions \u003d IterableUtils.partition((List\u003cInteger\u003e) null, EQUALS_TWO);assertTrue(partitions.get(1).isEmpty());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 453,
+          "column": 9
+        },
+        "assert": "partitions \u003d IterableUtils.partition(input);assertEquals(1, partitions.size());",
+        "slice": "final List\u003cInteger\u003e input \u003d new ArrayList\u003c\u003e();input.add(1);input.add(2);input.add(3);input.add(4);List\u003cList\u003cInteger\u003e\u003e partitions \u003d IterableUtils.partition(input, EQUALS_TWO);// first partition contains 2\nCollection\u003cInteger\u003e partition \u003d partitions.get(0);partition \u003d partitions.get(1);partitions \u003d IterableUtils.partition((List\u003cInteger\u003e) null, EQUALS_TWO);partitions \u003d IterableUtils.partition(input);assertEquals(1, partitions.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 439,
+          "column": 9
+        },
+        "assert": "// first partition contains 2\nCollection\u003cInteger\u003e partition \u003d partitions.get(0);assertEquals(1, partition.size());",
+        "slice": "final List\u003cInteger\u003e input \u003d new ArrayList\u003c\u003e();input.add(1);input.add(2);input.add(3);input.add(4);List\u003cList\u003cInteger\u003e\u003e partitions \u003d IterableUtils.partition(input, EQUALS_TWO);// first partition contains 2\nCollection\u003cInteger\u003e partition \u003d partitions.get(0);assertEquals(1, partition.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 455,
+          "column": 9
+        },
+        "assert": "assertEquals(input, partitions.get(0));",
+        "slice": "final List\u003cInteger\u003e input \u003d new ArrayList\u003c\u003e();input.add(1);input.add(2);input.add(3);input.add(4);List\u003cList\u003cInteger\u003e\u003e partitions \u003d IterableUtils.partition(input, EQUALS_TWO);// first partition contains 2\nCollection\u003cInteger\u003e partition \u003d partitions.get(0);partition \u003d partitions.get(1);partitions \u003d IterableUtils.partition((List\u003cInteger\u003e) null, EQUALS_TWO);partitions \u003d IterableUtils.partition(input);assertEquals(input, partitions.get(0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 441,
+          "column": 9
+        },
+        "assert": "assertEquals(2, CollectionUtils.extractSingleton(partition).intValue());",
+        "slice": "final List\u003cInteger\u003e input \u003d new ArrayList\u003c\u003e();input.add(1);input.add(2);input.add(3);input.add(4);List\u003cList\u003cInteger\u003e\u003e partitions \u003d IterableUtils.partition(input, EQUALS_TWO);// first partition contains 2\nCollection\u003cInteger\u003e partition \u003d partitions.get(0);assertEquals(2, CollectionUtils.extractSingleton(partition).intValue());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 457,
+          "column": 9
+        },
+        "assert": "try {\n    IterableUtils.partition(input, (Predicate\u003cInteger\u003e) null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final List\u003cInteger\u003e input \u003d new ArrayList\u003c\u003e();input.add(1);input.add(2);input.add(3);input.add(4);List\u003cList\u003cInteger\u003e\u003e partitions \u003d IterableUtils.partition(input, EQUALS_TWO);// first partition contains 2\nCollection\u003cInteger\u003e partition \u003d partitions.get(0);partition \u003d partitions.get(1);partitions \u003d IterableUtils.partition((List\u003cInteger\u003e) null, EQUALS_TWO);partitions \u003d IterableUtils.partition(input);try {\n    IterableUtils.partition(input, (Predicate\u003cInteger\u003e) null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 444,
+          "column": 9
+        },
+        "assert": "// second partition contains 1, 3, and 4\nfinal Integer[] expected \u003d { 1, 3, 4 };partition \u003d partitions.get(1);Assert.assertArrayEquals(expected, partition.toArray());",
+        "slice": "final List\u003cInteger\u003e input \u003d new ArrayList\u003c\u003e();input.add(1);input.add(2);input.add(3);input.add(4);List\u003cList\u003cInteger\u003e\u003e partitions \u003d IterableUtils.partition(input, EQUALS_TWO);// first partition contains 2\nCollection\u003cInteger\u003e partition \u003d partitions.get(0);// second partition contains 1, 3, and 4\nfinal Integer[] expected \u003d { 1, 3, 4 };partition \u003d partitions.get(1);Assert.assertArrayEquals(expected, partition.toArray());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 430,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e input \u003d new ArrayList\u003c\u003e();input.add(1);input.add(2);input.add(3);input.add(4);List\u003cList\u003cInteger\u003e\u003e partitions \u003d IterableUtils.partition(input, EQUALS_TWO);assertEquals(2, partitions.size());",
+        "slice": "final List\u003cInteger\u003e input \u003d new ArrayList\u003c\u003e();input.add(1);input.add(2);input.add(3);input.add(4);List\u003cList\u003cInteger\u003e\u003e partitions \u003d IterableUtils.partition(input, EQUALS_TWO);assertEquals(2, partitions.size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.testToString()",
+    "annotation": "@Test",
+    "code": "String result \u003d IterableUtils.toString(iterableA);assertEquals(\"[1, 2, 2, 3, 3, 3, 4, 4, 4, 4]\", result);result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e());assertEquals(\"[]\", result);result \u003d IterableUtils.toString(null);assertEquals(\"[]\", result);result \u003d IterableUtils.toString(iterableA, new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n});assertEquals(\"[2, 4, 4, 6, 6, 6, 8, 8, 8, 8]\", result);result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e(), new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        fail(\"not supposed to reach here\");\n        return \"\";\n    }\n});assertEquals(\"[]\", result);result \u003d IterableUtils.toString(null, new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        fail(\"not supposed to reach here\");\n        return \"\";\n    }\n});assertEquals(\"[]\", result);",
+    "offset": [
+      {
+        "line": 499,
+        "column": 25
+      },
+      {
+        "line": 500,
+        "column": 9
+      },
+      {
+        "line": 502,
+        "column": 18
+      },
+      {
+        "line": 502,
+        "column": 41
+      },
+      {
+        "line": 503,
+        "column": 9
+      },
+      {
+        "line": 505,
+        "column": 18
+      },
+      {
+        "line": 506,
+        "column": 9
+      },
+      {
+        "line": 508,
+        "column": 18
+      },
+      {
+        "line": 508,
+        "column": 52
+      },
+      {
+        "line": 511,
+        "column": 24
+      },
+      {
+        "line": 511,
+        "column": 24
+      },
+      {
+        "line": 514,
+        "column": 9
+      },
+      {
+        "line": 516,
+        "column": 18
+      },
+      {
+        "line": 516,
+        "column": 41
+      },
+      {
+        "line": 516,
+        "column": 67
+      },
+      {
+        "line": 519,
+        "column": 17
+      },
+      {
+        "line": 523,
+        "column": 9
+      },
+      {
+        "line": 525,
+        "column": 18
+      },
+      {
+        "line": 525,
+        "column": 47
+      },
+      {
+        "line": 528,
+        "column": 17
+      },
+      {
+        "line": 532,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 499,
+          "column": 9
+        },
+        "assert": "String result \u003d IterableUtils.toString(iterableA);assertEquals(\"[1, 2, 2, 3, 3, 3, 4, 4, 4, 4]\", result);",
+        "slice": "String result \u003d IterableUtils.toString(iterableA);assertEquals(\"[1, 2, 2, 3, 3, 3, 4, 4, 4, 4]\", result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 516,
+          "column": 9
+        },
+        "assert": "result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e(), new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        fail(\"not supposed to reach here\");\n        return \"\";\n    }\n});",
+        "slice": "String result \u003d IterableUtils.toString(iterableA);result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e());result \u003d IterableUtils.toString(null);result \u003d IterableUtils.toString(iterableA, new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n});result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e(), new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        fail(\"not supposed to reach here\");\n        return \"\";\n    }\n});"
+      },
+      {
+        "testCodeLocation": {
+          "line": 532,
+          "column": 9
+        },
+        "assert": "assertEquals(\"[]\", result);",
+        "slice": "String result \u003d IterableUtils.toString(iterableA);result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e());result \u003d IterableUtils.toString(null);result \u003d IterableUtils.toString(iterableA, new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n});assertEquals(\"[]\", result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 502,
+          "column": 9
+        },
+        "assert": "result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e());assertEquals(\"[]\", result);",
+        "slice": "String result \u003d IterableUtils.toString(iterableA);result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e());assertEquals(\"[]\", result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 505,
+          "column": 9
+        },
+        "assert": "result \u003d IterableUtils.toString(null);assertEquals(\"[]\", result);",
+        "slice": "String result \u003d IterableUtils.toString(iterableA);result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e());result \u003d IterableUtils.toString(null);assertEquals(\"[]\", result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 523,
+          "column": 9
+        },
+        "assert": "assertEquals(\"[]\", result);",
+        "slice": "String result \u003d IterableUtils.toString(iterableA);result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e());result \u003d IterableUtils.toString(null);result \u003d IterableUtils.toString(iterableA, new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n});assertEquals(\"[]\", result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 508,
+          "column": 9
+        },
+        "assert": "result \u003d IterableUtils.toString(iterableA, new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n});assertEquals(\"[2, 4, 4, 6, 6, 6, 8, 8, 8, 8]\", result);",
+        "slice": "String result \u003d IterableUtils.toString(iterableA);result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e());result \u003d IterableUtils.toString(null);result \u003d IterableUtils.toString(iterableA, new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n});assertEquals(\"[2, 4, 4, 6, 6, 6, 8, 8, 8, 8]\", result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 525,
+          "column": 9
+        },
+        "assert": "result \u003d IterableUtils.toString(null, new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        fail(\"not supposed to reach here\");\n        return \"\";\n    }\n});",
+        "slice": "String result \u003d IterableUtils.toString(iterableA);result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e());result \u003d IterableUtils.toString(null);result \u003d IterableUtils.toString(iterableA, new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n});result \u003d IterableUtils.toString(null, new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        fail(\"not supposed to reach here\");\n        return \"\";\n    }\n});"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.testToStringDelimiter()",
+    "annotation": "@Test",
+    "code": "final Transformer\u003cInteger, String\u003e transformer \u003d new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n};String result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"\", \"\");assertEquals(\"2446668888\", result);result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"\", \"\");assertEquals(\"2,4,4,6,6,6,8,8,8,8\", result);result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"[\", \"]\");assertEquals(\"[2446668888]\", result);result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"[\", \"]\");assertEquals(\"[2,4,4,6,6,6,8,8,8,8]\", result);result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"[[\", \"]]\");assertEquals(\"[[2,4,4,6,6,6,8,8,8,8]]\", result);result \u003d IterableUtils.toString(iterableA, transformer, \",,\", \"[\", \"]\");assertEquals(\"[2,,4,,4,,6,,6,,6,,8,,8,,8,,8]\", result);result \u003d IterableUtils.toString(iterableA, transformer, \",,\", \"((\", \"))\");assertEquals(\"((2,,4,,4,,6,,6,,6,,8,,8,,8,,8))\", result);result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e(), transformer, \"\", \"(\", \")\");assertEquals(\"()\", result);result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e(), transformer, \"\", \"\", \"\");assertEquals(\"\", result);",
+    "offset": [
+      {
+        "line": 538,
+        "column": 58
+      },
+      {
+        "line": 541,
+        "column": 24
+      },
+      {
+        "line": 541,
+        "column": 24
+      },
+      {
+        "line": 545,
+        "column": 25
+      },
+      {
+        "line": 546,
+        "column": 9
+      },
+      {
+        "line": 548,
+        "column": 18
+      },
+      {
+        "line": 549,
+        "column": 9
+      },
+      {
+        "line": 551,
+        "column": 18
+      },
+      {
+        "line": 552,
+        "column": 9
+      },
+      {
+        "line": 554,
+        "column": 18
+      },
+      {
+        "line": 555,
+        "column": 9
+      },
+      {
+        "line": 557,
+        "column": 18
+      },
+      {
+        "line": 558,
+        "column": 9
+      },
+      {
+        "line": 560,
+        "column": 18
+      },
+      {
+        "line": 561,
+        "column": 9
+      },
+      {
+        "line": 563,
+        "column": 18
+      },
+      {
+        "line": 564,
+        "column": 9
+      },
+      {
+        "line": 566,
+        "column": 18
+      },
+      {
+        "line": 566,
+        "column": 41
+      },
+      {
+        "line": 567,
+        "column": 9
+      },
+      {
+        "line": 569,
+        "column": 18
+      },
+      {
+        "line": 569,
+        "column": 41
+      },
+      {
+        "line": 570,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 560,
+          "column": 9
+        },
+        "assert": "result \u003d IterableUtils.toString(iterableA, transformer, \",,\", \"[\", \"]\");assertEquals(\"[2,,4,,4,,6,,6,,6,,8,,8,,8,,8]\", result);",
+        "slice": "final Transformer\u003cInteger, String\u003e transformer \u003d new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n};String result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"\", \"\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"\", \"\");result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"[\", \"]\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"[\", \"]\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"[[\", \"]]\");result \u003d IterableUtils.toString(iterableA, transformer, \",,\", \"[\", \"]\");assertEquals(\"[2,,4,,4,,6,,6,,6,,8,,8,,8,,8]\", result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 563,
+          "column": 9
+        },
+        "assert": "result \u003d IterableUtils.toString(iterableA, transformer, \",,\", \"((\", \"))\");assertEquals(\"((2,,4,,4,,6,,6,,6,,8,,8,,8,,8))\", result);",
+        "slice": "final Transformer\u003cInteger, String\u003e transformer \u003d new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n};String result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"\", \"\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"\", \"\");result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"[\", \"]\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"[\", \"]\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"[[\", \"]]\");result \u003d IterableUtils.toString(iterableA, transformer, \",,\", \"[\", \"]\");result \u003d IterableUtils.toString(iterableA, transformer, \",,\", \"((\", \"))\");assertEquals(\"((2,,4,,4,,6,,6,,6,,8,,8,,8,,8))\", result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 548,
+          "column": 9
+        },
+        "assert": "result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"\", \"\");assertEquals(\"2,4,4,6,6,6,8,8,8,8\", result);",
+        "slice": "final Transformer\u003cInteger, String\u003e transformer \u003d new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n};String result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"\", \"\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"\", \"\");assertEquals(\"2,4,4,6,6,6,8,8,8,8\", result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 566,
+          "column": 9
+        },
+        "assert": "result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e(), transformer, \"\", \"(\", \")\");assertEquals(\"()\", result);",
+        "slice": "final Transformer\u003cInteger, String\u003e transformer \u003d new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n};String result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"\", \"\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"\", \"\");result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"[\", \"]\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"[\", \"]\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"[[\", \"]]\");result \u003d IterableUtils.toString(iterableA, transformer, \",,\", \"[\", \"]\");result \u003d IterableUtils.toString(iterableA, transformer, \",,\", \"((\", \"))\");result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e(), transformer, \"\", \"(\", \")\");assertEquals(\"()\", result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 551,
+          "column": 9
+        },
+        "assert": "result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"[\", \"]\");assertEquals(\"[2446668888]\", result);",
+        "slice": "final Transformer\u003cInteger, String\u003e transformer \u003d new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n};String result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"\", \"\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"\", \"\");result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"[\", \"]\");assertEquals(\"[2446668888]\", result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 569,
+          "column": 9
+        },
+        "assert": "result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e(), transformer, \"\", \"\", \"\");assertEquals(\"\", result);",
+        "slice": "final Transformer\u003cInteger, String\u003e transformer \u003d new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n};String result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"\", \"\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"\", \"\");result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"[\", \"]\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"[\", \"]\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"[[\", \"]]\");result \u003d IterableUtils.toString(iterableA, transformer, \",,\", \"[\", \"]\");result \u003d IterableUtils.toString(iterableA, transformer, \",,\", \"((\", \"))\");result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e(), transformer, \"\", \"(\", \")\");result \u003d IterableUtils.toString(new ArrayList\u003cInteger\u003e(), transformer, \"\", \"\", \"\");assertEquals(\"\", result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 538,
+          "column": 9
+        },
+        "assert": "final Transformer\u003cInteger, String\u003e transformer \u003d new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n};String result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"\", \"\");assertEquals(\"2446668888\", result);",
+        "slice": "final Transformer\u003cInteger, String\u003e transformer \u003d new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n};String result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"\", \"\");assertEquals(\"2446668888\", result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 554,
+          "column": 9
+        },
+        "assert": "result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"[\", \"]\");assertEquals(\"[2,4,4,6,6,6,8,8,8,8]\", result);",
+        "slice": "final Transformer\u003cInteger, String\u003e transformer \u003d new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n};String result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"\", \"\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"\", \"\");result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"[\", \"]\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"[\", \"]\");assertEquals(\"[2,4,4,6,6,6,8,8,8,8]\", result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 557,
+          "column": 9
+        },
+        "assert": "result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"[[\", \"]]\");assertEquals(\"[[2,4,4,6,6,6,8,8,8,8]]\", result);",
+        "slice": "final Transformer\u003cInteger, String\u003e transformer \u003d new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        return new Integer(input * 2).toString();\n    }\n};String result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"\", \"\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"\", \"\");result \u003d IterableUtils.toString(iterableA, transformer, \"\", \"[\", \"]\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"[\", \"]\");result \u003d IterableUtils.toString(iterableA, transformer, \",\", \"[[\", \"]]\");assertEquals(\"[[2,4,4,6,6,6,8,8,8,8]]\", result);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IterableUtilsTest.testToStringWithNullArguments()",
+    "annotation": "@Test",
+    "code": "final String result \u003d IterableUtils.toString(null, new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        fail(\"not supposed to reach here\");\n        return \"\";\n    }\n}, \"\", \"(\", \")\");assertEquals(\"()\", result);try {\n    IterableUtils.toString(new ArrayList\u003cInteger\u003e(), null, \"\", \"(\", \")\");\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // expected\n}try {\n    IterableUtils.toString(new ArrayList\u003cInteger\u003e(), new Transformer\u003cInteger, String\u003e() {\n\n        @Override\n        public String transform(final Integer input) {\n            fail(\"not supposed to reach here\");\n            return \"\";\n        }\n    }, null, \"(\", \")\");\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // expected\n}try {\n    IterableUtils.toString(new ArrayList\u003cInteger\u003e(), new Transformer\u003cInteger, String\u003e() {\n\n        @Override\n        public String transform(final Integer input) {\n            fail(\"not supposed to reach here\");\n            return \"\";\n        }\n    }, \"\", null, \")\");\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // expected\n}try {\n    IterableUtils.toString(new ArrayList\u003cInteger\u003e(), new Transformer\u003cInteger, String\u003e() {\n\n        @Override\n        public String transform(final Integer input) {\n            fail(\"not supposed to reach here\");\n            return \"\";\n        }\n    }, \"\", \"(\", null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 575,
+        "column": 31
+      },
+      {
+        "line": 575,
+        "column": 60
+      },
+      {
+        "line": 578,
+        "column": 17
+      },
+      {
+        "line": 582,
+        "column": 9
+      },
+      {
+        "line": 585,
+        "column": 13
+      },
+      {
+        "line": 585,
+        "column": 36
+      },
+      {
+        "line": 586,
+        "column": 13
+      },
+      {
+        "line": 592,
+        "column": 13
+      },
+      {
+        "line": 592,
+        "column": 36
+      },
+      {
+        "line": 592,
+        "column": 62
+      },
+      {
+        "line": 595,
+        "column": 21
+      },
+      {
+        "line": 599,
+        "column": 13
+      },
+      {
+        "line": 605,
+        "column": 13
+      },
+      {
+        "line": 605,
+        "column": 36
+      },
+      {
+        "line": 605,
+        "column": 62
+      },
+      {
+        "line": 608,
+        "column": 21
+      },
+      {
+        "line": 612,
+        "column": 13
+      },
+      {
+        "line": 618,
+        "column": 13
+      },
+      {
+        "line": 618,
+        "column": 36
+      },
+      {
+        "line": 618,
+        "column": 62
+      },
+      {
+        "line": 621,
+        "column": 21
+      },
+      {
+        "line": 625,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 582,
+          "column": 9
+        },
+        "assert": "assertEquals(\"()\", result);",
+        "slice": "assertEquals(\"()\", result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 584,
+          "column": 9
+        },
+        "assert": "try {\n    IterableUtils.toString(new ArrayList\u003cInteger\u003e(), null, \"\", \"(\", \")\");\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+        "slice": "try {\n    IterableUtils.toString(new ArrayList\u003cInteger\u003e(), null, \"\", \"(\", \")\");\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 617,
+          "column": 9
+        },
+        "assert": "try {\n    IterableUtils.toString(new ArrayList\u003cInteger\u003e(), new Transformer\u003cInteger, String\u003e() {\n\n        @Override\n        public String transform(final Integer input) {\n            fail(\"not supposed to reach here\");\n            return \"\";\n        }\n    }, \"\", \"(\", null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+        "slice": "try {\n    IterableUtils.toString(new ArrayList\u003cInteger\u003e(), new Transformer\u003cInteger, String\u003e() {\n\n        @Override\n        public String transform(final Integer input) {\n            fail(\"not supposed to reach here\");\n            return \"\";\n        }\n    }, \"\", \"(\", null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 604,
+          "column": 9
+        },
+        "assert": "try {\n    IterableUtils.toString(new ArrayList\u003cInteger\u003e(), new Transformer\u003cInteger, String\u003e() {\n\n        @Override\n        public String transform(final Integer input) {\n            fail(\"not supposed to reach here\");\n            return \"\";\n        }\n    }, \"\", null, \")\");\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+        "slice": "try {\n    IterableUtils.toString(new ArrayList\u003cInteger\u003e(), new Transformer\u003cInteger, String\u003e() {\n\n        @Override\n        public String transform(final Integer input) {\n            fail(\"not supposed to reach here\");\n            return \"\";\n        }\n    }, \"\", null, \")\");\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 575,
+          "column": 9
+        },
+        "assert": "final String result \u003d IterableUtils.toString(null, new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        fail(\"not supposed to reach here\");\n        return \"\";\n    }\n}, \"\", \"(\", \")\");",
+        "slice": "final String result \u003d IterableUtils.toString(null, new Transformer\u003cInteger, String\u003e() {\n\n    @Override\n    public String transform(final Integer input) {\n        fail(\"not supposed to reach here\");\n        return \"\";\n    }\n}, \"\", \"(\", \")\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 591,
+          "column": 9
+        },
+        "assert": "try {\n    IterableUtils.toString(new ArrayList\u003cInteger\u003e(), new Transformer\u003cInteger, String\u003e() {\n\n        @Override\n        public String transform(final Integer input) {\n            fail(\"not supposed to reach here\");\n            return \"\";\n        }\n    }, null, \"(\", \")\");\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+        "slice": "try {\n    IterableUtils.toString(new ArrayList\u003cInteger\u003e(), new Transformer\u003cInteger, String\u003e() {\n\n        @Override\n        public String transform(final Integer input) {\n            fail(\"not supposed to reach here\");\n            return \"\";\n        }\n    }, null, \"(\", \")\");\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // expected\n}"
+      }
+    ]
+  }
+]

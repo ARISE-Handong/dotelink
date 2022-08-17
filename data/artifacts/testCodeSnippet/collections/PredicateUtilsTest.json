@@ -1,0 +1,4236 @@
+[
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testExceptionPredicate()",
+    "annotation": "@Test",
+    "code": "assertNotNull(PredicateUtils.exceptionPredicate());assertSame(PredicateUtils.exceptionPredicate(), PredicateUtils.exceptionPredicate());try {\n    PredicateUtils.exceptionPredicate().evaluate(null);\n} catch (final FunctorException ex) {\n    try {\n        PredicateUtils.exceptionPredicate().evaluate(cString);\n    } catch (final FunctorException ex2) {\n        return;\n    }\n}fail();",
+    "offset": [
+      {
+        "line": 53,
+        "column": 9
+      },
+      {
+        "line": 53,
+        "column": 23
+      },
+      {
+        "line": 54,
+        "column": 9
+      },
+      {
+        "line": 54,
+        "column": 20
+      },
+      {
+        "line": 54,
+        "column": 57
+      },
+      {
+        "line": 56,
+        "column": 13
+      },
+      {
+        "line": 56,
+        "column": 13
+      },
+      {
+        "line": 59,
+        "column": 17
+      },
+      {
+        "line": 59,
+        "column": 17
+      },
+      {
+        "line": 64,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 53,
+          "column": 9
+        },
+        "assert": "assertNotNull(PredicateUtils.exceptionPredicate());",
+        "slice": "assertNotNull(PredicateUtils.exceptionPredicate());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 54,
+          "column": 9
+        },
+        "assert": "assertSame(PredicateUtils.exceptionPredicate(), PredicateUtils.exceptionPredicate());",
+        "slice": "assertSame(PredicateUtils.exceptionPredicate(), PredicateUtils.exceptionPredicate());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 55,
+          "column": 9
+        },
+        "assert": "try {\n    PredicateUtils.exceptionPredicate().evaluate(null);\n} catch (final FunctorException ex) {\n    try {\n        PredicateUtils.exceptionPredicate().evaluate(cString);\n    } catch (final FunctorException ex2) {\n        return;\n    }\n}fail();",
+        "slice": "try {\n    PredicateUtils.exceptionPredicate().evaluate(null);\n} catch (final FunctorException ex) {\n    try {\n        PredicateUtils.exceptionPredicate().evaluate(cString);\n    } catch (final FunctorException ex2) {\n        return;\n    }\n}fail();"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testIsNotNullPredicate()",
+    "annotation": "@Test",
+    "code": "assertNotNull(PredicateUtils.notNullPredicate());assertSame(PredicateUtils.notNullPredicate(), PredicateUtils.notNullPredicate());assertEquals(false, PredicateUtils.notNullPredicate().evaluate(null));assertEquals(true, PredicateUtils.notNullPredicate().evaluate(cObject));assertEquals(true, PredicateUtils.notNullPredicate().evaluate(cString));assertEquals(true, PredicateUtils.notNullPredicate().evaluate(cInteger));",
+    "offset": [
+      {
+        "line": 72,
+        "column": 9
+      },
+      {
+        "line": 72,
+        "column": 23
+      },
+      {
+        "line": 73,
+        "column": 9
+      },
+      {
+        "line": 73,
+        "column": 20
+      },
+      {
+        "line": 73,
+        "column": 55
+      },
+      {
+        "line": 74,
+        "column": 9
+      },
+      {
+        "line": 74,
+        "column": 29
+      },
+      {
+        "line": 74,
+        "column": 29
+      },
+      {
+        "line": 75,
+        "column": 9
+      },
+      {
+        "line": 75,
+        "column": 28
+      },
+      {
+        "line": 75,
+        "column": 28
+      },
+      {
+        "line": 76,
+        "column": 9
+      },
+      {
+        "line": 76,
+        "column": 28
+      },
+      {
+        "line": 76,
+        "column": 28
+      },
+      {
+        "line": 77,
+        "column": 9
+      },
+      {
+        "line": 77,
+        "column": 28
+      },
+      {
+        "line": 77,
+        "column": 28
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 72,
+          "column": 9
+        },
+        "assert": "assertNotNull(PredicateUtils.notNullPredicate());",
+        "slice": "assertNotNull(PredicateUtils.notNullPredicate());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 73,
+          "column": 9
+        },
+        "assert": "assertSame(PredicateUtils.notNullPredicate(), PredicateUtils.notNullPredicate());",
+        "slice": "assertSame(PredicateUtils.notNullPredicate(), PredicateUtils.notNullPredicate());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 74,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.notNullPredicate().evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.notNullPredicate().evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 75,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.notNullPredicate().evaluate(cObject));",
+        "slice": "assertEquals(true, PredicateUtils.notNullPredicate().evaluate(cObject));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 76,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.notNullPredicate().evaluate(cString));",
+        "slice": "assertEquals(true, PredicateUtils.notNullPredicate().evaluate(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 77,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.notNullPredicate().evaluate(cInteger));",
+        "slice": "assertEquals(true, PredicateUtils.notNullPredicate().evaluate(cInteger));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testIdentityPredicate()",
+    "annotation": "@Test",
+    "code": "assertSame(nullPredicate(), PredicateUtils.identityPredicate(null));assertNotNull(PredicateUtils.identityPredicate(Integer.valueOf(6)));assertEquals(false, PredicateUtils.identityPredicate(Integer.valueOf(6)).evaluate(null));assertEquals(false, PredicateUtils.\u003cObject\u003eidentityPredicate(Integer.valueOf(6)).evaluate(cObject));assertEquals(false, PredicateUtils.\u003cObject\u003eidentityPredicate(Integer.valueOf(6)).evaluate(cString));// Cannot use valueOf here\nassertEquals(false, PredicateUtils.identityPredicate(new Integer(6)).evaluate(cInteger));assertEquals(true, PredicateUtils.identityPredicate(cInteger).evaluate(cInteger));",
+    "offset": [
+      {
+        "line": 85,
+        "column": 9
+      },
+      {
+        "line": 85,
+        "column": 20
+      },
+      {
+        "line": 85,
+        "column": 37
+      },
+      {
+        "line": 86,
+        "column": 9
+      },
+      {
+        "line": 86,
+        "column": 23
+      },
+      {
+        "line": 86,
+        "column": 56
+      },
+      {
+        "line": 87,
+        "column": 9
+      },
+      {
+        "line": 87,
+        "column": 29
+      },
+      {
+        "line": 87,
+        "column": 29
+      },
+      {
+        "line": 87,
+        "column": 62
+      },
+      {
+        "line": 88,
+        "column": 9
+      },
+      {
+        "line": 88,
+        "column": 29
+      },
+      {
+        "line": 88,
+        "column": 29
+      },
+      {
+        "line": 88,
+        "column": 70
+      },
+      {
+        "line": 89,
+        "column": 9
+      },
+      {
+        "line": 89,
+        "column": 29
+      },
+      {
+        "line": 89,
+        "column": 29
+      },
+      {
+        "line": 89,
+        "column": 70
+      },
+      {
+        "line": 90,
+        "column": 9
+      },
+      {
+        "line": 90,
+        "column": 29
+      },
+      {
+        "line": 90,
+        "column": 29
+      },
+      {
+        "line": 90,
+        "column": 62
+      },
+      {
+        "line": 91,
+        "column": 9
+      },
+      {
+        "line": 91,
+        "column": 28
+      },
+      {
+        "line": 91,
+        "column": 28
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 85,
+          "column": 9
+        },
+        "assert": "assertSame(nullPredicate(), PredicateUtils.identityPredicate(null));",
+        "slice": "assertSame(nullPredicate(), PredicateUtils.identityPredicate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 86,
+          "column": 9
+        },
+        "assert": "assertNotNull(PredicateUtils.identityPredicate(Integer.valueOf(6)));",
+        "slice": "assertNotNull(PredicateUtils.identityPredicate(Integer.valueOf(6)));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 87,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.identityPredicate(Integer.valueOf(6)).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.identityPredicate(Integer.valueOf(6)).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 88,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.\u003cObject\u003eidentityPredicate(Integer.valueOf(6)).evaluate(cObject));",
+        "slice": "assertEquals(false, PredicateUtils.\u003cObject\u003eidentityPredicate(Integer.valueOf(6)).evaluate(cObject));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 89,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.\u003cObject\u003eidentityPredicate(Integer.valueOf(6)).evaluate(cString));",
+        "slice": "assertEquals(false, PredicateUtils.\u003cObject\u003eidentityPredicate(Integer.valueOf(6)).evaluate(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 90,
+          "column": 9
+        },
+        "assert": "// Cannot use valueOf here\nassertEquals(false, PredicateUtils.identityPredicate(new Integer(6)).evaluate(cInteger));",
+        "slice": "// Cannot use valueOf here\nassertEquals(false, PredicateUtils.identityPredicate(new Integer(6)).evaluate(cInteger));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 91,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.identityPredicate(cInteger).evaluate(cInteger));",
+        "slice": "assertEquals(true, PredicateUtils.identityPredicate(cInteger).evaluate(cInteger));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testTruePredicate()",
+    "annotation": "@Test",
+    "code": "assertNotNull(TruePredicate.truePredicate());assertSame(TruePredicate.truePredicate(), TruePredicate.truePredicate());assertEquals(true, TruePredicate.truePredicate().evaluate(null));assertEquals(true, TruePredicate.truePredicate().evaluate(cObject));assertEquals(true, TruePredicate.truePredicate().evaluate(cString));assertEquals(true, TruePredicate.truePredicate().evaluate(cInteger));",
+    "offset": [
+      {
+        "line": 99,
+        "column": 9
+      },
+      {
+        "line": 99,
+        "column": 23
+      },
+      {
+        "line": 100,
+        "column": 9
+      },
+      {
+        "line": 100,
+        "column": 20
+      },
+      {
+        "line": 100,
+        "column": 51
+      },
+      {
+        "line": 101,
+        "column": 9
+      },
+      {
+        "line": 101,
+        "column": 28
+      },
+      {
+        "line": 101,
+        "column": 28
+      },
+      {
+        "line": 102,
+        "column": 9
+      },
+      {
+        "line": 102,
+        "column": 28
+      },
+      {
+        "line": 102,
+        "column": 28
+      },
+      {
+        "line": 103,
+        "column": 9
+      },
+      {
+        "line": 103,
+        "column": 28
+      },
+      {
+        "line": 103,
+        "column": 28
+      },
+      {
+        "line": 104,
+        "column": 9
+      },
+      {
+        "line": 104,
+        "column": 28
+      },
+      {
+        "line": 104,
+        "column": 28
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 99,
+          "column": 9
+        },
+        "assert": "assertNotNull(TruePredicate.truePredicate());",
+        "slice": "assertNotNull(TruePredicate.truePredicate());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 100,
+          "column": 9
+        },
+        "assert": "assertSame(TruePredicate.truePredicate(), TruePredicate.truePredicate());",
+        "slice": "assertSame(TruePredicate.truePredicate(), TruePredicate.truePredicate());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 101,
+          "column": 9
+        },
+        "assert": "assertEquals(true, TruePredicate.truePredicate().evaluate(null));",
+        "slice": "assertEquals(true, TruePredicate.truePredicate().evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 102,
+          "column": 9
+        },
+        "assert": "assertEquals(true, TruePredicate.truePredicate().evaluate(cObject));",
+        "slice": "assertEquals(true, TruePredicate.truePredicate().evaluate(cObject));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 103,
+          "column": 9
+        },
+        "assert": "assertEquals(true, TruePredicate.truePredicate().evaluate(cString));",
+        "slice": "assertEquals(true, TruePredicate.truePredicate().evaluate(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 104,
+          "column": 9
+        },
+        "assert": "assertEquals(true, TruePredicate.truePredicate().evaluate(cInteger));",
+        "slice": "assertEquals(true, TruePredicate.truePredicate().evaluate(cInteger));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testFalsePredicate()",
+    "annotation": "@Test",
+    "code": "assertNotNull(FalsePredicate.falsePredicate());assertSame(FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate());assertEquals(false, FalsePredicate.falsePredicate().evaluate(null));assertEquals(false, FalsePredicate.falsePredicate().evaluate(cObject));assertEquals(false, FalsePredicate.falsePredicate().evaluate(cString));assertEquals(false, FalsePredicate.falsePredicate().evaluate(cInteger));",
+    "offset": [
+      {
+        "line": 112,
+        "column": 9
+      },
+      {
+        "line": 112,
+        "column": 23
+      },
+      {
+        "line": 113,
+        "column": 9
+      },
+      {
+        "line": 113,
+        "column": 20
+      },
+      {
+        "line": 113,
+        "column": 53
+      },
+      {
+        "line": 114,
+        "column": 9
+      },
+      {
+        "line": 114,
+        "column": 29
+      },
+      {
+        "line": 114,
+        "column": 29
+      },
+      {
+        "line": 115,
+        "column": 9
+      },
+      {
+        "line": 115,
+        "column": 29
+      },
+      {
+        "line": 115,
+        "column": 29
+      },
+      {
+        "line": 116,
+        "column": 9
+      },
+      {
+        "line": 116,
+        "column": 29
+      },
+      {
+        "line": 116,
+        "column": 29
+      },
+      {
+        "line": 117,
+        "column": 9
+      },
+      {
+        "line": 117,
+        "column": 29
+      },
+      {
+        "line": 117,
+        "column": 29
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 112,
+          "column": 9
+        },
+        "assert": "assertNotNull(FalsePredicate.falsePredicate());",
+        "slice": "assertNotNull(FalsePredicate.falsePredicate());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 113,
+          "column": 9
+        },
+        "assert": "assertSame(FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate());",
+        "slice": "assertSame(FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 114,
+          "column": 9
+        },
+        "assert": "assertEquals(false, FalsePredicate.falsePredicate().evaluate(null));",
+        "slice": "assertEquals(false, FalsePredicate.falsePredicate().evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 115,
+          "column": 9
+        },
+        "assert": "assertEquals(false, FalsePredicate.falsePredicate().evaluate(cObject));",
+        "slice": "assertEquals(false, FalsePredicate.falsePredicate().evaluate(cObject));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 116,
+          "column": 9
+        },
+        "assert": "assertEquals(false, FalsePredicate.falsePredicate().evaluate(cString));",
+        "slice": "assertEquals(false, FalsePredicate.falsePredicate().evaluate(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 117,
+          "column": 9
+        },
+        "assert": "assertEquals(false, FalsePredicate.falsePredicate().evaluate(cInteger));",
+        "slice": "assertEquals(false, FalsePredicate.falsePredicate().evaluate(cInteger));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNotPredicate()",
+    "annotation": "@Test",
+    "code": "assertNotNull(PredicateUtils.notPredicate(TruePredicate.truePredicate()));assertEquals(false, PredicateUtils.notPredicate(TruePredicate.truePredicate()).evaluate(null));assertEquals(false, PredicateUtils.notPredicate(TruePredicate.truePredicate()).evaluate(cObject));assertEquals(false, PredicateUtils.notPredicate(TruePredicate.truePredicate()).evaluate(cString));assertEquals(false, PredicateUtils.notPredicate(TruePredicate.truePredicate()).evaluate(cInteger));",
+    "offset": [
+      {
+        "line": 125,
+        "column": 9
+      },
+      {
+        "line": 125,
+        "column": 23
+      },
+      {
+        "line": 125,
+        "column": 51
+      },
+      {
+        "line": 126,
+        "column": 9
+      },
+      {
+        "line": 126,
+        "column": 29
+      },
+      {
+        "line": 126,
+        "column": 29
+      },
+      {
+        "line": 126,
+        "column": 57
+      },
+      {
+        "line": 127,
+        "column": 9
+      },
+      {
+        "line": 127,
+        "column": 29
+      },
+      {
+        "line": 127,
+        "column": 29
+      },
+      {
+        "line": 127,
+        "column": 57
+      },
+      {
+        "line": 128,
+        "column": 9
+      },
+      {
+        "line": 128,
+        "column": 29
+      },
+      {
+        "line": 128,
+        "column": 29
+      },
+      {
+        "line": 128,
+        "column": 57
+      },
+      {
+        "line": 129,
+        "column": 9
+      },
+      {
+        "line": 129,
+        "column": 29
+      },
+      {
+        "line": 129,
+        "column": 29
+      },
+      {
+        "line": 129,
+        "column": 57
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 128,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.notPredicate(TruePredicate.truePredicate()).evaluate(cString));",
+        "slice": "assertEquals(false, PredicateUtils.notPredicate(TruePredicate.truePredicate()).evaluate(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 129,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.notPredicate(TruePredicate.truePredicate()).evaluate(cInteger));",
+        "slice": "assertEquals(false, PredicateUtils.notPredicate(TruePredicate.truePredicate()).evaluate(cInteger));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 125,
+          "column": 9
+        },
+        "assert": "assertNotNull(PredicateUtils.notPredicate(TruePredicate.truePredicate()));",
+        "slice": "assertNotNull(PredicateUtils.notPredicate(TruePredicate.truePredicate()));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 126,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.notPredicate(TruePredicate.truePredicate()).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.notPredicate(TruePredicate.truePredicate()).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 127,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.notPredicate(TruePredicate.truePredicate()).evaluate(cObject));",
+        "slice": "assertEquals(false, PredicateUtils.notPredicate(TruePredicate.truePredicate()).evaluate(cObject));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNotPredicateEx()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.notPredicate(null);",
+    "offset": [
+      {
+        "line": 134,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 134,
+          "column": 9
+        },
+        "assert": "PredicateUtils.notPredicate(null);",
+        "slice": "PredicateUtils.notPredicate(null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAndPredicate()",
+    "annotation": "@Test",
+    "code": "assertEquals(true, PredicateUtils.andPredicate(TruePredicate.truePredicate(), TruePredicate.truePredicate()).evaluate(null));assertEquals(false, PredicateUtils.andPredicate(TruePredicate.truePredicate(), FalsePredicate.falsePredicate()).evaluate(null));assertEquals(false, PredicateUtils.andPredicate(FalsePredicate.falsePredicate(), TruePredicate.truePredicate()).evaluate(null));assertEquals(false, PredicateUtils.andPredicate(FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate()).evaluate(null));",
+    "offset": [
+      {
+        "line": 142,
+        "column": 9
+      },
+      {
+        "line": 142,
+        "column": 28
+      },
+      {
+        "line": 142,
+        "column": 28
+      },
+      {
+        "line": 142,
+        "column": 56
+      },
+      {
+        "line": 142,
+        "column": 87
+      },
+      {
+        "line": 143,
+        "column": 9
+      },
+      {
+        "line": 143,
+        "column": 29
+      },
+      {
+        "line": 143,
+        "column": 29
+      },
+      {
+        "line": 143,
+        "column": 57
+      },
+      {
+        "line": 143,
+        "column": 88
+      },
+      {
+        "line": 144,
+        "column": 9
+      },
+      {
+        "line": 144,
+        "column": 29
+      },
+      {
+        "line": 144,
+        "column": 29
+      },
+      {
+        "line": 144,
+        "column": 57
+      },
+      {
+        "line": 144,
+        "column": 90
+      },
+      {
+        "line": 145,
+        "column": 9
+      },
+      {
+        "line": 145,
+        "column": 29
+      },
+      {
+        "line": 145,
+        "column": 29
+      },
+      {
+        "line": 145,
+        "column": 57
+      },
+      {
+        "line": 145,
+        "column": 90
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 144,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.andPredicate(FalsePredicate.falsePredicate(), TruePredicate.truePredicate()).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.andPredicate(FalsePredicate.falsePredicate(), TruePredicate.truePredicate()).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 145,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.andPredicate(FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate()).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.andPredicate(FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate()).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 142,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.andPredicate(TruePredicate.truePredicate(), TruePredicate.truePredicate()).evaluate(null));",
+        "slice": "assertEquals(true, PredicateUtils.andPredicate(TruePredicate.truePredicate(), TruePredicate.truePredicate()).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 143,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.andPredicate(TruePredicate.truePredicate(), FalsePredicate.falsePredicate()).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.andPredicate(TruePredicate.truePredicate(), FalsePredicate.falsePredicate()).evaluate(null));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAndPredicateEx()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.andPredicate(null, null);",
+    "offset": [
+      {
+        "line": 150,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 150,
+          "column": 9
+        },
+        "assert": "PredicateUtils.andPredicate(null, null);",
+        "slice": "PredicateUtils.andPredicate(null, null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAllPredicateEx1()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "AllPredicate.allPredicate((Predicate\u003cObject\u003e[]) null);",
+    "offset": [
+      {
+        "line": 200,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 200,
+          "column": 9
+        },
+        "assert": "AllPredicate.allPredicate((Predicate\u003cObject\u003e[]) null);",
+        "slice": "AllPredicate.allPredicate((Predicate\u003cObject\u003e[]) null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAllPredicateEx2()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "AllPredicate.\u003cObject\u003eallPredicate(new Predicate[] { null });",
+    "offset": [
+      {
+        "line": 206,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 206,
+          "column": 9
+        },
+        "assert": "AllPredicate.\u003cObject\u003eallPredicate(new Predicate[] { null });",
+        "slice": "AllPredicate.\u003cObject\u003eallPredicate(new Predicate[] { null });"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAllPredicateEx3()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "AllPredicate.allPredicate(new Predicate[] { null, null });",
+    "offset": [
+      {
+        "line": 212,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 212,
+          "column": 9
+        },
+        "assert": "AllPredicate.allPredicate(new Predicate[] { null, null });",
+        "slice": "AllPredicate.allPredicate(new Predicate[] { null, null });"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAllPredicateEx4()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "AllPredicate.allPredicate((Collection\u003cPredicate\u003cObject\u003e\u003e) null);",
+    "offset": [
+      {
+        "line": 217,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 217,
+          "column": 9
+        },
+        "assert": "AllPredicate.allPredicate((Collection\u003cPredicate\u003cObject\u003e\u003e) null);",
+        "slice": "AllPredicate.allPredicate((Collection\u003cPredicate\u003cObject\u003e\u003e) null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAllPredicateEx5()",
+    "annotation": "@Test",
+    "code": "AllPredicate.allPredicate(Collections.\u003cPredicate\u003cObject\u003e\u003eemptyList());",
+    "offset": [
+      {
+        "line": 222,
+        "column": 9
+      },
+      {
+        "line": 222,
+        "column": 35
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 222,
+          "column": 9
+        },
+        "assert": "AllPredicate.allPredicate(Collections.\u003cPredicate\u003cObject\u003e\u003eemptyList());",
+        "slice": "AllPredicate.allPredicate(Collections.\u003cPredicate\u003cObject\u003e\u003eemptyList());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAllPredicateEx6()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(null);coll.add(null);AllPredicate.allPredicate(coll);",
+    "offset": [
+      {
+        "line": 227,
+        "column": 52
+      },
+      {
+        "line": 228,
+        "column": 9
+      },
+      {
+        "line": 229,
+        "column": 9
+      },
+      {
+        "line": 230,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 227,
+          "column": 9
+        },
+        "assert": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(null);coll.add(null);AllPredicate.allPredicate(coll);",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(null);coll.add(null);AllPredicate.allPredicate(coll);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOrPredicate()",
+    "annotation": "@Test",
+    "code": "assertEquals(true, PredicateUtils.orPredicate(TruePredicate.truePredicate(), TruePredicate.truePredicate()).evaluate(null));assertEquals(true, PredicateUtils.orPredicate(TruePredicate.truePredicate(), FalsePredicate.falsePredicate()).evaluate(null));assertEquals(true, PredicateUtils.orPredicate(FalsePredicate.falsePredicate(), TruePredicate.truePredicate()).evaluate(null));assertEquals(false, PredicateUtils.orPredicate(FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate()).evaluate(null));",
+    "offset": [
+      {
+        "line": 238,
+        "column": 9
+      },
+      {
+        "line": 238,
+        "column": 28
+      },
+      {
+        "line": 238,
+        "column": 28
+      },
+      {
+        "line": 238,
+        "column": 55
+      },
+      {
+        "line": 238,
+        "column": 86
+      },
+      {
+        "line": 239,
+        "column": 9
+      },
+      {
+        "line": 239,
+        "column": 28
+      },
+      {
+        "line": 239,
+        "column": 28
+      },
+      {
+        "line": 239,
+        "column": 55
+      },
+      {
+        "line": 239,
+        "column": 86
+      },
+      {
+        "line": 240,
+        "column": 9
+      },
+      {
+        "line": 240,
+        "column": 28
+      },
+      {
+        "line": 240,
+        "column": 28
+      },
+      {
+        "line": 240,
+        "column": 55
+      },
+      {
+        "line": 240,
+        "column": 88
+      },
+      {
+        "line": 241,
+        "column": 9
+      },
+      {
+        "line": 241,
+        "column": 29
+      },
+      {
+        "line": 241,
+        "column": 29
+      },
+      {
+        "line": 241,
+        "column": 56
+      },
+      {
+        "line": 241,
+        "column": 89
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 240,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.orPredicate(FalsePredicate.falsePredicate(), TruePredicate.truePredicate()).evaluate(null));",
+        "slice": "assertEquals(true, PredicateUtils.orPredicate(FalsePredicate.falsePredicate(), TruePredicate.truePredicate()).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 241,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.orPredicate(FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate()).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.orPredicate(FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate()).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 238,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.orPredicate(TruePredicate.truePredicate(), TruePredicate.truePredicate()).evaluate(null));",
+        "slice": "assertEquals(true, PredicateUtils.orPredicate(TruePredicate.truePredicate(), TruePredicate.truePredicate()).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 239,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.orPredicate(TruePredicate.truePredicate(), FalsePredicate.falsePredicate()).evaluate(null));",
+        "slice": "assertEquals(true, PredicateUtils.orPredicate(TruePredicate.truePredicate(), FalsePredicate.falsePredicate()).evaluate(null));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOrPredicateEx()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.orPredicate(null, null);",
+    "offset": [
+      {
+        "line": 246,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 246,
+          "column": 9
+        },
+        "assert": "PredicateUtils.orPredicate(null, null);",
+        "slice": "PredicateUtils.orPredicate(null, null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicate()",
+    "annotation": "@Test",
+    "code": "assertFalse(PredicateUtils.anyPredicate(new Predicate[] {}), null);assertEquals(true, PredicateUtils.anyPredicate(new Predicate[] { TruePredicate.truePredicate(), TruePredicate.truePredicate(), TruePredicate.truePredicate() }).evaluate(null));assertEquals(true, PredicateUtils.anyPredicate(new Predicate[] { TruePredicate.truePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));assertEquals(true, PredicateUtils.anyPredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));assertEquals(false, PredicateUtils.anyPredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate() }).evaluate(null));final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());assertEquals(true, PredicateUtils.anyPredicate(coll).evaluate(null));coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(true, PredicateUtils.anyPredicate(coll).evaluate(null));coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(true, PredicateUtils.anyPredicate(coll).evaluate(null));coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());assertEquals(false, PredicateUtils.anyPredicate(coll).evaluate(null));coll.clear();coll.add(FalsePredicate.falsePredicate());assertFalse(PredicateUtils.anyPredicate(coll), null);coll.clear();coll.add(TruePredicate.truePredicate());assertTrue(PredicateUtils.anyPredicate(coll), null);coll.clear();assertFalse(PredicateUtils.anyPredicate(coll), null);",
+    "offset": [
+      {
+        "line": 255,
+        "column": 9
+      },
+      {
+        "line": 255,
+        "column": 21
+      },
+      {
+        "line": 257,
+        "column": 9
+      },
+      {
+        "line": 257,
+        "column": 28
+      },
+      {
+        "line": 257,
+        "column": 28
+      },
+      {
+        "line": 258,
+        "column": 17
+      },
+      {
+        "line": 258,
+        "column": 48
+      },
+      {
+        "line": 258,
+        "column": 79
+      },
+      {
+        "line": 259,
+        "column": 9
+      },
+      {
+        "line": 259,
+        "column": 28
+      },
+      {
+        "line": 259,
+        "column": 28
+      },
+      {
+        "line": 260,
+        "column": 17
+      },
+      {
+        "line": 260,
+        "column": 48
+      },
+      {
+        "line": 260,
+        "column": 81
+      },
+      {
+        "line": 261,
+        "column": 9
+      },
+      {
+        "line": 261,
+        "column": 28
+      },
+      {
+        "line": 261,
+        "column": 28
+      },
+      {
+        "line": 262,
+        "column": 17
+      },
+      {
+        "line": 262,
+        "column": 50
+      },
+      {
+        "line": 262,
+        "column": 83
+      },
+      {
+        "line": 263,
+        "column": 9
+      },
+      {
+        "line": 263,
+        "column": 29
+      },
+      {
+        "line": 263,
+        "column": 29
+      },
+      {
+        "line": 264,
+        "column": 17
+      },
+      {
+        "line": 264,
+        "column": 50
+      },
+      {
+        "line": 264,
+        "column": 83
+      },
+      {
+        "line": 265,
+        "column": 52
+      },
+      {
+        "line": 266,
+        "column": 9
+      },
+      {
+        "line": 266,
+        "column": 18
+      },
+      {
+        "line": 267,
+        "column": 9
+      },
+      {
+        "line": 267,
+        "column": 18
+      },
+      {
+        "line": 268,
+        "column": 9
+      },
+      {
+        "line": 268,
+        "column": 18
+      },
+      {
+        "line": 269,
+        "column": 9
+      },
+      {
+        "line": 269,
+        "column": 28
+      },
+      {
+        "line": 269,
+        "column": 28
+      },
+      {
+        "line": 270,
+        "column": 9
+      },
+      {
+        "line": 271,
+        "column": 9
+      },
+      {
+        "line": 271,
+        "column": 18
+      },
+      {
+        "line": 272,
+        "column": 9
+      },
+      {
+        "line": 272,
+        "column": 18
+      },
+      {
+        "line": 273,
+        "column": 9
+      },
+      {
+        "line": 273,
+        "column": 18
+      },
+      {
+        "line": 274,
+        "column": 9
+      },
+      {
+        "line": 274,
+        "column": 28
+      },
+      {
+        "line": 274,
+        "column": 28
+      },
+      {
+        "line": 275,
+        "column": 9
+      },
+      {
+        "line": 276,
+        "column": 9
+      },
+      {
+        "line": 276,
+        "column": 18
+      },
+      {
+        "line": 277,
+        "column": 9
+      },
+      {
+        "line": 277,
+        "column": 18
+      },
+      {
+        "line": 278,
+        "column": 9
+      },
+      {
+        "line": 278,
+        "column": 18
+      },
+      {
+        "line": 279,
+        "column": 9
+      },
+      {
+        "line": 279,
+        "column": 28
+      },
+      {
+        "line": 279,
+        "column": 28
+      },
+      {
+        "line": 280,
+        "column": 9
+      },
+      {
+        "line": 281,
+        "column": 9
+      },
+      {
+        "line": 281,
+        "column": 18
+      },
+      {
+        "line": 282,
+        "column": 9
+      },
+      {
+        "line": 282,
+        "column": 18
+      },
+      {
+        "line": 283,
+        "column": 9
+      },
+      {
+        "line": 283,
+        "column": 18
+      },
+      {
+        "line": 284,
+        "column": 9
+      },
+      {
+        "line": 284,
+        "column": 29
+      },
+      {
+        "line": 284,
+        "column": 29
+      },
+      {
+        "line": 285,
+        "column": 9
+      },
+      {
+        "line": 286,
+        "column": 9
+      },
+      {
+        "line": 286,
+        "column": 18
+      },
+      {
+        "line": 287,
+        "column": 9
+      },
+      {
+        "line": 287,
+        "column": 21
+      },
+      {
+        "line": 288,
+        "column": 9
+      },
+      {
+        "line": 289,
+        "column": 9
+      },
+      {
+        "line": 289,
+        "column": 18
+      },
+      {
+        "line": 290,
+        "column": 9
+      },
+      {
+        "line": 290,
+        "column": 20
+      },
+      {
+        "line": 291,
+        "column": 9
+      },
+      {
+        "line": 292,
+        "column": 9
+      },
+      {
+        "line": 292,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 288,
+          "column": 9
+        },
+        "assert": "coll.clear();coll.add(TruePredicate.truePredicate());assertTrue(PredicateUtils.anyPredicate(coll), null);",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.clear();coll.add(TruePredicate.truePredicate());assertTrue(PredicateUtils.anyPredicate(coll), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 257,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.anyPredicate(new Predicate[] { TruePredicate.truePredicate(), TruePredicate.truePredicate(), TruePredicate.truePredicate() }).evaluate(null));",
+        "slice": "assertEquals(true, PredicateUtils.anyPredicate(new Predicate[] { TruePredicate.truePredicate(), TruePredicate.truePredicate(), TruePredicate.truePredicate() }).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 259,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.anyPredicate(new Predicate[] { TruePredicate.truePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));",
+        "slice": "assertEquals(true, PredicateUtils.anyPredicate(new Predicate[] { TruePredicate.truePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 275,
+          "column": 9
+        },
+        "assert": "coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(true, PredicateUtils.anyPredicate(coll).evaluate(null));",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(true, PredicateUtils.anyPredicate(coll).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 291,
+          "column": 9
+        },
+        "assert": "coll.clear();assertFalse(PredicateUtils.anyPredicate(coll), null);",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.clear();assertFalse(PredicateUtils.anyPredicate(coll), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.anyPredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));",
+        "slice": "assertEquals(true, PredicateUtils.anyPredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.anyPredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate() }).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.anyPredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate() }).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 280,
+          "column": 9
+        },
+        "assert": "coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());assertEquals(false, PredicateUtils.anyPredicate(coll).evaluate(null));",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());assertEquals(false, PredicateUtils.anyPredicate(coll).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        },
+        "assert": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());assertEquals(true, PredicateUtils.anyPredicate(coll).evaluate(null));",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());assertEquals(true, PredicateUtils.anyPredicate(coll).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        },
+        "assert": "coll.clear();coll.add(FalsePredicate.falsePredicate());assertFalse(PredicateUtils.anyPredicate(coll), null);",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());assertFalse(PredicateUtils.anyPredicate(coll), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 270,
+          "column": 9
+        },
+        "assert": "coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(true, PredicateUtils.anyPredicate(coll).evaluate(null));",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(true, PredicateUtils.anyPredicate(coll).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        },
+        "assert": "assertFalse(PredicateUtils.anyPredicate(new Predicate[] {}), null);",
+        "slice": "assertFalse(PredicateUtils.anyPredicate(new Predicate[] {}), null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicateEx1()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.anyPredicate((Predicate\u003cObject\u003e[]) null);",
+    "offset": [
+      {
+        "line": 297,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 297,
+          "column": 9
+        },
+        "assert": "PredicateUtils.anyPredicate((Predicate\u003cObject\u003e[]) null);",
+        "slice": "PredicateUtils.anyPredicate((Predicate\u003cObject\u003e[]) null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicateEx2()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.anyPredicate(new Predicate[] { null });",
+    "offset": [
+      {
+        "line": 303,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 303,
+          "column": 9
+        },
+        "assert": "PredicateUtils.anyPredicate(new Predicate[] { null });",
+        "slice": "PredicateUtils.anyPredicate(new Predicate[] { null });"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicateEx3()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.anyPredicate(new Predicate[] { null, null });",
+    "offset": [
+      {
+        "line": 309,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 309,
+          "column": 9
+        },
+        "assert": "PredicateUtils.anyPredicate(new Predicate[] { null, null });",
+        "slice": "PredicateUtils.anyPredicate(new Predicate[] { null, null });"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicateEx4()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.anyPredicate((Collection\u003cPredicate\u003cObject\u003e\u003e) null);",
+    "offset": [
+      {
+        "line": 314,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 314,
+          "column": 9
+        },
+        "assert": "PredicateUtils.anyPredicate((Collection\u003cPredicate\u003cObject\u003e\u003e) null);",
+        "slice": "PredicateUtils.anyPredicate((Collection\u003cPredicate\u003cObject\u003e\u003e) null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicateEx5()",
+    "annotation": "@Test",
+    "code": "PredicateUtils.anyPredicate(Collections.\u003cPredicate\u003cObject\u003e\u003eemptyList());",
+    "offset": [
+      {
+        "line": 319,
+        "column": 9
+      },
+      {
+        "line": 319,
+        "column": 37
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 319,
+          "column": 9
+        },
+        "assert": "PredicateUtils.anyPredicate(Collections.\u003cPredicate\u003cObject\u003e\u003eemptyList());",
+        "slice": "PredicateUtils.anyPredicate(Collections.\u003cPredicate\u003cObject\u003e\u003eemptyList());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicateEx6()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(null);coll.add(null);PredicateUtils.anyPredicate(coll);",
+    "offset": [
+      {
+        "line": 324,
+        "column": 52
+      },
+      {
+        "line": 325,
+        "column": 9
+      },
+      {
+        "line": 326,
+        "column": 9
+      },
+      {
+        "line": 327,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 324,
+          "column": 9
+        },
+        "assert": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(null);coll.add(null);PredicateUtils.anyPredicate(coll);",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(null);coll.add(null);PredicateUtils.anyPredicate(coll);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testEitherPredicate()",
+    "annotation": "@Test",
+    "code": "assertEquals(false, PredicateUtils.eitherPredicate(TruePredicate.truePredicate(), TruePredicate.truePredicate()).evaluate(null));assertEquals(true, PredicateUtils.eitherPredicate(TruePredicate.truePredicate(), FalsePredicate.falsePredicate()).evaluate(null));assertEquals(true, PredicateUtils.eitherPredicate(FalsePredicate.falsePredicate(), TruePredicate.truePredicate()).evaluate(null));assertEquals(false, PredicateUtils.eitherPredicate(FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate()).evaluate(null));",
+    "offset": [
+      {
+        "line": 335,
+        "column": 9
+      },
+      {
+        "line": 335,
+        "column": 29
+      },
+      {
+        "line": 335,
+        "column": 29
+      },
+      {
+        "line": 335,
+        "column": 60
+      },
+      {
+        "line": 335,
+        "column": 91
+      },
+      {
+        "line": 336,
+        "column": 9
+      },
+      {
+        "line": 336,
+        "column": 28
+      },
+      {
+        "line": 336,
+        "column": 28
+      },
+      {
+        "line": 336,
+        "column": 59
+      },
+      {
+        "line": 336,
+        "column": 90
+      },
+      {
+        "line": 337,
+        "column": 9
+      },
+      {
+        "line": 337,
+        "column": 28
+      },
+      {
+        "line": 337,
+        "column": 28
+      },
+      {
+        "line": 337,
+        "column": 59
+      },
+      {
+        "line": 337,
+        "column": 92
+      },
+      {
+        "line": 338,
+        "column": 9
+      },
+      {
+        "line": 338,
+        "column": 29
+      },
+      {
+        "line": 338,
+        "column": 29
+      },
+      {
+        "line": 338,
+        "column": 60
+      },
+      {
+        "line": 338,
+        "column": 93
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 336,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.eitherPredicate(TruePredicate.truePredicate(), FalsePredicate.falsePredicate()).evaluate(null));",
+        "slice": "assertEquals(true, PredicateUtils.eitherPredicate(TruePredicate.truePredicate(), FalsePredicate.falsePredicate()).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 337,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.eitherPredicate(FalsePredicate.falsePredicate(), TruePredicate.truePredicate()).evaluate(null));",
+        "slice": "assertEquals(true, PredicateUtils.eitherPredicate(FalsePredicate.falsePredicate(), TruePredicate.truePredicate()).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 338,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.eitherPredicate(FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate()).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.eitherPredicate(FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate()).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 335,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.eitherPredicate(TruePredicate.truePredicate(), TruePredicate.truePredicate()).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.eitherPredicate(TruePredicate.truePredicate(), TruePredicate.truePredicate()).evaluate(null));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testEitherPredicateEx()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.eitherPredicate(null, null);",
+    "offset": [
+      {
+        "line": 343,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 343,
+          "column": 9
+        },
+        "assert": "PredicateUtils.eitherPredicate(null, null);",
+        "slice": "PredicateUtils.eitherPredicate(null, null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOnePredicate()",
+    "annotation": "@Test",
+    "code": "assertFalse(PredicateUtils.onePredicate((Predicate\u003cObject\u003e[]) new Predicate[] {}), null);assertEquals(false, PredicateUtils.onePredicate(new Predicate[] { TruePredicate.truePredicate(), TruePredicate.truePredicate(), TruePredicate.truePredicate() }).evaluate(null));assertEquals(false, PredicateUtils.onePredicate(new Predicate[] { TruePredicate.truePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));assertEquals(true, PredicateUtils.onePredicate(new Predicate[] { TruePredicate.truePredicate(), FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate() }).evaluate(null));assertEquals(true, PredicateUtils.onePredicate(new Predicate[] { FalsePredicate.falsePredicate(), TruePredicate.truePredicate(), FalsePredicate.falsePredicate() }).evaluate(null));assertEquals(true, PredicateUtils.onePredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));assertEquals(false, PredicateUtils.onePredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate() }).evaluate(null));final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());assertEquals(false, PredicateUtils.onePredicate(coll).evaluate(null));coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(false, PredicateUtils.onePredicate(coll).evaluate(null));coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(true, PredicateUtils.onePredicate(coll).evaluate(null));coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());assertEquals(false, PredicateUtils.onePredicate(coll).evaluate(null));coll.clear();coll.add(FalsePredicate.falsePredicate());assertFalse(PredicateUtils.onePredicate(coll), null);coll.clear();coll.add(TruePredicate.truePredicate());assertTrue(PredicateUtils.onePredicate(coll), null);coll.clear();assertFalse(PredicateUtils.onePredicate(coll), null);",
+    "offset": [
+      {
+        "line": 352,
+        "column": 9
+      },
+      {
+        "line": 352,
+        "column": 21
+      },
+      {
+        "line": 353,
+        "column": 9
+      },
+      {
+        "line": 353,
+        "column": 29
+      },
+      {
+        "line": 353,
+        "column": 29
+      },
+      {
+        "line": 354,
+        "column": 13
+      },
+      {
+        "line": 354,
+        "column": 44
+      },
+      {
+        "line": 354,
+        "column": 75
+      },
+      {
+        "line": 355,
+        "column": 9
+      },
+      {
+        "line": 355,
+        "column": 29
+      },
+      {
+        "line": 355,
+        "column": 29
+      },
+      {
+        "line": 356,
+        "column": 17
+      },
+      {
+        "line": 356,
+        "column": 48
+      },
+      {
+        "line": 356,
+        "column": 81
+      },
+      {
+        "line": 357,
+        "column": 9
+      },
+      {
+        "line": 357,
+        "column": 28
+      },
+      {
+        "line": 357,
+        "column": 28
+      },
+      {
+        "line": 358,
+        "column": 17
+      },
+      {
+        "line": 358,
+        "column": 48
+      },
+      {
+        "line": 358,
+        "column": 81
+      },
+      {
+        "line": 359,
+        "column": 9
+      },
+      {
+        "line": 359,
+        "column": 28
+      },
+      {
+        "line": 359,
+        "column": 28
+      },
+      {
+        "line": 360,
+        "column": 17
+      },
+      {
+        "line": 360,
+        "column": 50
+      },
+      {
+        "line": 360,
+        "column": 81
+      },
+      {
+        "line": 361,
+        "column": 9
+      },
+      {
+        "line": 361,
+        "column": 28
+      },
+      {
+        "line": 361,
+        "column": 28
+      },
+      {
+        "line": 362,
+        "column": 17
+      },
+      {
+        "line": 362,
+        "column": 50
+      },
+      {
+        "line": 362,
+        "column": 83
+      },
+      {
+        "line": 363,
+        "column": 9
+      },
+      {
+        "line": 363,
+        "column": 29
+      },
+      {
+        "line": 363,
+        "column": 29
+      },
+      {
+        "line": 364,
+        "column": 17
+      },
+      {
+        "line": 364,
+        "column": 50
+      },
+      {
+        "line": 364,
+        "column": 83
+      },
+      {
+        "line": 365,
+        "column": 52
+      },
+      {
+        "line": 366,
+        "column": 9
+      },
+      {
+        "line": 366,
+        "column": 18
+      },
+      {
+        "line": 367,
+        "column": 9
+      },
+      {
+        "line": 367,
+        "column": 18
+      },
+      {
+        "line": 368,
+        "column": 9
+      },
+      {
+        "line": 368,
+        "column": 18
+      },
+      {
+        "line": 369,
+        "column": 9
+      },
+      {
+        "line": 369,
+        "column": 29
+      },
+      {
+        "line": 369,
+        "column": 29
+      },
+      {
+        "line": 370,
+        "column": 9
+      },
+      {
+        "line": 371,
+        "column": 9
+      },
+      {
+        "line": 371,
+        "column": 18
+      },
+      {
+        "line": 372,
+        "column": 9
+      },
+      {
+        "line": 372,
+        "column": 18
+      },
+      {
+        "line": 373,
+        "column": 9
+      },
+      {
+        "line": 373,
+        "column": 18
+      },
+      {
+        "line": 374,
+        "column": 9
+      },
+      {
+        "line": 374,
+        "column": 29
+      },
+      {
+        "line": 374,
+        "column": 29
+      },
+      {
+        "line": 375,
+        "column": 9
+      },
+      {
+        "line": 376,
+        "column": 9
+      },
+      {
+        "line": 376,
+        "column": 18
+      },
+      {
+        "line": 377,
+        "column": 9
+      },
+      {
+        "line": 377,
+        "column": 18
+      },
+      {
+        "line": 378,
+        "column": 9
+      },
+      {
+        "line": 378,
+        "column": 18
+      },
+      {
+        "line": 379,
+        "column": 9
+      },
+      {
+        "line": 379,
+        "column": 28
+      },
+      {
+        "line": 379,
+        "column": 28
+      },
+      {
+        "line": 380,
+        "column": 9
+      },
+      {
+        "line": 381,
+        "column": 9
+      },
+      {
+        "line": 381,
+        "column": 18
+      },
+      {
+        "line": 382,
+        "column": 9
+      },
+      {
+        "line": 382,
+        "column": 18
+      },
+      {
+        "line": 383,
+        "column": 9
+      },
+      {
+        "line": 383,
+        "column": 18
+      },
+      {
+        "line": 384,
+        "column": 9
+      },
+      {
+        "line": 384,
+        "column": 29
+      },
+      {
+        "line": 384,
+        "column": 29
+      },
+      {
+        "line": 385,
+        "column": 9
+      },
+      {
+        "line": 386,
+        "column": 9
+      },
+      {
+        "line": 386,
+        "column": 18
+      },
+      {
+        "line": 387,
+        "column": 9
+      },
+      {
+        "line": 387,
+        "column": 21
+      },
+      {
+        "line": 388,
+        "column": 9
+      },
+      {
+        "line": 389,
+        "column": 9
+      },
+      {
+        "line": 389,
+        "column": 18
+      },
+      {
+        "line": 390,
+        "column": 9
+      },
+      {
+        "line": 390,
+        "column": 20
+      },
+      {
+        "line": 391,
+        "column": 9
+      },
+      {
+        "line": 392,
+        "column": 9
+      },
+      {
+        "line": 392,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 352,
+          "column": 9
+        },
+        "assert": "assertFalse(PredicateUtils.onePredicate((Predicate\u003cObject\u003e[]) new Predicate[] {}), null);",
+        "slice": "assertFalse(PredicateUtils.onePredicate((Predicate\u003cObject\u003e[]) new Predicate[] {}), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 353,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.onePredicate(new Predicate[] { TruePredicate.truePredicate(), TruePredicate.truePredicate(), TruePredicate.truePredicate() }).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.onePredicate(new Predicate[] { TruePredicate.truePredicate(), TruePredicate.truePredicate(), TruePredicate.truePredicate() }).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 385,
+          "column": 9
+        },
+        "assert": "coll.clear();coll.add(FalsePredicate.falsePredicate());assertFalse(PredicateUtils.onePredicate(coll), null);",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());assertFalse(PredicateUtils.onePredicate(coll), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 355,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.onePredicate(new Predicate[] { TruePredicate.truePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.onePredicate(new Predicate[] { TruePredicate.truePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 388,
+          "column": 9
+        },
+        "assert": "coll.clear();coll.add(TruePredicate.truePredicate());assertTrue(PredicateUtils.onePredicate(coll), null);",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.clear();coll.add(TruePredicate.truePredicate());assertTrue(PredicateUtils.onePredicate(coll), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 357,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.onePredicate(new Predicate[] { TruePredicate.truePredicate(), FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate() }).evaluate(null));",
+        "slice": "assertEquals(true, PredicateUtils.onePredicate(new Predicate[] { TruePredicate.truePredicate(), FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate() }).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 359,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.onePredicate(new Predicate[] { FalsePredicate.falsePredicate(), TruePredicate.truePredicate(), FalsePredicate.falsePredicate() }).evaluate(null));",
+        "slice": "assertEquals(true, PredicateUtils.onePredicate(new Predicate[] { FalsePredicate.falsePredicate(), TruePredicate.truePredicate(), FalsePredicate.falsePredicate() }).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 391,
+          "column": 9
+        },
+        "assert": "coll.clear();assertFalse(PredicateUtils.onePredicate(coll), null);",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.clear();assertFalse(PredicateUtils.onePredicate(coll), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 361,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.onePredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));",
+        "slice": "assertEquals(true, PredicateUtils.onePredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 363,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.onePredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate() }).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.onePredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate() }).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 365,
+          "column": 9
+        },
+        "assert": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());assertEquals(false, PredicateUtils.onePredicate(coll).evaluate(null));",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());assertEquals(false, PredicateUtils.onePredicate(coll).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 370,
+          "column": 9
+        },
+        "assert": "coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(false, PredicateUtils.onePredicate(coll).evaluate(null));",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(false, PredicateUtils.onePredicate(coll).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 375,
+          "column": 9
+        },
+        "assert": "coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(true, PredicateUtils.onePredicate(coll).evaluate(null));",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(true, PredicateUtils.onePredicate(coll).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 380,
+          "column": 9
+        },
+        "assert": "coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());assertEquals(false, PredicateUtils.onePredicate(coll).evaluate(null));",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());assertEquals(false, PredicateUtils.onePredicate(coll).evaluate(null));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOnePredicateEx1()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.onePredicate((Predicate\u003cObject\u003e[]) null);",
+    "offset": [
+      {
+        "line": 397,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 397,
+          "column": 9
+        },
+        "assert": "PredicateUtils.onePredicate((Predicate\u003cObject\u003e[]) null);",
+        "slice": "PredicateUtils.onePredicate((Predicate\u003cObject\u003e[]) null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOnePredicateEx2()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.onePredicate(new Predicate[] { null });",
+    "offset": [
+      {
+        "line": 403,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 403,
+          "column": 9
+        },
+        "assert": "PredicateUtils.onePredicate(new Predicate[] { null });",
+        "slice": "PredicateUtils.onePredicate(new Predicate[] { null });"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOnePredicateEx3()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.onePredicate(new Predicate[] { null, null });",
+    "offset": [
+      {
+        "line": 409,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 409,
+          "column": 9
+        },
+        "assert": "PredicateUtils.onePredicate(new Predicate[] { null, null });",
+        "slice": "PredicateUtils.onePredicate(new Predicate[] { null, null });"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOnePredicateEx4()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.onePredicate((Collection\u003cPredicate\u003cObject\u003e\u003e) null);",
+    "offset": [
+      {
+        "line": 414,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 414,
+          "column": 9
+        },
+        "assert": "PredicateUtils.onePredicate((Collection\u003cPredicate\u003cObject\u003e\u003e) null);",
+        "slice": "PredicateUtils.onePredicate((Collection\u003cPredicate\u003cObject\u003e\u003e) null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOnePredicateEx6()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(null);coll.add(null);PredicateUtils.onePredicate(coll);",
+    "offset": [
+      {
+        "line": 425,
+        "column": 52
+      },
+      {
+        "line": 426,
+        "column": 9
+      },
+      {
+        "line": 427,
+        "column": 9
+      },
+      {
+        "line": 428,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 425,
+          "column": 9
+        },
+        "assert": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(null);coll.add(null);PredicateUtils.onePredicate(coll);",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(null);coll.add(null);PredicateUtils.onePredicate(coll);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNeitherPredicate()",
+    "annotation": "@Test",
+    "code": "assertEquals(false, PredicateUtils.neitherPredicate(TruePredicate.truePredicate(), TruePredicate.truePredicate()).evaluate(null));assertEquals(false, PredicateUtils.neitherPredicate(TruePredicate.truePredicate(), FalsePredicate.falsePredicate()).evaluate(null));assertEquals(false, PredicateUtils.neitherPredicate(FalsePredicate.falsePredicate(), TruePredicate.truePredicate()).evaluate(null));assertEquals(true, PredicateUtils.neitherPredicate(FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate()).evaluate(null));",
+    "offset": [
+      {
+        "line": 436,
+        "column": 9
+      },
+      {
+        "line": 436,
+        "column": 29
+      },
+      {
+        "line": 436,
+        "column": 29
+      },
+      {
+        "line": 436,
+        "column": 61
+      },
+      {
+        "line": 436,
+        "column": 92
+      },
+      {
+        "line": 437,
+        "column": 9
+      },
+      {
+        "line": 437,
+        "column": 29
+      },
+      {
+        "line": 437,
+        "column": 29
+      },
+      {
+        "line": 437,
+        "column": 61
+      },
+      {
+        "line": 437,
+        "column": 92
+      },
+      {
+        "line": 438,
+        "column": 9
+      },
+      {
+        "line": 438,
+        "column": 29
+      },
+      {
+        "line": 438,
+        "column": 29
+      },
+      {
+        "line": 438,
+        "column": 61
+      },
+      {
+        "line": 438,
+        "column": 94
+      },
+      {
+        "line": 439,
+        "column": 9
+      },
+      {
+        "line": 439,
+        "column": 28
+      },
+      {
+        "line": 439,
+        "column": 28
+      },
+      {
+        "line": 439,
+        "column": 60
+      },
+      {
+        "line": 439,
+        "column": 93
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 436,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.neitherPredicate(TruePredicate.truePredicate(), TruePredicate.truePredicate()).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.neitherPredicate(TruePredicate.truePredicate(), TruePredicate.truePredicate()).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 437,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.neitherPredicate(TruePredicate.truePredicate(), FalsePredicate.falsePredicate()).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.neitherPredicate(TruePredicate.truePredicate(), FalsePredicate.falsePredicate()).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 438,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.neitherPredicate(FalsePredicate.falsePredicate(), TruePredicate.truePredicate()).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.neitherPredicate(FalsePredicate.falsePredicate(), TruePredicate.truePredicate()).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 439,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.neitherPredicate(FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate()).evaluate(null));",
+        "slice": "assertEquals(true, PredicateUtils.neitherPredicate(FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate()).evaluate(null));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNeitherPredicateEx()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.neitherPredicate(null, null);",
+    "offset": [
+      {
+        "line": 444,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 444,
+          "column": 9
+        },
+        "assert": "PredicateUtils.neitherPredicate(null, null);",
+        "slice": "PredicateUtils.neitherPredicate(null, null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicate()",
+    "annotation": "@Test",
+    "code": "assertTrue(PredicateUtils.nonePredicate(new Predicate[] {}), null);assertEquals(false, PredicateUtils.nonePredicate(new Predicate[] { TruePredicate.truePredicate(), TruePredicate.truePredicate(), TruePredicate.truePredicate() }).evaluate(null));assertEquals(false, PredicateUtils.nonePredicate(new Predicate[] { TruePredicate.truePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));assertEquals(false, PredicateUtils.nonePredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));assertEquals(true, PredicateUtils.nonePredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate() }).evaluate(null));final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());assertEquals(false, PredicateUtils.nonePredicate(coll).evaluate(null));coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(false, PredicateUtils.nonePredicate(coll).evaluate(null));coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(false, PredicateUtils.nonePredicate(coll).evaluate(null));coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());assertEquals(true, PredicateUtils.nonePredicate(coll).evaluate(null));coll.clear();coll.add(FalsePredicate.falsePredicate());assertTrue(PredicateUtils.nonePredicate(coll), null);coll.clear();coll.add(TruePredicate.truePredicate());assertFalse(PredicateUtils.nonePredicate(coll), null);coll.clear();assertTrue(PredicateUtils.nonePredicate(coll), null);",
+    "offset": [
+      {
+        "line": 453,
+        "column": 9
+      },
+      {
+        "line": 453,
+        "column": 20
+      },
+      {
+        "line": 454,
+        "column": 9
+      },
+      {
+        "line": 454,
+        "column": 29
+      },
+      {
+        "line": 454,
+        "column": 29
+      },
+      {
+        "line": 455,
+        "column": 17
+      },
+      {
+        "line": 455,
+        "column": 48
+      },
+      {
+        "line": 455,
+        "column": 79
+      },
+      {
+        "line": 456,
+        "column": 9
+      },
+      {
+        "line": 456,
+        "column": 29
+      },
+      {
+        "line": 456,
+        "column": 29
+      },
+      {
+        "line": 457,
+        "column": 17
+      },
+      {
+        "line": 457,
+        "column": 48
+      },
+      {
+        "line": 457,
+        "column": 81
+      },
+      {
+        "line": 458,
+        "column": 9
+      },
+      {
+        "line": 458,
+        "column": 29
+      },
+      {
+        "line": 458,
+        "column": 29
+      },
+      {
+        "line": 459,
+        "column": 17
+      },
+      {
+        "line": 459,
+        "column": 50
+      },
+      {
+        "line": 459,
+        "column": 83
+      },
+      {
+        "line": 460,
+        "column": 9
+      },
+      {
+        "line": 460,
+        "column": 28
+      },
+      {
+        "line": 460,
+        "column": 28
+      },
+      {
+        "line": 461,
+        "column": 17
+      },
+      {
+        "line": 461,
+        "column": 50
+      },
+      {
+        "line": 461,
+        "column": 83
+      },
+      {
+        "line": 462,
+        "column": 52
+      },
+      {
+        "line": 463,
+        "column": 9
+      },
+      {
+        "line": 463,
+        "column": 18
+      },
+      {
+        "line": 464,
+        "column": 9
+      },
+      {
+        "line": 464,
+        "column": 18
+      },
+      {
+        "line": 465,
+        "column": 9
+      },
+      {
+        "line": 465,
+        "column": 18
+      },
+      {
+        "line": 466,
+        "column": 9
+      },
+      {
+        "line": 466,
+        "column": 29
+      },
+      {
+        "line": 466,
+        "column": 29
+      },
+      {
+        "line": 467,
+        "column": 9
+      },
+      {
+        "line": 468,
+        "column": 9
+      },
+      {
+        "line": 468,
+        "column": 18
+      },
+      {
+        "line": 469,
+        "column": 9
+      },
+      {
+        "line": 469,
+        "column": 18
+      },
+      {
+        "line": 470,
+        "column": 9
+      },
+      {
+        "line": 470,
+        "column": 18
+      },
+      {
+        "line": 471,
+        "column": 9
+      },
+      {
+        "line": 471,
+        "column": 29
+      },
+      {
+        "line": 471,
+        "column": 29
+      },
+      {
+        "line": 472,
+        "column": 9
+      },
+      {
+        "line": 473,
+        "column": 9
+      },
+      {
+        "line": 473,
+        "column": 18
+      },
+      {
+        "line": 474,
+        "column": 9
+      },
+      {
+        "line": 474,
+        "column": 18
+      },
+      {
+        "line": 475,
+        "column": 9
+      },
+      {
+        "line": 475,
+        "column": 18
+      },
+      {
+        "line": 476,
+        "column": 9
+      },
+      {
+        "line": 476,
+        "column": 29
+      },
+      {
+        "line": 476,
+        "column": 29
+      },
+      {
+        "line": 477,
+        "column": 9
+      },
+      {
+        "line": 478,
+        "column": 9
+      },
+      {
+        "line": 478,
+        "column": 18
+      },
+      {
+        "line": 479,
+        "column": 9
+      },
+      {
+        "line": 479,
+        "column": 18
+      },
+      {
+        "line": 480,
+        "column": 9
+      },
+      {
+        "line": 480,
+        "column": 18
+      },
+      {
+        "line": 481,
+        "column": 9
+      },
+      {
+        "line": 481,
+        "column": 28
+      },
+      {
+        "line": 481,
+        "column": 28
+      },
+      {
+        "line": 482,
+        "column": 9
+      },
+      {
+        "line": 483,
+        "column": 9
+      },
+      {
+        "line": 483,
+        "column": 18
+      },
+      {
+        "line": 484,
+        "column": 9
+      },
+      {
+        "line": 484,
+        "column": 20
+      },
+      {
+        "line": 485,
+        "column": 9
+      },
+      {
+        "line": 486,
+        "column": 9
+      },
+      {
+        "line": 486,
+        "column": 18
+      },
+      {
+        "line": 487,
+        "column": 9
+      },
+      {
+        "line": 487,
+        "column": 21
+      },
+      {
+        "line": 488,
+        "column": 9
+      },
+      {
+        "line": 489,
+        "column": 9
+      },
+      {
+        "line": 489,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 482,
+          "column": 9
+        },
+        "assert": "coll.clear();coll.add(FalsePredicate.falsePredicate());assertTrue(PredicateUtils.nonePredicate(coll), null);",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());assertTrue(PredicateUtils.nonePredicate(coll), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 467,
+          "column": 9
+        },
+        "assert": "coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(false, PredicateUtils.nonePredicate(coll).evaluate(null));",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(false, PredicateUtils.nonePredicate(coll).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 453,
+          "column": 9
+        },
+        "assert": "assertTrue(PredicateUtils.nonePredicate(new Predicate[] {}), null);",
+        "slice": "assertTrue(PredicateUtils.nonePredicate(new Predicate[] {}), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 485,
+          "column": 9
+        },
+        "assert": "coll.clear();coll.add(TruePredicate.truePredicate());assertFalse(PredicateUtils.nonePredicate(coll), null);",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.clear();coll.add(TruePredicate.truePredicate());assertFalse(PredicateUtils.nonePredicate(coll), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 454,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.nonePredicate(new Predicate[] { TruePredicate.truePredicate(), TruePredicate.truePredicate(), TruePredicate.truePredicate() }).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.nonePredicate(new Predicate[] { TruePredicate.truePredicate(), TruePredicate.truePredicate(), TruePredicate.truePredicate() }).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 456,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.nonePredicate(new Predicate[] { TruePredicate.truePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.nonePredicate(new Predicate[] { TruePredicate.truePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 472,
+          "column": 9
+        },
+        "assert": "coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(false, PredicateUtils.nonePredicate(coll).evaluate(null));",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());assertEquals(false, PredicateUtils.nonePredicate(coll).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 488,
+          "column": 9
+        },
+        "assert": "coll.clear();assertTrue(PredicateUtils.nonePredicate(coll), null);",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.clear();assertTrue(PredicateUtils.nonePredicate(coll), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 458,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.nonePredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.nonePredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), TruePredicate.truePredicate() }).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 460,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.nonePredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate() }).evaluate(null));",
+        "slice": "assertEquals(true, PredicateUtils.nonePredicate(new Predicate[] { FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate(), FalsePredicate.falsePredicate() }).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 477,
+          "column": 9
+        },
+        "assert": "coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());assertEquals(true, PredicateUtils.nonePredicate(coll).evaluate(null));",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(TruePredicate.truePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(TruePredicate.truePredicate());coll.clear();coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());coll.add(FalsePredicate.falsePredicate());assertEquals(true, PredicateUtils.nonePredicate(coll).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 462,
+          "column": 9
+        },
+        "assert": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());assertEquals(false, PredicateUtils.nonePredicate(coll).evaluate(null));",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());coll.add(TruePredicate.truePredicate());assertEquals(false, PredicateUtils.nonePredicate(coll).evaluate(null));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicateEx1()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.nonePredicate((Predicate\u003cObject\u003e[]) null);",
+    "offset": [
+      {
+        "line": 494,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 494,
+          "column": 9
+        },
+        "assert": "PredicateUtils.nonePredicate((Predicate\u003cObject\u003e[]) null);",
+        "slice": "PredicateUtils.nonePredicate((Predicate\u003cObject\u003e[]) null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicateEx2()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.nonePredicate(new Predicate[] { null });",
+    "offset": [
+      {
+        "line": 500,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 500,
+          "column": 9
+        },
+        "assert": "PredicateUtils.nonePredicate(new Predicate[] { null });",
+        "slice": "PredicateUtils.nonePredicate(new Predicate[] { null });"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicateEx3()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.nonePredicate(new Predicate[] { null, null });",
+    "offset": [
+      {
+        "line": 506,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 506,
+          "column": 9
+        },
+        "assert": "PredicateUtils.nonePredicate(new Predicate[] { null, null });",
+        "slice": "PredicateUtils.nonePredicate(new Predicate[] { null, null });"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicateEx4()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.nonePredicate((Collection\u003cPredicate\u003cObject\u003e\u003e) null);",
+    "offset": [
+      {
+        "line": 511,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 511,
+          "column": 9
+        },
+        "assert": "PredicateUtils.nonePredicate((Collection\u003cPredicate\u003cObject\u003e\u003e) null);",
+        "slice": "PredicateUtils.nonePredicate((Collection\u003cPredicate\u003cObject\u003e\u003e) null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicateEx5()",
+    "annotation": "@Test",
+    "code": "PredicateUtils.nonePredicate(Collections.\u003cPredicate\u003cObject\u003e\u003eemptyList());",
+    "offset": [
+      {
+        "line": 516,
+        "column": 9
+      },
+      {
+        "line": 516,
+        "column": 38
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 516,
+          "column": 9
+        },
+        "assert": "PredicateUtils.nonePredicate(Collections.\u003cPredicate\u003cObject\u003e\u003eemptyList());",
+        "slice": "PredicateUtils.nonePredicate(Collections.\u003cPredicate\u003cObject\u003e\u003eemptyList());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicateEx6()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(null);coll.add(null);PredicateUtils.nonePredicate(coll);",
+    "offset": [
+      {
+        "line": 521,
+        "column": 52
+      },
+      {
+        "line": 522,
+        "column": 9
+      },
+      {
+        "line": 523,
+        "column": 9
+      },
+      {
+        "line": 524,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 521,
+          "column": 9
+        },
+        "assert": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(null);coll.add(null);PredicateUtils.nonePredicate(coll);",
+        "slice": "final Collection\u003cPredicate\u003cObject\u003e\u003e coll \u003d new ArrayList\u003c\u003e();coll.add(null);coll.add(null);PredicateUtils.nonePredicate(coll);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInstanceOfPredicate()",
+    "annotation": "@Test",
+    "code": "assertNotNull(PredicateUtils.instanceofPredicate(String.class));assertEquals(false, PredicateUtils.instanceofPredicate(String.class).evaluate(null));assertEquals(false, PredicateUtils.instanceofPredicate(String.class).evaluate(cObject));assertEquals(true, PredicateUtils.instanceofPredicate(String.class).evaluate(cString));assertEquals(false, PredicateUtils.instanceofPredicate(String.class).evaluate(cInteger));",
+    "offset": [
+      {
+        "line": 532,
+        "column": 9
+      },
+      {
+        "line": 532,
+        "column": 23
+      },
+      {
+        "line": 533,
+        "column": 9
+      },
+      {
+        "line": 533,
+        "column": 29
+      },
+      {
+        "line": 533,
+        "column": 29
+      },
+      {
+        "line": 534,
+        "column": 9
+      },
+      {
+        "line": 534,
+        "column": 29
+      },
+      {
+        "line": 534,
+        "column": 29
+      },
+      {
+        "line": 535,
+        "column": 9
+      },
+      {
+        "line": 535,
+        "column": 28
+      },
+      {
+        "line": 535,
+        "column": 28
+      },
+      {
+        "line": 536,
+        "column": 9
+      },
+      {
+        "line": 536,
+        "column": 29
+      },
+      {
+        "line": 536,
+        "column": 29
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 532,
+          "column": 9
+        },
+        "assert": "assertNotNull(PredicateUtils.instanceofPredicate(String.class));",
+        "slice": "assertNotNull(PredicateUtils.instanceofPredicate(String.class));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 533,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.instanceofPredicate(String.class).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.instanceofPredicate(String.class).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 534,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.instanceofPredicate(String.class).evaluate(cObject));",
+        "slice": "assertEquals(false, PredicateUtils.instanceofPredicate(String.class).evaluate(cObject));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 535,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.instanceofPredicate(String.class).evaluate(cString));",
+        "slice": "assertEquals(true, PredicateUtils.instanceofPredicate(String.class).evaluate(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 536,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.instanceofPredicate(String.class).evaluate(cInteger));",
+        "slice": "assertEquals(false, PredicateUtils.instanceofPredicate(String.class).evaluate(cInteger));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testUniquePredicate()",
+    "annotation": "@Test",
+    "code": "final Predicate\u003cObject\u003e p \u003d PredicateUtils.uniquePredicate();assertEquals(true, p.evaluate(new Object()));assertEquals(true, p.evaluate(new Object()));assertEquals(true, p.evaluate(new Object()));assertEquals(true, p.evaluate(cString));assertEquals(false, p.evaluate(cString));assertEquals(false, p.evaluate(cString));",
+    "offset": [
+      {
+        "line": 544,
+        "column": 37
+      },
+      {
+        "line": 545,
+        "column": 9
+      },
+      {
+        "line": 545,
+        "column": 28
+      },
+      {
+        "line": 545,
+        "column": 39
+      },
+      {
+        "line": 546,
+        "column": 9
+      },
+      {
+        "line": 546,
+        "column": 28
+      },
+      {
+        "line": 546,
+        "column": 39
+      },
+      {
+        "line": 547,
+        "column": 9
+      },
+      {
+        "line": 547,
+        "column": 28
+      },
+      {
+        "line": 547,
+        "column": 39
+      },
+      {
+        "line": 548,
+        "column": 9
+      },
+      {
+        "line": 548,
+        "column": 28
+      },
+      {
+        "line": 549,
+        "column": 9
+      },
+      {
+        "line": 549,
+        "column": 29
+      },
+      {
+        "line": 550,
+        "column": 9
+      },
+      {
+        "line": 550,
+        "column": 29
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 544,
+          "column": 9
+        },
+        "assert": "final Predicate\u003cObject\u003e p \u003d PredicateUtils.uniquePredicate();assertEquals(true, p.evaluate(new Object()));",
+        "slice": "final Predicate\u003cObject\u003e p \u003d PredicateUtils.uniquePredicate();assertEquals(true, p.evaluate(new Object()));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 546,
+          "column": 9
+        },
+        "assert": "assertEquals(true, p.evaluate(new Object()));",
+        "slice": "final Predicate\u003cObject\u003e p \u003d PredicateUtils.uniquePredicate();assertEquals(true, p.evaluate(new Object()));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 547,
+          "column": 9
+        },
+        "assert": "assertEquals(true, p.evaluate(new Object()));",
+        "slice": "final Predicate\u003cObject\u003e p \u003d PredicateUtils.uniquePredicate();assertEquals(true, p.evaluate(new Object()));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 548,
+          "column": 9
+        },
+        "assert": "assertEquals(true, p.evaluate(cString));",
+        "slice": "final Predicate\u003cObject\u003e p \u003d PredicateUtils.uniquePredicate();assertEquals(true, p.evaluate(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 549,
+          "column": 9
+        },
+        "assert": "assertEquals(false, p.evaluate(cString));",
+        "slice": "final Predicate\u003cObject\u003e p \u003d PredicateUtils.uniquePredicate();assertEquals(false, p.evaluate(cString));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 550,
+          "column": 9
+        },
+        "assert": "assertEquals(false, p.evaluate(cString));",
+        "slice": "final Predicate\u003cObject\u003e p \u003d PredicateUtils.uniquePredicate();assertEquals(false, p.evaluate(cString));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAsPredicateTransformer()",
+    "annotation": "@Test",
+    "code": "assertEquals(false, PredicateUtils.asPredicate(TransformerUtils.\u003cBoolean\u003enopTransformer()).evaluate(false));assertEquals(true, PredicateUtils.asPredicate(TransformerUtils.\u003cBoolean\u003enopTransformer()).evaluate(true));",
+    "offset": [
+      {
+        "line": 558,
+        "column": 9
+      },
+      {
+        "line": 558,
+        "column": 29
+      },
+      {
+        "line": 558,
+        "column": 29
+      },
+      {
+        "line": 558,
+        "column": 56
+      },
+      {
+        "line": 559,
+        "column": 9
+      },
+      {
+        "line": 559,
+        "column": 28
+      },
+      {
+        "line": 559,
+        "column": 28
+      },
+      {
+        "line": 559,
+        "column": 55
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 558,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.asPredicate(TransformerUtils.\u003cBoolean\u003enopTransformer()).evaluate(false));",
+        "slice": "assertEquals(false, PredicateUtils.asPredicate(TransformerUtils.\u003cBoolean\u003enopTransformer()).evaluate(false));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 559,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.asPredicate(TransformerUtils.\u003cBoolean\u003enopTransformer()).evaluate(true));",
+        "slice": "assertEquals(true, PredicateUtils.asPredicate(TransformerUtils.\u003cBoolean\u003enopTransformer()).evaluate(true));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAsPredicateTransformerEx1()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.asPredicate(null);",
+    "offset": [
+      {
+        "line": 564,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 564,
+          "column": 9
+        },
+        "assert": "PredicateUtils.asPredicate(null);",
+        "slice": "PredicateUtils.asPredicate(null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAsPredicateTransformerEx2()",
+    "annotation": "@Test(expected \u003d FunctorException.class)",
+    "code": "PredicateUtils.asPredicate(TransformerUtils.\u003cBoolean\u003enopTransformer()).evaluate(null);",
+    "offset": [
+      {
+        "line": 569,
+        "column": 9
+      },
+      {
+        "line": 569,
+        "column": 9
+      },
+      {
+        "line": 569,
+        "column": 36
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 569,
+          "column": 9
+        },
+        "assert": "PredicateUtils.asPredicate(TransformerUtils.\u003cBoolean\u003enopTransformer()).evaluate(null);",
+        "slice": "PredicateUtils.asPredicate(TransformerUtils.\u003cBoolean\u003enopTransformer()).evaluate(null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicate()",
+    "annotation": "@Test",
+    "code": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();assertEquals(true, PredicateUtils.invokerPredicate(\"isEmpty\").evaluate(list));list.add(new Object());assertEquals(false, PredicateUtils.invokerPredicate(\"isEmpty\").evaluate(list));",
+    "offset": [
+      {
+        "line": 577,
+        "column": 35
+      },
+      {
+        "line": 578,
+        "column": 9
+      },
+      {
+        "line": 578,
+        "column": 28
+      },
+      {
+        "line": 578,
+        "column": 28
+      },
+      {
+        "line": 579,
+        "column": 9
+      },
+      {
+        "line": 579,
+        "column": 18
+      },
+      {
+        "line": 580,
+        "column": 9
+      },
+      {
+        "line": 580,
+        "column": 29
+      },
+      {
+        "line": 580,
+        "column": 29
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 577,
+          "column": 9
+        },
+        "assert": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();assertEquals(true, PredicateUtils.invokerPredicate(\"isEmpty\").evaluate(list));",
+        "slice": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();assertEquals(true, PredicateUtils.invokerPredicate(\"isEmpty\").evaluate(list));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 579,
+          "column": 9
+        },
+        "assert": "list.add(new Object());assertEquals(false, PredicateUtils.invokerPredicate(\"isEmpty\").evaluate(list));",
+        "slice": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();list.add(new Object());assertEquals(false, PredicateUtils.invokerPredicate(\"isEmpty\").evaluate(list));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicateEx1()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.invokerPredicate(null);",
+    "offset": [
+      {
+        "line": 585,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 585,
+          "column": 9
+        },
+        "assert": "PredicateUtils.invokerPredicate(null);",
+        "slice": "PredicateUtils.invokerPredicate(null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicateEx2()",
+    "annotation": "@Test(expected \u003d FunctorException.class)",
+    "code": "PredicateUtils.invokerPredicate(\"isEmpty\").evaluate(null);",
+    "offset": [
+      {
+        "line": 590,
+        "column": 9
+      },
+      {
+        "line": 590,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 590,
+          "column": 9
+        },
+        "assert": "PredicateUtils.invokerPredicate(\"isEmpty\").evaluate(null);",
+        "slice": "PredicateUtils.invokerPredicate(\"isEmpty\").evaluate(null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicateEx3()",
+    "annotation": "@Test(expected \u003d FunctorException.class)",
+    "code": "PredicateUtils.invokerPredicate(\"noSuchMethod\").evaluate(new Object());",
+    "offset": [
+      {
+        "line": 595,
+        "column": 9
+      },
+      {
+        "line": 595,
+        "column": 9
+      },
+      {
+        "line": 595,
+        "column": 66
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 595,
+          "column": 9
+        },
+        "assert": "PredicateUtils.invokerPredicate(\"noSuchMethod\").evaluate(new Object());",
+        "slice": "PredicateUtils.invokerPredicate(\"noSuchMethod\").evaluate(new Object());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicate2()",
+    "annotation": "@Test",
+    "code": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();assertEquals(false, PredicateUtils.invokerPredicate(\"contains\", new Class[] { Object.class }, new Object[] { cString }).evaluate(list));list.add(cString);assertEquals(true, PredicateUtils.invokerPredicate(\"contains\", new Class[] { Object.class }, new Object[] { cString }).evaluate(list));",
+    "offset": [
+      {
+        "line": 603,
+        "column": 35
+      },
+      {
+        "line": 604,
+        "column": 9
+      },
+      {
+        "line": 604,
+        "column": 29
+      },
+      {
+        "line": 604,
+        "column": 29
+      },
+      {
+        "line": 606,
+        "column": 9
+      },
+      {
+        "line": 607,
+        "column": 9
+      },
+      {
+        "line": 607,
+        "column": 28
+      },
+      {
+        "line": 607,
+        "column": 28
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 603,
+          "column": 9
+        },
+        "assert": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();assertEquals(false, PredicateUtils.invokerPredicate(\"contains\", new Class[] { Object.class }, new Object[] { cString }).evaluate(list));",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();assertEquals(false, PredicateUtils.invokerPredicate(\"contains\", new Class[] { Object.class }, new Object[] { cString }).evaluate(list));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 606,
+          "column": 9
+        },
+        "assert": "list.add(cString);assertEquals(true, PredicateUtils.invokerPredicate(\"contains\", new Class[] { Object.class }, new Object[] { cString }).evaluate(list));",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(cString);assertEquals(true, PredicateUtils.invokerPredicate(\"contains\", new Class[] { Object.class }, new Object[] { cString }).evaluate(list));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicate2Ex1()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.invokerPredicate(null, null, null);",
+    "offset": [
+      {
+        "line": 613,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 613,
+          "column": 9
+        },
+        "assert": "PredicateUtils.invokerPredicate(null, null, null);",
+        "slice": "PredicateUtils.invokerPredicate(null, null, null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicate2Ex2()",
+    "annotation": "@Test(expected \u003d FunctorException.class)",
+    "code": "PredicateUtils.invokerPredicate(\"contains\", new Class[] { Object.class }, new Object[] { cString }).evaluate(null);",
+    "offset": [
+      {
+        "line": 618,
+        "column": 9
+      },
+      {
+        "line": 618,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 618,
+          "column": 9
+        },
+        "assert": "PredicateUtils.invokerPredicate(\"contains\", new Class[] { Object.class }, new Object[] { cString }).evaluate(null);",
+        "slice": "PredicateUtils.invokerPredicate(\"contains\", new Class[] { Object.class }, new Object[] { cString }).evaluate(null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicate2Ex3()",
+    "annotation": "@Test(expected \u003d FunctorException.class)",
+    "code": "PredicateUtils.invokerPredicate(\"noSuchMethod\", new Class[] { Object.class }, new Object[] { cString }).evaluate(new Object());",
+    "offset": [
+      {
+        "line": 623,
+        "column": 9
+      },
+      {
+        "line": 623,
+        "column": 9
+      },
+      {
+        "line": 624,
+        "column": 94
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 623,
+          "column": 9
+        },
+        "assert": "PredicateUtils.invokerPredicate(\"noSuchMethod\", new Class[] { Object.class }, new Object[] { cString }).evaluate(new Object());",
+        "slice": "PredicateUtils.invokerPredicate(\"noSuchMethod\", new Class[] { Object.class }, new Object[] { cString }).evaluate(new Object());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNullIsExceptionPredicate()",
+    "annotation": "@Test(expected \u003d FunctorException.class)",
+    "code": "assertEquals(true, PredicateUtils.nullIsExceptionPredicate(TruePredicate.truePredicate()).evaluate(new Object()));PredicateUtils.nullIsExceptionPredicate(TruePredicate.truePredicate()).evaluate(null);",
+    "offset": [
+      {
+        "line": 632,
+        "column": 9
+      },
+      {
+        "line": 632,
+        "column": 28
+      },
+      {
+        "line": 632,
+        "column": 28
+      },
+      {
+        "line": 632,
+        "column": 68
+      },
+      {
+        "line": 632,
+        "column": 108
+      },
+      {
+        "line": 633,
+        "column": 9
+      },
+      {
+        "line": 633,
+        "column": 9
+      },
+      {
+        "line": 633,
+        "column": 49
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 632,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.nullIsExceptionPredicate(TruePredicate.truePredicate()).evaluate(new Object()));",
+        "slice": "assertEquals(true, PredicateUtils.nullIsExceptionPredicate(TruePredicate.truePredicate()).evaluate(new Object()));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 633,
+          "column": 9
+        },
+        "assert": "PredicateUtils.nullIsExceptionPredicate(TruePredicate.truePredicate()).evaluate(null);",
+        "slice": "PredicateUtils.nullIsExceptionPredicate(TruePredicate.truePredicate()).evaluate(null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNullIsExceptionPredicateEx1()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.nullIsExceptionPredicate(null);",
+    "offset": [
+      {
+        "line": 638,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 638,
+          "column": 9
+        },
+        "assert": "PredicateUtils.nullIsExceptionPredicate(null);",
+        "slice": "PredicateUtils.nullIsExceptionPredicate(null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNullIsTruePredicate()",
+    "annotation": "@Test",
+    "code": "assertEquals(true, PredicateUtils.nullIsTruePredicate(TruePredicate.truePredicate()).evaluate(null));assertEquals(true, PredicateUtils.nullIsTruePredicate(TruePredicate.truePredicate()).evaluate(new Object()));assertEquals(false, PredicateUtils.nullIsTruePredicate(FalsePredicate.falsePredicate()).evaluate(new Object()));",
+    "offset": [
+      {
+        "line": 646,
+        "column": 9
+      },
+      {
+        "line": 646,
+        "column": 28
+      },
+      {
+        "line": 646,
+        "column": 28
+      },
+      {
+        "line": 646,
+        "column": 63
+      },
+      {
+        "line": 647,
+        "column": 9
+      },
+      {
+        "line": 647,
+        "column": 28
+      },
+      {
+        "line": 647,
+        "column": 28
+      },
+      {
+        "line": 647,
+        "column": 63
+      },
+      {
+        "line": 647,
+        "column": 103
+      },
+      {
+        "line": 648,
+        "column": 9
+      },
+      {
+        "line": 648,
+        "column": 29
+      },
+      {
+        "line": 648,
+        "column": 29
+      },
+      {
+        "line": 648,
+        "column": 64
+      },
+      {
+        "line": 648,
+        "column": 106
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 646,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.nullIsTruePredicate(TruePredicate.truePredicate()).evaluate(null));",
+        "slice": "assertEquals(true, PredicateUtils.nullIsTruePredicate(TruePredicate.truePredicate()).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 647,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.nullIsTruePredicate(TruePredicate.truePredicate()).evaluate(new Object()));",
+        "slice": "assertEquals(true, PredicateUtils.nullIsTruePredicate(TruePredicate.truePredicate()).evaluate(new Object()));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 648,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.nullIsTruePredicate(FalsePredicate.falsePredicate()).evaluate(new Object()));",
+        "slice": "assertEquals(false, PredicateUtils.nullIsTruePredicate(FalsePredicate.falsePredicate()).evaluate(new Object()));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNullIsTruePredicateEx1()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.nullIsTruePredicate(null);",
+    "offset": [
+      {
+        "line": 653,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 653,
+          "column": 9
+        },
+        "assert": "PredicateUtils.nullIsTruePredicate(null);",
+        "slice": "PredicateUtils.nullIsTruePredicate(null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNullIsFalsePredicate()",
+    "annotation": "@Test",
+    "code": "assertEquals(false, PredicateUtils.nullIsFalsePredicate(TruePredicate.truePredicate()).evaluate(null));assertEquals(true, PredicateUtils.nullIsFalsePredicate(TruePredicate.truePredicate()).evaluate(new Object()));assertEquals(false, PredicateUtils.nullIsFalsePredicate(FalsePredicate.falsePredicate()).evaluate(new Object()));",
+    "offset": [
+      {
+        "line": 661,
+        "column": 9
+      },
+      {
+        "line": 661,
+        "column": 29
+      },
+      {
+        "line": 661,
+        "column": 29
+      },
+      {
+        "line": 661,
+        "column": 65
+      },
+      {
+        "line": 662,
+        "column": 9
+      },
+      {
+        "line": 662,
+        "column": 28
+      },
+      {
+        "line": 662,
+        "column": 28
+      },
+      {
+        "line": 662,
+        "column": 64
+      },
+      {
+        "line": 662,
+        "column": 104
+      },
+      {
+        "line": 663,
+        "column": 9
+      },
+      {
+        "line": 663,
+        "column": 29
+      },
+      {
+        "line": 663,
+        "column": 29
+      },
+      {
+        "line": 663,
+        "column": 65
+      },
+      {
+        "line": 663,
+        "column": 107
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 661,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.nullIsFalsePredicate(TruePredicate.truePredicate()).evaluate(null));",
+        "slice": "assertEquals(false, PredicateUtils.nullIsFalsePredicate(TruePredicate.truePredicate()).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 662,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.nullIsFalsePredicate(TruePredicate.truePredicate()).evaluate(new Object()));",
+        "slice": "assertEquals(true, PredicateUtils.nullIsFalsePredicate(TruePredicate.truePredicate()).evaluate(new Object()));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 663,
+          "column": 9
+        },
+        "assert": "assertEquals(false, PredicateUtils.nullIsFalsePredicate(FalsePredicate.falsePredicate()).evaluate(new Object()));",
+        "slice": "assertEquals(false, PredicateUtils.nullIsFalsePredicate(FalsePredicate.falsePredicate()).evaluate(new Object()));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNullIsFalsePredicateEx1()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "PredicateUtils.nullIsFalsePredicate(null);",
+    "offset": [
+      {
+        "line": 668,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 668,
+          "column": 9
+        },
+        "assert": "PredicateUtils.nullIsFalsePredicate(null);",
+        "slice": "PredicateUtils.nullIsFalsePredicate(null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testTransformedPredicate()",
+    "annotation": "@Test",
+    "code": "assertEquals(true, PredicateUtils.transformedPredicate(TransformerUtils.nopTransformer(), TruePredicate.truePredicate()).evaluate(new Object()));final Map\u003cObject, Object\u003e map \u003d new HashMap\u003c\u003e();map.put(Boolean.TRUE, \"Hello\");final Transformer\u003cObject, Object\u003e t \u003d TransformerUtils.mapTransformer(map);final Predicate\u003cObject\u003e p \u003d EqualPredicate.\u003cObject\u003eequalPredicate(\"Hello\");assertEquals(false, PredicateUtils.transformedPredicate(t, p).evaluate(null));assertEquals(true, PredicateUtils.transformedPredicate(t, p).evaluate(Boolean.TRUE));try {\n    PredicateUtils.transformedPredicate(null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+    "offset": [
+      {
+        "line": 676,
+        "column": 9
+      },
+      {
+        "line": 676,
+        "column": 28
+      },
+      {
+        "line": 676,
+        "column": 28
+      },
+      {
+        "line": 677,
+        "column": 17
+      },
+      {
+        "line": 678,
+        "column": 17
+      },
+      {
+        "line": 678,
+        "column": 57
+      },
+      {
+        "line": 680,
+        "column": 41
+      },
+      {
+        "line": 681,
+        "column": 9
+      },
+      {
+        "line": 682,
+        "column": 47
+      },
+      {
+        "line": 683,
+        "column": 37
+      },
+      {
+        "line": 684,
+        "column": 9
+      },
+      {
+        "line": 684,
+        "column": 29
+      },
+      {
+        "line": 684,
+        "column": 29
+      },
+      {
+        "line": 685,
+        "column": 9
+      },
+      {
+        "line": 685,
+        "column": 28
+      },
+      {
+        "line": 685,
+        "column": 28
+      },
+      {
+        "line": 687,
+        "column": 13
+      },
+      {
+        "line": 688,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 676,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.transformedPredicate(TransformerUtils.nopTransformer(), TruePredicate.truePredicate()).evaluate(new Object()));",
+        "slice": "assertEquals(true, PredicateUtils.transformedPredicate(TransformerUtils.nopTransformer(), TruePredicate.truePredicate()).evaluate(new Object()));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 680,
+          "column": 9
+        },
+        "assert": "final Map\u003cObject, Object\u003e map \u003d new HashMap\u003c\u003e();map.put(Boolean.TRUE, \"Hello\");final Transformer\u003cObject, Object\u003e t \u003d TransformerUtils.mapTransformer(map);final Predicate\u003cObject\u003e p \u003d EqualPredicate.\u003cObject\u003eequalPredicate(\"Hello\");assertEquals(false, PredicateUtils.transformedPredicate(t, p).evaluate(null));",
+        "slice": "final Map\u003cObject, Object\u003e map \u003d new HashMap\u003c\u003e();map.put(Boolean.TRUE, \"Hello\");final Transformer\u003cObject, Object\u003e t \u003d TransformerUtils.mapTransformer(map);final Predicate\u003cObject\u003e p \u003d EqualPredicate.\u003cObject\u003eequalPredicate(\"Hello\");assertEquals(false, PredicateUtils.transformedPredicate(t, p).evaluate(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 685,
+          "column": 9
+        },
+        "assert": "assertEquals(true, PredicateUtils.transformedPredicate(t, p).evaluate(Boolean.TRUE));",
+        "slice": "final Map\u003cObject, Object\u003e map \u003d new HashMap\u003c\u003e();map.put(Boolean.TRUE, \"Hello\");final Transformer\u003cObject, Object\u003e t \u003d TransformerUtils.mapTransformer(map);final Predicate\u003cObject\u003e p \u003d EqualPredicate.\u003cObject\u003eequalPredicate(\"Hello\");assertEquals(true, PredicateUtils.transformedPredicate(t, p).evaluate(Boolean.TRUE));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 686,
+          "column": 9
+        },
+        "assert": "try {\n    PredicateUtils.transformedPredicate(null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}",
+        "slice": "try {\n    PredicateUtils.transformedPredicate(null, null);\n    fail();\n} catch (final NullPointerException ex) {\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testSingletonPatternInSerialization()",
+    "annotation": "@Test",
+    "code": "final Object[] singletones \u003d new Object[] { ExceptionPredicate.INSTANCE, FalsePredicate.INSTANCE, NotNullPredicate.INSTANCE, NullPredicate.INSTANCE, TruePredicate.INSTANCE };for (final Object original : singletones) {\n    TestUtils.assertSameAfterSerialization(\"Singletone patern broken for \" + original.getClass(), original);\n}",
+    "offset": [
+      {
+        "line": 710,
+        "column": 13
+      },
+      {
+        "line": 711,
+        "column": 55
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 701,
+          "column": 9
+        },
+        "assert": "final Object[] singletones \u003d new Object[] { ExceptionPredicate.INSTANCE, FalsePredicate.INSTANCE, NotNullPredicate.INSTANCE, NullPredicate.INSTANCE, TruePredicate.INSTANCE };for (final Object original : singletones) {\n    TestUtils.assertSameAfterSerialization(\"Singletone patern broken for \" + original.getClass(), original);\n}",
+        "slice": "final Object[] singletones \u003d new Object[] { ExceptionPredicate.INSTANCE, FalsePredicate.INSTANCE, NotNullPredicate.INSTANCE, NullPredicate.INSTANCE, TruePredicate.INSTANCE };for (final Object original : singletones) {\n    TestUtils.assertSameAfterSerialization(\"Singletone patern broken for \" + original.getClass(), original);\n}"
+      }
+    ]
+  }
+]

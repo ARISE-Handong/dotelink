@@ -1,0 +1,2053 @@
+[
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testIntersectNonEmptyWithEmptyList()",
+    "annotation": "@Test",
+    "code": "final List\u003cString\u003e empty \u003d Collections.\u003cString\u003eemptyList();assertTrue(\"result not empty\", ListUtils.intersection(empty, fullList).isEmpty());",
+    "offset": [
+      {
+        "line": 60,
+        "column": 36
+      },
+      {
+        "line": 61,
+        "column": 9
+      },
+      {
+        "line": 61,
+        "column": 40
+      },
+      {
+        "line": 61,
+        "column": 40
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 60,
+          "column": 9
+        },
+        "assert": "final List\u003cString\u003e empty \u003d Collections.\u003cString\u003eemptyList();assertTrue(\"result not empty\", ListUtils.intersection(empty, fullList).isEmpty());",
+        "slice": "final List\u003cString\u003e empty \u003d Collections.\u003cString\u003eemptyList();assertTrue(\"result not empty\", ListUtils.intersection(empty, fullList).isEmpty());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testIntersectEmptyWithEmptyList()",
+    "annotation": "@Test",
+    "code": "final List\u003c?\u003e empty \u003d Collections.EMPTY_LIST;assertTrue(\"result not empty\", ListUtils.intersection(empty, empty).isEmpty());",
+    "offset": [
+      {
+        "line": 70,
+        "column": 9
+      },
+      {
+        "line": 70,
+        "column": 40
+      },
+      {
+        "line": 70,
+        "column": 40
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 69,
+          "column": 9
+        },
+        "assert": "final List\u003c?\u003e empty \u003d Collections.EMPTY_LIST;assertTrue(\"result not empty\", ListUtils.intersection(empty, empty).isEmpty());",
+        "slice": "final List\u003c?\u003e empty \u003d Collections.EMPTY_LIST;assertTrue(\"result not empty\", ListUtils.intersection(empty, empty).isEmpty());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testIntersectNonEmptySubset()",
+    "annotation": "@Test",
+    "code": "// create a copy\nfinal List\u003cString\u003e other \u003d new ArrayList\u003c\u003e(fullList);// remove a few items\nassertNotNull(other.remove(0));assertNotNull(other.remove(1));// make sure the intersection is equal to the copy\nassertEquals(other, ListUtils.intersection(fullList, other));",
+    "offset": [
+      {
+        "line": 79,
+        "column": 36
+      },
+      {
+        "line": 82,
+        "column": 9
+      },
+      {
+        "line": 82,
+        "column": 23
+      },
+      {
+        "line": 83,
+        "column": 9
+      },
+      {
+        "line": 83,
+        "column": 23
+      },
+      {
+        "line": 86,
+        "column": 9
+      },
+      {
+        "line": 86,
+        "column": 29
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 83,
+          "column": 9
+        },
+        "assert": "assertNotNull(other.remove(1));",
+        "slice": "// create a copy\nfinal List\u003cString\u003e other \u003d new ArrayList\u003c\u003e(fullList);assertNotNull(other.remove(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 86,
+          "column": 9
+        },
+        "assert": "// make sure the intersection is equal to the copy\nassertEquals(other, ListUtils.intersection(fullList, other));",
+        "slice": "// create a copy\nfinal List\u003cString\u003e other \u003d new ArrayList\u003c\u003e(fullList);// make sure the intersection is equal to the copy\nassertEquals(other, ListUtils.intersection(fullList, other));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 79,
+          "column": 9
+        },
+        "assert": "// create a copy\nfinal List\u003cString\u003e other \u003d new ArrayList\u003c\u003e(fullList);// remove a few items\nassertNotNull(other.remove(0));",
+        "slice": "// create a copy\nfinal List\u003cString\u003e other \u003d new ArrayList\u003c\u003e(fullList);// remove a few items\nassertNotNull(other.remove(0));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testIntersectListWithNoOverlapAndDifferentTypes()",
+    "annotation": "@Test",
+    "code": "@SuppressWarnings(\"boxing\")\nfinal List\u003cInteger\u003e other \u003d Arrays.asList(1, 23);assertTrue(ListUtils.intersection(fullList, other).isEmpty());",
+    "offset": [
+      {
+        "line": 95,
+        "column": 37
+      },
+      {
+        "line": 96,
+        "column": 9
+      },
+      {
+        "line": 96,
+        "column": 20
+      },
+      {
+        "line": 96,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 94,
+          "column": 9
+        },
+        "assert": "@SuppressWarnings(\"boxing\")\nfinal List\u003cInteger\u003e other \u003d Arrays.asList(1, 23);assertTrue(ListUtils.intersection(fullList, other).isEmpty());",
+        "slice": "@SuppressWarnings(\"boxing\")\nfinal List\u003cInteger\u003e other \u003d Arrays.asList(1, 23);assertTrue(ListUtils.intersection(fullList, other).isEmpty());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testIntersectListWithSelf()",
+    "annotation": "@Test",
+    "code": "assertEquals(fullList, ListUtils.intersection(fullList, fullList));",
+    "offset": [
+      {
+        "line": 104,
+        "column": 9
+      },
+      {
+        "line": 104,
+        "column": 32
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 104,
+          "column": 9
+        },
+        "assert": "assertEquals(fullList, ListUtils.intersection(fullList, fullList));",
+        "slice": "assertEquals(fullList, ListUtils.intersection(fullList, fullList));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testIntersectionOrderInsensitivity()",
+    "annotation": "@Test",
+    "code": "final List\u003cString\u003e one \u003d new ArrayList\u003c\u003e();final List\u003cString\u003e two \u003d new ArrayList\u003c\u003e();one.add(\"a\");one.add(\"b\");two.add(\"a\");two.add(\"a\");two.add(\"b\");two.add(\"b\");assertEquals(ListUtils.intersection(one, two), ListUtils.intersection(two, one));",
+    "offset": [
+      {
+        "line": 112,
+        "column": 34
+      },
+      {
+        "line": 113,
+        "column": 34
+      },
+      {
+        "line": 114,
+        "column": 9
+      },
+      {
+        "line": 115,
+        "column": 9
+      },
+      {
+        "line": 116,
+        "column": 9
+      },
+      {
+        "line": 117,
+        "column": 9
+      },
+      {
+        "line": 118,
+        "column": 9
+      },
+      {
+        "line": 119,
+        "column": 9
+      },
+      {
+        "line": 120,
+        "column": 9
+      },
+      {
+        "line": 120,
+        "column": 22
+      },
+      {
+        "line": 120,
+        "column": 54
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 112,
+          "column": 9
+        },
+        "assert": "final List\u003cString\u003e one \u003d new ArrayList\u003c\u003e();final List\u003cString\u003e two \u003d new ArrayList\u003c\u003e();one.add(\"a\");one.add(\"b\");two.add(\"a\");two.add(\"a\");two.add(\"b\");two.add(\"b\");assertEquals(ListUtils.intersection(one, two), ListUtils.intersection(two, one));",
+        "slice": "final List\u003cString\u003e one \u003d new ArrayList\u003c\u003e();final List\u003cString\u003e two \u003d new ArrayList\u003c\u003e();one.add(\"a\");one.add(\"b\");two.add(\"a\");two.add(\"a\");two.add(\"b\");two.add(\"b\");assertEquals(ListUtils.intersection(one, two), ListUtils.intersection(two, one));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testPredicatedList()",
+    "annotation": "@Test",
+    "code": "final Predicate\u003cObject\u003e predicate \u003d new Predicate\u003cObject\u003e() {\n\n    @Override\n    public boolean evaluate(final Object o) {\n        return o instanceof String;\n    }\n};final List\u003cObject\u003e list \u003d ListUtils.predicatedList(new ArrayList\u003c\u003e(), predicate);assertTrue(\"returned object should be a PredicatedList\", list instanceof PredicatedList);try {\n    ListUtils.predicatedList(new ArrayList\u003c\u003e(), null);\n    fail(\"Expecting IllegalArgumentException for null predicate.\");\n} catch (final NullPointerException ex) {\n    // expected\n}try {\n    ListUtils.predicatedList(null, predicate);\n    fail(\"Expecting IllegalArgumentException for null list.\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 125,
+        "column": 45
+      },
+      {
+        "line": 131,
+        "column": 35
+      },
+      {
+        "line": 131,
+        "column": 60
+      },
+      {
+        "line": 132,
+        "column": 9
+      },
+      {
+        "line": 134,
+        "column": 13
+      },
+      {
+        "line": 134,
+        "column": 38
+      },
+      {
+        "line": 135,
+        "column": 13
+      },
+      {
+        "line": 140,
+        "column": 13
+      },
+      {
+        "line": 141,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 133,
+          "column": 9
+        },
+        "assert": "try {\n    ListUtils.predicatedList(new ArrayList\u003c\u003e(), null);\n    fail(\"Expecting IllegalArgumentException for null predicate.\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+        "slice": "final Predicate\u003cObject\u003e predicate \u003d new Predicate\u003cObject\u003e() {\n\n    @Override\n    public boolean evaluate(final Object o) {\n        return o instanceof String;\n    }\n};final List\u003cObject\u003e list \u003d ListUtils.predicatedList(new ArrayList\u003c\u003e(), predicate);try {\n    ListUtils.predicatedList(new ArrayList\u003c\u003e(), null);\n    fail(\"Expecting IllegalArgumentException for null predicate.\");\n} catch (final NullPointerException ex) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 139,
+          "column": 9
+        },
+        "assert": "try {\n    ListUtils.predicatedList(null, predicate);\n    fail(\"Expecting IllegalArgumentException for null list.\");\n} catch (final NullPointerException ex) {\n    // expected\n}",
+        "slice": "final Predicate\u003cObject\u003e predicate \u003d new Predicate\u003cObject\u003e() {\n\n    @Override\n    public boolean evaluate(final Object o) {\n        return o instanceof String;\n    }\n};final List\u003cObject\u003e list \u003d ListUtils.predicatedList(new ArrayList\u003c\u003e(), predicate);try {\n    ListUtils.predicatedList(null, predicate);\n    fail(\"Expecting IllegalArgumentException for null list.\");\n} catch (final NullPointerException ex) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 125,
+          "column": 9
+        },
+        "assert": "final Predicate\u003cObject\u003e predicate \u003d new Predicate\u003cObject\u003e() {\n\n    @Override\n    public boolean evaluate(final Object o) {\n        return o instanceof String;\n    }\n};final List\u003cObject\u003e list \u003d ListUtils.predicatedList(new ArrayList\u003c\u003e(), predicate);assertTrue(\"returned object should be a PredicatedList\", list instanceof PredicatedList);",
+        "slice": "final Predicate\u003cObject\u003e predicate \u003d new Predicate\u003cObject\u003e() {\n\n    @Override\n    public boolean evaluate(final Object o) {\n        return o instanceof String;\n    }\n};final List\u003cObject\u003e list \u003d ListUtils.predicatedList(new ArrayList\u003c\u003e(), predicate);assertTrue(\"returned object should be a PredicatedList\", list instanceof PredicatedList);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testLazyFactoryList()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e list \u003d ListUtils.lazyList(new ArrayList\u003cInteger\u003e(), new Factory\u003cInteger\u003e() {\n\n    private int index;\n\n    @Override\n    public Integer create() {\n        index++;\n        return Integer.valueOf(index);\n    }\n});assertNotNull(list.get(5));assertEquals(6, list.size());assertNotNull(list.get(5));assertEquals(6, list.size());",
+    "offset": [
+      {
+        "line": 149,
+        "column": 36
+      },
+      {
+        "line": 149,
+        "column": 55
+      },
+      {
+        "line": 149,
+        "column": 81
+      },
+      {
+        "line": 156,
+        "column": 24
+      },
+      {
+        "line": 160,
+        "column": 9
+      },
+      {
+        "line": 160,
+        "column": 23
+      },
+      {
+        "line": 161,
+        "column": 9
+      },
+      {
+        "line": 161,
+        "column": 25
+      },
+      {
+        "line": 163,
+        "column": 9
+      },
+      {
+        "line": 163,
+        "column": 23
+      },
+      {
+        "line": 164,
+        "column": 9
+      },
+      {
+        "line": 164,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 161,
+          "column": 9
+        },
+        "assert": "assertEquals(6, list.size());",
+        "slice": "final List\u003cInteger\u003e list \u003d ListUtils.lazyList(new ArrayList\u003cInteger\u003e(), new Factory\u003cInteger\u003e() {\n\n    private int index;\n\n    @Override\n    public Integer create() {\n        index++;\n        return Integer.valueOf(index);\n    }\n});assertEquals(6, list.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 163,
+          "column": 9
+        },
+        "assert": "assertNotNull(list.get(5));",
+        "slice": "final List\u003cInteger\u003e list \u003d ListUtils.lazyList(new ArrayList\u003cInteger\u003e(), new Factory\u003cInteger\u003e() {\n\n    private int index;\n\n    @Override\n    public Integer create() {\n        index++;\n        return Integer.valueOf(index);\n    }\n});assertNotNull(list.get(5));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 164,
+          "column": 9
+        },
+        "assert": "assertEquals(6, list.size());",
+        "slice": "final List\u003cInteger\u003e list \u003d ListUtils.lazyList(new ArrayList\u003cInteger\u003e(), new Factory\u003cInteger\u003e() {\n\n    private int index;\n\n    @Override\n    public Integer create() {\n        index++;\n        return Integer.valueOf(index);\n    }\n});assertEquals(6, list.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 149,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e list \u003d ListUtils.lazyList(new ArrayList\u003cInteger\u003e(), new Factory\u003cInteger\u003e() {\n\n    private int index;\n\n    @Override\n    public Integer create() {\n        index++;\n        return Integer.valueOf(index);\n    }\n});assertNotNull(list.get(5));",
+        "slice": "final List\u003cInteger\u003e list \u003d ListUtils.lazyList(new ArrayList\u003cInteger\u003e(), new Factory\u003cInteger\u003e() {\n\n    private int index;\n\n    @Override\n    public Integer create() {\n        index++;\n        return Integer.valueOf(index);\n    }\n});assertNotNull(list.get(5));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testLazyTransformerList()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e offsets \u003d Arrays.asList(3, 5, 1, 5, 3, 6);final List\u003cInteger\u003e list \u003d ListUtils.lazyList(new ArrayList\u003c\u003e(), new Transformer\u003cInteger, Integer\u003e() {\n\n    private int index;\n\n    @Override\n    public Integer transform(Integer input) {\n        return offsets.get(input) + index++;\n    }\n});assertNotNull(list.get(5));assertEquals(6, list.size());assertNotNull(list.get(5));assertEquals(6, list.size());",
+    "offset": [
+      {
+        "line": 169,
+        "column": 39
+      },
+      {
+        "line": 170,
+        "column": 36
+      },
+      {
+        "line": 170,
+        "column": 55
+      },
+      {
+        "line": 170,
+        "column": 74
+      },
+      {
+        "line": 176,
+        "column": 24
+      },
+      {
+        "line": 181,
+        "column": 9
+      },
+      {
+        "line": 181,
+        "column": 23
+      },
+      {
+        "line": 182,
+        "column": 9
+      },
+      {
+        "line": 182,
+        "column": 25
+      },
+      {
+        "line": 184,
+        "column": 9
+      },
+      {
+        "line": 184,
+        "column": 23
+      },
+      {
+        "line": 185,
+        "column": 9
+      },
+      {
+        "line": 185,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 182,
+          "column": 9
+        },
+        "assert": "assertEquals(6, list.size());",
+        "slice": "final List\u003cInteger\u003e offsets \u003d Arrays.asList(3, 5, 1, 5, 3, 6);final List\u003cInteger\u003e list \u003d ListUtils.lazyList(new ArrayList\u003c\u003e(), new Transformer\u003cInteger, Integer\u003e() {\n\n    private int index;\n\n    @Override\n    public Integer transform(Integer input) {\n        return offsets.get(input) + index++;\n    }\n});assertEquals(6, list.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 184,
+          "column": 9
+        },
+        "assert": "assertNotNull(list.get(5));",
+        "slice": "final List\u003cInteger\u003e offsets \u003d Arrays.asList(3, 5, 1, 5, 3, 6);final List\u003cInteger\u003e list \u003d ListUtils.lazyList(new ArrayList\u003c\u003e(), new Transformer\u003cInteger, Integer\u003e() {\n\n    private int index;\n\n    @Override\n    public Integer transform(Integer input) {\n        return offsets.get(input) + index++;\n    }\n});assertNotNull(list.get(5));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 169,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e offsets \u003d Arrays.asList(3, 5, 1, 5, 3, 6);final List\u003cInteger\u003e list \u003d ListUtils.lazyList(new ArrayList\u003c\u003e(), new Transformer\u003cInteger, Integer\u003e() {\n\n    private int index;\n\n    @Override\n    public Integer transform(Integer input) {\n        return offsets.get(input) + index++;\n    }\n});assertNotNull(list.get(5));",
+        "slice": "final List\u003cInteger\u003e offsets \u003d Arrays.asList(3, 5, 1, 5, 3, 6);final List\u003cInteger\u003e list \u003d ListUtils.lazyList(new ArrayList\u003c\u003e(), new Transformer\u003cInteger, Integer\u003e() {\n\n    private int index;\n\n    @Override\n    public Integer transform(Integer input) {\n        return offsets.get(input) + index++;\n    }\n});assertNotNull(list.get(5));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 185,
+          "column": 9
+        },
+        "assert": "assertEquals(6, list.size());",
+        "slice": "final List\u003cInteger\u003e offsets \u003d Arrays.asList(3, 5, 1, 5, 3, 6);final List\u003cInteger\u003e list \u003d ListUtils.lazyList(new ArrayList\u003c\u003e(), new Transformer\u003cInteger, Integer\u003e() {\n\n    private int index;\n\n    @Override\n    public Integer transform(Integer input) {\n        return offsets.get(input) + index++;\n    }\n});assertEquals(6, list.size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testEmptyIfNull()",
+    "annotation": "@Test",
+    "code": "assertTrue(ListUtils.emptyIfNull(null).isEmpty());final List\u003cLong\u003e list \u003d new ArrayList\u003c\u003e();assertSame(list, ListUtils.emptyIfNull(list));",
+    "offset": [
+      {
+        "line": 190,
+        "column": 9
+      },
+      {
+        "line": 190,
+        "column": 20
+      },
+      {
+        "line": 190,
+        "column": 20
+      },
+      {
+        "line": 192,
+        "column": 33
+      },
+      {
+        "line": 193,
+        "column": 9
+      },
+      {
+        "line": 193,
+        "column": 26
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 192,
+          "column": 9
+        },
+        "assert": "final List\u003cLong\u003e list \u003d new ArrayList\u003c\u003e();assertSame(list, ListUtils.emptyIfNull(list));",
+        "slice": "final List\u003cLong\u003e list \u003d new ArrayList\u003c\u003e();assertSame(list, ListUtils.emptyIfNull(list));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 190,
+          "column": 9
+        },
+        "assert": "assertTrue(ListUtils.emptyIfNull(null).isEmpty());",
+        "slice": "assertTrue(ListUtils.emptyIfNull(null).isEmpty());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testDefaultIfNull()",
+    "annotation": "@Test",
+    "code": "assertTrue(ListUtils.defaultIfNull(null, Collections.emptyList()).isEmpty());final List\u003cLong\u003e list \u003d new ArrayList\u003c\u003e();assertSame(list, ListUtils.defaultIfNull(list, Collections.\u003cLong\u003eemptyList()));",
+    "offset": [
+      {
+        "line": 198,
+        "column": 9
+      },
+      {
+        "line": 198,
+        "column": 20
+      },
+      {
+        "line": 198,
+        "column": 20
+      },
+      {
+        "line": 198,
+        "column": 50
+      },
+      {
+        "line": 200,
+        "column": 33
+      },
+      {
+        "line": 201,
+        "column": 9
+      },
+      {
+        "line": 201,
+        "column": 26
+      },
+      {
+        "line": 201,
+        "column": 56
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 198,
+          "column": 9
+        },
+        "assert": "assertTrue(ListUtils.defaultIfNull(null, Collections.emptyList()).isEmpty());",
+        "slice": "assertTrue(ListUtils.defaultIfNull(null, Collections.emptyList()).isEmpty());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 200,
+          "column": 9
+        },
+        "assert": "final List\u003cLong\u003e list \u003d new ArrayList\u003c\u003e();assertSame(list, ListUtils.defaultIfNull(list, Collections.\u003cLong\u003eemptyList()));",
+        "slice": "final List\u003cLong\u003e list \u003d new ArrayList\u003c\u003e();assertSame(list, ListUtils.defaultIfNull(list, Collections.\u003cLong\u003eemptyList()));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testEquals()",
+    "annotation": "@Test",
+    "code": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final List\u003cString\u003e a \u003d new ArrayList\u003c\u003e(data);final List\u003cString\u003e b \u003d new ArrayList\u003c\u003e(data);assertEquals(true, a.equals(b));assertEquals(true, ListUtils.isEqualList(a, b));a.clear();assertEquals(false, ListUtils.isEqualList(a, b));assertEquals(false, ListUtils.isEqualList(a, null));assertEquals(false, ListUtils.isEqualList(null, b));assertEquals(true, ListUtils.isEqualList(null, null));",
+    "offset": [
+      {
+        "line": 206,
+        "column": 41
+      },
+      {
+        "line": 208,
+        "column": 32
+      },
+      {
+        "line": 209,
+        "column": 32
+      },
+      {
+        "line": 211,
+        "column": 9
+      },
+      {
+        "line": 211,
+        "column": 28
+      },
+      {
+        "line": 212,
+        "column": 9
+      },
+      {
+        "line": 212,
+        "column": 28
+      },
+      {
+        "line": 213,
+        "column": 9
+      },
+      {
+        "line": 214,
+        "column": 9
+      },
+      {
+        "line": 214,
+        "column": 29
+      },
+      {
+        "line": 215,
+        "column": 9
+      },
+      {
+        "line": 215,
+        "column": 29
+      },
+      {
+        "line": 216,
+        "column": 9
+      },
+      {
+        "line": 216,
+        "column": 29
+      },
+      {
+        "line": 217,
+        "column": 9
+      },
+      {
+        "line": 217,
+        "column": 28
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 212,
+          "column": 9
+        },
+        "assert": "assertEquals(true, ListUtils.isEqualList(a, b));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final List\u003cString\u003e a \u003d new ArrayList\u003c\u003e(data);final List\u003cString\u003e b \u003d new ArrayList\u003c\u003e(data);assertEquals(true, ListUtils.isEqualList(a, b));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 213,
+          "column": 9
+        },
+        "assert": "a.clear();assertEquals(false, ListUtils.isEqualList(a, b));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final List\u003cString\u003e a \u003d new ArrayList\u003c\u003e(data);final List\u003cString\u003e b \u003d new ArrayList\u003c\u003e(data);a.clear();assertEquals(false, ListUtils.isEqualList(a, b));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 215,
+          "column": 9
+        },
+        "assert": "assertEquals(false, ListUtils.isEqualList(a, null));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final List\u003cString\u003e a \u003d new ArrayList\u003c\u003e(data);a.clear();assertEquals(false, ListUtils.isEqualList(a, null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 216,
+          "column": 9
+        },
+        "assert": "assertEquals(false, ListUtils.isEqualList(null, b));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final List\u003cString\u003e b \u003d new ArrayList\u003c\u003e(data);assertEquals(false, ListUtils.isEqualList(null, b));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 217,
+          "column": 9
+        },
+        "assert": "assertEquals(true, ListUtils.isEqualList(null, null));",
+        "slice": "assertEquals(true, ListUtils.isEqualList(null, null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 206,
+          "column": 9
+        },
+        "assert": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final List\u003cString\u003e a \u003d new ArrayList\u003c\u003e(data);final List\u003cString\u003e b \u003d new ArrayList\u003c\u003e(data);assertEquals(true, a.equals(b));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final List\u003cString\u003e a \u003d new ArrayList\u003c\u003e(data);final List\u003cString\u003e b \u003d new ArrayList\u003c\u003e(data);assertEquals(true, a.equals(b));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testHashCode()",
+    "annotation": "@Test",
+    "code": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final List\u003cString\u003e a \u003d new ArrayList\u003c\u003e(data);final List\u003cString\u003e b \u003d new ArrayList\u003c\u003e(data);assertEquals(true, a.hashCode() \u003d\u003d b.hashCode());assertEquals(true, a.hashCode() \u003d\u003d ListUtils.hashCodeForList(a));assertEquals(true, b.hashCode() \u003d\u003d ListUtils.hashCodeForList(b));assertEquals(true, ListUtils.hashCodeForList(a) \u003d\u003d ListUtils.hashCodeForList(b));a.clear();assertEquals(false, ListUtils.hashCodeForList(a) \u003d\u003d ListUtils.hashCodeForList(b));assertEquals(0, ListUtils.hashCodeForList(null));",
+    "offset": [
+      {
+        "line": 222,
+        "column": 41
+      },
+      {
+        "line": 224,
+        "column": 32
+      },
+      {
+        "line": 225,
+        "column": 32
+      },
+      {
+        "line": 227,
+        "column": 9
+      },
+      {
+        "line": 227,
+        "column": 28
+      },
+      {
+        "line": 227,
+        "column": 44
+      },
+      {
+        "line": 228,
+        "column": 9
+      },
+      {
+        "line": 228,
+        "column": 28
+      },
+      {
+        "line": 228,
+        "column": 44
+      },
+      {
+        "line": 229,
+        "column": 9
+      },
+      {
+        "line": 229,
+        "column": 28
+      },
+      {
+        "line": 229,
+        "column": 44
+      },
+      {
+        "line": 230,
+        "column": 9
+      },
+      {
+        "line": 230,
+        "column": 28
+      },
+      {
+        "line": 230,
+        "column": 60
+      },
+      {
+        "line": 231,
+        "column": 9
+      },
+      {
+        "line": 232,
+        "column": 9
+      },
+      {
+        "line": 232,
+        "column": 29
+      },
+      {
+        "line": 232,
+        "column": 61
+      },
+      {
+        "line": 233,
+        "column": 9
+      },
+      {
+        "line": 233,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 228,
+          "column": 9
+        },
+        "assert": "assertEquals(true, a.hashCode() \u003d\u003d ListUtils.hashCodeForList(a));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final List\u003cString\u003e a \u003d new ArrayList\u003c\u003e(data);assertEquals(true, a.hashCode() \u003d\u003d ListUtils.hashCodeForList(a));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 229,
+          "column": 9
+        },
+        "assert": "assertEquals(true, b.hashCode() \u003d\u003d ListUtils.hashCodeForList(b));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final List\u003cString\u003e b \u003d new ArrayList\u003c\u003e(data);assertEquals(true, b.hashCode() \u003d\u003d ListUtils.hashCodeForList(b));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 230,
+          "column": 9
+        },
+        "assert": "assertEquals(true, ListUtils.hashCodeForList(a) \u003d\u003d ListUtils.hashCodeForList(b));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final List\u003cString\u003e a \u003d new ArrayList\u003c\u003e(data);final List\u003cString\u003e b \u003d new ArrayList\u003c\u003e(data);assertEquals(true, ListUtils.hashCodeForList(a) \u003d\u003d ListUtils.hashCodeForList(b));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 231,
+          "column": 9
+        },
+        "assert": "a.clear();assertEquals(false, ListUtils.hashCodeForList(a) \u003d\u003d ListUtils.hashCodeForList(b));",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final List\u003cString\u003e a \u003d new ArrayList\u003c\u003e(data);final List\u003cString\u003e b \u003d new ArrayList\u003c\u003e(data);a.clear();assertEquals(false, ListUtils.hashCodeForList(a) \u003d\u003d ListUtils.hashCodeForList(b));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 233,
+          "column": 9
+        },
+        "assert": "assertEquals(0, ListUtils.hashCodeForList(null));",
+        "slice": "assertEquals(0, ListUtils.hashCodeForList(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 222,
+          "column": 9
+        },
+        "assert": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final List\u003cString\u003e a \u003d new ArrayList\u003c\u003e(data);final List\u003cString\u003e b \u003d new ArrayList\u003c\u003e(data);assertEquals(true, a.hashCode() \u003d\u003d b.hashCode());",
+        "slice": "final Collection\u003cString\u003e data \u003d Arrays.asList(\"a\", \"b\", \"c\");final List\u003cString\u003e a \u003d new ArrayList\u003c\u003e(data);final List\u003cString\u003e b \u003d new ArrayList\u003c\u003e(data);assertEquals(true, a.hashCode() \u003d\u003d b.hashCode());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testRetainAll()",
+    "annotation": "@Test",
+    "code": "final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);sub.add(b);sub.add(x);final List\u003cString\u003e retained \u003d ListUtils.retainAll(fullList, sub);assertTrue(retained.size() \u003d\u003d 2);sub.remove(x);assertTrue(retained.equals(sub));fullList.retainAll(sub);assertTrue(retained.equals(fullList));try {\n    ListUtils.retainAll(null, null);\n    fail(\"expecting NullPointerException\");\n}// this is what we want\n catch (final NullPointerException npe) {\n}",
+    "offset": [
+      {
+        "line": 238,
+        "column": 34
+      },
+      {
+        "line": 239,
+        "column": 9
+      },
+      {
+        "line": 240,
+        "column": 9
+      },
+      {
+        "line": 241,
+        "column": 9
+      },
+      {
+        "line": 243,
+        "column": 39
+      },
+      {
+        "line": 244,
+        "column": 9
+      },
+      {
+        "line": 244,
+        "column": 20
+      },
+      {
+        "line": 245,
+        "column": 9
+      },
+      {
+        "line": 246,
+        "column": 9
+      },
+      {
+        "line": 246,
+        "column": 20
+      },
+      {
+        "line": 247,
+        "column": 9
+      },
+      {
+        "line": 248,
+        "column": 9
+      },
+      {
+        "line": 248,
+        "column": 20
+      },
+      {
+        "line": 251,
+        "column": 13
+      },
+      {
+        "line": 252,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 245,
+          "column": 9
+        },
+        "assert": "sub.remove(x);assertTrue(retained.equals(sub));",
+        "slice": "final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);sub.add(b);sub.add(x);final List\u003cString\u003e retained \u003d ListUtils.retainAll(fullList, sub);sub.remove(x);assertTrue(retained.equals(sub));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 247,
+          "column": 9
+        },
+        "assert": "fullList.retainAll(sub);assertTrue(retained.equals(fullList));",
+        "slice": "final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);sub.add(b);sub.add(x);final List\u003cString\u003e retained \u003d ListUtils.retainAll(fullList, sub);sub.remove(x);fullList.retainAll(sub);assertTrue(retained.equals(fullList));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 250,
+          "column": 9
+        },
+        "assert": "try {\n    ListUtils.retainAll(null, null);\n    fail(\"expecting NullPointerException\");\n}// this is what we want\n catch (final NullPointerException npe) {\n}",
+        "slice": "final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);sub.add(b);sub.add(x);final List\u003cString\u003e retained \u003d ListUtils.retainAll(fullList, sub);try {\n    ListUtils.retainAll(null, null);\n    fail(\"expecting NullPointerException\");\n}// this is what we want\n catch (final NullPointerException npe) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 238,
+          "column": 9
+        },
+        "assert": "final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);sub.add(b);sub.add(x);final List\u003cString\u003e retained \u003d ListUtils.retainAll(fullList, sub);assertTrue(retained.size() \u003d\u003d 2);",
+        "slice": "final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);sub.add(b);sub.add(x);final List\u003cString\u003e retained \u003d ListUtils.retainAll(fullList, sub);assertTrue(retained.size() \u003d\u003d 2);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testRemoveAll()",
+    "annotation": "@Test",
+    "code": "final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);sub.add(b);sub.add(x);final List\u003cString\u003e remainder \u003d ListUtils.removeAll(fullList, sub);assertTrue(remainder.size() \u003d\u003d 3);fullList.removeAll(sub);assertTrue(remainder.equals(fullList));try {\n    ListUtils.removeAll(null, null);\n    fail(\"expecting NullPointerException\");\n}// this is what we want\n catch (final NullPointerException npe) {\n}",
+    "offset": [
+      {
+        "line": 258,
+        "column": 34
+      },
+      {
+        "line": 259,
+        "column": 9
+      },
+      {
+        "line": 260,
+        "column": 9
+      },
+      {
+        "line": 261,
+        "column": 9
+      },
+      {
+        "line": 263,
+        "column": 40
+      },
+      {
+        "line": 264,
+        "column": 9
+      },
+      {
+        "line": 264,
+        "column": 20
+      },
+      {
+        "line": 265,
+        "column": 9
+      },
+      {
+        "line": 266,
+        "column": 9
+      },
+      {
+        "line": 266,
+        "column": 20
+      },
+      {
+        "line": 269,
+        "column": 13
+      },
+      {
+        "line": 270,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 258,
+          "column": 9
+        },
+        "assert": "final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);sub.add(b);sub.add(x);final List\u003cString\u003e remainder \u003d ListUtils.removeAll(fullList, sub);assertTrue(remainder.size() \u003d\u003d 3);",
+        "slice": "final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);sub.add(b);sub.add(x);final List\u003cString\u003e remainder \u003d ListUtils.removeAll(fullList, sub);assertTrue(remainder.size() \u003d\u003d 3);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        },
+        "assert": "fullList.removeAll(sub);assertTrue(remainder.equals(fullList));",
+        "slice": "final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);sub.add(b);sub.add(x);final List\u003cString\u003e remainder \u003d ListUtils.removeAll(fullList, sub);fullList.removeAll(sub);assertTrue(remainder.equals(fullList));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 268,
+          "column": 9
+        },
+        "assert": "try {\n    ListUtils.removeAll(null, null);\n    fail(\"expecting NullPointerException\");\n}// this is what we want\n catch (final NullPointerException npe) {\n}",
+        "slice": "final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);sub.add(b);sub.add(x);final List\u003cString\u003e remainder \u003d ListUtils.removeAll(fullList, sub);try {\n    ListUtils.removeAll(null, null);\n    fail(\"expecting NullPointerException\");\n}// this is what we want\n catch (final NullPointerException npe) {\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testSubtract()",
+    "annotation": "@Test",
+    "code": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(a);list.add(b);list.add(a);list.add(x);final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);final List\u003cString\u003e result \u003d ListUtils.subtract(list, sub);assertTrue(result.size() \u003d\u003d 3);final List\u003cString\u003e expected \u003d new ArrayList\u003c\u003e();expected.add(b);expected.add(a);expected.add(x);assertEquals(expected, result);try {\n    ListUtils.subtract(list, null);\n    fail(\"expecting NullPointerException\");\n}// this is what we want\n catch (final NullPointerException npe) {\n}",
+    "offset": [
+      {
+        "line": 276,
+        "column": 35
+      },
+      {
+        "line": 277,
+        "column": 9
+      },
+      {
+        "line": 278,
+        "column": 9
+      },
+      {
+        "line": 279,
+        "column": 9
+      },
+      {
+        "line": 280,
+        "column": 9
+      },
+      {
+        "line": 282,
+        "column": 34
+      },
+      {
+        "line": 283,
+        "column": 9
+      },
+      {
+        "line": 285,
+        "column": 37
+      },
+      {
+        "line": 286,
+        "column": 9
+      },
+      {
+        "line": 286,
+        "column": 20
+      },
+      {
+        "line": 288,
+        "column": 39
+      },
+      {
+        "line": 289,
+        "column": 9
+      },
+      {
+        "line": 290,
+        "column": 9
+      },
+      {
+        "line": 291,
+        "column": 9
+      },
+      {
+        "line": 293,
+        "column": 9
+      },
+      {
+        "line": 296,
+        "column": 13
+      },
+      {
+        "line": 297,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 288,
+          "column": 9
+        },
+        "assert": "final List\u003cString\u003e expected \u003d new ArrayList\u003c\u003e();expected.add(b);expected.add(a);expected.add(x);assertEquals(expected, result);",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(a);list.add(b);list.add(a);list.add(x);final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);final List\u003cString\u003e result \u003d ListUtils.subtract(list, sub);final List\u003cString\u003e expected \u003d new ArrayList\u003c\u003e();expected.add(b);expected.add(a);expected.add(x);assertEquals(expected, result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 276,
+          "column": 9
+        },
+        "assert": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(a);list.add(b);list.add(a);list.add(x);final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);final List\u003cString\u003e result \u003d ListUtils.subtract(list, sub);assertTrue(result.size() \u003d\u003d 3);",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(a);list.add(b);list.add(a);list.add(x);final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);final List\u003cString\u003e result \u003d ListUtils.subtract(list, sub);assertTrue(result.size() \u003d\u003d 3);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 295,
+          "column": 9
+        },
+        "assert": "try {\n    ListUtils.subtract(list, null);\n    fail(\"expecting NullPointerException\");\n}// this is what we want\n catch (final NullPointerException npe) {\n}",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(a);list.add(b);list.add(a);list.add(x);final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(a);final List\u003cString\u003e result \u003d ListUtils.subtract(list, sub);try {\n    ListUtils.subtract(list, null);\n    fail(\"expecting NullPointerException\");\n}// this is what we want\n catch (final NullPointerException npe) {\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testSubtractNullElement()",
+    "annotation": "@Test",
+    "code": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(a);list.add(null);list.add(null);list.add(x);final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(null);final List\u003cString\u003e result \u003d ListUtils.subtract(list, sub);assertTrue(result.size() \u003d\u003d 3);final List\u003cString\u003e expected \u003d new ArrayList\u003c\u003e();expected.add(a);expected.add(null);expected.add(x);assertEquals(expected, result);",
+    "offset": [
+      {
+        "line": 303,
+        "column": 35
+      },
+      {
+        "line": 304,
+        "column": 9
+      },
+      {
+        "line": 305,
+        "column": 9
+      },
+      {
+        "line": 306,
+        "column": 9
+      },
+      {
+        "line": 307,
+        "column": 9
+      },
+      {
+        "line": 309,
+        "column": 34
+      },
+      {
+        "line": 310,
+        "column": 9
+      },
+      {
+        "line": 312,
+        "column": 37
+      },
+      {
+        "line": 313,
+        "column": 9
+      },
+      {
+        "line": 313,
+        "column": 20
+      },
+      {
+        "line": 315,
+        "column": 39
+      },
+      {
+        "line": 316,
+        "column": 9
+      },
+      {
+        "line": 317,
+        "column": 9
+      },
+      {
+        "line": 318,
+        "column": 9
+      },
+      {
+        "line": 320,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 315,
+          "column": 9
+        },
+        "assert": "final List\u003cString\u003e expected \u003d new ArrayList\u003c\u003e();expected.add(a);expected.add(null);expected.add(x);assertEquals(expected, result);",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(a);list.add(null);list.add(null);list.add(x);final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(null);final List\u003cString\u003e result \u003d ListUtils.subtract(list, sub);final List\u003cString\u003e expected \u003d new ArrayList\u003c\u003e();expected.add(a);expected.add(null);expected.add(x);assertEquals(expected, result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 303,
+          "column": 9
+        },
+        "assert": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(a);list.add(null);list.add(null);list.add(x);final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(null);final List\u003cString\u003e result \u003d ListUtils.subtract(list, sub);assertTrue(result.size() \u003d\u003d 3);",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(a);list.add(null);list.add(null);list.add(x);final List\u003cString\u003e sub \u003d new ArrayList\u003c\u003e();sub.add(null);final List\u003cString\u003e result \u003d ListUtils.subtract(list, sub);assertTrue(result.size() \u003d\u003d 3);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testIndexOf()",
+    "annotation": "@Test",
+    "code": "Predicate\u003cString\u003e testPredicate \u003d EqualPredicate.equalPredicate(\"d\");int index \u003d ListUtils.indexOf(fullList, testPredicate);assertEquals(d, fullList.get(index));testPredicate \u003d EqualPredicate.equalPredicate(\"de\");index \u003d ListUtils.indexOf(fullList, testPredicate);assertEquals(index, -1);assertEquals(ListUtils.indexOf(null, testPredicate), -1);assertEquals(ListUtils.indexOf(fullList, null), -1);",
+    "offset": [
+      {
+        "line": 328,
+        "column": 43
+      },
+      {
+        "line": 329,
+        "column": 21
+      },
+      {
+        "line": 330,
+        "column": 9
+      },
+      {
+        "line": 330,
+        "column": 25
+      },
+      {
+        "line": 332,
+        "column": 25
+      },
+      {
+        "line": 333,
+        "column": 17
+      },
+      {
+        "line": 334,
+        "column": 9
+      },
+      {
+        "line": 336,
+        "column": 9
+      },
+      {
+        "line": 336,
+        "column": 22
+      },
+      {
+        "line": 337,
+        "column": 9
+      },
+      {
+        "line": 337,
+        "column": 22
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 336,
+          "column": 9
+        },
+        "assert": "assertEquals(ListUtils.indexOf(null, testPredicate), -1);",
+        "slice": "Predicate\u003cString\u003e testPredicate \u003d EqualPredicate.equalPredicate(\"d\");int index \u003d ListUtils.indexOf(fullList, testPredicate);testPredicate \u003d EqualPredicate.equalPredicate(\"de\");index \u003d ListUtils.indexOf(fullList, testPredicate);assertEquals(ListUtils.indexOf(null, testPredicate), -1);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 337,
+          "column": 9
+        },
+        "assert": "assertEquals(ListUtils.indexOf(fullList, null), -1);",
+        "slice": "Predicate\u003cString\u003e testPredicate \u003d EqualPredicate.equalPredicate(\"d\");int index \u003d ListUtils.indexOf(fullList, testPredicate);testPredicate \u003d EqualPredicate.equalPredicate(\"de\");index \u003d ListUtils.indexOf(fullList, testPredicate);assertEquals(ListUtils.indexOf(fullList, null), -1);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 328,
+          "column": 9
+        },
+        "assert": "Predicate\u003cString\u003e testPredicate \u003d EqualPredicate.equalPredicate(\"d\");int index \u003d ListUtils.indexOf(fullList, testPredicate);assertEquals(d, fullList.get(index));",
+        "slice": "Predicate\u003cString\u003e testPredicate \u003d EqualPredicate.equalPredicate(\"d\");int index \u003d ListUtils.indexOf(fullList, testPredicate);assertEquals(d, fullList.get(index));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 332,
+          "column": 9
+        },
+        "assert": "testPredicate \u003d EqualPredicate.equalPredicate(\"de\");index \u003d ListUtils.indexOf(fullList, testPredicate);assertEquals(index, -1);",
+        "slice": "Predicate\u003cString\u003e testPredicate \u003d EqualPredicate.equalPredicate(\"d\");int index \u003d ListUtils.indexOf(fullList, testPredicate);testPredicate \u003d EqualPredicate.equalPredicate(\"de\");index \u003d ListUtils.indexOf(fullList, testPredicate);assertEquals(index, -1);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testLongestCommonSubsequence()",
+    "annotation": "@Test",
+    "code": "try {\n    ListUtils.longestCommonSubsequence((List\u003c?\u003e) null, null);\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}try {\n    ListUtils.longestCommonSubsequence(Arrays.asList(\u0027A\u0027), null);\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}try {\n    ListUtils.longestCommonSubsequence(null, Arrays.asList(\u0027A\u0027));\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}@SuppressWarnings(\"unchecked\")\nList\u003cCharacter\u003e lcs \u003d ListUtils.longestCommonSubsequence(Collections.EMPTY_LIST, Collections.EMPTY_LIST);assertEquals(0, lcs.size());final List\u003cCharacter\u003e list1 \u003d Arrays.asList(\u0027B\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);final List\u003cCharacter\u003e list2 \u003d Arrays.asList(\u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027S\u0027);lcs \u003d ListUtils.longestCommonSubsequence(list1, list2);List\u003cCharacter\u003e expected \u003d Arrays.asList(\u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);assertEquals(expected, lcs);final List\u003cCharacter\u003e list3 \u003d Arrays.asList(\u0027A\u0027, \u0027T\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);lcs \u003d ListUtils.longestCommonSubsequence(list1, list3);expected \u003d Arrays.asList(\u0027A\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);assertEquals(expected, lcs);final List\u003cCharacter\u003e listZorro \u003d Arrays.asList(\u0027Z\u0027, \u0027O\u0027, \u0027R\u0027, \u0027R\u0027, \u0027O\u0027);lcs \u003d ListUtils.longestCommonSubsequence(list1, listZorro);assertTrue(lcs.isEmpty());",
+    "offset": [
+      {
+        "line": 345,
+        "column": 13
+      },
+      {
+        "line": 346,
+        "column": 13
+      },
+      {
+        "line": 350,
+        "column": 13
+      },
+      {
+        "line": 350,
+        "column": 48
+      },
+      {
+        "line": 351,
+        "column": 13
+      },
+      {
+        "line": 355,
+        "column": 13
+      },
+      {
+        "line": 355,
+        "column": 54
+      },
+      {
+        "line": 356,
+        "column": 13
+      },
+      {
+        "line": 360,
+        "column": 31
+      },
+      {
+        "line": 361,
+        "column": 9
+      },
+      {
+        "line": 361,
+        "column": 25
+      },
+      {
+        "line": 363,
+        "column": 39
+      },
+      {
+        "line": 364,
+        "column": 39
+      },
+      {
+        "line": 365,
+        "column": 15
+      },
+      {
+        "line": 367,
+        "column": 36
+      },
+      {
+        "line": 368,
+        "column": 9
+      },
+      {
+        "line": 370,
+        "column": 39
+      },
+      {
+        "line": 371,
+        "column": 15
+      },
+      {
+        "line": 373,
+        "column": 20
+      },
+      {
+        "line": 374,
+        "column": 9
+      },
+      {
+        "line": 376,
+        "column": 43
+      },
+      {
+        "line": 377,
+        "column": 15
+      },
+      {
+        "line": 379,
+        "column": 9
+      },
+      {
+        "line": 379,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 354,
+          "column": 9
+        },
+        "assert": "try {\n    ListUtils.longestCommonSubsequence(null, Arrays.asList(\u0027A\u0027));\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}",
+        "slice": "try {\n    ListUtils.longestCommonSubsequence(null, Arrays.asList(\u0027A\u0027));\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 370,
+          "column": 9
+        },
+        "assert": "final List\u003cCharacter\u003e list3 \u003d Arrays.asList(\u0027A\u0027, \u0027T\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);lcs \u003d ListUtils.longestCommonSubsequence(list1, list3);expected \u003d Arrays.asList(\u0027A\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);assertEquals(expected, lcs);",
+        "slice": "@SuppressWarnings(\"unchecked\")\nList\u003cCharacter\u003e lcs \u003d ListUtils.longestCommonSubsequence(Collections.EMPTY_LIST, Collections.EMPTY_LIST);final List\u003cCharacter\u003e list1 \u003d Arrays.asList(\u0027B\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);final List\u003cCharacter\u003e list2 \u003d Arrays.asList(\u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027S\u0027);lcs \u003d ListUtils.longestCommonSubsequence(list1, list2);List\u003cCharacter\u003e expected \u003d Arrays.asList(\u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);final List\u003cCharacter\u003e list3 \u003d Arrays.asList(\u0027A\u0027, \u0027T\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);lcs \u003d ListUtils.longestCommonSubsequence(list1, list3);expected \u003d Arrays.asList(\u0027A\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);assertEquals(expected, lcs);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 359,
+          "column": 9
+        },
+        "assert": "@SuppressWarnings(\"unchecked\")\nList\u003cCharacter\u003e lcs \u003d ListUtils.longestCommonSubsequence(Collections.EMPTY_LIST, Collections.EMPTY_LIST);assertEquals(0, lcs.size());",
+        "slice": "@SuppressWarnings(\"unchecked\")\nList\u003cCharacter\u003e lcs \u003d ListUtils.longestCommonSubsequence(Collections.EMPTY_LIST, Collections.EMPTY_LIST);assertEquals(0, lcs.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 344,
+          "column": 9
+        },
+        "assert": "try {\n    ListUtils.longestCommonSubsequence((List\u003c?\u003e) null, null);\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}",
+        "slice": "try {\n    ListUtils.longestCommonSubsequence((List\u003c?\u003e) null, null);\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 376,
+          "column": 9
+        },
+        "assert": "final List\u003cCharacter\u003e listZorro \u003d Arrays.asList(\u0027Z\u0027, \u0027O\u0027, \u0027R\u0027, \u0027R\u0027, \u0027O\u0027);lcs \u003d ListUtils.longestCommonSubsequence(list1, listZorro);assertTrue(lcs.isEmpty());",
+        "slice": "@SuppressWarnings(\"unchecked\")\nList\u003cCharacter\u003e lcs \u003d ListUtils.longestCommonSubsequence(Collections.EMPTY_LIST, Collections.EMPTY_LIST);final List\u003cCharacter\u003e list1 \u003d Arrays.asList(\u0027B\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);final List\u003cCharacter\u003e list2 \u003d Arrays.asList(\u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027S\u0027);lcs \u003d ListUtils.longestCommonSubsequence(list1, list2);List\u003cCharacter\u003e expected \u003d Arrays.asList(\u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);final List\u003cCharacter\u003e list3 \u003d Arrays.asList(\u0027A\u0027, \u0027T\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);lcs \u003d ListUtils.longestCommonSubsequence(list1, list3);expected \u003d Arrays.asList(\u0027A\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);final List\u003cCharacter\u003e listZorro \u003d Arrays.asList(\u0027Z\u0027, \u0027O\u0027, \u0027R\u0027, \u0027R\u0027, \u0027O\u0027);lcs \u003d ListUtils.longestCommonSubsequence(list1, listZorro);assertTrue(lcs.isEmpty());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 363,
+          "column": 9
+        },
+        "assert": "final List\u003cCharacter\u003e list1 \u003d Arrays.asList(\u0027B\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);final List\u003cCharacter\u003e list2 \u003d Arrays.asList(\u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027S\u0027);lcs \u003d ListUtils.longestCommonSubsequence(list1, list2);List\u003cCharacter\u003e expected \u003d Arrays.asList(\u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);assertEquals(expected, lcs);",
+        "slice": "@SuppressWarnings(\"unchecked\")\nList\u003cCharacter\u003e lcs \u003d ListUtils.longestCommonSubsequence(Collections.EMPTY_LIST, Collections.EMPTY_LIST);final List\u003cCharacter\u003e list1 \u003d Arrays.asList(\u0027B\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);final List\u003cCharacter\u003e list2 \u003d Arrays.asList(\u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027S\u0027);lcs \u003d ListUtils.longestCommonSubsequence(list1, list2);List\u003cCharacter\u003e expected \u003d Arrays.asList(\u0027A\u0027, \u0027N\u0027, \u0027A\u0027, \u0027N\u0027, \u0027A\u0027);assertEquals(expected, lcs);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 349,
+          "column": 9
+        },
+        "assert": "try {\n    ListUtils.longestCommonSubsequence(Arrays.asList(\u0027A\u0027), null);\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}",
+        "slice": "try {\n    ListUtils.longestCommonSubsequence(Arrays.asList(\u0027A\u0027), null);\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testLongestCommonSubsequenceWithString()",
+    "annotation": "@Test",
+    "code": "try {\n    ListUtils.longestCommonSubsequence((String) null, null);\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}try {\n    ListUtils.longestCommonSubsequence(\"A\", null);\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}try {\n    ListUtils.longestCommonSubsequence(null, \"A\");\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}String lcs \u003d ListUtils.longestCommonSubsequence(\"\", \"\");assertEquals(0, lcs.length());final String banana \u003d \"BANANA\";final String ananas \u003d \"ANANAS\";lcs \u003d ListUtils.longestCommonSubsequence(banana, ananas);assertEquals(\"ANANA\", lcs);final String atana \u003d \"ATANA\";lcs \u003d ListUtils.longestCommonSubsequence(banana, atana);assertEquals(\"AANA\", lcs);final String zorro \u003d \"ZORRO\";lcs \u003d ListUtils.longestCommonSubsequence(banana, zorro);assertEquals(0, lcs.length());",
+    "offset": [
+      {
+        "line": 386,
+        "column": 11
+      },
+      {
+        "line": 387,
+        "column": 11
+      },
+      {
+        "line": 391,
+        "column": 11
+      },
+      {
+        "line": 392,
+        "column": 11
+      },
+      {
+        "line": 396,
+        "column": 11
+      },
+      {
+        "line": 397,
+        "column": 11
+      },
+      {
+        "line": 400,
+        "column": 20
+      },
+      {
+        "line": 401,
+        "column": 7
+      },
+      {
+        "line": 401,
+        "column": 23
+      },
+      {
+        "line": 405,
+        "column": 13
+      },
+      {
+        "line": 407,
+        "column": 7
+      },
+      {
+        "line": 410,
+        "column": 13
+      },
+      {
+        "line": 412,
+        "column": 7
+      },
+      {
+        "line": 415,
+        "column": 13
+      },
+      {
+        "line": 417,
+        "column": 7
+      },
+      {
+        "line": 417,
+        "column": 23
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 400,
+          "column": 7
+        },
+        "assert": "String lcs \u003d ListUtils.longestCommonSubsequence(\"\", \"\");assertEquals(0, lcs.length());",
+        "slice": "String lcs \u003d ListUtils.longestCommonSubsequence(\"\", \"\");assertEquals(0, lcs.length());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 385,
+          "column": 7
+        },
+        "assert": "try {\n    ListUtils.longestCommonSubsequence((String) null, null);\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}",
+        "slice": "try {\n    ListUtils.longestCommonSubsequence((String) null, null);\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 403,
+          "column": 7
+        },
+        "assert": "final String banana \u003d \"BANANA\";final String ananas \u003d \"ANANAS\";lcs \u003d ListUtils.longestCommonSubsequence(banana, ananas);assertEquals(\"ANANA\", lcs);",
+        "slice": "String lcs \u003d ListUtils.longestCommonSubsequence(\"\", \"\");final String banana \u003d \"BANANA\";final String ananas \u003d \"ANANAS\";lcs \u003d ListUtils.longestCommonSubsequence(banana, ananas);assertEquals(\"ANANA\", lcs);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 390,
+          "column": 7
+        },
+        "assert": "try {\n    ListUtils.longestCommonSubsequence(\"A\", null);\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}",
+        "slice": "try {\n    ListUtils.longestCommonSubsequence(\"A\", null);\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 409,
+          "column": 7
+        },
+        "assert": "final String atana \u003d \"ATANA\";lcs \u003d ListUtils.longestCommonSubsequence(banana, atana);assertEquals(\"AANA\", lcs);",
+        "slice": "String lcs \u003d ListUtils.longestCommonSubsequence(\"\", \"\");final String banana \u003d \"BANANA\";final String ananas \u003d \"ANANAS\";lcs \u003d ListUtils.longestCommonSubsequence(banana, ananas);final String atana \u003d \"ATANA\";lcs \u003d ListUtils.longestCommonSubsequence(banana, atana);assertEquals(\"AANA\", lcs);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 395,
+          "column": 7
+        },
+        "assert": "try {\n    ListUtils.longestCommonSubsequence(null, \"A\");\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}",
+        "slice": "try {\n    ListUtils.longestCommonSubsequence(null, \"A\");\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 414,
+          "column": 7
+        },
+        "assert": "final String zorro \u003d \"ZORRO\";lcs \u003d ListUtils.longestCommonSubsequence(banana, zorro);assertEquals(0, lcs.length());",
+        "slice": "String lcs \u003d ListUtils.longestCommonSubsequence(\"\", \"\");final String banana \u003d \"BANANA\";final String ananas \u003d \"ANANAS\";lcs \u003d ListUtils.longestCommonSubsequence(banana, ananas);final String atana \u003d \"ATANA\";lcs \u003d ListUtils.longestCommonSubsequence(banana, atana);final String zorro \u003d \"ZORRO\";lcs \u003d ListUtils.longestCommonSubsequence(banana, zorro);assertEquals(0, lcs.length());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testPartition()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e strings \u003d new ArrayList\u003c\u003e();for (int i \u003d 0; i \u003c\u003d 6; i++) {\n    strings.add(i);\n}final List\u003cList\u003cInteger\u003e\u003e partition \u003d ListUtils.partition(strings, 3);assertNotNull(partition);assertEquals(3, partition.size());assertEquals(1, partition.get(2).size());try {\n    ListUtils.partition(null, 3);\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}try {\n    ListUtils.partition(strings, 0);\n    fail(\"failed to check for size argument\");\n} catch (final IllegalArgumentException e) {\n}try {\n    ListUtils.partition(strings, -10);\n    fail(\"failed to check for size argument\");\n} catch (final IllegalArgumentException e) {\n}final List\u003cList\u003cInteger\u003e\u003e partitionMax \u003d ListUtils.partition(strings, Integer.MAX_VALUE);assertEquals(1, partitionMax.size());assertEquals(strings.size(), partitionMax.get(0).size());assertEquals(strings, partitionMax.get(0));",
+    "offset": [
+      {
+        "line": 423,
+        "column": 39
+      },
+      {
+        "line": 425,
+        "column": 13
+      },
+      {
+        "line": 428,
+        "column": 47
+      },
+      {
+        "line": 430,
+        "column": 9
+      },
+      {
+        "line": 431,
+        "column": 9
+      },
+      {
+        "line": 431,
+        "column": 25
+      },
+      {
+        "line": 432,
+        "column": 9
+      },
+      {
+        "line": 432,
+        "column": 25
+      },
+      {
+        "line": 432,
+        "column": 25
+      },
+      {
+        "line": 435,
+        "column": 13
+      },
+      {
+        "line": 436,
+        "column": 13
+      },
+      {
+        "line": 440,
+        "column": 13
+      },
+      {
+        "line": 441,
+        "column": 13
+      },
+      {
+        "line": 445,
+        "column": 13
+      },
+      {
+        "line": 446,
+        "column": 13
+      },
+      {
+        "line": 449,
+        "column": 50
+      },
+      {
+        "line": 450,
+        "column": 9
+      },
+      {
+        "line": 450,
+        "column": 25
+      },
+      {
+        "line": 451,
+        "column": 9
+      },
+      {
+        "line": 451,
+        "column": 22
+      },
+      {
+        "line": 451,
+        "column": 38
+      },
+      {
+        "line": 451,
+        "column": 38
+      },
+      {
+        "line": 452,
+        "column": 9
+      },
+      {
+        "line": 452,
+        "column": 31
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 432,
+          "column": 9
+        },
+        "assert": "assertEquals(1, partition.get(2).size());",
+        "slice": "final List\u003cInteger\u003e strings \u003d new ArrayList\u003c\u003e();for (int i \u003d 0; i \u003c\u003d 6; i++) {\n    strings.add(i);\n}final List\u003cList\u003cInteger\u003e\u003e partition \u003d ListUtils.partition(strings, 3);assertEquals(1, partition.get(2).size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 449,
+          "column": 9
+        },
+        "assert": "final List\u003cList\u003cInteger\u003e\u003e partitionMax \u003d ListUtils.partition(strings, Integer.MAX_VALUE);assertEquals(1, partitionMax.size());",
+        "slice": "final List\u003cInteger\u003e strings \u003d new ArrayList\u003c\u003e();for (int i \u003d 0; i \u003c\u003d 6; i++) {\n    strings.add(i);\n}final List\u003cList\u003cInteger\u003e\u003e partition \u003d ListUtils.partition(strings, 3);final List\u003cList\u003cInteger\u003e\u003e partitionMax \u003d ListUtils.partition(strings, Integer.MAX_VALUE);assertEquals(1, partitionMax.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 434,
+          "column": 9
+        },
+        "assert": "try {\n    ListUtils.partition(null, 3);\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}",
+        "slice": "final List\u003cInteger\u003e strings \u003d new ArrayList\u003c\u003e();for (int i \u003d 0; i \u003c\u003d 6; i++) {\n    strings.add(i);\n}final List\u003cList\u003cInteger\u003e\u003e partition \u003d ListUtils.partition(strings, 3);try {\n    ListUtils.partition(null, 3);\n    fail(\"failed to check for null argument\");\n} catch (final NullPointerException e) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 451,
+          "column": 9
+        },
+        "assert": "assertEquals(strings.size(), partitionMax.get(0).size());",
+        "slice": "final List\u003cInteger\u003e strings \u003d new ArrayList\u003c\u003e();for (int i \u003d 0; i \u003c\u003d 6; i++) {\n    strings.add(i);\n}final List\u003cList\u003cInteger\u003e\u003e partition \u003d ListUtils.partition(strings, 3);final List\u003cList\u003cInteger\u003e\u003e partitionMax \u003d ListUtils.partition(strings, Integer.MAX_VALUE);assertEquals(strings.size(), partitionMax.get(0).size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 452,
+          "column": 9
+        },
+        "assert": "assertEquals(strings, partitionMax.get(0));",
+        "slice": "final List\u003cInteger\u003e strings \u003d new ArrayList\u003c\u003e();for (int i \u003d 0; i \u003c\u003d 6; i++) {\n    strings.add(i);\n}final List\u003cList\u003cInteger\u003e\u003e partition \u003d ListUtils.partition(strings, 3);final List\u003cList\u003cInteger\u003e\u003e partitionMax \u003d ListUtils.partition(strings, Integer.MAX_VALUE);assertEquals(strings, partitionMax.get(0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 423,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e strings \u003d new ArrayList\u003c\u003e();for (int i \u003d 0; i \u003c\u003d 6; i++) {\n    strings.add(i);\n}final List\u003cList\u003cInteger\u003e\u003e partition \u003d ListUtils.partition(strings, 3);assertNotNull(partition);",
+        "slice": "final List\u003cInteger\u003e strings \u003d new ArrayList\u003c\u003e();for (int i \u003d 0; i \u003c\u003d 6; i++) {\n    strings.add(i);\n}final List\u003cList\u003cInteger\u003e\u003e partition \u003d ListUtils.partition(strings, 3);assertNotNull(partition);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 439,
+          "column": 9
+        },
+        "assert": "try {\n    ListUtils.partition(strings, 0);\n    fail(\"failed to check for size argument\");\n} catch (final IllegalArgumentException e) {\n}",
+        "slice": "final List\u003cInteger\u003e strings \u003d new ArrayList\u003c\u003e();for (int i \u003d 0; i \u003c\u003d 6; i++) {\n    strings.add(i);\n}final List\u003cList\u003cInteger\u003e\u003e partition \u003d ListUtils.partition(strings, 3);try {\n    ListUtils.partition(strings, 0);\n    fail(\"failed to check for size argument\");\n} catch (final IllegalArgumentException e) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 444,
+          "column": 9
+        },
+        "assert": "try {\n    ListUtils.partition(strings, -10);\n    fail(\"failed to check for size argument\");\n} catch (final IllegalArgumentException e) {\n}",
+        "slice": "final List\u003cInteger\u003e strings \u003d new ArrayList\u003c\u003e();for (int i \u003d 0; i \u003c\u003d 6; i++) {\n    strings.add(i);\n}final List\u003cList\u003cInteger\u003e\u003e partition \u003d ListUtils.partition(strings, 3);try {\n    ListUtils.partition(strings, -10);\n    fail(\"failed to check for size argument\");\n} catch (final IllegalArgumentException e) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 431,
+          "column": 9
+        },
+        "assert": "assertEquals(3, partition.size());",
+        "slice": "final List\u003cInteger\u003e strings \u003d new ArrayList\u003c\u003e();for (int i \u003d 0; i \u003c\u003d 6; i++) {\n    strings.add(i);\n}final List\u003cList\u003cInteger\u003e\u003e partition \u003d ListUtils.partition(strings, 3);assertEquals(3, partition.size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testSelect()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(1);list.add(2);list.add(3);list.add(4);// Ensure that the collection is the input type or a super type\nfinal List\u003cInteger\u003e output1 \u003d ListUtils.select(list, EQUALS_TWO);final List\u003cNumber\u003e output2 \u003d ListUtils.\u003cNumber\u003eselect(list, EQUALS_TWO);final HashSet\u003cNumber\u003e output3 \u003d CollectionUtils.select(list, EQUALS_TWO, new HashSet\u003cNumber\u003e());assertTrue(CollectionUtils.isEqualCollection(output1, output3));assertEquals(4, list.size());assertEquals(1, output1.size());assertEquals(2, output2.iterator().next());",
+    "offset": [
+      {
+        "line": 465,
+        "column": 36
+      },
+      {
+        "line": 466,
+        "column": 9
+      },
+      {
+        "line": 467,
+        "column": 9
+      },
+      {
+        "line": 468,
+        "column": 9
+      },
+      {
+        "line": 469,
+        "column": 9
+      },
+      {
+        "line": 471,
+        "column": 39
+      },
+      {
+        "line": 472,
+        "column": 38
+      },
+      {
+        "line": 473,
+        "column": 41
+      },
+      {
+        "line": 473,
+        "column": 82
+      },
+      {
+        "line": 474,
+        "column": 9
+      },
+      {
+        "line": 474,
+        "column": 20
+      },
+      {
+        "line": 475,
+        "column": 9
+      },
+      {
+        "line": 475,
+        "column": 25
+      },
+      {
+        "line": 476,
+        "column": 9
+      },
+      {
+        "line": 476,
+        "column": 25
+      },
+      {
+        "line": 477,
+        "column": 9
+      },
+      {
+        "line": 477,
+        "column": 25
+      },
+      {
+        "line": 477,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 465,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(1);list.add(2);list.add(3);list.add(4);// Ensure that the collection is the input type or a super type\nfinal List\u003cInteger\u003e output1 \u003d ListUtils.select(list, EQUALS_TWO);final List\u003cNumber\u003e output2 \u003d ListUtils.\u003cNumber\u003eselect(list, EQUALS_TWO);final HashSet\u003cNumber\u003e output3 \u003d CollectionUtils.select(list, EQUALS_TWO, new HashSet\u003cNumber\u003e());assertTrue(CollectionUtils.isEqualCollection(output1, output3));",
+        "slice": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(1);list.add(2);list.add(3);list.add(4);// Ensure that the collection is the input type or a super type\nfinal List\u003cInteger\u003e output1 \u003d ListUtils.select(list, EQUALS_TWO);final List\u003cNumber\u003e output2 \u003d ListUtils.\u003cNumber\u003eselect(list, EQUALS_TWO);final HashSet\u003cNumber\u003e output3 \u003d CollectionUtils.select(list, EQUALS_TWO, new HashSet\u003cNumber\u003e());assertTrue(CollectionUtils.isEqualCollection(output1, output3));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 475,
+          "column": 9
+        },
+        "assert": "assertEquals(4, list.size());",
+        "slice": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(1);list.add(2);list.add(3);list.add(4);assertEquals(4, list.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 476,
+          "column": 9
+        },
+        "assert": "assertEquals(1, output1.size());",
+        "slice": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(1);list.add(2);list.add(3);list.add(4);// Ensure that the collection is the input type or a super type\nfinal List\u003cInteger\u003e output1 \u003d ListUtils.select(list, EQUALS_TWO);assertEquals(1, output1.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 477,
+          "column": 9
+        },
+        "assert": "assertEquals(2, output2.iterator().next());",
+        "slice": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(1);list.add(2);list.add(3);list.add(4);// Ensure that the collection is the input type or a super type\nfinal List\u003cInteger\u003e output1 \u003d ListUtils.select(list, EQUALS_TWO);final List\u003cNumber\u003e output2 \u003d ListUtils.\u003cNumber\u003eselect(list, EQUALS_TWO);assertEquals(2, output2.iterator().next());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.ListUtilsTest.testSelectRejected()",
+    "annotation": "@Test",
+    "code": "final List\u003cLong\u003e list \u003d new ArrayList\u003c\u003e();list.add(1L);list.add(2L);list.add(3L);list.add(4L);final List\u003cLong\u003e output1 \u003d ListUtils.selectRejected(list, EQUALS_TWO);final List\u003c? extends Number\u003e output2 \u003d ListUtils.selectRejected(list, EQUALS_TWO);final HashSet\u003cNumber\u003e output3 \u003d CollectionUtils.selectRejected(list, EQUALS_TWO, new HashSet\u003cNumber\u003e());assertTrue(CollectionUtils.isEqualCollection(output1, output2));assertTrue(CollectionUtils.isEqualCollection(output1, output3));assertEquals(4, list.size());assertEquals(3, output1.size());assertTrue(output1.contains(1L));assertTrue(output1.contains(3L));assertTrue(output1.contains(4L));",
+    "offset": [
+      {
+        "line": 483,
+        "column": 33
+      },
+      {
+        "line": 484,
+        "column": 9
+      },
+      {
+        "line": 485,
+        "column": 9
+      },
+      {
+        "line": 486,
+        "column": 9
+      },
+      {
+        "line": 487,
+        "column": 9
+      },
+      {
+        "line": 488,
+        "column": 36
+      },
+      {
+        "line": 489,
+        "column": 48
+      },
+      {
+        "line": 490,
+        "column": 41
+      },
+      {
+        "line": 490,
+        "column": 90
+      },
+      {
+        "line": 491,
+        "column": 9
+      },
+      {
+        "line": 491,
+        "column": 20
+      },
+      {
+        "line": 492,
+        "column": 9
+      },
+      {
+        "line": 492,
+        "column": 20
+      },
+      {
+        "line": 493,
+        "column": 9
+      },
+      {
+        "line": 493,
+        "column": 25
+      },
+      {
+        "line": 494,
+        "column": 9
+      },
+      {
+        "line": 494,
+        "column": 25
+      },
+      {
+        "line": 495,
+        "column": 9
+      },
+      {
+        "line": 495,
+        "column": 20
+      },
+      {
+        "line": 496,
+        "column": 9
+      },
+      {
+        "line": 496,
+        "column": 20
+      },
+      {
+        "line": 497,
+        "column": 9
+      },
+      {
+        "line": 497,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 496,
+          "column": 9
+        },
+        "assert": "assertTrue(output1.contains(3L));",
+        "slice": "final List\u003cLong\u003e list \u003d new ArrayList\u003c\u003e();list.add(1L);list.add(2L);list.add(3L);list.add(4L);final List\u003cLong\u003e output1 \u003d ListUtils.selectRejected(list, EQUALS_TWO);assertTrue(output1.contains(3L));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 497,
+          "column": 9
+        },
+        "assert": "assertTrue(output1.contains(4L));",
+        "slice": "final List\u003cLong\u003e list \u003d new ArrayList\u003c\u003e();list.add(1L);list.add(2L);list.add(3L);list.add(4L);final List\u003cLong\u003e output1 \u003d ListUtils.selectRejected(list, EQUALS_TWO);assertTrue(output1.contains(4L));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 483,
+          "column": 9
+        },
+        "assert": "final List\u003cLong\u003e list \u003d new ArrayList\u003c\u003e();list.add(1L);list.add(2L);list.add(3L);list.add(4L);final List\u003cLong\u003e output1 \u003d ListUtils.selectRejected(list, EQUALS_TWO);final List\u003c? extends Number\u003e output2 \u003d ListUtils.selectRejected(list, EQUALS_TWO);final HashSet\u003cNumber\u003e output3 \u003d CollectionUtils.selectRejected(list, EQUALS_TWO, new HashSet\u003cNumber\u003e());assertTrue(CollectionUtils.isEqualCollection(output1, output2));",
+        "slice": "final List\u003cLong\u003e list \u003d new ArrayList\u003c\u003e();list.add(1L);list.add(2L);list.add(3L);list.add(4L);final List\u003cLong\u003e output1 \u003d ListUtils.selectRejected(list, EQUALS_TWO);final List\u003c? extends Number\u003e output2 \u003d ListUtils.selectRejected(list, EQUALS_TWO);final HashSet\u003cNumber\u003e output3 \u003d CollectionUtils.selectRejected(list, EQUALS_TWO, new HashSet\u003cNumber\u003e());assertTrue(CollectionUtils.isEqualCollection(output1, output2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 492,
+          "column": 9
+        },
+        "assert": "assertTrue(CollectionUtils.isEqualCollection(output1, output3));",
+        "slice": "final List\u003cLong\u003e list \u003d new ArrayList\u003c\u003e();list.add(1L);list.add(2L);list.add(3L);list.add(4L);final List\u003cLong\u003e output1 \u003d ListUtils.selectRejected(list, EQUALS_TWO);final HashSet\u003cNumber\u003e output3 \u003d CollectionUtils.selectRejected(list, EQUALS_TWO, new HashSet\u003cNumber\u003e());assertTrue(CollectionUtils.isEqualCollection(output1, output3));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 493,
+          "column": 9
+        },
+        "assert": "assertEquals(4, list.size());",
+        "slice": "final List\u003cLong\u003e list \u003d new ArrayList\u003c\u003e();list.add(1L);list.add(2L);list.add(3L);list.add(4L);assertEquals(4, list.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 494,
+          "column": 9
+        },
+        "assert": "assertEquals(3, output1.size());",
+        "slice": "final List\u003cLong\u003e list \u003d new ArrayList\u003c\u003e();list.add(1L);list.add(2L);list.add(3L);list.add(4L);final List\u003cLong\u003e output1 \u003d ListUtils.selectRejected(list, EQUALS_TWO);assertEquals(3, output1.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 495,
+          "column": 9
+        },
+        "assert": "assertTrue(output1.contains(1L));",
+        "slice": "final List\u003cLong\u003e list \u003d new ArrayList\u003c\u003e();list.add(1L);list.add(2L);list.add(3L);list.add(4L);final List\u003cLong\u003e output1 \u003d ListUtils.selectRejected(list, EQUALS_TWO);assertTrue(output1.contains(1L));"
+      }
+    ]
+  }
+]

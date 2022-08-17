@@ -1,0 +1,34 @@
+[
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.IsIncludedIn.IsIncludedIn(java.lang.Object[])",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.IsIncludedInTest.testConstructionWithEmptyArray()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 90,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 118,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.IsIncludedIn.IsIncludedIn(java.util.Set\u003cjava.lang.Object\u003e)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.IsIncludedInTest.testConstructionWithEmptySet()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 47,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 134,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

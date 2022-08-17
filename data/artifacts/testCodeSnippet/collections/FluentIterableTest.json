@@ -1,0 +1,2310 @@
+[
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.factoryMethodOf()",
+    "annotation": "@Test",
+    "code": "FluentIterable\u003cInteger\u003e iterable \u003d FluentIterable.of(1, 2, 3, 4, 5);List\u003cInteger\u003e result \u003d iterable.toList();assertEquals(Arrays.asList(1, 2, 3, 4, 5), result);iterable \u003d FluentIterable.of(1);assertEquals(1, iterable.size());assertFalse(iterable.isEmpty());assertEquals(Arrays.asList(1), iterable.toList());result \u003d FluentIterable.of(new Integer[0]).toList();assertTrue(result.isEmpty());final Iterable\u003cInteger\u003e it \u003d null;try {\n    FluentIterable.of(it).toList();\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 116,
+        "column": 44
+      },
+      {
+        "line": 117,
+        "column": 32
+      },
+      {
+        "line": 118,
+        "column": 9
+      },
+      {
+        "line": 118,
+        "column": 22
+      },
+      {
+        "line": 120,
+        "column": 20
+      },
+      {
+        "line": 121,
+        "column": 9
+      },
+      {
+        "line": 121,
+        "column": 25
+      },
+      {
+        "line": 122,
+        "column": 9
+      },
+      {
+        "line": 122,
+        "column": 21
+      },
+      {
+        "line": 123,
+        "column": 9
+      },
+      {
+        "line": 123,
+        "column": 22
+      },
+      {
+        "line": 123,
+        "column": 40
+      },
+      {
+        "line": 125,
+        "column": 18
+      },
+      {
+        "line": 125,
+        "column": 18
+      },
+      {
+        "line": 126,
+        "column": 9
+      },
+      {
+        "line": 126,
+        "column": 20
+      },
+      {
+        "line": 130,
+        "column": 13
+      },
+      {
+        "line": 130,
+        "column": 13
+      },
+      {
+        "line": 131,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 128,
+          "column": 9
+        },
+        "assert": "final Iterable\u003cInteger\u003e it \u003d null;try {\n    FluentIterable.of(it).toList();\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "FluentIterable\u003cInteger\u003e iterable \u003d FluentIterable.of(1, 2, 3, 4, 5);List\u003cInteger\u003e result \u003d iterable.toList();iterable \u003d FluentIterable.of(1);result \u003d FluentIterable.of(new Integer[0]).toList();final Iterable\u003cInteger\u003e it \u003d null;try {\n    FluentIterable.of(it).toList();\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 116,
+          "column": 9
+        },
+        "assert": "FluentIterable\u003cInteger\u003e iterable \u003d FluentIterable.of(1, 2, 3, 4, 5);List\u003cInteger\u003e result \u003d iterable.toList();assertEquals(Arrays.asList(1, 2, 3, 4, 5), result);",
+        "slice": "FluentIterable\u003cInteger\u003e iterable \u003d FluentIterable.of(1, 2, 3, 4, 5);List\u003cInteger\u003e result \u003d iterable.toList();assertEquals(Arrays.asList(1, 2, 3, 4, 5), result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 120,
+          "column": 9
+        },
+        "assert": "iterable \u003d FluentIterable.of(1);assertEquals(1, iterable.size());",
+        "slice": "FluentIterable\u003cInteger\u003e iterable \u003d FluentIterable.of(1, 2, 3, 4, 5);List\u003cInteger\u003e result \u003d iterable.toList();iterable \u003d FluentIterable.of(1);assertEquals(1, iterable.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 122,
+          "column": 9
+        },
+        "assert": "assertFalse(iterable.isEmpty());",
+        "slice": "FluentIterable\u003cInteger\u003e iterable \u003d FluentIterable.of(1, 2, 3, 4, 5);List\u003cInteger\u003e result \u003d iterable.toList();iterable \u003d FluentIterable.of(1);assertFalse(iterable.isEmpty());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 123,
+          "column": 9
+        },
+        "assert": "assertEquals(Arrays.asList(1), iterable.toList());",
+        "slice": "FluentIterable\u003cInteger\u003e iterable \u003d FluentIterable.of(1, 2, 3, 4, 5);List\u003cInteger\u003e result \u003d iterable.toList();iterable \u003d FluentIterable.of(1);assertEquals(Arrays.asList(1), iterable.toList());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 125,
+          "column": 9
+        },
+        "assert": "result \u003d FluentIterable.of(new Integer[0]).toList();assertTrue(result.isEmpty());",
+        "slice": "FluentIterable\u003cInteger\u003e iterable \u003d FluentIterable.of(1, 2, 3, 4, 5);List\u003cInteger\u003e result \u003d iterable.toList();iterable \u003d FluentIterable.of(1);result \u003d FluentIterable.of(new Integer[0]).toList();assertTrue(result.isEmpty());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.appendElements()",
+    "annotation": "@Test",
+    "code": "final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(10, 20, 30);assertEquals(IterableUtils.size(iterableA) + 3, IterableUtils.size(it));assertTrue(IterableUtils.contains(it, 1));assertTrue(IterableUtils.contains(it, 10));assertTrue(IterableUtils.contains(it, 20));assertTrue(IterableUtils.contains(it, 30));assertFalse(IterableUtils.contains(it, 40));final FluentIterable\u003cInteger\u003e empty \u003d FluentIterable.of(emptyIterable).append();assertTrue(IterableUtils.isEmpty(empty));",
+    "offset": [
+      {
+        "line": 139,
+        "column": 44
+      },
+      {
+        "line": 139,
+        "column": 44
+      },
+      {
+        "line": 140,
+        "column": 9
+      },
+      {
+        "line": 140,
+        "column": 22
+      },
+      {
+        "line": 140,
+        "column": 57
+      },
+      {
+        "line": 141,
+        "column": 9
+      },
+      {
+        "line": 141,
+        "column": 20
+      },
+      {
+        "line": 142,
+        "column": 9
+      },
+      {
+        "line": 142,
+        "column": 20
+      },
+      {
+        "line": 143,
+        "column": 9
+      },
+      {
+        "line": 143,
+        "column": 20
+      },
+      {
+        "line": 144,
+        "column": 9
+      },
+      {
+        "line": 144,
+        "column": 20
+      },
+      {
+        "line": 145,
+        "column": 9
+      },
+      {
+        "line": 145,
+        "column": 21
+      },
+      {
+        "line": 147,
+        "column": 47
+      },
+      {
+        "line": 147,
+        "column": 47
+      },
+      {
+        "line": 148,
+        "column": 9
+      },
+      {
+        "line": 148,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 144,
+          "column": 9
+        },
+        "assert": "assertTrue(IterableUtils.contains(it, 30));",
+        "slice": "final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(10, 20, 30);assertTrue(IterableUtils.contains(it, 30));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 145,
+          "column": 9
+        },
+        "assert": "assertFalse(IterableUtils.contains(it, 40));",
+        "slice": "final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(10, 20, 30);assertFalse(IterableUtils.contains(it, 40));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 147,
+          "column": 9
+        },
+        "assert": "final FluentIterable\u003cInteger\u003e empty \u003d FluentIterable.of(emptyIterable).append();assertTrue(IterableUtils.isEmpty(empty));",
+        "slice": "final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(10, 20, 30);final FluentIterable\u003cInteger\u003e empty \u003d FluentIterable.of(emptyIterable).append();assertTrue(IterableUtils.isEmpty(empty));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 139,
+          "column": 9
+        },
+        "assert": "final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(10, 20, 30);assertEquals(IterableUtils.size(iterableA) + 3, IterableUtils.size(it));",
+        "slice": "final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(10, 20, 30);assertEquals(IterableUtils.size(iterableA) + 3, IterableUtils.size(it));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 141,
+          "column": 9
+        },
+        "assert": "assertTrue(IterableUtils.contains(it, 1));",
+        "slice": "final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(10, 20, 30);assertTrue(IterableUtils.contains(it, 1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 142,
+          "column": 9
+        },
+        "assert": "assertTrue(IterableUtils.contains(it, 10));",
+        "slice": "final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(10, 20, 30);assertTrue(IterableUtils.contains(it, 10));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 143,
+          "column": 9
+        },
+        "assert": "assertTrue(IterableUtils.contains(it, 20));",
+        "slice": "final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(10, 20, 30);assertTrue(IterableUtils.contains(it, 20));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.appendIterable()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e listB \u003d Arrays.asList(10, 20, 30);final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(listB);assertEquals(IterableUtils.size(iterableA) + listB.size(), IterableUtils.size(it));assertTrue(IterableUtils.contains(it, 1));assertTrue(IterableUtils.contains(it, 10));assertTrue(IterableUtils.contains(it, 20));assertTrue(IterableUtils.contains(it, 30));assertFalse(IterableUtils.contains(it, 40));",
+    "offset": [
+      {
+        "line": 153,
+        "column": 37
+      },
+      {
+        "line": 154,
+        "column": 44
+      },
+      {
+        "line": 154,
+        "column": 44
+      },
+      {
+        "line": 155,
+        "column": 9
+      },
+      {
+        "line": 155,
+        "column": 22
+      },
+      {
+        "line": 155,
+        "column": 54
+      },
+      {
+        "line": 155,
+        "column": 68
+      },
+      {
+        "line": 156,
+        "column": 9
+      },
+      {
+        "line": 156,
+        "column": 20
+      },
+      {
+        "line": 157,
+        "column": 9
+      },
+      {
+        "line": 157,
+        "column": 20
+      },
+      {
+        "line": 158,
+        "column": 9
+      },
+      {
+        "line": 158,
+        "column": 20
+      },
+      {
+        "line": 159,
+        "column": 9
+      },
+      {
+        "line": 159,
+        "column": 20
+      },
+      {
+        "line": 160,
+        "column": 9
+      },
+      {
+        "line": 160,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 160,
+          "column": 9
+        },
+        "assert": "assertFalse(IterableUtils.contains(it, 40));",
+        "slice": "final List\u003cInteger\u003e listB \u003d Arrays.asList(10, 20, 30);final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(listB);assertFalse(IterableUtils.contains(it, 40));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 153,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e listB \u003d Arrays.asList(10, 20, 30);final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(listB);assertEquals(IterableUtils.size(iterableA) + listB.size(), IterableUtils.size(it));",
+        "slice": "final List\u003cInteger\u003e listB \u003d Arrays.asList(10, 20, 30);final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(listB);assertEquals(IterableUtils.size(iterableA) + listB.size(), IterableUtils.size(it));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 156,
+          "column": 9
+        },
+        "assert": "assertTrue(IterableUtils.contains(it, 1));",
+        "slice": "final List\u003cInteger\u003e listB \u003d Arrays.asList(10, 20, 30);final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(listB);assertTrue(IterableUtils.contains(it, 1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 157,
+          "column": 9
+        },
+        "assert": "assertTrue(IterableUtils.contains(it, 10));",
+        "slice": "final List\u003cInteger\u003e listB \u003d Arrays.asList(10, 20, 30);final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(listB);assertTrue(IterableUtils.contains(it, 10));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 158,
+          "column": 9
+        },
+        "assert": "assertTrue(IterableUtils.contains(it, 20));",
+        "slice": "final List\u003cInteger\u003e listB \u003d Arrays.asList(10, 20, 30);final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(listB);assertTrue(IterableUtils.contains(it, 20));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 159,
+          "column": 9
+        },
+        "assert": "assertTrue(IterableUtils.contains(it, 30));",
+        "slice": "final List\u003cInteger\u003e listB \u003d Arrays.asList(10, 20, 30);final FluentIterable\u003cInteger\u003e it \u003d FluentIterable.of(iterableA).append(listB);assertTrue(IterableUtils.contains(it, 30));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.collate()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e result \u003d FluentIterable.of(iterableOdd).collate(iterableEven).toList();final List\u003cInteger\u003e combinedList \u003d new ArrayList\u003c\u003e();CollectionUtils.addAll(combinedList, iterableOdd);CollectionUtils.addAll(combinedList, iterableEven);Collections.sort(combinedList);assertEquals(combinedList, result);try {\n    FluentIterable.of(iterableOdd).collate(null).toList();\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 165,
+        "column": 38
+      },
+      {
+        "line": 165,
+        "column": 38
+      },
+      {
+        "line": 165,
+        "column": 38
+      },
+      {
+        "line": 166,
+        "column": 44
+      },
+      {
+        "line": 167,
+        "column": 9
+      },
+      {
+        "line": 168,
+        "column": 9
+      },
+      {
+        "line": 169,
+        "column": 9
+      },
+      {
+        "line": 170,
+        "column": 9
+      },
+      {
+        "line": 173,
+        "column": 13
+      },
+      {
+        "line": 173,
+        "column": 13
+      },
+      {
+        "line": 173,
+        "column": 13
+      },
+      {
+        "line": 174,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 165,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e result \u003d FluentIterable.of(iterableOdd).collate(iterableEven).toList();final List\u003cInteger\u003e combinedList \u003d new ArrayList\u003c\u003e();CollectionUtils.addAll(combinedList, iterableOdd);CollectionUtils.addAll(combinedList, iterableEven);Collections.sort(combinedList);assertEquals(combinedList, result);",
+        "slice": "final List\u003cInteger\u003e result \u003d FluentIterable.of(iterableOdd).collate(iterableEven).toList();final List\u003cInteger\u003e combinedList \u003d new ArrayList\u003c\u003e();CollectionUtils.addAll(combinedList, iterableOdd);CollectionUtils.addAll(combinedList, iterableEven);Collections.sort(combinedList);assertEquals(combinedList, result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 172,
+          "column": 9
+        },
+        "assert": "try {\n    FluentIterable.of(iterableOdd).collate(null).toList();\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final List\u003cInteger\u003e result \u003d FluentIterable.of(iterableOdd).collate(iterableEven).toList();try {\n    FluentIterable.of(iterableOdd).collate(null).toList();\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.collateWithComparator()",
+    "annotation": "@Test",
+    "code": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableOdd).collate(iterableEven, ComparatorUtils.\u003cInteger\u003enaturalComparator()).toList();final List\u003cInteger\u003e combinedList \u003d new ArrayList\u003c\u003e();CollectionUtils.addAll(combinedList, iterableOdd);CollectionUtils.addAll(combinedList, iterableEven);Collections.sort(combinedList);assertEquals(combinedList, result);// null comparator is equivalent to natural ordering\nresult \u003d FluentIterable.of(iterableOdd).collate(iterableEven, null).toList();assertEquals(combinedList, result);",
+    "offset": [
+      {
+        "line": 183,
+        "column": 17
+      },
+      {
+        "line": 183,
+        "column": 17
+      },
+      {
+        "line": 183,
+        "column": 17
+      },
+      {
+        "line": 185,
+        "column": 44
+      },
+      {
+        "line": 188,
+        "column": 44
+      },
+      {
+        "line": 189,
+        "column": 9
+      },
+      {
+        "line": 190,
+        "column": 9
+      },
+      {
+        "line": 191,
+        "column": 9
+      },
+      {
+        "line": 192,
+        "column": 9
+      },
+      {
+        "line": 195,
+        "column": 18
+      },
+      {
+        "line": 195,
+        "column": 18
+      },
+      {
+        "line": 195,
+        "column": 18
+      },
+      {
+        "line": 196,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 195,
+          "column": 9
+        },
+        "assert": "// null comparator is equivalent to natural ordering\nresult \u003d FluentIterable.of(iterableOdd).collate(iterableEven, null).toList();assertEquals(combinedList, result);",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableOdd).collate(iterableEven, ComparatorUtils.\u003cInteger\u003enaturalComparator()).toList();final List\u003cInteger\u003e combinedList \u003d new ArrayList\u003c\u003e();// null comparator is equivalent to natural ordering\nresult \u003d FluentIterable.of(iterableOdd).collate(iterableEven, null).toList();assertEquals(combinedList, result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 182,
+          "column": 9
+        },
+        "assert": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableOdd).collate(iterableEven, ComparatorUtils.\u003cInteger\u003enaturalComparator()).toList();final List\u003cInteger\u003e combinedList \u003d new ArrayList\u003c\u003e();CollectionUtils.addAll(combinedList, iterableOdd);CollectionUtils.addAll(combinedList, iterableEven);Collections.sort(combinedList);assertEquals(combinedList, result);",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableOdd).collate(iterableEven, ComparatorUtils.\u003cInteger\u003enaturalComparator()).toList();final List\u003cInteger\u003e combinedList \u003d new ArrayList\u003c\u003e();CollectionUtils.addAll(combinedList, iterableOdd);CollectionUtils.addAll(combinedList, iterableEven);Collections.sort(combinedList);assertEquals(combinedList, result);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.filter()",
+    "annotation": "@Test",
+    "code": "final Predicate\u003cInteger\u003e smallerThan3 \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer object) {\n        return object.intValue() \u003c 3;\n    }\n};List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).filter(smallerThan3).toList();assertEquals(3, result.size());assertEquals(Arrays.asList(1, 2, 2), result);// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).filter(smallerThan3).toList();assertEquals(0, result.size());try {\n    FluentIterable.of(iterableA).filter(null).toList();\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 201,
+        "column": 49
+      },
+      {
+        "line": 204,
+        "column": 24
+      },
+      {
+        "line": 207,
+        "column": 32
+      },
+      {
+        "line": 207,
+        "column": 32
+      },
+      {
+        "line": 207,
+        "column": 32
+      },
+      {
+        "line": 208,
+        "column": 9
+      },
+      {
+        "line": 208,
+        "column": 25
+      },
+      {
+        "line": 209,
+        "column": 9
+      },
+      {
+        "line": 209,
+        "column": 22
+      },
+      {
+        "line": 212,
+        "column": 18
+      },
+      {
+        "line": 212,
+        "column": 18
+      },
+      {
+        "line": 212,
+        "column": 18
+      },
+      {
+        "line": 213,
+        "column": 9
+      },
+      {
+        "line": 213,
+        "column": 25
+      },
+      {
+        "line": 216,
+        "column": 13
+      },
+      {
+        "line": 216,
+        "column": 13
+      },
+      {
+        "line": 216,
+        "column": 13
+      },
+      {
+        "line": 217,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 209,
+          "column": 9
+        },
+        "assert": "assertEquals(Arrays.asList(1, 2, 2), result);",
+        "slice": "final Predicate\u003cInteger\u003e smallerThan3 \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer object) {\n        return object.intValue() \u003c 3;\n    }\n};List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).filter(smallerThan3).toList();assertEquals(Arrays.asList(1, 2, 2), result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 212,
+          "column": 9
+        },
+        "assert": "// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).filter(smallerThan3).toList();assertEquals(0, result.size());",
+        "slice": "final Predicate\u003cInteger\u003e smallerThan3 \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer object) {\n        return object.intValue() \u003c 3;\n    }\n};List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).filter(smallerThan3).toList();// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).filter(smallerThan3).toList();assertEquals(0, result.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 215,
+          "column": 9
+        },
+        "assert": "try {\n    FluentIterable.of(iterableA).filter(null).toList();\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final Predicate\u003cInteger\u003e smallerThan3 \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer object) {\n        return object.intValue() \u003c 3;\n    }\n};List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).filter(smallerThan3).toList();// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).filter(smallerThan3).toList();try {\n    FluentIterable.of(iterableA).filter(null).toList();\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 201,
+          "column": 9
+        },
+        "assert": "final Predicate\u003cInteger\u003e smallerThan3 \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer object) {\n        return object.intValue() \u003c 3;\n    }\n};List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).filter(smallerThan3).toList();assertEquals(3, result.size());",
+        "slice": "final Predicate\u003cInteger\u003e smallerThan3 \u003d new Predicate\u003cInteger\u003e() {\n\n    @Override\n    public boolean evaluate(final Integer object) {\n        return object.intValue() \u003c 3;\n    }\n};List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).filter(smallerThan3).toList();assertEquals(3, result.size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.forEach()",
+    "annotation": "@Test",
+    "code": "final AtomicInteger sum \u003d new AtomicInteger(0);final Closure\u003cInteger\u003e closure \u003d new Closure\u003cInteger\u003e() {\n\n    @Override\n    public void execute(final Integer input) {\n        sum.addAndGet(input);\n    }\n};FluentIterable.of(iterableA).forEach(closure);int expectedSum \u003d 0;for (final Integer i : iterableA) {\n    expectedSum +\u003d i;\n}assertEquals(expectedSum, sum.get());try {\n    FluentIterable.of(iterableA).forEach((Closure\u003cInteger\u003e) null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 225,
+        "column": 35
+      },
+      {
+        "line": 226,
+        "column": 42
+      },
+      {
+        "line": 229,
+        "column": 17
+      },
+      {
+        "line": 233,
+        "column": 9
+      },
+      {
+        "line": 233,
+        "column": 9
+      },
+      {
+        "line": 238,
+        "column": 9
+      },
+      {
+        "line": 238,
+        "column": 35
+      },
+      {
+        "line": 241,
+        "column": 13
+      },
+      {
+        "line": 241,
+        "column": 13
+      },
+      {
+        "line": 242,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 240,
+          "column": 9
+        },
+        "assert": "try {\n    FluentIterable.of(iterableA).forEach((Closure\u003cInteger\u003e) null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final AtomicInteger sum \u003d new AtomicInteger(0);final Closure\u003cInteger\u003e closure \u003d new Closure\u003cInteger\u003e() {\n\n    @Override\n    public void execute(final Integer input) {\n        sum.addAndGet(input);\n    }\n};FluentIterable.of(iterableA).forEach(closure);try {\n    FluentIterable.of(iterableA).forEach((Closure\u003cInteger\u003e) null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 225,
+          "column": 9
+        },
+        "assert": "final AtomicInteger sum \u003d new AtomicInteger(0);final Closure\u003cInteger\u003e closure \u003d new Closure\u003cInteger\u003e() {\n\n    @Override\n    public void execute(final Integer input) {\n        sum.addAndGet(input);\n    }\n};FluentIterable.of(iterableA).forEach(closure);int expectedSum \u003d 0;for (final Integer i : iterableA) {\n    expectedSum +\u003d i;\n}assertEquals(expectedSum, sum.get());",
+        "slice": "final AtomicInteger sum \u003d new AtomicInteger(0);final Closure\u003cInteger\u003e closure \u003d new Closure\u003cInteger\u003e() {\n\n    @Override\n    public void execute(final Integer input) {\n        sum.addAndGet(input);\n    }\n};FluentIterable.of(iterableA).forEach(closure);int expectedSum \u003d 0;for (final Integer i : iterableA) {\n    expectedSum +\u003d i;\n}assertEquals(expectedSum, sum.get());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.limit()",
+    "annotation": "@Test",
+    "code": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).limit(3).toList();assertEquals(3, result.size());assertEquals(Arrays.asList(1, 2, 2), result);// limit larger than input\nresult \u003d FluentIterable.of(iterableA).limit(100).toList();final List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);assertEquals(expected.size(), result.size());assertEquals(expected, result);// limit is 0\nresult \u003d FluentIterable.of(iterableA).limit(0).toList();assertEquals(0, result.size());// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).limit(3).toList();assertEquals(0, result.size());try {\n    FluentIterable.of(iterableA).limit(-2).toList();\n    fail(\"expecting IllegalArgumentException\");\n} catch (final IllegalArgumentException iae) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 250,
+        "column": 32
+      },
+      {
+        "line": 250,
+        "column": 32
+      },
+      {
+        "line": 250,
+        "column": 32
+      },
+      {
+        "line": 251,
+        "column": 9
+      },
+      {
+        "line": 251,
+        "column": 25
+      },
+      {
+        "line": 252,
+        "column": 9
+      },
+      {
+        "line": 252,
+        "column": 22
+      },
+      {
+        "line": 255,
+        "column": 18
+      },
+      {
+        "line": 255,
+        "column": 18
+      },
+      {
+        "line": 255,
+        "column": 18
+      },
+      {
+        "line": 256,
+        "column": 40
+      },
+      {
+        "line": 257,
+        "column": 9
+      },
+      {
+        "line": 257,
+        "column": 22
+      },
+      {
+        "line": 257,
+        "column": 39
+      },
+      {
+        "line": 258,
+        "column": 9
+      },
+      {
+        "line": 261,
+        "column": 18
+      },
+      {
+        "line": 261,
+        "column": 18
+      },
+      {
+        "line": 261,
+        "column": 18
+      },
+      {
+        "line": 262,
+        "column": 9
+      },
+      {
+        "line": 262,
+        "column": 25
+      },
+      {
+        "line": 265,
+        "column": 18
+      },
+      {
+        "line": 265,
+        "column": 18
+      },
+      {
+        "line": 265,
+        "column": 18
+      },
+      {
+        "line": 266,
+        "column": 9
+      },
+      {
+        "line": 266,
+        "column": 25
+      },
+      {
+        "line": 269,
+        "column": 13
+      },
+      {
+        "line": 269,
+        "column": 13
+      },
+      {
+        "line": 269,
+        "column": 13
+      },
+      {
+        "line": 270,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 258,
+          "column": 9
+        },
+        "assert": "assertEquals(expected, result);",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).limit(3).toList();// limit larger than input\nresult \u003d FluentIterable.of(iterableA).limit(100).toList();final List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);assertEquals(expected, result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        },
+        "assert": "// limit is 0\nresult \u003d FluentIterable.of(iterableA).limit(0).toList();assertEquals(0, result.size());",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).limit(3).toList();// limit larger than input\nresult \u003d FluentIterable.of(iterableA).limit(100).toList();// limit is 0\nresult \u003d FluentIterable.of(iterableA).limit(0).toList();assertEquals(0, result.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        },
+        "assert": "// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).limit(3).toList();assertEquals(0, result.size());",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).limit(3).toList();// limit larger than input\nresult \u003d FluentIterable.of(iterableA).limit(100).toList();// limit is 0\nresult \u003d FluentIterable.of(iterableA).limit(0).toList();// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).limit(3).toList();assertEquals(0, result.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 250,
+          "column": 9
+        },
+        "assert": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).limit(3).toList();assertEquals(3, result.size());",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).limit(3).toList();assertEquals(3, result.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 252,
+          "column": 9
+        },
+        "assert": "assertEquals(Arrays.asList(1, 2, 2), result);",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).limit(3).toList();assertEquals(Arrays.asList(1, 2, 2), result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 268,
+          "column": 9
+        },
+        "assert": "try {\n    FluentIterable.of(iterableA).limit(-2).toList();\n    fail(\"expecting IllegalArgumentException\");\n} catch (final IllegalArgumentException iae) {\n    // expected\n}",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).limit(3).toList();// limit larger than input\nresult \u003d FluentIterable.of(iterableA).limit(100).toList();// limit is 0\nresult \u003d FluentIterable.of(iterableA).limit(0).toList();// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).limit(3).toList();try {\n    FluentIterable.of(iterableA).limit(-2).toList();\n    fail(\"expecting IllegalArgumentException\");\n} catch (final IllegalArgumentException iae) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        },
+        "assert": "// limit larger than input\nresult \u003d FluentIterable.of(iterableA).limit(100).toList();final List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);assertEquals(expected.size(), result.size());",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).limit(3).toList();// limit larger than input\nresult \u003d FluentIterable.of(iterableA).limit(100).toList();final List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);assertEquals(expected.size(), result.size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.reverse()",
+    "annotation": "@Test",
+    "code": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).reverse().toList();final List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);Collections.reverse(expected);assertEquals(expected, result);// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).reverse().toList();assertEquals(0, result.size());",
+    "offset": [
+      {
+        "line": 278,
+        "column": 32
+      },
+      {
+        "line": 278,
+        "column": 32
+      },
+      {
+        "line": 278,
+        "column": 32
+      },
+      {
+        "line": 279,
+        "column": 40
+      },
+      {
+        "line": 280,
+        "column": 9
+      },
+      {
+        "line": 281,
+        "column": 9
+      },
+      {
+        "line": 284,
+        "column": 18
+      },
+      {
+        "line": 284,
+        "column": 18
+      },
+      {
+        "line": 284,
+        "column": 18
+      },
+      {
+        "line": 285,
+        "column": 9
+      },
+      {
+        "line": 285,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 278,
+          "column": 9
+        },
+        "assert": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).reverse().toList();final List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);Collections.reverse(expected);assertEquals(expected, result);",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).reverse().toList();final List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);Collections.reverse(expected);assertEquals(expected, result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 284,
+          "column": 9
+        },
+        "assert": "// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).reverse().toList();assertEquals(0, result.size());",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).reverse().toList();// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).reverse().toList();assertEquals(0, result.size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.skip()",
+    "annotation": "@Test",
+    "code": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).skip(4).toList();assertEquals(6, result.size());assertEquals(Arrays.asList(3, 3, 4, 4, 4, 4), result);// skip larger than input\nresult \u003d FluentIterable.of(iterableA).skip(100).toList();assertEquals(0, result.size());// skip 0 elements\nresult \u003d FluentIterable.of(iterableA).skip(0).toList();final List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);assertEquals(expected.size(), result.size());assertEquals(expected, result);// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).skip(3).toList();assertEquals(0, result.size());try {\n    FluentIterable.of(iterableA).skip(-4).toList();\n    fail(\"expecting IllegalArgumentException\");\n} catch (final IllegalArgumentException iae) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 290,
+        "column": 32
+      },
+      {
+        "line": 290,
+        "column": 32
+      },
+      {
+        "line": 290,
+        "column": 32
+      },
+      {
+        "line": 291,
+        "column": 9
+      },
+      {
+        "line": 291,
+        "column": 25
+      },
+      {
+        "line": 292,
+        "column": 9
+      },
+      {
+        "line": 292,
+        "column": 22
+      },
+      {
+        "line": 295,
+        "column": 18
+      },
+      {
+        "line": 295,
+        "column": 18
+      },
+      {
+        "line": 295,
+        "column": 18
+      },
+      {
+        "line": 296,
+        "column": 9
+      },
+      {
+        "line": 296,
+        "column": 25
+      },
+      {
+        "line": 299,
+        "column": 18
+      },
+      {
+        "line": 299,
+        "column": 18
+      },
+      {
+        "line": 299,
+        "column": 18
+      },
+      {
+        "line": 300,
+        "column": 40
+      },
+      {
+        "line": 301,
+        "column": 9
+      },
+      {
+        "line": 301,
+        "column": 22
+      },
+      {
+        "line": 301,
+        "column": 39
+      },
+      {
+        "line": 302,
+        "column": 9
+      },
+      {
+        "line": 305,
+        "column": 18
+      },
+      {
+        "line": 305,
+        "column": 18
+      },
+      {
+        "line": 305,
+        "column": 18
+      },
+      {
+        "line": 306,
+        "column": 9
+      },
+      {
+        "line": 306,
+        "column": 25
+      },
+      {
+        "line": 309,
+        "column": 13
+      },
+      {
+        "line": 309,
+        "column": 13
+      },
+      {
+        "line": 309,
+        "column": 13
+      },
+      {
+        "line": 310,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 305,
+          "column": 9
+        },
+        "assert": "// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).skip(3).toList();assertEquals(0, result.size());",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).skip(4).toList();// skip larger than input\nresult \u003d FluentIterable.of(iterableA).skip(100).toList();// skip 0 elements\nresult \u003d FluentIterable.of(iterableA).skip(0).toList();// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).skip(3).toList();assertEquals(0, result.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 290,
+          "column": 9
+        },
+        "assert": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).skip(4).toList();assertEquals(6, result.size());",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).skip(4).toList();assertEquals(6, result.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 292,
+          "column": 9
+        },
+        "assert": "assertEquals(Arrays.asList(3, 3, 4, 4, 4, 4), result);",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).skip(4).toList();assertEquals(Arrays.asList(3, 3, 4, 4, 4, 4), result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 308,
+          "column": 9
+        },
+        "assert": "try {\n    FluentIterable.of(iterableA).skip(-4).toList();\n    fail(\"expecting IllegalArgumentException\");\n} catch (final IllegalArgumentException iae) {\n    // expected\n}",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).skip(4).toList();// skip larger than input\nresult \u003d FluentIterable.of(iterableA).skip(100).toList();// skip 0 elements\nresult \u003d FluentIterable.of(iterableA).skip(0).toList();// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).skip(3).toList();try {\n    FluentIterable.of(iterableA).skip(-4).toList();\n    fail(\"expecting IllegalArgumentException\");\n} catch (final IllegalArgumentException iae) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 295,
+          "column": 9
+        },
+        "assert": "// skip larger than input\nresult \u003d FluentIterable.of(iterableA).skip(100).toList();assertEquals(0, result.size());",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).skip(4).toList();// skip larger than input\nresult \u003d FluentIterable.of(iterableA).skip(100).toList();assertEquals(0, result.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 299,
+          "column": 9
+        },
+        "assert": "// skip 0 elements\nresult \u003d FluentIterable.of(iterableA).skip(0).toList();final List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);assertEquals(expected.size(), result.size());",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).skip(4).toList();// skip larger than input\nresult \u003d FluentIterable.of(iterableA).skip(100).toList();// skip 0 elements\nresult \u003d FluentIterable.of(iterableA).skip(0).toList();final List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);assertEquals(expected.size(), result.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 302,
+          "column": 9
+        },
+        "assert": "assertEquals(expected, result);",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).skip(4).toList();// skip larger than input\nresult \u003d FluentIterable.of(iterableA).skip(100).toList();// skip 0 elements\nresult \u003d FluentIterable.of(iterableA).skip(0).toList();final List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);assertEquals(expected, result);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.transform()",
+    "annotation": "@Test",
+    "code": "final Transformer\u003cInteger, Integer\u003e squared \u003d new Transformer\u003cInteger, Integer\u003e() {\n\n    @Override\n    public Integer transform(final Integer object) {\n        return object * object;\n    }\n};List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).transform(squared).toList();assertEquals(10, result.size());assertEquals(Arrays.asList(1, 4, 4, 9, 9, 9, 16, 16, 16, 16), result);// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).transform(squared).toList();assertEquals(0, result.size());try {\n    FluentIterable.of(iterableA).transform(null).toList();\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 318,
+        "column": 55
+      },
+      {
+        "line": 324,
+        "column": 32
+      },
+      {
+        "line": 324,
+        "column": 32
+      },
+      {
+        "line": 324,
+        "column": 32
+      },
+      {
+        "line": 325,
+        "column": 9
+      },
+      {
+        "line": 325,
+        "column": 26
+      },
+      {
+        "line": 326,
+        "column": 9
+      },
+      {
+        "line": 326,
+        "column": 22
+      },
+      {
+        "line": 329,
+        "column": 18
+      },
+      {
+        "line": 329,
+        "column": 18
+      },
+      {
+        "line": 329,
+        "column": 18
+      },
+      {
+        "line": 330,
+        "column": 9
+      },
+      {
+        "line": 330,
+        "column": 25
+      },
+      {
+        "line": 333,
+        "column": 13
+      },
+      {
+        "line": 333,
+        "column": 13
+      },
+      {
+        "line": 333,
+        "column": 13
+      },
+      {
+        "line": 334,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 326,
+          "column": 9
+        },
+        "assert": "assertEquals(Arrays.asList(1, 4, 4, 9, 9, 9, 16, 16, 16, 16), result);",
+        "slice": "final Transformer\u003cInteger, Integer\u003e squared \u003d new Transformer\u003cInteger, Integer\u003e() {\n\n    @Override\n    public Integer transform(final Integer object) {\n        return object * object;\n    }\n};List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).transform(squared).toList();assertEquals(Arrays.asList(1, 4, 4, 9, 9, 9, 16, 16, 16, 16), result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 329,
+          "column": 9
+        },
+        "assert": "// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).transform(squared).toList();assertEquals(0, result.size());",
+        "slice": "final Transformer\u003cInteger, Integer\u003e squared \u003d new Transformer\u003cInteger, Integer\u003e() {\n\n    @Override\n    public Integer transform(final Integer object) {\n        return object * object;\n    }\n};List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).transform(squared).toList();// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).transform(squared).toList();assertEquals(0, result.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 332,
+          "column": 9
+        },
+        "assert": "try {\n    FluentIterable.of(iterableA).transform(null).toList();\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final Transformer\u003cInteger, Integer\u003e squared \u003d new Transformer\u003cInteger, Integer\u003e() {\n\n    @Override\n    public Integer transform(final Integer object) {\n        return object * object;\n    }\n};List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).transform(squared).toList();// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).transform(squared).toList();try {\n    FluentIterable.of(iterableA).transform(null).toList();\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 318,
+          "column": 9
+        },
+        "assert": "final Transformer\u003cInteger, Integer\u003e squared \u003d new Transformer\u003cInteger, Integer\u003e() {\n\n    @Override\n    public Integer transform(final Integer object) {\n        return object * object;\n    }\n};List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).transform(squared).toList();assertEquals(10, result.size());",
+        "slice": "final Transformer\u003cInteger, Integer\u003e squared \u003d new Transformer\u003cInteger, Integer\u003e() {\n\n    @Override\n    public Integer transform(final Integer object) {\n        return object * object;\n    }\n};List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).transform(squared).toList();assertEquals(10, result.size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.unique()",
+    "annotation": "@Test",
+    "code": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).unique().toList();assertEquals(4, result.size());assertEquals(Arrays.asList(1, 2, 3, 4), result);// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).unique().toList();assertEquals(0, result.size());",
+    "offset": [
+      {
+        "line": 342,
+        "column": 32
+      },
+      {
+        "line": 342,
+        "column": 32
+      },
+      {
+        "line": 342,
+        "column": 32
+      },
+      {
+        "line": 343,
+        "column": 9
+      },
+      {
+        "line": 343,
+        "column": 25
+      },
+      {
+        "line": 344,
+        "column": 9
+      },
+      {
+        "line": 344,
+        "column": 22
+      },
+      {
+        "line": 347,
+        "column": 18
+      },
+      {
+        "line": 347,
+        "column": 18
+      },
+      {
+        "line": 347,
+        "column": 18
+      },
+      {
+        "line": 348,
+        "column": 9
+      },
+      {
+        "line": 348,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 342,
+          "column": 9
+        },
+        "assert": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).unique().toList();assertEquals(4, result.size());",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).unique().toList();assertEquals(4, result.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 344,
+          "column": 9
+        },
+        "assert": "assertEquals(Arrays.asList(1, 2, 3, 4), result);",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).unique().toList();assertEquals(Arrays.asList(1, 2, 3, 4), result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 347,
+          "column": 9
+        },
+        "assert": "// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).unique().toList();assertEquals(0, result.size());",
+        "slice": "List\u003cInteger\u003e result \u003d FluentIterable.of(iterableA).unique().toList();// empty iterable\nresult \u003d FluentIterable.of(emptyIterable).unique().toList();assertEquals(0, result.size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.unmodifiable()",
+    "annotation": "@Test",
+    "code": "final FluentIterable\u003cInteger\u003e iterable1 \u003d FluentIterable.of(iterableA).unmodifiable();final Iterator\u003cInteger\u003e it \u003d iterable1.iterator();assertEquals(1, it.next().intValue());try {\n    it.remove();\n    fail(\"expecting UnsupportedOperationException\");\n} catch (final UnsupportedOperationException ise) {\n    // expected\n}// calling unmodifiable on an already unmodifiable iterable shall return the same instance\nfinal FluentIterable\u003cInteger\u003e iterable2 \u003d iterable1.unmodifiable();assertSame(iterable1, iterable2);",
+    "offset": [
+      {
+        "line": 353,
+        "column": 51
+      },
+      {
+        "line": 353,
+        "column": 51
+      },
+      {
+        "line": 354,
+        "column": 38
+      },
+      {
+        "line": 355,
+        "column": 9
+      },
+      {
+        "line": 355,
+        "column": 25
+      },
+      {
+        "line": 355,
+        "column": 25
+      },
+      {
+        "line": 357,
+        "column": 13
+      },
+      {
+        "line": 358,
+        "column": 13
+      },
+      {
+        "line": 364,
+        "column": 51
+      },
+      {
+        "line": 365,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 353,
+          "column": 9
+        },
+        "assert": "final FluentIterable\u003cInteger\u003e iterable1 \u003d FluentIterable.of(iterableA).unmodifiable();final Iterator\u003cInteger\u003e it \u003d iterable1.iterator();assertEquals(1, it.next().intValue());",
+        "slice": "final FluentIterable\u003cInteger\u003e iterable1 \u003d FluentIterable.of(iterableA).unmodifiable();final Iterator\u003cInteger\u003e it \u003d iterable1.iterator();assertEquals(1, it.next().intValue());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 356,
+          "column": 9
+        },
+        "assert": "try {\n    it.remove();\n    fail(\"expecting UnsupportedOperationException\");\n} catch (final UnsupportedOperationException ise) {\n    // expected\n}",
+        "slice": "final FluentIterable\u003cInteger\u003e iterable1 \u003d FluentIterable.of(iterableA).unmodifiable();final Iterator\u003cInteger\u003e it \u003d iterable1.iterator();try {\n    it.remove();\n    fail(\"expecting UnsupportedOperationException\");\n} catch (final UnsupportedOperationException ise) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 364,
+          "column": 9
+        },
+        "assert": "// calling unmodifiable on an already unmodifiable iterable shall return the same instance\nfinal FluentIterable\u003cInteger\u003e iterable2 \u003d iterable1.unmodifiable();assertSame(iterable1, iterable2);",
+        "slice": "final FluentIterable\u003cInteger\u003e iterable1 \u003d FluentIterable.of(iterableA).unmodifiable();final Iterator\u003cInteger\u003e it \u003d iterable1.iterator();// calling unmodifiable on an already unmodifiable iterable shall return the same instance\nfinal FluentIterable\u003cInteger\u003e iterable2 \u003d iterable1.unmodifiable();assertSame(iterable1, iterable2);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.asEnumeration()",
+    "annotation": "@Test",
+    "code": "Enumeration\u003cLong\u003e enumeration \u003d FluentIterable.of(iterableB).asEnumeration();final List\u003cLong\u003e result \u003d EnumerationUtils.toList(enumeration);assertEquals(iterableB, result);enumeration \u003d FluentIterable.\u003cLong\u003eempty().asEnumeration();assertFalse(enumeration.hasMoreElements());",
+    "offset": [
+      {
+        "line": 395,
+        "column": 41
+      },
+      {
+        "line": 395,
+        "column": 41
+      },
+      {
+        "line": 396,
+        "column": 35
+      },
+      {
+        "line": 397,
+        "column": 9
+      },
+      {
+        "line": 399,
+        "column": 23
+      },
+      {
+        "line": 399,
+        "column": 23
+      },
+      {
+        "line": 400,
+        "column": 9
+      },
+      {
+        "line": 400,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 395,
+          "column": 9
+        },
+        "assert": "Enumeration\u003cLong\u003e enumeration \u003d FluentIterable.of(iterableB).asEnumeration();final List\u003cLong\u003e result \u003d EnumerationUtils.toList(enumeration);assertEquals(iterableB, result);",
+        "slice": "Enumeration\u003cLong\u003e enumeration \u003d FluentIterable.of(iterableB).asEnumeration();final List\u003cLong\u003e result \u003d EnumerationUtils.toList(enumeration);assertEquals(iterableB, result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 399,
+          "column": 9
+        },
+        "assert": "enumeration \u003d FluentIterable.\u003cLong\u003eempty().asEnumeration();assertFalse(enumeration.hasMoreElements());",
+        "slice": "Enumeration\u003cLong\u003e enumeration \u003d FluentIterable.of(iterableB).asEnumeration();enumeration \u003d FluentIterable.\u003cLong\u003eempty().asEnumeration();assertFalse(enumeration.hasMoreElements());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.allMatch()",
+    "annotation": "@Test",
+    "code": "assertTrue(FluentIterable.of(iterableEven).allMatch(EVEN));assertFalse(FluentIterable.of(iterableOdd).allMatch(EVEN));assertFalse(FluentIterable.of(iterableA).allMatch(EVEN));try {\n    FluentIterable.of(iterableEven).allMatch(null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 405,
+        "column": 9
+      },
+      {
+        "line": 405,
+        "column": 20
+      },
+      {
+        "line": 405,
+        "column": 20
+      },
+      {
+        "line": 406,
+        "column": 9
+      },
+      {
+        "line": 406,
+        "column": 21
+      },
+      {
+        "line": 406,
+        "column": 21
+      },
+      {
+        "line": 407,
+        "column": 9
+      },
+      {
+        "line": 407,
+        "column": 21
+      },
+      {
+        "line": 407,
+        "column": 21
+      },
+      {
+        "line": 410,
+        "column": 13
+      },
+      {
+        "line": 410,
+        "column": 13
+      },
+      {
+        "line": 411,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 405,
+          "column": 9
+        },
+        "assert": "assertTrue(FluentIterable.of(iterableEven).allMatch(EVEN));",
+        "slice": "assertTrue(FluentIterable.of(iterableEven).allMatch(EVEN));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 406,
+          "column": 9
+        },
+        "assert": "assertFalse(FluentIterable.of(iterableOdd).allMatch(EVEN));",
+        "slice": "assertFalse(FluentIterable.of(iterableOdd).allMatch(EVEN));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 407,
+          "column": 9
+        },
+        "assert": "assertFalse(FluentIterable.of(iterableA).allMatch(EVEN));",
+        "slice": "assertFalse(FluentIterable.of(iterableA).allMatch(EVEN));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 409,
+          "column": 9
+        },
+        "assert": "try {\n    FluentIterable.of(iterableEven).allMatch(null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "try {\n    FluentIterable.of(iterableEven).allMatch(null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.anyMatch()",
+    "annotation": "@Test",
+    "code": "assertTrue(FluentIterable.of(iterableEven).anyMatch(EVEN));assertFalse(FluentIterable.of(iterableOdd).anyMatch(EVEN));assertTrue(FluentIterable.of(iterableA).anyMatch(EVEN));try {\n    FluentIterable.of(iterableEven).anyMatch(null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 419,
+        "column": 9
+      },
+      {
+        "line": 419,
+        "column": 20
+      },
+      {
+        "line": 419,
+        "column": 20
+      },
+      {
+        "line": 420,
+        "column": 9
+      },
+      {
+        "line": 420,
+        "column": 21
+      },
+      {
+        "line": 420,
+        "column": 21
+      },
+      {
+        "line": 421,
+        "column": 9
+      },
+      {
+        "line": 421,
+        "column": 20
+      },
+      {
+        "line": 421,
+        "column": 20
+      },
+      {
+        "line": 424,
+        "column": 13
+      },
+      {
+        "line": 424,
+        "column": 13
+      },
+      {
+        "line": 425,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 419,
+          "column": 9
+        },
+        "assert": "assertTrue(FluentIterable.of(iterableEven).anyMatch(EVEN));",
+        "slice": "assertTrue(FluentIterable.of(iterableEven).anyMatch(EVEN));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 420,
+          "column": 9
+        },
+        "assert": "assertFalse(FluentIterable.of(iterableOdd).anyMatch(EVEN));",
+        "slice": "assertFalse(FluentIterable.of(iterableOdd).anyMatch(EVEN));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 421,
+          "column": 9
+        },
+        "assert": "assertTrue(FluentIterable.of(iterableA).anyMatch(EVEN));",
+        "slice": "assertTrue(FluentIterable.of(iterableA).anyMatch(EVEN));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 423,
+          "column": 9
+        },
+        "assert": "try {\n    FluentIterable.of(iterableEven).anyMatch(null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "try {\n    FluentIterable.of(iterableEven).anyMatch(null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.isEmpty()",
+    "annotation": "@Test",
+    "code": "assertTrue(FluentIterable.of(emptyIterable).isEmpty());assertFalse(FluentIterable.of(iterableOdd).isEmpty());",
+    "offset": [
+      {
+        "line": 433,
+        "column": 9
+      },
+      {
+        "line": 433,
+        "column": 20
+      },
+      {
+        "line": 433,
+        "column": 20
+      },
+      {
+        "line": 434,
+        "column": 9
+      },
+      {
+        "line": 434,
+        "column": 21
+      },
+      {
+        "line": 434,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 433,
+          "column": 9
+        },
+        "assert": "assertTrue(FluentIterable.of(emptyIterable).isEmpty());",
+        "slice": "assertTrue(FluentIterable.of(emptyIterable).isEmpty());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 434,
+          "column": 9
+        },
+        "assert": "assertFalse(FluentIterable.of(iterableOdd).isEmpty());",
+        "slice": "assertFalse(FluentIterable.of(iterableOdd).isEmpty());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.eval()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e listNumbers \u003d new ArrayList\u003c\u003e();listNumbers.addAll(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));final FluentIterable\u003cInteger\u003e iterable \u003d FluentIterable.of(listNumbers).filter(EVEN);final FluentIterable\u003cInteger\u003e materialized \u003d iterable.eval();listNumbers.addAll(Arrays.asList(11, 12, 13, 14, 15, 16, 17, 18, 19, 20));assertEquals(5, materialized.size());assertEquals(10, iterable.size());assertEquals(Arrays.asList(2, 4, 6, 8, 10), materialized.toList());assertEquals(Arrays.asList(2, 4, 6, 8, 10, 12, 14, 16, 18, 20), iterable.toList());",
+    "offset": [
+      {
+        "line": 451,
+        "column": 43
+      },
+      {
+        "line": 452,
+        "column": 9
+      },
+      {
+        "line": 452,
+        "column": 28
+      },
+      {
+        "line": 453,
+        "column": 50
+      },
+      {
+        "line": 453,
+        "column": 50
+      },
+      {
+        "line": 454,
+        "column": 54
+      },
+      {
+        "line": 456,
+        "column": 9
+      },
+      {
+        "line": 456,
+        "column": 28
+      },
+      {
+        "line": 457,
+        "column": 9
+      },
+      {
+        "line": 457,
+        "column": 25
+      },
+      {
+        "line": 458,
+        "column": 9
+      },
+      {
+        "line": 458,
+        "column": 26
+      },
+      {
+        "line": 460,
+        "column": 9
+      },
+      {
+        "line": 460,
+        "column": 22
+      },
+      {
+        "line": 460,
+        "column": 53
+      },
+      {
+        "line": 461,
+        "column": 9
+      },
+      {
+        "line": 461,
+        "column": 22
+      },
+      {
+        "line": 461,
+        "column": 73
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 451,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e listNumbers \u003d new ArrayList\u003c\u003e();listNumbers.addAll(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));final FluentIterable\u003cInteger\u003e iterable \u003d FluentIterable.of(listNumbers).filter(EVEN);final FluentIterable\u003cInteger\u003e materialized \u003d iterable.eval();listNumbers.addAll(Arrays.asList(11, 12, 13, 14, 15, 16, 17, 18, 19, 20));assertEquals(5, materialized.size());",
+        "slice": "final List\u003cInteger\u003e listNumbers \u003d new ArrayList\u003c\u003e();listNumbers.addAll(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));final FluentIterable\u003cInteger\u003e iterable \u003d FluentIterable.of(listNumbers).filter(EVEN);final FluentIterable\u003cInteger\u003e materialized \u003d iterable.eval();listNumbers.addAll(Arrays.asList(11, 12, 13, 14, 15, 16, 17, 18, 19, 20));assertEquals(5, materialized.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 458,
+          "column": 9
+        },
+        "assert": "assertEquals(10, iterable.size());",
+        "slice": "final List\u003cInteger\u003e listNumbers \u003d new ArrayList\u003c\u003e();listNumbers.addAll(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));final FluentIterable\u003cInteger\u003e iterable \u003d FluentIterable.of(listNumbers).filter(EVEN);final FluentIterable\u003cInteger\u003e materialized \u003d iterable.eval();assertEquals(10, iterable.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 460,
+          "column": 9
+        },
+        "assert": "assertEquals(Arrays.asList(2, 4, 6, 8, 10), materialized.toList());",
+        "slice": "final List\u003cInteger\u003e listNumbers \u003d new ArrayList\u003c\u003e();listNumbers.addAll(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));final FluentIterable\u003cInteger\u003e iterable \u003d FluentIterable.of(listNumbers).filter(EVEN);final FluentIterable\u003cInteger\u003e materialized \u003d iterable.eval();listNumbers.addAll(Arrays.asList(11, 12, 13, 14, 15, 16, 17, 18, 19, 20));assertEquals(Arrays.asList(2, 4, 6, 8, 10), materialized.toList());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 461,
+          "column": 9
+        },
+        "assert": "assertEquals(Arrays.asList(2, 4, 6, 8, 10, 12, 14, 16, 18, 20), iterable.toList());",
+        "slice": "final List\u003cInteger\u003e listNumbers \u003d new ArrayList\u003c\u003e();listNumbers.addAll(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));final FluentIterable\u003cInteger\u003e iterable \u003d FluentIterable.of(listNumbers).filter(EVEN);final FluentIterable\u003cInteger\u003e materialized \u003d iterable.eval();listNumbers.addAll(Arrays.asList(11, 12, 13, 14, 15, 16, 17, 18, 19, 20));assertEquals(Arrays.asList(2, 4, 6, 8, 10, 12, 14, 16, 18, 20), iterable.toList());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.contains()",
+    "annotation": "@Test",
+    "code": "assertTrue(FluentIterable.of(iterableEven).contains(2));assertFalse(FluentIterable.of(iterableEven).contains(1));assertFalse(FluentIterable.of(iterableEven).contains(null));assertTrue(FluentIterable.of(iterableEven).append((Integer) null).contains(null));",
+    "offset": [
+      {
+        "line": 466,
+        "column": 9
+      },
+      {
+        "line": 466,
+        "column": 20
+      },
+      {
+        "line": 466,
+        "column": 20
+      },
+      {
+        "line": 467,
+        "column": 9
+      },
+      {
+        "line": 467,
+        "column": 21
+      },
+      {
+        "line": 467,
+        "column": 21
+      },
+      {
+        "line": 468,
+        "column": 9
+      },
+      {
+        "line": 468,
+        "column": 21
+      },
+      {
+        "line": 468,
+        "column": 21
+      },
+      {
+        "line": 469,
+        "column": 9
+      },
+      {
+        "line": 469,
+        "column": 20
+      },
+      {
+        "line": 469,
+        "column": 20
+      },
+      {
+        "line": 469,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 466,
+          "column": 9
+        },
+        "assert": "assertTrue(FluentIterable.of(iterableEven).contains(2));",
+        "slice": "assertTrue(FluentIterable.of(iterableEven).contains(2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 467,
+          "column": 9
+        },
+        "assert": "assertFalse(FluentIterable.of(iterableEven).contains(1));",
+        "slice": "assertFalse(FluentIterable.of(iterableEven).contains(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 468,
+          "column": 9
+        },
+        "assert": "assertFalse(FluentIterable.of(iterableEven).contains(null));",
+        "slice": "assertFalse(FluentIterable.of(iterableEven).contains(null));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 469,
+          "column": 9
+        },
+        "assert": "assertTrue(FluentIterable.of(iterableEven).append((Integer) null).contains(null));",
+        "slice": "assertTrue(FluentIterable.of(iterableEven).append((Integer) null).contains(null));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.copyInto()",
+    "annotation": "@Test",
+    "code": "List\u003cInteger\u003e result \u003d new ArrayList\u003c\u003e();FluentIterable.of(iterableA).copyInto(result);List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);assertEquals(expected.size(), result.size());assertEquals(expected, result);result \u003d new ArrayList\u003c\u003e();result.add(10);result.add(9);result.add(8);FluentIterable.of(iterableA).copyInto(result);expected \u003d new ArrayList\u003c\u003e();expected.addAll(Arrays.asList(10, 9, 8));expected.addAll(IterableUtils.toList(iterableA));assertEquals(expected.size(), result.size());assertEquals(expected, result);try {\n    FluentIterable.of(iterableA).copyInto(null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 474,
+        "column": 32
+      },
+      {
+        "line": 475,
+        "column": 9
+      },
+      {
+        "line": 475,
+        "column": 9
+      },
+      {
+        "line": 477,
+        "column": 34
+      },
+      {
+        "line": 478,
+        "column": 9
+      },
+      {
+        "line": 478,
+        "column": 22
+      },
+      {
+        "line": 478,
+        "column": 39
+      },
+      {
+        "line": 479,
+        "column": 9
+      },
+      {
+        "line": 481,
+        "column": 18
+      },
+      {
+        "line": 482,
+        "column": 9
+      },
+      {
+        "line": 483,
+        "column": 9
+      },
+      {
+        "line": 484,
+        "column": 9
+      },
+      {
+        "line": 485,
+        "column": 9
+      },
+      {
+        "line": 485,
+        "column": 9
+      },
+      {
+        "line": 487,
+        "column": 20
+      },
+      {
+        "line": 488,
+        "column": 9
+      },
+      {
+        "line": 488,
+        "column": 25
+      },
+      {
+        "line": 489,
+        "column": 9
+      },
+      {
+        "line": 489,
+        "column": 25
+      },
+      {
+        "line": 490,
+        "column": 9
+      },
+      {
+        "line": 490,
+        "column": 22
+      },
+      {
+        "line": 490,
+        "column": 39
+      },
+      {
+        "line": 491,
+        "column": 9
+      },
+      {
+        "line": 494,
+        "column": 13
+      },
+      {
+        "line": 494,
+        "column": 13
+      },
+      {
+        "line": 495,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 481,
+          "column": 9
+        },
+        "assert": "result \u003d new ArrayList\u003c\u003e();result.add(10);result.add(9);result.add(8);FluentIterable.of(iterableA).copyInto(result);expected \u003d new ArrayList\u003c\u003e();expected.addAll(Arrays.asList(10, 9, 8));expected.addAll(IterableUtils.toList(iterableA));assertEquals(expected.size(), result.size());",
+        "slice": "List\u003cInteger\u003e result \u003d new ArrayList\u003c\u003e();FluentIterable.of(iterableA).copyInto(result);List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);result \u003d new ArrayList\u003c\u003e();result.add(10);result.add(9);result.add(8);FluentIterable.of(iterableA).copyInto(result);expected \u003d new ArrayList\u003c\u003e();expected.addAll(Arrays.asList(10, 9, 8));expected.addAll(IterableUtils.toList(iterableA));assertEquals(expected.size(), result.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 474,
+          "column": 9
+        },
+        "assert": "List\u003cInteger\u003e result \u003d new ArrayList\u003c\u003e();FluentIterable.of(iterableA).copyInto(result);List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);assertEquals(expected.size(), result.size());",
+        "slice": "List\u003cInteger\u003e result \u003d new ArrayList\u003c\u003e();FluentIterable.of(iterableA).copyInto(result);List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);assertEquals(expected.size(), result.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 491,
+          "column": 9
+        },
+        "assert": "assertEquals(expected, result);",
+        "slice": "List\u003cInteger\u003e result \u003d new ArrayList\u003c\u003e();List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);result \u003d new ArrayList\u003c\u003e();result.add(10);result.add(9);result.add(8);expected \u003d new ArrayList\u003c\u003e();expected.addAll(Arrays.asList(10, 9, 8));expected.addAll(IterableUtils.toList(iterableA));assertEquals(expected, result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 493,
+          "column": 9
+        },
+        "assert": "try {\n    FluentIterable.of(iterableA).copyInto(null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "List\u003cInteger\u003e result \u003d new ArrayList\u003c\u003e();FluentIterable.of(iterableA).copyInto(result);result \u003d new ArrayList\u003c\u003e();result.add(10);result.add(9);result.add(8);FluentIterable.of(iterableA).copyInto(result);try {\n    FluentIterable.of(iterableA).copyInto(null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 479,
+          "column": 9
+        },
+        "assert": "assertEquals(expected, result);",
+        "slice": "List\u003cInteger\u003e result \u003d new ArrayList\u003c\u003e();List\u003cInteger\u003e expected \u003d IterableUtils.toList(iterableA);assertEquals(expected, result);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.iterator()",
+    "annotation": "@Test",
+    "code": "Iterator\u003cInteger\u003e iterator \u003d FluentIterable.of(iterableA).iterator();assertTrue(iterator.hasNext());iterator \u003d FluentIterable.\u003cInteger\u003eempty().iterator();assertFalse(iterator.hasNext());",
+    "offset": [
+      {
+        "line": 503,
+        "column": 38
+      },
+      {
+        "line": 503,
+        "column": 38
+      },
+      {
+        "line": 504,
+        "column": 9
+      },
+      {
+        "line": 504,
+        "column": 20
+      },
+      {
+        "line": 506,
+        "column": 20
+      },
+      {
+        "line": 506,
+        "column": 20
+      },
+      {
+        "line": 507,
+        "column": 9
+      },
+      {
+        "line": 507,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 503,
+          "column": 9
+        },
+        "assert": "Iterator\u003cInteger\u003e iterator \u003d FluentIterable.of(iterableA).iterator();assertTrue(iterator.hasNext());",
+        "slice": "Iterator\u003cInteger\u003e iterator \u003d FluentIterable.of(iterableA).iterator();assertTrue(iterator.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 506,
+          "column": 9
+        },
+        "assert": "iterator \u003d FluentIterable.\u003cInteger\u003eempty().iterator();assertFalse(iterator.hasNext());",
+        "slice": "Iterator\u003cInteger\u003e iterator \u003d FluentIterable.of(iterableA).iterator();iterator \u003d FluentIterable.\u003cInteger\u003eempty().iterator();assertFalse(iterator.hasNext());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.get()",
+    "annotation": "@Test",
+    "code": "assertEquals(2, FluentIterable.of(iterableEven).get(0).intValue());try {\n    FluentIterable.of(iterableEven).get(-1);\n    fail(\"expecting IndexOutOfBoundsException\");\n} catch (final IndexOutOfBoundsException ioe) {\n    // expected\n}try {\n    FluentIterable.of(iterableEven).get(IterableUtils.size(iterableEven));\n    fail(\"expecting IndexOutOfBoundsException\");\n} catch (final IndexOutOfBoundsException ioe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 512,
+        "column": 9
+      },
+      {
+        "line": 512,
+        "column": 25
+      },
+      {
+        "line": 512,
+        "column": 25
+      },
+      {
+        "line": 512,
+        "column": 25
+      },
+      {
+        "line": 515,
+        "column": 13
+      },
+      {
+        "line": 515,
+        "column": 13
+      },
+      {
+        "line": 516,
+        "column": 13
+      },
+      {
+        "line": 522,
+        "column": 13
+      },
+      {
+        "line": 522,
+        "column": 13
+      },
+      {
+        "line": 522,
+        "column": 49
+      },
+      {
+        "line": 523,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 512,
+          "column": 9
+        },
+        "assert": "assertEquals(2, FluentIterable.of(iterableEven).get(0).intValue());",
+        "slice": "assertEquals(2, FluentIterable.of(iterableEven).get(0).intValue());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 514,
+          "column": 9
+        },
+        "assert": "try {\n    FluentIterable.of(iterableEven).get(-1);\n    fail(\"expecting IndexOutOfBoundsException\");\n} catch (final IndexOutOfBoundsException ioe) {\n    // expected\n}",
+        "slice": "try {\n    FluentIterable.of(iterableEven).get(-1);\n    fail(\"expecting IndexOutOfBoundsException\");\n} catch (final IndexOutOfBoundsException ioe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 521,
+          "column": 9
+        },
+        "assert": "try {\n    FluentIterable.of(iterableEven).get(IterableUtils.size(iterableEven));\n    fail(\"expecting IndexOutOfBoundsException\");\n} catch (final IndexOutOfBoundsException ioe) {\n    // expected\n}",
+        "slice": "try {\n    FluentIterable.of(iterableEven).get(IterableUtils.size(iterableEven));\n    fail(\"expecting IndexOutOfBoundsException\");\n} catch (final IndexOutOfBoundsException ioe) {\n    // expected\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.toArray()",
+    "annotation": "@Test",
+    "code": "final Long[] arr \u003d new Long[] { 1L, 2L, 3L, 4L, 5L };final Long[] result \u003d FluentIterable.of(arr).toArray(Long.class);assertNotNull(result);assertArrayEquals(arr, result);try {\n    FluentIterable.of(arr).toArray((Class) String.class);\n} catch (final ArrayStoreException ase) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 533,
+        "column": 31
+      },
+      {
+        "line": 533,
+        "column": 31
+      },
+      {
+        "line": 534,
+        "column": 9
+      },
+      {
+        "line": 535,
+        "column": 9
+      },
+      {
+        "line": 538,
+        "column": 13
+      },
+      {
+        "line": 538,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 532,
+          "column": 9
+        },
+        "assert": "final Long[] arr \u003d new Long[] { 1L, 2L, 3L, 4L, 5L };final Long[] result \u003d FluentIterable.of(arr).toArray(Long.class);assertNotNull(result);",
+        "slice": "final Long[] arr \u003d new Long[] { 1L, 2L, 3L, 4L, 5L };final Long[] result \u003d FluentIterable.of(arr).toArray(Long.class);assertNotNull(result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 535,
+          "column": 9
+        },
+        "assert": "assertArrayEquals(arr, result);",
+        "slice": "final Long[] arr \u003d new Long[] { 1L, 2L, 3L, 4L, 5L };final Long[] result \u003d FluentIterable.of(arr).toArray(Long.class);assertArrayEquals(arr, result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 537,
+          "column": 9
+        },
+        "assert": "try {\n    FluentIterable.of(arr).toArray((Class) String.class);\n} catch (final ArrayStoreException ase) {\n    // expected\n}",
+        "slice": "final Long[] arr \u003d new Long[] { 1L, 2L, 3L, 4L, 5L };final Long[] result \u003d FluentIterable.of(arr).toArray(Long.class);try {\n    FluentIterable.of(arr).toArray((Class) String.class);\n} catch (final ArrayStoreException ase) {\n    // expected\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.testToString()",
+    "annotation": "@Test",
+    "code": "String result \u003d FluentIterable.of(iterableA).toString();assertEquals(iterableA.toString(), result);result \u003d FluentIterable.empty().toString();assertEquals(\"[]\", result);",
+    "offset": [
+      {
+        "line": 546,
+        "column": 25
+      },
+      {
+        "line": 546,
+        "column": 25
+      },
+      {
+        "line": 547,
+        "column": 9
+      },
+      {
+        "line": 547,
+        "column": 22
+      },
+      {
+        "line": 549,
+        "column": 18
+      },
+      {
+        "line": 549,
+        "column": 18
+      },
+      {
+        "line": 550,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 546,
+          "column": 9
+        },
+        "assert": "String result \u003d FluentIterable.of(iterableA).toString();assertEquals(iterableA.toString(), result);",
+        "slice": "String result \u003d FluentIterable.of(iterableA).toString();assertEquals(iterableA.toString(), result);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 549,
+          "column": 9
+        },
+        "assert": "result \u003d FluentIterable.empty().toString();assertEquals(\"[]\", result);",
+        "slice": "String result \u003d FluentIterable.of(iterableA).toString();result \u003d FluentIterable.empty().toString();assertEquals(\"[]\", result);"
+      }
+    ]
+  }
+]

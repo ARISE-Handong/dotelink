@@ -1,0 +1,333 @@
+[
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.IsIncludedInTest.testValidInput()",
+    "annotation": "@Test",
+    "code": "assertEquals(ONE, processor.execute(ONE, ANONYMOUS_CSVCONTEXT));assertEquals(ONE, processor2.execute(ONE, ANONYMOUS_CSVCONTEXT));assertEquals(ONE, processorChain.execute(ONE, ANONYMOUS_CSVCONTEXT));assertEquals(ONE, processorChain2.execute(ONE, ANONYMOUS_CSVCONTEXT));assertEquals(TWO, processor.execute(TWO, ANONYMOUS_CSVCONTEXT));assertEquals(TWO, processor2.execute(TWO, ANONYMOUS_CSVCONTEXT));assertEquals(TWO, processorChain.execute(TWO, ANONYMOUS_CSVCONTEXT));assertEquals(TWO, processorChain2.execute(TWO, ANONYMOUS_CSVCONTEXT));assertEquals(THREE, processor.execute(THREE, ANONYMOUS_CSVCONTEXT));assertEquals(THREE, processor2.execute(THREE, ANONYMOUS_CSVCONTEXT));assertEquals(THREE, processorChain.execute(THREE, ANONYMOUS_CSVCONTEXT));assertEquals(THREE, processorChain2.execute(THREE, ANONYMOUS_CSVCONTEXT));",
+    "offset": [
+      {
+        "line": 72,
+        "column": 3
+      },
+      {
+        "line": 72,
+        "column": 21
+      },
+      {
+        "line": 73,
+        "column": 3
+      },
+      {
+        "line": 73,
+        "column": 21
+      },
+      {
+        "line": 74,
+        "column": 3
+      },
+      {
+        "line": 74,
+        "column": 21
+      },
+      {
+        "line": 75,
+        "column": 3
+      },
+      {
+        "line": 75,
+        "column": 21
+      },
+      {
+        "line": 77,
+        "column": 3
+      },
+      {
+        "line": 77,
+        "column": 21
+      },
+      {
+        "line": 78,
+        "column": 3
+      },
+      {
+        "line": 78,
+        "column": 21
+      },
+      {
+        "line": 79,
+        "column": 3
+      },
+      {
+        "line": 79,
+        "column": 21
+      },
+      {
+        "line": 80,
+        "column": 3
+      },
+      {
+        "line": 80,
+        "column": 21
+      },
+      {
+        "line": 82,
+        "column": 3
+      },
+      {
+        "line": 82,
+        "column": 23
+      },
+      {
+        "line": 83,
+        "column": 3
+      },
+      {
+        "line": 83,
+        "column": 23
+      },
+      {
+        "line": 84,
+        "column": 3
+      },
+      {
+        "line": 84,
+        "column": 23
+      },
+      {
+        "line": 85,
+        "column": 3
+      },
+      {
+        "line": 85,
+        "column": 23
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 80,
+          "column": 3
+        },
+        "assert": "assertEquals(TWO, processorChain2.execute(TWO, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(TWO, processorChain2.execute(TWO, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 82,
+          "column": 3
+        },
+        "assert": "assertEquals(THREE, processor.execute(THREE, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(THREE, processor.execute(THREE, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 83,
+          "column": 3
+        },
+        "assert": "assertEquals(THREE, processor2.execute(THREE, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(THREE, processor2.execute(THREE, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 84,
+          "column": 3
+        },
+        "assert": "assertEquals(THREE, processorChain.execute(THREE, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(THREE, processorChain.execute(THREE, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 85,
+          "column": 3
+        },
+        "assert": "assertEquals(THREE, processorChain2.execute(THREE, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(THREE, processorChain2.execute(THREE, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 72,
+          "column": 3
+        },
+        "assert": "assertEquals(ONE, processor.execute(ONE, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(ONE, processor.execute(ONE, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 73,
+          "column": 3
+        },
+        "assert": "assertEquals(ONE, processor2.execute(ONE, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(ONE, processor2.execute(ONE, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 74,
+          "column": 3
+        },
+        "assert": "assertEquals(ONE, processorChain.execute(ONE, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(ONE, processorChain.execute(ONE, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 75,
+          "column": 3
+        },
+        "assert": "assertEquals(ONE, processorChain2.execute(ONE, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(ONE, processorChain2.execute(ONE, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 77,
+          "column": 3
+        },
+        "assert": "assertEquals(TWO, processor.execute(TWO, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(TWO, processor.execute(TWO, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 78,
+          "column": 3
+        },
+        "assert": "assertEquals(TWO, processor2.execute(TWO, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(TWO, processor2.execute(TWO, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 79,
+          "column": 3
+        },
+        "assert": "assertEquals(TWO, processorChain.execute(TWO, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(TWO, processorChain.execute(TWO, ANONYMOUS_CSVCONTEXT));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.IsIncludedInTest.testWithInvalidInput()",
+    "annotation": "@Test(expected \u003d SuperCsvConstraintViolationException.class)",
+    "code": "processor.execute(4, ANONYMOUS_CSVCONTEXT);",
+    "offset": [
+      {
+        "line": 94,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 94,
+          "column": 3
+        },
+        "assert": "processor.execute(4, ANONYMOUS_CSVCONTEXT);",
+        "slice": "processor.execute(4, ANONYMOUS_CSVCONTEXT);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.IsIncludedInTest.testWithNull()",
+    "annotation": "@Test(expected \u003d SuperCsvCellProcessorException.class)",
+    "code": "processor.execute(null, ANONYMOUS_CSVCONTEXT);",
+    "offset": [
+      {
+        "line": 102,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 102,
+          "column": 3
+        },
+        "assert": "processor.execute(null, ANONYMOUS_CSVCONTEXT);",
+        "slice": "processor.execute(null, ANONYMOUS_CSVCONTEXT);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.IsIncludedInTest.testConstructionWithNullArray()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "new IsIncludedIn((Object[]) null);",
+    "offset": [
+      {
+        "line": 110,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 110,
+          "column": 3
+        },
+        "assert": "new IsIncludedIn((Object[]) null);",
+        "slice": "new IsIncludedIn((Object[]) null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.IsIncludedInTest.testConstructionWithEmptyArray()",
+    "annotation": "@Test(expected \u003d IllegalArgumentException.class)",
+    "code": "new IsIncludedIn(new Object[] {});",
+    "offset": [
+      {
+        "line": 118,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 118,
+          "column": 3
+        },
+        "assert": "new IsIncludedIn(new Object[] {});",
+        "slice": "new IsIncludedIn(new Object[] {});"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.IsIncludedInTest.testConstructionWithNullSet()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "new IsIncludedIn((Set\u003cObject\u003e) null);",
+    "offset": [
+      {
+        "line": 126,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 126,
+          "column": 3
+        },
+        "assert": "new IsIncludedIn((Set\u003cObject\u003e) null);",
+        "slice": "new IsIncludedIn((Set\u003cObject\u003e) null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.IsIncludedInTest.testConstructionWithEmptySet()",
+    "annotation": "@Test(expected \u003d IllegalArgumentException.class)",
+    "code": "new IsIncludedIn(new HashSet\u003cObject\u003e());",
+    "offset": [
+      {
+        "line": 134,
+        "column": 3
+      },
+      {
+        "line": 134,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 134,
+          "column": 3
+        },
+        "assert": "new IsIncludedIn(new HashSet\u003cObject\u003e());",
+        "slice": "new IsIncludedIn(new HashSet\u003cObject\u003e());"
+      }
+    ]
+  }
+]

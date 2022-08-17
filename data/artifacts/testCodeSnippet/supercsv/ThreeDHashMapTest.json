@@ -1,0 +1,1020 @@
+[
+  {
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testContainsKeyWithTwoParams()",
+    "annotation": "@Test",
+    "code": "final String firstKey \u003d \"Australia\";final String secondKey \u003d \"Sydney\";// both keys exist\nassertTrue(personMap.containsKey(firstKey, secondKey));// first key doesn\u0027t exist\nassertFalse(personMap.containsKey(\"invalid\", secondKey));// second key doesn\u0027t exist\nassertFalse(personMap.containsKey(firstKey, \"invalid\"));",
+    "offset": [
+      {
+        "line": 65,
+        "column": 3
+      },
+      {
+        "line": 65,
+        "column": 14
+      },
+      {
+        "line": 68,
+        "column": 3
+      },
+      {
+        "line": 68,
+        "column": 15
+      },
+      {
+        "line": 71,
+        "column": 3
+      },
+      {
+        "line": 71,
+        "column": 15
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 68,
+          "column": 3
+        },
+        "assert": "// first key doesn\u0027t exist\nassertFalse(personMap.containsKey(\"invalid\", secondKey));",
+        "slice": "final String secondKey \u003d \"Sydney\";// first key doesn\u0027t exist\nassertFalse(personMap.containsKey(\"invalid\", secondKey));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 71,
+          "column": 3
+        },
+        "assert": "// second key doesn\u0027t exist\nassertFalse(personMap.containsKey(firstKey, \"invalid\"));",
+        "slice": "final String firstKey \u003d \"Australia\";// second key doesn\u0027t exist\nassertFalse(personMap.containsKey(firstKey, \"invalid\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 61,
+          "column": 3
+        },
+        "assert": "final String firstKey \u003d \"Australia\";final String secondKey \u003d \"Sydney\";// both keys exist\nassertTrue(personMap.containsKey(firstKey, secondKey));",
+        "slice": "final String firstKey \u003d \"Australia\";final String secondKey \u003d \"Sydney\";// both keys exist\nassertTrue(personMap.containsKey(firstKey, secondKey));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testContainsKeyWithThreeParams()",
+    "annotation": "@Test",
+    "code": "final String firstKey \u003d \"United Kingdom\";final String secondKey \u003d \"London\";final String thirdKey \u003d \"Elizabeth\";// both keys exist\nassertTrue(personMap.containsKey(firstKey, secondKey, thirdKey));// first key doesn\u0027t exist\nassertFalse(personMap.containsKey(\"invalid\", secondKey, thirdKey));// second key doesn\u0027t exist\nassertFalse(personMap.containsKey(firstKey, \"invalid\", thirdKey));// third key doesn\u0027t exist\nassertFalse(personMap.containsKey(firstKey, secondKey, \"invalid\"));",
+    "offset": [
+      {
+        "line": 86,
+        "column": 3
+      },
+      {
+        "line": 86,
+        "column": 14
+      },
+      {
+        "line": 89,
+        "column": 3
+      },
+      {
+        "line": 89,
+        "column": 15
+      },
+      {
+        "line": 92,
+        "column": 3
+      },
+      {
+        "line": 92,
+        "column": 15
+      },
+      {
+        "line": 95,
+        "column": 3
+      },
+      {
+        "line": 95,
+        "column": 15
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 81,
+          "column": 3
+        },
+        "assert": "final String firstKey \u003d \"United Kingdom\";final String secondKey \u003d \"London\";final String thirdKey \u003d \"Elizabeth\";// both keys exist\nassertTrue(personMap.containsKey(firstKey, secondKey, thirdKey));",
+        "slice": "final String firstKey \u003d \"United Kingdom\";final String secondKey \u003d \"London\";final String thirdKey \u003d \"Elizabeth\";// both keys exist\nassertTrue(personMap.containsKey(firstKey, secondKey, thirdKey));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 89,
+          "column": 3
+        },
+        "assert": "// first key doesn\u0027t exist\nassertFalse(personMap.containsKey(\"invalid\", secondKey, thirdKey));",
+        "slice": "final String secondKey \u003d \"London\";final String thirdKey \u003d \"Elizabeth\";// first key doesn\u0027t exist\nassertFalse(personMap.containsKey(\"invalid\", secondKey, thirdKey));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 92,
+          "column": 3
+        },
+        "assert": "// second key doesn\u0027t exist\nassertFalse(personMap.containsKey(firstKey, \"invalid\", thirdKey));",
+        "slice": "final String firstKey \u003d \"United Kingdom\";final String thirdKey \u003d \"Elizabeth\";// second key doesn\u0027t exist\nassertFalse(personMap.containsKey(firstKey, \"invalid\", thirdKey));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 95,
+          "column": 3
+        },
+        "assert": "// third key doesn\u0027t exist\nassertFalse(personMap.containsKey(firstKey, secondKey, \"invalid\"));",
+        "slice": "final String firstKey \u003d \"United Kingdom\";final String secondKey \u003d \"London\";// third key doesn\u0027t exist\nassertFalse(personMap.containsKey(firstKey, secondKey, \"invalid\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testGet()",
+    "annotation": "@Test",
+    "code": "// invalid key\nassertNull(personMap.get(\"invalid\"));assertEquals(2, personMap.get(\"Australia\").size());assertEquals(2, personMap.get(\"New Zealand\").size());assertEquals(1, personMap.get(\"United Kingdom\").size());assertEquals(1, personMap.get(\"India\").size());",
+    "offset": [
+      {
+        "line": 106,
+        "column": 3
+      },
+      {
+        "line": 106,
+        "column": 14
+      },
+      {
+        "line": 108,
+        "column": 3
+      },
+      {
+        "line": 108,
+        "column": 19
+      },
+      {
+        "line": 108,
+        "column": 19
+      },
+      {
+        "line": 109,
+        "column": 3
+      },
+      {
+        "line": 109,
+        "column": 19
+      },
+      {
+        "line": 109,
+        "column": 19
+      },
+      {
+        "line": 110,
+        "column": 3
+      },
+      {
+        "line": 110,
+        "column": 19
+      },
+      {
+        "line": 110,
+        "column": 19
+      },
+      {
+        "line": 111,
+        "column": 3
+      },
+      {
+        "line": 111,
+        "column": 19
+      },
+      {
+        "line": 111,
+        "column": 19
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 106,
+          "column": 3
+        },
+        "assert": "// invalid key\nassertNull(personMap.get(\"invalid\"));",
+        "slice": "// invalid key\nassertNull(personMap.get(\"invalid\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 108,
+          "column": 3
+        },
+        "assert": "assertEquals(2, personMap.get(\"Australia\").size());",
+        "slice": "assertEquals(2, personMap.get(\"Australia\").size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 109,
+          "column": 3
+        },
+        "assert": "assertEquals(2, personMap.get(\"New Zealand\").size());",
+        "slice": "assertEquals(2, personMap.get(\"New Zealand\").size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 110,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.get(\"United Kingdom\").size());",
+        "slice": "assertEquals(1, personMap.get(\"United Kingdom\").size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 111,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.get(\"India\").size());",
+        "slice": "assertEquals(1, personMap.get(\"India\").size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testGetAs2d()",
+    "annotation": "@Test",
+    "code": "// invalid key (should be empty)\nassertEquals(0, personMap.getAs2d(\"invalid\").size());assertEquals(2, personMap.getAs2d(\"Australia\").size());assertEquals(2, personMap.getAs2d(\"New Zealand\").size());assertEquals(1, personMap.getAs2d(\"United Kingdom\").size());assertEquals(1, personMap.getAs2d(\"India\").size());",
+    "offset": [
+      {
+        "line": 121,
+        "column": 3
+      },
+      {
+        "line": 121,
+        "column": 19
+      },
+      {
+        "line": 121,
+        "column": 19
+      },
+      {
+        "line": 123,
+        "column": 3
+      },
+      {
+        "line": 123,
+        "column": 19
+      },
+      {
+        "line": 123,
+        "column": 19
+      },
+      {
+        "line": 124,
+        "column": 3
+      },
+      {
+        "line": 124,
+        "column": 19
+      },
+      {
+        "line": 124,
+        "column": 19
+      },
+      {
+        "line": 125,
+        "column": 3
+      },
+      {
+        "line": 125,
+        "column": 19
+      },
+      {
+        "line": 125,
+        "column": 19
+      },
+      {
+        "line": 126,
+        "column": 3
+      },
+      {
+        "line": 126,
+        "column": 19
+      },
+      {
+        "line": 126,
+        "column": 19
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 121,
+          "column": 3
+        },
+        "assert": "// invalid key (should be empty)\nassertEquals(0, personMap.getAs2d(\"invalid\").size());",
+        "slice": "// invalid key (should be empty)\nassertEquals(0, personMap.getAs2d(\"invalid\").size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 123,
+          "column": 3
+        },
+        "assert": "assertEquals(2, personMap.getAs2d(\"Australia\").size());",
+        "slice": "assertEquals(2, personMap.getAs2d(\"Australia\").size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 124,
+          "column": 3
+        },
+        "assert": "assertEquals(2, personMap.getAs2d(\"New Zealand\").size());",
+        "slice": "assertEquals(2, personMap.getAs2d(\"New Zealand\").size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 125,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.getAs2d(\"United Kingdom\").size());",
+        "slice": "assertEquals(1, personMap.getAs2d(\"United Kingdom\").size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 126,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.getAs2d(\"India\").size());",
+        "slice": "assertEquals(1, personMap.getAs2d(\"India\").size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testGetWithTwoParams()",
+    "annotation": "@Test",
+    "code": "// invalid first key\nassertNull(personMap.get(\"United States\", \"New York\"));// invalid second key\nassertNull(personMap.get(\"India\", \"Chennai\"));assertEquals(2, personMap.get(\"Australia\", \"Brisbane\").size());assertEquals(1, personMap.get(\"Australia\", \"Sydney\").size());assertEquals(1, personMap.get(\"New Zealand\", \"Auckland\").size());assertEquals(1, personMap.get(\"New Zealand\", \"Wellington\").size());assertEquals(1, personMap.get(\"United Kingdom\", \"London\").size());assertEquals(1, personMap.get(\"India\", \"Mumbai\").size());",
+    "offset": [
+      {
+        "line": 136,
+        "column": 3
+      },
+      {
+        "line": 136,
+        "column": 14
+      },
+      {
+        "line": 139,
+        "column": 3
+      },
+      {
+        "line": 139,
+        "column": 14
+      },
+      {
+        "line": 141,
+        "column": 3
+      },
+      {
+        "line": 141,
+        "column": 19
+      },
+      {
+        "line": 141,
+        "column": 19
+      },
+      {
+        "line": 142,
+        "column": 3
+      },
+      {
+        "line": 142,
+        "column": 19
+      },
+      {
+        "line": 142,
+        "column": 19
+      },
+      {
+        "line": 143,
+        "column": 3
+      },
+      {
+        "line": 143,
+        "column": 19
+      },
+      {
+        "line": 143,
+        "column": 19
+      },
+      {
+        "line": 144,
+        "column": 3
+      },
+      {
+        "line": 144,
+        "column": 19
+      },
+      {
+        "line": 144,
+        "column": 19
+      },
+      {
+        "line": 145,
+        "column": 3
+      },
+      {
+        "line": 145,
+        "column": 19
+      },
+      {
+        "line": 145,
+        "column": 19
+      },
+      {
+        "line": 146,
+        "column": 3
+      },
+      {
+        "line": 146,
+        "column": 19
+      },
+      {
+        "line": 146,
+        "column": 19
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 144,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.get(\"New Zealand\", \"Wellington\").size());",
+        "slice": "assertEquals(1, personMap.get(\"New Zealand\", \"Wellington\").size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 145,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.get(\"United Kingdom\", \"London\").size());",
+        "slice": "assertEquals(1, personMap.get(\"United Kingdom\", \"London\").size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 146,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.get(\"India\", \"Mumbai\").size());",
+        "slice": "assertEquals(1, personMap.get(\"India\", \"Mumbai\").size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 136,
+          "column": 3
+        },
+        "assert": "// invalid first key\nassertNull(personMap.get(\"United States\", \"New York\"));",
+        "slice": "// invalid first key\nassertNull(personMap.get(\"United States\", \"New York\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 139,
+          "column": 3
+        },
+        "assert": "// invalid second key\nassertNull(personMap.get(\"India\", \"Chennai\"));",
+        "slice": "// invalid second key\nassertNull(personMap.get(\"India\", \"Chennai\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 141,
+          "column": 3
+        },
+        "assert": "assertEquals(2, personMap.get(\"Australia\", \"Brisbane\").size());",
+        "slice": "assertEquals(2, personMap.get(\"Australia\", \"Brisbane\").size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 142,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.get(\"Australia\", \"Sydney\").size());",
+        "slice": "assertEquals(1, personMap.get(\"Australia\", \"Sydney\").size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 143,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.get(\"New Zealand\", \"Auckland\").size());",
+        "slice": "assertEquals(1, personMap.get(\"New Zealand\", \"Auckland\").size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testGetWithThreeParams()",
+    "annotation": "@Test",
+    "code": "personMap.get(null, null, null);// invalid first key\nassertNull(personMap.get(\"United States\", \"New York\", \"George\"));// invalid second key\nassertNull(personMap.get(\"India\", \"Chennai\", \"Raj\"));// invalid third key\nassertNull(personMap.get(\"India\", \"Mumbai\", \"Raj\"));assertEquals(26, personMap.get(\"Australia\", \"Brisbane\", \"Jim\").intValue());assertEquals(57, personMap.get(\"Australia\", \"Brisbane\", \"Jane\").intValue());assertEquals(19, personMap.get(\"Australia\", \"Sydney\", \"Harry\").intValue());assertEquals(34, personMap.get(\"New Zealand\", \"Auckland\", \"Sally\").intValue());assertEquals(88, personMap.get(\"New Zealand\", \"Wellington\", \"John\").intValue());assertEquals(34, personMap.get(\"United Kingdom\", \"London\", \"Elizabeth\").intValue());assertEquals(27, personMap.get(\"India\", \"Mumbai\", \"Vernon\").intValue());",
+    "offset": [
+      {
+        "line": 154,
+        "column": 3
+      },
+      {
+        "line": 157,
+        "column": 3
+      },
+      {
+        "line": 157,
+        "column": 14
+      },
+      {
+        "line": 160,
+        "column": 3
+      },
+      {
+        "line": 160,
+        "column": 14
+      },
+      {
+        "line": 163,
+        "column": 3
+      },
+      {
+        "line": 163,
+        "column": 14
+      },
+      {
+        "line": 165,
+        "column": 3
+      },
+      {
+        "line": 165,
+        "column": 20
+      },
+      {
+        "line": 165,
+        "column": 20
+      },
+      {
+        "line": 166,
+        "column": 3
+      },
+      {
+        "line": 166,
+        "column": 20
+      },
+      {
+        "line": 166,
+        "column": 20
+      },
+      {
+        "line": 167,
+        "column": 3
+      },
+      {
+        "line": 167,
+        "column": 20
+      },
+      {
+        "line": 167,
+        "column": 20
+      },
+      {
+        "line": 168,
+        "column": 3
+      },
+      {
+        "line": 168,
+        "column": 20
+      },
+      {
+        "line": 168,
+        "column": 20
+      },
+      {
+        "line": 169,
+        "column": 3
+      },
+      {
+        "line": 169,
+        "column": 20
+      },
+      {
+        "line": 169,
+        "column": 20
+      },
+      {
+        "line": 170,
+        "column": 3
+      },
+      {
+        "line": 170,
+        "column": 20
+      },
+      {
+        "line": 170,
+        "column": 20
+      },
+      {
+        "line": 171,
+        "column": 3
+      },
+      {
+        "line": 171,
+        "column": 20
+      },
+      {
+        "line": 171,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 160,
+          "column": 3
+        },
+        "assert": "// invalid second key\nassertNull(personMap.get(\"India\", \"Chennai\", \"Raj\"));",
+        "slice": "personMap.get(null, null, null);// invalid second key\nassertNull(personMap.get(\"India\", \"Chennai\", \"Raj\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 163,
+          "column": 3
+        },
+        "assert": "// invalid third key\nassertNull(personMap.get(\"India\", \"Mumbai\", \"Raj\"));",
+        "slice": "personMap.get(null, null, null);// invalid third key\nassertNull(personMap.get(\"India\", \"Mumbai\", \"Raj\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 165,
+          "column": 3
+        },
+        "assert": "assertEquals(26, personMap.get(\"Australia\", \"Brisbane\", \"Jim\").intValue());",
+        "slice": "personMap.get(null, null, null);assertEquals(26, personMap.get(\"Australia\", \"Brisbane\", \"Jim\").intValue());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 166,
+          "column": 3
+        },
+        "assert": "assertEquals(57, personMap.get(\"Australia\", \"Brisbane\", \"Jane\").intValue());",
+        "slice": "personMap.get(null, null, null);assertEquals(57, personMap.get(\"Australia\", \"Brisbane\", \"Jane\").intValue());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 167,
+          "column": 3
+        },
+        "assert": "assertEquals(19, personMap.get(\"Australia\", \"Sydney\", \"Harry\").intValue());",
+        "slice": "personMap.get(null, null, null);assertEquals(19, personMap.get(\"Australia\", \"Sydney\", \"Harry\").intValue());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 168,
+          "column": 3
+        },
+        "assert": "assertEquals(34, personMap.get(\"New Zealand\", \"Auckland\", \"Sally\").intValue());",
+        "slice": "personMap.get(null, null, null);assertEquals(34, personMap.get(\"New Zealand\", \"Auckland\", \"Sally\").intValue());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 169,
+          "column": 3
+        },
+        "assert": "assertEquals(88, personMap.get(\"New Zealand\", \"Wellington\", \"John\").intValue());",
+        "slice": "personMap.get(null, null, null);assertEquals(88, personMap.get(\"New Zealand\", \"Wellington\", \"John\").intValue());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 154,
+          "column": 3
+        },
+        "assert": "personMap.get(null, null, null);// invalid first key\nassertNull(personMap.get(\"United States\", \"New York\", \"George\"));",
+        "slice": "personMap.get(null, null, null);// invalid first key\nassertNull(personMap.get(\"United States\", \"New York\", \"George\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 170,
+          "column": 3
+        },
+        "assert": "assertEquals(34, personMap.get(\"United Kingdom\", \"London\", \"Elizabeth\").intValue());",
+        "slice": "personMap.get(null, null, null);assertEquals(34, personMap.get(\"United Kingdom\", \"London\", \"Elizabeth\").intValue());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 171,
+          "column": 3
+        },
+        "assert": "assertEquals(27, personMap.get(\"India\", \"Mumbai\", \"Vernon\").intValue());",
+        "slice": "personMap.get(null, null, null);assertEquals(27, personMap.get(\"India\", \"Mumbai\", \"Vernon\").intValue());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testSize()",
+    "annotation": "@Test",
+    "code": "assertEquals(4, personMap.size());",
+    "offset": [
+      {
+        "line": 179,
+        "column": 3
+      },
+      {
+        "line": 179,
+        "column": 19
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 179,
+          "column": 3
+        },
+        "assert": "assertEquals(4, personMap.size());",
+        "slice": "assertEquals(4, personMap.size());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testSizeWithOneParam()",
+    "annotation": "@Test",
+    "code": "// invalid key\nassertEquals(0, personMap.size(\"United States\"));assertEquals(2, personMap.size(\"Australia\"));assertEquals(2, personMap.size(\"New Zealand\"));assertEquals(1, personMap.size(\"United Kingdom\"));assertEquals(1, personMap.size(\"India\"));",
+    "offset": [
+      {
+        "line": 189,
+        "column": 3
+      },
+      {
+        "line": 189,
+        "column": 19
+      },
+      {
+        "line": 191,
+        "column": 3
+      },
+      {
+        "line": 191,
+        "column": 19
+      },
+      {
+        "line": 192,
+        "column": 3
+      },
+      {
+        "line": 192,
+        "column": 19
+      },
+      {
+        "line": 193,
+        "column": 3
+      },
+      {
+        "line": 193,
+        "column": 19
+      },
+      {
+        "line": 194,
+        "column": 3
+      },
+      {
+        "line": 194,
+        "column": 19
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 192,
+          "column": 3
+        },
+        "assert": "assertEquals(2, personMap.size(\"New Zealand\"));",
+        "slice": "assertEquals(2, personMap.size(\"New Zealand\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 193,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.size(\"United Kingdom\"));",
+        "slice": "assertEquals(1, personMap.size(\"United Kingdom\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 194,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.size(\"India\"));",
+        "slice": "assertEquals(1, personMap.size(\"India\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 189,
+          "column": 3
+        },
+        "assert": "// invalid key\nassertEquals(0, personMap.size(\"United States\"));",
+        "slice": "// invalid key\nassertEquals(0, personMap.size(\"United States\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 191,
+          "column": 3
+        },
+        "assert": "assertEquals(2, personMap.size(\"Australia\"));",
+        "slice": "assertEquals(2, personMap.size(\"Australia\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testSizeWithTwoParams()",
+    "annotation": "@Test",
+    "code": "// invalid first key\nassertEquals(0, personMap.size(\"United States\", \"New York\"));// invalid second key\nassertEquals(0, personMap.size(\"India\", \"Chennai\"));assertEquals(2, personMap.size(\"Australia\", \"Brisbane\"));assertEquals(1, personMap.size(\"Australia\", \"Sydney\"));assertEquals(1, personMap.size(\"New Zealand\", \"Auckland\"));assertEquals(1, personMap.size(\"New Zealand\", \"Wellington\"));assertEquals(1, personMap.size(\"United Kingdom\", \"London\"));assertEquals(1, personMap.size(\"India\", \"Mumbai\"));",
+    "offset": [
+      {
+        "line": 204,
+        "column": 3
+      },
+      {
+        "line": 204,
+        "column": 19
+      },
+      {
+        "line": 207,
+        "column": 3
+      },
+      {
+        "line": 207,
+        "column": 19
+      },
+      {
+        "line": 209,
+        "column": 3
+      },
+      {
+        "line": 209,
+        "column": 19
+      },
+      {
+        "line": 210,
+        "column": 3
+      },
+      {
+        "line": 210,
+        "column": 19
+      },
+      {
+        "line": 211,
+        "column": 3
+      },
+      {
+        "line": 211,
+        "column": 19
+      },
+      {
+        "line": 212,
+        "column": 3
+      },
+      {
+        "line": 212,
+        "column": 19
+      },
+      {
+        "line": 213,
+        "column": 3
+      },
+      {
+        "line": 213,
+        "column": 19
+      },
+      {
+        "line": 214,
+        "column": 3
+      },
+      {
+        "line": 214,
+        "column": 19
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 209,
+          "column": 3
+        },
+        "assert": "assertEquals(2, personMap.size(\"Australia\", \"Brisbane\"));",
+        "slice": "assertEquals(2, personMap.size(\"Australia\", \"Brisbane\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 210,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.size(\"Australia\", \"Sydney\"));",
+        "slice": "assertEquals(1, personMap.size(\"Australia\", \"Sydney\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 211,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.size(\"New Zealand\", \"Auckland\"));",
+        "slice": "assertEquals(1, personMap.size(\"New Zealand\", \"Auckland\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 212,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.size(\"New Zealand\", \"Wellington\"));",
+        "slice": "assertEquals(1, personMap.size(\"New Zealand\", \"Wellington\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 213,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.size(\"United Kingdom\", \"London\"));",
+        "slice": "assertEquals(1, personMap.size(\"United Kingdom\", \"London\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 214,
+          "column": 3
+        },
+        "assert": "assertEquals(1, personMap.size(\"India\", \"Mumbai\"));",
+        "slice": "assertEquals(1, personMap.size(\"India\", \"Mumbai\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 204,
+          "column": 3
+        },
+        "assert": "// invalid first key\nassertEquals(0, personMap.size(\"United States\", \"New York\"));",
+        "slice": "// invalid first key\nassertEquals(0, personMap.size(\"United States\", \"New York\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 207,
+          "column": 3
+        },
+        "assert": "// invalid second key\nassertEquals(0, personMap.size(\"India\", \"Chennai\"));",
+        "slice": "// invalid second key\nassertEquals(0, personMap.size(\"India\", \"Chennai\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.keySet()",
+    "annotation": "@Test",
+    "code": "final Set\u003cString\u003e expectedKeys \u003d new HashSet\u003cString\u003e(Arrays.asList(\"Australia\", \"New Zealand\", \"United Kingdom\", \"India\"));assertEquals(expectedKeys.size(), personMap.keySet().size());assertTrue(personMap.keySet().containsAll(expectedKeys));",
+    "offset": [
+      {
+        "line": 222,
+        "column": 36
+      },
+      {
+        "line": 222,
+        "column": 56
+      },
+      {
+        "line": 224,
+        "column": 3
+      },
+      {
+        "line": 224,
+        "column": 16
+      },
+      {
+        "line": 224,
+        "column": 37
+      },
+      {
+        "line": 224,
+        "column": 37
+      },
+      {
+        "line": 225,
+        "column": 3
+      },
+      {
+        "line": 225,
+        "column": 14
+      },
+      {
+        "line": 225,
+        "column": 14
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 225,
+          "column": 3
+        },
+        "assert": "assertTrue(personMap.keySet().containsAll(expectedKeys));",
+        "slice": "final Set\u003cString\u003e expectedKeys \u003d new HashSet\u003cString\u003e(Arrays.asList(\"Australia\", \"New Zealand\", \"United Kingdom\", \"India\"));assertTrue(personMap.keySet().containsAll(expectedKeys));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 222,
+          "column": 3
+        },
+        "assert": "final Set\u003cString\u003e expectedKeys \u003d new HashSet\u003cString\u003e(Arrays.asList(\"Australia\", \"New Zealand\", \"United Kingdom\", \"India\"));assertEquals(expectedKeys.size(), personMap.keySet().size());",
+        "slice": "final Set\u003cString\u003e expectedKeys \u003d new HashSet\u003cString\u003e(Arrays.asList(\"Australia\", \"New Zealand\", \"United Kingdom\", \"India\"));assertEquals(expectedKeys.size(), personMap.keySet().size());"
+      }
+    ]
+  }
+]

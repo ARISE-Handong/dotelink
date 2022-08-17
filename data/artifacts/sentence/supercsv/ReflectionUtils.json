@@ -1,0 +1,198 @@
+[
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findSetter(java.lang.Object, java.lang.String, java.lang.Class\u003c?\u003e)",
+    "comment": "\n\t * Returns the setter method associated with the object\u0027s field.\n\t * \u003cp\u003e\n\t * This method handles any autoboxing/unboxing of the argument passed to the setter (e.g. if the setter type is a\n\t * primitive {@code int} but the argument passed to the setter is an {@code Integer}) by looking for a setter with\n\t * the same type, and failing that checking for a setter with the corresponding primitive/wrapper type.\n\t * \u003cp\u003e\n\t * It also allows for an argument type that is a subclass or implementation of the setter type (when the setter type\n\t * is an {@code Object} or {@code interface} respectively).\n\t * \n\t * @param object\n\t *            the object\n\t * @param fieldName\n\t *            the name of the field\n\t * @param argumentType\n\t *            the type to be passed to the setter\n\t * @return the setter method\n\t * @throws NullPointerException\n\t *             if object, fieldName or fieldType is null\n\t * @throws SuperCsvReflectionException\n\t *             if the setter doesn\u0027t exist or is not visible\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the setter method associated with the object\u0027s field.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 141,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This method handles any autoboxing/unboxing of the argument passed to the setter (e.g.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 142,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "if the setter type is a primitive {@code int} but the argument passed to the setter is an {@code Integer}) by looking for a setter with the same type, and failing that checking for a setter with the corresponding primitive/wrapper type.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 143,
+          "column": 92
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e It also allows for an argument type that is a subclass or implementation of the setter type (when the setter type is an {@code Object} or {@code interface} respectively).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 146,
+          "column": 92
+        }
+      },
+      {
+        "sentenceText": "@return the setter method",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 156,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if object, fieldName or fieldType is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 157,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws SuperCsvReflectionException if the setter doesn\u0027t exist or is not visible",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 159,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findGetter(java.lang.Object, java.lang.String)",
+    "comment": "\n\t * Returns the getter method associated with the object\u0027s field.\n\t * \n\t * @param object\n\t *            the object\n\t * @param fieldName\n\t *            the name of the field\n\t * @return the getter method\n\t * @throws NullPointerException\n\t *             if object or fieldName is null\n\t * @throws SuperCsvReflectionException\n\t *             if the getter doesn\u0027t exist or is not visible\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the getter method associated with the object\u0027s field.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 64,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return the getter method",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 70,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if object or fieldName is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 71,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws SuperCsvReflectionException if the getter doesn\u0027t exist or is not visible",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 73,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.getMethodNameForField(java.lang.String, java.lang.String)",
+    "comment": "\n\t * Gets the camelcase getter/setter method name for a field.\n\t * \n\t * @param prefix\n\t *            the method prefix\n\t * @param fieldName\n\t *            the field name\n\t * @return the method name\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Gets the camelcase getter/setter method name for a field.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 233,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@return the method name",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 239,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findSetterWithCompatibleParamType(java.lang.Class\u003c?\u003e, java.lang.String, java.lang.Class\u003c?\u003e)",
+    "comment": "\n\t * Helper method for findSetter() that returns the setter method of the supplied name, whose parameter type is\n\t * compatible with the supplied argument type (will allow an object of that type to be used when invoking the\n\t * setter), or returns \u003ctt\u003enull\u003c/tt\u003e if no match is found. Preference is given to setters whose parameter type is an\n\t * exact match, but if there is none, then the first compatible method found is returned.\n\t * \n\t * @param clazz\n\t *            the class containing the setter\n\t * @param setterName\n\t *            the name of the setter\n\t * @param argumentType\n\t *            the type to be passed to the setter\n\t * @return the setter method, or null if none is found\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Helper method for findSetter() that returns the setter method of the supplied name, whose parameter type is compatible with the supplied argument type (will allow an object of that type to be used when invoking the setter), or returns \u003ctt\u003enull\u003c/tt\u003e if no match is found.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 195,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "Preference is given to setters whose parameter type is an exact match, but if there is none, then the first compatible method found is returned.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 197,
+          "column": 61
+        }
+      },
+      {
+        "sentenceText": "@return the setter method, or null if none is found",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 206,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findGetterWithCompatibleReturnType(java.lang.String, java.lang.Class\u003c?\u003e, boolean)",
+    "comment": "\n\t * Helper method for findGetter() that finds a getter with the supplied name, optionally enforcing that the method\n\t * must have a Boolean/boolean return type. Developer note: this method could have accepted an actual return type to\n\t * enforce, but it was more efficient to cater for only Booleans (as they\u0027re the only type that has differently\n\t * named getters).\n\t * \n\t * @param getterName\n\t *            the getter name\n\t * @param clazz\n\t *            the class\n\t * @param enforceBooleanReturnType\n\t *            if true, the method must return a Boolean/boolean, otherwise it\u0027s return type doesn\u0027t matter\n\t * @return the getter, or null if none is found\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Helper method for findGetter() that finds a getter with the supplied name, optionally enforcing that the method must have a Boolean/boolean return type.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 107,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "Developer note: this method could have accepted an actual return type to enforce, but it was more efficient to cater for only Booleans (as they\u0027re the only type that has differently named getters).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 108,
+          "column": 46
+        }
+      },
+      {
+        "sentenceText": "@return the getter, or null if none is found",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 118,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.ReflectionUtils()",
+    "comment": " no instantiation",
+    "sentences": [
+      {
+        "sentenceText": "no instantiation",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 59,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

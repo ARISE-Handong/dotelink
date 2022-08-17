@@ -1,0 +1,1188 @@
+[
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.fixedSizeList(java.util.List\u003cE\u003e)",
+    "comment": "\r\n     * Returns a fixed-sized list backed by the given list.\r\n     * Elements may not be added or removed from the returned list, but\r\n     * existing elements can be changed (for instance, via the\r\n     * {@link List#set(int, Object)} method).\r\n     *\r\n     * @param \u003cE\u003e  the element type\r\n     * @param list  the list whose size to fix, must not be null\r\n     * @return a fixed-size list backed by that list\r\n     * @throws NullPointerException  if the List is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a fixed-sized list backed by the given list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 506,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Elements may not be added or removed from the returned list, but existing elements can be changed (for instance, via the {@link List#set(int, Object)} method).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 507,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a fixed-size list backed by that list",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 513,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException  if the List is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 514,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.longestCommonSubsequence(java.util.List\u003cE\u003e, java.util.List\u003cE\u003e)",
+    "comment": "\r\n     * Returns the longest common subsequence (LCS) of two sequences (lists).\r\n     *\r\n     * @param \u003cE\u003e  the element type\r\n     * @param a  the first list\r\n     * @param b  the second list\r\n     * @return the longest common subsequence\r\n     * @throws NullPointerException if either list is {@code null}\r\n     * @since 4.0\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the longest common subsequence (LCS) of two sequences (lists).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 546,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the longest common subsequence",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 551,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either list is {@code null}",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 552,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.selectRejected(java.util.Collection\u003c? extends E\u003e, org.apache.commons.collections4.Predicate\u003c? super E\u003e)",
+    "comment": "\r\n     * Selects all elements from inputCollection which don\u0027t match the given\r\n     * predicate into an output collection.\r\n     * \u003cp\u003e\r\n     * If the input predicate is \u003ccode\u003enull\u003c/code\u003e, the result is an empty list.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param inputCollection the collection to get the input from, may not be null\r\n     * @param predicate the predicate to use, may be null\r\n     * @return the elements \u003cb\u003enot\u003c/b\u003e matching the predicate (new list)\r\n     * @throws NullPointerException if the input collection is null\r\n     *\r\n     * @since 4.0\r\n     * @see CollectionUtils#selectRejected(Iterable, Predicate)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Selects all elements from inputCollection which don\u0027t match the given predicate into an output collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 189,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If the input predicate is \u003ccode\u003enull\u003c/code\u003e, the result is an empty list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 191,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the elements \u003cb\u003enot\u003c/b\u003e matching the predicate (new list)",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 197,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the input collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 198,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.unmodifiableList(java.util.List\u003c? extends E\u003e)",
+    "comment": "\r\n     * Returns an unmodifiable list backed by the given list.\r\n     * \u003cp\u003e\r\n     * This method uses the implementation in the decorators subpackage.\r\n     *\r\n     * @param \u003cE\u003e  the element type\r\n     * @param list  the list to make unmodifiable, must not be null\r\n     * @return an unmodifiable list backed by the given list\r\n     * @throws NullPointerException if the list is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns an unmodifiable list backed by the given list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 384,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This method uses the implementation in the decorators subpackage.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 385,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an unmodifiable list backed by the given list",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 390,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the list is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 391,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.LcsVisitor.visitInsertCommand(E)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.subtract(java.util.List\u003cE\u003e, java.util.List\u003c? extends E\u003e)",
+    "comment": "\r\n     * Subtracts all elements in the second list from the first list,\r\n     * placing the results in a new list.\r\n     * \u003cp\u003e\r\n     * This differs from {@link List#removeAll(Collection)} in that\r\n     * cardinality is respected; if \u003cCode\u003elist1\u003c/Code\u003e contains two\r\n     * occurrences of \u003cCode\u003enull\u003c/Code\u003e and \u003cCode\u003elist2\u003c/Code\u003e only\r\n     * contains one occurrence, then the returned list will still contain\r\n     * one occurrence.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param list1  the list to subtract from\r\n     * @param list2  the list to subtract\r\n     * @return a new list containing the results\r\n     * @throws NullPointerException if either list is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Subtracts all elements in the second list from the first list, placing the results in a new list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 110,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This differs from {@link List#removeAll(Collection)} in that cardinality is respected; if \u003cCode\u003elist1\u003c/Code\u003e contains two occurrences of \u003cCode\u003enull\u003c/Code\u003e and \u003cCode\u003elist2\u003c/Code\u003e only contains one occurrence, then the returned list will still contain one occurrence.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 112,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a new list containing the results",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 122,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either list is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 123,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.longestCommonSubsequence(java.lang.CharSequence, java.lang.CharSequence)",
+    "comment": "\r\n     * Returns the longest common subsequence (LCS) of two {@link CharSequence} objects.\r\n     * \u003cp\u003e\r\n     * This is a convenience method for using {@link #longestCommonSubsequence(List, List)}\r\n     * with {@link CharSequence} instances.\r\n     *\r\n     * @param a  the first sequence\r\n     * @param b  the second sequence\r\n     * @return the longest common subsequence as {@link String}\r\n     * @throws NullPointerException if either sequence is {@code null}\r\n     * @since 4.0\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the longest common subsequence (LCS) of two {@link CharSequence} objects.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 587,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This is a convenience method for using {@link #longestCommonSubsequence(List, List)} with {@link CharSequence} instances.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 588,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the longest common subsequence as {@link String}",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 594,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either sequence is {@code null}",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 595,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.predicatedList(java.util.List\u003cE\u003e, org.apache.commons.collections4.Predicate\u003cE\u003e)",
+    "comment": "\r\n     * Returns a predicated (validating) list backed by the given list.\r\n     * \u003cp\u003e\r\n     * Only objects that pass the test in the given predicate can be added to the list.\r\n     * Trying to add an invalid object results in an IllegalArgumentException.\r\n     * It is important not to use the original list after invoking this method,\r\n     * as it is a backdoor for adding invalid objects.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param list  the list to predicate, must not be null\r\n     * @param predicate  the predicate for the list, must not be null\r\n     * @return a predicated list backed by the given list\r\n     * @throws NullPointerException if the List or Predicate is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a predicated (validating) list backed by the given list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 398,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Only objects that pass the test in the given predicate can be added to the list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 399,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Trying to add an invalid object results in an IllegalArgumentException.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 401,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "It is important not to use the original list after invoking this method, as it is a backdoor for adding invalid objects.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 402,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a predicated list backed by the given list",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 408,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the List or Predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.emptyIfNull(java.util.List\u003cT\u003e)",
+    "comment": "\r\n     * Returns an immutable empty list if the argument is \u003ccode\u003enull\u003c/code\u003e,\r\n     * or the argument itself otherwise.\r\n     *\r\n     * @param \u003cT\u003e the element type\r\n     * @param list the list, possibly \u003ccode\u003enull\u003c/code\u003e\r\n     * @return an empty list if the argument is \u003ccode\u003enull\u003c/code\u003e\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns an immutable empty list if the argument is \u003ccode\u003enull\u003c/code\u003e, or the argument itself otherwise.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 53,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an empty list if the argument is \u003ccode\u003enull\u003c/code\u003e",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 58,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.removeAll(java.util.Collection\u003cE\u003e, java.util.Collection\u003c?\u003e)",
+    "comment": "\r\n     * Removes the elements in \u003ccode\u003eremove\u003c/code\u003e from \u003ccode\u003ecollection\u003c/code\u003e. That is, this\r\n     * method returns a list containing all the elements in \u003ccode\u003ecollection\u003c/code\u003e\r\n     * that are not in \u003ccode\u003eremove\u003c/code\u003e. The cardinality of an element \u003ccode\u003ee\u003c/code\u003e\r\n     * in the returned collection is the same as the cardinality of \u003ccode\u003ee\u003c/code\u003e\r\n     * in \u003ccode\u003ecollection\u003c/code\u003e unless \u003ccode\u003eremove\u003c/code\u003e contains \u003ccode\u003ee\u003c/code\u003e, in which\r\n     * case the cardinality is zero. This method is useful if you do not wish to modify\r\n     * \u003ccode\u003ecollection\u003c/code\u003e and thus cannot call \u003ccode\u003ecollection.removeAll(remove);\u003c/code\u003e.\r\n     * \u003cp\u003e\r\n     * This implementation iterates over \u003ccode\u003ecollection\u003c/code\u003e, checking each element in\r\n     * turn to see if it\u0027s contained in \u003ccode\u003eremove\u003c/code\u003e. If it\u0027s not contained, it\u0027s added\r\n     * to the returned list. As a consequence, it is advised to use a collection type for\r\n     * \u003ccode\u003eremove\u003c/code\u003e that provides a fast (e.g. O(1)) implementation of\r\n     * {@link Collection#contains(Object)}.\r\n     *\r\n     * @param \u003cE\u003e  the element type\r\n     * @param collection  the collection from which items are removed (in the returned collection)\r\n     * @param remove  the items to be removed from the returned \u003ccode\u003ecollection\u003c/code\u003e\r\n     * @return a \u003ccode\u003eList\u003c/code\u003e containing all the elements of \u003ccode\u003ec\u003c/code\u003e except\r\n     * any elements that also occur in \u003ccode\u003eremove\u003c/code\u003e.\r\n     * @throws NullPointerException if either parameter is null\r\n     * @since 3.2\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Removes the elements in \u003ccode\u003eremove\u003c/code\u003e from \u003ccode\u003ecollection\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 323,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "That is, this method returns a list containing all the elements in \u003ccode\u003ecollection\u003c/code\u003e that are not in \u003ccode\u003eremove\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 323,
+          "column": 82
+        }
+      },
+      {
+        "sentenceText": "The cardinality of an element \u003ccode\u003ee\u003c/code\u003e in the returned collection is the same as the cardinality of \u003ccode\u003ee\u003c/code\u003e in \u003ccode\u003ecollection\u003c/code\u003e unless \u003ccode\u003eremove\u003c/code\u003e contains \u003ccode\u003ee\u003c/code\u003e, in which case the cardinality is zero.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 325,
+          "column": 45
+        }
+      },
+      {
+        "sentenceText": "This method is useful if you do not wish to modify \u003ccode\u003ecollection\u003c/code\u003e and thus cannot call \u003ccode\u003ecollection.removeAll(remove);\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 328,
+          "column": 38
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This implementation iterates over \u003ccode\u003ecollection\u003c/code\u003e, checking each element in turn to see if it\u0027s contained in \u003ccode\u003eremove\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 330,
+          "column": 38
+        }
+      },
+      {
+        "sentenceText": "If it\u0027s not contained, it\u0027s added to the returned list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 332,
+          "column": 62
+        }
+      },
+      {
+        "sentenceText": "As a consequence, it is advised to use a collection type for \u003ccode\u003eremove\u003c/code\u003e that provides a fast (e.g.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 333,
+          "column": 30
+        }
+      },
+      {
+        "sentenceText": "O(1)) implementation of {@link Collection#contains(Object)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 334,
+          "column": 55
+        }
+      },
+      {
+        "sentenceText": "@return a \u003ccode\u003eList\u003c/code\u003e containing all the elements of \u003ccode\u003ec\u003c/code\u003e except any elements that also occur in \u003ccode\u003eremove\u003c/code\u003e.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 340,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either parameter is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 342,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.defaultIfNull(java.util.List\u003cT\u003e, java.util.List\u003cT\u003e)",
+    "comment": "\r\n     * Returns either the passed in list, or if the list is {@code null},\r\n     * the value of {@code defaultList}.\r\n     *\r\n     * @param \u003cT\u003e the element type\r\n     * @param list  the list, possibly {@code null}\r\n     * @param defaultList  the returned values if list is {@code null}\r\n     * @return an empty list if the argument is \u003ccode\u003enull\u003c/code\u003e\r\n     * @since 4.0\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns either the passed in list, or if the list is {@code null}, the value of {@code defaultList}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 65,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an empty list if the argument is \u003ccode\u003enull\u003c/code\u003e",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 71,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.Partition.Partition(java.util.List\u003cT\u003e, int)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.LcsVisitor.getSubSequence()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.Partition.size()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.indexOf(java.util.List\u003cE\u003e, org.apache.commons.collections4.Predicate\u003cE\u003e)",
+    "comment": "\r\n     * Finds the first index in the given List which matches the given predicate.\r\n     * \u003cp\u003e\r\n     * If the input List or predicate is null, or no element of the List\r\n     * matches the predicate, -1 is returned.\r\n     *\r\n     * @param \u003cE\u003e  the element type\r\n     * @param list the List to search, may be null\r\n     * @param predicate  the predicate to use, may be null\r\n     * @return the first index of an Object in the List which matches the predicate or -1 if none could be found\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Finds the first index in the given List which matches the given predicate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 522,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If the input List or predicate is null, or no element of the List matches the predicate, -1 is returned.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 523,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the first index of an Object in the List which matches the predicate or -1 if none could be found",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 530,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.CharSequenceAsList.size()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.partition(java.util.List\u003cT\u003e, int)",
+    "comment": "\r\n     * Returns consecutive {@link List#subList(int, int) sublists} of a\r\n     * list, each of the same size (the final list may be smaller). For example,\r\n     * partitioning a list containing {@code [a, b, c, d, e]} with a partition\r\n     * size of 3 yields {@code [[a, b, c], [d, e]]} -- an outer list containing\r\n     * two inner lists of three and two elements, all in the original order.\r\n     * \u003cp\u003e\r\n     * The outer list is unmodifiable, but reflects the latest state of the\r\n     * source list. The inner lists are sublist views of the original list,\r\n     * produced on demand using {@link List#subList(int, int)}, and are subject\r\n     * to all the usual caveats about modification as explained in that API.\r\n     * \u003cp\u003e\r\n     * Adapted from http://code.google.com/p/guava-libraries/\r\n     *\r\n     * @param \u003cT\u003e the element type\r\n     * @param list  the list to return consecutive sublists of\r\n     * @param size  the desired size of each sublist (the last may be smaller)\r\n     * @return a list of consecutive sublists\r\n     * @throws NullPointerException if list is null\r\n     * @throws IllegalArgumentException if size is not strictly positive\r\n     * @since 4.0\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns consecutive {@link List#subList(int, int) sublists} of a list, each of the same size (the final list may be smaller).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 661,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "For example, partitioning a list containing {@code [a, b, c, d, e]} with a partition size of 3 yields {@code [[a, b, c], [d, e]]} -- an outer list containing two inner lists of three and two elements, all in the original order.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 662,
+          "column": 69
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The outer list is unmodifiable, but reflects the latest state of the source list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 666,
+          "column": 69
+        }
+      },
+      {
+        "sentenceText": "The inner lists are sublist views of the original list, produced on demand using {@link List#subList(int, int)}, and are subject to all the usual caveats about modification as explained in that API.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 668,
+          "column": 21
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Adapted from http://code.google.com/p/guava-libraries/",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 671,
+          "column": 21
+        }
+      },
+      {
+        "sentenceText": "@return a list of consecutive sublists",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 677,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if list is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 678,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if size is not strictly positive",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 679,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.lazyList(java.util.List\u003cE\u003e, org.apache.commons.collections4.Transformer\u003cjava.lang.Integer, ? extends E\u003e)",
+    "comment": "\r\n     * Returns a \"lazy\" list whose elements will be created on demand.\r\n     * \u003cp\u003e\r\n     * When the index passed to the returned list\u0027s {@link List#get(int) get}\r\n     * method is greater than the list\u0027s size, then the transformer will be used\r\n     * to create a new object and that object will be inserted at that index.\r\n     * \u003cp\u003e\r\n     * For instance:\r\n     *\r\n     * \u003cpre\u003e\r\n     * List\u0026lt;Integer\u0026gt; hours \u003d Arrays.asList(7, 5, 8, 2);\r\n     * Transformer\u0026lt;Integer,Date\u0026gt; transformer \u003d input -\u0026gt; LocalDateTime.now().withHour(hours.get(input));\r\n     * List\u0026lt;LocalDateTime\u0026gt; lazy \u003d ListUtils.lazyList(new ArrayList\u0026lt;LocalDateTime\u0026gt;(), transformer);\r\n     * Date date \u003d lazy.get(3);\r\n     * \u003c/pre\u003e\r\n     *\r\n     * After the above code is executed, \u003ccode\u003edate\u003c/code\u003e will refer to\r\n     * a new \u003ccode\u003eDate\u003c/code\u003e instance. Furthermore, that \u003ccode\u003eDate\u003c/code\u003e\r\n     * instance is the fourth element in the list.  The first, second,\r\n     * and third element are all set to \u003ccode\u003enull\u003c/code\u003e.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param list  the list to make lazy, must not be null\r\n     * @param transformer  the transformer for creating new objects, must not be null\r\n     * @return a lazy list backed by the given list\r\n     * @throws NullPointerException if the List or Transformer is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a \"lazy\" list whose elements will be created on demand.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 475,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e When the index passed to the returned list\u0027s {@link List#get(int) get} method is greater than the list\u0027s size, then the transformer will be used to create a new object and that object will be inserted at that index.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 476,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e For instance: \u003cpre\u003e List\u0026lt;Integer\u0026gt; hours \u003d Arrays.asList(7, 5, 8, 2); Transformer\u0026lt;Integer,Date\u0026gt; transformer \u003d input -\u0026gt; LocalDateTime.now().withHour(hours.get(input)); List\u0026lt;LocalDateTime\u0026gt; lazy \u003d ListUtils.lazyList(new ArrayList\u0026lt;LocalDateTime\u0026gt;(), transformer); Date date \u003d lazy.get(3); \u003c/pre\u003e After the above code is executed, \u003ccode\u003edate\u003c/code\u003e will refer to a new \u003ccode\u003eDate\u003c/code\u003e instance.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 480,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Furthermore, that \u003ccode\u003eDate\u003c/code\u003e instance is the fourth element in the list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 490,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The first, second, and third element are all set to \u003ccode\u003enull\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 491,
+          "column": 42
+        }
+      },
+      {
+        "sentenceText": "@return a lazy list backed by the given list",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 498,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the List or Transformer is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 499,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.LcsVisitor.visitDeleteCommand(E)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.CharSequenceAsList.get(int)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.longestCommonSubsequence(java.util.List\u003cE\u003e, java.util.List\u003cE\u003e, org.apache.commons.collections4.Equator\u003c? super E\u003e)",
+    "comment": "\r\n     * Returns the longest common subsequence (LCS) of two sequences (lists).\r\n     *\r\n     * @param \u003cE\u003e  the element type\r\n     * @param a  the first list\r\n     * @param b  the second list\r\n     * @param equator  the equator used to test object equality\r\n     * @return the longest common subsequence\r\n     * @throws NullPointerException if either list or the equator is {@code null}\r\n     * @since 4.0\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the longest common subsequence (LCS) of two sequences (lists).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 560,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the longest common subsequence",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 566,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either list or the equator is {@code null}",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 567,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.sum(java.util.List\u003c? extends E\u003e, java.util.List\u003c? extends E\u003e)",
+    "comment": "\r\n     * Returns the sum of the given lists.  This is their intersection\r\n     * subtracted from their union.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param list1  the first list\r\n     * @param list2  the second list\r\n     * @return  a new list containing the sum of those lists\r\n     * @throws NullPointerException if either list is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the sum of the given lists.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 137,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This is their intersection subtracted from their union.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 137,
+          "column": 45
+        }
+      },
+      {
+        "sentenceText": "@return  a new list containing the sum of those lists",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 143,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either list is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 144,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.Partition.get(int)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.transformedList(java.util.List\u003cE\u003e, org.apache.commons.collections4.Transformer\u003c? super E, ? extends E\u003e)",
+    "comment": "\r\n     * Returns a transformed list backed by the given list.\r\n     * \u003cp\u003e\r\n     * This method returns a new list (decorating the specified list) that\r\n     * will transform any new entries added to it.\r\n     * Existing entries in the specified list will not be transformed.\r\n     * \u003cp\u003e\r\n     * Each object is passed through the transformer as it is added to the\r\n     * List. It is important not to use the original list after invoking this\r\n     * method, as it is a backdoor for adding untransformed objects.\r\n     * \u003cp\u003e\r\n     * Existing entries in the specified list will not be transformed.\r\n     * If you want that behaviour, see {@link TransformedList#transformedList}.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param list  the list to predicate, must not be null\r\n     * @param transformer  the transformer for the list, must not be null\r\n     * @return a transformed list backed by the given list\r\n     * @throws NullPointerException if the List or Transformer is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a transformed list backed by the given list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This method returns a new list (decorating the specified list) that will transform any new entries added to it.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Existing entries in the specified list will not be transformed.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 420,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Each object is passed through the transformer as it is added to the List.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 421,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "It is important not to use the original list after invoking this method, as it is a backdoor for adding untransformed objects.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 423,
+          "column": 14
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Existing entries in the specified list will not be transformed.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 425,
+          "column": 14
+        }
+      },
+      {
+        "sentenceText": "If you want that behaviour, see {@link TransformedList#transformedList}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 427,
+          "column": 14
+        }
+      },
+      {
+        "sentenceText": "@return a transformed list backed by the given list",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the List or Transformer is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.lazyList(java.util.List\u003cE\u003e, org.apache.commons.collections4.Factory\u003c? extends E\u003e)",
+    "comment": "\r\n     * Returns a \"lazy\" list whose elements will be created on demand.\r\n     * \u003cp\u003e\r\n     * When the index passed to the returned list\u0027s {@link List#get(int) get}\r\n     * method is greater than the list\u0027s size, then the factory will be used\r\n     * to create a new object and that object will be inserted at that index.\r\n     * \u003cp\u003e\r\n     * For instance:\r\n     *\r\n     * \u003cpre\u003e\r\n     * Factory\u0026lt;Date\u0026gt; factory \u003d new Factory\u0026lt;Date\u0026gt;() {\r\n     *     public Date create() {\r\n     *         return new Date();\r\n     *     }\r\n     * }\r\n     * List\u0026lt;Date\u0026gt; lazy \u003d ListUtils.lazyList(new ArrayList\u0026lt;Date\u0026gt;(), factory);\r\n     * Date date \u003d lazy.get(3);\r\n     * \u003c/pre\u003e\r\n     *\r\n     * After the above code is executed, \u003ccode\u003edate\u003c/code\u003e will refer to\r\n     * a new \u003ccode\u003eDate\u003c/code\u003e instance. Furthermore, that \u003ccode\u003eDate\u003c/code\u003e\r\n     * instance is the fourth element in the list.  The first, second,\r\n     * and third element are all set to \u003ccode\u003enull\u003c/code\u003e.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param list  the list to make lazy, must not be null\r\n     * @param factory  the factory for creating new objects, must not be null\r\n     * @return a lazy list backed by the given list\r\n     * @throws NullPointerException if the List or Factory is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a \"lazy\" list whose elements will be created on demand.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 441,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e When the index passed to the returned list\u0027s {@link List#get(int) get} method is greater than the list\u0027s size, then the factory will be used to create a new object and that object will be inserted at that index.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 442,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e For instance: \u003cpre\u003e Factory\u0026lt;Date\u0026gt; factory \u003d new Factory\u0026lt;Date\u0026gt;() { public Date create() { return new Date(); } } List\u0026lt;Date\u0026gt; lazy \u003d ListUtils.lazyList(new ArrayList\u0026lt;Date\u0026gt;(), factory); Date date \u003d lazy.get(3); \u003c/pre\u003e After the above code is executed, \u003ccode\u003edate\u003c/code\u003e will refer to a new \u003ccode\u003eDate\u003c/code\u003e instance.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 446,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Furthermore, that \u003ccode\u003eDate\u003c/code\u003e instance is the fourth element in the list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 459,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The first, second, and third element are all set to \u003ccode\u003enull\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 460,
+          "column": 42
+        }
+      },
+      {
+        "sentenceText": "@return a lazy list backed by the given list",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 467,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the List or Factory is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 468,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.hashCodeForList(java.util.Collection\u003c?\u003e)",
+    "comment": "\r\n     * Generates a hash code using the algorithm specified in\r\n     * {@link java.util.List#hashCode()}.\r\n     * \u003cp\u003e\r\n     * This method is useful for implementing \u003ccode\u003eList\u003c/code\u003e when you cannot\r\n     * extend AbstractList. The method takes Collection instances to enable other\r\n     * collection types to use the List implementation algorithm.\r\n     *\r\n     * @see java.util.List#hashCode()\r\n     * @param list  the list to generate the hashCode for, may be null\r\n     * @return the hash code\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Generates a hash code using the algorithm specified in {@link java.util.List#hashCode()}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 263,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This method is useful for implementing \u003ccode\u003eList\u003c/code\u003e when you cannot extend AbstractList.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 265,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The method takes Collection instances to enable other collection types to use the List implementation algorithm.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 267,
+          "column": 29
+        }
+      },
+      {
+        "sentenceText": "@return the hash code",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 272,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.Partition.isEmpty()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.CharSequenceAsList.CharSequenceAsList(java.lang.CharSequence)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.isEqualList(java.util.Collection\u003c?\u003e, java.util.Collection\u003c?\u003e)",
+    "comment": "\r\n     * Tests two lists for value-equality as per the equality contract in\r\n     * {@link java.util.List#equals(java.lang.Object)}.\r\n     * \u003cp\u003e\r\n     * This method is useful for implementing \u003ccode\u003eList\u003c/code\u003e when you cannot\r\n     * extend AbstractList. The method takes Collection instances to enable other\r\n     * collection types to use the List implementation algorithm.\r\n     * \u003cp\u003e\r\n     * The relevant text (slightly paraphrased as this is a static method) is:\r\n     * \u003cblockquote\u003e\r\n     * Compares the two list objects for equality.  Returns\r\n     * {@code true} if and only if both\r\n     * lists have the same size, and all corresponding pairs of elements in\r\n     * the two lists are \u003ci\u003eequal\u003c/i\u003e.  (Two elements {@code e1} and\r\n     * {@code e2} are \u003ci\u003eequal\u003c/i\u003e if \u003ccode\u003e(e1\u003d\u003dnull ? e2\u003d\u003dnull :\r\n     * e1.equals(e2))\u003c/code\u003e.)  In other words, two lists are defined to be\r\n     * equal if they contain the same elements in the same order.  This\r\n     * definition ensures that the equals method works properly across\r\n     * different implementations of the {@code List} interface.\r\n     * \u003c/blockquote\u003e\r\n     *\r\n     * \u003cb\u003eNote:\u003c/b\u003e The behaviour of this method is undefined if the lists are\r\n     * modified during the equals comparison.\r\n     *\r\n     * @see java.util.List\r\n     * @param list1  the first list, may be null\r\n     * @param list2  the second list, may be null\r\n     * @return whether the lists are equal by value comparison\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Tests two lists for value-equality as per the equality contract in {@link java.util.List#equals(java.lang.Object)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 209,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This method is useful for implementing \u003ccode\u003eList\u003c/code\u003e when you cannot extend AbstractList.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 211,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The method takes Collection instances to enable other collection types to use the List implementation algorithm.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 213,
+          "column": 29
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The relevant text (slightly paraphrased as this is a static method) is: \u003cblockquote\u003e Compares the two list objects for equality.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 215,
+          "column": 29
+        }
+      },
+      {
+        "sentenceText": "Returns {@code true} if and only if both lists have the same size, and all corresponding pairs of elements in the two lists are \u003ci\u003eequal\u003c/i\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 218,
+          "column": 53
+        }
+      },
+      {
+        "sentenceText": "(Two elements {@code e1} and {@code e2} are \u003ci\u003eequal\u003c/i\u003e if \u003ccode\u003e(e1\u003d\u003dnull ? e2\u003d\u003dnull : e1.equals(e2))\u003c/code\u003e.)  In other words, two lists are defined to be equal if they contain the same elements in the same order.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 221,
+          "column": 41
+        }
+      },
+      {
+        "sentenceText": "This definition ensures that the equals method works properly across different implementations of the {@code List} interface.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 224,
+          "column": 68
+        }
+      },
+      {
+        "sentenceText": "\u003c/blockquote\u003e \u003cb\u003eNote:\u003c/b\u003e The behaviour of this method is undefined if the lists are modified during the equals comparison.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 227,
+          "column": 68
+        }
+      },
+      {
+        "sentenceText": "@return whether the lists are equal by value comparison",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 235,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.retainAll(java.util.Collection\u003cE\u003e, java.util.Collection\u003c?\u003e)",
+    "comment": "\r\n     * Returns a List containing all the elements in \u003ccode\u003ecollection\u003c/code\u003e\r\n     * that are also in \u003ccode\u003eretain\u003c/code\u003e. The cardinality of an element \u003ccode\u003ee\u003c/code\u003e\r\n     * in the returned list is the same as the cardinality of \u003ccode\u003ee\u003c/code\u003e\r\n     * in \u003ccode\u003ecollection\u003c/code\u003e unless \u003ccode\u003eretain\u003c/code\u003e does not contain \u003ccode\u003ee\u003c/code\u003e, in which\r\n     * case the cardinality is zero. This method is useful if you do not wish to modify\r\n     * the collection \u003ccode\u003ec\u003c/code\u003e and thus cannot call \u003ccode\u003ecollection.retainAll(retain);\u003c/code\u003e.\r\n     * \u003cp\u003e\r\n     * This implementation iterates over \u003ccode\u003ecollection\u003c/code\u003e, checking each element in\r\n     * turn to see if it\u0027s contained in \u003ccode\u003eretain\u003c/code\u003e. If it\u0027s contained, it\u0027s added\r\n     * to the returned list. As a consequence, it is advised to use a collection type for\r\n     * \u003ccode\u003eretain\u003c/code\u003e that provides a fast (e.g. O(1)) implementation of\r\n     * {@link Collection#contains(Object)}.\r\n     *\r\n     * @param \u003cE\u003e  the element type\r\n     * @param collection  the collection whose contents are the target of the #retailAll operation\r\n     * @param retain  the collection containing the elements to be retained in the returned collection\r\n     * @return a \u003ccode\u003eList\u003c/code\u003e containing all the elements of \u003ccode\u003ec\u003c/code\u003e\r\n     * that occur at least once in \u003ccode\u003eretain\u003c/code\u003e.\r\n     * @throws NullPointerException if either parameter is null\r\n     * @since 3.2\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a List containing all the elements in \u003ccode\u003ecollection\u003c/code\u003e that are also in \u003ccode\u003eretain\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 290,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The cardinality of an element \u003ccode\u003ee\u003c/code\u003e in the returned list is the same as the cardinality of \u003ccode\u003ee\u003c/code\u003e in \u003ccode\u003ecollection\u003c/code\u003e unless \u003ccode\u003eretain\u003c/code\u003e does not contain \u003ccode\u003ee\u003c/code\u003e, in which case the cardinality is zero.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 291,
+          "column": 46
+        }
+      },
+      {
+        "sentenceText": "This method is useful if you do not wish to modify the collection \u003ccode\u003ec\u003c/code\u003e and thus cannot call \u003ccode\u003ecollection.retainAll(retain);\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 294,
+          "column": 38
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This implementation iterates over \u003ccode\u003ecollection\u003c/code\u003e, checking each element in turn to see if it\u0027s contained in \u003ccode\u003eretain\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 296,
+          "column": 38
+        }
+      },
+      {
+        "sentenceText": "If it\u0027s contained, it\u0027s added to the returned list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 298,
+          "column": 62
+        }
+      },
+      {
+        "sentenceText": "As a consequence, it is advised to use a collection type for \u003ccode\u003eretain\u003c/code\u003e that provides a fast (e.g.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 299,
+          "column": 30
+        }
+      },
+      {
+        "sentenceText": "O(1)) implementation of {@link Collection#contains(Object)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 300,
+          "column": 55
+        }
+      },
+      {
+        "sentenceText": "@return a \u003ccode\u003eList\u003c/code\u003e containing all the elements of \u003ccode\u003ec\u003c/code\u003e that occur at least once in \u003ccode\u003eretain\u003c/code\u003e.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 306,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either parameter is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 308,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.union(java.util.List\u003c? extends E\u003e, java.util.List\u003c? extends E\u003e)",
+    "comment": "\r\n     * Returns a new list containing the second list appended to the\r\n     * first list.  The {@link List#addAll(Collection)} operation is\r\n     * used to append the two given lists into a new list.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param list1  the first list\r\n     * @param list2  the second list\r\n     * @return a new list containing the union of those lists\r\n     * @throws NullPointerException if either list is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a new list containing the second list appended to the first list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 151,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The {@link List#addAll(Collection)} operation is used to append the two given lists into a new list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 152,
+          "column": 21
+        }
+      },
+      {
+        "sentenceText": "@return a new list containing the union of those lists",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 158,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either list is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 159,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.ListUtils()",
+    "comment": "\r\n     * \u003ccode\u003eListUtils\u003c/code\u003e should not normally be instantiated.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "\u003ccode\u003eListUtils\u003c/code\u003e should not normally be instantiated.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 46,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.LcsVisitor.visitKeepCommand(E)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.select(java.util.Collection\u003c? extends E\u003e, org.apache.commons.collections4.Predicate\u003c? super E\u003e)",
+    "comment": "\r\n     * Selects all elements from input collection which match the given\r\n     * predicate into an output list.\r\n     * \u003cp\u003e\r\n     * A \u003ccode\u003enull\u003c/code\u003e predicate matches no elements.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param inputCollection  the collection to get the input from, may not be null\r\n     * @param predicate  the predicate to use, may be null\r\n     * @return the elements matching the predicate (new list)\r\n     * @throws NullPointerException if the input list is null\r\n     *\r\n     * @since 4.0\r\n     * @see CollectionUtils#select(Iterable, Predicate)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Selects all elements from input collection which match the given predicate into an output list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 169,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e A \u003ccode\u003enull\u003c/code\u003e predicate matches no elements.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 171,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the elements matching the predicate (new list)",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 177,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the input list is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 178,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.intersection(java.util.List\u003c? extends E\u003e, java.util.List\u003c? extends E\u003e)",
+    "comment": "\r\n     * Returns a new list containing all elements that are contained in\r\n     * both given lists.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param list1  the first list\r\n     * @param list2  the second list\r\n     * @return  the intersection of those two lists\r\n     * @throws NullPointerException if either list is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a new list containing all elements that are contained in both given lists.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 79,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return  the intersection of those two lists",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 85,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either list is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 86,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.synchronizedList(java.util.List\u003cE\u003e)",
+    "comment": "\r\n     * Returns a synchronized list backed by the given list.\r\n     * \u003cp\u003e\r\n     * You must manually synchronize on the returned list\u0027s iterator to\r\n     * avoid non-deterministic behavior:\r\n     *\r\n     * \u003cpre\u003e\r\n     * List list \u003d ListUtils.synchronizedList(myList);\r\n     * synchronized (list) {\r\n     *     Iterator i \u003d list.iterator();\r\n     *     while (i.hasNext()) {\r\n     *         process (i.next());\r\n     *     }\r\n     * }\r\n     * \u003c/pre\u003e\r\n     *\r\n     * This method is just a wrapper for {@link Collections#synchronizedList(List)}.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param list  the list to synchronize, must not be null\r\n     * @return a synchronized list backed by the given list\r\n     * @throws NullPointerException if the list is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a synchronized list backed by the given list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 357,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e You must manually synchronize on the returned list\u0027s iterator to avoid non-deterministic behavior: \u003cpre\u003e List list \u003d ListUtils.synchronizedList(myList); synchronized (list) { Iterator i \u003d list.iterator(); while (i.hasNext()) { process (i.next()); } } \u003c/pre\u003e This method is just a wrapper for {@link Collections#synchronizedList(List)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 358,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a synchronized list backed by the given list",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 376,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the list is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.ListUtils.LcsVisitor.LcsVisitor()",
+    "comment": "",
+    "sentences": []
+  }
+]

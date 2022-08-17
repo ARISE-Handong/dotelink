@@ -1,0 +1,44 @@
+[
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.removeColumn(java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testRemoveColumnByKey()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 460,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 325,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.getValue(java.lang.Comparable, java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValues2DTest.testGetValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 255,
+          "column": 62
+        },
+        "testCodeLocation": {
+          "line": 69,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 255,
+          "column": 62
+        },
+        "testCodeLocation": {
+          "line": 78,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

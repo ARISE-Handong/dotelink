@@ -1,0 +1,271 @@
+[
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStrTest.testValidInput()",
+    "annotation": "@Test",
+    "code": "String input \u003d \"I think Java is an awesome language\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));assertEquals(input, processor2.execute(input, ANONYMOUS_CSVCONTEXT));assertEquals(input, processorChain.execute(input, ANONYMOUS_CSVCONTEXT));assertEquals(input, processorChain2.execute(input, ANONYMOUS_CSVCONTEXT));assertEquals(input, processorChain3.execute(input, ANONYMOUS_CSVCONTEXT));",
+    "offset": [
+      {
+        "line": 68,
+        "column": 3
+      },
+      {
+        "line": 68,
+        "column": 23
+      },
+      {
+        "line": 69,
+        "column": 3
+      },
+      {
+        "line": 69,
+        "column": 23
+      },
+      {
+        "line": 70,
+        "column": 3
+      },
+      {
+        "line": 70,
+        "column": 23
+      },
+      {
+        "line": 71,
+        "column": 3
+      },
+      {
+        "line": 71,
+        "column": 23
+      },
+      {
+        "line": 72,
+        "column": 3
+      },
+      {
+        "line": 72,
+        "column": 23
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 67,
+          "column": 3
+        },
+        "assert": "String input \u003d \"I think Java is an awesome language\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"I think Java is an awesome language\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 69,
+          "column": 3
+        },
+        "assert": "assertEquals(input, processor2.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"I think Java is an awesome language\";assertEquals(input, processor2.execute(input, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 70,
+          "column": 3
+        },
+        "assert": "assertEquals(input, processorChain.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"I think Java is an awesome language\";assertEquals(input, processorChain.execute(input, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 71,
+          "column": 3
+        },
+        "assert": "assertEquals(input, processorChain2.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"I think Java is an awesome language\";assertEquals(input, processorChain2.execute(input, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 72,
+          "column": 3
+        },
+        "assert": "assertEquals(input, processorChain3.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"I think Java is an awesome language\";assertEquals(input, processorChain3.execute(input, ANONYMOUS_CSVCONTEXT));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStrTest.testForbidden()",
+    "annotation": "@Test(expected \u003d SuperCsvConstraintViolationException.class)",
+    "code": "// blasphemy!\nString input \u003d \"I think C++ is an awesome language\";processor.execute(input, ANONYMOUS_CSVCONTEXT);",
+    "offset": [
+      {
+        "line": 82,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 81,
+          "column": 3
+        },
+        "assert": "// blasphemy!\nString input \u003d \"I think C++ is an awesome language\";processor.execute(input, ANONYMOUS_CSVCONTEXT);",
+        "slice": "// blasphemy!\nString input \u003d \"I think C++ is an awesome language\";processor.execute(input, ANONYMOUS_CSVCONTEXT);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStrTest.testForbidden2()",
+    "annotation": "@Test(expected \u003d SuperCsvConstraintViolationException.class)",
+    "code": "String input \u003d \"I love Microsoft\";processor.execute(input, ANONYMOUS_CSVCONTEXT);",
+    "offset": [
+      {
+        "line": 91,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 90,
+          "column": 3
+        },
+        "assert": "String input \u003d \"I love Microsoft\";processor.execute(input, ANONYMOUS_CSVCONTEXT);",
+        "slice": "String input \u003d \"I love Microsoft\";processor.execute(input, ANONYMOUS_CSVCONTEXT);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStrTest.testWithNull()",
+    "annotation": "@Test(expected \u003d SuperCsvCellProcessorException.class)",
+    "code": "processor.execute(null, ANONYMOUS_CSVCONTEXT);",
+    "offset": [
+      {
+        "line": 99,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 99,
+          "column": 3
+        },
+        "assert": "processor.execute(null, ANONYMOUS_CSVCONTEXT);",
+        "slice": "processor.execute(null, ANONYMOUS_CSVCONTEXT);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStrTest.testConstructionWithNullArray()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "new ForbidSubStr((String[]) null);",
+    "offset": [
+      {
+        "line": 107,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 107,
+          "column": 3
+        },
+        "assert": "new ForbidSubStr((String[]) null);",
+        "slice": "new ForbidSubStr((String[]) null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStrTest.testConstructionWithEmptyArray()",
+    "annotation": "@Test(expected \u003d IllegalArgumentException.class)",
+    "code": "new ForbidSubStr(new String[] {});",
+    "offset": [
+      {
+        "line": 115,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 115,
+          "column": 3
+        },
+        "assert": "new ForbidSubStr(new String[] {});",
+        "slice": "new ForbidSubStr(new String[] {});"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStrTest.testConstructionWithNullList()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "new ForbidSubStr((List\u003cString\u003e) null, new IdentityTransform());",
+    "offset": [
+      {
+        "line": 123,
+        "column": 3
+      },
+      {
+        "line": 123,
+        "column": 41
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 123,
+          "column": 3
+        },
+        "assert": "new ForbidSubStr((List\u003cString\u003e) null, new IdentityTransform());",
+        "slice": "new ForbidSubStr((List\u003cString\u003e) null, new IdentityTransform());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStrTest.testConstructionWithEmptyList()",
+    "annotation": "@Test(expected \u003d IllegalArgumentException.class)",
+    "code": "new ForbidSubStr(new ArrayList\u003cString\u003e(), new IdentityTransform());",
+    "offset": [
+      {
+        "line": 131,
+        "column": 3
+      },
+      {
+        "line": 131,
+        "column": 20
+      },
+      {
+        "line": 131,
+        "column": 45
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 131,
+          "column": 3
+        },
+        "assert": "new ForbidSubStr(new ArrayList\u003cString\u003e(), new IdentityTransform());",
+        "slice": "new ForbidSubStr(new ArrayList\u003cString\u003e(), new IdentityTransform());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStrTest.testConstructionWithNullSubstring()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "new ForbidSubStr(new String[] { null });",
+    "offset": [
+      {
+        "line": 139,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 139,
+          "column": 3
+        },
+        "assert": "new ForbidSubStr(new String[] { null });",
+        "slice": "new ForbidSubStr(new String[] { null });"
+      }
+    ]
+  }
+]

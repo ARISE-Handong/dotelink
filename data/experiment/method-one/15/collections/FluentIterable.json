@@ -1,0 +1,418 @@
+[
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.toString()",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.testToString()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 498,
+          "column": 6
+        },
+        "testCodeLocation": {
+          "line": 549,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.allMatch(org.apache.commons.collections4.Predicate\u003c? super E\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.allMatch()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 385,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 409,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.of(java.lang.Iterable\u003cT\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.factoryMethodOf()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 112,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 116,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.filter(org.apache.commons.collections4.Predicate\u003c? super E\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.filter()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 244,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 201,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.of(T...)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.factoryMethodOf()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 99,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 122,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.isEmpty()",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.isEmpty()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 410,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 433,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.eval()",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.eval()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 230,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 451,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.anyMatch(org.apache.commons.collections4.Predicate\u003c? super E\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.anyMatch()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 401,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 420,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.reverse()",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.reverse()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 278,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 278,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.of(T)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.factoryMethodOf()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 92,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 125,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.transform(org.apache.commons.collections4.Transformer\u003c? super E, ? extends O\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.transform()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 307,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 332,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.append(E...)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.appendElements()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 154,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 139,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.toArray(java.lang.Class\u003cE\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.toArray()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 479,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 532,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.get(int)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.get()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 442,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 512,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.collate(java.lang.Iterable\u003c? extends E\u003e, java.util.Comparator\u003c? super E\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.collateWithComparator()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 201,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 182,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.limit(long)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.limit()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 260,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 252,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.copyInto(java.util.Collection\u003c? super E\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.copyInto()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 461,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 474,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.unmodifiable()",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.unmodifiable()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 324,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 364,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.iterator()",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.iterator()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 362,
+          "column": 6
+        },
+        "testCodeLocation": {
+          "line": 506,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.asEnumeration()",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.asEnumeration()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 372,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 399,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.forEach(org.apache.commons.collections4.Closure\u003c? super E\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.forEach()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 430,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 225,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.skip(long)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.skip()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 292,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 295,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.contains(java.lang.Object)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.contains()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 467,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.collate(java.lang.Iterable\u003c? extends E\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.collate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 179,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 172,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.append(java.lang.Iterable\u003c? extends E\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.appendIterable()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 171,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 160,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.FluentIterable.unique()",
+    "unitTestMethod": "org.apache.commons.collections4.FluentIterableTest.unique()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 347,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

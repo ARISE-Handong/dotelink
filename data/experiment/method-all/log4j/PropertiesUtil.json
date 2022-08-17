@@ -1,0 +1,432 @@
+[
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.PropertiesUtil(java.util.Properties)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testGetMappedProperty_sun_stderr_encoding()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 59,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 92,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getCharsetProperty(java.lang.String)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testGetMappedProperty_sun_stderr_encoding()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 179,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 92,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 182,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 92,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.extractSubset(java.util.Properties, java.lang.String)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testExtractSubset()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 517,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 48,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 517,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 49,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 517,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 50,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 517,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 46,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 517,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 47,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 522,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 48,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 522,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 49,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 522,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 50,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 522,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 46,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 522,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 47,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.partitionOnCommonPrefixes(java.util.Properties)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testPartitionOnCommonPrefix()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 553,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 55,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 553,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 57,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 553,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 58,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 553,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 59,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 553,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 60,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 556,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 55,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 556,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 57,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 556,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 58,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 556,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 59,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 556,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 60,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.PropertiesUtil(java.util.Properties)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testPublish()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 59,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 114,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 59,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 118,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getCharsetProperty(java.lang.String)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testGetCharsetProperty()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 179,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 80,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 179,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 73,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 179,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 79,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 182,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 80,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 182,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 73,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 182,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 79,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getStringProperty(java.lang.String)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testNonStringSystemProperties()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 364,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 99,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 99,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.PropertiesUtil(java.util.Properties)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testNonStringSystemProperties()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 59,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 99,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.PropertiesUtil(java.util.Properties)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testGetMappedProperty_sun_stdout_encoding()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 59,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 85,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.PropertiesUtil.getCharsetProperty(java.lang.String)",
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testGetMappedProperty_sun_stdout_encoding()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 179,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 85,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 182,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 85,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

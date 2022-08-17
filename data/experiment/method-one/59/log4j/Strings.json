@@ -1,0 +1,50 @@
+[
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.quote(java.lang.String)",
+    "unitTestMethod": "org.apache.logging.log4j.util.StringsTest.testQuote()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 227,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 55,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.join(java.lang.Iterable\u003c?\u003e, char)",
+    "unitTestMethod": "org.apache.logging.log4j.util.StringsTest.testJoin()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 130,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 48,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.join(java.util.Iterator\u003c?\u003e, char)",
+    "unitTestMethod": "org.apache.logging.log4j.util.StringsTest.testJoin()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 148,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 50,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

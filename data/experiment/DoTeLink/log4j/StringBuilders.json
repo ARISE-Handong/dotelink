@@ -1,0 +1,54 @@
+[
+  {
+    "productionMethod": "org.apache.logging.log4j.util.StringBuilders.trimToMaxSize(java.lang.StringBuilder, int)",
+    "unitTestMethod": "org.apache.logging.log4j.util.StringBuildersTest.trimToMaxSize()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 157,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 29,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 157,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 34,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.StringBuilders.trimToMaxSize(java.lang.StringBuilder, int)",
+    "unitTestMethod": "org.apache.logging.log4j.util.StringBuildersTest.trimToMaxSizeWithLargeCapacity()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 157,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 40,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 157,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 46,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

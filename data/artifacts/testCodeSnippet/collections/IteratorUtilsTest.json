@@ -1,0 +1,3245 @@
+[
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testAsIterable()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(0));list.add(Integer.valueOf(1));list.add(Integer.valueOf(2));final Iterator\u003cInteger\u003e iterator \u003d list.iterator();final Iterable\u003cInteger\u003e iterable \u003d IteratorUtils.asIterable(iterator);int expected \u003d 0;for (final Integer actual : iterable) {\n    assertEquals(expected, actual.intValue());\n    ++expected;\n}// insure iteration occurred\nassertTrue(expected \u003e 0);// single use iterator\nassertFalse(\"should not be able to iterate twice\", IteratorUtils.asIterable(iterator).iterator().hasNext());",
+    "offset": [
+      {
+        "line": 442,
+        "column": 36
+      },
+      {
+        "line": 443,
+        "column": 9
+      },
+      {
+        "line": 443,
+        "column": 18
+      },
+      {
+        "line": 444,
+        "column": 9
+      },
+      {
+        "line": 444,
+        "column": 18
+      },
+      {
+        "line": 445,
+        "column": 9
+      },
+      {
+        "line": 445,
+        "column": 18
+      },
+      {
+        "line": 446,
+        "column": 44
+      },
+      {
+        "line": 448,
+        "column": 44
+      },
+      {
+        "line": 451,
+        "column": 13
+      },
+      {
+        "line": 451,
+        "column": 36
+      },
+      {
+        "line": 455,
+        "column": 9
+      },
+      {
+        "line": 458,
+        "column": 9
+      },
+      {
+        "line": 458,
+        "column": 60
+      },
+      {
+        "line": 458,
+        "column": 60
+      },
+      {
+        "line": 458,
+        "column": 60
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 455,
+          "column": 9
+        },
+        "assert": "// insure iteration occurred\nassertTrue(expected \u003e 0);",
+        "slice": "int expected \u003d 0;// insure iteration occurred\nassertTrue(expected \u003e 0);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 442,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(0));list.add(Integer.valueOf(1));list.add(Integer.valueOf(2));final Iterator\u003cInteger\u003e iterator \u003d list.iterator();final Iterable\u003cInteger\u003e iterable \u003d IteratorUtils.asIterable(iterator);int expected \u003d 0;for (final Integer actual : iterable) {\n    assertEquals(expected, actual.intValue());\n    ++expected;\n}",
+        "slice": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(0));list.add(Integer.valueOf(1));list.add(Integer.valueOf(2));final Iterator\u003cInteger\u003e iterator \u003d list.iterator();final Iterable\u003cInteger\u003e iterable \u003d IteratorUtils.asIterable(iterator);int expected \u003d 0;for (final Integer actual : iterable) {\n    assertEquals(expected, actual.intValue());\n    ++expected;\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 458,
+          "column": 9
+        },
+        "assert": "// single use iterator\nassertFalse(\"should not be able to iterate twice\", IteratorUtils.asIterable(iterator).iterator().hasNext());",
+        "slice": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(0));list.add(Integer.valueOf(1));list.add(Integer.valueOf(2));final Iterator\u003cInteger\u003e iterator \u003d list.iterator();final Iterable\u003cInteger\u003e iterable \u003d IteratorUtils.asIterable(iterator);// single use iterator\nassertFalse(\"should not be able to iterate twice\", IteratorUtils.asIterable(iterator).iterator().hasNext());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testAsIterableNull()",
+    "annotation": "@Test",
+    "code": "try {\n    IteratorUtils.asIterable(null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}",
+    "offset": [
+      {
+        "line": 464,
+        "column": 13
+      },
+      {
+        "line": 465,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 463,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.asIterable(null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}",
+        "slice": "try {\n    IteratorUtils.asIterable(null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testAsMultipleIterable()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(0));list.add(Integer.valueOf(1));list.add(Integer.valueOf(2));final Iterator\u003cInteger\u003e iterator \u003d list.iterator();final Iterable\u003cInteger\u003e iterable \u003d IteratorUtils.asMultipleUseIterable(iterator);int expected \u003d 0;for (final Integer actual : iterable) {\n    assertEquals(expected, actual.intValue());\n    ++expected;\n}// insure iteration occurred\nassertTrue(expected \u003e 0);// multiple use iterator\nexpected \u003d 0;for (final Integer actual : iterable) {\n    assertEquals(expected, actual.intValue());\n    ++expected;\n}// insure iteration occurred\nassertTrue(expected \u003e 0);",
+    "offset": [
+      {
+        "line": 473,
+        "column": 36
+      },
+      {
+        "line": 474,
+        "column": 9
+      },
+      {
+        "line": 474,
+        "column": 18
+      },
+      {
+        "line": 475,
+        "column": 9
+      },
+      {
+        "line": 475,
+        "column": 18
+      },
+      {
+        "line": 476,
+        "column": 9
+      },
+      {
+        "line": 476,
+        "column": 18
+      },
+      {
+        "line": 477,
+        "column": 44
+      },
+      {
+        "line": 479,
+        "column": 44
+      },
+      {
+        "line": 482,
+        "column": 13
+      },
+      {
+        "line": 482,
+        "column": 36
+      },
+      {
+        "line": 486,
+        "column": 9
+      },
+      {
+        "line": 491,
+        "column": 13
+      },
+      {
+        "line": 491,
+        "column": 36
+      },
+      {
+        "line": 495,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 486,
+          "column": 9
+        },
+        "assert": "// insure iteration occurred\nassertTrue(expected \u003e 0);",
+        "slice": "int expected \u003d 0;// insure iteration occurred\nassertTrue(expected \u003e 0);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 473,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(0));list.add(Integer.valueOf(1));list.add(Integer.valueOf(2));final Iterator\u003cInteger\u003e iterator \u003d list.iterator();final Iterable\u003cInteger\u003e iterable \u003d IteratorUtils.asMultipleUseIterable(iterator);int expected \u003d 0;for (final Integer actual : iterable) {\n    assertEquals(expected, actual.intValue());\n    ++expected;\n}",
+        "slice": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(0));list.add(Integer.valueOf(1));list.add(Integer.valueOf(2));final Iterator\u003cInteger\u003e iterator \u003d list.iterator();final Iterable\u003cInteger\u003e iterable \u003d IteratorUtils.asMultipleUseIterable(iterator);int expected \u003d 0;for (final Integer actual : iterable) {\n    assertEquals(expected, actual.intValue());\n    ++expected;\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 489,
+          "column": 9
+        },
+        "assert": "// multiple use iterator\nexpected \u003d 0;for (final Integer actual : iterable) {\n    assertEquals(expected, actual.intValue());\n    ++expected;\n}",
+        "slice": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(0));list.add(Integer.valueOf(1));list.add(Integer.valueOf(2));final Iterator\u003cInteger\u003e iterator \u003d list.iterator();final Iterable\u003cInteger\u003e iterable \u003d IteratorUtils.asMultipleUseIterable(iterator);int expected \u003d 0;// multiple use iterator\nexpected \u003d 0;for (final Integer actual : iterable) {\n    assertEquals(expected, actual.intValue());\n    ++expected;\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 495,
+          "column": 9
+        },
+        "assert": "// insure iteration occurred\nassertTrue(expected \u003e 0);",
+        "slice": "int expected \u003d 0;// multiple use iterator\nexpected \u003d 0;// insure iteration occurred\nassertTrue(expected \u003e 0);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testAsMultipleIterableNull()",
+    "annotation": "@Test",
+    "code": "try {\n    IteratorUtils.asMultipleUseIterable(null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}",
+    "offset": [
+      {
+        "line": 502,
+        "column": 13
+      },
+      {
+        "line": 503,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 501,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.asMultipleUseIterable(null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}",
+        "slice": "try {\n    IteratorUtils.asMultipleUseIterable(null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testEmptyIterator()",
+    "annotation": "@Test",
+    "code": "assertSame(EmptyIterator.INSTANCE, IteratorUtils.EMPTY_ITERATOR);assertSame(EmptyIterator.RESETTABLE_INSTANCE, IteratorUtils.EMPTY_ITERATOR);assertEquals(true, IteratorUtils.EMPTY_ITERATOR instanceof Iterator);assertEquals(true, IteratorUtils.EMPTY_ITERATOR instanceof ResettableIterator);assertEquals(false, IteratorUtils.EMPTY_ITERATOR instanceof OrderedIterator);assertEquals(false, IteratorUtils.EMPTY_ITERATOR instanceof ListIterator);assertEquals(false, IteratorUtils.EMPTY_ITERATOR instanceof MapIterator);assertEquals(false, IteratorUtils.EMPTY_ITERATOR.hasNext());IteratorUtils.EMPTY_ITERATOR.reset();assertSame(IteratorUtils.EMPTY_ITERATOR, IteratorUtils.EMPTY_ITERATOR);assertSame(IteratorUtils.EMPTY_ITERATOR, IteratorUtils.emptyIterator());try {\n    IteratorUtils.EMPTY_ITERATOR.next();\n    fail();\n} catch (final NoSuchElementException ex) {\n}try {\n    IteratorUtils.EMPTY_ITERATOR.remove();\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+    "offset": [
+      {
+        "line": 566,
+        "column": 9
+      },
+      {
+        "line": 567,
+        "column": 9
+      },
+      {
+        "line": 568,
+        "column": 9
+      },
+      {
+        "line": 569,
+        "column": 9
+      },
+      {
+        "line": 570,
+        "column": 9
+      },
+      {
+        "line": 571,
+        "column": 9
+      },
+      {
+        "line": 572,
+        "column": 9
+      },
+      {
+        "line": 573,
+        "column": 9
+      },
+      {
+        "line": 573,
+        "column": 29
+      },
+      {
+        "line": 574,
+        "column": 9
+      },
+      {
+        "line": 575,
+        "column": 9
+      },
+      {
+        "line": 576,
+        "column": 9
+      },
+      {
+        "line": 576,
+        "column": 50
+      },
+      {
+        "line": 578,
+        "column": 13
+      },
+      {
+        "line": 579,
+        "column": 13
+      },
+      {
+        "line": 582,
+        "column": 13
+      },
+      {
+        "line": 583,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 576,
+          "column": 9
+        },
+        "assert": "assertSame(IteratorUtils.EMPTY_ITERATOR, IteratorUtils.emptyIterator());",
+        "slice": "IteratorUtils.EMPTY_ITERATOR.reset();assertSame(IteratorUtils.EMPTY_ITERATOR, IteratorUtils.emptyIterator());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 577,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_ITERATOR.next();\n    fail();\n} catch (final NoSuchElementException ex) {\n}",
+        "slice": "IteratorUtils.EMPTY_ITERATOR.reset();try {\n    IteratorUtils.EMPTY_ITERATOR.next();\n    fail();\n} catch (final NoSuchElementException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 581,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_ITERATOR.remove();\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+        "slice": "IteratorUtils.EMPTY_ITERATOR.reset();try {\n    IteratorUtils.EMPTY_ITERATOR.remove();\n    fail();\n} catch (final IllegalStateException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 566,
+          "column": 9
+        },
+        "assert": "assertSame(EmptyIterator.INSTANCE, IteratorUtils.EMPTY_ITERATOR);",
+        "slice": "assertSame(EmptyIterator.INSTANCE, IteratorUtils.EMPTY_ITERATOR);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 567,
+          "column": 9
+        },
+        "assert": "assertSame(EmptyIterator.RESETTABLE_INSTANCE, IteratorUtils.EMPTY_ITERATOR);",
+        "slice": "assertSame(EmptyIterator.RESETTABLE_INSTANCE, IteratorUtils.EMPTY_ITERATOR);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 568,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_ITERATOR instanceof Iterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_ITERATOR instanceof Iterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 569,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_ITERATOR instanceof ResettableIterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_ITERATOR instanceof ResettableIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 570,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_ITERATOR instanceof OrderedIterator);",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_ITERATOR instanceof OrderedIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 571,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_ITERATOR instanceof ListIterator);",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_ITERATOR instanceof ListIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 572,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_ITERATOR instanceof MapIterator);",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_ITERATOR instanceof MapIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 573,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_ITERATOR.hasNext());",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_ITERATOR.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 574,
+          "column": 9
+        },
+        "assert": "IteratorUtils.EMPTY_ITERATOR.reset();assertSame(IteratorUtils.EMPTY_ITERATOR, IteratorUtils.EMPTY_ITERATOR);",
+        "slice": "IteratorUtils.EMPTY_ITERATOR.reset();assertSame(IteratorUtils.EMPTY_ITERATOR, IteratorUtils.EMPTY_ITERATOR);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testEmptyListIterator()",
+    "annotation": "@Test",
+    "code": "assertSame(EmptyListIterator.INSTANCE, IteratorUtils.EMPTY_LIST_ITERATOR);assertSame(EmptyListIterator.RESETTABLE_INSTANCE, IteratorUtils.EMPTY_LIST_ITERATOR);assertEquals(true, IteratorUtils.EMPTY_LIST_ITERATOR instanceof Iterator);assertEquals(true, IteratorUtils.EMPTY_LIST_ITERATOR instanceof ListIterator);assertEquals(true, IteratorUtils.EMPTY_LIST_ITERATOR instanceof ResettableIterator);assertEquals(true, IteratorUtils.EMPTY_LIST_ITERATOR instanceof ResettableListIterator);assertEquals(false, IteratorUtils.EMPTY_LIST_ITERATOR instanceof MapIterator);assertEquals(false, IteratorUtils.EMPTY_LIST_ITERATOR.hasNext());assertEquals(0, IteratorUtils.EMPTY_LIST_ITERATOR.nextIndex());assertEquals(-1, IteratorUtils.EMPTY_LIST_ITERATOR.previousIndex());IteratorUtils.EMPTY_LIST_ITERATOR.reset();assertSame(IteratorUtils.EMPTY_LIST_ITERATOR, IteratorUtils.EMPTY_LIST_ITERATOR);assertSame(IteratorUtils.EMPTY_LIST_ITERATOR, IteratorUtils.emptyListIterator());try {\n    IteratorUtils.EMPTY_LIST_ITERATOR.next();\n    fail();\n} catch (final NoSuchElementException ex) {\n}try {\n    IteratorUtils.EMPTY_LIST_ITERATOR.previous();\n    fail();\n} catch (final NoSuchElementException ex) {\n}try {\n    IteratorUtils.EMPTY_LIST_ITERATOR.remove();\n    fail();\n} catch (final IllegalStateException ex) {\n}try {\n    IteratorUtils.emptyListIterator().set(null);\n    fail();\n} catch (final IllegalStateException ex) {\n}try {\n    IteratorUtils.emptyListIterator().add(null);\n    fail();\n} catch (final UnsupportedOperationException ex) {\n}",
+    "offset": [
+      {
+        "line": 593,
+        "column": 9
+      },
+      {
+        "line": 594,
+        "column": 9
+      },
+      {
+        "line": 595,
+        "column": 9
+      },
+      {
+        "line": 596,
+        "column": 9
+      },
+      {
+        "line": 597,
+        "column": 9
+      },
+      {
+        "line": 598,
+        "column": 9
+      },
+      {
+        "line": 599,
+        "column": 9
+      },
+      {
+        "line": 600,
+        "column": 9
+      },
+      {
+        "line": 600,
+        "column": 29
+      },
+      {
+        "line": 601,
+        "column": 9
+      },
+      {
+        "line": 601,
+        "column": 25
+      },
+      {
+        "line": 602,
+        "column": 9
+      },
+      {
+        "line": 602,
+        "column": 26
+      },
+      {
+        "line": 603,
+        "column": 9
+      },
+      {
+        "line": 604,
+        "column": 9
+      },
+      {
+        "line": 605,
+        "column": 9
+      },
+      {
+        "line": 605,
+        "column": 55
+      },
+      {
+        "line": 607,
+        "column": 13
+      },
+      {
+        "line": 608,
+        "column": 13
+      },
+      {
+        "line": 611,
+        "column": 13
+      },
+      {
+        "line": 612,
+        "column": 13
+      },
+      {
+        "line": 615,
+        "column": 13
+      },
+      {
+        "line": 616,
+        "column": 13
+      },
+      {
+        "line": 619,
+        "column": 13
+      },
+      {
+        "line": 619,
+        "column": 13
+      },
+      {
+        "line": 620,
+        "column": 13
+      },
+      {
+        "line": 623,
+        "column": 13
+      },
+      {
+        "line": 623,
+        "column": 13
+      },
+      {
+        "line": 624,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 610,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_LIST_ITERATOR.previous();\n    fail();\n} catch (final NoSuchElementException ex) {\n}",
+        "slice": "IteratorUtils.EMPTY_LIST_ITERATOR.reset();try {\n    IteratorUtils.EMPTY_LIST_ITERATOR.previous();\n    fail();\n} catch (final NoSuchElementException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 614,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_LIST_ITERATOR.remove();\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+        "slice": "IteratorUtils.EMPTY_LIST_ITERATOR.reset();try {\n    IteratorUtils.EMPTY_LIST_ITERATOR.remove();\n    fail();\n} catch (final IllegalStateException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 618,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.emptyListIterator().set(null);\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+        "slice": "IteratorUtils.EMPTY_LIST_ITERATOR.reset();try {\n    IteratorUtils.emptyListIterator().set(null);\n    fail();\n} catch (final IllegalStateException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 622,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.emptyListIterator().add(null);\n    fail();\n} catch (final UnsupportedOperationException ex) {\n}",
+        "slice": "IteratorUtils.EMPTY_LIST_ITERATOR.reset();try {\n    IteratorUtils.emptyListIterator().add(null);\n    fail();\n} catch (final UnsupportedOperationException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 593,
+          "column": 9
+        },
+        "assert": "assertSame(EmptyListIterator.INSTANCE, IteratorUtils.EMPTY_LIST_ITERATOR);",
+        "slice": "assertSame(EmptyListIterator.INSTANCE, IteratorUtils.EMPTY_LIST_ITERATOR);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 594,
+          "column": 9
+        },
+        "assert": "assertSame(EmptyListIterator.RESETTABLE_INSTANCE, IteratorUtils.EMPTY_LIST_ITERATOR);",
+        "slice": "assertSame(EmptyListIterator.RESETTABLE_INSTANCE, IteratorUtils.EMPTY_LIST_ITERATOR);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 595,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_LIST_ITERATOR instanceof Iterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_LIST_ITERATOR instanceof Iterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 596,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_LIST_ITERATOR instanceof ListIterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_LIST_ITERATOR instanceof ListIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 597,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_LIST_ITERATOR instanceof ResettableIterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_LIST_ITERATOR instanceof ResettableIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 598,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_LIST_ITERATOR instanceof ResettableListIterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_LIST_ITERATOR instanceof ResettableListIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 599,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_LIST_ITERATOR instanceof MapIterator);",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_LIST_ITERATOR instanceof MapIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 600,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_LIST_ITERATOR.hasNext());",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_LIST_ITERATOR.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 601,
+          "column": 9
+        },
+        "assert": "assertEquals(0, IteratorUtils.EMPTY_LIST_ITERATOR.nextIndex());",
+        "slice": "assertEquals(0, IteratorUtils.EMPTY_LIST_ITERATOR.nextIndex());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 602,
+          "column": 9
+        },
+        "assert": "assertEquals(-1, IteratorUtils.EMPTY_LIST_ITERATOR.previousIndex());",
+        "slice": "assertEquals(-1, IteratorUtils.EMPTY_LIST_ITERATOR.previousIndex());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 603,
+          "column": 9
+        },
+        "assert": "IteratorUtils.EMPTY_LIST_ITERATOR.reset();assertSame(IteratorUtils.EMPTY_LIST_ITERATOR, IteratorUtils.EMPTY_LIST_ITERATOR);",
+        "slice": "IteratorUtils.EMPTY_LIST_ITERATOR.reset();assertSame(IteratorUtils.EMPTY_LIST_ITERATOR, IteratorUtils.EMPTY_LIST_ITERATOR);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 605,
+          "column": 9
+        },
+        "assert": "assertSame(IteratorUtils.EMPTY_LIST_ITERATOR, IteratorUtils.emptyListIterator());",
+        "slice": "IteratorUtils.EMPTY_LIST_ITERATOR.reset();assertSame(IteratorUtils.EMPTY_LIST_ITERATOR, IteratorUtils.emptyListIterator());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 606,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_LIST_ITERATOR.next();\n    fail();\n} catch (final NoSuchElementException ex) {\n}",
+        "slice": "IteratorUtils.EMPTY_LIST_ITERATOR.reset();try {\n    IteratorUtils.EMPTY_LIST_ITERATOR.next();\n    fail();\n} catch (final NoSuchElementException ex) {\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testEmptyMapIterator()",
+    "annotation": "@Test",
+    "code": "assertSame(EmptyMapIterator.INSTANCE, IteratorUtils.EMPTY_MAP_ITERATOR);assertEquals(true, IteratorUtils.EMPTY_MAP_ITERATOR instanceof Iterator);assertEquals(true, IteratorUtils.EMPTY_MAP_ITERATOR instanceof MapIterator);assertEquals(true, IteratorUtils.EMPTY_MAP_ITERATOR instanceof ResettableIterator);assertEquals(false, IteratorUtils.EMPTY_MAP_ITERATOR instanceof ListIterator);assertEquals(false, IteratorUtils.EMPTY_MAP_ITERATOR instanceof OrderedIterator);assertEquals(false, IteratorUtils.EMPTY_MAP_ITERATOR instanceof OrderedMapIterator);assertEquals(false, IteratorUtils.EMPTY_MAP_ITERATOR.hasNext());((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_MAP_ITERATOR).reset();assertSame(IteratorUtils.EMPTY_MAP_ITERATOR, IteratorUtils.EMPTY_MAP_ITERATOR);assertSame(IteratorUtils.EMPTY_MAP_ITERATOR, IteratorUtils.emptyMapIterator());try {\n    IteratorUtils.EMPTY_MAP_ITERATOR.next();\n    fail();\n} catch (final NoSuchElementException ex) {\n}try {\n    IteratorUtils.EMPTY_MAP_ITERATOR.remove();\n    fail();\n} catch (final IllegalStateException ex) {\n}try {\n    IteratorUtils.EMPTY_MAP_ITERATOR.getKey();\n    fail();\n} catch (final IllegalStateException ex) {\n}try {\n    IteratorUtils.EMPTY_MAP_ITERATOR.getValue();\n    fail();\n} catch (final IllegalStateException ex) {\n}try {\n    IteratorUtils.EMPTY_MAP_ITERATOR.setValue(null);\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+    "offset": [
+      {
+        "line": 635,
+        "column": 9
+      },
+      {
+        "line": 636,
+        "column": 9
+      },
+      {
+        "line": 637,
+        "column": 9
+      },
+      {
+        "line": 638,
+        "column": 9
+      },
+      {
+        "line": 639,
+        "column": 9
+      },
+      {
+        "line": 640,
+        "column": 9
+      },
+      {
+        "line": 641,
+        "column": 9
+      },
+      {
+        "line": 642,
+        "column": 9
+      },
+      {
+        "line": 642,
+        "column": 29
+      },
+      {
+        "line": 643,
+        "column": 9
+      },
+      {
+        "line": 644,
+        "column": 9
+      },
+      {
+        "line": 645,
+        "column": 9
+      },
+      {
+        "line": 645,
+        "column": 54
+      },
+      {
+        "line": 647,
+        "column": 13
+      },
+      {
+        "line": 648,
+        "column": 13
+      },
+      {
+        "line": 651,
+        "column": 13
+      },
+      {
+        "line": 652,
+        "column": 13
+      },
+      {
+        "line": 655,
+        "column": 13
+      },
+      {
+        "line": 656,
+        "column": 13
+      },
+      {
+        "line": 659,
+        "column": 13
+      },
+      {
+        "line": 660,
+        "column": 13
+      },
+      {
+        "line": 663,
+        "column": 13
+      },
+      {
+        "line": 664,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 640,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_MAP_ITERATOR instanceof OrderedIterator);",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_MAP_ITERATOR instanceof OrderedIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 641,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_MAP_ITERATOR instanceof OrderedMapIterator);",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_MAP_ITERATOR instanceof OrderedMapIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 642,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_MAP_ITERATOR.hasNext());",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_MAP_ITERATOR.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 643,
+          "column": 9
+        },
+        "assert": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_MAP_ITERATOR).reset();assertSame(IteratorUtils.EMPTY_MAP_ITERATOR, IteratorUtils.EMPTY_MAP_ITERATOR);",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_MAP_ITERATOR).reset();assertSame(IteratorUtils.EMPTY_MAP_ITERATOR, IteratorUtils.EMPTY_MAP_ITERATOR);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 645,
+          "column": 9
+        },
+        "assert": "assertSame(IteratorUtils.EMPTY_MAP_ITERATOR, IteratorUtils.emptyMapIterator());",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_MAP_ITERATOR).reset();assertSame(IteratorUtils.EMPTY_MAP_ITERATOR, IteratorUtils.emptyMapIterator());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 646,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_MAP_ITERATOR.next();\n    fail();\n} catch (final NoSuchElementException ex) {\n}",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_MAP_ITERATOR).reset();try {\n    IteratorUtils.EMPTY_MAP_ITERATOR.next();\n    fail();\n} catch (final NoSuchElementException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 650,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_MAP_ITERATOR.remove();\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_MAP_ITERATOR).reset();try {\n    IteratorUtils.EMPTY_MAP_ITERATOR.remove();\n    fail();\n} catch (final IllegalStateException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 654,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_MAP_ITERATOR.getKey();\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_MAP_ITERATOR).reset();try {\n    IteratorUtils.EMPTY_MAP_ITERATOR.getKey();\n    fail();\n} catch (final IllegalStateException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 658,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_MAP_ITERATOR.getValue();\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_MAP_ITERATOR).reset();try {\n    IteratorUtils.EMPTY_MAP_ITERATOR.getValue();\n    fail();\n} catch (final IllegalStateException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 662,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_MAP_ITERATOR.setValue(null);\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_MAP_ITERATOR).reset();try {\n    IteratorUtils.EMPTY_MAP_ITERATOR.setValue(null);\n    fail();\n} catch (final IllegalStateException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 635,
+          "column": 9
+        },
+        "assert": "assertSame(EmptyMapIterator.INSTANCE, IteratorUtils.EMPTY_MAP_ITERATOR);",
+        "slice": "assertSame(EmptyMapIterator.INSTANCE, IteratorUtils.EMPTY_MAP_ITERATOR);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 636,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_MAP_ITERATOR instanceof Iterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_MAP_ITERATOR instanceof Iterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 637,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_MAP_ITERATOR instanceof MapIterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_MAP_ITERATOR instanceof MapIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 638,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_MAP_ITERATOR instanceof ResettableIterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_MAP_ITERATOR instanceof ResettableIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 639,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_MAP_ITERATOR instanceof ListIterator);",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_MAP_ITERATOR instanceof ListIterator);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testEmptyOrderedIterator()",
+    "annotation": "@Test",
+    "code": "assertSame(EmptyOrderedIterator.INSTANCE, IteratorUtils.EMPTY_ORDERED_ITERATOR);assertEquals(true, IteratorUtils.EMPTY_ORDERED_ITERATOR instanceof Iterator);assertEquals(true, IteratorUtils.EMPTY_ORDERED_ITERATOR instanceof OrderedIterator);assertEquals(true, IteratorUtils.EMPTY_ORDERED_ITERATOR instanceof ResettableIterator);assertEquals(false, IteratorUtils.EMPTY_ORDERED_ITERATOR instanceof ListIterator);assertEquals(false, IteratorUtils.EMPTY_ORDERED_ITERATOR instanceof MapIterator);assertEquals(false, IteratorUtils.EMPTY_ORDERED_ITERATOR.hasNext());assertEquals(false, IteratorUtils.EMPTY_ORDERED_ITERATOR.hasPrevious());((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_ITERATOR).reset();assertSame(IteratorUtils.EMPTY_ORDERED_ITERATOR, IteratorUtils.EMPTY_ORDERED_ITERATOR);assertSame(IteratorUtils.EMPTY_ORDERED_ITERATOR, IteratorUtils.emptyOrderedIterator());try {\n    IteratorUtils.EMPTY_ORDERED_ITERATOR.next();\n    fail();\n} catch (final NoSuchElementException ex) {\n}try {\n    IteratorUtils.EMPTY_ORDERED_ITERATOR.previous();\n    fail();\n} catch (final NoSuchElementException ex) {\n}try {\n    IteratorUtils.EMPTY_ORDERED_ITERATOR.remove();\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+    "offset": [
+      {
+        "line": 675,
+        "column": 9
+      },
+      {
+        "line": 676,
+        "column": 9
+      },
+      {
+        "line": 677,
+        "column": 9
+      },
+      {
+        "line": 678,
+        "column": 9
+      },
+      {
+        "line": 679,
+        "column": 9
+      },
+      {
+        "line": 680,
+        "column": 9
+      },
+      {
+        "line": 681,
+        "column": 9
+      },
+      {
+        "line": 681,
+        "column": 29
+      },
+      {
+        "line": 682,
+        "column": 9
+      },
+      {
+        "line": 682,
+        "column": 29
+      },
+      {
+        "line": 683,
+        "column": 9
+      },
+      {
+        "line": 684,
+        "column": 9
+      },
+      {
+        "line": 685,
+        "column": 9
+      },
+      {
+        "line": 685,
+        "column": 58
+      },
+      {
+        "line": 687,
+        "column": 13
+      },
+      {
+        "line": 688,
+        "column": 13
+      },
+      {
+        "line": 691,
+        "column": 13
+      },
+      {
+        "line": 692,
+        "column": 13
+      },
+      {
+        "line": 695,
+        "column": 13
+      },
+      {
+        "line": 696,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 675,
+          "column": 9
+        },
+        "assert": "assertSame(EmptyOrderedIterator.INSTANCE, IteratorUtils.EMPTY_ORDERED_ITERATOR);",
+        "slice": "assertSame(EmptyOrderedIterator.INSTANCE, IteratorUtils.EMPTY_ORDERED_ITERATOR);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 676,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_ORDERED_ITERATOR instanceof Iterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_ORDERED_ITERATOR instanceof Iterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 677,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_ORDERED_ITERATOR instanceof OrderedIterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_ORDERED_ITERATOR instanceof OrderedIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 678,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_ORDERED_ITERATOR instanceof ResettableIterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_ORDERED_ITERATOR instanceof ResettableIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 679,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_ORDERED_ITERATOR instanceof ListIterator);",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_ORDERED_ITERATOR instanceof ListIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 680,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_ORDERED_ITERATOR instanceof MapIterator);",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_ORDERED_ITERATOR instanceof MapIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 681,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_ORDERED_ITERATOR.hasNext());",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_ORDERED_ITERATOR.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 682,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_ORDERED_ITERATOR.hasPrevious());",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_ORDERED_ITERATOR.hasPrevious());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 683,
+          "column": 9
+        },
+        "assert": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_ITERATOR).reset();assertSame(IteratorUtils.EMPTY_ORDERED_ITERATOR, IteratorUtils.EMPTY_ORDERED_ITERATOR);",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_ITERATOR).reset();assertSame(IteratorUtils.EMPTY_ORDERED_ITERATOR, IteratorUtils.EMPTY_ORDERED_ITERATOR);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 685,
+          "column": 9
+        },
+        "assert": "assertSame(IteratorUtils.EMPTY_ORDERED_ITERATOR, IteratorUtils.emptyOrderedIterator());",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_ITERATOR).reset();assertSame(IteratorUtils.EMPTY_ORDERED_ITERATOR, IteratorUtils.emptyOrderedIterator());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 686,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_ORDERED_ITERATOR.next();\n    fail();\n} catch (final NoSuchElementException ex) {\n}",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_ITERATOR).reset();try {\n    IteratorUtils.EMPTY_ORDERED_ITERATOR.next();\n    fail();\n} catch (final NoSuchElementException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 690,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_ORDERED_ITERATOR.previous();\n    fail();\n} catch (final NoSuchElementException ex) {\n}",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_ITERATOR).reset();try {\n    IteratorUtils.EMPTY_ORDERED_ITERATOR.previous();\n    fail();\n} catch (final NoSuchElementException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 694,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_ORDERED_ITERATOR.remove();\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_ITERATOR).reset();try {\n    IteratorUtils.EMPTY_ORDERED_ITERATOR.remove();\n    fail();\n} catch (final IllegalStateException ex) {\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testEmptyOrderedMapIterator()",
+    "annotation": "@Test",
+    "code": "assertSame(EmptyOrderedMapIterator.INSTANCE, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR);assertEquals(true, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR instanceof Iterator);assertEquals(true, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR instanceof MapIterator);assertEquals(true, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR instanceof OrderedMapIterator);assertEquals(true, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR instanceof ResettableIterator);assertEquals(false, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR instanceof ListIterator);assertEquals(false, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.hasNext());assertEquals(false, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.hasPrevious());((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR).reset();assertSame(IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR);assertSame(IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR, IteratorUtils.emptyOrderedMapIterator());try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.next();\n    fail();\n} catch (final NoSuchElementException ex) {\n}try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.previous();\n    fail();\n} catch (final NoSuchElementException ex) {\n}try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.remove();\n    fail();\n} catch (final IllegalStateException ex) {\n}try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.getKey();\n    fail();\n} catch (final IllegalStateException ex) {\n}try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.getValue();\n    fail();\n} catch (final IllegalStateException ex) {\n}try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.setValue(null);\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+    "offset": [
+      {
+        "line": 707,
+        "column": 9
+      },
+      {
+        "line": 708,
+        "column": 9
+      },
+      {
+        "line": 709,
+        "column": 9
+      },
+      {
+        "line": 710,
+        "column": 9
+      },
+      {
+        "line": 711,
+        "column": 9
+      },
+      {
+        "line": 712,
+        "column": 9
+      },
+      {
+        "line": 713,
+        "column": 9
+      },
+      {
+        "line": 713,
+        "column": 29
+      },
+      {
+        "line": 714,
+        "column": 9
+      },
+      {
+        "line": 714,
+        "column": 29
+      },
+      {
+        "line": 715,
+        "column": 9
+      },
+      {
+        "line": 716,
+        "column": 9
+      },
+      {
+        "line": 717,
+        "column": 9
+      },
+      {
+        "line": 717,
+        "column": 62
+      },
+      {
+        "line": 719,
+        "column": 13
+      },
+      {
+        "line": 720,
+        "column": 13
+      },
+      {
+        "line": 723,
+        "column": 13
+      },
+      {
+        "line": 724,
+        "column": 13
+      },
+      {
+        "line": 727,
+        "column": 13
+      },
+      {
+        "line": 728,
+        "column": 13
+      },
+      {
+        "line": 731,
+        "column": 13
+      },
+      {
+        "line": 732,
+        "column": 13
+      },
+      {
+        "line": 735,
+        "column": 13
+      },
+      {
+        "line": 736,
+        "column": 13
+      },
+      {
+        "line": 739,
+        "column": 13
+      },
+      {
+        "line": 740,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 738,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.setValue(null);\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR).reset();try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.setValue(null);\n    fail();\n} catch (final IllegalStateException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 707,
+          "column": 9
+        },
+        "assert": "assertSame(EmptyOrderedMapIterator.INSTANCE, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR);",
+        "slice": "assertSame(EmptyOrderedMapIterator.INSTANCE, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 708,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR instanceof Iterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR instanceof Iterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 709,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR instanceof MapIterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR instanceof MapIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 710,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR instanceof OrderedMapIterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR instanceof OrderedMapIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 711,
+          "column": 9
+        },
+        "assert": "assertEquals(true, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR instanceof ResettableIterator);",
+        "slice": "assertEquals(true, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR instanceof ResettableIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 712,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR instanceof ListIterator);",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR instanceof ListIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 713,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.hasNext());",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 714,
+          "column": 9
+        },
+        "assert": "assertEquals(false, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.hasPrevious());",
+        "slice": "assertEquals(false, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.hasPrevious());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 715,
+          "column": 9
+        },
+        "assert": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR).reset();assertSame(IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR);",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR).reset();assertSame(IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR, IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 717,
+          "column": 9
+        },
+        "assert": "assertSame(IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR, IteratorUtils.emptyOrderedMapIterator());",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR).reset();assertSame(IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR, IteratorUtils.emptyOrderedMapIterator());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 718,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.next();\n    fail();\n} catch (final NoSuchElementException ex) {\n}",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR).reset();try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.next();\n    fail();\n} catch (final NoSuchElementException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 722,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.previous();\n    fail();\n} catch (final NoSuchElementException ex) {\n}",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR).reset();try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.previous();\n    fail();\n} catch (final NoSuchElementException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 726,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.remove();\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR).reset();try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.remove();\n    fail();\n} catch (final IllegalStateException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 730,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.getKey();\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR).reset();try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.getKey();\n    fail();\n} catch (final IllegalStateException ex) {\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 734,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.getValue();\n    fail();\n} catch (final IllegalStateException ex) {\n}",
+        "slice": "((ResettableIterator\u003cObject\u003e) IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR).reset();try {\n    IteratorUtils.EMPTY_ORDERED_MAP_ITERATOR.getValue();\n    fail();\n} catch (final IllegalStateException ex) {\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testFind()",
+    "annotation": "@Test",
+    "code": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);Integer test \u003d IteratorUtils.find(iterableA.iterator(), testPredicate);assertTrue(test.equals(4));testPredicate \u003d equalPredicate((Number) 45);test \u003d IteratorUtils.find(iterableA.iterator(), testPredicate);assertTrue(test \u003d\u003d null);assertNull(IteratorUtils.find(null, testPredicate));try {\n    assertNull(IteratorUtils.find(iterableA.iterator(), null));\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 746,
+        "column": 43
+      },
+      {
+        "line": 747,
+        "column": 24
+      },
+      {
+        "line": 747,
+        "column": 43
+      },
+      {
+        "line": 748,
+        "column": 9
+      },
+      {
+        "line": 748,
+        "column": 20
+      },
+      {
+        "line": 749,
+        "column": 25
+      },
+      {
+        "line": 750,
+        "column": 16
+      },
+      {
+        "line": 750,
+        "column": 35
+      },
+      {
+        "line": 751,
+        "column": 9
+      },
+      {
+        "line": 752,
+        "column": 9
+      },
+      {
+        "line": 752,
+        "column": 20
+      },
+      {
+        "line": 754,
+        "column": 13
+      },
+      {
+        "line": 754,
+        "column": 24
+      },
+      {
+        "line": 754,
+        "column": 43
+      },
+      {
+        "line": 755,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 752,
+          "column": 9
+        },
+        "assert": "assertNull(IteratorUtils.find(null, testPredicate));",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);Integer test \u003d IteratorUtils.find(iterableA.iterator(), testPredicate);testPredicate \u003d equalPredicate((Number) 45);test \u003d IteratorUtils.find(iterableA.iterator(), testPredicate);assertNull(IteratorUtils.find(null, testPredicate));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 753,
+          "column": 9
+        },
+        "assert": "try {\n    assertNull(IteratorUtils.find(iterableA.iterator(), null));\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);Integer test \u003d IteratorUtils.find(iterableA.iterator(), testPredicate);testPredicate \u003d equalPredicate((Number) 45);test \u003d IteratorUtils.find(iterableA.iterator(), testPredicate);try {\n    assertNull(IteratorUtils.find(iterableA.iterator(), null));\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 746,
+          "column": 9
+        },
+        "assert": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);Integer test \u003d IteratorUtils.find(iterableA.iterator(), testPredicate);assertTrue(test.equals(4));",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);Integer test \u003d IteratorUtils.find(iterableA.iterator(), testPredicate);assertTrue(test.equals(4));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 749,
+          "column": 9
+        },
+        "assert": "testPredicate \u003d equalPredicate((Number) 45);test \u003d IteratorUtils.find(iterableA.iterator(), testPredicate);assertTrue(test \u003d\u003d null);",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);Integer test \u003d IteratorUtils.find(iterableA.iterator(), testPredicate);testPredicate \u003d equalPredicate((Number) 45);test \u003d IteratorUtils.find(iterableA.iterator(), testPredicate);assertTrue(test \u003d\u003d null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testFirstFromIterator()",
+    "annotation": "@Test",
+    "code": "// Iterator, entry exists\nfinal Iterator\u003cInteger\u003e iterator \u003d iterableA.iterator();assertEquals(1, (int) IteratorUtils.first(iterator));",
+    "offset": [
+      {
+        "line": 764,
+        "column": 44
+      },
+      {
+        "line": 765,
+        "column": 9
+      },
+      {
+        "line": 765,
+        "column": 31
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 764,
+          "column": 9
+        },
+        "assert": "// Iterator, entry exists\nfinal Iterator\u003cInteger\u003e iterator \u003d iterableA.iterator();assertEquals(1, (int) IteratorUtils.first(iterator));",
+        "slice": "// Iterator, entry exists\nfinal Iterator\u003cInteger\u003e iterator \u003d iterableA.iterator();assertEquals(1, (int) IteratorUtils.first(iterator));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testForEach()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);IteratorUtils.forEach(col.iterator(), testClosure);assertTrue(listA.isEmpty() \u0026\u0026 listB.isEmpty());try {\n    IteratorUtils.forEach(col.iterator(), null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}IteratorUtils.forEach(null, testClosure);// null should be OK\ncol.add(null);IteratorUtils.forEach(col.iterator(), testClosure);",
+    "offset": [
+      {
+        "line": 771,
+        "column": 37
+      },
+      {
+        "line": 772,
+        "column": 9
+      },
+      {
+        "line": 774,
+        "column": 37
+      },
+      {
+        "line": 775,
+        "column": 9
+      },
+      {
+        "line": 777,
+        "column": 52
+      },
+      {
+        "line": 778,
+        "column": 47
+      },
+      {
+        "line": 779,
+        "column": 9
+      },
+      {
+        "line": 780,
+        "column": 9
+      },
+      {
+        "line": 781,
+        "column": 9
+      },
+      {
+        "line": 781,
+        "column": 31
+      },
+      {
+        "line": 782,
+        "column": 9
+      },
+      {
+        "line": 782,
+        "column": 20
+      },
+      {
+        "line": 782,
+        "column": 39
+      },
+      {
+        "line": 784,
+        "column": 13
+      },
+      {
+        "line": 784,
+        "column": 35
+      },
+      {
+        "line": 785,
+        "column": 13
+      },
+      {
+        "line": 790,
+        "column": 9
+      },
+      {
+        "line": 793,
+        "column": 9
+      },
+      {
+        "line": 794,
+        "column": 9
+      },
+      {
+        "line": 794,
+        "column": 31
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 771,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);IteratorUtils.forEach(col.iterator(), testClosure);assertTrue(listA.isEmpty() \u0026\u0026 listB.isEmpty());",
+        "slice": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);IteratorUtils.forEach(col.iterator(), testClosure);assertTrue(listA.isEmpty() \u0026\u0026 listB.isEmpty());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 790,
+          "column": 9
+        },
+        "assert": "IteratorUtils.forEach(null, testClosure);// null should be OK\ncol.add(null);IteratorUtils.forEach(col.iterator(), testClosure);",
+        "slice": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);IteratorUtils.forEach(col.iterator(), testClosure);IteratorUtils.forEach(null, testClosure);// null should be OK\ncol.add(null);IteratorUtils.forEach(col.iterator(), testClosure);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 783,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.forEach(col.iterator(), null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);IteratorUtils.forEach(col.iterator(), testClosure);try {\n    IteratorUtils.forEach(col.iterator(), null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testForEachButLast()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);List\u003cInteger\u003e last \u003d IteratorUtils.forEachButLast(col.iterator(), testClosure);assertTrue(listA.isEmpty() \u0026\u0026 !listB.isEmpty());assertSame(listB, last);try {\n    IteratorUtils.forEachButLast(col.iterator(), null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}IteratorUtils.forEachButLast(null, testClosure);// null should be OK\ncol.add(null);col.add(null);last \u003d IteratorUtils.forEachButLast(col.iterator(), testClosure);assertNull(last);",
+    "offset": [
+      {
+        "line": 799,
+        "column": 37
+      },
+      {
+        "line": 800,
+        "column": 9
+      },
+      {
+        "line": 802,
+        "column": 37
+      },
+      {
+        "line": 803,
+        "column": 9
+      },
+      {
+        "line": 805,
+        "column": 52
+      },
+      {
+        "line": 806,
+        "column": 47
+      },
+      {
+        "line": 807,
+        "column": 9
+      },
+      {
+        "line": 808,
+        "column": 9
+      },
+      {
+        "line": 809,
+        "column": 30
+      },
+      {
+        "line": 809,
+        "column": 59
+      },
+      {
+        "line": 810,
+        "column": 9
+      },
+      {
+        "line": 810,
+        "column": 20
+      },
+      {
+        "line": 810,
+        "column": 40
+      },
+      {
+        "line": 811,
+        "column": 9
+      },
+      {
+        "line": 814,
+        "column": 13
+      },
+      {
+        "line": 814,
+        "column": 42
+      },
+      {
+        "line": 815,
+        "column": 13
+      },
+      {
+        "line": 820,
+        "column": 9
+      },
+      {
+        "line": 823,
+        "column": 9
+      },
+      {
+        "line": 824,
+        "column": 9
+      },
+      {
+        "line": 825,
+        "column": 16
+      },
+      {
+        "line": 825,
+        "column": 45
+      },
+      {
+        "line": 826,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 820,
+          "column": 9
+        },
+        "assert": "IteratorUtils.forEachButLast(null, testClosure);// null should be OK\ncol.add(null);col.add(null);last \u003d IteratorUtils.forEachButLast(col.iterator(), testClosure);assertNull(last);",
+        "slice": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);List\u003cInteger\u003e last \u003d IteratorUtils.forEachButLast(col.iterator(), testClosure);IteratorUtils.forEachButLast(null, testClosure);// null should be OK\ncol.add(null);col.add(null);last \u003d IteratorUtils.forEachButLast(col.iterator(), testClosure);assertNull(last);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 811,
+          "column": 9
+        },
+        "assert": "assertSame(listB, last);",
+        "slice": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);List\u003cInteger\u003e last \u003d IteratorUtils.forEachButLast(col.iterator(), testClosure);assertSame(listB, last);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 813,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.forEachButLast(col.iterator(), null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);List\u003cInteger\u003e last \u003d IteratorUtils.forEachButLast(col.iterator(), testClosure);try {\n    IteratorUtils.forEachButLast(col.iterator(), null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 799,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);List\u003cInteger\u003e last \u003d IteratorUtils.forEachButLast(col.iterator(), testClosure);assertTrue(listA.isEmpty() \u0026\u0026 !listB.isEmpty());",
+        "slice": "final List\u003cInteger\u003e listA \u003d new ArrayList\u003c\u003e();listA.add(1);final List\u003cInteger\u003e listB \u003d new ArrayList\u003c\u003e();listB.add(2);final Closure\u003cList\u003cInteger\u003e\u003e testClosure \u003d ClosureUtils.invokerClosure(\"clear\");final Collection\u003cList\u003cInteger\u003e\u003e col \u003d new ArrayList\u003c\u003e();col.add(listA);col.add(listB);List\u003cInteger\u003e last \u003d IteratorUtils.forEachButLast(col.iterator(), testClosure);assertTrue(listA.isEmpty() \u0026\u0026 !listB.isEmpty());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testGetAtIndexFromIterator()",
+    "annotation": "@Test",
+    "code": "// Iterator, entry exists\nIterator\u003cInteger\u003e iterator \u003d iterableA.iterator();assertEquals(1, (int) IteratorUtils.get(iterator, 0));iterator \u003d iterableA.iterator();assertEquals(2, (int) IteratorUtils.get(iterator, 1));// Iterator, non-existent entry\ntry {\n    IteratorUtils.get(iterator, 10);\n    fail(\"Expecting IndexOutOfBoundsException.\");\n} catch (final IndexOutOfBoundsException e) {\n    // expected\n}assertTrue(!iterator.hasNext());",
+    "offset": [
+      {
+        "line": 832,
+        "column": 38
+      },
+      {
+        "line": 833,
+        "column": 9
+      },
+      {
+        "line": 833,
+        "column": 31
+      },
+      {
+        "line": 834,
+        "column": 20
+      },
+      {
+        "line": 835,
+        "column": 9
+      },
+      {
+        "line": 835,
+        "column": 31
+      },
+      {
+        "line": 839,
+        "column": 13
+      },
+      {
+        "line": 840,
+        "column": 13
+      },
+      {
+        "line": 844,
+        "column": 9
+      },
+      {
+        "line": 844,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 832,
+          "column": 9
+        },
+        "assert": "// Iterator, entry exists\nIterator\u003cInteger\u003e iterator \u003d iterableA.iterator();assertEquals(1, (int) IteratorUtils.get(iterator, 0));",
+        "slice": "// Iterator, entry exists\nIterator\u003cInteger\u003e iterator \u003d iterableA.iterator();assertEquals(1, (int) IteratorUtils.get(iterator, 0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 834,
+          "column": 9
+        },
+        "assert": "iterator \u003d iterableA.iterator();assertEquals(2, (int) IteratorUtils.get(iterator, 1));",
+        "slice": "// Iterator, entry exists\nIterator\u003cInteger\u003e iterator \u003d iterableA.iterator();iterator \u003d iterableA.iterator();assertEquals(2, (int) IteratorUtils.get(iterator, 1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 838,
+          "column": 9
+        },
+        "assert": "// Iterator, non-existent entry\ntry {\n    IteratorUtils.get(iterator, 10);\n    fail(\"Expecting IndexOutOfBoundsException.\");\n} catch (final IndexOutOfBoundsException e) {\n    // expected\n}",
+        "slice": "// Iterator, entry exists\nIterator\u003cInteger\u003e iterator \u003d iterableA.iterator();iterator \u003d iterableA.iterator();// Iterator, non-existent entry\ntry {\n    IteratorUtils.get(iterator, 10);\n    fail(\"Expecting IndexOutOfBoundsException.\");\n} catch (final IndexOutOfBoundsException e) {\n    // expected\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 844,
+          "column": 9
+        },
+        "assert": "assertTrue(!iterator.hasNext());",
+        "slice": "// Iterator, entry exists\nIterator\u003cInteger\u003e iterator \u003d iterableA.iterator();iterator \u003d iterableA.iterator();assertTrue(!iterator.hasNext());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testGetIterator()",
+    "annotation": "@Test",
+    "code": "final Object[] objArray \u003d { \"a\", \"b\", \"c\" };final Map\u003cString, String\u003e inMap \u003d new HashMap\u003c\u003e();final Node[] nodes \u003d createNodes();final NodeList nodeList \u003d createNodeList(nodes);assertTrue(\"returns empty iterator when null passed\", IteratorUtils.getIterator(null) instanceof EmptyIterator);assertTrue(\"returns Iterator when Iterator directly \", IteratorUtils.getIterator(iterableA.iterator()) instanceof Iterator);assertTrue(\"returns Iterator when iterable passed\", IteratorUtils.getIterator(iterableA) instanceof Iterator);assertTrue(\"returns ObjectArrayIterator when Object array passed\", IteratorUtils.getIterator(objArray) instanceof ObjectArrayIterator);assertTrue(\"returns Iterator when Map passed\", IteratorUtils.getIterator(inMap) instanceof Iterator);assertTrue(\"returns NodeListIterator when nodeList passed\", IteratorUtils.getIterator(nodeList) instanceof NodeListIterator);assertTrue(\"returns EnumerationIterator when Enumeration passed\", IteratorUtils.getIterator(new Vector().elements()) instanceof EnumerationIterator);",
+    "offset": [
+      {
+        "line": 849,
+        "column": 43
+      },
+      {
+        "line": 850,
+        "column": 30
+      },
+      {
+        "line": 851,
+        "column": 35
+      },
+      {
+        "line": 853,
+        "column": 9
+      },
+      {
+        "line": 853,
+        "column": 63
+      },
+      {
+        "line": 854,
+        "column": 9
+      },
+      {
+        "line": 854,
+        "column": 64
+      },
+      {
+        "line": 854,
+        "column": 90
+      },
+      {
+        "line": 855,
+        "column": 9
+      },
+      {
+        "line": 855,
+        "column": 61
+      },
+      {
+        "line": 856,
+        "column": 9
+      },
+      {
+        "line": 856,
+        "column": 76
+      },
+      {
+        "line": 857,
+        "column": 9
+      },
+      {
+        "line": 857,
+        "column": 56
+      },
+      {
+        "line": 858,
+        "column": 9
+      },
+      {
+        "line": 858,
+        "column": 69
+      },
+      {
+        "line": 859,
+        "column": 9
+      },
+      {
+        "line": 859,
+        "column": 75
+      },
+      {
+        "line": 859,
+        "column": 101
+      },
+      {
+        "line": 859,
+        "column": 101
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 848,
+          "column": 6
+        },
+        "assert": "final Object[] objArray \u003d { \"a\", \"b\", \"c\" };final Map\u003cString, String\u003e inMap \u003d new HashMap\u003c\u003e();final Node[] nodes \u003d createNodes();final NodeList nodeList \u003d createNodeList(nodes);assertTrue(\"returns empty iterator when null passed\", IteratorUtils.getIterator(null) instanceof EmptyIterator);",
+        "slice": "final Object[] objArray \u003d { \"a\", \"b\", \"c\" };final Map\u003cString, String\u003e inMap \u003d new HashMap\u003c\u003e();final Node[] nodes \u003d createNodes();final NodeList nodeList \u003d createNodeList(nodes);assertTrue(\"returns empty iterator when null passed\", IteratorUtils.getIterator(null) instanceof EmptyIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 854,
+          "column": 9
+        },
+        "assert": "assertTrue(\"returns Iterator when Iterator directly \", IteratorUtils.getIterator(iterableA.iterator()) instanceof Iterator);",
+        "slice": "assertTrue(\"returns Iterator when Iterator directly \", IteratorUtils.getIterator(iterableA.iterator()) instanceof Iterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 855,
+          "column": 9
+        },
+        "assert": "assertTrue(\"returns Iterator when iterable passed\", IteratorUtils.getIterator(iterableA) instanceof Iterator);",
+        "slice": "assertTrue(\"returns Iterator when iterable passed\", IteratorUtils.getIterator(iterableA) instanceof Iterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 856,
+          "column": 9
+        },
+        "assert": "assertTrue(\"returns ObjectArrayIterator when Object array passed\", IteratorUtils.getIterator(objArray) instanceof ObjectArrayIterator);",
+        "slice": "final Object[] objArray \u003d { \"a\", \"b\", \"c\" };assertTrue(\"returns ObjectArrayIterator when Object array passed\", IteratorUtils.getIterator(objArray) instanceof ObjectArrayIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 857,
+          "column": 9
+        },
+        "assert": "assertTrue(\"returns Iterator when Map passed\", IteratorUtils.getIterator(inMap) instanceof Iterator);",
+        "slice": "final Map\u003cString, String\u003e inMap \u003d new HashMap\u003c\u003e();assertTrue(\"returns Iterator when Map passed\", IteratorUtils.getIterator(inMap) instanceof Iterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 858,
+          "column": 9
+        },
+        "assert": "assertTrue(\"returns NodeListIterator when nodeList passed\", IteratorUtils.getIterator(nodeList) instanceof NodeListIterator);",
+        "slice": "final Node[] nodes \u003d createNodes();final NodeList nodeList \u003d createNodeList(nodes);assertTrue(\"returns NodeListIterator when nodeList passed\", IteratorUtils.getIterator(nodeList) instanceof NodeListIterator);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 859,
+          "column": 9
+        },
+        "assert": "assertTrue(\"returns EnumerationIterator when Enumeration passed\", IteratorUtils.getIterator(new Vector().elements()) instanceof EnumerationIterator);",
+        "slice": "assertTrue(\"returns EnumerationIterator when Enumeration passed\", IteratorUtils.getIterator(new Vector().elements()) instanceof EnumerationIterator);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testIndexOf()",
+    "annotation": "@Test",
+    "code": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);int index \u003d IteratorUtils.indexOf(iterableA.iterator(), testPredicate);assertEquals(6, index);testPredicate \u003d equalPredicate((Number) 45);index \u003d IteratorUtils.indexOf(iterableA.iterator(), testPredicate);assertEquals(-1, index);assertEquals(-1, IteratorUtils.indexOf(null, testPredicate));try {\n    IteratorUtils.indexOf(iterableA.iterator(), null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+    "offset": [
+      {
+        "line": 865,
+        "column": 43
+      },
+      {
+        "line": 866,
+        "column": 21
+      },
+      {
+        "line": 866,
+        "column": 43
+      },
+      {
+        "line": 867,
+        "column": 9
+      },
+      {
+        "line": 868,
+        "column": 25
+      },
+      {
+        "line": 869,
+        "column": 17
+      },
+      {
+        "line": 869,
+        "column": 39
+      },
+      {
+        "line": 870,
+        "column": 9
+      },
+      {
+        "line": 871,
+        "column": 9
+      },
+      {
+        "line": 871,
+        "column": 26
+      },
+      {
+        "line": 873,
+        "column": 13
+      },
+      {
+        "line": 873,
+        "column": 35
+      },
+      {
+        "line": 874,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 865,
+          "column": 9
+        },
+        "assert": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);int index \u003d IteratorUtils.indexOf(iterableA.iterator(), testPredicate);assertEquals(6, index);",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);int index \u003d IteratorUtils.indexOf(iterableA.iterator(), testPredicate);assertEquals(6, index);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 868,
+          "column": 9
+        },
+        "assert": "testPredicate \u003d equalPredicate((Number) 45);index \u003d IteratorUtils.indexOf(iterableA.iterator(), testPredicate);assertEquals(-1, index);",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);int index \u003d IteratorUtils.indexOf(iterableA.iterator(), testPredicate);testPredicate \u003d equalPredicate((Number) 45);index \u003d IteratorUtils.indexOf(iterableA.iterator(), testPredicate);assertEquals(-1, index);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 871,
+          "column": 9
+        },
+        "assert": "assertEquals(-1, IteratorUtils.indexOf(null, testPredicate));",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);int index \u003d IteratorUtils.indexOf(iterableA.iterator(), testPredicate);testPredicate \u003d equalPredicate((Number) 45);index \u003d IteratorUtils.indexOf(iterableA.iterator(), testPredicate);assertEquals(-1, IteratorUtils.indexOf(null, testPredicate));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 872,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.indexOf(iterableA.iterator(), null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}",
+        "slice": "Predicate\u003cNumber\u003e testPredicate \u003d equalPredicate((Number) 4);int index \u003d IteratorUtils.indexOf(iterableA.iterator(), testPredicate);testPredicate \u003d equalPredicate((Number) 45);index \u003d IteratorUtils.indexOf(iterableA.iterator(), testPredicate);try {\n    IteratorUtils.indexOf(iterableA.iterator(), null);\n    fail(\"expecting NullPointerException\");\n} catch (final NullPointerException npe) {\n    // expected\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testNodeIterator()",
+    "annotation": "@Test",
+    "code": "final Node[] nodes \u003d createNodes();final NodeList nodeList \u003d createNodeList(nodes);final Node parentNode \u003d createMock(Node.class);expect(parentNode.getChildNodes()).andStubReturn(nodeList);replay(parentNode);final Iterator\u003cNode\u003e iterator \u003d IteratorUtils.nodeListIterator(parentNode);int expectedNodeIndex \u003d 0;for (final Node actual : IteratorUtils.asIterable(iterator)) {\n    assertEquals(nodes[expectedNodeIndex], actual);\n    ++expectedNodeIndex;\n}// insure iteration occurred\nassertTrue(expectedNodeIndex \u003e 0);// single use iterator\nassertFalse(\"should not be able to iterate twice\", IteratorUtils.asIterable(iterator).iterator().hasNext());",
+    "offset": [
+      {
+        "line": 885,
+        "column": 30
+      },
+      {
+        "line": 886,
+        "column": 35
+      },
+      {
+        "line": 887,
+        "column": 33
+      },
+      {
+        "line": 888,
+        "column": 9
+      },
+      {
+        "line": 888,
+        "column": 9
+      },
+      {
+        "line": 888,
+        "column": 16
+      },
+      {
+        "line": 889,
+        "column": 9
+      },
+      {
+        "line": 891,
+        "column": 41
+      },
+      {
+        "line": 893,
+        "column": 34
+      },
+      {
+        "line": 894,
+        "column": 13
+      },
+      {
+        "line": 899,
+        "column": 9
+      },
+      {
+        "line": 902,
+        "column": 9
+      },
+      {
+        "line": 902,
+        "column": 60
+      },
+      {
+        "line": 902,
+        "column": 60
+      },
+      {
+        "line": 902,
+        "column": 60
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 899,
+          "column": 9
+        },
+        "assert": "// insure iteration occurred\nassertTrue(expectedNodeIndex \u003e 0);",
+        "slice": "int expectedNodeIndex \u003d 0;// insure iteration occurred\nassertTrue(expectedNodeIndex \u003e 0);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 885,
+          "column": 9
+        },
+        "assert": "final Node[] nodes \u003d createNodes();final NodeList nodeList \u003d createNodeList(nodes);final Node parentNode \u003d createMock(Node.class);expect(parentNode.getChildNodes()).andStubReturn(nodeList);replay(parentNode);final Iterator\u003cNode\u003e iterator \u003d IteratorUtils.nodeListIterator(parentNode);int expectedNodeIndex \u003d 0;for (final Node actual : IteratorUtils.asIterable(iterator)) {\n    assertEquals(nodes[expectedNodeIndex], actual);\n    ++expectedNodeIndex;\n}",
+        "slice": "final Node[] nodes \u003d createNodes();final NodeList nodeList \u003d createNodeList(nodes);final Node parentNode \u003d createMock(Node.class);expect(parentNode.getChildNodes()).andStubReturn(nodeList);replay(parentNode);final Iterator\u003cNode\u003e iterator \u003d IteratorUtils.nodeListIterator(parentNode);int expectedNodeIndex \u003d 0;for (final Node actual : IteratorUtils.asIterable(iterator)) {\n    assertEquals(nodes[expectedNodeIndex], actual);\n    ++expectedNodeIndex;\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 902,
+          "column": 9
+        },
+        "assert": "// single use iterator\nassertFalse(\"should not be able to iterate twice\", IteratorUtils.asIterable(iterator).iterator().hasNext());",
+        "slice": "final Node[] nodes \u003d createNodes();final NodeList nodeList \u003d createNodeList(nodes);final Node parentNode \u003d createMock(Node.class);expect(parentNode.getChildNodes()).andStubReturn(nodeList);replay(parentNode);final Iterator\u003cNode\u003e iterator \u003d IteratorUtils.nodeListIterator(parentNode);// single use iterator\nassertFalse(\"should not be able to iterate twice\", IteratorUtils.asIterable(iterator).iterator().hasNext());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testNodeListIterator()",
+    "annotation": "@Test",
+    "code": "final Node[] nodes \u003d createNodes();final NodeList nodeList \u003d createNodeList(nodes);final Iterator\u003cNode\u003e iterator \u003d IteratorUtils.nodeListIterator(nodeList);int expectedNodeIndex \u003d 0;for (final Node actual : IteratorUtils.asIterable(iterator)) {\n    assertEquals(nodes[expectedNodeIndex], actual);\n    ++expectedNodeIndex;\n}// insure iteration occurred\nassertTrue(expectedNodeIndex \u003e 0);// single use iterator\nassertFalse(\"should not be able to iterate twice\", IteratorUtils.asIterable(iterator).iterator().hasNext());",
+    "offset": [
+      {
+        "line": 910,
+        "column": 30
+      },
+      {
+        "line": 911,
+        "column": 35
+      },
+      {
+        "line": 913,
+        "column": 41
+      },
+      {
+        "line": 915,
+        "column": 34
+      },
+      {
+        "line": 916,
+        "column": 13
+      },
+      {
+        "line": 921,
+        "column": 9
+      },
+      {
+        "line": 924,
+        "column": 9
+      },
+      {
+        "line": 924,
+        "column": 60
+      },
+      {
+        "line": 924,
+        "column": 60
+      },
+      {
+        "line": 924,
+        "column": 60
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 921,
+          "column": 9
+        },
+        "assert": "// insure iteration occurred\nassertTrue(expectedNodeIndex \u003e 0);",
+        "slice": "int expectedNodeIndex \u003d 0;// insure iteration occurred\nassertTrue(expectedNodeIndex \u003e 0);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 924,
+          "column": 9
+        },
+        "assert": "// single use iterator\nassertFalse(\"should not be able to iterate twice\", IteratorUtils.asIterable(iterator).iterator().hasNext());",
+        "slice": "final Node[] nodes \u003d createNodes();final NodeList nodeList \u003d createNodeList(nodes);final Iterator\u003cNode\u003e iterator \u003d IteratorUtils.nodeListIterator(nodeList);// single use iterator\nassertFalse(\"should not be able to iterate twice\", IteratorUtils.asIterable(iterator).iterator().hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 910,
+          "column": 9
+        },
+        "assert": "final Node[] nodes \u003d createNodes();final NodeList nodeList \u003d createNodeList(nodes);final Iterator\u003cNode\u003e iterator \u003d IteratorUtils.nodeListIterator(nodeList);int expectedNodeIndex \u003d 0;for (final Node actual : IteratorUtils.asIterable(iterator)) {\n    assertEquals(nodes[expectedNodeIndex], actual);\n    ++expectedNodeIndex;\n}",
+        "slice": "final Node[] nodes \u003d createNodes();final NodeList nodeList \u003d createNodeList(nodes);final Iterator\u003cNode\u003e iterator \u003d IteratorUtils.nodeListIterator(nodeList);int expectedNodeIndex \u003d 0;for (final Node actual : IteratorUtils.asIterable(iterator)) {\n    assertEquals(nodes[expectedNodeIndex], actual);\n    ++expectedNodeIndex;\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testToArray()",
+    "annotation": "@Test",
+    "code": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(1));list.add(\"Two\");list.add(null);final Object[] result \u003d IteratorUtils.toArray(list.iterator());assertEquals(list, Arrays.asList(result));try {\n    IteratorUtils.toArray(null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}",
+    "offset": [
+      {
+        "line": 929,
+        "column": 35
+      },
+      {
+        "line": 930,
+        "column": 9
+      },
+      {
+        "line": 930,
+        "column": 18
+      },
+      {
+        "line": 931,
+        "column": 9
+      },
+      {
+        "line": 932,
+        "column": 9
+      },
+      {
+        "line": 933,
+        "column": 33
+      },
+      {
+        "line": 933,
+        "column": 55
+      },
+      {
+        "line": 934,
+        "column": 9
+      },
+      {
+        "line": 934,
+        "column": 28
+      },
+      {
+        "line": 937,
+        "column": 10
+      },
+      {
+        "line": 938,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 929,
+          "column": 9
+        },
+        "assert": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(1));list.add(\"Two\");list.add(null);final Object[] result \u003d IteratorUtils.toArray(list.iterator());assertEquals(list, Arrays.asList(result));",
+        "slice": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(1));list.add(\"Two\");list.add(null);final Object[] result \u003d IteratorUtils.toArray(list.iterator());assertEquals(list, Arrays.asList(result));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 936,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.toArray(null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}",
+        "slice": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(1));list.add(\"Two\");list.add(null);final Object[] result \u003d IteratorUtils.toArray(list.iterator());try {\n    IteratorUtils.toArray(null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testToArray2()",
+    "annotation": "@Test",
+    "code": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(\"One\");list.add(\"Two\");list.add(null);final String[] result \u003d IteratorUtils.toArray(list.iterator(), String.class);assertEquals(list, Arrays.asList(result));try {\n    IteratorUtils.toArray(list.iterator(), null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}try {\n    IteratorUtils.toArray(null, String.class);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}",
+    "offset": [
+      {
+        "line": 946,
+        "column": 35
+      },
+      {
+        "line": 947,
+        "column": 9
+      },
+      {
+        "line": 948,
+        "column": 9
+      },
+      {
+        "line": 949,
+        "column": 9
+      },
+      {
+        "line": 950,
+        "column": 33
+      },
+      {
+        "line": 950,
+        "column": 55
+      },
+      {
+        "line": 951,
+        "column": 9
+      },
+      {
+        "line": 951,
+        "column": 28
+      },
+      {
+        "line": 954,
+        "column": 10
+      },
+      {
+        "line": 954,
+        "column": 32
+      },
+      {
+        "line": 955,
+        "column": 13
+      },
+      {
+        "line": 961,
+        "column": 10
+      },
+      {
+        "line": 962,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 960,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.toArray(null, String.class);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(\"One\");list.add(\"Two\");list.add(null);final String[] result \u003d IteratorUtils.toArray(list.iterator(), String.class);try {\n    IteratorUtils.toArray(null, String.class);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 946,
+          "column": 9
+        },
+        "assert": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(\"One\");list.add(\"Two\");list.add(null);final String[] result \u003d IteratorUtils.toArray(list.iterator(), String.class);assertEquals(list, Arrays.asList(result));",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(\"One\");list.add(\"Two\");list.add(null);final String[] result \u003d IteratorUtils.toArray(list.iterator(), String.class);assertEquals(list, Arrays.asList(result));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 953,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.toArray(list.iterator(), null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}",
+        "slice": "final List\u003cString\u003e list \u003d new ArrayList\u003c\u003e();list.add(\"One\");list.add(\"Two\");list.add(null);final String[] result \u003d IteratorUtils.toArray(list.iterator(), String.class);try {\n    IteratorUtils.toArray(list.iterator(), null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testToList()",
+    "annotation": "@Test",
+    "code": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(1));list.add(\"Two\");list.add(null);final List\u003cObject\u003e result \u003d IteratorUtils.toList(list.iterator());assertEquals(list, result);",
+    "offset": [
+      {
+        "line": 970,
+        "column": 35
+      },
+      {
+        "line": 971,
+        "column": 9
+      },
+      {
+        "line": 971,
+        "column": 18
+      },
+      {
+        "line": 972,
+        "column": 9
+      },
+      {
+        "line": 973,
+        "column": 9
+      },
+      {
+        "line": 974,
+        "column": 37
+      },
+      {
+        "line": 974,
+        "column": 58
+      },
+      {
+        "line": 975,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 970,
+          "column": 9
+        },
+        "assert": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(1));list.add(\"Two\");list.add(null);final List\u003cObject\u003e result \u003d IteratorUtils.toList(list.iterator());assertEquals(list, result);",
+        "slice": "final List\u003cObject\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(1));list.add(\"Two\");list.add(null);final List\u003cObject\u003e result \u003d IteratorUtils.toList(list.iterator());assertEquals(list, result);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testToListIterator()",
+    "annotation": "@Test",
+    "code": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(0));list.add(Integer.valueOf(1));list.add(Integer.valueOf(2));final Iterator\u003cInteger\u003e iterator \u003d list.iterator();final ListIterator\u003cInteger\u003e liItr \u003d IteratorUtils.toListIterator(iterator);int expected \u003d 0;while (liItr.hasNext()) {\n    assertEquals(expected, liItr.next().intValue());\n    ++expected;\n}",
+    "offset": [
+      {
+        "line": 980,
+        "column": 36
+      },
+      {
+        "line": 981,
+        "column": 9
+      },
+      {
+        "line": 981,
+        "column": 18
+      },
+      {
+        "line": 982,
+        "column": 9
+      },
+      {
+        "line": 982,
+        "column": 18
+      },
+      {
+        "line": 983,
+        "column": 9
+      },
+      {
+        "line": 983,
+        "column": 18
+      },
+      {
+        "line": 984,
+        "column": 44
+      },
+      {
+        "line": 986,
+        "column": 45
+      },
+      {
+        "line": 988,
+        "column": 15
+      },
+      {
+        "line": 989,
+        "column": 10
+      },
+      {
+        "line": 989,
+        "column": 33
+      },
+      {
+        "line": 989,
+        "column": 33
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 980,
+          "column": 9
+        },
+        "assert": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(0));list.add(Integer.valueOf(1));list.add(Integer.valueOf(2));final Iterator\u003cInteger\u003e iterator \u003d list.iterator();final ListIterator\u003cInteger\u003e liItr \u003d IteratorUtils.toListIterator(iterator);int expected \u003d 0;while (liItr.hasNext()) {\n    assertEquals(expected, liItr.next().intValue());\n    ++expected;\n}",
+        "slice": "final List\u003cInteger\u003e list \u003d new ArrayList\u003c\u003e();list.add(Integer.valueOf(0));list.add(Integer.valueOf(1));list.add(Integer.valueOf(2));final Iterator\u003cInteger\u003e iterator \u003d list.iterator();final ListIterator\u003cInteger\u003e liItr \u003d IteratorUtils.toListIterator(iterator);int expected \u003d 0;"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testToListIteratorNull()",
+    "annotation": "@Test",
+    "code": "try {\n    IteratorUtils.toListIterator(null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}",
+    "offset": [
+      {
+        "line": 997,
+        "column": 13
+      },
+      {
+        "line": 998,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 996,
+          "column": 9
+        },
+        "assert": "try {\n    IteratorUtils.toListIterator(null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}",
+        "slice": "try {\n    IteratorUtils.toListIterator(null);\n    fail(\"Expecting NullPointerException\");\n} catch (final NullPointerException ex) {\n    // success\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testUnmodifiableIteratorImmutability()",
+    "annotation": "@Test",
+    "code": "final Iterator\u003cString\u003e iterator \u003d getImmutableIterator();try {\n    iterator.remove();\n    // We shouldn\u0027t get to here.\n    fail(\"remove() should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}iterator.next();try {\n    iterator.remove();\n    // We shouldn\u0027t get to here.\n    fail(\"remove() should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}",
+    "offset": [
+      {
+        "line": 1009,
+        "column": 43
+      },
+      {
+        "line": 1012,
+        "column": 13
+      },
+      {
+        "line": 1014,
+        "column": 13
+      },
+      {
+        "line": 1019,
+        "column": 9
+      },
+      {
+        "line": 1022,
+        "column": 13
+      },
+      {
+        "line": 1024,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 1009,
+          "column": 9
+        },
+        "assert": "final Iterator\u003cString\u003e iterator \u003d getImmutableIterator();try {\n    iterator.remove();\n    // We shouldn\u0027t get to here.\n    fail(\"remove() should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}",
+        "slice": "final Iterator\u003cString\u003e iterator \u003d getImmutableIterator();try {\n    iterator.remove();\n    // We shouldn\u0027t get to here.\n    fail(\"remove() should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1019,
+          "column": 9
+        },
+        "assert": "iterator.next();try {\n    iterator.remove();\n    // We shouldn\u0027t get to here.\n    fail(\"remove() should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}",
+        "slice": "final Iterator\u003cString\u003e iterator \u003d getImmutableIterator();iterator.next();try {\n    iterator.remove();\n    // We shouldn\u0027t get to here.\n    fail(\"remove() should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testUnmodifiableIteratorIteration()",
+    "annotation": "@Test",
+    "code": "final Iterator\u003cString\u003e iterator \u003d getImmutableIterator();assertTrue(iterator.hasNext());assertEquals(\"a\", iterator.next());assertTrue(iterator.hasNext());assertEquals(\"b\", iterator.next());assertTrue(iterator.hasNext());assertEquals(\"c\", iterator.next());assertTrue(iterator.hasNext());assertEquals(\"d\", iterator.next());assertTrue(!iterator.hasNext());",
+    "offset": [
+      {
+        "line": 1037,
+        "column": 43
+      },
+      {
+        "line": 1039,
+        "column": 9
+      },
+      {
+        "line": 1039,
+        "column": 20
+      },
+      {
+        "line": 1041,
+        "column": 9
+      },
+      {
+        "line": 1041,
+        "column": 27
+      },
+      {
+        "line": 1043,
+        "column": 9
+      },
+      {
+        "line": 1043,
+        "column": 20
+      },
+      {
+        "line": 1045,
+        "column": 9
+      },
+      {
+        "line": 1045,
+        "column": 27
+      },
+      {
+        "line": 1047,
+        "column": 9
+      },
+      {
+        "line": 1047,
+        "column": 20
+      },
+      {
+        "line": 1049,
+        "column": 9
+      },
+      {
+        "line": 1049,
+        "column": 27
+      },
+      {
+        "line": 1051,
+        "column": 9
+      },
+      {
+        "line": 1051,
+        "column": 20
+      },
+      {
+        "line": 1053,
+        "column": 9
+      },
+      {
+        "line": 1053,
+        "column": 27
+      },
+      {
+        "line": 1055,
+        "column": 9
+      },
+      {
+        "line": 1055,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 1041,
+          "column": 9
+        },
+        "assert": "assertEquals(\"a\", iterator.next());",
+        "slice": "final Iterator\u003cString\u003e iterator \u003d getImmutableIterator();assertEquals(\"a\", iterator.next());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1043,
+          "column": 9
+        },
+        "assert": "assertTrue(iterator.hasNext());",
+        "slice": "final Iterator\u003cString\u003e iterator \u003d getImmutableIterator();assertTrue(iterator.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1045,
+          "column": 9
+        },
+        "assert": "assertEquals(\"b\", iterator.next());",
+        "slice": "final Iterator\u003cString\u003e iterator \u003d getImmutableIterator();assertEquals(\"b\", iterator.next());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1047,
+          "column": 9
+        },
+        "assert": "assertTrue(iterator.hasNext());",
+        "slice": "final Iterator\u003cString\u003e iterator \u003d getImmutableIterator();assertTrue(iterator.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1049,
+          "column": 9
+        },
+        "assert": "assertEquals(\"c\", iterator.next());",
+        "slice": "final Iterator\u003cString\u003e iterator \u003d getImmutableIterator();assertEquals(\"c\", iterator.next());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1051,
+          "column": 9
+        },
+        "assert": "assertTrue(iterator.hasNext());",
+        "slice": "final Iterator\u003cString\u003e iterator \u003d getImmutableIterator();assertTrue(iterator.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1037,
+          "column": 9
+        },
+        "assert": "final Iterator\u003cString\u003e iterator \u003d getImmutableIterator();assertTrue(iterator.hasNext());",
+        "slice": "final Iterator\u003cString\u003e iterator \u003d getImmutableIterator();assertTrue(iterator.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1053,
+          "column": 9
+        },
+        "assert": "assertEquals(\"d\", iterator.next());",
+        "slice": "final Iterator\u003cString\u003e iterator \u003d getImmutableIterator();assertEquals(\"d\", iterator.next());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1055,
+          "column": 9
+        },
+        "assert": "assertTrue(!iterator.hasNext());",
+        "slice": "final Iterator\u003cString\u003e iterator \u003d getImmutableIterator();assertTrue(!iterator.hasNext());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testUnmodifiableListIteratorImmutability()",
+    "annotation": "@Test",
+    "code": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();try {\n    listIterator.remove();\n    // We shouldn\u0027t get to here.\n    fail(\"remove() should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}try {\n    listIterator.set(\"a\");\n    // We shouldn\u0027t get to here.\n    fail(\"set(Object) should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}try {\n    listIterator.add(\"a\");\n    // We shouldn\u0027t get to here.\n    fail(\"add(Object) should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}listIterator.next();try {\n    listIterator.remove();\n    // We shouldn\u0027t get to here.\n    fail(\"remove() should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}try {\n    listIterator.set(\"a\");\n    // We shouldn\u0027t get to here.\n    fail(\"set(Object) should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}try {\n    listIterator.add(\"a\");\n    // We shouldn\u0027t get to here.\n    fail(\"add(Object) should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}",
+    "offset": [
+      {
+        "line": 1063,
+        "column": 51
+      },
+      {
+        "line": 1066,
+        "column": 13
+      },
+      {
+        "line": 1068,
+        "column": 13
+      },
+      {
+        "line": 1074,
+        "column": 13
+      },
+      {
+        "line": 1076,
+        "column": 13
+      },
+      {
+        "line": 1082,
+        "column": 13
+      },
+      {
+        "line": 1084,
+        "column": 13
+      },
+      {
+        "line": 1089,
+        "column": 9
+      },
+      {
+        "line": 1092,
+        "column": 13
+      },
+      {
+        "line": 1094,
+        "column": 13
+      },
+      {
+        "line": 1100,
+        "column": 13
+      },
+      {
+        "line": 1102,
+        "column": 13
+      },
+      {
+        "line": 1108,
+        "column": 13
+      },
+      {
+        "line": 1110,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 1073,
+          "column": 9
+        },
+        "assert": "try {\n    listIterator.set(\"a\");\n    // We shouldn\u0027t get to here.\n    fail(\"set(Object) should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();try {\n    listIterator.set(\"a\");\n    // We shouldn\u0027t get to here.\n    fail(\"set(Object) should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1089,
+          "column": 9
+        },
+        "assert": "listIterator.next();try {\n    listIterator.remove();\n    // We shouldn\u0027t get to here.\n    fail(\"remove() should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();listIterator.next();try {\n    listIterator.remove();\n    // We shouldn\u0027t get to here.\n    fail(\"remove() should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1107,
+          "column": 9
+        },
+        "assert": "try {\n    listIterator.add(\"a\");\n    // We shouldn\u0027t get to here.\n    fail(\"add(Object) should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();listIterator.next();try {\n    listIterator.add(\"a\");\n    // We shouldn\u0027t get to here.\n    fail(\"add(Object) should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1063,
+          "column": 9
+        },
+        "assert": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();try {\n    listIterator.remove();\n    // We shouldn\u0027t get to here.\n    fail(\"remove() should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();try {\n    listIterator.remove();\n    // We shouldn\u0027t get to here.\n    fail(\"remove() should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1081,
+          "column": 9
+        },
+        "assert": "try {\n    listIterator.add(\"a\");\n    // We shouldn\u0027t get to here.\n    fail(\"add(Object) should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();try {\n    listIterator.add(\"a\");\n    // We shouldn\u0027t get to here.\n    fail(\"add(Object) should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1099,
+          "column": 9
+        },
+        "assert": "try {\n    listIterator.set(\"a\");\n    // We shouldn\u0027t get to here.\n    fail(\"set(Object) should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();listIterator.next();try {\n    listIterator.set(\"a\");\n    // We shouldn\u0027t get to here.\n    fail(\"set(Object) should throw an UnsupportedOperationException\");\n} catch (final UnsupportedOperationException e) {\n    // This is correct; ignore the exception.\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.commons.collections4.IteratorUtilsTest.testUnmodifiableListIteratorIteration()",
+    "annotation": "@Test",
+    "code": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(!listIterator.hasPrevious());assertTrue(listIterator.hasNext());assertEquals(\"a\", listIterator.next());assertTrue(listIterator.hasPrevious());assertTrue(listIterator.hasNext());assertEquals(\"b\", listIterator.next());assertTrue(listIterator.hasPrevious());assertTrue(listIterator.hasNext());assertEquals(\"c\", listIterator.next());assertTrue(listIterator.hasPrevious());assertTrue(listIterator.hasNext());assertEquals(\"d\", listIterator.next());assertTrue(listIterator.hasPrevious());assertTrue(!listIterator.hasNext());assertEquals(\"d\", listIterator.previous());assertTrue(listIterator.hasPrevious());assertTrue(listIterator.hasNext());assertEquals(\"c\", listIterator.previous());assertTrue(listIterator.hasPrevious());assertTrue(listIterator.hasNext());assertEquals(\"b\", listIterator.previous());assertTrue(listIterator.hasPrevious());assertTrue(listIterator.hasNext());assertEquals(\"a\", listIterator.previous());assertTrue(!listIterator.hasPrevious());assertTrue(listIterator.hasNext());",
+    "offset": [
+      {
+        "line": 1122,
+        "column": 51
+      },
+      {
+        "line": 1124,
+        "column": 9
+      },
+      {
+        "line": 1124,
+        "column": 21
+      },
+      {
+        "line": 1125,
+        "column": 9
+      },
+      {
+        "line": 1125,
+        "column": 20
+      },
+      {
+        "line": 1127,
+        "column": 9
+      },
+      {
+        "line": 1127,
+        "column": 27
+      },
+      {
+        "line": 1129,
+        "column": 9
+      },
+      {
+        "line": 1129,
+        "column": 20
+      },
+      {
+        "line": 1130,
+        "column": 9
+      },
+      {
+        "line": 1130,
+        "column": 20
+      },
+      {
+        "line": 1132,
+        "column": 9
+      },
+      {
+        "line": 1132,
+        "column": 27
+      },
+      {
+        "line": 1134,
+        "column": 9
+      },
+      {
+        "line": 1134,
+        "column": 20
+      },
+      {
+        "line": 1135,
+        "column": 9
+      },
+      {
+        "line": 1135,
+        "column": 20
+      },
+      {
+        "line": 1137,
+        "column": 9
+      },
+      {
+        "line": 1137,
+        "column": 27
+      },
+      {
+        "line": 1139,
+        "column": 9
+      },
+      {
+        "line": 1139,
+        "column": 20
+      },
+      {
+        "line": 1140,
+        "column": 9
+      },
+      {
+        "line": 1140,
+        "column": 20
+      },
+      {
+        "line": 1142,
+        "column": 9
+      },
+      {
+        "line": 1142,
+        "column": 27
+      },
+      {
+        "line": 1144,
+        "column": 9
+      },
+      {
+        "line": 1144,
+        "column": 20
+      },
+      {
+        "line": 1145,
+        "column": 9
+      },
+      {
+        "line": 1145,
+        "column": 21
+      },
+      {
+        "line": 1147,
+        "column": 9
+      },
+      {
+        "line": 1147,
+        "column": 27
+      },
+      {
+        "line": 1149,
+        "column": 9
+      },
+      {
+        "line": 1149,
+        "column": 20
+      },
+      {
+        "line": 1150,
+        "column": 9
+      },
+      {
+        "line": 1150,
+        "column": 20
+      },
+      {
+        "line": 1152,
+        "column": 9
+      },
+      {
+        "line": 1152,
+        "column": 27
+      },
+      {
+        "line": 1154,
+        "column": 9
+      },
+      {
+        "line": 1154,
+        "column": 20
+      },
+      {
+        "line": 1155,
+        "column": 9
+      },
+      {
+        "line": 1155,
+        "column": 20
+      },
+      {
+        "line": 1157,
+        "column": 9
+      },
+      {
+        "line": 1157,
+        "column": 27
+      },
+      {
+        "line": 1159,
+        "column": 9
+      },
+      {
+        "line": 1159,
+        "column": 20
+      },
+      {
+        "line": 1160,
+        "column": 9
+      },
+      {
+        "line": 1160,
+        "column": 20
+      },
+      {
+        "line": 1162,
+        "column": 9
+      },
+      {
+        "line": 1162,
+        "column": 27
+      },
+      {
+        "line": 1164,
+        "column": 9
+      },
+      {
+        "line": 1164,
+        "column": 21
+      },
+      {
+        "line": 1165,
+        "column": 9
+      },
+      {
+        "line": 1165,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 1152,
+          "column": 9
+        },
+        "assert": "assertEquals(\"c\", listIterator.previous());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertEquals(\"c\", listIterator.previous());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1154,
+          "column": 9
+        },
+        "assert": "assertTrue(listIterator.hasPrevious());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(listIterator.hasPrevious());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1155,
+          "column": 9
+        },
+        "assert": "assertTrue(listIterator.hasNext());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(listIterator.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1157,
+          "column": 9
+        },
+        "assert": "assertEquals(\"b\", listIterator.previous());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertEquals(\"b\", listIterator.previous());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1159,
+          "column": 9
+        },
+        "assert": "assertTrue(listIterator.hasPrevious());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(listIterator.hasPrevious());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1160,
+          "column": 9
+        },
+        "assert": "assertTrue(listIterator.hasNext());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(listIterator.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1162,
+          "column": 9
+        },
+        "assert": "assertEquals(\"a\", listIterator.previous());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertEquals(\"a\", listIterator.previous());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1164,
+          "column": 9
+        },
+        "assert": "assertTrue(!listIterator.hasPrevious());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(!listIterator.hasPrevious());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1165,
+          "column": 9
+        },
+        "assert": "assertTrue(listIterator.hasNext());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(listIterator.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1122,
+          "column": 9
+        },
+        "assert": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(!listIterator.hasPrevious());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(!listIterator.hasPrevious());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1125,
+          "column": 9
+        },
+        "assert": "assertTrue(listIterator.hasNext());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(listIterator.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1127,
+          "column": 9
+        },
+        "assert": "assertEquals(\"a\", listIterator.next());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertEquals(\"a\", listIterator.next());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1129,
+          "column": 9
+        },
+        "assert": "assertTrue(listIterator.hasPrevious());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(listIterator.hasPrevious());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1130,
+          "column": 9
+        },
+        "assert": "assertTrue(listIterator.hasNext());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(listIterator.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1132,
+          "column": 9
+        },
+        "assert": "assertEquals(\"b\", listIterator.next());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertEquals(\"b\", listIterator.next());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1134,
+          "column": 9
+        },
+        "assert": "assertTrue(listIterator.hasPrevious());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(listIterator.hasPrevious());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1135,
+          "column": 9
+        },
+        "assert": "assertTrue(listIterator.hasNext());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(listIterator.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1137,
+          "column": 9
+        },
+        "assert": "assertEquals(\"c\", listIterator.next());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertEquals(\"c\", listIterator.next());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1139,
+          "column": 9
+        },
+        "assert": "assertTrue(listIterator.hasPrevious());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(listIterator.hasPrevious());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1140,
+          "column": 9
+        },
+        "assert": "assertTrue(listIterator.hasNext());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(listIterator.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1142,
+          "column": 9
+        },
+        "assert": "assertEquals(\"d\", listIterator.next());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertEquals(\"d\", listIterator.next());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1144,
+          "column": 9
+        },
+        "assert": "assertTrue(listIterator.hasPrevious());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(listIterator.hasPrevious());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1145,
+          "column": 9
+        },
+        "assert": "assertTrue(!listIterator.hasNext());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(!listIterator.hasNext());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1147,
+          "column": 9
+        },
+        "assert": "assertEquals(\"d\", listIterator.previous());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertEquals(\"d\", listIterator.previous());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1149,
+          "column": 9
+        },
+        "assert": "assertTrue(listIterator.hasPrevious());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(listIterator.hasPrevious());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 1150,
+          "column": 9
+        },
+        "assert": "assertTrue(listIterator.hasNext());",
+        "slice": "final ListIterator\u003cString\u003e listIterator \u003d getImmutableListIterator();assertTrue(listIterator.hasNext());"
+      }
+    ]
+  }
+]

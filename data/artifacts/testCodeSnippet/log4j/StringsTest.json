@@ -1,0 +1,265 @@
+[
+  {
+    "unitTestMethod": "org.apache.logging.log4j.util.StringsTest.testEMPTY()",
+    "annotation": "@Test",
+    "code": "Assert.assertEquals(\"\", Strings.EMPTY);Assert.assertEquals(0, Strings.EMPTY.length());",
+    "offset": [
+      {
+        "line": 33,
+        "column": 9
+      },
+      {
+        "line": 34,
+        "column": 9
+      },
+      {
+        "line": 34,
+        "column": 32
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 33,
+          "column": 9
+        },
+        "assert": "Assert.assertEquals(\"\", Strings.EMPTY);",
+        "slice": "Assert.assertEquals(\"\", Strings.EMPTY);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 34,
+          "column": 9
+        },
+        "assert": "Assert.assertEquals(0, Strings.EMPTY.length());",
+        "slice": "Assert.assertEquals(0, Strings.EMPTY.length());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.logging.log4j.util.StringsTest.testJoin()",
+    "annotation": "@Test",
+    "code": "Assert.assertEquals(null, Strings.join((Iterable\u003c?\u003e) null, \u0027.\u0027));Assert.assertEquals(null, Strings.join((Iterator\u003c?\u003e) null, \u0027.\u0027));Assert.assertEquals(\"\", Strings.join((Arrays.asList()), \u0027.\u0027));Assert.assertEquals(\"a\", Strings.join(Arrays.asList(\"a\"), \u0027.\u0027));Assert.assertEquals(\"a.b\", Strings.join(Arrays.asList(\"a\", \"b\"), \u0027.\u0027));Assert.assertEquals(\"a.b.c\", Strings.join(Arrays.asList(\"a\", \"b\", \"c\"), \u0027.\u0027));Assert.assertEquals(\"\", Strings.join(Arrays.asList((String) null), \u0027:\u0027));Assert.assertEquals(\":\", Strings.join(Arrays.asList(null, null), \u0027:\u0027));Assert.assertEquals(\"a:\", Strings.join(Arrays.asList(\"a\", null), \u0027:\u0027));Assert.assertEquals(\":b\", Strings.join(Arrays.asList(null, \"b\"), \u0027:\u0027));",
+    "offset": [
+      {
+        "line": 39,
+        "column": 9
+      },
+      {
+        "line": 39,
+        "column": 35
+      },
+      {
+        "line": 40,
+        "column": 9
+      },
+      {
+        "line": 40,
+        "column": 35
+      },
+      {
+        "line": 41,
+        "column": 9
+      },
+      {
+        "line": 41,
+        "column": 33
+      },
+      {
+        "line": 41,
+        "column": 47
+      },
+      {
+        "line": 43,
+        "column": 9
+      },
+      {
+        "line": 43,
+        "column": 34
+      },
+      {
+        "line": 43,
+        "column": 47
+      },
+      {
+        "line": 44,
+        "column": 9
+      },
+      {
+        "line": 44,
+        "column": 36
+      },
+      {
+        "line": 44,
+        "column": 49
+      },
+      {
+        "line": 45,
+        "column": 9
+      },
+      {
+        "line": 45,
+        "column": 38
+      },
+      {
+        "line": 45,
+        "column": 51
+      },
+      {
+        "line": 47,
+        "column": 9
+      },
+      {
+        "line": 47,
+        "column": 33
+      },
+      {
+        "line": 47,
+        "column": 46
+      },
+      {
+        "line": 48,
+        "column": 9
+      },
+      {
+        "line": 48,
+        "column": 34
+      },
+      {
+        "line": 48,
+        "column": 47
+      },
+      {
+        "line": 49,
+        "column": 9
+      },
+      {
+        "line": 49,
+        "column": 35
+      },
+      {
+        "line": 49,
+        "column": 48
+      },
+      {
+        "line": 50,
+        "column": 9
+      },
+      {
+        "line": 50,
+        "column": 35
+      },
+      {
+        "line": 50,
+        "column": 48
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 48,
+          "column": 9
+        },
+        "assert": "Assert.assertEquals(\":\", Strings.join(Arrays.asList(null, null), \u0027:\u0027));",
+        "slice": "Assert.assertEquals(\":\", Strings.join(Arrays.asList(null, null), \u0027:\u0027));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 49,
+          "column": 9
+        },
+        "assert": "Assert.assertEquals(\"a:\", Strings.join(Arrays.asList(\"a\", null), \u0027:\u0027));",
+        "slice": "Assert.assertEquals(\"a:\", Strings.join(Arrays.asList(\"a\", null), \u0027:\u0027));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 50,
+          "column": 9
+        },
+        "assert": "Assert.assertEquals(\":b\", Strings.join(Arrays.asList(null, \"b\"), \u0027:\u0027));",
+        "slice": "Assert.assertEquals(\":b\", Strings.join(Arrays.asList(null, \"b\"), \u0027:\u0027));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 39,
+          "column": 9
+        },
+        "assert": "Assert.assertEquals(null, Strings.join((Iterable\u003c?\u003e) null, \u0027.\u0027));",
+        "slice": "Assert.assertEquals(null, Strings.join((Iterable\u003c?\u003e) null, \u0027.\u0027));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 40,
+          "column": 9
+        },
+        "assert": "Assert.assertEquals(null, Strings.join((Iterator\u003c?\u003e) null, \u0027.\u0027));",
+        "slice": "Assert.assertEquals(null, Strings.join((Iterator\u003c?\u003e) null, \u0027.\u0027));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 41,
+          "column": 9
+        },
+        "assert": "Assert.assertEquals(\"\", Strings.join((Arrays.asList()), \u0027.\u0027));",
+        "slice": "Assert.assertEquals(\"\", Strings.join((Arrays.asList()), \u0027.\u0027));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 43,
+          "column": 9
+        },
+        "assert": "Assert.assertEquals(\"a\", Strings.join(Arrays.asList(\"a\"), \u0027.\u0027));",
+        "slice": "Assert.assertEquals(\"a\", Strings.join(Arrays.asList(\"a\"), \u0027.\u0027));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 44,
+          "column": 9
+        },
+        "assert": "Assert.assertEquals(\"a.b\", Strings.join(Arrays.asList(\"a\", \"b\"), \u0027.\u0027));",
+        "slice": "Assert.assertEquals(\"a.b\", Strings.join(Arrays.asList(\"a\", \"b\"), \u0027.\u0027));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 45,
+          "column": 9
+        },
+        "assert": "Assert.assertEquals(\"a.b.c\", Strings.join(Arrays.asList(\"a\", \"b\", \"c\"), \u0027.\u0027));",
+        "slice": "Assert.assertEquals(\"a.b.c\", Strings.join(Arrays.asList(\"a\", \"b\", \"c\"), \u0027.\u0027));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 47,
+          "column": 9
+        },
+        "assert": "Assert.assertEquals(\"\", Strings.join(Arrays.asList((String) null), \u0027:\u0027));",
+        "slice": "Assert.assertEquals(\"\", Strings.join(Arrays.asList((String) null), \u0027:\u0027));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.logging.log4j.util.StringsTest.testQuote()",
+    "annotation": "@Test",
+    "code": "Assert.assertEquals(\"\u0027Q\u0027\", Strings.quote(\"Q\"));",
+    "offset": [
+      {
+        "line": 55,
+        "column": 9
+      },
+      {
+        "line": 55,
+        "column": 36
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 55,
+          "column": 9
+        },
+        "assert": "Assert.assertEquals(\"\u0027Q\u0027\", Strings.quote(\"Q\"));",
+        "slice": "Assert.assertEquals(\"\u0027Q\u0027\", Strings.quote(\"Q\"));"
+      }
+    ]
+  }
+]

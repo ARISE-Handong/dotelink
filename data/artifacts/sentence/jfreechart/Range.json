@@ -1,0 +1,515 @@
+[
+  {
+    "productionMethod": "org.jfree.data.Range.max(double, double)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.min(double, double)",
+    "comment": "\r\n     * Returns the minimum value.  If either value is NaN, the other value is \r\n     * returned.  If both are NaN, NaN is returned.\r\n     * \r\n     * @param d1  value 1.\r\n     * @param d2  value 2.\r\n     * \r\n     * @return The minimum of the two values. \r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the minimum value.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 262,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If either value is NaN, the other value is returned.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 262,
+          "column": 36
+        }
+      },
+      {
+        "sentenceText": "If both are NaN, NaN is returned.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 263,
+          "column": 19
+        }
+      },
+      {
+        "sentenceText": "@return The minimum of the two values.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 268,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.shift(org.jfree.data.Range, double, boolean)",
+    "comment": "\r\n     * Shifts the range by the specified amount.\r\n     *\r\n     * @param base  the base range (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param delta  the shift amount.\r\n     * @param allowZeroCrossing  a flag that determines whether or not the\r\n     *                           bounds of the range are allowed to cross\r\n     *                           zero after adjustment.\r\n     *\r\n     * @return A new range.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Shifts the range by the specified amount.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 353,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A new range.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.contains(double)",
+    "comment": "\r\n     * Returns \u003ccode\u003etrue\u003c/code\u003e if the range contains the specified value and\r\n     * \u003ccode\u003efalse\u003c/code\u003e otherwise.\r\n     *\r\n     * @param value  the value to lookup.\r\n     *\r\n     * @return \u003ccode\u003etrue\u003c/code\u003e if the range contains the specified value.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns \u003ccode\u003etrue\u003c/code\u003e if the range contains the specified value and \u003ccode\u003efalse\u003c/code\u003e otherwise.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 136,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return \u003ccode\u003etrue\u003c/code\u003e if the range contains the specified value.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 141,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.getCentralValue()",
+    "comment": "\r\n     * Returns the central value for the range.\r\n     *\r\n     * @return The central value.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the central value for the range.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 127,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The central value.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 129,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.getLength()",
+    "comment": "\r\n     * Returns the length of the range.\r\n     *\r\n     * @return The length.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the length of the range.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 118,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The length.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 120,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.intersects(org.jfree.data.Range)",
+    "comment": "\r\n     * Returns \u003ccode\u003etrue\u003c/code\u003e if the range intersects with the specified\r\n     * range, and \u003ccode\u003efalse\u003c/code\u003e otherwise.\r\n     *\r\n     * @param range  another range (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     *\r\n     * @return A boolean.\r\n     *\r\n     * @since 1.0.9\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns \u003ccode\u003etrue\u003c/code\u003e if the range intersects with the specified range, and \u003ccode\u003efalse\u003c/code\u003e otherwise.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 166,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A boolean.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 171,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.isNaNRange()",
+    "comment": "\r\n     * Returns \u003ccode\u003etrue\u003c/code\u003e if both the lower and upper bounds are \r\n     * \u003ccode\u003eDouble.NaN\u003c/code\u003e, and \u003ccode\u003efalse\u003c/code\u003e otherwise.\r\n     * \r\n     * @return A boolean.\r\n     * \r\n     * @since 1.0.18\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns \u003ccode\u003etrue\u003c/code\u003e if both the lower and upper bounds are \u003ccode\u003eDouble.NaN\u003c/code\u003e, and \u003ccode\u003efalse\u003c/code\u003e otherwise.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 440,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A boolean.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 443,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.combineIgnoringNaN(org.jfree.data.Range, org.jfree.data.Range)",
+    "comment": "\r\n     * Returns a new range that spans both \u003ccode\u003erange1\u003c/code\u003e and \r\n     * \u003ccode\u003erange2\u003c/code\u003e.  This method has a special handling to ignore\r\n     * Double.NaN values.\r\n     *\r\n     * @param range1  the first range (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     * @param range2  the second range (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     *\r\n     * @return A new range (possibly \u003ccode\u003enull\u003c/code\u003e).\r\n     *\r\n     * @since 1.0.15\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a new range that spans both \u003ccode\u003erange1\u003c/code\u003e and \u003ccode\u003erange2\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 229,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This method has a special handling to ignore Double.NaN values.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 230,
+          "column": 30
+        }
+      },
+      {
+        "sentenceText": "@return A new range (possibly \u003ccode\u003enull\u003c/code\u003e).",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 236,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.expand(org.jfree.data.Range, double, double)",
+    "comment": "\r\n     * Creates a new range by adding margins to an existing range.\r\n     *\r\n     * @param range  the range (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param lowerMargin  the lower margin (expressed as a percentage of the\r\n     *                     range length).\r\n     * @param upperMargin  the upper margin (expressed as a percentage of the\r\n     *                     range length).\r\n     *\r\n     * @return The expanded range.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a new range by adding margins to an existing range.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The expanded range.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.equals(java.lang.Object)",
+    "comment": "\r\n     * Tests this object for equality with an arbitrary object.\r\n     *\r\n     * @param obj  the object to test against (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     *\r\n     * @return A boolean.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Tests this object for equality with an arbitrary object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 418,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A boolean.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 422,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.constrain(double)",
+    "comment": "\r\n     * Returns the value within the range that is closest to the specified\r\n     * value.\r\n     *\r\n     * @param value  the value.\r\n     *\r\n     * @return The constrained value.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the value within the range that is closest to the specified value.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 180,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The constrained value.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 185,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.hashCode()",
+    "comment": "\r\n     * Returns a hash code.\r\n     *\r\n     * @return A hash code.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a hash code.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 452,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A hash code.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 454,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.shift(org.jfree.data.Range, double)",
+    "comment": "\r\n     * Shifts the range by the specified amount.\r\n     *\r\n     * @param base  the base range (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param delta  the shift amount.\r\n     *\r\n     * @return A new range.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Shifts the range by the specified amount.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 341,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A new range.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 346,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.getLowerBound()",
+    "comment": "\r\n     * Returns the lower bound for the range.\r\n     *\r\n     * @return The lower bound.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the lower bound for the range.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 100,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The lower bound.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 102,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.getUpperBound()",
+    "comment": "\r\n     * Returns the upper bound for the range.\r\n     *\r\n     * @return The upper bound.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the upper bound for the range.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 109,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The upper bound.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 111,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.toString()",
+    "comment": "\r\n     * Returns a string representation of this Range.\r\n     *\r\n     * @return A String \"Range[lower,upper]\" where lower\u003dlower range and\r\n     *         upper\u003dupper range.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a string representation of this Range.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 468,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A String \"Range[lower,upper]\" where lower\u003dlower range and upper\u003dupper range.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 470,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.Range(double, double)",
+    "comment": "\r\n     * Creates a new range.\r\n     *\r\n     * @param lower  the lower bound (must be \u0026lt;\u003d upper bound).\r\n     * @param upper  the upper bound (must be \u0026gt;\u003d lower bound).\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a new range.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 84,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.intersects(double, double)",
+    "comment": "\r\n     * Returns \u003ccode\u003etrue\u003c/code\u003e if the range intersects with the specified\r\n     * range, and \u003ccode\u003efalse\u003c/code\u003e otherwise.\r\n     *\r\n     * @param b0  the lower bound (should be \u0026lt;\u003d b1).\r\n     * @param b1  the upper bound (should be \u0026gt;\u003d b0).\r\n     *\r\n     * @return A boolean.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns \u003ccode\u003etrue\u003c/code\u003e if the range intersects with the specified range, and \u003ccode\u003efalse\u003c/code\u003e otherwise.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 148,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A boolean.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 154,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.combine(org.jfree.data.Range, org.jfree.data.Range)",
+    "comment": "\r\n     * Creates a new range by combining two existing ranges.\r\n     * \u003cP\u003e\r\n     * Note that:\r\n     * \u003cul\u003e\r\n     *   \u003cli\u003eeither range can be \u003ccode\u003enull\u003c/code\u003e, in which case the other\r\n     *       range is returned;\u003c/li\u003e\r\n     *   \u003cli\u003eif both ranges are \u003ccode\u003enull\u003c/code\u003e the return value is\r\n     *       \u003ccode\u003enull\u003c/code\u003e.\u003c/li\u003e\r\n     * \u003c/ul\u003e\r\n     *\r\n     * @param range1  the first range (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     * @param range2  the second range (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     *\r\n     * @return A new range (possibly \u003ccode\u003enull\u003c/code\u003e).\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a new range by combining two existing ranges.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 201,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cP\u003e Note that: \u003cul\u003e \u003cli\u003eeither range can be \u003ccode\u003enull\u003c/code\u003e, in which case the other range is returned;\u003c/li\u003e \u003cli\u003eif both ranges are \u003ccode\u003enull\u003c/code\u003e the return value is \u003ccode\u003enull\u003c/code\u003e.\u003c/li\u003e \u003c/ul\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 202,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A new range (possibly \u003ccode\u003enull\u003c/code\u003e).",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 214,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.expandToInclude(org.jfree.data.Range, double)",
+    "comment": "\r\n     * Returns a range that includes all the values in the specified\r\n     * \u003ccode\u003erange\u003c/code\u003e AND the specified \u003ccode\u003evalue\u003c/code\u003e.\r\n     *\r\n     * @param range  the range (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     * @param value  the value that must be included.\r\n     *\r\n     * @return A range.\r\n     *\r\n     * @since 1.0.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a range that includes all the values in the specified \u003ccode\u003erange\u003c/code\u003e AND the specified \u003ccode\u003evalue\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 291,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A range.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 297,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.shiftWithNoZeroCrossing(double, double)",
+    "comment": "\r\n     * Returns the given \u003ccode\u003evalue\u003c/code\u003e adjusted by \u003ccode\u003edelta\u003c/code\u003e but\r\n     * with a check to prevent the result from crossing \u003ccode\u003e0.0\u003c/code\u003e.\r\n     *\r\n     * @param value  the value.\r\n     * @param delta  the adjustment.\r\n     *\r\n     * @return The adjusted value.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the given \u003ccode\u003evalue\u003c/code\u003e adjusted by \u003ccode\u003edelta\u003c/code\u003e but with a check to prevent the result from crossing \u003ccode\u003e0.0\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 378,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The adjusted value.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 384,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.scale(org.jfree.data.Range, double)",
+    "comment": "\r\n     * Scales the range by the specified factor.\r\n     *\r\n     * @param base the base range (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param factor the scaling factor (must be non-negative).\r\n     *\r\n     * @return A new range.\r\n     *\r\n     * @since 1.0.9\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Scales the range by the specified factor.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 399,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A new range.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 404,
+          "column": 8
+        }
+      }
+    ]
+  }
+]

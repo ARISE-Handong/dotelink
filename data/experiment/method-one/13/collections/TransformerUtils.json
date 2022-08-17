@@ -1,0 +1,354 @@
+[
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.invokerTransformer(java.lang.String, java.lang.Class\u003c?\u003e[], java.lang.Object[])",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testInvokerTransformer2()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 463,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 422,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.switchTransformer(org.apache.commons.collections4.Predicate\u003c? super I\u003e[], org.apache.commons.collections4.Transformer\u003c? super I, ? extends O\u003e[])",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testSwitchTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 293,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 321,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.nullTransformer()",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testNullTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 96,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 78,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.switchTransformer(org.apache.commons.collections4.Predicate\u003c? super I\u003e[], org.apache.commons.collections4.Transformer\u003c? super I, ? extends O\u003e[], org.apache.commons.collections4.Transformer\u003c? super I, ? extends O\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testSwitchTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 294,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.switchMapTransformer(java.util.Map\u003cI, org.apache.commons.collections4.Transformer\u003cI, O\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testSwitchMapTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 358,
+          "column": 39
+        },
+        "testCodeLocation": {
+          "line": 368,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.ifTransformer(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Transformer\u003c? super T, ? extends T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testIfTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 222,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 250,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.instantiateTransformer(java.lang.Class\u003c?\u003e[], java.lang.Object[])",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testInstantiateTransformerNull()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 401,
+          "column": 21
+        },
+        "testCodeLocation": {
+          "line": 463,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.cloneTransformer()",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testCloneTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 117,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 114,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.switchTransformer(java.util.Map\u003corg.apache.commons.collections4.Predicate\u003cI\u003e, org.apache.commons.collections4.Transformer\u003cI, O\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testSwitchTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 335,
+          "column": 14
+        },
+        "testCodeLocation": {
+          "line": 316,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.chainedTransformer(java.util.Collection\u003c? extends org.apache.commons.collections4.Transformer\u003c? super T, ? extends T\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testChainedTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 206,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 229,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.chainedTransformer(org.apache.commons.collections4.Transformer\u003c? super T, ? extends T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testChainedTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 191,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 225,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.asTransformer(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testPredicateTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 163,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 168,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.asTransformer(org.apache.commons.collections4.Factory\u003c? extends O\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testFactoryTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 176,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 185,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.constantTransformer(O)",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testConstantTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 140,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 106,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.exceptionTransformer()",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testExceptionTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 79,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 59,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.mapTransformer(java.util.Map\u003c? super I, ? extends O\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testMapTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 136,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.stringValueTransformer()",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testStringValueTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 474,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 445,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.nopTransformer()",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testNopTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 109,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 92,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.invokerTransformer(java.lang.String)",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testInvokerTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 439,
+          "column": 44
+        },
+        "testCodeLocation": {
+          "line": 383,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.ifTransformer(org.apache.commons.collections4.Predicate\u003c? super I\u003e, org.apache.commons.collections4.Transformer\u003c? super I, ? extends O\u003e, org.apache.commons.collections4.Transformer\u003c? super I, ? extends O\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testIfTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 239,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 277,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.asTransformer(org.apache.commons.collections4.Closure\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testExecutorTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 154,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 148,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.instantiateTransformer()",
+    "unitTestMethod": "org.apache.commons.collections4.TransformerUtilsTest.testInstantiateTransformerNull()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 389,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 463,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

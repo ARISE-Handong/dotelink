@@ -1,0 +1,194 @@
+[
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.isEqualSet(java.util.Collection\u003c?\u003e, java.util.Collection\u003c?\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testEquals()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 334,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 168,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.intersection(java.util.Set\u003c? extends E\u003e, java.util.Set\u003c? extends E\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.intersection()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 271,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 110,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.hashSet(E...)",
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testHashSet()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 256,
+          "column": 44
+        },
+        "testCodeLocation": {
+          "line": 204,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.disjunction(java.util.Set\u003c? extends E\u003e, java.util.Set\u003c? extends E\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.disjunction()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 151,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 81,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.union(java.util.Set\u003c? extends E\u003e, java.util.Set\u003c? extends E\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.union()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 578,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 300,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.difference(java.util.Set\u003c? extends E\u003e, java.util.Set\u003c? extends E\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.difference()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 112,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 48,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.unmodifiableSet(E...)",
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testUnmodifiableSet()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 629,
+          "column": 58
+        },
+        "testCodeLocation": {
+          "line": 264,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.predicatedSet(java.util.Set\u003cE\u003e, org.apache.commons.collections4.Predicate\u003c? super E\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testpredicatedSet()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 407,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 234,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.hashCodeForSet(java.util.Collection\u003cT\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testHashCode()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 229,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 183,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.unmodifiableSet(java.util.Set\u003c? extends E\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testUnmodifiableSetWrap()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 651,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.emptyIfNull(java.util.Set\u003cT\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testEmptyIfNull()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 196,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 153,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.newIdentityHashSet()",
+    "unitTestMethod": "org.apache.commons.collections4.SetUtilsTest.testNewIdentityHashSet()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 348,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 225,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

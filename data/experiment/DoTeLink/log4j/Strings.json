@@ -1,0 +1,164 @@
+[
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.join(java.util.Iterator\u003c?\u003e, char)",
+    "unitTestMethod": "org.apache.logging.log4j.util.StringsTest.testJoin()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 153,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 40,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 148,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 48,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 145,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 47,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 153,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 47,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 148,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 50,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 148,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 41,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 148,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 43,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 148,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 49,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.logging.log4j.util.Strings.join(java.lang.Iterable\u003c?\u003e, char)",
+    "unitTestMethod": "org.apache.logging.log4j.util.StringsTest.testJoin()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 127,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 39,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 135,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 40,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 130,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 48,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 130,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 49,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 135,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 47,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 130,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 50,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 130,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 41,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

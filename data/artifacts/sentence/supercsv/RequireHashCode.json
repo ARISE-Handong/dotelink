@@ -1,0 +1,144 @@
+[
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.RequireHashCode.RequireHashCode(int...)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eRequireHashCode\u003c/tt\u003e processor, which converts the input to a String, and ensures that the\n\t * input\u0027s hash function matches any of a given set of hashcodes.\n\t * \n\t * @param requiredHashcodes\n\t *            one or more hashcodes\n\t * @throws NullPointerException\n\t *             if requiredHashcodes is null\n\t * @throws IllegalArgumentException\n\t *             if requiredHashcodes is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eRequireHashCode\u003c/tt\u003e processor, which converts the input to a String, and ensures that the input\u0027s hash function matches any of a given set of hashcodes.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 51,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if requiredHashcodes is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 56,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if requiredHashcodes is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 58,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.RequireHashCode.checkPreconditions(int...)",
+    "comment": "\n\t * Checks the preconditions for creating a new RequireHashCode processor.\n\t * \n\t * @param requiredHashcodes\n\t *            the supplied hashcodes\n\t * @throws NullPointerException\n\t *             if requiredHashcodes is null\n\t * @throws IllegalArgumentException\n\t *             if requiredHashcodes is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Checks the preconditions for creating a new RequireHashCode processor.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 106,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if requiredHashcodes is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 110,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if requiredHashcodes is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 112,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.RequireHashCode.execute(java.lang.Object, org.supercsv.util.CsvContext)",
+    "comment": "\n\t * {@inheritDoc}\n\t * \n\t * @throws SuperCsvCellProcessorException\n\t *             if value is null\n\t * @throws SuperCsvConstraintViolationException\n\t *             if value isn\u0027t one of the required hash codes\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "{@inheritDoc}",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 124,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws SuperCsvCellProcessorException if value is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 126,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws SuperCsvConstraintViolationException if value isn\u0027t one of the required hash codes",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 128,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.RequireHashCode.RequireHashCode(int, org.supercsv.cellprocessor.ift.CellProcessor)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eRequireHashCode\u003c/tt\u003e processor, which converts the input to a String, ensures that the\n\t * input\u0027s hash function matches the supplied hashcode, then calls the next processor in the chain.\n\t * \n\t * @param requiredHashcode\n\t *            the required hashcode\n\t * @param next\n\t *            the next processor in the chain\n\t * @throws NullPointerException\n\t *             if next is null\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eRequireHashCode\u003c/tt\u003e processor, which converts the input to a String, ensures that the input\u0027s hash function matches the supplied hashcode, then calls the next processor in the chain.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 70,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if next is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 77,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.RequireHashCode.RequireHashCode(int[], org.supercsv.cellprocessor.ift.CellProcessor)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eRequireHashCode\u003c/tt\u003e processor, which converts the input to a String, ensures that the\n\t * input\u0027s hash function matches any of a given set of hashcodes, then calls the next processor in the chain.\n\t * \n\t * @param requiredHashcodes\n\t *            one or more hashcodes\n\t * @param next\n\t *            the next processor in the chain\n\t * @throws NullPointerException\n\t *             if requiredHashcodes or next is null\n\t * @throws IllegalArgumentException\n\t *             if requiredHashcodes is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eRequireHashCode\u003c/tt\u003e processor, which converts the input to a String, ensures that the input\u0027s hash function matches any of a given set of hashcodes, then calls the next processor in the chain.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 85,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if requiredHashcodes or next is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 92,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if requiredHashcodes is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 94,
+          "column": 5
+        }
+      }
+    ]
+  }
+]

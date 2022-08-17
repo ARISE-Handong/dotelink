@@ -1,0 +1,98 @@
+[
+  {
+    "productionMethod": "org.supercsv.util.Util.filterListToMap(java.util.Map\u003cjava.lang.String, T\u003e, java.lang.String[], java.util.List\u003c? extends T\u003e)",
+    "unitTestMethod": "org.supercsv.util.UtilTest.testFilterListToMapWithNullDestMap()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 99,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 105,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.Util.filterMapToObjectArray(java.util.Map\u003cjava.lang.String, ?\u003e, java.lang.String[])",
+    "unitTestMethod": "org.supercsv.util.UtilTest.testFilterMapToObjectArrayWithNullValues()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 181,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 204,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.Util.objectListToStringArray(java.util.List\u003c?\u003e)",
+    "unitTestMethod": "org.supercsv.util.UtilTest.testObjectListToStringArray()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 221,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 246,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.Util.executeCellProcessors(java.util.List\u003cjava.lang.Object\u003e, java.util.List\u003c?\u003e, org.supercsv.cellprocessor.ift.CellProcessor[], int, int)",
+    "unitTestMethod": "org.supercsv.util.UtilTest.testExecuteCellProcessorsWithNullDestination()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 59,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 158,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.Util.filterMapToList(java.util.Map\u003cjava.lang.String, ?\u003e, java.lang.String[])",
+    "unitTestMethod": "org.supercsv.util.UtilTest.testFilterMapToList()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 155,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 69,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.Util.objectArrayToStringArray(java.lang.Object[])",
+    "unitTestMethod": "org.supercsv.util.UtilTest.testObjectArrayToStringArray()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 201,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 224,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

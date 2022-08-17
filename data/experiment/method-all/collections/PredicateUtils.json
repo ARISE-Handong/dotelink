@@ -1,0 +1,8438 @@
+[
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.anyPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicateEx1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 297,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 297,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 297,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 297,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 297,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.orPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOrPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 293,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 240,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 293,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 241,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 293,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 238,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 293,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 239,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 299,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 240,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 299,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 241,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 299,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 238,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 299,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 239,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 300,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 240,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 300,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 241,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 300,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 238,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 300,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 239,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nullIsExceptionPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNullIsExceptionPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 476,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 632,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 476,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 633,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 477,
+          "column": 52
+        },
+        "testCodeLocation": {
+          "line": 632,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 477,
+          "column": 52
+        },
+        "testCodeLocation": {
+          "line": 633,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 482,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 632,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 482,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 633,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 483,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 632,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 483,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 633,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.anyPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 288,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 257,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 259,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 275,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 291,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 280,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 270,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 288,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 257,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 259,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 275,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 291,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 280,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 270,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 288,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 257,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 259,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 275,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 291,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 280,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 270,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 288,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 257,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 259,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 275,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 291,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 280,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 270,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 288,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 257,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 259,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 275,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 291,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 280,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 270,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.anyPredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 288,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 257,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 259,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 275,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 291,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 280,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 270,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 288,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 257,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 259,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 275,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 291,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 280,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 270,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 288,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 257,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 259,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 275,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 291,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 280,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 270,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 288,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 257,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 259,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 275,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 291,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 280,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 270,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 288,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 257,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 259,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 275,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 291,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 280,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 270,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 288,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 257,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 259,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 275,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 291,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 261,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 263,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 280,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 270,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.notPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNotPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 441,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 128,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 441,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 129,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 441,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 125,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 441,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 126,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 441,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 127,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 446,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 128,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 446,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 129,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 446,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 125,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 446,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 126,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 446,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 127,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 447,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 128,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 447,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 129,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 447,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 125,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 447,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 126,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 447,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 127,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nonePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 482,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 467,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 453,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 485,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 454,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 456,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 472,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 488,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 458,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 460,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 477,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 462,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 482,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 467,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 453,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 485,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 454,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 456,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 472,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 488,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 458,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 460,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 477,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 462,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 482,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 467,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 453,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 485,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 454,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 456,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 472,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 488,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 458,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 460,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 477,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 462,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 482,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 467,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 453,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 485,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 454,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 456,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 472,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 488,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 458,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 460,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 477,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 462,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 482,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 467,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 453,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 485,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 454,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 456,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 472,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 488,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 458,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 460,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 477,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 462,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nonePredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 482,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 467,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 453,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 485,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 454,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 456,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 472,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 488,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 458,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 460,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 477,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 462,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 482,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 467,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 453,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 485,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 454,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 456,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 472,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 488,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 458,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 460,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 477,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 462,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 482,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 467,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 453,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 485,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 454,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 456,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 472,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 488,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 458,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 460,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 477,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 462,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 482,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 467,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 453,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 485,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 454,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 456,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 472,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 488,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 458,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 460,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 477,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 462,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 482,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 467,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 453,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 485,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 454,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 456,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 472,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 488,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 458,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 460,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 477,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 462,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 482,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 467,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 453,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 485,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 454,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 456,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 472,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 488,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 458,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 460,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 477,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 462,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.anyPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicateEx3()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 309,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 309,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 309,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 309,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 309,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.invokerPredicate(java.lang.String)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicateEx3()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 194,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 595,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 195,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 595,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 196,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 595,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 198,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 595,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 205,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 595,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 206,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 595,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.onePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOnePredicateEx3()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 409,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 409,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 409,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 409,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 409,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.andPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAndPredicateEx()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 245,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 150,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 251,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 150,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 252,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 150,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.anyPredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicateEx4()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 314,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 314,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 314,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 314,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 314,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 314,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nullIsFalsePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNullIsFalsePredicateEx1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 491,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 668,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 492,
+          "column": 42
+        },
+        "testCodeLocation": {
+          "line": 668,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 497,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 668,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 498,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 668,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nullIsExceptionPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNullIsExceptionPredicateEx1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 476,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 638,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 477,
+          "column": 52
+        },
+        "testCodeLocation": {
+          "line": 638,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 482,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 638,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 483,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 638,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.transformedPredicate(org.apache.commons.collections4.Transformer\u003c? super T, ? extends T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testTransformedPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 523,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 676,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 523,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 680,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 523,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 685,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 523,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 686,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 529,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 676,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 529,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 680,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 529,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 685,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 529,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 686,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 530,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 676,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 530,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 680,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 530,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 685,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 530,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 686,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.anyPredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicateEx6()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 324,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 324,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 324,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 324,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 324,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 324,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.neitherPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNeitherPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 391,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 436,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 391,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 437,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 391,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 438,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 391,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 439,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 397,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 436,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 397,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 437,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 397,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 438,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 397,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 439,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 398,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 436,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 398,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 437,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 398,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 438,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 398,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 439,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nonePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicateEx3()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 506,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 506,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 506,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 506,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 506,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.invokerPredicate(java.lang.String)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 194,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 577,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 194,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 579,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 195,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 577,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 195,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 579,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 196,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 577,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 196,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 579,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 198,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 577,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 198,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 579,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 205,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 577,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 205,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 579,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 206,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 577,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 206,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 579,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nullIsTruePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNullIsTruePredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 506,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 646,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 506,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 647,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 506,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 648,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 507,
+          "column": 42
+        },
+        "testCodeLocation": {
+          "line": 646,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 507,
+          "column": 42
+        },
+        "testCodeLocation": {
+          "line": 647,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 507,
+          "column": 42
+        },
+        "testCodeLocation": {
+          "line": 648,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 512,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 646,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 512,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 647,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 512,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 648,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 513,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 646,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 513,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 647,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 513,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 648,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nonePredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicateEx4()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 511,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 511,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 511,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 511,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 511,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 511,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.invokerPredicate(java.lang.String)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicateEx1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 194,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 585,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 195,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 585,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 196,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 585,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 198,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 585,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 205,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 585,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 206,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 585,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nonePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicateEx2()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 500,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 500,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 500,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 500,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 500,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.asPredicate(org.apache.commons.collections4.Transformer\u003c? super T, java.lang.Boolean\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAsPredicateTransformerEx2()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 458,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 569,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 458,
+          "column": 57
+        },
+        "testCodeLocation": {
+          "line": 569,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 464,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 569,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 465,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 569,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.instanceofPredicate(java.lang.Class\u003c?\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInstanceOfPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 164,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 532,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 164,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 533,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 164,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 534,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 164,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 535,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 164,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 536,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 165,
+          "column": 45
+        },
+        "testCodeLocation": {
+          "line": 532,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 165,
+          "column": 45
+        },
+        "testCodeLocation": {
+          "line": 533,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 165,
+          "column": 45
+        },
+        "testCodeLocation": {
+          "line": 534,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 165,
+          "column": 45
+        },
+        "testCodeLocation": {
+          "line": 535,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 165,
+          "column": 45
+        },
+        "testCodeLocation": {
+          "line": 536,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 169,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 532,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 169,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 533,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 169,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 534,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 169,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 535,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 169,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 536,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 170,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 532,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 170,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 533,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 170,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 534,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 170,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 535,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 170,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 536,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.onePredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOnePredicateEx6()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 425,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 425,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 425,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 425,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 425,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 425,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.onePredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOnePredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 352,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 353,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 385,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 355,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 388,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 357,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 359,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 391,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 361,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 363,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 365,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 370,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 375,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 380,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 352,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 353,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 385,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 355,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 388,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 357,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 359,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 391,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 361,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 363,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 365,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 370,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 375,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 380,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 352,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 353,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 385,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 355,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 388,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 357,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 359,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 391,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 361,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 363,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 365,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 370,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 375,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 380,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 352,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 353,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 385,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 355,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 388,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 357,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 359,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 391,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 361,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 363,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 365,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 370,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 375,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 380,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 352,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 353,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 385,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 355,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 388,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 357,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 359,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 391,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 361,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 363,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 365,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 370,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 375,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 380,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 352,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 353,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 385,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 355,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 388,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 357,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 359,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 391,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 361,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 363,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 365,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 370,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 375,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 380,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.onePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOnePredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 352,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 353,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 385,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 355,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 388,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 357,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 359,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 391,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 361,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 363,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 365,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 370,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 375,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 380,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 352,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 353,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 385,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 355,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 388,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 357,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 359,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 391,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 361,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 363,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 365,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 370,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 375,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 380,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 352,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 353,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 385,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 355,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 388,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 357,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 359,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 391,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 361,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 363,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 365,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 370,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 375,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 380,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 352,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 353,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 385,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 355,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 388,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 357,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 359,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 391,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 361,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 363,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 365,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 370,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 375,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 380,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 352,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 353,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 385,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 355,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 388,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 357,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 359,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 391,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 361,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 363,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 365,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 370,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 375,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 380,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.neitherPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNeitherPredicateEx()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 391,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 444,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 397,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 444,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 398,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 444,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.orPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOrPredicateEx()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 293,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 246,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 299,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 246,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 300,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 246,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.invokerPredicate(java.lang.String, java.lang.Class\u003c?\u003e[], java.lang.Object[])",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicate2()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 216,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 603,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 216,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 606,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 217,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 603,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 217,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 606,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 218,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 603,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 218,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 606,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 220,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 603,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 220,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 606,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 229,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 603,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 229,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 606,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 230,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 603,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 230,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 606,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 231,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 603,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 231,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 606,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nonePredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicateEx6()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 521,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 521,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 521,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 521,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 521,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 521,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nullIsTruePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNullIsTruePredicateEx1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 506,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 653,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 507,
+          "column": 42
+        },
+        "testCodeLocation": {
+          "line": 653,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 512,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 653,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 513,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 653,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.andPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAndPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 245,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 144,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 245,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 145,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 245,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 142,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 245,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 143,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 251,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 144,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 251,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 145,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 251,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 142,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 251,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 143,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 252,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 144,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 252,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 145,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 252,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 142,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 252,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 143,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.exceptionPredicate()",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testExceptionPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 82,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 53,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 82,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 54,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 82,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 55,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 83,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 53,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 83,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 54,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 83,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 55,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 86,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 53,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 86,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 54,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 86,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 55,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.onePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOnePredicateEx2()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 403,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 403,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 403,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 403,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 403,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.invokerPredicate(java.lang.String, java.lang.Class\u003c?\u003e[], java.lang.Object[])",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicate2Ex1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 216,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 613,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 217,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 613,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 218,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 613,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 220,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 613,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 229,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 613,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 230,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 613,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 231,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 613,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.asPredicate(org.apache.commons.collections4.Transformer\u003c? super T, java.lang.Boolean\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAsPredicateTransformer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 458,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 558,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 458,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 559,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 458,
+          "column": 57
+        },
+        "testCodeLocation": {
+          "line": 558,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 458,
+          "column": 57
+        },
+        "testCodeLocation": {
+          "line": 559,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 464,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 558,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 464,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 559,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 465,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 558,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 465,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 559,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.onePredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOnePredicateEx4()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 414,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 414,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 414,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 414,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 414,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 414,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.identityPredicate(T)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testIdentityPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 151,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 85,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 151,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 86,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 151,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 87,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 151,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 88,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 151,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 89,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 151,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 90,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 151,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 91,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 156,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 85,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 156,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 86,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 156,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 87,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 156,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 88,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 156,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 89,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 156,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 90,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 156,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 91,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.uniquePredicate()",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testUniquePredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 178,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 544,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 178,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 546,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 178,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 547,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 178,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 548,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 178,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 549,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 178,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 550,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 180,
+          "column": 15
+        },
+        "testCodeLocation": {
+          "line": 544,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 180,
+          "column": 15
+        },
+        "testCodeLocation": {
+          "line": 546,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 180,
+          "column": 15
+        },
+        "testCodeLocation": {
+          "line": 547,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 180,
+          "column": 15
+        },
+        "testCodeLocation": {
+          "line": 548,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 180,
+          "column": 15
+        },
+        "testCodeLocation": {
+          "line": 549,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 180,
+          "column": 15
+        },
+        "testCodeLocation": {
+          "line": 550,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 180,
+          "column": 15
+        },
+        "testCodeLocation": {
+          "line": 544,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 180,
+          "column": 15
+        },
+        "testCodeLocation": {
+          "line": 546,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 180,
+          "column": 15
+        },
+        "testCodeLocation": {
+          "line": 547,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 180,
+          "column": 15
+        },
+        "testCodeLocation": {
+          "line": 548,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 180,
+          "column": 15
+        },
+        "testCodeLocation": {
+          "line": 549,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 180,
+          "column": 15
+        },
+        "testCodeLocation": {
+          "line": 550,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 185,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 544,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 185,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 546,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 185,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 547,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 185,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 548,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 185,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 549,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 185,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 550,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nullIsFalsePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNullIsFalsePredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 491,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 661,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 491,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 662,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 491,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 663,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 492,
+          "column": 42
+        },
+        "testCodeLocation": {
+          "line": 661,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 492,
+          "column": 42
+        },
+        "testCodeLocation": {
+          "line": 662,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 492,
+          "column": 42
+        },
+        "testCodeLocation": {
+          "line": 663,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 497,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 661,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 497,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 662,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 497,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 663,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 498,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 661,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 498,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 662,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 498,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 663,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.eitherPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testEitherPredicateEx()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 341,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 343,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 342,
+          "column": 39
+        },
+        "testCodeLocation": {
+          "line": 343,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 347,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 343,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 348,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 343,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.invokerPredicate(java.lang.String)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicateEx2()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 194,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 590,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 195,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 590,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 196,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 590,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 198,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 590,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 205,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 590,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 206,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 590,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.notPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNotPredicateEx()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 441,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 134,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 446,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 134,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 447,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 134,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.eitherPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testEitherPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 341,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 336,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 341,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 337,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 341,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 338,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 341,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 335,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 342,
+          "column": 39
+        },
+        "testCodeLocation": {
+          "line": 336,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 342,
+          "column": 39
+        },
+        "testCodeLocation": {
+          "line": 337,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 342,
+          "column": 39
+        },
+        "testCodeLocation": {
+          "line": 338,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 342,
+          "column": 39
+        },
+        "testCodeLocation": {
+          "line": 335,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 347,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 336,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 347,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 337,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 347,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 338,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 347,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 335,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 348,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 336,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 348,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 337,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 348,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 338,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 348,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 335,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.onePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testOnePredicateEx1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 397,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 397,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 397,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 397,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 397,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.notNullPredicate()",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testIsNotNullPredicate()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 127,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 72,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 127,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 73,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 127,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 74,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 127,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 75,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 127,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 76,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 127,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 77,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 130,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 72,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 130,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 73,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 130,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 74,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 130,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 75,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 130,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 76,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 130,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 77,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.anyPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicateEx2()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 303,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 303,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 303,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 303,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 303,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.asPredicate(org.apache.commons.collections4.Transformer\u003c? super T, java.lang.Boolean\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAsPredicateTransformerEx1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 458,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 564,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 458,
+          "column": 57
+        },
+        "testCodeLocation": {
+          "line": 564,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 464,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 564,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 465,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 564,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.anyPredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testAnyPredicateEx5()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 319,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 319,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 319,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 319,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 319,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 319,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.invokerPredicate(java.lang.String, java.lang.Class\u003c?\u003e[], java.lang.Object[])",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicate2Ex2()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 216,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 618,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 217,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 618,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 218,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 618,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 220,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 618,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 229,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 618,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 230,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 618,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 231,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 618,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.invokerPredicate(java.lang.String, java.lang.Class\u003c?\u003e[], java.lang.Object[])",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testInvokerPredicate2Ex3()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 216,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 623,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 217,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 623,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 218,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 623,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 220,
+          "column": 32
+        },
+        "testCodeLocation": {
+          "line": 623,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 229,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 623,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 230,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 623,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 231,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 623,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nonePredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicateEx5()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 516,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        },
+        "testCodeLocation": {
+          "line": 516,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 516,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 516,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 516,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 516,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nonePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "unitTestMethod": "org.apache.commons.collections4.PredicateUtilsTest.testNonePredicateEx1()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 494,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 494,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 494,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 494,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 494,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

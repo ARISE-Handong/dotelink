@@ -1,0 +1,196 @@
+[
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrlenTest.testValidInput()",
+    "annotation": "@Test",
+    "code": "String input \u003d \"OK\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));assertEquals(input, processorChain.execute(input, ANONYMOUS_CSVCONTEXT));assertEquals(input, processorChain2.execute(input, ANONYMOUS_CSVCONTEXT));input \u003d \"yep\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));// skip \u0027processorChain\u0027 as it only has 1 valid length\nassertEquals(input, processorChain2.execute(input, ANONYMOUS_CSVCONTEXT));",
+    "offset": [
+      {
+        "line": 60,
+        "column": 3
+      },
+      {
+        "line": 60,
+        "column": 23
+      },
+      {
+        "line": 61,
+        "column": 3
+      },
+      {
+        "line": 61,
+        "column": 23
+      },
+      {
+        "line": 62,
+        "column": 3
+      },
+      {
+        "line": 62,
+        "column": 23
+      },
+      {
+        "line": 65,
+        "column": 3
+      },
+      {
+        "line": 65,
+        "column": 23
+      },
+      {
+        "line": 67,
+        "column": 3
+      },
+      {
+        "line": 67,
+        "column": 23
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 64,
+          "column": 3
+        },
+        "assert": "input \u003d \"yep\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"OK\";input \u003d \"yep\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 67,
+          "column": 3
+        },
+        "assert": "// skip \u0027processorChain\u0027 as it only has 1 valid length\nassertEquals(input, processorChain2.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"OK\";input \u003d \"yep\";// skip \u0027processorChain\u0027 as it only has 1 valid length\nassertEquals(input, processorChain2.execute(input, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 59,
+          "column": 3
+        },
+        "assert": "String input \u003d \"OK\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"OK\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 61,
+          "column": 3
+        },
+        "assert": "assertEquals(input, processorChain.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"OK\";assertEquals(input, processorChain.execute(input, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 62,
+          "column": 3
+        },
+        "assert": "assertEquals(input, processorChain2.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"OK\";assertEquals(input, processorChain2.execute(input, ANONYMOUS_CSVCONTEXT));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrlenTest.testInvalidInput()",
+    "annotation": "@Test(expected \u003d SuperCsvConstraintViolationException.class)",
+    "code": "processor.execute(\"four\", SuperCsvTestUtils.ANONYMOUS_CSVCONTEXT);",
+    "offset": [
+      {
+        "line": 76,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 76,
+          "column": 3
+        },
+        "assert": "processor.execute(\"four\", SuperCsvTestUtils.ANONYMOUS_CSVCONTEXT);",
+        "slice": "processor.execute(\"four\", SuperCsvTestUtils.ANONYMOUS_CSVCONTEXT);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrlenTest.testNegativeLength()",
+    "annotation": "@Test(expected \u003d IllegalArgumentException.class)",
+    "code": "new Strlen(-1);",
+    "offset": [
+      {
+        "line": 84,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 84,
+          "column": 3
+        },
+        "assert": "new Strlen(-1);",
+        "slice": "new Strlen(-1);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrlenTest.testWithNull()",
+    "annotation": "@Test(expected \u003d SuperCsvCellProcessorException.class)",
+    "code": "processor.execute(null, ANONYMOUS_CSVCONTEXT);",
+    "offset": [
+      {
+        "line": 92,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 92,
+          "column": 3
+        },
+        "assert": "processor.execute(null, ANONYMOUS_CSVCONTEXT);",
+        "slice": "processor.execute(null, ANONYMOUS_CSVCONTEXT);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrlenTest.testConstructionWithNullArray()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "new Strlen((int[]) null);",
+    "offset": [
+      {
+        "line": 100,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 100,
+          "column": 3
+        },
+        "assert": "new Strlen((int[]) null);",
+        "slice": "new Strlen((int[]) null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrlenTest.testConstructionWithEmptyArray()",
+    "annotation": "@Test(expected \u003d IllegalArgumentException.class)",
+    "code": "new Strlen(new int[] {});",
+    "offset": [
+      {
+        "line": 108,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 108,
+          "column": 3
+        },
+        "assert": "new Strlen(new int[] {});",
+        "slice": "new Strlen(new int[] {});"
+      }
+    ]
+  }
+]

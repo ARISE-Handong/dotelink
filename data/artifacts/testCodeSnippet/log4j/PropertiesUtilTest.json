@@ -1,0 +1,477 @@
+[
+  {
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testExtractSubset()",
+    "annotation": "@Test",
+    "code": "assertHasAllProperties(PropertiesUtil.extractSubset(properties, \"a\"));assertHasAllProperties(PropertiesUtil.extractSubset(properties, \"b.\"));assertHasAllProperties(PropertiesUtil.extractSubset(properties, \"c.1\"));assertHasAllProperties(PropertiesUtil.extractSubset(properties, \"dd\"));assertEquals(0, properties.size());",
+    "offset": [
+      {
+        "line": 46,
+        "column": 9
+      },
+      {
+        "line": 46,
+        "column": 32
+      },
+      {
+        "line": 47,
+        "column": 9
+      },
+      {
+        "line": 47,
+        "column": 32
+      },
+      {
+        "line": 48,
+        "column": 9
+      },
+      {
+        "line": 48,
+        "column": 32
+      },
+      {
+        "line": 49,
+        "column": 9
+      },
+      {
+        "line": 49,
+        "column": 32
+      },
+      {
+        "line": 50,
+        "column": 9
+      },
+      {
+        "line": 50,
+        "column": 25
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 48,
+          "column": 9
+        },
+        "assert": "assertHasAllProperties(PropertiesUtil.extractSubset(properties, \"c.1\"));",
+        "slice": "assertHasAllProperties(PropertiesUtil.extractSubset(properties, \"c.1\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 49,
+          "column": 9
+        },
+        "assert": "assertHasAllProperties(PropertiesUtil.extractSubset(properties, \"dd\"));",
+        "slice": "assertHasAllProperties(PropertiesUtil.extractSubset(properties, \"dd\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 50,
+          "column": 9
+        },
+        "assert": "assertEquals(0, properties.size());",
+        "slice": "assertEquals(0, properties.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 46,
+          "column": 9
+        },
+        "assert": "assertHasAllProperties(PropertiesUtil.extractSubset(properties, \"a\"));",
+        "slice": "assertHasAllProperties(PropertiesUtil.extractSubset(properties, \"a\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 47,
+          "column": 9
+        },
+        "assert": "assertHasAllProperties(PropertiesUtil.extractSubset(properties, \"b.\"));",
+        "slice": "assertHasAllProperties(PropertiesUtil.extractSubset(properties, \"b.\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testPartitionOnCommonPrefix()",
+    "annotation": "@Test",
+    "code": "final Map\u003cString, Properties\u003e parts \u003d PropertiesUtil.partitionOnCommonPrefixes(properties);assertEquals(4, parts.size());assertHasAllProperties(parts.get(\"a\"));assertHasAllProperties(parts.get(\"b\"));assertHasAllProperties(PropertiesUtil.partitionOnCommonPrefixes(parts.get(\"c\")).get(\"1\"));assertHasAllProperties(parts.get(\"dd\"));",
+    "offset": [
+      {
+        "line": 55,
+        "column": 47
+      },
+      {
+        "line": 56,
+        "column": 9
+      },
+      {
+        "line": 56,
+        "column": 25
+      },
+      {
+        "line": 57,
+        "column": 9
+      },
+      {
+        "line": 57,
+        "column": 32
+      },
+      {
+        "line": 58,
+        "column": 9
+      },
+      {
+        "line": 58,
+        "column": 32
+      },
+      {
+        "line": 59,
+        "column": 9
+      },
+      {
+        "line": 59,
+        "column": 32
+      },
+      {
+        "line": 59,
+        "column": 32
+      },
+      {
+        "line": 59,
+        "column": 73
+      },
+      {
+        "line": 60,
+        "column": 9
+      },
+      {
+        "line": 60,
+        "column": 32
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 55,
+          "column": 9
+        },
+        "assert": "final Map\u003cString, Properties\u003e parts \u003d PropertiesUtil.partitionOnCommonPrefixes(properties);assertEquals(4, parts.size());",
+        "slice": "final Map\u003cString, Properties\u003e parts \u003d PropertiesUtil.partitionOnCommonPrefixes(properties);assertEquals(4, parts.size());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 57,
+          "column": 9
+        },
+        "assert": "assertHasAllProperties(parts.get(\"a\"));",
+        "slice": "final Map\u003cString, Properties\u003e parts \u003d PropertiesUtil.partitionOnCommonPrefixes(properties);assertHasAllProperties(parts.get(\"a\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 58,
+          "column": 9
+        },
+        "assert": "assertHasAllProperties(parts.get(\"b\"));",
+        "slice": "final Map\u003cString, Properties\u003e parts \u003d PropertiesUtil.partitionOnCommonPrefixes(properties);assertHasAllProperties(parts.get(\"b\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 59,
+          "column": 9
+        },
+        "assert": "assertHasAllProperties(PropertiesUtil.partitionOnCommonPrefixes(parts.get(\"c\")).get(\"1\"));",
+        "slice": "final Map\u003cString, Properties\u003e parts \u003d PropertiesUtil.partitionOnCommonPrefixes(properties);assertHasAllProperties(PropertiesUtil.partitionOnCommonPrefixes(parts.get(\"c\")).get(\"1\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 60,
+          "column": 9
+        },
+        "assert": "assertHasAllProperties(parts.get(\"dd\"));",
+        "slice": "final Map\u003cString, Properties\u003e parts \u003d PropertiesUtil.partitionOnCommonPrefixes(properties);assertHasAllProperties(parts.get(\"dd\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testGetCharsetProperty()",
+    "annotation": "@Test",
+    "code": "final Properties p \u003d new Properties();p.setProperty(\"e.1\", StandardCharsets.US_ASCII.name());p.setProperty(\"e.2\", \"wrong-charset-name\");final PropertiesUtil pu \u003d new PropertiesUtil(p);assertEquals(Charset.defaultCharset(), pu.getCharsetProperty(\"e.0\"));assertEquals(StandardCharsets.US_ASCII, pu.getCharsetProperty(\"e.1\"));assertEquals(Charset.defaultCharset(), pu.getCharsetProperty(\"e.2\"));",
+    "offset": [
+      {
+        "line": 73,
+        "column": 30
+      },
+      {
+        "line": 74,
+        "column": 9
+      },
+      {
+        "line": 74,
+        "column": 30
+      },
+      {
+        "line": 75,
+        "column": 9
+      },
+      {
+        "line": 76,
+        "column": 35
+      },
+      {
+        "line": 78,
+        "column": 9
+      },
+      {
+        "line": 78,
+        "column": 22
+      },
+      {
+        "line": 78,
+        "column": 48
+      },
+      {
+        "line": 79,
+        "column": 9
+      },
+      {
+        "line": 79,
+        "column": 49
+      },
+      {
+        "line": 80,
+        "column": 9
+      },
+      {
+        "line": 80,
+        "column": 22
+      },
+      {
+        "line": 80,
+        "column": 48
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 80,
+          "column": 9
+        },
+        "assert": "assertEquals(Charset.defaultCharset(), pu.getCharsetProperty(\"e.2\"));",
+        "slice": "final Properties p \u003d new Properties();p.setProperty(\"e.1\", StandardCharsets.US_ASCII.name());p.setProperty(\"e.2\", \"wrong-charset-name\");final PropertiesUtil pu \u003d new PropertiesUtil(p);assertEquals(Charset.defaultCharset(), pu.getCharsetProperty(\"e.2\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 73,
+          "column": 9
+        },
+        "assert": "final Properties p \u003d new Properties();p.setProperty(\"e.1\", StandardCharsets.US_ASCII.name());p.setProperty(\"e.2\", \"wrong-charset-name\");final PropertiesUtil pu \u003d new PropertiesUtil(p);assertEquals(Charset.defaultCharset(), pu.getCharsetProperty(\"e.0\"));",
+        "slice": "final Properties p \u003d new Properties();p.setProperty(\"e.1\", StandardCharsets.US_ASCII.name());p.setProperty(\"e.2\", \"wrong-charset-name\");final PropertiesUtil pu \u003d new PropertiesUtil(p);assertEquals(Charset.defaultCharset(), pu.getCharsetProperty(\"e.0\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 79,
+          "column": 9
+        },
+        "assert": "assertEquals(StandardCharsets.US_ASCII, pu.getCharsetProperty(\"e.1\"));",
+        "slice": "final Properties p \u003d new Properties();p.setProperty(\"e.1\", StandardCharsets.US_ASCII.name());p.setProperty(\"e.2\", \"wrong-charset-name\");final PropertiesUtil pu \u003d new PropertiesUtil(p);assertEquals(StandardCharsets.US_ASCII, pu.getCharsetProperty(\"e.1\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testGetMappedProperty_sun_stdout_encoding()",
+    "annotation": "@Test",
+    "code": "final PropertiesUtil pu \u003d new PropertiesUtil(System.getProperties());final Charset expected \u003d System.console() \u003d\u003d null ? Charset.defaultCharset() : StandardCharsets.UTF_8;assertEquals(expected, pu.getCharsetProperty(\"sun.stdout.encoding\"));",
+    "offset": [
+      {
+        "line": 85,
+        "column": 35
+      },
+      {
+        "line": 85,
+        "column": 54
+      },
+      {
+        "line": 86,
+        "column": 34
+      },
+      {
+        "line": 86,
+        "column": 61
+      },
+      {
+        "line": 87,
+        "column": 9
+      },
+      {
+        "line": 87,
+        "column": 32
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 85,
+          "column": 9
+        },
+        "assert": "final PropertiesUtil pu \u003d new PropertiesUtil(System.getProperties());final Charset expected \u003d System.console() \u003d\u003d null ? Charset.defaultCharset() : StandardCharsets.UTF_8;assertEquals(expected, pu.getCharsetProperty(\"sun.stdout.encoding\"));",
+        "slice": "final PropertiesUtil pu \u003d new PropertiesUtil(System.getProperties());final Charset expected \u003d System.console() \u003d\u003d null ? Charset.defaultCharset() : StandardCharsets.UTF_8;assertEquals(expected, pu.getCharsetProperty(\"sun.stdout.encoding\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testGetMappedProperty_sun_stderr_encoding()",
+    "annotation": "@Test",
+    "code": "final PropertiesUtil pu \u003d new PropertiesUtil(System.getProperties());final Charset expected \u003d System.console() \u003d\u003d null ? Charset.defaultCharset() : StandardCharsets.UTF_8;assertEquals(expected, pu.getCharsetProperty(\"sun.err.encoding\"));",
+    "offset": [
+      {
+        "line": 92,
+        "column": 35
+      },
+      {
+        "line": 92,
+        "column": 54
+      },
+      {
+        "line": 93,
+        "column": 34
+      },
+      {
+        "line": 93,
+        "column": 61
+      },
+      {
+        "line": 94,
+        "column": 9
+      },
+      {
+        "line": 94,
+        "column": 32
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 92,
+          "column": 9
+        },
+        "assert": "final PropertiesUtil pu \u003d new PropertiesUtil(System.getProperties());final Charset expected \u003d System.console() \u003d\u003d null ? Charset.defaultCharset() : StandardCharsets.UTF_8;assertEquals(expected, pu.getCharsetProperty(\"sun.err.encoding\"));",
+        "slice": "final PropertiesUtil pu \u003d new PropertiesUtil(System.getProperties());final Charset expected \u003d System.console() \u003d\u003d null ? Charset.defaultCharset() : StandardCharsets.UTF_8;assertEquals(expected, pu.getCharsetProperty(\"sun.err.encoding\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testNonStringSystemProperties()",
+    "annotation": "@Test",
+    "code": "final Object key1 \u003d \"1\";final Object key2 \u003d new Object();System.getProperties().put(key1, new Object());System.getProperties().put(key2, \"value-2\");try {\n    final PropertiesUtil util \u003d new PropertiesUtil(new Properties());\n    assertNull(util.getStringProperty(\"1\"));\n} finally {\n    System.getProperties().remove(key1);\n    System.getProperties().remove(key2);\n}",
+    "offset": [
+      {
+        "line": 100,
+        "column": 29
+      },
+      {
+        "line": 101,
+        "column": 9
+      },
+      {
+        "line": 101,
+        "column": 9
+      },
+      {
+        "line": 101,
+        "column": 42
+      },
+      {
+        "line": 102,
+        "column": 9
+      },
+      {
+        "line": 102,
+        "column": 9
+      },
+      {
+        "line": 104,
+        "column": 41
+      },
+      {
+        "line": 104,
+        "column": 60
+      },
+      {
+        "line": 105,
+        "column": 13
+      },
+      {
+        "line": 105,
+        "column": 24
+      },
+      {
+        "line": 107,
+        "column": 13
+      },
+      {
+        "line": 107,
+        "column": 13
+      },
+      {
+        "line": 108,
+        "column": 13
+      },
+      {
+        "line": 108,
+        "column": 13
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 99,
+          "column": 9
+        },
+        "assert": "final Object key1 \u003d \"1\";final Object key2 \u003d new Object();System.getProperties().put(key1, new Object());System.getProperties().put(key2, \"value-2\");try {\n    final PropertiesUtil util \u003d new PropertiesUtil(new Properties());\n    assertNull(util.getStringProperty(\"1\"));\n} finally {\n    System.getProperties().remove(key1);\n    System.getProperties().remove(key2);\n}",
+        "slice": "final Object key1 \u003d \"1\";final Object key2 \u003d new Object();System.getProperties().put(key1, new Object());System.getProperties().put(key2, \"value-2\");try {\n    final PropertiesUtil util \u003d new PropertiesUtil(new Properties());\n    assertNull(util.getStringProperty(\"1\"));\n} finally {\n    System.getProperties().remove(key1);\n    System.getProperties().remove(key2);\n}"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.apache.logging.log4j.util.PropertiesUtilTest.testPublish()",
+    "annotation": "@Test",
+    "code": "final Properties props \u003d new Properties();final PropertiesUtil util \u003d new PropertiesUtil(props);String value \u003d System.getProperty(\"Application\");assertNotNull(\"System property was not published\", value);assertEquals(\"Log4j\", value);",
+    "offset": [
+      {
+        "line": 114,
+        "column": 34
+      },
+      {
+        "line": 115,
+        "column": 37
+      },
+      {
+        "line": 116,
+        "column": 24
+      },
+      {
+        "line": 117,
+        "column": 9
+      },
+      {
+        "line": 118,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 114,
+          "column": 9
+        },
+        "assert": "final Properties props \u003d new Properties();final PropertiesUtil util \u003d new PropertiesUtil(props);String value \u003d System.getProperty(\"Application\");assertNotNull(\"System property was not published\", value);",
+        "slice": "final Properties props \u003d new Properties();final PropertiesUtil util \u003d new PropertiesUtil(props);String value \u003d System.getProperty(\"Application\");assertNotNull(\"System property was not published\", value);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 118,
+          "column": 9
+        },
+        "assert": "assertEquals(\"Log4j\", value);",
+        "slice": "String value \u003d System.getProperty(\"Application\");assertEquals(\"Log4j\", value);"
+      }
+    ]
+  }
+]

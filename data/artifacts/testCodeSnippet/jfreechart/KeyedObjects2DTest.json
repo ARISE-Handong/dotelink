@@ -1,0 +1,1137 @@
+[
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testEquals()",
+    "annotation": "@Test",
+    "code": "KeyedObjects2D k1 \u003d new KeyedObjects2D();KeyedObjects2D k2 \u003d new KeyedObjects2D();assertTrue(k1.equals(k2));assertTrue(k2.equals(k1));k1.equals(k2);k1.addObject(new Integer(99), \"R1\", \"C1\");assertFalse(k1.equals(k2));k2.addObject(new Integer(99), \"R1\", \"C1\");assertTrue(k1.equals(k2));",
+    "offset": [
+      {
+        "line": 62,
+        "column": 29
+      },
+      {
+        "line": 63,
+        "column": 29
+      },
+      {
+        "line": 64,
+        "column": 9
+      },
+      {
+        "line": 64,
+        "column": 20
+      },
+      {
+        "line": 65,
+        "column": 9
+      },
+      {
+        "line": 65,
+        "column": 20
+      },
+      {
+        "line": 66,
+        "column": 3
+      },
+      {
+        "line": 68,
+        "column": 9
+      },
+      {
+        "line": 68,
+        "column": 22
+      },
+      {
+        "line": 69,
+        "column": 9
+      },
+      {
+        "line": 69,
+        "column": 21
+      },
+      {
+        "line": 70,
+        "column": 9
+      },
+      {
+        "line": 70,
+        "column": 22
+      },
+      {
+        "line": 71,
+        "column": 9
+      },
+      {
+        "line": 71,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 65,
+          "column": 9
+        },
+        "assert": "assertTrue(k2.equals(k1));",
+        "slice": "KeyedObjects2D k1 \u003d new KeyedObjects2D();KeyedObjects2D k2 \u003d new KeyedObjects2D();assertTrue(k2.equals(k1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 66,
+          "column": 3
+        },
+        "assert": "k1.equals(k2);k1.addObject(new Integer(99), \"R1\", \"C1\");assertFalse(k1.equals(k2));",
+        "slice": "KeyedObjects2D k1 \u003d new KeyedObjects2D();KeyedObjects2D k2 \u003d new KeyedObjects2D();k1.equals(k2);k1.addObject(new Integer(99), \"R1\", \"C1\");assertFalse(k1.equals(k2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 70,
+          "column": 9
+        },
+        "assert": "k2.addObject(new Integer(99), \"R1\", \"C1\");assertTrue(k1.equals(k2));",
+        "slice": "KeyedObjects2D k1 \u003d new KeyedObjects2D();KeyedObjects2D k2 \u003d new KeyedObjects2D();k1.equals(k2);k1.addObject(new Integer(99), \"R1\", \"C1\");k2.addObject(new Integer(99), \"R1\", \"C1\");assertTrue(k1.equals(k2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 62,
+          "column": 9
+        },
+        "assert": "KeyedObjects2D k1 \u003d new KeyedObjects2D();KeyedObjects2D k2 \u003d new KeyedObjects2D();assertTrue(k1.equals(k2));",
+        "slice": "KeyedObjects2D k1 \u003d new KeyedObjects2D();KeyedObjects2D k2 \u003d new KeyedObjects2D();assertTrue(k1.equals(k2));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testCloning()",
+    "annotation": "@Test",
+    "code": "KeyedObjects2D o1 \u003d new KeyedObjects2D();o1.setObject(new Integer(1), \"V1\", \"C1\");o1.setObject(null, \"V2\", \"C1\");o1.setObject(new Integer(3), \"V3\", \"C2\");KeyedObjects2D o2 \u003d (KeyedObjects2D) o1.clone();assertTrue(o1 !\u003d o2);assertTrue(o1.getClass() \u003d\u003d o2.getClass());assertTrue(o1.equals(o2));// check independence\no1.addObject(\"XX\", \"R1\", \"C1\");assertFalse(o1.equals(o2));",
+    "offset": [
+      {
+        "line": 79,
+        "column": 29
+      },
+      {
+        "line": 80,
+        "column": 9
+      },
+      {
+        "line": 80,
+        "column": 22
+      },
+      {
+        "line": 81,
+        "column": 9
+      },
+      {
+        "line": 82,
+        "column": 9
+      },
+      {
+        "line": 82,
+        "column": 22
+      },
+      {
+        "line": 83,
+        "column": 46
+      },
+      {
+        "line": 84,
+        "column": 9
+      },
+      {
+        "line": 85,
+        "column": 9
+      },
+      {
+        "line": 85,
+        "column": 20
+      },
+      {
+        "line": 85,
+        "column": 37
+      },
+      {
+        "line": 86,
+        "column": 9
+      },
+      {
+        "line": 86,
+        "column": 20
+      },
+      {
+        "line": 89,
+        "column": 9
+      },
+      {
+        "line": 90,
+        "column": 9
+      },
+      {
+        "line": 90,
+        "column": 21
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 85,
+          "column": 9
+        },
+        "assert": "assertTrue(o1.getClass() \u003d\u003d o2.getClass());",
+        "slice": "KeyedObjects2D o1 \u003d new KeyedObjects2D();o1.setObject(new Integer(1), \"V1\", \"C1\");o1.setObject(null, \"V2\", \"C1\");o1.setObject(new Integer(3), \"V3\", \"C2\");KeyedObjects2D o2 \u003d (KeyedObjects2D) o1.clone();assertTrue(o1.getClass() \u003d\u003d o2.getClass());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 86,
+          "column": 9
+        },
+        "assert": "assertTrue(o1.equals(o2));",
+        "slice": "KeyedObjects2D o1 \u003d new KeyedObjects2D();o1.setObject(new Integer(1), \"V1\", \"C1\");o1.setObject(null, \"V2\", \"C1\");o1.setObject(new Integer(3), \"V3\", \"C2\");KeyedObjects2D o2 \u003d (KeyedObjects2D) o1.clone();assertTrue(o1.equals(o2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 89,
+          "column": 9
+        },
+        "assert": "// check independence\no1.addObject(\"XX\", \"R1\", \"C1\");assertFalse(o1.equals(o2));",
+        "slice": "KeyedObjects2D o1 \u003d new KeyedObjects2D();o1.setObject(new Integer(1), \"V1\", \"C1\");o1.setObject(null, \"V2\", \"C1\");o1.setObject(new Integer(3), \"V3\", \"C2\");KeyedObjects2D o2 \u003d (KeyedObjects2D) o1.clone();// check independence\no1.addObject(\"XX\", \"R1\", \"C1\");assertFalse(o1.equals(o2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 79,
+          "column": 9
+        },
+        "assert": "KeyedObjects2D o1 \u003d new KeyedObjects2D();o1.setObject(new Integer(1), \"V1\", \"C1\");o1.setObject(null, \"V2\", \"C1\");o1.setObject(new Integer(3), \"V3\", \"C2\");KeyedObjects2D o2 \u003d (KeyedObjects2D) o1.clone();assertTrue(o1 !\u003d o2);",
+        "slice": "KeyedObjects2D o1 \u003d new KeyedObjects2D();o1.setObject(new Integer(1), \"V1\", \"C1\");o1.setObject(null, \"V2\", \"C1\");o1.setObject(new Integer(3), \"V3\", \"C2\");KeyedObjects2D o2 \u003d (KeyedObjects2D) o1.clone();assertTrue(o1 !\u003d o2);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testSerialization()",
+    "annotation": "@Test",
+    "code": "KeyedObjects2D ko2D1 \u003d new KeyedObjects2D();ko2D1.addObject(new Double(234.2), \"Row1\", \"Col1\");ko2D1.addObject(null, \"Row1\", \"Col2\");ko2D1.addObject(new Double(345.9), \"Row2\", \"Col1\");ko2D1.addObject(new Double(452.7), \"Row2\", \"Col2\");KeyedObjects2D ko2D2 \u003d (KeyedObjects2D) TestUtilities.serialised(ko2D1);assertEquals(ko2D1, ko2D2);",
+    "offset": [
+      {
+        "line": 98,
+        "column": 32
+      },
+      {
+        "line": 99,
+        "column": 9
+      },
+      {
+        "line": 99,
+        "column": 25
+      },
+      {
+        "line": 100,
+        "column": 9
+      },
+      {
+        "line": 101,
+        "column": 9
+      },
+      {
+        "line": 101,
+        "column": 25
+      },
+      {
+        "line": 102,
+        "column": 9
+      },
+      {
+        "line": 102,
+        "column": 25
+      },
+      {
+        "line": 104,
+        "column": 49
+      },
+      {
+        "line": 105,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 98,
+          "column": 9
+        },
+        "assert": "KeyedObjects2D ko2D1 \u003d new KeyedObjects2D();ko2D1.addObject(new Double(234.2), \"Row1\", \"Col1\");ko2D1.addObject(null, \"Row1\", \"Col2\");ko2D1.addObject(new Double(345.9), \"Row2\", \"Col1\");ko2D1.addObject(new Double(452.7), \"Row2\", \"Col2\");KeyedObjects2D ko2D2 \u003d (KeyedObjects2D) TestUtilities.serialised(ko2D1);assertEquals(ko2D1, ko2D2);",
+        "slice": "KeyedObjects2D ko2D1 \u003d new KeyedObjects2D();ko2D1.addObject(new Double(234.2), \"Row1\", \"Col1\");ko2D1.addObject(null, \"Row1\", \"Col2\");ko2D1.addObject(new Double(345.9), \"Row2\", \"Col1\");ko2D1.addObject(new Double(452.7), \"Row2\", \"Col2\");KeyedObjects2D ko2D2 \u003d (KeyedObjects2D) TestUtilities.serialised(ko2D1);assertEquals(ko2D1, ko2D2);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testGetValueByIndex()",
+    "annotation": "@Test",
+    "code": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");assertEquals(\"Obj1\", data.getObject(0, 0));assertEquals(\"Obj2\", data.getObject(1, 1));assertNull(data.getObject(0, 1));assertNull(data.getObject(1, 0));// check invalid indices\nboolean pass \u003d false;try {\n    data.getObject(-1, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);pass \u003d false;try {\n    data.getObject(0, -1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);pass \u003d false;try {\n    data.getObject(2, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);pass \u003d false;try {\n    data.getObject(0, 2);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 113,
+        "column": 31
+      },
+      {
+        "line": 114,
+        "column": 9
+      },
+      {
+        "line": 115,
+        "column": 9
+      },
+      {
+        "line": 116,
+        "column": 9
+      },
+      {
+        "line": 116,
+        "column": 30
+      },
+      {
+        "line": 117,
+        "column": 9
+      },
+      {
+        "line": 117,
+        "column": 30
+      },
+      {
+        "line": 118,
+        "column": 9
+      },
+      {
+        "line": 118,
+        "column": 20
+      },
+      {
+        "line": 119,
+        "column": 9
+      },
+      {
+        "line": 119,
+        "column": 20
+      },
+      {
+        "line": 124,
+        "column": 13
+      },
+      {
+        "line": 129,
+        "column": 9
+      },
+      {
+        "line": 133,
+        "column": 13
+      },
+      {
+        "line": 138,
+        "column": 9
+      },
+      {
+        "line": 142,
+        "column": 13
+      },
+      {
+        "line": 147,
+        "column": 9
+      },
+      {
+        "line": 151,
+        "column": 13
+      },
+      {
+        "line": 156,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 113,
+          "column": 9
+        },
+        "assert": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");assertEquals(\"Obj1\", data.getObject(0, 0));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");assertEquals(\"Obj1\", data.getObject(0, 0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 131,
+          "column": 9
+        },
+        "assert": "pass \u003d false;try {\n    data.getObject(0, -1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");// check invalid indices\nboolean pass \u003d false;try {\n    data.getObject(-1, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}pass \u003d false;try {\n    data.getObject(0, -1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 117,
+          "column": 9
+        },
+        "assert": "assertEquals(\"Obj2\", data.getObject(1, 1));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");assertEquals(\"Obj2\", data.getObject(1, 1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 149,
+          "column": 9
+        },
+        "assert": "pass \u003d false;try {\n    data.getObject(0, 2);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");// check invalid indices\nboolean pass \u003d false;try {\n    data.getObject(-1, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}pass \u003d false;try {\n    data.getObject(0, -1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}pass \u003d false;try {\n    data.getObject(2, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}pass \u003d false;try {\n    data.getObject(0, 2);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 118,
+          "column": 9
+        },
+        "assert": "assertNull(data.getObject(0, 1));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");assertNull(data.getObject(0, 1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 119,
+          "column": 9
+        },
+        "assert": "assertNull(data.getObject(1, 0));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");assertNull(data.getObject(1, 0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 122,
+          "column": 9
+        },
+        "assert": "// check invalid indices\nboolean pass \u003d false;try {\n    data.getObject(-1, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");// check invalid indices\nboolean pass \u003d false;try {\n    data.getObject(-1, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 140,
+          "column": 9
+        },
+        "assert": "pass \u003d false;try {\n    data.getObject(2, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");// check invalid indices\nboolean pass \u003d false;try {\n    data.getObject(-1, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}pass \u003d false;try {\n    data.getObject(0, -1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}pass \u003d false;try {\n    data.getObject(2, 0);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testGetValueByKey()",
+    "annotation": "@Test",
+    "code": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");assertEquals(\"Obj1\", data.getObject(\"R1\", \"C1\"));assertEquals(\"Obj2\", data.getObject(\"R2\", \"C2\"));assertNull(data.getObject(\"R1\", \"C2\"));assertNull(data.getObject(\"R2\", \"C1\"));// check invalid indices\nboolean pass \u003d false;try {\n    data.getObject(\"XX\", \"C1\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);pass \u003d false;try {\n    data.getObject(\"R1\", \"XX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);pass \u003d false;try {\n    data.getObject(\"XX\", \"C1\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);pass \u003d false;try {\n    data.getObject(\"R1\", \"XX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 164,
+        "column": 31
+      },
+      {
+        "line": 165,
+        "column": 9
+      },
+      {
+        "line": 166,
+        "column": 9
+      },
+      {
+        "line": 167,
+        "column": 9
+      },
+      {
+        "line": 167,
+        "column": 30
+      },
+      {
+        "line": 168,
+        "column": 9
+      },
+      {
+        "line": 168,
+        "column": 30
+      },
+      {
+        "line": 169,
+        "column": 9
+      },
+      {
+        "line": 169,
+        "column": 20
+      },
+      {
+        "line": 170,
+        "column": 9
+      },
+      {
+        "line": 170,
+        "column": 20
+      },
+      {
+        "line": 175,
+        "column": 13
+      },
+      {
+        "line": 180,
+        "column": 9
+      },
+      {
+        "line": 184,
+        "column": 13
+      },
+      {
+        "line": 189,
+        "column": 9
+      },
+      {
+        "line": 193,
+        "column": 13
+      },
+      {
+        "line": 198,
+        "column": 9
+      },
+      {
+        "line": 202,
+        "column": 13
+      },
+      {
+        "line": 207,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 164,
+          "column": 9
+        },
+        "assert": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");assertEquals(\"Obj1\", data.getObject(\"R1\", \"C1\"));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");assertEquals(\"Obj1\", data.getObject(\"R1\", \"C1\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 182,
+          "column": 9
+        },
+        "assert": "pass \u003d false;try {\n    data.getObject(\"R1\", \"XX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");// check invalid indices\nboolean pass \u003d false;try {\n    data.getObject(\"XX\", \"C1\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}pass \u003d false;try {\n    data.getObject(\"R1\", \"XX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 168,
+          "column": 9
+        },
+        "assert": "assertEquals(\"Obj2\", data.getObject(\"R2\", \"C2\"));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");assertEquals(\"Obj2\", data.getObject(\"R2\", \"C2\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 200,
+          "column": 9
+        },
+        "assert": "pass \u003d false;try {\n    data.getObject(\"R1\", \"XX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");// check invalid indices\nboolean pass \u003d false;try {\n    data.getObject(\"XX\", \"C1\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}pass \u003d false;try {\n    data.getObject(\"R1\", \"XX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}pass \u003d false;try {\n    data.getObject(\"XX\", \"C1\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}pass \u003d false;try {\n    data.getObject(\"R1\", \"XX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 169,
+          "column": 9
+        },
+        "assert": "assertNull(data.getObject(\"R1\", \"C2\"));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");assertNull(data.getObject(\"R1\", \"C2\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 170,
+          "column": 9
+        },
+        "assert": "assertNull(data.getObject(\"R2\", \"C1\"));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");assertNull(data.getObject(\"R2\", \"C1\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 173,
+          "column": 9
+        },
+        "assert": "// check invalid indices\nboolean pass \u003d false;try {\n    data.getObject(\"XX\", \"C1\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");// check invalid indices\nboolean pass \u003d false;try {\n    data.getObject(\"XX\", \"C1\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 191,
+          "column": 9
+        },
+        "assert": "pass \u003d false;try {\n    data.getObject(\"XX\", \"C1\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.addObject(\"Obj1\", \"R1\", \"C1\");data.addObject(\"Obj2\", \"R2\", \"C2\");// check invalid indices\nboolean pass \u003d false;try {\n    data.getObject(\"XX\", \"C1\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}pass \u003d false;try {\n    data.getObject(\"R1\", \"XX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}pass \u003d false;try {\n    data.getObject(\"XX\", \"C1\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testSetObject()",
+    "annotation": "@Test",
+    "code": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");assertEquals(\"Obj1\", data.getObject(\"R1\", \"C1\"));assertEquals(\"Obj2\", data.getObject(\"R2\", \"C2\"));assertNull(data.getObject(\"R1\", \"C2\"));assertNull(data.getObject(\"R2\", \"C1\"));// confirm overwriting an existing value\ndata.setObject(\"ABC\", \"R2\", \"C2\");assertEquals(\"ABC\", data.getObject(\"R2\", \"C2\"));// try null keys\nboolean pass \u003d false;try {\n    data.setObject(\"X\", null, \"C1\");\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);pass \u003d false;try {\n    data.setObject(\"X\", \"R1\", null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 215,
+        "column": 31
+      },
+      {
+        "line": 216,
+        "column": 9
+      },
+      {
+        "line": 217,
+        "column": 9
+      },
+      {
+        "line": 218,
+        "column": 9
+      },
+      {
+        "line": 218,
+        "column": 30
+      },
+      {
+        "line": 219,
+        "column": 9
+      },
+      {
+        "line": 219,
+        "column": 30
+      },
+      {
+        "line": 220,
+        "column": 9
+      },
+      {
+        "line": 220,
+        "column": 20
+      },
+      {
+        "line": 221,
+        "column": 9
+      },
+      {
+        "line": 221,
+        "column": 20
+      },
+      {
+        "line": 224,
+        "column": 9
+      },
+      {
+        "line": 225,
+        "column": 9
+      },
+      {
+        "line": 225,
+        "column": 29
+      },
+      {
+        "line": 230,
+        "column": 13
+      },
+      {
+        "line": 235,
+        "column": 9
+      },
+      {
+        "line": 239,
+        "column": 13
+      },
+      {
+        "line": 244,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 224,
+          "column": 9
+        },
+        "assert": "// confirm overwriting an existing value\ndata.setObject(\"ABC\", \"R2\", \"C2\");assertEquals(\"ABC\", data.getObject(\"R2\", \"C2\"));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");// confirm overwriting an existing value\ndata.setObject(\"ABC\", \"R2\", \"C2\");assertEquals(\"ABC\", data.getObject(\"R2\", \"C2\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 228,
+          "column": 9
+        },
+        "assert": "// try null keys\nboolean pass \u003d false;try {\n    data.setObject(\"X\", null, \"C1\");\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");// confirm overwriting an existing value\ndata.setObject(\"ABC\", \"R2\", \"C2\");// try null keys\nboolean pass \u003d false;try {\n    data.setObject(\"X\", null, \"C1\");\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 215,
+          "column": 9
+        },
+        "assert": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");assertEquals(\"Obj1\", data.getObject(\"R1\", \"C1\"));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");assertEquals(\"Obj1\", data.getObject(\"R1\", \"C1\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 219,
+          "column": 9
+        },
+        "assert": "assertEquals(\"Obj2\", data.getObject(\"R2\", \"C2\"));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");assertEquals(\"Obj2\", data.getObject(\"R2\", \"C2\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 220,
+          "column": 9
+        },
+        "assert": "assertNull(data.getObject(\"R1\", \"C2\"));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");assertNull(data.getObject(\"R1\", \"C2\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 221,
+          "column": 9
+        },
+        "assert": "assertNull(data.getObject(\"R2\", \"C1\"));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");assertNull(data.getObject(\"R2\", \"C1\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 237,
+          "column": 9
+        },
+        "assert": "pass \u003d false;try {\n    data.setObject(\"X\", \"R1\", null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");// confirm overwriting an existing value\ndata.setObject(\"ABC\", \"R2\", \"C2\");// try null keys\nboolean pass \u003d false;try {\n    data.setObject(\"X\", null, \"C1\");\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}pass \u003d false;try {\n    data.setObject(\"X\", \"R1\", null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testRemoveRowByIndex()",
+    "annotation": "@Test",
+    "code": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeRow(0);assertEquals(1, data.getRowCount());assertEquals(\"Obj2\", data.getObject(0, 1));// try negative row index\nboolean pass \u003d false;try {\n    data.removeRow(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);// try row index too high\npass \u003d false;try {\n    data.removeRow(data.getRowCount());\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 252,
+        "column": 31
+      },
+      {
+        "line": 253,
+        "column": 9
+      },
+      {
+        "line": 254,
+        "column": 9
+      },
+      {
+        "line": 255,
+        "column": 9
+      },
+      {
+        "line": 256,
+        "column": 9
+      },
+      {
+        "line": 256,
+        "column": 25
+      },
+      {
+        "line": 257,
+        "column": 9
+      },
+      {
+        "line": 257,
+        "column": 30
+      },
+      {
+        "line": 262,
+        "column": 13
+      },
+      {
+        "line": 267,
+        "column": 9
+      },
+      {
+        "line": 272,
+        "column": 13
+      },
+      {
+        "line": 272,
+        "column": 28
+      },
+      {
+        "line": 277,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 257,
+          "column": 9
+        },
+        "assert": "assertEquals(\"Obj2\", data.getObject(0, 1));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeRow(0);assertEquals(\"Obj2\", data.getObject(0, 1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 260,
+          "column": 9
+        },
+        "assert": "// try negative row index\nboolean pass \u003d false;try {\n    data.removeRow(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeRow(0);// try negative row index\nboolean pass \u003d false;try {\n    data.removeRow(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 252,
+          "column": 9
+        },
+        "assert": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeRow(0);assertEquals(1, data.getRowCount());",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeRow(0);assertEquals(1, data.getRowCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 270,
+          "column": 9
+        },
+        "assert": "// try row index too high\npass \u003d false;try {\n    data.removeRow(data.getRowCount());\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeRow(0);// try negative row index\nboolean pass \u003d false;try {\n    data.removeRow(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}// try row index too high\npass \u003d false;try {\n    data.removeRow(data.getRowCount());\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testRemoveColumnByIndex()",
+    "annotation": "@Test",
+    "code": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeColumn(0);assertEquals(1, data.getColumnCount());assertEquals(\"Obj2\", data.getObject(1, 0));// try negative column index\nboolean pass \u003d false;try {\n    data.removeColumn(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);// try column index too high\npass \u003d false;try {\n    data.removeColumn(data.getColumnCount());\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 285,
+        "column": 31
+      },
+      {
+        "line": 286,
+        "column": 9
+      },
+      {
+        "line": 287,
+        "column": 9
+      },
+      {
+        "line": 288,
+        "column": 9
+      },
+      {
+        "line": 289,
+        "column": 9
+      },
+      {
+        "line": 289,
+        "column": 25
+      },
+      {
+        "line": 290,
+        "column": 9
+      },
+      {
+        "line": 290,
+        "column": 30
+      },
+      {
+        "line": 295,
+        "column": 13
+      },
+      {
+        "line": 300,
+        "column": 9
+      },
+      {
+        "line": 305,
+        "column": 13
+      },
+      {
+        "line": 305,
+        "column": 31
+      },
+      {
+        "line": 310,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 290,
+          "column": 9
+        },
+        "assert": "assertEquals(\"Obj2\", data.getObject(1, 0));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeColumn(0);assertEquals(\"Obj2\", data.getObject(1, 0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 293,
+          "column": 9
+        },
+        "assert": "// try negative column index\nboolean pass \u003d false;try {\n    data.removeColumn(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeColumn(0);// try negative column index\nboolean pass \u003d false;try {\n    data.removeColumn(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 285,
+          "column": 9
+        },
+        "assert": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeColumn(0);assertEquals(1, data.getColumnCount());",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeColumn(0);assertEquals(1, data.getColumnCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 303,
+          "column": 9
+        },
+        "assert": "// try column index too high\npass \u003d false;try {\n    data.removeColumn(data.getColumnCount());\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeColumn(0);// try negative column index\nboolean pass \u003d false;try {\n    data.removeColumn(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}// try column index too high\npass \u003d false;try {\n    data.removeColumn(data.getColumnCount());\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testRemoveRowByKey()",
+    "annotation": "@Test",
+    "code": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeRow(\"R2\");assertEquals(1, data.getRowCount());assertEquals(\"Obj1\", data.getObject(0, 0));// try unknown row key\nboolean pass \u003d false;try {\n    data.removeRow(\"XXX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);// try null row key\npass \u003d false;try {\n    data.removeRow(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 318,
+        "column": 31
+      },
+      {
+        "line": 319,
+        "column": 9
+      },
+      {
+        "line": 320,
+        "column": 9
+      },
+      {
+        "line": 321,
+        "column": 9
+      },
+      {
+        "line": 322,
+        "column": 9
+      },
+      {
+        "line": 322,
+        "column": 25
+      },
+      {
+        "line": 323,
+        "column": 9
+      },
+      {
+        "line": 323,
+        "column": 30
+      },
+      {
+        "line": 328,
+        "column": 13
+      },
+      {
+        "line": 333,
+        "column": 9
+      },
+      {
+        "line": 338,
+        "column": 13
+      },
+      {
+        "line": 343,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 336,
+          "column": 9
+        },
+        "assert": "// try null row key\npass \u003d false;try {\n    data.removeRow(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeRow(\"R2\");// try unknown row key\nboolean pass \u003d false;try {\n    data.removeRow(\"XXX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}// try null row key\npass \u003d false;try {\n    data.removeRow(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 323,
+          "column": 9
+        },
+        "assert": "assertEquals(\"Obj1\", data.getObject(0, 0));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeRow(\"R2\");assertEquals(\"Obj1\", data.getObject(0, 0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 326,
+          "column": 9
+        },
+        "assert": "// try unknown row key\nboolean pass \u003d false;try {\n    data.removeRow(\"XXX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeRow(\"R2\");// try unknown row key\nboolean pass \u003d false;try {\n    data.removeRow(\"XXX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 318,
+          "column": 9
+        },
+        "assert": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeRow(\"R2\");assertEquals(1, data.getRowCount());",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeRow(\"R2\");assertEquals(1, data.getRowCount());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testRemoveColumnByKey()",
+    "annotation": "@Test",
+    "code": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeColumn(\"C2\");assertEquals(1, data.getColumnCount());assertEquals(\"Obj1\", data.getObject(0, 0));// try unknown column key\nboolean pass \u003d false;try {\n    data.removeColumn(\"XXX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);// try null column key\npass \u003d false;try {\n    data.removeColumn(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 351,
+        "column": 31
+      },
+      {
+        "line": 352,
+        "column": 9
+      },
+      {
+        "line": 353,
+        "column": 9
+      },
+      {
+        "line": 354,
+        "column": 9
+      },
+      {
+        "line": 355,
+        "column": 9
+      },
+      {
+        "line": 355,
+        "column": 25
+      },
+      {
+        "line": 356,
+        "column": 9
+      },
+      {
+        "line": 356,
+        "column": 30
+      },
+      {
+        "line": 361,
+        "column": 13
+      },
+      {
+        "line": 366,
+        "column": 9
+      },
+      {
+        "line": 371,
+        "column": 13
+      },
+      {
+        "line": 376,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 369,
+          "column": 9
+        },
+        "assert": "// try null column key\npass \u003d false;try {\n    data.removeColumn(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeColumn(\"C2\");// try unknown column key\nboolean pass \u003d false;try {\n    data.removeColumn(\"XXX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}// try null column key\npass \u003d false;try {\n    data.removeColumn(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 356,
+          "column": 9
+        },
+        "assert": "assertEquals(\"Obj1\", data.getObject(0, 0));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeColumn(\"C2\");assertEquals(\"Obj1\", data.getObject(0, 0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 359,
+          "column": 9
+        },
+        "assert": "// try unknown column key\nboolean pass \u003d false;try {\n    data.removeColumn(\"XXX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeColumn(\"C2\");// try unknown column key\nboolean pass \u003d false;try {\n    data.removeColumn(\"XXX\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 351,
+          "column": 9
+        },
+        "assert": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeColumn(\"C2\");assertEquals(1, data.getColumnCount());",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeColumn(\"C2\");assertEquals(1, data.getColumnCount());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testRemoveValue()",
+    "annotation": "@Test",
+    "code": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeObject(\"R2\", \"C2\");assertEquals(1, data.getRowCount());assertEquals(1, data.getColumnCount());assertEquals(\"Obj1\", data.getObject(0, 0));",
+    "offset": [
+      {
+        "line": 384,
+        "column": 31
+      },
+      {
+        "line": 385,
+        "column": 9
+      },
+      {
+        "line": 386,
+        "column": 9
+      },
+      {
+        "line": 387,
+        "column": 9
+      },
+      {
+        "line": 388,
+        "column": 9
+      },
+      {
+        "line": 388,
+        "column": 25
+      },
+      {
+        "line": 389,
+        "column": 9
+      },
+      {
+        "line": 389,
+        "column": 25
+      },
+      {
+        "line": 390,
+        "column": 9
+      },
+      {
+        "line": 390,
+        "column": 30
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 384,
+          "column": 9
+        },
+        "assert": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeObject(\"R2\", \"C2\");assertEquals(1, data.getRowCount());",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeObject(\"R2\", \"C2\");assertEquals(1, data.getRowCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 389,
+          "column": 9
+        },
+        "assert": "assertEquals(1, data.getColumnCount());",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeObject(\"R2\", \"C2\");assertEquals(1, data.getColumnCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 390,
+          "column": 9
+        },
+        "assert": "assertEquals(\"Obj1\", data.getObject(0, 0));",
+        "slice": "KeyedObjects2D data \u003d new KeyedObjects2D();data.setObject(\"Obj1\", \"R1\", \"C1\");data.setObject(\"Obj2\", \"R2\", \"C2\");data.removeObject(\"R2\", \"C2\");assertEquals(\"Obj1\", data.getObject(0, 0));"
+      }
+    ]
+  }
+]

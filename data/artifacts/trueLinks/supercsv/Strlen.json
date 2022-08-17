@@ -1,0 +1,50 @@
+[
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.Strlen.Strlen(int...)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrlenTest.testConstructionWithNullArray()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 46,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 100,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.Strlen.Strlen(int...)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrlenTest.testNegativeLength()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 48,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 84,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.Strlen.Strlen(int...)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrlenTest.testConstructionWithEmptyArray()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 48,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 108,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

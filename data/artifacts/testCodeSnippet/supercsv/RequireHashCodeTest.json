@@ -1,0 +1,179 @@
+[
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireHashCodeTest.testValidInput()",
+    "annotation": "@Test",
+    "code": "assertEquals(INPUT1, processor.execute(INPUT1, ANONYMOUS_CSVCONTEXT));assertEquals(INPUT1, processorChain.execute(INPUT1, ANONYMOUS_CSVCONTEXT));assertEquals(INPUT1, processorChain2.execute(INPUT1, ANONYMOUS_CSVCONTEXT));assertEquals(INPUT2, processor.execute(INPUT2, ANONYMOUS_CSVCONTEXT));// \u0027processorChain\u0027 doesn\u0027t have a second value to test with\nassertEquals(INPUT2, processorChain2.execute(INPUT2, ANONYMOUS_CSVCONTEXT));",
+    "offset": [
+      {
+        "line": 60,
+        "column": 3
+      },
+      {
+        "line": 60,
+        "column": 24
+      },
+      {
+        "line": 61,
+        "column": 3
+      },
+      {
+        "line": 61,
+        "column": 24
+      },
+      {
+        "line": 62,
+        "column": 3
+      },
+      {
+        "line": 62,
+        "column": 24
+      },
+      {
+        "line": 64,
+        "column": 3
+      },
+      {
+        "line": 64,
+        "column": 24
+      },
+      {
+        "line": 66,
+        "column": 3
+      },
+      {
+        "line": 66,
+        "column": 24
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 64,
+          "column": 3
+        },
+        "assert": "assertEquals(INPUT2, processor.execute(INPUT2, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(INPUT2, processor.execute(INPUT2, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 66,
+          "column": 3
+        },
+        "assert": "// \u0027processorChain\u0027 doesn\u0027t have a second value to test with\nassertEquals(INPUT2, processorChain2.execute(INPUT2, ANONYMOUS_CSVCONTEXT));",
+        "slice": "// \u0027processorChain\u0027 doesn\u0027t have a second value to test with\nassertEquals(INPUT2, processorChain2.execute(INPUT2, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 60,
+          "column": 3
+        },
+        "assert": "assertEquals(INPUT1, processor.execute(INPUT1, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(INPUT1, processor.execute(INPUT1, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 61,
+          "column": 3
+        },
+        "assert": "assertEquals(INPUT1, processorChain.execute(INPUT1, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(INPUT1, processorChain.execute(INPUT1, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 62,
+          "column": 3
+        },
+        "assert": "assertEquals(INPUT1, processorChain2.execute(INPUT1, ANONYMOUS_CSVCONTEXT));",
+        "slice": "assertEquals(INPUT1, processorChain2.execute(INPUT1, ANONYMOUS_CSVCONTEXT));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireHashCodeTest.testInvalidInput()",
+    "annotation": "@Test(expected \u003d SuperCsvConstraintViolationException.class)",
+    "code": "String input \u003d \"invalid\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));",
+    "offset": [
+      {
+        "line": 75,
+        "column": 3
+      },
+      {
+        "line": 75,
+        "column": 23
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 74,
+          "column": 3
+        },
+        "assert": "String input \u003d \"invalid\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"invalid\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireHashCodeTest.testWithNull()",
+    "annotation": "@Test(expected \u003d SuperCsvCellProcessorException.class)",
+    "code": "processor.execute(null, ANONYMOUS_CSVCONTEXT);",
+    "offset": [
+      {
+        "line": 83,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 83,
+          "column": 3
+        },
+        "assert": "processor.execute(null, ANONYMOUS_CSVCONTEXT);",
+        "slice": "processor.execute(null, ANONYMOUS_CSVCONTEXT);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireHashCodeTest.testConstructionWithNullArray()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "new RequireHashCode((int[]) null);",
+    "offset": [
+      {
+        "line": 91,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 91,
+          "column": 3
+        },
+        "assert": "new RequireHashCode((int[]) null);",
+        "slice": "new RequireHashCode((int[]) null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireHashCodeTest.testConstructionWithEmptyArray()",
+    "annotation": "@Test(expected \u003d IllegalArgumentException.class)",
+    "code": "new RequireHashCode(new int[] {});",
+    "offset": [
+      {
+        "line": 99,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 99,
+          "column": 3
+        },
+        "assert": "new RequireHashCode(new int[] {});",
+        "slice": "new RequireHashCode(new int[] {});"
+      }
+    ]
+  }
+]

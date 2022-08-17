@@ -1,0 +1,234 @@
+[
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireSubStrTest.testValidInput()",
+    "annotation": "@Test",
+    "code": "String input \u003d \"to infinity and beyond!\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));assertEquals(input, processorChain.execute(input, ANONYMOUS_CSVCONTEXT));// only has 1 substring\nassertEquals(input, processorChain2.execute(input, ANONYMOUS_CSVCONTEXT));assertEquals(input, processorChain3.execute(input, ANONYMOUS_CSVCONTEXT));",
+    "offset": [
+      {
+        "line": 65,
+        "column": 3
+      },
+      {
+        "line": 65,
+        "column": 23
+      },
+      {
+        "line": 66,
+        "column": 3
+      },
+      {
+        "line": 66,
+        "column": 23
+      },
+      {
+        "line": 67,
+        "column": 3
+      },
+      {
+        "line": 67,
+        "column": 23
+      },
+      {
+        "line": 68,
+        "column": 3
+      },
+      {
+        "line": 68,
+        "column": 23
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 64,
+          "column": 3
+        },
+        "assert": "String input \u003d \"to infinity and beyond!\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"to infinity and beyond!\";assertEquals(input, processor.execute(input, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 66,
+          "column": 3
+        },
+        "assert": "assertEquals(input, processorChain.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"to infinity and beyond!\";assertEquals(input, processorChain.execute(input, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 67,
+          "column": 3
+        },
+        "assert": "// only has 1 substring\nassertEquals(input, processorChain2.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"to infinity and beyond!\";// only has 1 substring\nassertEquals(input, processorChain2.execute(input, ANONYMOUS_CSVCONTEXT));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 68,
+          "column": 3
+        },
+        "assert": "assertEquals(input, processorChain3.execute(input, ANONYMOUS_CSVCONTEXT));",
+        "slice": "String input \u003d \"to infinity and beyond!\";assertEquals(input, processorChain3.execute(input, ANONYMOUS_CSVCONTEXT));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireSubStrTest.testInvalidInput()",
+    "annotation": "@Test(expected \u003d SuperCsvConstraintViolationException.class)",
+    "code": "String input \u003d \"no matches here\";processor.execute(input, ANONYMOUS_CSVCONTEXT);",
+    "offset": [
+      {
+        "line": 78,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 77,
+          "column": 3
+        },
+        "assert": "String input \u003d \"no matches here\";processor.execute(input, ANONYMOUS_CSVCONTEXT);",
+        "slice": "String input \u003d \"no matches here\";processor.execute(input, ANONYMOUS_CSVCONTEXT);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireSubStrTest.testWithNull()",
+    "annotation": "@Test(expected \u003d SuperCsvCellProcessorException.class)",
+    "code": "processor.execute(null, ANONYMOUS_CSVCONTEXT);",
+    "offset": [
+      {
+        "line": 86,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 86,
+          "column": 3
+        },
+        "assert": "processor.execute(null, ANONYMOUS_CSVCONTEXT);",
+        "slice": "processor.execute(null, ANONYMOUS_CSVCONTEXT);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireSubStrTest.testConstructionWithNullArray()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "new RequireSubStr((String[]) null);",
+    "offset": [
+      {
+        "line": 94,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 94,
+          "column": 3
+        },
+        "assert": "new RequireSubStr((String[]) null);",
+        "slice": "new RequireSubStr((String[]) null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireSubStrTest.testConstructionWithEmptyArray()",
+    "annotation": "@Test(expected \u003d IllegalArgumentException.class)",
+    "code": "new RequireSubStr(new String[] {});",
+    "offset": [
+      {
+        "line": 102,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 102,
+          "column": 3
+        },
+        "assert": "new RequireSubStr(new String[] {});",
+        "slice": "new RequireSubStr(new String[] {});"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireSubStrTest.testConstructionWithNullList()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "new RequireSubStr((List\u003cString\u003e) null, new IdentityTransform());",
+    "offset": [
+      {
+        "line": 110,
+        "column": 3
+      },
+      {
+        "line": 110,
+        "column": 42
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 110,
+          "column": 3
+        },
+        "assert": "new RequireSubStr((List\u003cString\u003e) null, new IdentityTransform());",
+        "slice": "new RequireSubStr((List\u003cString\u003e) null, new IdentityTransform());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireSubStrTest.testConstructionWithEmptyList()",
+    "annotation": "@Test(expected \u003d IllegalArgumentException.class)",
+    "code": "new RequireSubStr(new ArrayList\u003cString\u003e(), new IdentityTransform());",
+    "offset": [
+      {
+        "line": 118,
+        "column": 3
+      },
+      {
+        "line": 118,
+        "column": 21
+      },
+      {
+        "line": 118,
+        "column": 46
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 118,
+          "column": 3
+        },
+        "assert": "new RequireSubStr(new ArrayList\u003cString\u003e(), new IdentityTransform());",
+        "slice": "new RequireSubStr(new ArrayList\u003cString\u003e(), new IdentityTransform());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireSubStrTest.testConstructionWithNullSubstring()",
+    "annotation": "@Test(expected \u003d NullPointerException.class)",
+    "code": "new RequireSubStr(new String[] { null });",
+    "offset": [
+      {
+        "line": 126,
+        "column": 3
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 126,
+          "column": 3
+        },
+        "assert": "new RequireSubStr(new String[] { null });",
+        "slice": "new RequireSubStr(new String[] { null });"
+      }
+    ]
+  }
+]

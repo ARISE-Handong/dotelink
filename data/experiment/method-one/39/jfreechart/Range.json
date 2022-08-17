@@ -1,0 +1,242 @@
+[
+  {
+    "productionMethod": "org.jfree.data.Range.shift(org.jfree.data.Range, double)",
+    "unitTestMethod": "org.jfree.data.RangeTest.testShift()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 341,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 214,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.expand(org.jfree.data.Range, double, double)",
+    "unitTestMethod": "org.jfree.data.RangeTest.testExpand()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 190,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.equals(java.lang.Object)",
+    "unitTestMethod": "org.jfree.data.RangeTest.testEquals()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 418,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 82,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.getLowerBound()",
+    "unitTestMethod": "org.jfree.data.RangeTest.testConstructor()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 100,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 64,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.Range(double, double)",
+    "unitTestMethod": "org.jfree.data.RangeTest.testConstructor()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 84,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 64,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.contains(double)",
+    "unitTestMethod": "org.jfree.data.RangeTest.testContains()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 136,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 125,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.intersects(double, double)",
+    "unitTestMethod": "org.jfree.data.RangeTest.testIntersects()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 148,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 174,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.combine(org.jfree.data.Range, org.jfree.data.Range)",
+    "unitTestMethod": "org.jfree.data.RangeTest.testCombine()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 214,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 312,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.hashCode()",
+    "unitTestMethod": "org.jfree.data.RangeTest.testHashCode()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 452,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 104,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.getUpperBound()",
+    "unitTestMethod": "org.jfree.data.RangeTest.testConstructor()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 111,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 68,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.constrain(double)",
+    "unitTestMethod": "org.jfree.data.RangeTest.testConstrain()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 180,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 142,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.shift(org.jfree.data.Range, double, boolean)",
+    "unitTestMethod": "org.jfree.data.RangeTest.testShift()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 239,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.isNaNRange()",
+    "unitTestMethod": "org.jfree.data.RangeTest.testIsNaNRange()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 443,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 352,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.scale(org.jfree.data.Range, double)",
+    "unitTestMethod": "org.jfree.data.RangeTest.testScale()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 399,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 272,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.Range.combineIgnoringNaN(org.jfree.data.Range, org.jfree.data.Range)",
+    "unitTestMethod": "org.jfree.data.RangeTest.testCombineIgnoringNaN()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 229,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 336,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

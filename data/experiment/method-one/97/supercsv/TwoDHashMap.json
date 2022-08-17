@@ -1,0 +1,98 @@
+[
+  {
+    "productionMethod": "org.supercsv.util.TwoDHashMap.TwoDHashMap(java.util.HashMap\u003cK1, java.util.HashMap\u003cK2, V\u003e\u003e)",
+    "unitTestMethod": "org.supercsv.util.TwoDHashMapTest.testConstructorWithNull()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 47,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 194,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.TwoDHashMap.containsKey(K1, K2)",
+    "unitTestMethod": "org.supercsv.util.TwoDHashMapTest.testContainsKey()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 68,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 111,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.TwoDHashMap.get(K1, K2)",
+    "unitTestMethod": "org.supercsv.util.TwoDHashMapTest.testGet()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 86,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 135,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.TwoDHashMap.keySet()",
+    "unitTestMethod": "org.supercsv.util.TwoDHashMapTest.keySet()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 149,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 184,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.TwoDHashMap.size()",
+    "unitTestMethod": "org.supercsv.util.TwoDHashMapTest.testSize()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 124,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 144,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.TwoDHashMap.size(K1)",
+    "unitTestMethod": "org.supercsv.util.TwoDHashMapTest.testSizeWithParam()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 135,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 164,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

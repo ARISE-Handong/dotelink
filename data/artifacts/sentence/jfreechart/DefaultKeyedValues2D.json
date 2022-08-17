@@ -1,0 +1,484 @@
+[
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.getRowIndex(java.lang.Comparable)",
+    "comment": "\r\n     * Returns the row index for a given key.\r\n     *\r\n     * @param key  the key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     *\r\n     * @return The row index.\r\n     *\r\n     * @see #getRowKey(int)\r\n     * @see #getColumnIndex(Comparable)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the row index for a given key.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 178,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The row index.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 182,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.equals(java.lang.Object)",
+    "comment": "\r\n     * Tests if this object is equal to another.\r\n     *\r\n     * @param o  the other object (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     *\r\n     * @return A boolean.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Tests if this object is equal to another.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 494,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A boolean.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 498,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.getRowKeys()",
+    "comment": "\r\n     * Returns the row keys in an unmodifiable list.\r\n     *\r\n     * @return The row keys.\r\n     *\r\n     * @see #getColumnKeys()\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the row keys in an unmodifiable list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 199,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The row keys.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 201,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.getColumnKeys()",
+    "comment": "\r\n     * Returns the column keys in an unmodifiable list.\r\n     *\r\n     * @return The column keys.\r\n     *\r\n     * @see #getRowKeys()\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the column keys in an unmodifiable list.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 243,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The column keys.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 245,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.getColumnIndex(java.lang.Comparable)",
+    "comment": "\r\n     * Returns the column index for a given key.\r\n     *\r\n     * @param key  the key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     *\r\n     * @return The column index.\r\n     *\r\n     * @see #getColumnKey(int)\r\n     * @see #getRowIndex(Comparable)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the column index for a given key.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 227,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The column index.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 231,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.removeColumn(java.lang.Comparable)",
+    "comment": "\r\n     * Removes a column from the table.\r\n     *\r\n     * @param columnKey  the column key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     *\r\n     * @throws UnknownKeyException if the table does not contain a column with\r\n     *     the specified key.\r\n     * @throws IllegalArgumentException if \u003ccode\u003ecolumnKey\u003c/code\u003e is\r\n     *     \u003ccode\u003enull\u003c/code\u003e.\r\n     *\r\n     * @see #removeColumn(int)\r\n     * @see #removeRow(Comparable)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Removes a column from the table.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 456,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws UnknownKeyException if the table does not contain a column with the specified key.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 460,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if \u003ccode\u003ecolumnKey\u003c/code\u003e is \u003ccode\u003enull\u003c/code\u003e.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 462,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.getValue(int, int)",
+    "comment": "\r\n     * Returns the value for a given row and column.\r\n     *\r\n     * @param row  the row index.\r\n     * @param column  the column index.\r\n     *\r\n     * @return The value.\r\n     *\r\n     * @see #getValue(Comparable, Comparable)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the value for a given row and column.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 137,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The value.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 142,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.clone()",
+    "comment": "\r\n     * Returns a clone.\r\n     *\r\n     * @return A clone.\r\n     *\r\n     * @throws CloneNotSupportedException  this class will not throw this\r\n     *         exception, but subclasses (if any) might.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a clone.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 564,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A clone.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 566,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws CloneNotSupportedException  this class will not throw this exception, but subclasses (if any) might.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 568,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.DefaultKeyedValues2D()",
+    "comment": "\r\n     * Creates a new instance (initially empty).\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a new instance (initially empty).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 94,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.clear()",
+    "comment": "\r\n     * Clears all the data and associated keys.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Clears all the data and associated keys.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 485,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.addValue(java.lang.Number, java.lang.Comparable, java.lang.Comparable)",
+    "comment": "\r\n     * Adds a value to the table.  Performs the same function as\r\n     * #setValue(Number, Comparable, Comparable).\r\n     *\r\n     * @param value  the value (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     * @param rowKey  the row key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param columnKey  the column key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     *\r\n     * @see #setValue(Number, Comparable, Comparable)\r\n     * @see #removeValue(Comparable, Comparable)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Adds a value to the table.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 294,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Performs the same function as #setValue(Number, Comparable, Comparable).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 294,
+          "column": 36
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.removeValue(java.lang.Comparable, java.lang.Comparable)",
+    "comment": "\r\n     * Removes a value from the table by setting it to \u003ccode\u003enull\u003c/code\u003e.  If\r\n     * all the values in the specified row and/or column are now\r\n     * \u003ccode\u003enull\u003c/code\u003e, the row and/or column is removed from the table.\r\n     *\r\n     * @param rowKey  the row key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param columnKey  the column key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     *\r\n     * @see #addValue(Number, Comparable, Comparable)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Removes a value from the table by setting it to \u003ccode\u003enull\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 350,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If all the values in the specified row and/or column are now \u003ccode\u003enull\u003c/code\u003e, the row and/or column is removed from the table.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 350,
+          "column": 76
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.getRowKey(int)",
+    "comment": "\r\n     * Returns the key for a given row.\r\n     *\r\n     * @param row  the row index (in the range 0 to {@link #getRowCount()} - 1).\r\n     *\r\n     * @return The row key.\r\n     *\r\n     * @see #getRowIndex(Comparable)\r\n     * @see #getColumnKey(int)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the key for a given row.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 163,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The row key.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 167,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.removeRow(int)",
+    "comment": "\r\n     * Removes a row.\r\n     *\r\n     * @param rowIndex  the row index.\r\n     *\r\n     * @see #removeRow(Comparable)\r\n     * @see #removeColumn(int)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Removes a row.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 408,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.DefaultKeyedValues2D(boolean)",
+    "comment": "\r\n     * Creates a new instance (initially empty).\r\n     *\r\n     * @param sortRowKeys  if the row keys should be sorted.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a new instance (initially empty).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 101,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.hashCode()",
+    "comment": "\r\n     * Returns a hash code.\r\n     *\r\n     * @return A hash code.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a hash code.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 550,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A hash code.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 552,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.removeRow(java.lang.Comparable)",
+    "comment": "\r\n     * Removes a row from the table.\r\n     *\r\n     * @param rowKey  the row key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     *\r\n     * @see #removeRow(int)\r\n     * @see #removeColumn(Comparable)\r\n     *\r\n     * @throws UnknownKeyException if \u003ccode\u003erowKey\u003c/code\u003e is not defined in the\r\n     *         table.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Removes a row from the table.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 421,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws UnknownKeyException if \u003ccode\u003erowKey\u003c/code\u003e is not defined in the table.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 428,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.setValue(java.lang.Number, java.lang.Comparable, java.lang.Comparable)",
+    "comment": "\r\n     * Adds or updates a value.\r\n     *\r\n     * @param value  the value (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     * @param rowKey  the row key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param columnKey  the column key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     *\r\n     * @see #addValue(Number, Comparable, Comparable)\r\n     * @see #removeValue(Comparable, Comparable)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Adds or updates a value.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.getValue(java.lang.Comparable, java.lang.Comparable)",
+    "comment": "\r\n     * Returns the value for the given row and column keys.  This method will\r\n     * throw an {@link UnknownKeyException} if either key is not defined in the\r\n     * data structure.\r\n     *\r\n     * @param rowKey  the row key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param columnKey  the column key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     *\r\n     * @return The value (possibly \u003ccode\u003enull\u003c/code\u003e).\r\n     *\r\n     * @see #addValue(Number, Comparable, Comparable)\r\n     * @see #removeValue(Comparable, Comparable)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the value for the given row and column keys.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 255,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This method will throw an {@link UnknownKeyException} if either key is not defined in the data structure.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 255,
+          "column": 62
+        }
+      },
+      {
+        "sentenceText": "@return The value (possibly \u003ccode\u003enull\u003c/code\u003e).",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 262,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.getColumnCount()",
+    "comment": "\r\n     * Returns the column count.\r\n     *\r\n     * @return The column count.\r\n     *\r\n     * @see #getRowCount()\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the column count.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 125,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The column count.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 127,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.getColumnKey(int)",
+    "comment": "\r\n     * Returns the key for a given column.\r\n     *\r\n     * @param column  the column (in the range 0 to {@link #getColumnCount()}\r\n     *     - 1).\r\n     *\r\n     * @return The key.\r\n     *\r\n     * @see #getColumnIndex(Comparable)\r\n     * @see #getRowKey(int)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the key for a given column.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 211,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The key.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 216,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.getRowCount()",
+    "comment": "\r\n     * Returns the row count.\r\n     *\r\n     * @return The row count.\r\n     *\r\n     * @see #getColumnCount()\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the row count.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 113,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The row count.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 115,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues2D.removeColumn(int)",
+    "comment": "\r\n     * Removes a column.\r\n     *\r\n     * @param columnIndex  the column index.\r\n     *\r\n     * @see #removeColumn(Comparable)\r\n     * @see #removeRow(int)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Removes a column.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 443,
+          "column": 8
+        }
+      }
+    ]
+  }
+]

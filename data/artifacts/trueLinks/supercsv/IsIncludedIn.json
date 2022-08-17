@@ -1,0 +1,66 @@
+[
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.IsIncludedIn.IsIncludedIn(java.lang.Object[])",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.IsIncludedInTest.testConstructionWithNullArray()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 88,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 110,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.IsIncludedIn.IsIncludedIn(java.lang.Object[])",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.IsIncludedInTest.testConstructionWithEmptyArray()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 90,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 118,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.IsIncludedIn.IsIncludedIn(java.util.Set<java.lang.Object>)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.IsIncludedInTest.testConstructionWithNullSet()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 52,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 126,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.IsIncludedIn.IsIncludedIn(java.util.Set<java.lang.Object>)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.IsIncludedInTest.testConstructionWithEmptySet()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 54,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 134,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.getAs2d(K1)",
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testGetAs2d()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 97,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 123,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.containsKey(K1, K2)",
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testContainsKeyWithTwoParams()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 41,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 71,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.containsKey(K1, K2, K3)",
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testContainsKeyWithThreeParams()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 60,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 92,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.size(K1, K2)",
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testSizeWithTwoParams()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 224,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 211,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.size()",
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testSize()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 195,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 179,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.get(K1)",
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testGet()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 90,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 108,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.keySet()",
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.keySet()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 244,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 225,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.get(K1, K2, K3)",
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testGetWithThreeParams()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 133,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 160,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.size(K1)",
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testSizeWithOneParam()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 206,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 191,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.get(K1, K2)",
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testGetWithTwoParams()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 120,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 141,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

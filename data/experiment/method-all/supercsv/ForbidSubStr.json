@@ -1,0 +1,182 @@
+[
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStr.ForbidSubStr(java.lang.String...)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStrTest.testConstructionWithNullSubstring()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 61,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 139,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 66,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 139,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 68,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 139,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStr.ForbidSubStr(java.lang.String...)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStrTest.testConstructionWithNullArray()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 61,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 107,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 66,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 107,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 68,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 107,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStr.ForbidSubStr(java.util.List\u003cjava.lang.String\u003e, org.supercsv.cellprocessor.ift.CellProcessor)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStrTest.testConstructionWithEmptyList()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 80,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 131,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 87,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 131,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 89,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 131,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStr.ForbidSubStr(java.util.List\u003cjava.lang.String\u003e, org.supercsv.cellprocessor.ift.CellProcessor)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStrTest.testConstructionWithNullList()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 80,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 123,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 87,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 123,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 89,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 123,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStr.ForbidSubStr(java.lang.String...)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStrTest.testConstructionWithEmptyArray()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 61,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 115,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 66,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 115,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 68,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 115,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

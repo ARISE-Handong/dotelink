@@ -1,0 +1,18 @@
+[
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.StrRegEx.StrRegEx(java.lang.String)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrRegExTest.testWithInvalidRegex()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 53,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 120,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

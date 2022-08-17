@@ -1,0 +1,450 @@
+[
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.getMaximumItemCount()",
+    "comment": "\r\n     * Returns the maximum number of items that will be retained in the series.\r\n     * The default value is \u003ccode\u003eInteger.MAX_VALUE\u003c/code\u003e.\r\n     *\r\n     * @return The maximum item count.\r\n     * @see #setMaximumItemCount(int)\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the maximum number of items that will be retained in the series.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 136,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The default value is \u003ccode\u003eInteger.MAX_VALUE\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 137,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The maximum item count.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 139,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.remove(int)",
+    "comment": "\r\n     * Removes the item at the specified index and sends a\r\n     * {@link SeriesChangeEvent} to all registered listeners.\r\n     *\r\n     * @param index  the index.\r\n     *\r\n     * @return The item removed.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Removes the item at the specified index and sends a {@link SeriesChangeEvent} to all registered listeners.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The item removed.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.hashCode()",
+    "comment": "\r\n     * Returns a hash code.\r\n     *\r\n     * @return A hash code.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a hash code.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 423,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A hash code.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.getDataItem(int)",
+    "comment": "\r\n     * Return the data item with the specified index.\r\n     *\r\n     * @param index  the index.\r\n     *\r\n     * @return The data item with the specified index.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Return the data item with the specified index.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 324,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The data item with the specified index.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 328,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.delete(int, int)",
+    "comment": "\r\n     * Deletes a range of items from the series and sends a\r\n     * {@link SeriesChangeEvent} to all registered listeners.\r\n     *\r\n     * @param start  the start index (zero-based).\r\n     * @param end  the end index (zero-based).\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Deletes a range of items from the series and sends a {@link SeriesChangeEvent} to all registered listeners.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 335,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.add(java.lang.Comparable, java.lang.Object, boolean)",
+    "comment": "\r\n     * Adds new data to the series and, if requested, sends a\r\n     * {@link SeriesChangeEvent} to all registered listeners.\r\n     * \u003cP\u003e\r\n     * Throws an exception if the x-value is a duplicate AND the\r\n     * allowDuplicateXValues flag is false.\r\n     *\r\n     * @param x  the x-value (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param y  the y-value (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     * @param notify  a flag the controls whether or not a\r\n     *                {@link SeriesChangeEvent} is sent to all registered\r\n     *                listeners.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Adds new data to the series and, if requested, sends a {@link SeriesChangeEvent} to all registered listeners.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 188,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cP\u003e Throws an exception if the x-value is a duplicate AND the allowDuplicateXValues flag is false.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 190,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.clear()",
+    "comment": "\r\n     * Removes all data items from the series and, unless the series is\r\n     * already empty, sends a {@link SeriesChangeEvent} to all registered\r\n     * listeners.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Removes all data items from the series and, unless the series is already empty, sends a {@link SeriesChangeEvent} to all registered listeners.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 349,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.update(java.lang.Comparable, java.lang.Object)",
+    "comment": "\r\n     * Updates an item in the series.\r\n     *\r\n     * @param x  the x-value (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param y  the y-value (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     *\r\n     * @throws SeriesException if there is no existing item with the specified\r\n     *         x-value.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Updates an item in the series.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 290,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws SeriesException if there is no existing item with the specified x-value.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 295,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.getItemCount()",
+    "comment": "\r\n     * Returns the number of items in the series.\r\n     *\r\n     * @return The item count.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the number of items in the series.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 126,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The item count.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 128,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.getAllowDuplicateXValues()",
+    "comment": "\r\n     * Returns a flag that controls whether duplicate x-values are allowed.\r\n     * This flag can only be set in the constructor.\r\n     *\r\n     * @return A boolean.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a flag that controls whether duplicate x-values are allowed.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 116,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This flag can only be set in the constructor.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 117,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A boolean.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 119,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.add(java.lang.Comparable, java.lang.Object)",
+    "comment": "\r\n     * Adds new data to the series and sends a {@link SeriesChangeEvent} to\r\n     * all registered listeners.\r\n     * \u003cP\u003e\r\n     * Throws an exception if the x-value is a duplicate AND the\r\n     * allowDuplicateXValues flag is false.\r\n     *\r\n     * @param x  the x-value (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param y  the y-value (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Adds new data to the series and sends a {@link SeriesChangeEvent} to all registered listeners.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 173,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cP\u003e Throws an exception if the x-value is a duplicate AND the allowDuplicateXValues flag is false.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 175,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.updateByIndex(int, java.lang.Object)",
+    "comment": "\r\n     * Updates the value of an item in the series and sends a\r\n     * {@link SeriesChangeEvent} to all registered listeners.\r\n     *\r\n     * @param index  the item (zero based index).\r\n     * @param y  the new value (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Updates the value of an item in the series and sends a {@link SeriesChangeEvent} to all registered listeners.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.ComparableObjectSeries(java.lang.Comparable, boolean, boolean)",
+    "comment": "\r\n     * Constructs a new series that contains no data.  You can specify\r\n     * whether or not duplicate x-values are allowed for the series.\r\n     *\r\n     * @param key  the series key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param autoSort  a flag that controls whether or not the items in the\r\n     *                  series are sorted.\r\n     * @param allowDuplicateXValues  a flag that controls whether duplicate\r\n     *                               x-values are allowed.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new series that contains no data.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 87,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "You can specify whether or not duplicate x-values are allowed for the series.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 87,
+          "column": 56
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.remove(java.lang.Comparable)",
+    "comment": "\r\n     * Removes the item with the specified x-value and sends a\r\n     * {@link SeriesChangeEvent} to all registered listeners.\r\n     *\r\n     * @param x  the x-value.\r\n\r\n     * @return The item removed.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Removes the item with the specified x-value and sends a {@link SeriesChangeEvent} to all registered listeners.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 376,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return The item removed.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.ComparableObjectSeries(java.lang.Comparable)",
+    "comment": "\r\n     * Creates a new empty series.  By default, items added to the series will\r\n     * be sorted into ascending order by x-value, and duplicate x-values will\r\n     * be allowed (these defaults can be modified with another constructor.\r\n     *\r\n     * @param key  the series key (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a new empty series.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 76,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "By default, items added to the series will be sorted into ascending order by x-value, and duplicate x-values will be allowed (these defaults can be modified with another constructor.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 76,
+          "column": 37
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.setMaximumItemCount(int)",
+    "comment": "\r\n     * Sets the maximum number of items that will be retained in the series.\r\n     * If you add a new item to the series such that the number of items will\r\n     * exceed the maximum item count, then the first element in the series is\r\n     * automatically removed, ensuring that the maximum item count is not\r\n     * exceeded.\r\n     * \u003cp\u003e\r\n     * Typically this value is set before the series is populated with data,\r\n     * but if it is applied later, it may cause some items to be removed from\r\n     * the series (in which case a {@link SeriesChangeEvent} will be sent to\r\n     * all registered listeners.\r\n     *\r\n     * @param maximum  the maximum number of items for the series.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Sets the maximum number of items that will be retained in the series.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 147,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If you add a new item to the series such that the number of items will exceed the maximum item count, then the first element in the series is automatically removed, ensuring that the maximum item count is not exceeded.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 148,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Typically this value is set before the series is populated with data, but if it is applied later, it may cause some items to be removed from the series (in which case a {@link SeriesChangeEvent} will be sent to all registered listeners.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 152,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.add(org.jfree.data.ComparableObjectItem, boolean)",
+    "comment": "\r\n     * Adds a data item to the series and, if requested, sends a\r\n     * {@link SeriesChangeEvent} to all registered listeners.\r\n     *\r\n     * @param item  the (x, y) item (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     * @param notify  a flag that controls whether or not a\r\n     *                {@link SeriesChangeEvent} is sent to all registered\r\n     *                listeners.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Adds a data item to the series and, if requested, sends a {@link SeriesChangeEvent} to all registered listeners.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 207,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.equals(java.lang.Object)",
+    "comment": "\r\n     * Tests this series for equality with an arbitrary object.\r\n     *\r\n     * @param obj  the object to test against for equality\r\n     *             (\u003ccode\u003enull\u003c/code\u003e permitted).\r\n     *\r\n     * @return A boolean.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Tests this series for equality with an arbitrary object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 388,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return A boolean.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 393,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.getAutoSort()",
+    "comment": "\r\n     * Returns the flag that controls whether the items in the series are\r\n     * automatically sorted.  There is no setter for this flag, it must be\r\n     * defined in the series constructor.\r\n     *\r\n     * @return A boolean.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the flag that controls whether the items in the series are automatically sorted.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 105,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "There is no setter for this flag, it must be defined in the series constructor.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 106,
+          "column": 31
+        }
+      },
+      {
+        "sentenceText": "@return A boolean.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 109,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.ComparableObjectSeries.indexOf(java.lang.Comparable)",
+    "comment": "\r\n     * Returns the index of the item with the specified x-value, or a negative\r\n     * index if the series does not contain an item with that x-value.  Be\r\n     * aware that for an unsorted series, the index is found by iterating\r\n     * through all items in the series.\r\n     *\r\n     * @param x  the x-value (\u003ccode\u003enull\u003c/code\u003e not permitted).\r\n     *\r\n     * @return The index.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the index of the item with the specified x-value, or a negative index if the series does not contain an item with that x-value.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 263,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Be aware that for an unsorted series, the index is found by iterating through all items in the series.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 264,
+          "column": 73
+        }
+      },
+      {
+        "sentenceText": "@return The index.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 270,
+          "column": 8
+        }
+      }
+    ]
+  }
+]

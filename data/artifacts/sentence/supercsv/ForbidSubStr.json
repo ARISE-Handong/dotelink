@@ -1,0 +1,278 @@
+[
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStr.execute(java.lang.Object, org.supercsv.util.CsvContext)",
+    "comment": "\n\t * {@inheritDoc}\n\t * \n\t * @throws SuperCsvCellProcessorException\n\t *             if value is null\n\t * @throws SuperCsvConstraintViolationException\n\t *             if value is in the forbidden list\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "{@inheritDoc}",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 198,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws SuperCsvCellProcessorException if value is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 200,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws SuperCsvConstraintViolationException if value is in the forbidden list",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 202,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStr.checkAndAddForbiddenStrings(java.lang.String...)",
+    "comment": "\n\t * Adds each forbidden substring, checking that it\u0027s not null.\n\t * \n\t * @param forbiddenSubStrings\n\t *            the forbidden substrings\n\t * @throws NullPointerException\n\t *             if a forbidden substring is null\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Adds each forbidden substring, checking that it\u0027s not null.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 169,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if a forbidden substring is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 173,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStr.ForbidSubStr(java.util.List\u003cjava.lang.String\u003e, org.supercsv.cellprocessor.ift.CellProcessor)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eForbidSubStr\u003c/tt\u003e processor which ensures the input doesn\u0027t contain any of the supplied\n\t * substrings, then calls the next processor in the chain.\n\t * \n\t * @param forbiddenSubStrings\n\t *            the List of forbidden substrings\n\t * @param next\n\t *            the next processor in the chain\n\t * @throws NullPointerException\n\t *             if forbiddenSubStrings, one of its elements or next is null\n\t * @throws IllegalArgumentException\n\t *             if forbiddenSubStrings is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eForbidSubStr\u003c/tt\u003e processor which ensures the input doesn\u0027t contain any of the supplied substrings, then calls the next processor in the chain.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 80,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if forbiddenSubStrings, one of its elements or next is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 87,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if forbiddenSubStrings is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 89,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStr.ForbidSubStr(java.lang.String...)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eForbidSubStr\u003c/tt\u003e processor which ensures the input doesn\u0027t contain any of the supplied\n\t * substrings.\n\t * \n\t * @param forbiddenSubStrings\n\t *            the forbidden substrings\n\t * @throws NullPointerException\n\t *             if forbiddenSubStrings or one of its elements is null\n\t * @throws IllegalArgumentException\n\t *             if forbiddenSubStrings is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eForbidSubStr\u003c/tt\u003e processor which ensures the input doesn\u0027t contain any of the supplied substrings.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 61,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if forbiddenSubStrings or one of its elements is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 66,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if forbiddenSubStrings is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 68,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStr.checkPreconditions(java.lang.String...)",
+    "comment": "\n\t * Checks the preconditions for creating a new ForbidSubStr processor with an array of forbidden substrings.\n\t * \n\t * @param forbiddenSubStrings\n\t *            the forbidden substrings\n\t * @throws NullPointerException\n\t *             if forbiddenSubStrings is null\n\t * @throws IllegalArgumentException\n\t *             if forbiddenSubStrings is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Checks the preconditions for creating a new ForbidSubStr processor with an array of forbidden substrings.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 151,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if forbiddenSubStrings is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 155,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if forbiddenSubStrings is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 157,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStr.ForbidSubStr(java.lang.String[], org.supercsv.cellprocessor.ift.CellProcessor)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eForbidSubStr\u003c/tt\u003e processor which ensures the input doesn\u0027t contain any of the supplied\n\t * substrings, then calls the next processor in the chain.\n\t * \n\t * @param forbiddenSubStrings\n\t *            the forbidden substrings\n\t * @param next\n\t *            the next processor in the chain\n\t * @throws NullPointerException\n\t *             if forbiddenSubStrings, one of its elements or next is null\n\t * @throws IllegalArgumentException\n\t *             if forbiddenSubStrings is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eForbidSubStr\u003c/tt\u003e processor which ensures the input doesn\u0027t contain any of the supplied substrings, then calls the next processor in the chain.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 114,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if forbiddenSubStrings, one of its elements or next is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 121,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if forbiddenSubStrings is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 123,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStr.checkPreconditions(java.util.List\u003cjava.lang.String\u003e)",
+    "comment": "\n\t * Checks the preconditions for creating a new ForbidSubStr processor with a List of forbidden substrings.\n\t * \n\t * @param forbiddenSubStrings\n\t *            the forbidden substrings\n\t * @throws NullPointerException\n\t *             if forbiddenSubStrings is null\n\t * @throws IllegalArgumentException\n\t *             if forbiddenSubStrings is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Checks the preconditions for creating a new ForbidSubStr processor with a List of forbidden substrings.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 133,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if forbiddenSubStrings is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 137,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if forbiddenSubStrings is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 139,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStr.checkAndAddForbiddenStrings(java.util.List\u003cjava.lang.String\u003e)",
+    "comment": "\n\t * Adds each forbidden substring, checking that it\u0027s not null.\n\t * \n\t * @param forbiddenSubStrings\n\t *            the forbidden substrings\n\t * @throws NullPointerException\n\t *             if a forbidden substring is null\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Adds each forbidden substring, checking that it\u0027s not null.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 181,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if a forbidden substring is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 185,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStr.ForbidSubStr(java.util.List\u003cjava.lang.String\u003e)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eForbidSubStr\u003c/tt\u003e processor which ensures the input doesn\u0027t contain any of the supplied\n\t * substrings.\n\t * \n\t * @param forbiddenSubStrings\n\t *            the List of forbidden substrings\n\t * @throws NullPointerException\n\t *             if forbiddenSubStrings or one of its elements is null\n\t * @throws IllegalArgumentException\n\t *             if forbiddenSubStrings is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eForbidSubStr\u003c/tt\u003e processor which ensures the input doesn\u0027t contain any of the supplied substrings.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 42,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if forbiddenSubStrings or one of its elements is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 47,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if forbiddenSubStrings is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 49,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.ForbidSubStr.ForbidSubStr(java.lang.String, org.supercsv.cellprocessor.ift.CellProcessor)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eForbidSubStr\u003c/tt\u003e processor which ensures the input doesn\u0027t contain the supplied substring,\n\t * then calls the next processor in the chain.\n\t * \n\t * @param forbiddenSubString\n\t *            the forbidden substring\n\t * @param next\n\t *            the next processor in the chain\n\t * @throws NullPointerException\n\t *             if forbiddenSubString or next is null\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eForbidSubStr\u003c/tt\u003e processor which ensures the input doesn\u0027t contain the supplied substring, then calls the next processor in the chain.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 99,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if forbiddenSubString or next is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 106,
+          "column": 5
+        }
+      }
+    ]
+  }
+]

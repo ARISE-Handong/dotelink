@@ -1,0 +1,18 @@
+[
+  {
+    "productionMethod": "org.apache.logging.log4j.util.StringBuilders.trimToMaxSize(java.lang.StringBuilder, int)",
+    "unitTestMethod": "org.apache.logging.log4j.util.StringBuildersTest.trimToMaxSizeWithLargeCapacity()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 158,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 46,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

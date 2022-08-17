@@ -1,0 +1,258 @@
+[
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.insertValue(int, java.lang.Comparable, double)",
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testInsertValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 248,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 271,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.addValue(java.lang.Comparable, double)",
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testAddValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 194,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 232,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 194,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 234,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.getIndex(java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testGetIndex()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 148,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 190,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 150,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 200,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.getIndex(java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testGetIndex2()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 148,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 215,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 148,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 219,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.getValue(java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testGetValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 180,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 148,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.removeValue(java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testRemoveValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 329,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 339,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.sortByValues(org.jfree.util.SortOrder)",
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testSortByValueAscending()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 47
+        },
+        "testCodeLocation": {
+          "line": 435,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 47
+        },
+        "testCodeLocation": {
+          "line": 447,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.sortByValues(org.jfree.util.SortOrder)",
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testSortByValueDescending()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 47
+        },
+        "testCodeLocation": {
+          "line": 481,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 377,
+          "column": 47
+        },
+        "testCodeLocation": {
+          "line": 469,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.addValue(java.lang.Comparable, java.lang.Number)",
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testAddValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 206,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 235,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 206,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 237,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.getKey(int)",
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testGetKey()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 136,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 163,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 136,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 171,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.DefaultKeyedValues.getValue(int)",
+    "unitTestMethod": "org.jfree.data.DefaultKeyedValuesTest.testGetValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 122,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 135,
+          "column": 9
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 122,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 127,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

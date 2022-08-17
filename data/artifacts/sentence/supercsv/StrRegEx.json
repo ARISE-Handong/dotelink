@@ -1,0 +1,160 @@
+[
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.StrRegEx.checkPreconditions(java.lang.String)",
+    "comment": "\n\t * Checks the preconditions for creating a new StrRegEx processor.\n\t * \n\t * @param regex\n\t *            the regular expression to match\n\t * @throws NullPointerException\n\t *             if regex is null\n\t * @throws IllegalArgumentException\n\t *             if regex is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Checks the preconditions for creating a new StrRegEx processor.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 86,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if regex is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 90,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if regex is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 92,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.StrRegEx.StrRegEx(java.lang.String, org.supercsv.cellprocessor.ift.StringCellProcessor)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eStrRegEx\u003c/tt\u003e processor, which ensures that the input data matches the given regular\n\t * expression, then calls the next processor in the chain.\n\t * \n\t * @param regex\n\t *            the regular expression to match\n\t * @param next\n\t *            the next processor in the chain\n\t * @throws NullPointerException\n\t *             if regex is null\n\t * @throws IllegalArgumentException\n\t *             if regex is empty\n\t * @throws PatternSyntaxException\n\t *             if regex is not a valid regular expression\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eStrRegEx\u003c/tt\u003e processor, which ensures that the input data matches the given regular expression, then calls the next processor in the chain.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 64,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if regex is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 71,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if regex is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 73,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws PatternSyntaxException if regex is not a valid regular expression",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 75,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.StrRegEx.StrRegEx(java.lang.String)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eStrRegEx\u003c/tt\u003e processor, which ensures that the input data matches the given regular\n\t * expression.\n\t * \n\t * @param regex\n\t *            the regular expression to match\n\t * @throws NullPointerException\n\t *             if regex is null\n\t * @throws IllegalArgumentException\n\t *             if regex is empty\n\t * @throws PatternSyntaxException\n\t *             if regex is not a valid regular expression\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eStrRegEx\u003c/tt\u003e processor, which ensures that the input data matches the given regular expression.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 44,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if regex is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 49,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if regex is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 51,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws PatternSyntaxException if regex is not a valid regular expression",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 53,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.StrRegEx.registerMessage(java.lang.String, java.lang.String)",
+    "comment": "\n\t * Register a message detailing in plain language the constraint representing a regular expression. For example, the\n\t * regular expression \\d{0,6}(\\.\\d{0,3})? could be associated with the message\n\t * \"up to 6 digits whole digits, followed by up to 3 fractional digits\".\n\t * \n\t * @param regex\n\t *            the regular expression\n\t * @param message\n\t *            the message to associate with the regex\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Register a message detailing in plain language the constraint representing a regular expression.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 130,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "For example, the regular expression \\d{0,6}(\\.\\d{0,3})? could be associated with the message \"up to 6 digits whole digits, followed by up to 3 fractional digits\".",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 130,
+          "column": 102
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.StrRegEx.execute(java.lang.Object, org.supercsv.util.CsvContext)",
+    "comment": "\n\t * {@inheritDoc}\n\t * \n\t * @throws SuperCsvCellProcessorException\n\t *             if value is null\n\t * @throws SuperCsvConstraintViolationException\n\t *             if value doesn\u0027t match the regular expression\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "{@inheritDoc}",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 104,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws SuperCsvCellProcessorException if value is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 106,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws SuperCsvConstraintViolationException if value doesn\u0027t match the regular expression",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 108,
+          "column": 5
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,1170 @@
+[
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.disjunction(java.util.Set\u003c? extends E\u003e, java.util.Set\u003c? extends E\u003e)",
+    "comment": "\r\n     * Returns a unmodifiable \u003cb\u003eview\u003c/b\u003e of the symmetric difference of the given\r\n     * {@link Set}s.\r\n     * \u003cp\u003e\r\n     * The returned view contains all elements of {@code a} and {@code b} that are\r\n     * not a member of the other set.\r\n     * \u003cp\u003e\r\n     * This is equivalent to {@code union(difference(a, b), difference(b, a))}.\r\n     *\r\n     * @param \u003cE\u003e the generic type that is able to represent the types contained\r\n     *   in both input sets.\r\n     * @param a  the first set, must not be null\r\n     * @param b  the second set, must not be null\r\n     * @return a view of the symmetric difference of the two sets\r\n     * @since 4.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a unmodifiable \u003cb\u003eview\u003c/b\u003e of the symmetric difference of the given {@link Set}s.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 149,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned view contains all elements of {@code a} and {@code b} that are not a member of the other set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 151,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This is equivalent to {@code union(difference(a, b), difference(b, a))}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 154,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a view of the symmetric difference of the two sets",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 161,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.Anonymous-f88c3828-06f2-4abf-868f-6fce907417af.size()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.hashSet(E...)",
+    "comment": "\r\n     * Creates a set from the given items. If the passed var-args argument is {@code\r\n     * null}, then the method returns {@code null}.\r\n     * @param \u003cE\u003e the element type\r\n     * @param items the elements that make up the new set\r\n     * @return a set\r\n     * @since 4.3\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a set from the given items.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 256,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the passed var-args argument is {@code null}, then the method returns {@code null}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 256,
+          "column": 44
+        }
+      },
+      {
+        "sentenceText": "@return a set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 260,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.SetUtils()",
+    "comment": "\r\n     * \u003ccode\u003eSetUtils\u003c/code\u003e should not normally be instantiated.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "\u003ccode\u003eSetUtils\u003c/code\u003e should not normally be instantiated.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 672,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.SetView.createIterator()",
+    "comment": "\r\n         * Return an iterator for this view; the returned iterator is\r\n         * not required to be unmodifiable.\r\n         * @return a new iterator for this view\r\n         ",
+    "sentences": [
+      {
+        "sentenceText": "Return an iterator for this view; the returned iterator is not required to be unmodifiable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 73,
+          "column": 12
+        }
+      },
+      {
+        "sentenceText": "@return a new iterator for this view",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 75,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.Anonymous-1b585922-fa6e-4f8c-a23e-9efbb5efed86.evaluate(E)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.Anonymous-1c992f91-0324-482a-b07f-69316fe869fe.contains(java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.predicatedNavigableSet(java.util.NavigableSet\u003cE\u003e, org.apache.commons.collections4.Predicate\u003c? super E\u003e)",
+    "comment": "\r\n     * Returns a predicated (validating) navigable set backed by the given navigable set.\r\n     * \u003cp\u003e\r\n     * Only objects that pass the test in the given predicate can be added to the set.\r\n     * Trying to add an invalid object results in an IllegalArgumentException.\r\n     * It is important not to use the original set after invoking this method,\r\n     * as it is a backdoor for adding invalid objects.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param set  the navigable set to predicate, must not be null\r\n     * @param predicate  the predicate for the navigable set, must not be null\r\n     * @return a predicated navigable set backed by the given navigable set\r\n     * @throws NullPointerException if the set or predicate is null\r\n     * @since 4.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a predicated (validating) navigable set backed by the given navigable set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 387,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Only objects that pass the test in the given predicate can be added to the set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 388,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Trying to add an invalid object results in an IllegalArgumentException.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 390,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "It is important not to use the original set after invoking this method, as it is a backdoor for adding invalid objects.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 391,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a predicated navigable set backed by the given navigable set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 397,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the set or predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 398,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.unmodifiableSortedSet(java.util.SortedSet\u003cE\u003e)",
+    "comment": "\r\n     * Returns an unmodifiable sorted set backed by the given sorted set.\r\n     * \u003cp\u003e\r\n     * This method uses the implementation in the decorators subpackage.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param set  the sorted set to make unmodifiable, must not be null\r\n     * @return an unmodifiable set backed by the given set\r\n     * @throws NullPointerException if the set is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns an unmodifiable sorted set backed by the given sorted set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 658,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This method uses the implementation in the decorators subpackage.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 659,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an unmodifiable set backed by the given set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 664,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the set is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 665,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.Anonymous-148a90a2-cf3e-4134-8bf3-46e8f182f994.createIterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.Anonymous-2562a036-f220-485c-ac12-26a89ae645d5.isEmpty()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.union(java.util.Set\u003c? extends E\u003e, java.util.Set\u003c? extends E\u003e)",
+    "comment": "\r\n     * Returns a unmodifiable \u003cb\u003eview\u003c/b\u003e of the union of the given {@link Set}s.\r\n     * \u003cp\u003e\r\n     * The returned view contains all elements of {@code a} and {@code b}.\r\n     *\r\n     * @param \u003cE\u003e the generic type that is able to represent the types contained\r\n     *   in both input sets.\r\n     * @param a  the first set, must not be null\r\n     * @param b  the second set, must not be null\r\n     * @return a view of the union of the two set\r\n     * @throws NullPointerException if either input set is null\r\n     * @since 4.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a unmodifiable \u003cb\u003eview\u003c/b\u003e of the union of the given {@link Set}s.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 569,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned view contains all elements of {@code a} and {@code b}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 570,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a view of the union of the two set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 577,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either input set is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 578,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.difference(java.util.Set\u003c? extends E\u003e, java.util.Set\u003c? extends E\u003e)",
+    "comment": "\r\n     * Returns a unmodifiable \u003cb\u003eview\u003c/b\u003e containing the difference of the given\r\n     * {@link Set}s, denoted by {@code a \\ b} (or {@code a - b}).\r\n     * \u003cp\u003e\r\n     * The returned view contains all elements of {@code a} that are not a member\r\n     * of {@code b}.\r\n     *\r\n     * @param \u003cE\u003e the generic type that is able to represent the types contained\r\n     *   in both input sets.\r\n     * @param a  the set to subtract from, must not be null\r\n     * @param b  the set to subtract, must not be null\r\n     * @return a view of the relative complement of  of the two sets\r\n     * @since 4.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a unmodifiable \u003cb\u003eview\u003c/b\u003e containing the difference of the given {@link Set}s, denoted by {@code a \\ b} (or {@code a - b}).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 110,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned view contains all elements of {@code a} that are not a member of {@code b}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 112,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a view of the relative complement of  of the two sets",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 120,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.SetView.copyInto(S)",
+    "comment": "\r\n         * Copies the contents of this view into the provided set.\r\n         *\r\n         * @param \u003cS\u003e the set type\r\n         * @param set  the set for copying the contents\r\n         ",
+    "sentences": [
+      {
+        "sentenceText": "Copies the contents of this view into the provided set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 63,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.SetView.iterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.synchronizedSet(java.util.Set\u003cE\u003e)",
+    "comment": "\r\n     * Returns a synchronized set backed by the given set.\r\n     * \u003cp\u003e\r\n     * You must manually synchronize on the returned set\u0027s iterator to\r\n     * avoid non-deterministic behavior:\r\n     *\r\n     * \u003cpre\u003e\r\n     * Set s \u003d SetUtils.synchronizedSet(mySet);\r\n     * synchronized (s) {\r\n     *     Iterator i \u003d s.iterator();\r\n     *     while (i.hasNext()) {\r\n     *         process (i.next());\r\n     *     }\r\n     * }\r\n     * \u003c/pre\u003e\r\n     *\r\n     * This method is just a wrapper for {@link Collections#synchronizedSet(Set)}.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param set  the set to synchronize, must not be null\r\n     * @return a synchronized set backed by the given set\r\n     * @throws NullPointerException if the set is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a synchronized set backed by the given set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 446,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e You must manually synchronize on the returned set\u0027s iterator to avoid non-deterministic behavior: \u003cpre\u003e Set s \u003d SetUtils.synchronizedSet(mySet); synchronized (s) { Iterator i \u003d s.iterator(); while (i.hasNext()) { process (i.next()); } } \u003c/pre\u003e This method is just a wrapper for {@link Collections#synchronizedSet(Set)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 447,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a synchronized set backed by the given set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 465,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the set is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 466,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.SetView.toSet()",
+    "comment": "\r\n         * Returns a new set containing the contents of this view.\r\n         *\r\n         * @return a new set containing all elements of this view\r\n         ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a new set containing the contents of this view.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 90,
+          "column": 12
+        }
+      },
+      {
+        "sentenceText": "@return a new set containing all elements of this view",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 92,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.Anonymous-cde53925-a28e-496e-bc35-2cf55fb3f2f8.evaluate(E)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.isEqualSet(java.util.Collection\u003c?\u003e, java.util.Collection\u003c?\u003e)",
+    "comment": "\r\n     * Tests two sets for equality as per the \u003ccode\u003eequals()\u003c/code\u003e contract\r\n     * in {@link java.util.Set#equals(java.lang.Object)}.\r\n     * \u003cp\u003e\r\n     * This method is useful for implementing \u003ccode\u003eSet\u003c/code\u003e when you cannot\r\n     * extend AbstractSet. The method takes Collection instances to enable other\r\n     * collection types to use the Set implementation algorithm.\r\n     * \u003cp\u003e\r\n     * The relevant text (slightly paraphrased as this is a static method) is:\r\n     * \u003cblockquote\u003e\r\n     * \u003cp\u003eTwo sets are considered equal if they have\r\n     * the same size, and every member of the first set is contained in\r\n     * the second. This ensures that the {@code equals} method works\r\n     * properly across different implementations of the {@code Set}\r\n     * interface.\u003c/p\u003e\r\n     *\r\n     * \u003cp\u003e\r\n     * This implementation first checks if the two sets are the same object:\r\n     * if so it returns {@code true}.  Then, it checks if the two sets are\r\n     * identical in size; if not, it returns false. If so, it returns\r\n     * {@code a.containsAll((Collection) b)}.\u003c/p\u003e\r\n     * \u003c/blockquote\u003e\r\n     *\r\n     * @see java.util.Set\r\n     * @param set1  the first set, may be null\r\n     * @param set2  the second set, may be null\r\n     * @return whether the sets are equal by value comparison\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Tests two sets for equality as per the \u003ccode\u003eequals()\u003c/code\u003e contract in {@link java.util.Set#equals(java.lang.Object)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This method is useful for implementing \u003ccode\u003eSet\u003c/code\u003e when you cannot extend AbstractSet.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The method takes Collection instances to enable other collection types to use the Set implementation algorithm.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 313,
+          "column": 28
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The relevant text (slightly paraphrased as this is a static method) is: \u003cblockquote\u003e \u003cp\u003eTwo sets are considered equal if they have the same size, and every member of the first set is contained in the second.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 315,
+          "column": 28
+        }
+      },
+      {
+        "sentenceText": "This ensures that the {@code equals} method works properly across different implementations of the {@code Set} interface.\u003c/p\u003e \u003cp\u003e This implementation first checks if the two sets are the same object: if so it returns {@code true}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 320,
+          "column": 20
+        }
+      },
+      {
+        "sentenceText": "Then, it checks if the two sets are identical in size; if not, it returns false.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 326,
+          "column": 20
+        }
+      },
+      {
+        "sentenceText": "If so, it returns {@code a.containsAll((Collection) b)}.\u003c/p\u003e \u003c/blockquote\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 327,
+          "column": 53
+        }
+      },
+      {
+        "sentenceText": "@return whether the sets are equal by value comparison",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 334,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.orderedSet(java.util.Set\u003cE\u003e)",
+    "comment": "\r\n     * Returns a set that maintains the order of elements that are added\r\n     * backed by the given set.\r\n     * \u003cp\u003e\r\n     * If an element is added twice, the order is determined by the first add.\r\n     * The order is observed through the iterator or toArray.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param set  the set to order, must not be null\r\n     * @return an ordered set backed by the given set\r\n     * @throws NullPointerException if the set is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a set that maintains the order of elements that are added backed by the given set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 371,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If an element is added twice, the order is determined by the first add.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 373,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The order is observed through the iterator or toArray.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an ordered set backed by the given set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 379,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the set is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 380,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.SetView.size()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.transformedSet(java.util.Set\u003cE\u003e, org.apache.commons.collections4.Transformer\u003c? super E, ? extends E\u003e)",
+    "comment": "\r\n     * Returns a transformed set backed by the given set.\r\n     * \u003cp\u003e\r\n     * Each object is passed through the transformer as it is added to the\r\n     * Set. It is important not to use the original set after invoking this\r\n     * method, as it is a backdoor for adding untransformed objects.\r\n     * \u003cp\u003e\r\n     * Existing entries in the specified set will not be transformed.\r\n     * If you want that behaviour, see {@link TransformedSet#transformedSet}.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param set  the set to transform, must not be null\r\n     * @param transformer  the transformer for the set, must not be null\r\n     * @return a transformed set backed by the given set\r\n     * @throws NullPointerException if the set or transformer is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a transformed set backed by the given set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 524,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Each object is passed through the transformer as it is added to the Set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 525,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "It is important not to use the original set after invoking this method, as it is a backdoor for adding untransformed objects.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 527,
+          "column": 13
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Existing entries in the specified set will not be transformed.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 529,
+          "column": 13
+        }
+      },
+      {
+        "sentenceText": "If you want that behaviour, see {@link TransformedSet#transformedSet}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 531,
+          "column": 13
+        }
+      },
+      {
+        "sentenceText": "@return a transformed set backed by the given set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 536,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the set or transformer is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 537,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.Anonymous-4590797d-5f1e-4df5-b5fb-d9c05f55a85e.contains(java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.Anonymous-6c3e2b18-8881-44b1-b768-1c225d6ba9de.isEmpty()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.emptyIfNull(java.util.Set\u003cT\u003e)",
+    "comment": "\r\n     * Returns an immutable empty set if the argument is \u003ccode\u003enull\u003c/code\u003e,\r\n     * or the argument itself otherwise.\r\n     *\r\n     * @param \u003cT\u003e the element type\r\n     * @param set the set, possibly \u003ccode\u003enull\u003c/code\u003e\r\n     * @return an empty set if the argument is \u003ccode\u003enull\u003c/code\u003e\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns an immutable empty set if the argument is \u003ccode\u003enull\u003c/code\u003e, or the argument itself otherwise.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 196,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an empty set if the argument is \u003ccode\u003enull\u003c/code\u003e",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 201,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.unmodifiableNavigableSet(java.util.NavigableSet\u003cE\u003e)",
+    "comment": "\r\n     * Returns an unmodifiable navigable set backed by the given navigable set.\r\n     * \u003cp\u003e\r\n     * This method uses the implementation in the decorators subpackage.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param set  the navigable set to make unmodifiable, must not be null\r\n     * @return an unmodifiable set backed by the given set\r\n     * @throws NullPointerException if the set is null\r\n     * @since 4.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns an unmodifiable navigable set backed by the given navigable set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 614,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This method uses the implementation in the decorators subpackage.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 615,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an unmodifiable set backed by the given set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 620,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the set is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 621,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.newIdentityHashSet()",
+    "comment": "\r\n     * Returns a new hash set that matches elements based on \u003ccode\u003e\u003d\u003d\u003c/code\u003e not\r\n     * \u003ccode\u003eequals()\u003c/code\u003e.\r\n     * \u003cp\u003e\r\n     * \u003cstrong\u003eThis set will violate the detail of various Set contracts.\u003c/strong\u003e\r\n     * As a general rule, don\u0027t compare this set to other sets. In particular, you can\u0027t\r\n     * use decorators like {@link ListOrderedSet} on it, which silently assume that these\r\n     * contracts are fulfilled.\r\n     * \u003cp\u003e\r\n     * \u003cstrong\u003eNote that the returned set is not synchronized and is not thread-safe.\u003c/strong\u003e\r\n     * If you wish to use this set from multiple threads concurrently, you must use\r\n     * appropriate synchronization. The simplest approach is to wrap this map\r\n     * using {@link java.util.Collections#synchronizedSet(Set)}. This class may throw\r\n     * exceptions when accessed by concurrent threads without synchronization.\r\n     *\r\n     * @param \u003cE\u003e  the element type\r\n     * @return a new identity hash set\r\n     * @since 4.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a new hash set that matches elements based on \u003ccode\u003e\u003d\u003d\u003c/code\u003e not \u003ccode\u003eequals()\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 348,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e \u003cstrong\u003eThis set will violate the detail of various Set contracts.\u003c/strong\u003e As a general rule, don\u0027t compare this set to other sets.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 350,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "In particular, you can\u0027t use decorators like {@link ListOrderedSet} on it, which silently assume that these contracts are fulfilled.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 352,
+          "column": 65
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e \u003cstrong\u003eNote that the returned set is not synchronized and is not thread-safe.\u003c/strong\u003e If you wish to use this set from multiple threads concurrently, you must use appropriate synchronization.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 355,
+          "column": 65
+        }
+      },
+      {
+        "sentenceText": "The simplest approach is to wrap this map using {@link java.util.Collections#synchronizedSet(Set)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 358,
+          "column": 37
+        }
+      },
+      {
+        "sentenceText": "This class may throw exceptions when accessed by concurrent threads without synchronization.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 359,
+          "column": 66
+        }
+      },
+      {
+        "sentenceText": "@return a new identity hash set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 363,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.Anonymous-307560e2-601d-4620-958e-cb883d97a6fe.contains(java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.Anonymous-07260124-faaa-4019-ad5e-ea82f2b0549e.createIterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.transformedNavigableSet(java.util.NavigableSet\u003cE\u003e, org.apache.commons.collections4.Transformer\u003c? super E, ? extends E\u003e)",
+    "comment": "\r\n     * Returns a transformed navigable set backed by the given navigable set.\r\n     * \u003cp\u003e\r\n     * Each object is passed through the transformer as it is added to the\r\n     * Set. It is important not to use the original set after invoking this\r\n     * method, as it is a backdoor for adding untransformed objects.\r\n     * \u003cp\u003e\r\n     * Existing entries in the specified set will not be transformed.\r\n     * If you want that behaviour, see {@link TransformedNavigableSet#transformedNavigableSet}.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param set  the navigable set to transform, must not be null\r\n     * @param transformer  the transformer for the set, must not be null\r\n     * @return a transformed set backed by the given set\r\n     * @throws NullPointerException if the set or transformer is null\r\n     * @since 4.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a transformed navigable set backed by the given navigable set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 502,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Each object is passed through the transformer as it is added to the Set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 503,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "It is important not to use the original set after invoking this method, as it is a backdoor for adding untransformed objects.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 505,
+          "column": 13
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Existing entries in the specified set will not be transformed.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 507,
+          "column": 13
+        }
+      },
+      {
+        "sentenceText": "If you want that behaviour, see {@link TransformedNavigableSet#transformedNavigableSet}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 509,
+          "column": 13
+        }
+      },
+      {
+        "sentenceText": "@return a transformed set backed by the given set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 514,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the set or transformer is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 515,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.unmodifiableSet(E...)",
+    "comment": "\r\n     * Creates an unmodifiable set from the given items. If the passed var-args argument is {@code\r\n     * null}, then the method returns {@code null}.\r\n     * @param \u003cE\u003e the element type\r\n     * @param items the elements that make up the new set\r\n     * @return a set\r\n     * @since 4.3\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates an unmodifiable set from the given items.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 629,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the passed var-args argument is {@code null}, then the method returns {@code null}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 629,
+          "column": 58
+        }
+      },
+      {
+        "sentenceText": "@return a set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 633,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.Anonymous-66c81a0b-d84e-469d-8b36-ab22d1767466.createIterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.Anonymous-c296d159-289d-437a-9c8f-04dfc63f7d1d.size()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.synchronizedSortedSet(java.util.SortedSet\u003cE\u003e)",
+    "comment": "\r\n     * Returns a synchronized sorted set backed by the given sorted set.\r\n     * \u003cp\u003e\r\n     * You must manually synchronize on the returned set\u0027s iterator to\r\n     * avoid non-deterministic behavior:\r\n     *\r\n     * \u003cpre\u003e\r\n     * Set s \u003d SetUtils.synchronizedSortedSet(mySet);\r\n     * synchronized (s) {\r\n     *     Iterator i \u003d s.iterator();\r\n     *     while (i.hasNext()) {\r\n     *         process (i.next());\r\n     *     }\r\n     * }\r\n     * \u003c/pre\u003e\r\n     *\r\n     * This method is just a wrapper for {@link Collections#synchronizedSortedSet(SortedSet)}.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param set  the sorted set to synchronize, must not be null\r\n     * @return a synchronized set backed by the given set\r\n     * @throws NullPointerException if the set is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a synchronized sorted set backed by the given sorted set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 475,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e You must manually synchronize on the returned set\u0027s iterator to avoid non-deterministic behavior: \u003cpre\u003e Set s \u003d SetUtils.synchronizedSortedSet(mySet); synchronized (s) { Iterator i \u003d s.iterator(); while (i.hasNext()) { process (i.next()); } } \u003c/pre\u003e This method is just a wrapper for {@link Collections#synchronizedSortedSet(SortedSet)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 476,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a synchronized set backed by the given set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 494,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the set is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 495,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.transformedSortedSet(java.util.SortedSet\u003cE\u003e, org.apache.commons.collections4.Transformer\u003c? super E, ? extends E\u003e)",
+    "comment": "\r\n     * Returns a transformed sorted set backed by the given set.\r\n     * \u003cp\u003e\r\n     * Each object is passed through the transformer as it is added to the\r\n     * Set. It is important not to use the original set after invoking this\r\n     * method, as it is a backdoor for adding untransformed objects.\r\n     * \u003cp\u003e\r\n     * Existing entries in the specified set will not be transformed.\r\n     * If you want that behaviour, see {@link TransformedSortedSet#transformedSortedSet}.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param set  the set to transform, must not be null\r\n     * @param transformer  the transformer for the set, must not be null\r\n     * @return a transformed set backed by the given set\r\n     * @throws NullPointerException if the set or transformer is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a transformed sorted set backed by the given set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 545,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Each object is passed through the transformer as it is added to the Set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 546,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "It is important not to use the original set after invoking this method, as it is a backdoor for adding untransformed objects.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 548,
+          "column": 13
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Existing entries in the specified set will not be transformed.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 550,
+          "column": 13
+        }
+      },
+      {
+        "sentenceText": "If you want that behaviour, see {@link TransformedSortedSet#transformedSortedSet}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 552,
+          "column": 13
+        }
+      },
+      {
+        "sentenceText": "@return a transformed set backed by the given set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 557,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the set or transformer is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 558,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.Anonymous-1f7cc545-5400-45fa-b5ce-2406e0836f69.contains(java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.predicatedSortedSet(java.util.SortedSet\u003cE\u003e, org.apache.commons.collections4.Predicate\u003c? super E\u003e)",
+    "comment": "\r\n     * Returns a predicated (validating) sorted set backed by the given sorted set.\r\n     * \u003cp\u003e\r\n     * Only objects that pass the test in the given predicate can be added to the set.\r\n     * Trying to add an invalid object results in an IllegalArgumentException.\r\n     * It is important not to use the original set after invoking this method,\r\n     * as it is a backdoor for adding invalid objects.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param set  the sorted set to predicate, must not be null\r\n     * @param predicate  the predicate for the sorted set, must not be null\r\n     * @return a predicated sorted set backed by the given sorted set\r\n     * @throws NullPointerException if the set or predicate is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a predicated (validating) sorted set backed by the given sorted set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Only objects that pass the test in the given predicate can be added to the set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 426,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Trying to add an invalid object results in an IllegalArgumentException.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 428,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "It is important not to use the original set after invoking this method, as it is a backdoor for adding invalid objects.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 429,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a predicated sorted set backed by the given sorted set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 435,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the set or predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 436,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.intersection(java.util.Set\u003c? extends E\u003e, java.util.Set\u003c? extends E\u003e)",
+    "comment": "\r\n     * Returns a unmodifiable \u003cb\u003eview\u003c/b\u003e of the intersection of the given {@link Set}s.\r\n     * \u003cp\u003e\r\n     * The returned view contains all elements that are members of both input sets\r\n     * ({@code a} and {@code b}).\r\n     *\r\n     * @param \u003cE\u003e the generic type that is able to represent the types contained\r\n     *   in both input sets.\r\n     * @param a  the first set, must not be null\r\n     * @param b  the second set, must not be null\r\n     * @return a view of the intersection of the two sets\r\n     * @since 4.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a unmodifiable \u003cb\u003eview\u003c/b\u003e of the intersection of the given {@link Set}s.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 271,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned view contains all elements that are members of both input sets ({@code a} and {@code b}).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 272,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a view of the intersection of the two sets",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 280,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.hashCodeForSet(java.util.Collection\u003cT\u003e)",
+    "comment": "\r\n     * Generates a hash code using the algorithm specified in\r\n     * {@link java.util.Set#hashCode()}.\r\n     * \u003cp\u003e\r\n     * This method is useful for implementing \u003ccode\u003eSet\u003c/code\u003e when you cannot\r\n     * extend AbstractSet. The method takes Collection instances to enable other\r\n     * collection types to use the Set implementation algorithm.\r\n     *\r\n     * @param \u003cT\u003e the element type\r\n     * @see java.util.Set#hashCode()\r\n     * @param set  the set to calculate the hash code for, may be null\r\n     * @return the hash code\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Generates a hash code using the algorithm specified in {@link java.util.Set#hashCode()}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 229,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This method is useful for implementing \u003ccode\u003eSet\u003c/code\u003e when you cannot extend AbstractSet.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 231,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The method takes Collection instances to enable other collection types to use the Set implementation algorithm.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 233,
+          "column": 28
+        }
+      },
+      {
+        "sentenceText": "@return the hash code",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 239,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.emptySortedSet()",
+    "comment": "\r\n     * Get a typed empty unmodifiable sorted set.\r\n     * @param \u003cE\u003e the element type\r\n     * @return an empty sorted Set\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Get a typed empty unmodifiable sorted set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 219,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an empty sorted Set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 221,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.emptySet()",
+    "comment": "\r\n     * Get a typed empty unmodifiable Set.\r\n     * @param \u003cE\u003e the element type\r\n     * @return an empty Set\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Get a typed empty unmodifiable Set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 210,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an empty Set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 212,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.predicatedSet(java.util.Set\u003cE\u003e, org.apache.commons.collections4.Predicate\u003c? super E\u003e)",
+    "comment": "\r\n     * Returns a predicated (validating) set backed by the given set.\r\n     * \u003cp\u003e\r\n     * Only objects that pass the test in the given predicate can be added to the set.\r\n     * Trying to add an invalid object results in an IllegalArgumentException.\r\n     * It is important not to use the original set after invoking this method,\r\n     * as it is a backdoor for adding invalid objects.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param set  the set to predicate, must not be null\r\n     * @param predicate  the predicate for the set, must not be null\r\n     * @return a predicated set backed by the given set\r\n     * @throws NullPointerException if the set or predicate is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a predicated (validating) set backed by the given set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 407,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Only objects that pass the test in the given predicate can be added to the set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 408,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Trying to add an invalid object results in an IllegalArgumentException.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 410,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "It is important not to use the original set after invoking this method, as it is a backdoor for adding invalid objects.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a predicated set backed by the given set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the set or predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 418,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.Anonymous-9eeddba5-3892-4c51-a566-aeb0d2a33d4f.createIterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.SetUtils.unmodifiableSet(java.util.Set\u003c? extends E\u003e)",
+    "comment": "\r\n     * Returns an unmodifiable set backed by the given set.\r\n     * \u003cp\u003e\r\n     * This method uses the implementation in the decorators subpackage.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param set  the set to make unmodifiable, must not be null\r\n     * @return an unmodifiable set backed by the given set\r\n     * @throws NullPointerException if the set is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns an unmodifiable set backed by the given set.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 644,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This method uses the implementation in the decorators subpackage.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 645,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an unmodifiable set backed by the given set",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 650,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the set is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 651,
+          "column": 8
+        }
+      }
+    ]
+  }
+]

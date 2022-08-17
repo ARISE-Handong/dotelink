@@ -1,0 +1,34 @@
+[
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findSetter(java.lang.Object, java.lang.String, java.lang.Class\u003c?\u003e)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testAutoboxing()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 159,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 244,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.util.ReflectionUtils.findGetter(java.lang.Object, java.lang.String)",
+    "unitTestMethod": "org.supercsv.util.ReflectionUtilsTest.testFindIsTurkishGetter()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 71,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 182,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

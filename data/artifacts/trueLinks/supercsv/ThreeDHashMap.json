@@ -1,0 +1,38 @@
+[
+  {
+    "productionMethod": "org.supercsv.util.ThreeDHashMap.get(K1, K2, K3)",
+    "unitTestMethod": "org.supercsv.util.ThreeDHashMapTest.testGetWithThreeParams()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 141,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 160,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 141,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 163,
+          "column": 3
+        }
+      },
+      {
+        "sentenceLocation": {
+          "line": 141,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 154,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

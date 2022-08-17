@@ -1,0 +1,18 @@
+[
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.Strlen.Strlen(int...)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.StrlenTest.testConstructionWithEmptyArray()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 46,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 108,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.getColumnCount()",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testRemoveValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 95,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 384,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.removeRow(int)",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testRemoveRowByIndex()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 349,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 260,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.setObject(java.lang.Object, java.lang.Comparable, java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testSetObject()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 255,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 219,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.getRowCount()",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testRemoveValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 84,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 389,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.equals(java.lang.Object)",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testEquals()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 65,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.getObject(int, int)",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testGetValueByIndex()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 109,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 140,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.clone()",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testCloning()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 494,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 79,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.getObject(java.lang.Comparable, java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testGetValueByKey()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 212,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 169,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.addObject(java.lang.Object, java.lang.Comparable, java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testSerialization()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 244,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 98,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.KeyedObjects2D()",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testGetValueByKey()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 73,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 173,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.removeColumn(java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testRemoveColumnByKey()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 391,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 351,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.removeRow(java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testRemoveRowByKey()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 318,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.removeColumn(int)",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testRemoveColumnByIndex()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 379,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 290,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.jfree.data.KeyedObjects2D.removeObject(java.lang.Comparable, java.lang.Comparable)",
+    "unitTestMethod": "org.jfree.data.KeyedObjects2DTest.testRemoveValue()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 283,
+          "column": 78
+        },
+        "testCodeLocation": {
+          "line": 389,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

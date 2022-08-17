@@ -1,0 +1,1428 @@
+[
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getExtensionPoints()",
+    "comment": "\n     * Returns a read-only list of extension points supported\n     * by the introspected class.\n     * \u003cp\u003e\n     * A task/type or nested element with void methods named \u003ccode\u003eadd()\u003c/code\u003e\n     * or \u003ccode\u003eaddConfigured()\u003c/code\u003e, taking a single class or interface\n     * argument, supports extensions point. This method returns the list of\n     * all these \u003cem\u003evoid add[Configured](type)\u003c/em\u003e methods.\n     *\n     * @return a list of void, single argument add() or addConfigured()\n     *         \u003ccode\u003eMethod\u003c/code\u003es of all supported extension points.\n     *         These methods are sorted such that if the argument type of a\n     *         method derives from another type also an argument of a method\n     *         of this list, the method with the most derived argument will\n     *         always appear first. Can be empty, but never \u003ccode\u003enull\u003c/code\u003e.\n     * @since Ant 1.6.3\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a read-only list of extension points supported by the introspected class.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 965,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e A task/type or nested element with void methods named \u003ccode\u003eadd()\u003c/code\u003e or \u003ccode\u003eaddConfigured()\u003c/code\u003e, taking a single class or interface argument, supports extensions point.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 967,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This method returns the list of all these \u003cem\u003evoid add[Configured](type)\u003c/em\u003e methods.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 970,
+          "column": 45
+        }
+      },
+      {
+        "sentenceText": "@return a list of void, single argument add() or addConfigured() \u003ccode\u003eMethod\u003c/code\u003es of all supported extension points.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 973,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "These methods are sorted such that if the argument type of a method derives from another type also an argument of a method of this list, the method with the most derived argument will always appear first.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 975,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Can be empty, but never \u003ccode\u003enull\u003c/code\u003e.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 978,
+          "column": 37
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.AddNestedCreator.istore(java.lang.Object, java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getAddTextMethod()",
+    "comment": "\n     * Returns the addText method when the introspected\n     * class supports nested text.\n     *\n     * @return the method on this introspected class that adds nested text.\n     *         Cannot be \u003ccode\u003enull\u003c/code\u003e.\n     * @throws BuildException if the introspected class does not\n     *         support the nested text.\n     * @since Ant 1.6.3\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the addText method when the introspected class supports nested text.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 848,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the method on this introspected class that adds nested text.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 851,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Cannot be \u003ccode\u003enull\u003c/code\u003e.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 852,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws BuildException if the introspected class does not support the nested text.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 853,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.NestedCreator.create(org.apache.tools.ant.Project, java.lang.Object, java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.isHiddenSetMethod(java.lang.String, java.lang.Class\u003c?\u003e)",
+    "comment": "\n     * Certain set methods are part of the Ant core interface to tasks and\n     * therefore not to be considered for introspection\n     *\n     * @param name the name of the set method\n     * @param type the type of the set method\u0027s parameter\n     * @return true if the given set method is to be hidden.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Certain set methods are part of the Ant core interface to tasks and therefore not to be considered for introspection",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 302,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if the given set method is to be hidden.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 307,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getNestedCreator(org.apache.tools.ant.Project, java.lang.String, java.lang.Object, java.lang.String, org.apache.tools.ant.UnknownElement)",
+    "comment": "\n     * Get the specific NestedCreator for a given project/parent/element combination\n     * @param project ant project\n     * @param parentUri URI of the parent.\n     * @param parent the parent class\n     * @param elementName element to work with. This can contain\n     *  a URI,localname tuple of of the form uri:localname\n     * @param child the bit of XML to work with\n     * @return a nested creator that can handle the child elements.\n     * @throws BuildException if the parent does not support child elements of that name\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Get the specific NestedCreator for a given project/parent/element combination",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 509,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a nested creator that can handle the child elements.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 516,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws BuildException if the parent does not support child elements of that name",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 517,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.createTopLevel(org.apache.tools.ant.ComponentHelper, java.lang.String, java.util.List\u003cjava.lang.reflect.Method\u003e)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.AttributeSetter.set(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.NestedCreator.store(java.lang.Object, java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.AttributeSetter.AttributeSetter(java.lang.reflect.Method, java.lang.Class\u003c?\u003e)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.createDynamicElement(java.lang.Object, java.lang.String, java.lang.String, java.lang.String)",
+    "comment": "\n     * Invokes the \"correct\" createDynamicElement method on parent in\n     * order to obtain a child element by name.\n     *\n     * @since Ant 1.8.0.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Invokes the \"correct\" createDynamicElement method on parent in order to obtain a child element by name.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 560,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.AddNestedCreator.create(org.apache.tools.ant.Project, java.lang.Object, java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getAttributeMap()",
+    "comment": "\n     * Returns a read-only map of attributes supported by the introspected class.\n     *\n     * @return an attribute name to attribute \u003ccode\u003eClass\u003c/code\u003e\n     *         unmodifiable map. Can be empty, but never \u003ccode\u003enull\u003c/code\u003e.\n     * @since Ant 1.6.3\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a read-only map of attributes supported by the introspected class.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 928,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an attribute name to attribute \u003ccode\u003eClass\u003c/code\u003e unmodifiable map.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 930,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Can be empty, but never \u003ccode\u003enull\u003c/code\u003e.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 931,
+          "column": 34
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-8fe7777e-96da-46e6-bbea-3811b840c096.set(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.setAttribute(org.apache.tools.ant.Project, java.lang.Object, java.lang.String, java.lang.Object)",
+    "comment": "\n     * Sets the named attribute in the given element, which is part of the\n     * given project.\n     *\n     * @param p The project containing the element. This is used when files\n     *          need to be resolved. Must not be \u003ccode\u003enull\u003c/code\u003e.\n     * @param element The element to set the attribute in. Must not be\n     *                \u003ccode\u003enull\u003c/code\u003e.\n     * @param attributeName The name of the attribute to set. Must not be\n     *                      \u003ccode\u003enull\u003c/code\u003e.\n     * @param value The value to set the attribute to. This may be interpreted\n     *              or converted to the necessary type if the setter method\n     *              doesn\u0027t accept an object of the supplied type.\n     *\n     * @exception BuildException if the introspected class doesn\u0027t support\n     *                           the given attribute, or if the setting\n     *                           method fails.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Sets the named attribute in the given element, which is part of the given project.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 356,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@exception BuildException if the introspected class doesn\u0027t support the given attribute, or if the setting method fails.",
+        "tagType": "exception",
+        "sentenceLocation": {
+          "line": 369,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-c71d4b7c-12e1-485b-974c-e4ffc15c3db3.set(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getEnumSetter(java.lang.Class\u003c?\u003e, java.lang.reflect.Method, java.lang.Class\u003c?\u003e)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-1d7cfd0a-da81-458b-b745-2d2acc764280.set(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getNestedElementMap()",
+    "comment": "\n     * Returns a read-only map of nested elements supported\n     * by the introspected class.\n     *\n     * @return a nested-element name to nested-element \u003ccode\u003eClass\u003c/code\u003e\n     *         unmodifiable map. Can be empty, but never \u003ccode\u003enull\u003c/code\u003e.\n     * @since Ant 1.6.3\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a read-only map of nested elements supported by the introspected class.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 952,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a nested-element name to nested-element \u003ccode\u003eClass\u003c/code\u003e unmodifiable map.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 955,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Can be empty, but never \u003ccode\u003enull\u003c/code\u003e.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 956,
+          "column": 34
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getAttributes()",
+    "comment": "\n     * Returns an enumeration of the names of the attributes supported by the introspected class.\n     *\n     * @return an enumeration of the names of the attributes supported by the introspected class.\n     * @see #getAttributeMap\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns an enumeration of the names of the attributes supported by the introspected class.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 918,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an enumeration of the names of the attributes supported by the introspected class.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 920,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.findRestrictedDefinition(org.apache.tools.ant.ComponentHelper, java.lang.String, java.util.List\u003cjava.lang.reflect.Method\u003e)",
+    "comment": "\n     *\n     ",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-8a1d1faa-a5e4-4c67-9496-2103cadf2fd4.create(org.apache.tools.ant.Project, java.lang.Object, java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-91ee5ce5-b7a7-467c-827d-df488683bead.create(org.apache.tools.ant.Project, java.lang.Object, java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.insertAddTypeMethod(java.lang.reflect.Method)",
+    "comment": "\n     * Inserts an add or addConfigured method into\n     * the addTypeMethods array. The array is\n     * ordered so that the more derived classes are first.\n     * If both add and addConfigured are present, the addConfigured will take priority.\n     * @param method the \u003ccode\u003eMethod\u003c/code\u003e to insert.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Inserts an add or addConfigured method into the addTypeMethods array.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1570,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The array is ordered so that the more derived classes are first.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1571,
+          "column": 34
+        }
+      },
+      {
+        "sentenceText": "If both add and addConfigured are present, the addConfigured will take priority.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1573,
+          "column": 34
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.AddNestedCreator.AddNestedCreator(java.lang.reflect.Method, java.lang.reflect.Constructor\u003c?\u003e, int)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getNestedElements()",
+    "comment": "\n     * Returns an enumeration of the names of the nested elements supported\n     * by the introspected class.\n     *\n     * @return an enumeration of the names of the nested elements supported\n     *         by the introspected class.\n     * @see #getNestedElementMap\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns an enumeration of the names of the nested elements supported by the introspected class.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 940,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an enumeration of the names of the nested elements supported by the introspected class.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 943,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.setAttribute(org.apache.tools.ant.Project, java.lang.Object, java.lang.String, java.lang.String)",
+    "comment": "\n     * Sets the named attribute in the given element, which is part of the\n     * given project.\n     *\n     * @param p The project containing the element. This is used when files\n     *          need to be resolved. Must not be \u003ccode\u003enull\u003c/code\u003e.\n     * @param element The element to set the attribute in. Must not be\n     *                \u003ccode\u003enull\u003c/code\u003e.\n     * @param attributeName The name of the attribute to set. Must not be\n     *                      \u003ccode\u003enull\u003c/code\u003e.\n     * @param value The value to set the attribute to. This may be interpreted\n     *              or converted to the necessary type if the setter method\n     *              doesn\u0027t just take a string. Must not be \u003ccode\u003enull\u003c/code\u003e.\n     *\n     * @exception BuildException if the introspected class doesn\u0027t support\n     *                           the given attribute, or if the setting\n     *                           method fails.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Sets the named attribute in the given element, which is part of the given project.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@exception BuildException if the introspected class doesn\u0027t support the given attribute, or if the setting method fails.",
+        "tagType": "exception",
+        "sentenceLocation": {
+          "line": 430,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-9184d967-e712-4cf4-b386-f085a38dc66c.set(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-e57d765a-f55c-414c-bbe2-a5fc01e8f75a.set(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.createAddTypeCreator(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "\n     * Create a NestedCreator for the given element.\n     * @param project owning project\n     * @param parent Parent object used to create the instance.\n     * @param elementName name of the element\n     * @return a nested creator, or null if there is no component of the given name, or it\n     *        has no matching add type methods\n     * @throws BuildException if something goes wrong\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a NestedCreator for the given element.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1506,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a nested creator, or null if there is no component of the given name, or it has no matching add type methods",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1510,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws BuildException if something goes wrong",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1512,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.NestedCreator.NestedCreator(java.lang.reflect.Method)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.addText(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "\n     * Adds PCDATA to an element, using the element\u0027s\n     * \u003ccode\u003evoid addText(String)\u003c/code\u003e method, if it has one. If no\n     * such method is present, a BuildException is thrown if the\n     * given text contains non-whitespace.\n     *\n     * @param project The project which the element is part of.\n     *                Must not be \u003ccode\u003enull\u003c/code\u003e.\n     * @param element The element to add the text to.\n     *                Must not be \u003ccode\u003enull\u003c/code\u003e.\n     * @param text    The text to add.\n     *                Must not be \u003ccode\u003enull\u003c/code\u003e.\n     *\n     * @exception BuildException if non-whitespace text is provided and no\n     *                           method is available to handle it, or if\n     *                           the handling method fails.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Adds PCDATA to an element, using the element\u0027s \u003ccode\u003evoid addText(String)\u003c/code\u003e method, if it has one.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 440,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If no such method is present, a BuildException is thrown if the given text contains non-whitespace.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 441,
+          "column": 65
+        }
+      },
+      {
+        "sentenceText": "@exception BuildException if non-whitespace text is provided and no method is available to handle it, or if the handling method fails.",
+        "tagType": "exception",
+        "sentenceLocation": {
+          "line": 452,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getElementName(org.apache.tools.ant.Project, java.lang.Object)",
+    "comment": "\n     * Returns a description of the type of the given element in\n     * relation to a given project. This is used for logging purposes\n     * when the element is asked to cope with some data it has no way of handling.\n     *\n     * @param project The project the element is defined in. Must not be \u003ccode\u003enull\u003c/code\u003e.\n     *\n     * @param element The element to describe. Must not be \u003ccode\u003enull\u003c/code\u003e.\n     *\n     * @return a description of the element type\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a description of the type of the given element in relation to a given project.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1241,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This is used for logging purposes when the element is asked to cope with some data it has no way of handling.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1242,
+          "column": 37
+        }
+      },
+      {
+        "sentenceText": "@return a description of the element type",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1249,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.MethodAndObject.MethodAndObject(java.lang.reflect.Method, java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getHelper(org.apache.tools.ant.Project, java.lang.Class\u003c?\u003e)",
+    "comment": "\n     * Returns a helper for the given class, either from the cache\n     * or by creating a new instance.\n     *\n     * The method will make sure the helper will be cleaned up at the end of\n     * the project, and only one instance will be created for each class.\n     *\n     * @param p the project instance. Can be null, in which case the helper is not cached.\n     * @param c The class for which a helper is required.\n     *          Must not be \u003ccode\u003enull\u003c/code\u003e.\n     *\n     * @return a helper for the specified class\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a helper for the given class, either from the cache or by creating a new instance.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 328,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The method will make sure the helper will be cleaned up at the end of the project, and only one instance will be created for each class.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 330,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a helper for the specified class",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 338,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.supportsReflectElement(java.lang.String, java.lang.String)",
+    "comment": "\n     * Check if this element supports a nested element from reflection.\n     *\n     * @param parentUri   the uri of the parent\n     * @param elementName the name of the nested element being checked\n     *\n     * @return true if the given nested element is supported\n     * @since Ant 1.8.0\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Check if this element supports a nested element from reflection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 725,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if the given nested element is supported",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 730,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getElementCreator(org.apache.tools.ant.Project, java.lang.String, java.lang.Object, java.lang.String, org.apache.tools.ant.UnknownElement)",
+    "comment": "\n     * returns an object that creates and stores an object\n     * for an element of a parent.\n     *\n     * @param project      Project to which the parent object belongs.\n     * @param parentUri    The namespace uri of the parent object.\n     * @param parent       Parent object used to create the creator object to\n     *                     create and store and instance of a subelement.\n     * @param elementName  Name of the element to create an instance of.\n     * @param ue           The unknown element associated with the element.\n     * @return a creator object to create and store the element instance.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "returns an object that creates and stores an object for an element of a parent.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 621,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a creator object to create and store the element instance.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 630,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getElementType(java.lang.String)",
+    "comment": "\n     * Returns the type of a named nested element.\n     *\n     * @param elementName The name of the element to find the type of.\n     *                    Must not be \u003ccode\u003enull\u003c/code\u003e.\n     *\n     * @return the type of the nested element with the specified name.\n     *         This will never be \u003ccode\u003enull\u003c/code\u003e.\n     *\n     * @exception BuildException if the introspected class does not\n     *                           support the named nested element.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the type of a named nested element.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 804,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the type of the nested element with the specified name.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 809,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This will never be \u003ccode\u003enull\u003c/code\u003e.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 810,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@exception BuildException if the introspected class does not support the named nested element.",
+        "tagType": "exception",
+        "sentenceLocation": {
+          "line": 812,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getElementMethod(java.lang.String)",
+    "comment": "\n     * Returns the adder or creator method of a named nested element.\n     *\n     * @param  elementName The name of the attribute to find the setter\n     *         method of. Must not be \u003ccode\u003enull\u003c/code\u003e.\n     * @return the method on this introspected class that adds or creates this\n     *         nested element. Can be \u003ccode\u003enull\u003c/code\u003e when the introspected\n     *         class is a dynamic configurator!\n     * @throws BuildException if the introspected class does not\n     *         support the named nested element.\n     * @since Ant 1.6.3\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the adder or creator method of a named nested element.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 866,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the method on this introspected class that adds or creates this nested element.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 870,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Can be \u003ccode\u003enull\u003c/code\u003e when the introspected class is a dynamic configurator!",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 871,
+          "column": 32
+        }
+      },
+      {
+        "sentenceText": "@throws BuildException if the introspected class does not support the named nested element.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 873,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.condenseText(java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.isDynamic()",
+    "comment": "\n     * Indicates whether the introspected class is a dynamic one,\n     * supporting arbitrary nested elements and/or attributes.\n     *\n     * @return \u003cdiv\u003e\u003ccode\u003etrue\u003c/code\u003e if the introspected class is dynamic;\n     *         \u003ccode\u003efalse\u003c/code\u003e otherwise.\u003c/div\u003e\n     * @since Ant 1.6.3\n     *\n     * @see DynamicElement\n     * @see DynamicElementNS\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Indicates whether the introspected class is a dynamic one, supporting arbitrary nested elements and/or attributes.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 639,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return \u003cdiv\u003e\u003ccode\u003etrue\u003c/code\u003e if the introspected class is dynamic; \u003ccode\u003efalse\u003c/code\u003e otherwise.\u003c/div\u003e",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 642,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-9013e1de-d871-40d8-bc02-4c68a4f9f6ab.set(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.supportsNestedElement(java.lang.String, java.lang.String)",
+    "comment": "\n     * Indicate if this element supports a nested element of the\n     * given name.\n     *\n     * \u003cp\u003eNote that this method will always return true if the\n     * introspected class is {@link #isDynamic dynamic} or contains a\n     * method named \"add\" with void return type and a single argument.\n     * To ge a more thorough answer, use the four-arg version of this\n     * method instead.\u003c/p\u003e\n     *\n     * @param parentUri   the uri of the parent\n     * @param elementName the name of the nested element being checked\n     *\n     * @return true if the given nested element is supported\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Indicate if this element supports a nested element of the given name.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 681,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003eNote that this method will always return true if the introspected class is {@link #isDynamic dynamic} or contains a method named \"add\" with void return type and a single argument.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 683,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "To ge a more thorough answer, use the four-arg version of this method instead.\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 686,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if the given nested element is supported",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 693,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.CreateNestedCreator.create(org.apache.tools.ant.Project, java.lang.Object, java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.supportsNestedElement(java.lang.String)",
+    "comment": "\n     * Indicates if this element supports a nested element of the\n     * given name.\n     *\n     * @param elementName the name of the nested element being checked\n     *\n     * @return true if the given nested element is supported\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Indicates if this element supports a nested element of the given name.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 669,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if the given nested element is supported",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 674,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.NestedCreator.getRealObject()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Creator.create()",
+    "comment": "\n         * Create an object using this creator, which is determined by introspection.\n         *\n         * @return the created object\n         ",
+    "sentences": [
+      {
+        "sentenceText": "Create an object using this creator, which is determined by introspection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1311,
+          "column": 12
+        }
+      },
+      {
+        "sentenceText": "@return the created object",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1313,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.throwNotSupported(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "\n     * Utility method to throw a NotSupported exception\n     *\n     * @param project the Project instance.\n     * @param parent the object which doesn\u0027t support a requested element\n     * @param elementName the name of the Element which is trying to be created.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Utility method to throw a NotSupported exception",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 495,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-706517a7-180a-44ec-bed8-37d89c607162.store(java.lang.Object, java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.isContainer()",
+    "comment": "\n     * Indicates whether the introspected class is a task container,\n     * supporting arbitrary nested tasks/types.\n     *\n     * @return \u003ccode\u003etrue\u003c/code\u003e if the introspected class is a container;\n     *         \u003ccode\u003efalse\u003c/code\u003e otherwise.\n     * @since Ant 1.6.3\n     *\n     * @see TaskContainer\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Indicates whether the introspected class is a task container, supporting arbitrary nested tasks/types.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 655,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return \u003ccode\u003etrue\u003c/code\u003e if the introspected class is a container; \u003ccode\u003efalse\u003c/code\u003e otherwise.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 658,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.findMatchingMethod(java.lang.Class\u003c?\u003e, java.util.List\u003cjava.lang.reflect.Method\u003e)",
+    "comment": "\n     * Search the list of methods to find the first method\n     * that has a parameter that accepts the nested element object.\n     * @param paramClass the \u003ccode\u003eClass\u003c/code\u003e type to search for.\n     * @param methods the \u003ccode\u003eList\u003c/code\u003e of methods to search.\n     * @return a matching \u003ccode\u003eMethod\u003c/code\u003e; null if none found.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Search the list of methods to find the first method that has a parameter that accepts the nested element object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1597,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a matching \u003ccode\u003eMethod\u003c/code\u003e; null if none found.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1601,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getPropertyName(java.lang.String, java.lang.String)",
+    "comment": "\n     * Extracts the name of a property from a method name by subtracting\n     * a given prefix and converting into lower case. It is up to calling\n     * code to make sure the method name does actually begin with the\n     * specified prefix - no checking is done in this method.\n     *\n     * @param methodName The name of the method in question. Must not be \u003ccode\u003enull\u003c/code\u003e.\n     * @param prefix     The prefix to remove. Must not be \u003ccode\u003enull\u003c/code\u003e.\n     *\n     * @return the lower-cased method name with the prefix removed.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Extracts the name of a property from a method name by subtracting a given prefix and converting into lower case.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1256,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "It is up to calling code to make sure the method name does actually begin with the specified prefix - no checking is done in this method.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1257,
+          "column": 55
+        }
+      },
+      {
+        "sentenceText": "@return the lower-cased method name with the prefix removed.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1264,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Creator.getRealObject()",
+    "comment": "\n         * @return the real object (used currently only for presetdef).\n         ",
+    "sentences": [
+      {
+        "sentenceText": "@return the real object (used currently only for presetdef).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1346,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Creator.Creator(org.apache.tools.ant.Project, java.lang.Object, org.apache.tools.ant.IntrospectionHelper.NestedCreator)",
+    "comment": "\n         * Creates a new Creator instance.\n         * This object is given to the UnknownElement to create\n         * objects for sub-elements. UnknownElement calls\n         * create to create an object, the object then gets\n         * configured and then UnknownElement calls store.\n         * SetPolyType may be used to override the type used\n         * to create the object with. SetPolyType gets called before create.\n         *\n         * @param project the current project\n         * @param parent  the parent object to create the object in\n         * @param nestedCreator the nested creator object to use\n         ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a new Creator instance.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1283,
+          "column": 12
+        }
+      },
+      {
+        "sentenceText": "This object is given to the UnknownElement to create objects for sub-elements.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1284,
+          "column": 12
+        }
+      },
+      {
+        "sentenceText": "UnknownElement calls create to create an object, the object then gets configured and then UnknownElement calls store.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1285,
+          "column": 38
+        }
+      },
+      {
+        "sentenceText": "SetPolyType may be used to override the type used to create the object with.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1288,
+          "column": 38
+        }
+      },
+      {
+        "sentenceText": "SetPolyType gets called before create.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1289,
+          "column": 39
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getAttributeMethod(java.lang.String)",
+    "comment": "\n     * Returns the setter method of a named attribute.\n     *\n     * @param  attributeName The name of the attribute to find the setter\n     *         method of. Must not be \u003ccode\u003enull\u003c/code\u003e.\n     * @return the method on this introspected class that sets this attribute.\n     *         This will never be \u003ccode\u003enull\u003c/code\u003e.\n     * @throws BuildException if the introspected class does not\n     *         support the named attribute.\n     * @since Ant 1.6.3\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the setter method of a named attribute.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 888,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the method on this introspected class that sets this attribute.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 892,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This will never be \u003ccode\u003enull\u003c/code\u003e.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 893,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws BuildException if the introspected class does not support the named attribute.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 894,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-74fb9c7b-0737-428a-8789-c5fca404783d.set(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.NestedCreator.isPolyMorphic()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.AttributeSetter.setObject(org.apache.tools.ant.Project, java.lang.Object, java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.storeElement(org.apache.tools.ant.Project, java.lang.Object, java.lang.Object, java.lang.String)",
+    "comment": "\n     * Stores a named nested element using a storage method determined\n     * by the initial introspection. If no appropriate storage method\n     * is available, this method returns immediately.\n     *\n     * @param project Ignored in this implementation.\n     *                May be \u003ccode\u003enull\u003c/code\u003e.\n     *\n     * @param parent  Parent instance to store the child in.\n     *                Must not be \u003ccode\u003enull\u003c/code\u003e.\n     *\n     * @param child   Child instance to store in the parent.\n     *                Should not be \u003ccode\u003enull\u003c/code\u003e.\n     *\n     * @param elementName  Name of the child element to store.\n     *                     May be \u003ccode\u003enull\u003c/code\u003e, in which case\n     *                     this method returns immediately.\n     *\n     * @exception BuildException if the storage method fails.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Stores a named nested element using a storage method determined by the initial introspection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 750,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If no appropriate storage method is available, this method returns immediately.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 751,
+          "column": 38
+        }
+      },
+      {
+        "sentenceText": "@exception BuildException if the storage method fails.",
+        "tagType": "exception",
+        "sentenceLocation": {
+          "line": 767,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.AddNestedCreator.isPolyMorphic()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-c0101374-95a9-4865-8c23-e9e1e91f67d5.set(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getHelper(java.lang.Class\u003c?\u003e)",
+    "comment": "\n     * Returns a helper for the given class, either from the cache\n     * or by creating a new instance.\n     *\n     * @param c The class for which a helper is required.\n     *          Must not be \u003ccode\u003enull\u003c/code\u003e.\n     *\n     * @return a helper for the specified class\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a helper for the given class, either from the cache or by creating a new instance.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a helper for the specified class",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 321,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.extractBuildException(java.lang.reflect.InvocationTargetException)",
+    "comment": "\n     * Helper method to extract the inner fault from an {@link InvocationTargetException}, and turn\n     * it into a BuildException. If it is already a BuildException, it is type cast and returned; if\n     * not a new BuildException is created containing the child as nested text.\n     * @param ite the exception\n     * @return the nested exception\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Helper method to extract the inner fault from an {@link InvocationTargetException}, and turn it into a BuildException.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 789,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If it is already a BuildException, it is type cast and returned; if not a new BuildException is created containing the child as nested text.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 790,
+          "column": 34
+        }
+      },
+      {
+        "sentenceText": "@return the nested exception",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 793,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-04fdc839-c53f-4f60-a38a-2557a366e8eb.set(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Creator.setPolyType(java.lang.String)",
+    "comment": "\n         * Used to override the class used to create the object.\n         *\n         * @param polyType a ant component type name\n         ",
+    "sentences": [
+      {
+        "sentenceText": "Used to override the class used to create the object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1302,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-1e1a7d31-7da3-47d9-af38-ef17b85ec6cb.set(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Creator.store()",
+    "comment": "\n         * Stores the nested element object using a storage method determined by introspection.\n         *\n         ",
+    "sentences": [
+      {
+        "sentenceText": "Stores the nested element object using a storage method determined by introspection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1353,
+          "column": 12
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.createRestricted(org.apache.tools.ant.ComponentHelper, java.lang.String, java.util.List\u003cjava.lang.reflect.Method\u003e)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.createAttributeSetter(java.lang.reflect.Method, java.lang.Class\u003c?\u003e, java.lang.String)",
+    "comment": "\n     * Creates an implementation of AttributeSetter for the given\n     * attribute type. Conversions (where necessary) are automatically\n     * made for the following types:\n     * \u003cul\u003e\n     * \u003cli\u003eString (left as it is)\n     * \u003cli\u003eCharacter/char (first character is used)\n     * \u003cli\u003eBoolean/boolean\n     * ({@link Project#toBoolean(String) Project.toBoolean(String)} is used)\n     * \u003cli\u003eClass (Class.forName is used)\n     * \u003cli\u003eFile (resolved relative to the appropriate project)\n     * \u003cli\u003ePath (resolve relative to the appropriate project)\n     * \u003cli\u003eResource (resolved as a FileResource relative to the appropriate project)\n     * \u003cli\u003eFileProvider (resolved as a FileResource relative to the appropriate project)\n     * \u003cli\u003eEnumeratedAttribute (uses its own\n     * {@link EnumeratedAttribute#setValue(String) setValue} method)\n     * \u003cli\u003eOther primitive types (wrapper classes are used with constructors\n     * taking String)\n     * \u003c/ul\u003e\n     *\n     * If none of the above covers the given parameters, a constructor for the\n     * appropriate class taking a String parameter is used if it is available.\n     *\n     * @param m The method to invoke on the bean when the setter is invoked.\n     *          Must not be \u003ccode\u003enull\u003c/code\u003e.\n     * @param arg The type of the single argument of the bean\u0027s method.\n     *            Must not be \u003ccode\u003enull\u003c/code\u003e.\n     * @param attrName the name of the attribute for which the setter is being\n     *                 created.\n     *\n     * @return an appropriate AttributeSetter instance, or \u003ccode\u003enull\u003c/code\u003e\n     *         if no appropriate conversion is available.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates an implementation of AttributeSetter for the given attribute type.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 987,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Conversions (where necessary) are automatically made for the following types: \u003cul\u003e \u003cli\u003eString (left as it is) \u003cli\u003eCharacter/char (first character is used) \u003cli\u003eBoolean/boolean ({@link Project#toBoolean(String) Project.toBoolean(String)} is used) \u003cli\u003eClass (Class.forName is used) \u003cli\u003eFile (resolved relative to the appropriate project) \u003cli\u003ePath (resolve relative to the appropriate project) \u003cli\u003eResource (resolved as a FileResource relative to the appropriate project) \u003cli\u003eFileProvider (resolved as a FileResource relative to the appropriate project) \u003cli\u003eEnumeratedAttribute (uses its own {@link EnumeratedAttribute#setValue(String) setValue} method) \u003cli\u003eOther primitive types (wrapper classes are used with constructors taking String) \u003c/ul\u003e If none of the above covers the given parameters, a constructor for the appropriate class taking a String parameter is used if it is available.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 988,
+          "column": 24
+        }
+      },
+      {
+        "sentenceText": "@return an appropriate AttributeSetter instance, or \u003ccode\u003enull\u003c/code\u003e if no appropriate conversion is available.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1016,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.clearCache()",
+    "comment": "\n     * Clears the static cache of on build finished.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Clears the static cache of on build finished.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1499,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.CreateNestedCreator.CreateNestedCreator(java.lang.reflect.Method)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.supportsNestedElement(java.lang.String, java.lang.String, org.apache.tools.ant.Project, java.lang.Object)",
+    "comment": "\n     * Indicate if this element supports a nested element of the\n     * given name.\n     *\n     * \u003cp\u003eNote that this method will always return true if the\n     * introspected class is {@link #isDynamic dynamic}, so be\n     * prepared to catch an exception about unsupported children when\n     * calling {@link #getElementCreator getElementCreator}.\u003c/p\u003e\n     *\n     * @param parentUri   the uri of the parent\n     * @param elementName the name of the nested element being checked\n     * @param project currently executing project instance\n     * @param parent the parent element\n     *\n     * @return true if the given nested element is supported\n     * @since Ant 1.8.0.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Indicate if this element supports a nested element of the given name.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 701,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003eNote that this method will always return true if the introspected class is {@link #isDynamic dynamic}, so be prepared to catch an exception about unsupported children when calling {@link #getElementCreator getElementCreator}.\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 703,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if the given nested element is supported",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 714,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.NestedCreator.getMethod()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getAttributeType(java.lang.String)",
+    "comment": "\n     * Returns the type of a named attribute.\n     *\n     * @param attributeName The name of the attribute to find the type of.\n     *                      Must not be \u003ccode\u003enull\u003c/code\u003e.\n     *\n     * @return the type of the attribute with the specified name.\n     *         This will never be \u003ccode\u003enull\u003c/code\u003e.\n     *\n     * @exception BuildException if the introspected class does not\n     *                           support the named attribute.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the type of a named attribute.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 826,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the type of the attribute with the specified name.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 831,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This will never be \u003ccode\u003enull\u003c/code\u003e.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 832,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@exception BuildException if the introspected class does not support the named attribute.",
+        "tagType": "exception",
+        "sentenceLocation": {
+          "line": 834,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.IntrospectionHelper(java.lang.Class\u003c?\u003e)",
+    "comment": "\n     * Sole constructor, which is private to ensure that all\n     * IntrospectionHelpers are created via {@link #getHelper(Class) getHelper}.\n     * Introspects the given class for bean-like methods.\n     * Each method is examined in turn, and the following rules are applied:\n     * \u003cp\u003e\n     * \u003cul\u003e\n     * \u003cli\u003eIf the method is \u003ccode\u003eTask.setLocation(Location)\u003c/code\u003e,\n     * \u003ccode\u003eTask.setTaskType(String)\u003c/code\u003e\n     * or \u003ccode\u003eTaskContainer.addTask(Task)\u003c/code\u003e, it is ignored. These\n     * methods are handled differently elsewhere.\n     * \u003cli\u003e\u003ccode\u003evoid addText(String)\u003c/code\u003e is recognised as the method for\n     * adding PCDATA to a bean.\n     * \u003cli\u003e\u003ccode\u003evoid setFoo(Bar)\u003c/code\u003e is recognised as a method for\n     * setting the value of attribute \u003ccode\u003efoo\u003c/code\u003e, so long as\n     * \u003ccode\u003eBar\u003c/code\u003e is non-void and is not an array type.\n     * As of Ant 1.8, a Resource or FileProvider parameter overrides a java.io.File parameter;\n     * in practice the only effect of this is to allow objects rendered from\n     * the 1.8 PropertyHelper implementation to be used as Resource parameters,\n     * since Resources set from Strings are resolved as project-relative files\n     * to preserve backward compatibility.  Beyond this, non-String\n     * parameter types always overload String parameter types; these are\n     * the only guarantees made in terms of priority.\n     * \u003cli\u003e\u003ccode\u003eFoo createBar()\u003c/code\u003e is recognised as a method for\n     * creating a nested element called \u003ccode\u003ebar\u003c/code\u003e of type\n     * \u003ccode\u003eFoo\u003c/code\u003e, so long as \u003ccode\u003eFoo\u003c/code\u003e is not a primitive or\n     * array type.\n     * \u003cli\u003e\u003ccode\u003evoid addConfiguredFoo(Bar)\u003c/code\u003e is recognised as a\n     * method for storing a pre-configured element called\n     * \u003ccode\u003efoo\u003c/code\u003e and of type \u003ccode\u003eBar\u003c/code\u003e, so long as\n     * \u003ccode\u003eBar\u003c/code\u003e is not an array, primitive or String type.\n     * \u003ccode\u003eBar\u003c/code\u003e must have an accessible constructor taking no\n     * arguments.\n     * \u003cli\u003e\u003ccode\u003evoid addFoo(Bar)\u003c/code\u003e is recognised as a method for storing\n     * an element called \u003ccode\u003efoo\u003c/code\u003e and of type \u003ccode\u003eBar\u003c/code\u003e, so\n     * long as \u003ccode\u003eBar\u003c/code\u003e is not an array, primitive or String type.\n     * \u003ccode\u003eBar\u003c/code\u003e must have an accessible constructor taking no\n     * arguments. This is distinct from the \u0027addConfigured\u0027 idiom in that\n     * the nested element is added to the parent immediately after it is\n     * constructed; in practice this means that \u003ccode\u003eaddFoo(Bar)\u003c/code\u003e should\n     * do little or nothing with its argument besides storing it for later use.\n     * \u003c/ul\u003e\n     * Note that only one method is retained to create/set/addConfigured/add\n     * any element or attribute.\n     *\n     * @param bean The bean type to introspect.\n     *             Must not be \u003ccode\u003enull\u003c/code\u003e.\n     *\n     * @see #getHelper(Class)\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Sole constructor, which is private to ensure that all IntrospectionHelpers are created via {@link #getHelper(Class) getHelper}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 131,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Introspects the given class for bean-like methods.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 133,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Each method is examined in turn, and the following rules are applied: \u003cp\u003e \u003cul\u003e \u003cli\u003eIf the method is \u003ccode\u003eTask.setLocation(Location)\u003c/code\u003e, \u003ccode\u003eTask.setTaskType(String)\u003c/code\u003e or \u003ccode\u003eTaskContainer.addTask(Task)\u003c/code\u003e, it is ignored.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 134,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "These methods are handled differently elsewhere.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 139,
+          "column": 68
+        }
+      },
+      {
+        "sentenceText": "\u003cli\u003e\u003ccode\u003evoid addText(String)\u003c/code\u003e is recognised as the method for adding PCDATA to a bean.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 141,
+          "column": 68
+        }
+      },
+      {
+        "sentenceText": "\u003cli\u003e\u003ccode\u003evoid setFoo(Bar)\u003c/code\u003e is recognised as a method for setting the value of attribute \u003ccode\u003efoo\u003c/code\u003e, so long as \u003ccode\u003eBar\u003c/code\u003e is non-void and is not an array type.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 143,
+          "column": 68
+        }
+      },
+      {
+        "sentenceText": "As of Ant 1.8, a Resource or FileProvider parameter overrides a java.io.File parameter; in practice the only effect of this is to allow objects rendered from the 1.8 PropertyHelper implementation to be used as Resource parameters, since Resources set from Strings are resolved as project-relative files to preserve backward compatibility.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 146,
+          "column": 68
+        }
+      },
+      {
+        "sentenceText": "Beyond this, non-String parameter types always overload String parameter types; these are the only guarantees made in terms of priority.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 150,
+          "column": 45
+        }
+      },
+      {
+        "sentenceText": "\u003cli\u003e\u003ccode\u003eFoo createBar()\u003c/code\u003e is recognised as a method for creating a nested element called \u003ccode\u003ebar\u003c/code\u003e of type \u003ccode\u003eFoo\u003c/code\u003e, so long as \u003ccode\u003eFoo\u003c/code\u003e is not a primitive or array type.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 153,
+          "column": 45
+        }
+      },
+      {
+        "sentenceText": "\u003cli\u003e\u003ccode\u003evoid addConfiguredFoo(Bar)\u003c/code\u003e is recognised as a method for storing a pre-configured element called \u003ccode\u003efoo\u003c/code\u003e and of type \u003ccode\u003eBar\u003c/code\u003e, so long as \u003ccode\u003eBar\u003c/code\u003e is not an array, primitive or String type.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 157,
+          "column": 45
+        }
+      },
+      {
+        "sentenceText": "\u003ccode\u003eBar\u003c/code\u003e must have an accessible constructor taking no arguments.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 161,
+          "column": 45
+        }
+      },
+      {
+        "sentenceText": "\u003cli\u003e\u003ccode\u003evoid addFoo(Bar)\u003c/code\u003e is recognised as a method for storing an element called \u003ccode\u003efoo\u003c/code\u003e and of type \u003ccode\u003eBar\u003c/code\u003e, so long as \u003ccode\u003eBar\u003c/code\u003e is not an array, primitive or String type.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 163,
+          "column": 45
+        }
+      },
+      {
+        "sentenceText": "\u003ccode\u003eBar\u003c/code\u003e must have an accessible constructor taking no arguments.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 166,
+          "column": 45
+        }
+      },
+      {
+        "sentenceText": "This is distinct from the \u0027addConfigured\u0027 idiom in that the nested element is added to the parent immediately after it is constructed; in practice this means that \u003ccode\u003eaddFoo(Bar)\u003c/code\u003e should do little or nothing with its argument besides storing it for later use.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 167,
+          "column": 19
+        }
+      },
+      {
+        "sentenceText": "\u003c/ul\u003e Note that only one method is retained to create/set/addConfigured/add any element or attribute.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 171,
+          "column": 19
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-1e9e0c41-8760-4dce-b602-78f00d52871b.set(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.AddNestedCreator.store(java.lang.Object, java.lang.Object)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-40ed58a9-a91a-46c2-96d6-60b32ff10f21.getRealObject()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.supportsCharacters()",
+    "comment": "\n     * Returns whether or not the introspected class supports PCDATA.\n     *\n     * @return whether or not the introspected class supports PCDATA.\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns whether or not the introspected class supports PCDATA.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 909,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return whether or not the introspected class supports PCDATA.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 911,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.Anonymous-6f69a61d-b836-497e-a0bc-dde7cc9ab17e.set(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "comment": "",
+    "sentences": []
+  }
+]

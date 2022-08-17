@@ -1,0 +1,1835 @@
+[
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.contains(java.lang.Iterable\u003cE\u003e, java.lang.Object)",
+    "comment": "\r\n     * Checks if the object is contained in the given iterable.\r\n     * \u003cp\u003e\r\n     * A \u003ccode\u003enull\u003c/code\u003e or empty iterable returns false.\r\n     *\r\n     * @param \u003cE\u003e the type of object the {@link Iterable} contains\r\n     * @param iterable  the iterable to check, may be null\r\n     * @param object  the object to check\r\n     * @return true if the object is contained in the iterable, false otherwise\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Checks if the object is contained in the given iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 698,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e A \u003ccode\u003enull\u003c/code\u003e or empty iterable returns false.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 699,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if the object is contained in the iterable, false otherwise",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 705,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.uniqueIterable(java.lang.Iterable\u003cE\u003e)",
+    "comment": "\r\n     * Returns a unique view of the given iterable.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator supports {@code remove()} when the\r\n     * corresponding input iterator supports it. Calling {@code remove()}\r\n     * will only remove a single element from the underlying iterator.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterable to use, may not be null\r\n     * @return a unique view of the specified iterable\r\n     * @throws NullPointerException if iterable is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a unique view of the given iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 436,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator supports {@code remove()} when the corresponding input iterator supports it.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 437,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Calling {@code remove()} will only remove a single element from the underlying iterator.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 439,
+          "column": 50
+        }
+      },
+      {
+        "sentenceText": "@return a unique view of the specified iterable",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 444,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if iterable is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 445,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.Anonymous-5b803348-1267-42ca-b08f-3edb6e8b28ed.iterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.Anonymous-926ce759-dcd2-4494-8a87-9ef60b7d1e2a.iterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.checkNotNull(java.lang.Iterable\u003c?\u003e...)",
+    "comment": "\r\n     * Fail-fast check for null arguments.\r\n     *\r\n     * @param iterables  the iterables to check\r\n     * @throws NullPointerException if the argument or any of its contents is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Fail-fast check for null arguments.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1076,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the argument or any of its contents is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1079,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.transformedIterable(java.lang.Iterable\u003cI\u003e, org.apache.commons.collections4.Transformer\u003c? super I, ? extends O\u003e)",
+    "comment": "\r\n     * Returns a transformed view of the given iterable where all of its elements\r\n     * have been transformed by the provided transformer.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator supports {@code remove()} when the corresponding\r\n     * input iterator supports it.\r\n     *\r\n     * @param \u003cI\u003e  the input element type\r\n     * @param \u003cO\u003e  the output element type\r\n     * @param iterable  the iterable to transform, may not be null\r\n     * @param transformer  the transformer, must not be null\r\n     * @return a transformed view of the specified iterable\r\n     * @throws NullPointerException if either iterable or transformer is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a transformed view of the given iterable where all of its elements have been transformed by the provided transformer.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 405,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator supports {@code remove()} when the corresponding input iterator supports it.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 407,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a transformed view of the specified iterable",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either iterable or transformer is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.partition(java.lang.Iterable\u003c? extends O\u003e, org.apache.commons.collections4.Predicate\u003c? super O\u003e...)",
+    "comment": "\r\n     * Partitions all elements from iterable into separate output collections,\r\n     * based on the evaluation of the given predicates.\r\n     * \u003cp\u003e\r\n     * For each predicate, the result will contain a list holding all elements of the\r\n     * input iterable matching the predicate. The last list will hold all elements\r\n     * which didn\u0027t match any predicate:\r\n     * \u003cpre\u003e\r\n     *  [C1, C2, R] \u003d partition(I, P1, P2) with\r\n     *  I \u003d input\r\n     *  P1 \u003d first predicate\r\n     *  P2 \u003d second predicate\r\n     *  C1 \u003d collection of elements matching P1\r\n     *  C2 \u003d collection of elements matching P2\r\n     *  R \u003d collection of elements rejected by all predicates\r\n     * \u003c/pre\u003e\r\n     * \u003cp\u003e\r\n     * \u003cb\u003eNote\u003c/b\u003e: elements are only added to the output collection of the first matching\r\n     * predicate, determined by the order of arguments.\r\n     * \u003cp\u003e\r\n     * If the input iterable is \u003ccode\u003enull\u003c/code\u003e, the same is returned as for an\r\n     * empty iterable.\r\n     * \u003cp\u003e\r\n     * Example: for an input list [1, 2, 3, 4, 5] calling partition with predicates [x \u0026lt; 3]\r\n     * and [x \u0026lt; 5] will result in the following output: [[1, 2], [3, 4], [5]].\r\n     *\r\n     * @param \u003cO\u003e  the type of object the {@link Iterable} contains\r\n     * @param iterable  the collection to get the input from, may be null\r\n     * @param predicates  the predicates to use, may not be null\r\n     * @return a list containing the output collections\r\n     * @throws NullPointerException if any predicate is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Partitions all elements from iterable into separate output collections, based on the evaluation of the given predicates.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 853,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e For each predicate, the result will contain a list holding all elements of the input iterable matching the predicate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 855,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The last list will hold all elements which didn\u0027t match any predicate: \u003cpre\u003e [C1, C2, R] \u003d partition(I, P1, P2) with I \u003d input P1 \u003d first predicate P2 \u003d second predicate C1 \u003d collection of elements matching P1 C2 \u003d collection of elements matching P2 R \u003d collection of elements rejected by all predicates \u003c/pre\u003e \u003cp\u003e \u003cb\u003eNote\u003c/b\u003e: elements are only added to the output collection of the first matching predicate, determined by the order of arguments.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 857,
+          "column": 47
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If the input iterable is \u003ccode\u003enull\u003c/code\u003e, the same is returned as for an empty iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 871,
+          "column": 47
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Example: for an input list [1, 2, 3, 4, 5] calling partition with predicates [x \u0026lt; 3] and [x \u0026lt; 5] will result in the following output: [[1, 2], [3, 4], [5]].",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 874,
+          "column": 47
+        }
+      },
+      {
+        "sentenceText": "@return a list containing the output collections",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 881,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 882,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.Anonymous-edf30a10-202f-4f72-9d43-fd82572ae80e.iterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.zippingIterable(java.lang.Iterable\u003c? extends E\u003e, java.lang.Iterable\u003c? extends E\u003e...)",
+    "comment": "\r\n     * Interleaves two iterables into a single iterable.\r\n     * \u003cp\u003e\r\n     * The returned iterable has an iterator that traverses the elements in {@code a}\r\n     * and {@code b} in alternating order. The source iterators are not polled until\r\n     * necessary.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator supports {@code remove()} when the corresponding\r\n     * input iterator supports it.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param first  the first iterable, may not be null\r\n     * @param others  the array of iterables to interleave, may not be null\r\n     * @return a new iterable, interleaving the provided iterables\r\n     * @throws NullPointerException if either of the provided iterables is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Interleaves two iterables into a single iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 527,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable has an iterator that traverses the elements in {@code a} and {@code b} in alternating order.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 528,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The source iterators are not polled until necessary.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 530,
+          "column": 44
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator supports {@code remove()} when the corresponding input iterator supports it.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 532,
+          "column": 44
+        }
+      },
+      {
+        "sentenceText": "@return a new iterable, interleaving the provided iterables",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 539,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either of the provided iterables is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 540,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.collatedIterable(java.util.Comparator\u003c? super E\u003e, java.lang.Iterable\u003c? extends E\u003e, java.lang.Iterable\u003c? extends E\u003e)",
+    "comment": "\r\n     * Combines the two provided iterables into an ordered iterable using the\r\n     * provided comparator. If the comparator is null, natural ordering will be\r\n     * used.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator supports {@code remove()} when the\r\n     * corresponding input iterator supports it.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param comparator  the comparator defining an ordering over the elements,\r\n     *   may be null, in which case natural ordering will be used\r\n     * @param a  the first iterable, may not be null\r\n     * @param b  the second iterable, may not be null\r\n     * @return a filtered view on the specified iterable\r\n     * @throws NullPointerException if either of the provided iterables is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Combines the two provided iterables into an ordered iterable using the provided comparator.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 215,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the comparator is null, natural ordering will be used.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 216,
+          "column": 29
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator supports {@code remove()} when the corresponding input iterator supports it.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 218,
+          "column": 29
+        }
+      },
+      {
+        "sentenceText": "@return a filtered view on the specified iterable",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 227,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either of the provided iterables is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 228,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.contains(java.lang.Iterable\u003c? extends E\u003e, E, org.apache.commons.collections4.Equator\u003c? super E\u003e)",
+    "comment": "\r\n     * Checks if the object is contained in the given iterable. Object equality\r\n     * is tested with an {@code equator} unlike {@link #contains(Iterable, Object)}\r\n     * which uses {@link Object#equals(Object)}.\r\n     * \u003cp\u003e\r\n     * A \u003ccode\u003enull\u003c/code\u003e or empty iterable returns false.\r\n     * A \u003ccode\u003enull\u003c/code\u003e object will not be passed to the equator, instead a\r\n     * {@link org.apache.commons.collections4.functors.NullPredicate NullPredicate}\r\n     * will be used.\r\n     *\r\n     * @param \u003cE\u003e the type of object the {@link Iterable} contains\r\n     * @param iterable  the iterable to check, may be null\r\n     * @param object  the object to check\r\n     * @param equator  the equator to use to check, may not be null\r\n     * @return true if the object is contained in the iterable, false otherwise\r\n     * @throws NullPointerException if equator is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Checks if the object is contained in the given iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 715,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Object equality is tested with an {@code equator} unlike {@link #contains(Iterable, Object)} which uses {@link Object#equals(Object)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 715,
+          "column": 65
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e A \u003ccode\u003enull\u003c/code\u003e or empty iterable returns false.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 718,
+          "column": 65
+        }
+      },
+      {
+        "sentenceText": "A \u003ccode\u003enull\u003c/code\u003e object will not be passed to the equator, instead a {@link org.apache.commons.collections4.functors.NullPredicate NullPredicate} will be used.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 720,
+          "column": 65
+        }
+      },
+      {
+        "sentenceText": "@return true if the object is contained in the iterable, false otherwise",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 728,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if equator is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 729,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.Anonymous-3e5218cb-bb5d-4609-b4fe-fb2828079a0e.iterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.indexOf(java.lang.Iterable\u003cE\u003e, org.apache.commons.collections4.Predicate\u003c? super E\u003e)",
+    "comment": "\r\n     * Returns the index of the first element in the specified iterable that\r\n     * matches the given predicate.\r\n     * \u003cp\u003e\r\n     * A \u003ccode\u003enull\u003c/code\u003e or empty iterable returns -1.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterable to search, may be null\r\n     * @param predicate  the predicate to use, may not be null\r\n     * @return the index of the first element which matches the predicate or -1 if none matches\r\n     * @throws NullPointerException if predicate is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the index of the first element in the specified iterable that matches the given predicate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 618,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e A \u003ccode\u003enull\u003c/code\u003e or empty iterable returns -1.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 620,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the index of the first element which matches the predicate or -1 if none matches",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 626,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 627,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.chainedIterable(java.lang.Iterable\u003c? extends E\u003e...)",
+    "comment": "\r\n     * Combines the provided iterables into a single iterable.\r\n     * \u003cp\u003e\r\n     * The returned iterable has an iterator that traverses the elements in the order\r\n     * of the arguments, i.e. iterables[0], iterables[1], .... The source iterators\r\n     * are not polled until necessary.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator supports {@code remove()} when the corresponding\r\n     * input iterator supports it.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterables  the iterables to combine, may not be null\r\n     * @return a new iterable, combining the provided iterables\r\n     * @throws NullPointerException if either of the provided iterables is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Combines the provided iterables into a single iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 155,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable has an iterator that traverses the elements in the order of the arguments, i.e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 156,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "iterables[0], iterables[1], ....",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 158,
+          "column": 31
+        }
+      },
+      {
+        "sentenceText": "The source iterators are not polled until necessary.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 158,
+          "column": 31
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator supports {@code remove()} when the corresponding input iterator supports it.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 160,
+          "column": 31
+        }
+      },
+      {
+        "sentenceText": "@return a new iterable, combining the provided iterables",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 166,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either of the provided iterables is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 167,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.Anonymous-41cc443f-ac51-4cec-b57a-5c80c298ae07.iterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.chainedIterable(java.lang.Iterable\u003c? extends E\u003e, java.lang.Iterable\u003c? extends E\u003e, java.lang.Iterable\u003c? extends E\u003e, java.lang.Iterable\u003c? extends E\u003e)",
+    "comment": "\r\n     * Combines four iterables into a single iterable.\r\n     * \u003cp\u003e\r\n     * The returned iterable has an iterator that traverses the elements in {@code a},\r\n     * followed by the elements in {@code b}, {@code c} and {@code d}. The source\r\n     * iterators are not polled until necessary.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator supports {@code remove()} when the corresponding\r\n     * input iterator supports it.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param a  the first iterable, may not be null\r\n     * @param b  the second iterable, may not be null\r\n     * @param c  the third iterable, may not be null\r\n     * @param d  the fourth iterable, may not be null\r\n     * @return a new iterable, combining the provided iterables\r\n     * @throws NullPointerException if either of the provided iterables is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Combines four iterables into a single iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 129,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable has an iterator that traverses the elements in {@code a}, followed by the elements in {@code b}, {@code c} and {@code d}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 130,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The source iterators are not polled until necessary.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 132,
+          "column": 72
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator supports {@code remove()} when the corresponding input iterator supports it.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 134,
+          "column": 72
+        }
+      },
+      {
+        "sentenceText": "@return a new iterable, combining the provided iterables",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 143,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either of the provided iterables is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 144,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.partition(java.lang.Iterable\u003c? extends O\u003e, org.apache.commons.collections4.Factory\u003cR\u003e, org.apache.commons.collections4.Predicate\u003c? super O\u003e...)",
+    "comment": "\r\n     * Partitions all elements from iterable into separate output collections,\r\n     * based on the evaluation of the given predicates.\r\n     * \u003cp\u003e\r\n     * For each predicate, the returned list will contain a collection holding\r\n     * all elements of the input iterable matching the predicate. The last collection\r\n     * contained in the list will hold all elements which didn\u0027t match any predicate:\r\n     * \u003cpre\u003e\r\n     *  [C1, C2, R] \u003d partition(I, P1, P2) with\r\n     *  I \u003d input\r\n     *  P1 \u003d first predicate\r\n     *  P2 \u003d second predicate\r\n     *  C1 \u003d collection of elements matching P1\r\n     *  C2 \u003d collection of elements matching P2\r\n     *  R \u003d collection of elements rejected by all predicates\r\n     * \u003c/pre\u003e\r\n     * \u003cp\u003e\r\n     * \u003cb\u003eNote\u003c/b\u003e: elements are only added to the output collection of the first matching\r\n     * predicate, determined by the order of arguments.\r\n     * \u003cp\u003e\r\n     * If the input iterable is \u003ccode\u003enull\u003c/code\u003e, the same is returned as for an\r\n     * empty iterable.\r\n     * If no predicates have been provided, all elements of the input collection\r\n     * will be added to the rejected collection.\r\n     * \u003cp\u003e\r\n     * Example: for an input list [1, 2, 3, 4, 5] calling partition with predicates [x \u0026lt; 3]\r\n     * and [x \u0026lt; 5] will result in the following output: [[1, 2], [3, 4], [5]].\r\n     *\r\n     * @param \u003cO\u003e  the type of object the {@link Iterable} contains\r\n     * @param \u003cR\u003e  the type of the output {@link Collection}\r\n     * @param iterable  the collection to get the input from, may be null\r\n     * @param partitionFactory  the factory used to create the output collections\r\n     * @param predicates  the predicates to use, may not be null\r\n     * @return a list containing the output collections\r\n     * @throws NullPointerException if any predicate is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Partitions all elements from iterable into separate output collections, based on the evaluation of the given predicates.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 893,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e For each predicate, the returned list will contain a collection holding all elements of the input iterable matching the predicate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 895,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The last collection contained in the list will hold all elements which didn\u0027t match any predicate: \u003cpre\u003e [C1, C2, R] \u003d partition(I, P1, P2) with I \u003d input P1 \u003d first predicate P2 \u003d second predicate C1 \u003d collection of elements matching P1 C2 \u003d collection of elements matching P2 R \u003d collection of elements rejected by all predicates \u003c/pre\u003e \u003cp\u003e \u003cb\u003eNote\u003c/b\u003e: elements are only added to the output collection of the first matching predicate, determined by the order of arguments.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 897,
+          "column": 67
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If the input iterable is \u003ccode\u003enull\u003c/code\u003e, the same is returned as for an empty iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 911,
+          "column": 67
+        }
+      },
+      {
+        "sentenceText": "If no predicates have been provided, all elements of the input collection will be added to the rejected collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 914,
+          "column": 67
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Example: for an input list [1, 2, 3, 4, 5] calling partition with predicates [x \u0026lt; 3] and [x \u0026lt; 5] will result in the following output: [[1, 2], [3, 4], [5]].",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 916,
+          "column": 67
+        }
+      },
+      {
+        "sentenceText": "@return a list containing the output collections",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 925,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 926,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.emptyIterable()",
+    "comment": "\r\n     * Gets an empty iterable.\r\n     * \u003cp\u003e\r\n     * This iterable does not contain any elements.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @return an empty iterable\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets an empty iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 67,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e This iterable does not contain any elements.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 68,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an empty iterable",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 72,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.chainedIterable(java.lang.Iterable\u003c? extends E\u003e, java.lang.Iterable\u003c? extends E\u003e)",
+    "comment": "\r\n     * Combines two iterables into a single iterable.\r\n     * \u003cp\u003e\r\n     * The returned iterable has an iterator that traverses the elements in {@code a},\r\n     * followed by the elements in {@code b}. The source iterators are not polled until\r\n     * necessary.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator supports {@code remove()} when the corresponding\r\n     * input iterator supports it.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param a  the first iterable, may not be null\r\n     * @param b  the second iterable, may not be null\r\n     * @return a new iterable, combining the provided iterables\r\n     * @throws NullPointerException if either a or b is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Combines two iterables into a single iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 83,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable has an iterator that traverses the elements in {@code a}, followed by the elements in {@code b}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 84,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The source iterators are not polled until necessary.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 86,
+          "column": 47
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator supports {@code remove()} when the corresponding input iterator supports it.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 88,
+          "column": 47
+        }
+      },
+      {
+        "sentenceText": "@return a new iterable, combining the provided iterables",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 95,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either a or b is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 96,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.Anonymous-80952b03-af1c-4c53-b27d-635096d20af6.iterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.loopingIterable(java.lang.Iterable\u003cE\u003e)",
+    "comment": "\r\n     * Returns a view of the given iterable which will cycle infinitely over\r\n     * its elements.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator supports {@code remove()} if\r\n     * {@code iterable.iterator()} does. After {@code remove()} is called, subsequent\r\n     * cycles omit the removed element, which is no longer in {@code iterable}. The\r\n     * iterator\u0027s {@code hasNext()} method returns {@code true} until {@code iterable}\r\n     * is empty.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterable to loop, may not be null\r\n     * @return a view of the iterable, providing an infinite loop over its elements\r\n     * @throws NullPointerException if iterable is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a view of the given iterable which will cycle infinitely over its elements.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 307,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator supports {@code remove()} if {@code iterable.iterator()} does.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "After {@code remove()} is called, subsequent cycles omit the removed element, which is no longer in {@code iterable}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 311,
+          "column": 42
+        }
+      },
+      {
+        "sentenceText": "The iterator\u0027s {@code hasNext()} method returns {@code true} until {@code iterable} is empty.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 312,
+          "column": 81
+        }
+      },
+      {
+        "sentenceText": "@return a view of the iterable, providing an infinite loop over its elements",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 318,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if iterable is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 319,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.Anonymous-a8f36f2b-c40b-4986-af37-b8e19c91e708.nextIterator(int)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.boundedIterable(java.lang.Iterable\u003cE\u003e, long)",
+    "comment": "\r\n     * Returns a view of the given iterable that contains at most the given number\r\n     * of elements.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator supports {@code remove()} when the corresponding\r\n     * input iterator supports it.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterable to limit, may not be null\r\n     * @param maxSize  the maximum number of elements, must not be negative\r\n     * @return a bounded view on the specified iterable\r\n     * @throws IllegalArgumentException if maxSize is negative\r\n     * @throws NullPointerException if iterable is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a view of the given iterable that contains at most the given number of elements.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 276,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator supports {@code remove()} when the corresponding input iterator supports it.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 278,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a bounded view on the specified iterable",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 285,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if maxSize is negative",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 286,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if iterable is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 287,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.Anonymous-f500c8e1-f16f-4a24-be94-8c766e7285a2.iterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.Anonymous-727982c3-e1c4-4e3a-8495-7282da921c13.nextIterator(int)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.emptyIfNull(java.lang.Iterable\u003cE\u003e)",
+    "comment": "\r\n     * Returns an immutable empty iterable if the argument is null,\r\n     * or the argument itself otherwise.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterable, may be null\r\n     * @return an empty iterable if the argument is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns an immutable empty iterable if the argument is null, or the argument itself otherwise.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 565,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an empty iterable if the argument is null",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 570,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.checkNotNull(java.lang.Iterable\u003c?\u003e)",
+    "comment": "\r\n     * Fail-fast check for null arguments.\r\n     *\r\n     * @param iterable  the iterable to check\r\n     * @throws NullPointerException if iterable is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Fail-fast check for null arguments.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1064,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if iterable is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1067,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.filteredIterable(java.lang.Iterable\u003cE\u003e, org.apache.commons.collections4.Predicate\u003c? super E\u003e)",
+    "comment": "\r\n     * Returns a view of the given iterable that only contains elements matching\r\n     * the provided predicate.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator supports {@code remove()} when the\r\n     * corresponding input iterator supports it.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterable to filter, may not be null\r\n     * @param predicate  the predicate used to filter elements, may not be null\r\n     * @return a filtered view on the specified iterable\r\n     * @throws NullPointerException if either iterable or predicate is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a view of the given iterable that only contains elements matching the provided predicate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 246,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator supports {@code remove()} when the corresponding input iterator supports it.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 248,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a filtered view on the specified iterable",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 255,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either iterable or predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 256,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.toString(java.lang.Iterable\u003cE\u003e, org.apache.commons.collections4.Transformer\u003c? super E, java.lang.String\u003e)",
+    "comment": "\r\n     * Returns a string representation of the elements of the specified iterable.\r\n     * \u003cp\u003e\r\n     * The string representation consists of a list of the iterable\u0027s elements,\r\n     * enclosed in square brackets ({@code \"[]\"}). Adjacent elements are separated\r\n     * by the characters {@code \", \"} (a comma followed by a space). Elements are\r\n     * converted to strings as by using the provided {@code transformer}.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterable to convert to a string, may be null\r\n     * @param transformer  the transformer used to get a string representation of an element\r\n     * @return a string representation of {@code iterable}\r\n     * @throws NullPointerException if {@code transformer} is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a string representation of the elements of the specified iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1013,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The string representation consists of a list of the iterable\u0027s elements, enclosed in square brackets ({@code \"[]\"}).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1014,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Adjacent elements are separated by the characters {@code \", \"} (a comma followed by a space).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1016,
+          "column": 52
+        }
+      },
+      {
+        "sentenceText": "Elements are converted to strings as by using the provided {@code transformer}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1017,
+          "column": 70
+        }
+      },
+      {
+        "sentenceText": "@return a string representation of {@code iterable}",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1023,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if {@code transformer} is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1024,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.chainedIterable(java.lang.Iterable\u003c? extends E\u003e, java.lang.Iterable\u003c? extends E\u003e, java.lang.Iterable\u003c? extends E\u003e)",
+    "comment": "\r\n     * Combines three iterables into a single iterable.\r\n     * \u003cp\u003e\r\n     * The returned iterable has an iterator that traverses the elements in {@code a},\r\n     * followed by the elements in {@code b} and {@code c}. The source iterators are\r\n     * not polled until necessary.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator supports {@code remove()} when the corresponding\r\n     * input iterator supports it.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param a  the first iterable, may not be null\r\n     * @param b  the second iterable, may not be null\r\n     * @param c  the third iterable, may not be null\r\n     * @return a new iterable, combining the provided iterables\r\n     * @throws NullPointerException if either of the provided iterables is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Combines three iterables into a single iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 105,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable has an iterator that traverses the elements in {@code a}, followed by the elements in {@code b} and {@code c}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 106,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The source iterators are not polled until necessary.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 108,
+          "column": 61
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator supports {@code remove()} when the corresponding input iterator supports it.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 110,
+          "column": 61
+        }
+      },
+      {
+        "sentenceText": "@return a new iterable, combining the provided iterables",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 118,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either of the provided iterables is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 119,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.matchesAny(java.lang.Iterable\u003cE\u003e, org.apache.commons.collections4.Predicate\u003c? super E\u003e)",
+    "comment": "\r\n     * Answers true if a predicate is true for any element of the iterable.\r\n     * \u003cp\u003e\r\n     * A \u003ccode\u003enull\u003c/code\u003e or empty iterable returns false.\r\n     *\r\n     * @param \u003cE\u003e the type of object the {@link Iterable} contains\r\n     * @param iterable  the {@link Iterable} to use, may be null\r\n     * @param predicate  the predicate to use, may not be null\r\n     * @return true if any element of the collection matches the predicate, false otherwise\r\n     * @throws NullPointerException if predicate is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Answers true if a predicate is true for any element of the iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 650,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e A \u003ccode\u003enull\u003c/code\u003e or empty iterable returns false.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 651,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if any element of the collection matches the predicate, false otherwise",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 657,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 658,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.emptyIteratorIfNull(java.lang.Iterable\u003cE\u003e)",
+    "comment": "\r\n     * Returns an empty iterator if the argument is \u003ccode\u003enull\u003c/code\u003e,\r\n     * or {@code iterable.iterator()} otherwise.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterable, possibly \u003ccode\u003enull\u003c/code\u003e\r\n     * @return an empty iterator if the argument is \u003ccode\u003enull\u003c/code\u003e\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns an empty iterator if the argument is \u003ccode\u003enull\u003c/code\u003e, or {@code iterable.iterator()} otherwise.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1091,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an empty iterator if the argument is \u003ccode\u003enull\u003c/code\u003e",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1096,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.reversedIterable(java.lang.Iterable\u003cE\u003e)",
+    "comment": "\r\n     * Returns a reversed view of the given iterable.\r\n     * \u003cp\u003e\r\n     * In case the provided iterable is a {@link List} instance, a\r\n     * {@link ReverseListIterator} will be used to reverse the traversal\r\n     * order, otherwise an intermediate {@link List} needs to be created.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator supports {@code remove()} if the\r\n     * provided iterable is a {@link List} instance.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterable to use, may not be null\r\n     * @return a reversed view of the specified iterable\r\n     * @throws NullPointerException if iterable is null\r\n     * @see ReverseListIterator\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a reversed view of the given iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 343,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e In case the provided iterable is a {@link List} instance, a {@link ReverseListIterator} will be used to reverse the traversal order, otherwise an intermediate {@link List} needs to be created.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 344,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator supports {@code remove()} if the provided iterable is a {@link List} instance.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 348,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a reversed view of the specified iterable",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 354,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if iterable is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 355,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.matchesAll(java.lang.Iterable\u003cE\u003e, org.apache.commons.collections4.Predicate\u003c? super E\u003e)",
+    "comment": "\r\n     * Answers true if a predicate is true for every element of an iterable.\r\n     * \u003cp\u003e\r\n     * A \u003ccode\u003enull\u003c/code\u003e or empty iterable returns true.\r\n     *\r\n     * @param \u003cE\u003e the type of object the {@link Iterable} contains\r\n     * @param iterable  the {@link Iterable} to use, may be null\r\n     * @param predicate  the predicate to use, may not be null\r\n     * @return true if every element of the collection matches the predicate or if the\r\n     *   collection is empty, false otherwise\r\n     * @throws NullPointerException if predicate is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Answers true if a predicate is true for every element of an iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 634,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e A \u003ccode\u003enull\u003c/code\u003e or empty iterable returns true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 635,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if every element of the collection matches the predicate or if the collection is empty, false otherwise",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 641,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 643,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.isEmpty(java.lang.Iterable\u003c?\u003e)",
+    "comment": "\r\n     * Answers true if the provided iterable is empty.\r\n     * \u003cp\u003e\r\n     * A \u003ccode\u003enull\u003c/code\u003e iterable returns true.\r\n     *\r\n     * @param iterable  the {@link Iterable to use}, may be null\r\n     * @return true if the iterable is null or empty, false otherwise\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Answers true if the provided iterable is empty.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 683,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e A \u003ccode\u003enull\u003c/code\u003e iterable returns true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 684,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return true if the iterable is null or empty, false otherwise",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 688,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.first(java.lang.Iterable\u003cT\u003e)",
+    "comment": "\r\n     * Shortcut for {@code get(iterator, 0)}.\r\n     * \u003cp\u003e\r\n     * Returns the \u003ccode\u003efirst\u003c/code\u003e value in the \u003ccode\u003eiterable\u003c/code\u003e\u0027s {@link Iterator}, throwing\r\n     * \u003ccode\u003eIndexOutOfBoundsException\u003c/code\u003e if there is no such element.\r\n     * \u003c/p\u003e\r\n     * \u003cp\u003e\r\n     * If the {@link Iterable} is a {@link List}, then it will use {@link List#get(int)}.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cT\u003e the type of object in the {@link Iterable}.\r\n     * @param iterable  the {@link Iterable} to get a value from, may be null\r\n     * @return the first object\r\n     * @throws IndexOutOfBoundsException if the request  is invalid\r\n     * @since 4.2\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Shortcut for {@code get(iterator, 0)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 779,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Returns the \u003ccode\u003efirst\u003c/code\u003e value in the \u003ccode\u003eiterable\u003c/code\u003e\u0027s {@link Iterator}, throwing \u003ccode\u003eIndexOutOfBoundsException\u003c/code\u003e if there is no such element.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 780,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e \u003cp\u003e If the {@link Iterable} is a {@link List}, then it will use {@link List#get(int)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 783,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 786,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the first object",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 790,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IndexOutOfBoundsException if the request  is invalid",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 791,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.toList(java.lang.Iterable\u003cE\u003e)",
+    "comment": "\r\n     * Gets a new list with the contents of the provided iterable.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterable to use, may be null\r\n     * @return a list of the iterator contents\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a new list with the contents of the provided iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 986,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a list of the iterator contents",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 990,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.unmodifiableIterable(java.lang.Iterable\u003cE\u003e)",
+    "comment": "\r\n     * Returns an unmodifiable view of the given iterable.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator does not support {@code remove()}.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterable to use, may not be null\r\n     * @return an unmodifiable view of the specified iterable\r\n     * @throws NullPointerException if iterable is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns an unmodifiable view of the given iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 461,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator does not support {@code remove()}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 462,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return an unmodifiable view of the specified iterable",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 467,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if iterable is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 468,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.UnmodifiableIterable.iterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.skippingIterable(java.lang.Iterable\u003cE\u003e, long)",
+    "comment": "\r\n     * Returns a view of the given iterable that skips the first N elements.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator supports {@code remove()} when the corresponding\r\n     * input iterator supports it.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterable to use, may not be null\r\n     * @param elementsToSkip  the number of elements to skip from the start, must not be negative\r\n     * @return a view of the specified iterable, skipping the first N elements\r\n     * @throws IllegalArgumentException if elementsToSkip is negative\r\n     * @throws NullPointerException if iterable is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a view of the given iterable that skips the first N elements.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator supports {@code remove()} when the corresponding input iterator supports it.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 376,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a view of the specified iterable, skipping the first N elements",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if elementsToSkip is negative",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 384,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if iterable is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 385,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.toString(java.lang.Iterable\u003cE\u003e)",
+    "comment": "\r\n     * Returns a string representation of the elements of the specified iterable.\r\n     * \u003cp\u003e\r\n     * The string representation consists of a list of the iterable\u0027s elements,\r\n     * enclosed in square brackets ({@code \"[]\"}). Adjacent elements are separated\r\n     * by the characters {@code \", \"} (a comma followed by a space). Elements are\r\n     * converted to strings as by {@code String.valueOf(Object)}.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterable to convert to a string, may be null\r\n     * @return a string representation of {@code iterable}\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a string representation of the elements of the specified iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 997,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The string representation consists of a list of the iterable\u0027s elements, enclosed in square brackets ({@code \"[]\"}).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 998,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Adjacent elements are separated by the characters {@code \", \"} (a comma followed by a space).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1000,
+          "column": 52
+        }
+      },
+      {
+        "sentenceText": "Elements are converted to strings as by {@code String.valueOf(Object)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1001,
+          "column": 70
+        }
+      },
+      {
+        "sentenceText": "@return a string representation of {@code iterable}",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1006,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.collatedIterable(java.lang.Iterable\u003c? extends E\u003e, java.lang.Iterable\u003c? extends E\u003e)",
+    "comment": "\r\n     * Combines the two provided iterables into an ordered iterable using\r\n     * natural ordering.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator supports {@code remove()} when the\r\n     * corresponding input iterator supports it.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param a  the first iterable, may not be null\r\n     * @param b  the second iterable, may not be null\r\n     * @return a filtered view on the specified iterable\r\n     * @throws NullPointerException if either of the provided iterables is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Combines the two provided iterables into an ordered iterable using natural ordering.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 191,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator supports {@code remove()} when the corresponding input iterator supports it.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 193,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return a filtered view on the specified iterable",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 200,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either of the provided iterables is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 201,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.countMatches(java.lang.Iterable\u003cE\u003e, org.apache.commons.collections4.Predicate\u003c? super E\u003e)",
+    "comment": "\r\n     * Counts the number of elements in the input iterable that match the predicate.\r\n     * \u003cp\u003e\r\n     * A \u003ccode\u003enull\u003c/code\u003e iterable matches no elements.\r\n     *\r\n     * @param \u003cE\u003e the type of object the {@link Iterable} contains\r\n     * @param input  the {@link Iterable} to get the input from, may be null\r\n     * @param predicate  the predicate to use, may not be null\r\n     * @return the number of matches for the predicate in the collection\r\n     * @throws NullPointerException if predicate is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Counts the number of elements in the input iterable that match the predicate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 665,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e A \u003ccode\u003enull\u003c/code\u003e iterable matches no elements.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 666,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the number of matches for the predicate in the collection",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 672,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 673,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.find(java.lang.Iterable\u003cE\u003e, org.apache.commons.collections4.Predicate\u003c? super E\u003e)",
+    "comment": "\r\n     * Finds the first element in the given iterable which matches the given predicate.\r\n     * \u003cp\u003e\r\n     * A \u003ccode\u003enull\u003c/code\u003e or empty iterator returns null.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterable to search, may be null\r\n     * @param predicate  the predicate to use, may not be null\r\n     * @return the first element of the iterable which matches the predicate or null if none could be found\r\n     * @throws NullPointerException if predicate is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Finds the first element in the given iterable which matches the given predicate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 603,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e A \u003ccode\u003enull\u003c/code\u003e or empty iterator returns null.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 604,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the first element of the iterable which matches the predicate or null if none could be found",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 610,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 611,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.UnmodifiableIterable.UnmodifiableIterable(java.lang.Iterable\u003cE\u003e)",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.partition(java.lang.Iterable\u003c? extends O\u003e, org.apache.commons.collections4.Predicate\u003c? super O\u003e)",
+    "comment": "\r\n     * Partitions all elements from iterable into separate output collections,\r\n     * based on the evaluation of the given predicate.\r\n     * \u003cp\u003e\r\n     * For each predicate, the result will contain a list holding all elements of the\r\n     * input iterable matching the predicate. The last list will hold all elements\r\n     * which didn\u0027t match any predicate:\r\n     * \u003cpre\u003e\r\n     *  [C1, R] \u003d partition(I, P1) with\r\n     *  I \u003d input\r\n     *  P1 \u003d first predicate\r\n     *  C1 \u003d collection of elements matching P1\r\n     *  R \u003d collection of elements rejected by all predicates\r\n     * \u003c/pre\u003e\r\n     * \u003cp\u003e\r\n     * If the input iterable is \u003ccode\u003enull\u003c/code\u003e, the same is returned as for an\r\n     * empty iterable.\r\n     * \u003cp\u003e\r\n     * Example: for an input list [1, 2, 3, 4, 5] calling partition with a predicate [x \u0026lt; 3]\r\n     * will result in the following output: [[1, 2], [3, 4, 5]].\r\n     *\r\n     * @param \u003cO\u003e  the type of object the {@link Iterable} contains\r\n     * @param iterable  the iterable to partition, may be null\r\n     * @param predicate  the predicate to use, may not be null\r\n     * @return a list containing the output collections\r\n     * @throws NullPointerException if predicate is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Partitions all elements from iterable into separate output collections, based on the evaluation of the given predicate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 814,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e For each predicate, the result will contain a list holding all elements of the input iterable matching the predicate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 816,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The last list will hold all elements which didn\u0027t match any predicate: \u003cpre\u003e [C1, R] \u003d partition(I, P1) with I \u003d input P1 \u003d first predicate C1 \u003d collection of elements matching P1 R \u003d collection of elements rejected by all predicates \u003c/pre\u003e \u003cp\u003e If the input iterable is \u003ccode\u003enull\u003c/code\u003e, the same is returned as for an empty iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 818,
+          "column": 47
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e Example: for an input list [1, 2, 3, 4, 5] calling partition with a predicate [x \u0026lt; 3] will result in the following output: [[1, 2], [3, 4, 5]].",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 830,
+          "column": 47
+        }
+      },
+      {
+        "sentenceText": "@return a list containing the output collections",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 837,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 838,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.frequency(java.lang.Iterable\u003cE\u003e, T)",
+    "comment": "\r\n     * Returns the number of occurrences of the provided object in the iterable.\r\n     *\r\n     * @param \u003cE\u003e the element type that the {@link Iterable} may contain\r\n     * @param \u003cT\u003e the element type of the object to find\r\n     * @param iterable  the {@link Iterable} to search\r\n     * @param obj  the object to find the cardinality of\r\n     * @return the number of occurrences of obj in iterable\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the number of occurrences of the provided object in the iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 740,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the number of occurrences of obj in iterable",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 746,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.Anonymous-67888e1f-7a7d-4c78-a2c5-791e4b1a24ba.iterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.Anonymous-cfc55811-2ac1-4cf5-b177-efbd181f2fa4.iterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.forEachButLast(java.lang.Iterable\u003cE\u003e, org.apache.commons.collections4.Closure\u003c? super E\u003e)",
+    "comment": "\r\n     * Executes the given closure on each but the last element in the iterable.\r\n     * \u003cp\u003e\r\n     * If the input iterable is null no change is made.\r\n     *\r\n     * @param \u003cE\u003e the type of object the {@link Iterable} contains\r\n     * @param iterable  the iterable to get the input from, may be null\r\n     * @param closure  the closure to perform, may not be null\r\n     * @return the last element in the iterable, or null if iterable is null or empty\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Executes the given closure on each but the last element in the iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 589,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If the input iterable is null no change is made.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 590,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the last element in the iterable, or null if iterable is null or empty",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 596,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.forEach(java.lang.Iterable\u003cE\u003e, org.apache.commons.collections4.Closure\u003c? super E\u003e)",
+    "comment": "\r\n     * Applies the closure to each element of the provided iterable.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterator to use, may be null\r\n     * @param closure  the closure to apply to each element, may not be null\r\n     * @throws NullPointerException if closure is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Applies the closure to each element of the provided iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 577,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if closure is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 582,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.get(java.lang.Iterable\u003cT\u003e, int)",
+    "comment": "\r\n     * Returns the \u003ccode\u003eindex\u003c/code\u003e-th value in the \u003ccode\u003eiterable\u003c/code\u003e\u0027s {@link Iterator}, throwing\r\n     * \u003ccode\u003eIndexOutOfBoundsException\u003c/code\u003e if there is no such element.\r\n     * \u003cp\u003e\r\n     * If the {@link Iterable} is a {@link List}, then it will use {@link List#get(int)}.\r\n     *\r\n     * @param \u003cT\u003e the type of object in the {@link Iterable}.\r\n     * @param iterable  the {@link Iterable} to get a value from, may be null\r\n     * @param index  the index to get\r\n     * @return the object at the specified index\r\n     * @throws IndexOutOfBoundsException if the index is invalid\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the \u003ccode\u003eindex\u003c/code\u003e-th value in the \u003ccode\u003eiterable\u003c/code\u003e\u0027s {@link Iterator}, throwing \u003ccode\u003eIndexOutOfBoundsException\u003c/code\u003e if there is no such element.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 759,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e If the {@link Iterable} is a {@link List}, then it will use {@link List#get(int)}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 761,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the object at the specified index",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 767,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IndexOutOfBoundsException if the index is invalid",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 768,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.size(java.lang.Iterable\u003c?\u003e)",
+    "comment": "\r\n     * Returns the number of elements contained in the given iterator.\r\n     * \u003cp\u003e\r\n     * A \u003ccode\u003enull\u003c/code\u003e or empty iterator returns {@code 0}.\r\n     *\r\n     * @param iterable  the iterable to check, may be null\r\n     * @return the number of elements contained in the iterable\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns the number of elements contained in the given iterator.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 799,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e A \u003ccode\u003enull\u003c/code\u003e or empty iterator returns {@code 0}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 800,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the number of elements contained in the iterable",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 804,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.Anonymous-81b20f2a-4c19-4c59-8e86-6ca63446ebb5.iterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.zippingIterable(java.lang.Iterable\u003c? extends E\u003e, java.lang.Iterable\u003c? extends E\u003e)",
+    "comment": "\r\n     * Interleaves two iterables into a single iterable.\r\n     * \u003cp\u003e\r\n     * The returned iterable has an iterator that traverses the elements in {@code a}\r\n     * and {@code b} in alternating order. The source iterators are not polled until\r\n     * necessary.\r\n     * \u003cp\u003e\r\n     * The returned iterable\u0027s iterator supports {@code remove()} when the corresponding\r\n     * input iterator supports it.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param a  the first iterable, may not be null\r\n     * @param b  the second iterable, may not be null\r\n     * @return a new iterable, interleaving the provided iterables\r\n     * @throws NullPointerException if either a or b is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Interleaves two iterables into a single iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 499,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable has an iterator that traverses the elements in {@code a} and {@code b} in alternating order.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 500,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The source iterators are not polled until necessary.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 502,
+          "column": 44
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The returned iterable\u0027s iterator supports {@code remove()} when the corresponding input iterator supports it.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 504,
+          "column": 44
+        }
+      },
+      {
+        "sentenceText": "@return a new iterable, interleaving the provided iterables",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 511,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either a or b is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 512,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.toString(java.lang.Iterable\u003cE\u003e, org.apache.commons.collections4.Transformer\u003c? super E, java.lang.String\u003e, java.lang.String, java.lang.String, java.lang.String)",
+    "comment": "\r\n     * Returns a string representation of the elements of the specified iterable.\r\n     * \u003cp\u003e\r\n     * The string representation consists of a list of the iterable\u0027s elements,\r\n     * enclosed by the provided {@code prefix} and {@code suffix}. Adjacent elements\r\n     * are separated by the provided {@code delimiter}. Elements are converted to\r\n     * strings as by using the provided {@code transformer}.\r\n     *\r\n     * @param \u003cE\u003e the element type\r\n     * @param iterable  the iterable to convert to a string, may be null\r\n     * @param transformer  the transformer used to get a string representation of an element\r\n     * @param delimiter  the string to delimit elements\r\n     * @param prefix  the prefix, prepended to the string representation\r\n     * @param suffix  the suffix, appended to the string representation\r\n     * @return a string representation of {@code iterable}\r\n     * @throws NullPointerException if either transformer, delimiter, prefix or suffix is null\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Returns a string representation of the elements of the specified iterable.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1035,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The string representation consists of a list of the iterable\u0027s elements, enclosed by the provided {@code prefix} and {@code suffix}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1036,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "Adjacent elements are separated by the provided {@code delimiter}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1038,
+          "column": 68
+        }
+      },
+      {
+        "sentenceText": "Elements are converted to strings as by using the provided {@code transformer}.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 1039,
+          "column": 57
+        }
+      },
+      {
+        "sentenceText": "@return a string representation of {@code iterable}",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 1048,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either transformer, delimiter, prefix or suffix is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 1049,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.Anonymous-13fb3bc8-0a02-43aa-adea-a01aaff1d5a5.iterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.Anonymous-ddbc9701-48fc-4189-ae0a-40e52a9f696b.iterator()",
+    "comment": "",
+    "sentences": []
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.IterableUtils.Anonymous-0a8abae8-4b3f-44cb-b3f5-416b0b96403d.iterator()",
+    "comment": "",
+    "sentences": []
+  }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getAttributeMap()",
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testClearGetAttributeMap()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 930,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 620,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getExtensionPoints()",
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testGetExtensionPoints()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 973,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 758,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.setAttribute(org.apache.tools.ant.Project, java.lang.Object, java.lang.String, java.lang.String)",
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAttributeSetterFifteen()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 513,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getNestedElements()",
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testGetNestedElements()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 943,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 255,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.isContainer()",
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testIsContainer()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 655,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 77,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getNestedElementMap()",
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testGetNestedElementMap()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 952,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 276,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getAddTextMethod()",
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testGetAddTextMethod()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 851,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 97,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.isDynamic()",
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testIsDynamic()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 639,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 72,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getAttributes()",
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testGetAttributes()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 920,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 593,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.supportsCharacters()",
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testSupportsCharacters()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 911,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 104,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.getElementType(java.lang.String)",
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testElementCreatorThirteen()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 812,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 221,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.tools.ant.IntrospectionHelper.addText(org.apache.tools.ant.Project, java.lang.Object, java.lang.String)",
+    "unitTestMethod": "org.apache.tools.ant.IntrospectionHelperTest.testAddTextToString()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 440,
+          "column": 8
+        },
+        "testCodeLocation": {
+          "line": 90,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

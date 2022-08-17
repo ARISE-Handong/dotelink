@@ -1,0 +1,34 @@
+[
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.RequireHashCode.RequireHashCode(int...)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireHashCodeTest.testConstructionWithEmptyArray()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 58,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 99,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.RequireHashCode.RequireHashCode(int...)",
+    "unitTestMethod": "org.supercsv.cellprocessor.constraint.RequireHashCodeTest.testConstructionWithNullArray()",
+    "links": [
+      {
+        "sentenceLocation": {
+          "line": 56,
+          "column": 5
+        },
+        "testCodeLocation": {
+          "line": 91,
+          "column": 3
+        }
+      }
+    ]
+  }
+]

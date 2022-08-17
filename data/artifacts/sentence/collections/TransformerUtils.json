@@ -1,0 +1,948 @@
+[
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.ifTransformer(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Transformer\u003c? super T, ? extends T\u003e)",
+    "comment": "\r\n     * Create a new Transformer that calls the transformer if the predicate is true,\r\n     * otherwise the input object is returned unchanged.\r\n     *\r\n     * @param \u003cT\u003e  the input / output type\r\n     * @param predicate  the predicate to switch on\r\n     * @param trueTransformer  the transformer called if the predicate is true\r\n     * @return the transformer\r\n     * @throws NullPointerException if either the predicate or transformer is null\r\n     * @see IfTransformer\r\n     * @since 4.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Transformer that calls the transformer if the predicate is true, otherwise the input object is returned unchanged.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 222,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 228,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either the predicate or transformer is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 229,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.constantTransformer(O)",
+    "comment": "\r\n     * Creates a Transformer that will return the same object each time the\r\n     * transformer is used.\r\n     *\r\n     * @param \u003cI\u003e  the input type\r\n     * @param \u003cO\u003e  the output type\r\n     * @param constantToReturn  the constant object to return each time in the transformer\r\n     * @return the transformer.\r\n     * @see ConstantTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a Transformer that will return the same object each time the transformer is used.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 134,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the transformer.",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 140,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.asTransformer(org.apache.commons.collections4.Closure\u003c? super T\u003e)",
+    "comment": "\r\n     * Creates a Transformer that calls a Closure each time the transformer is used.\r\n     * The transformer returns the input object.\r\n     *\r\n     * @param \u003cT\u003e  the input/output type\r\n     * @param closure  the closure to run each time in the transformer, not null\r\n     * @return the transformer\r\n     * @throws NullPointerException if the closure is null\r\n     * @see ClosureTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a Transformer that calls a Closure each time the transformer is used.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 148,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The transformer returns the input object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 149,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 153,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the closure is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 154,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.exceptionTransformer()",
+    "comment": "\r\n     * Gets a transformer that always throws an exception.\r\n     * This could be useful during testing as a placeholder.\r\n     *\r\n     * @param \u003cI\u003e  the input type\r\n     * @param \u003cO\u003e  the output type\r\n     * @return the transformer\r\n     * @see ExceptionTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a transformer that always throws an exception.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 79,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This could be useful during testing as a placeholder.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 80,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 84,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.switchTransformer(org.apache.commons.collections4.Predicate\u003c? super I\u003e[], org.apache.commons.collections4.Transformer\u003c? super I, ? extends O\u003e[])",
+    "comment": "\r\n     * Create a new Transformer that calls one of the transformers depending\r\n     * on the predicates. The transformer at array location 0 is called if the\r\n     * predicate at array location 0 returned true. Each predicate is evaluated\r\n     * until one returns true. If no predicates evaluate to true, null is returned.\r\n     *\r\n     * @param \u003cI\u003e  the input type\r\n     * @param \u003cO\u003e  the output type\r\n     * @param predicates  an array of predicates to check\r\n     * @param transformers  an array of transformers to call\r\n     * @return the transformer\r\n     * @throws NullPointerException if the either array is null\r\n     * @throws NullPointerException if any element in the arrays is null\r\n     * @throws IllegalArgumentException if the arrays have different sizes\r\n     * @see SwitchTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Transformer that calls one of the transformers depending on the predicates.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 282,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The transformer at array location 0 is called if the predicate at array location 0 returned true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 283,
+          "column": 27
+        }
+      },
+      {
+        "sentenceText": "Each predicate is evaluated until one returns true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 284,
+          "column": 53
+        }
+      },
+      {
+        "sentenceText": "If no predicates evaluate to true, null is returned.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 285,
+          "column": 32
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 291,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the either array is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 292,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any element in the arrays is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 293,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if the arrays have different sizes",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 294,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.switchTransformer(org.apache.commons.collections4.Predicate\u003c? super I\u003e[], org.apache.commons.collections4.Transformer\u003c? super I, ? extends O\u003e[], org.apache.commons.collections4.Transformer\u003c? super I, ? extends O\u003e)",
+    "comment": "\r\n     * Create a new Transformer that calls one of the transformers depending\r\n     * on the predicates. The transformer at array location 0 is called if the\r\n     * predicate at array location 0 returned true. Each predicate is evaluated\r\n     * until one returns true. If no predicates evaluate to true, the default\r\n     * transformer is called. If the default transformer is null, null is returned.\r\n     *\r\n     * @param \u003cI\u003e  the input type\r\n     * @param \u003cO\u003e  the output type\r\n     * @param predicates  an array of predicates to check\r\n     * @param transformers  an array of transformers to call\r\n     * @param defaultTransformer  the default to call if no predicate matches, null means return null\r\n     * @return the transformer\r\n     * @throws NullPointerException if the either array is null\r\n     * @throws NullPointerException if any element in the arrays is null\r\n     * @throws IllegalArgumentException if the arrays have different sizes\r\n     * @see SwitchTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Transformer that calls one of the transformers depending on the predicates.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 303,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The transformer at array location 0 is called if the predicate at array location 0 returned true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 304,
+          "column": 27
+        }
+      },
+      {
+        "sentenceText": "Each predicate is evaluated until one returns true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 305,
+          "column": 53
+        }
+      },
+      {
+        "sentenceText": "If no predicates evaluate to true, the default transformer is called.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 306,
+          "column": 32
+        }
+      },
+      {
+        "sentenceText": "If the default transformer is null, null is returned.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 307,
+          "column": 31
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 314,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the either array is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any element in the arrays is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if the arrays have different sizes",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.cloneTransformer()",
+    "comment": "\r\n     * Gets a transformer that returns a clone of the input object.\r\n     * The input object will be cloned using one of these techniques (in order):\r\n     * \u003cul\u003e\r\n     * \u003cli\u003epublic clone method\u003c/li\u003e\r\n     * \u003cli\u003epublic copy constructor\u003c/li\u003e\r\n     * \u003cli\u003eserialization clone\u003c/li\u003e\r\n     * \u003c/ul\u003e\r\n     *\r\n     * @param \u003cT\u003e  the input/output type\r\n     * @return the transformer\r\n     * @see CloneTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a transformer that returns a clone of the input object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 117,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The input object will be cloned using one of these techniques (in order): \u003cul\u003e \u003cli\u003epublic clone method\u003c/li\u003e \u003cli\u003epublic copy constructor\u003c/li\u003e \u003cli\u003eserialization clone\u003c/li\u003e \u003c/ul\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 118,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 126,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.asTransformer(org.apache.commons.collections4.Factory\u003c? extends O\u003e)",
+    "comment": "\r\n     * Creates a Transformer that calls a Factory each time the transformer is used.\r\n     * The transformer will return the value returned by the factory.\r\n     *\r\n     * @param \u003cI\u003e  the input type\r\n     * @param \u003cO\u003e  the output type\r\n     * @param factory  the factory to run each time in the transformer, not null\r\n     * @return the transformer\r\n     * @throws NullPointerException if the factory is null\r\n     * @see FactoryTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a Transformer that calls a Factory each time the transformer is used.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 176,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The transformer will return the value returned by the factory.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 177,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 182,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the factory is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 183,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.switchMapTransformer(java.util.Map\u003cI, org.apache.commons.collections4.Transformer\u003cI, O\u003e\u003e)",
+    "comment": "\r\n     * Create a new Transformer that uses the input object as a key to find the\r\n     * transformer to call.\r\n     * \u003cp\u003e\r\n     * The Map consists of object keys and Transformer values. A transformer\r\n     * is called if the input object equals the key. If there is no match, the\r\n     * default transformer is called. The default transformer is set in the map\r\n     * using a null key. If no default is set, null will be returned in a default case.\r\n     *\r\n     * @param \u003cI\u003e  the input type\r\n     * @param \u003cO\u003e  the output type\r\n     * @param objectsAndTransformers  a map of objects to transformers\r\n     * @return the transformer\r\n     * @throws NullPointerException if the map is null\r\n     * @throws NullPointerException if any transformer in the map is null\r\n     * @see SwitchTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Transformer that uses the input object as a key to find the transformer to call.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 353,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The Map consists of object keys and Transformer values.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 355,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "A transformer is called if the input object equals the key.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 356,
+          "column": 64
+        }
+      },
+      {
+        "sentenceText": "If there is no match, the default transformer is called.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 357,
+          "column": 54
+        }
+      },
+      {
+        "sentenceText": "The default transformer is set in the map using a null key.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 358,
+          "column": 39
+        }
+      },
+      {
+        "sentenceText": "If no default is set, null will be returned in a default case.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 359,
+          "column": 26
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 364,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the map is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any transformer in the map is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.invokerTransformer(java.lang.String)",
+    "comment": "\r\n     * Gets a Transformer that invokes a method on the input object.\r\n     * The method must have no parameters. If the input object is {@code null},\r\n     * {@code null} is returned.\r\n     *\r\n     * \u003cp\u003e\r\n     * For example, \u003ccode\u003eTransformerUtils.invokerTransformer(\"getName\");\u003c/code\u003e\r\n     * will call the \u003ccode\u003egetName\u003c/code\u003e method on the input object to\r\n     * determine the transformer result.\r\n     * \u003c/p\u003e\r\n     *\r\n     * @param \u003cI\u003e  the input type\r\n     * @param \u003cO\u003e  the output type\r\n     * @param methodName  the method name to call on the input object, may not be null\r\n     * @return the transformer\r\n     * @throws NullPointerException if the methodName is null.\r\n     * @see InvokerTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a Transformer that invokes a method on the input object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The method must have no parameters.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the input object is {@code null}, {@code null} is returned.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 433,
+          "column": 44
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e For example, \u003ccode\u003eTransformerUtils.invokerTransformer(\"getName\");\u003c/code\u003e will call the \u003ccode\u003egetName\u003c/code\u003e method on the input object to determine the transformer result.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 435,
+          "column": 44
+        }
+      },
+      {
+        "sentenceText": "\u003c/p\u003e",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 439,
+          "column": 44
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 445,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the methodName is null.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 446,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.instantiateTransformer(java.lang.Class\u003c?\u003e[], java.lang.Object[])",
+    "comment": "\r\n     * Creates a Transformer that expects an input Class object that it will\r\n     * instantiate. The constructor used is determined by the arguments specified\r\n     * to this method.\r\n     *\r\n     * @param \u003cT\u003e  the output type\r\n     * @param paramTypes  parameter types for the constructor, can be null\r\n     * @param args  the arguments to pass to the constructor, can be null\r\n     * @return the transformer\r\n     * @throws IllegalArgumentException if the paramTypes and args don\u0027t match\r\n     * @see InstantiateTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a Transformer that expects an input Class object that it will instantiate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 400,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The constructor used is determined by the arguments specified to this method.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 401,
+          "column": 21
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 407,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if the paramTypes and args don\u0027t match",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 408,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.asTransformer(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "comment": "\r\n     * Creates a Transformer that calls a Predicate each time the transformer is used.\r\n     * The transformer will return either Boolean.TRUE or Boolean.FALSE.\r\n     *\r\n     * @param \u003cT\u003e  the input type\r\n     * @param predicate  the predicate to run each time in the transformer, not null\r\n     * @return the transformer\r\n     * @throws NullPointerException if the predicate is null\r\n     * @see PredicateTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a Transformer that calls a Predicate each time the transformer is used.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 162,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The transformer will return either Boolean.TRUE or Boolean.FALSE.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 163,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 167,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 168,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.stringValueTransformer()",
+    "comment": "\r\n     * Gets a transformer that returns a \u003ccode\u003ejava.lang.String\u003c/code\u003e\r\n     * representation of the input object. This is achieved via the\r\n     * \u003ccode\u003etoString\u003c/code\u003e method, \u003ccode\u003enull\u003c/code\u003e returns \u0027null\u0027.\r\n     *\r\n     * @param \u003cT\u003e  the input type\r\n     * @return the transformer\r\n     * @see StringValueTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a transformer that returns a \u003ccode\u003ejava.lang.String\u003c/code\u003e representation of the input object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 474,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This is achieved via the \u003ccode\u003etoString\u003c/code\u003e method, \u003ccode\u003enull\u003c/code\u003e returns \u0027null\u0027.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 475,
+          "column": 44
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 479,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.instantiateTransformer()",
+    "comment": "\r\n     * Gets a Transformer that expects an input Class object that it will instantiate.\r\n     *\r\n     * @param \u003cT\u003e  the output type\r\n     * @return the transformer\r\n     * @see InstantiateTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a Transformer that expects an input Class object that it will instantiate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 389,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 392,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.invokerTransformer(java.lang.String, java.lang.Class\u003c?\u003e[], java.lang.Object[])",
+    "comment": "\r\n     * Gets a Transformer that invokes a method on the input object.\r\n     * The method parameters are specified. If the input object is {@code null},\r\n     * {@code null} is returned.\r\n     *\r\n     * @param \u003cI\u003e  the input type\r\n     * @param \u003cO\u003e  the output type\r\n     * @param methodName  the name of the method\r\n     * @param paramTypes  the parameter types\r\n     * @param args  the arguments\r\n     * @return the transformer\r\n     * @throws NullPointerException if the method name is null\r\n     * @throws IllegalArgumentException if the paramTypes and args don\u0027t match\r\n     * @see InvokerTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a Transformer that invokes a method on the input object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 454,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The method parameters are specified.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 455,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the input object is {@code null}, {@code null} is returned.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 455,
+          "column": 45
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 463,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the method name is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 464,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if the paramTypes and args don\u0027t match",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 465,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.TransformerUtils()",
+    "comment": "\r\n     * This class is not normally instantiated.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "This class is not normally instantiated.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 74,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.ifTransformer(org.apache.commons.collections4.Predicate\u003c? super I\u003e, org.apache.commons.collections4.Transformer\u003c? super I, ? extends O\u003e, org.apache.commons.collections4.Transformer\u003c? super I, ? extends O\u003e)",
+    "comment": "\r\n     * Create a new Transformer that calls one of two transformers depending\r\n     * on the specified predicate.\r\n     *\r\n     * @param \u003cI\u003e  the input type\r\n     * @param \u003cO\u003e  the output type\r\n     * @param predicate  the predicate to switch on\r\n     * @param trueTransformer  the transformer called if the predicate is true\r\n     * @param falseTransformer  the transformer called if the predicate is false\r\n     * @return the transformer\r\n     * @throws NullPointerException if either the predicate or transformer is null\r\n     * @see IfTransformer\r\n     * @since 4.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Transformer that calls one of two transformers depending on the specified predicate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 239,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 247,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either the predicate or transformer is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 248,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.mapTransformer(java.util.Map\u003c? super I, ? extends O\u003e)",
+    "comment": "\r\n     * Creates a Transformer that uses the passed in Map to transform the input\r\n     * object (as a simple lookup).\r\n     *\r\n     * @param \u003cI\u003e  the input type\r\n     * @param \u003cO\u003e  the output type\r\n     * @param map  the map to use to transform the objects\r\n     * @return the transformer, or {@link ConstantTransformer#nullTransformer()} if the\r\n     *   {@code map} is {@code null}\r\n     * @see MapTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a Transformer that uses the passed in Map to transform the input object (as a simple lookup).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the transformer, or {@link ConstantTransformer#nullTransformer()} if the {@code map} is {@code null}",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 423,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.nullTransformer()",
+    "comment": "\r\n     * Gets a transformer that always returns null.\r\n     *\r\n     * @param \u003cI\u003e  the input type\r\n     * @param \u003cO\u003e  the output type\r\n     * @return the transformer\r\n     * @see ConstantTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a transformer that always returns null.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 92,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 96,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.chainedTransformer(java.util.Collection\u003c? extends org.apache.commons.collections4.Transformer\u003c? super T, ? extends T\u003e\u003e)",
+    "comment": "\r\n     * Create a new Transformer that calls each transformer in turn, passing the\r\n     * result into the next transformer. The ordering is that of the iterator()\r\n     * method on the collection.\r\n     *\r\n     * @param \u003cT\u003e  the input/output type\r\n     * @param transformers  a collection of transformers to chain\r\n     * @return the transformer\r\n     * @throws NullPointerException if the transformers collection or any of the transformers is null\r\n     * @see ChainedTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Transformer that calls each transformer in turn, passing the result into the next transformer.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 206,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The ordering is that of the iterator() method on the collection.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 207,
+          "column": 42
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 212,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the transformers collection or any of the transformers is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 213,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.switchTransformer(java.util.Map\u003corg.apache.commons.collections4.Predicate\u003cI\u003e, org.apache.commons.collections4.Transformer\u003cI, O\u003e\u003e)",
+    "comment": "\r\n     * Create a new Transformer that calls one of the transformers depending\r\n     * on the predicates.\r\n     * \u003cp\u003e\r\n     * The Map consists of Predicate keys and Transformer values. A transformer\r\n     * is called if its matching predicate returns true. Each predicate is evaluated\r\n     * until one returns true. If no predicates evaluate to true, the default\r\n     * transformer is called. The default transformer is set in the map with a\r\n     * null key. If no default transformer is set, null will be returned in a default\r\n     * case. The ordering is that of the iterator() method on the entryset collection\r\n     * of the map.\r\n     *\r\n     * @param \u003cI\u003e  the input type\r\n     * @param \u003cO\u003e  the output type\r\n     * @param predicatesAndTransformers  a map of predicates to transformers\r\n     * @return the transformer\r\n     * @throws NullPointerException if the map is null\r\n     * @throws NullPointerException if any transformer in the map is null\r\n     * @throws ClassCastException  if the map elements are of the wrong type\r\n     * @see SwitchTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Transformer that calls one of the transformers depending on the predicates.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e The Map consists of Predicate keys and Transformer values.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 329,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "A transformer is called if its matching predicate returns true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 330,
+          "column": 67
+        }
+      },
+      {
+        "sentenceText": "Each predicate is evaluated until one returns true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 331,
+          "column": 58
+        }
+      },
+      {
+        "sentenceText": "If no predicates evaluate to true, the default transformer is called.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 332,
+          "column": 32
+        }
+      },
+      {
+        "sentenceText": "The default transformer is set in the map with a null key.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 333,
+          "column": 31
+        }
+      },
+      {
+        "sentenceText": "If no default transformer is set, null will be returned in a default case.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 334,
+          "column": 18
+        }
+      },
+      {
+        "sentenceText": "The ordering is that of the iterator() method on the entryset collection of the map.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 335,
+          "column": 14
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 341,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the map is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 342,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any transformer in the map is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 343,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws ClassCastException  if the map elements are of the wrong type",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 344,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.nopTransformer()",
+    "comment": "\r\n     * Gets a transformer that returns the input object.\r\n     * The input object should be immutable to maintain the\r\n     * contract of Transformer (although this is not checked).\r\n     *\r\n     * @param \u003cT\u003e  the input/output type\r\n     * @return the transformer\r\n     * @see NOPTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a transformer that returns the input object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 104,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The input object should be immutable to maintain the contract of Transformer (although this is not checked).",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 105,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 109,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.TransformerUtils.chainedTransformer(org.apache.commons.collections4.Transformer\u003c? super T, ? extends T\u003e...)",
+    "comment": "\r\n     * Create a new Transformer that calls each transformer in turn, passing the\r\n     * result into the next transformer.\r\n     *\r\n     * @param \u003cT\u003e  the input/output type\r\n     * @param transformers  an array of transformers to chain\r\n     * @return the transformer\r\n     * @throws NullPointerException if the transformers array or any of the transformers is null\r\n     * @see ChainedTransformer\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Transformer that calls each transformer in turn, passing the result into the next transformer.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 191,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the transformer",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 196,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the transformers array or any of the transformers is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 197,
+          "column": 8
+        }
+      }
+    ]
+  }
+]

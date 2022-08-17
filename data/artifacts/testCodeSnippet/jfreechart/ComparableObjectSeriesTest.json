@@ -1,0 +1,735 @@
+[
+  {
+    "unitTestMethod": "org.jfree.data.ComparableObjectSeriesTest.testConstructor1()",
+    "annotation": "@Test",
+    "code": "ComparableObjectSeries s1 \u003d new ComparableObjectSeries(\"s1\");assertEquals(\"s1\", s1.getKey());assertNull(s1.getDescription());assertTrue(s1.getAllowDuplicateXValues());assertTrue(s1.getAutoSort());assertEquals(0, s1.getItemCount());assertEquals(Integer.MAX_VALUE, s1.getMaximumItemCount());// try null key\nboolean pass \u003d false;try {\n    /*s1 \u003d */\n    new ComparableObjectSeries(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 92,
+        "column": 37
+      },
+      {
+        "line": 93,
+        "column": 9
+      },
+      {
+        "line": 93,
+        "column": 28
+      },
+      {
+        "line": 94,
+        "column": 9
+      },
+      {
+        "line": 94,
+        "column": 20
+      },
+      {
+        "line": 95,
+        "column": 9
+      },
+      {
+        "line": 95,
+        "column": 20
+      },
+      {
+        "line": 96,
+        "column": 9
+      },
+      {
+        "line": 96,
+        "column": 20
+      },
+      {
+        "line": 97,
+        "column": 9
+      },
+      {
+        "line": 97,
+        "column": 25
+      },
+      {
+        "line": 98,
+        "column": 9
+      },
+      {
+        "line": 98,
+        "column": 41
+      },
+      {
+        "line": 103,
+        "column": 22
+      },
+      {
+        "line": 108,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 96,
+          "column": 9
+        },
+        "assert": "assertTrue(s1.getAutoSort());",
+        "slice": "ComparableObjectSeries s1 \u003d new ComparableObjectSeries(\"s1\");assertTrue(s1.getAutoSort());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 97,
+          "column": 9
+        },
+        "assert": "assertEquals(0, s1.getItemCount());",
+        "slice": "ComparableObjectSeries s1 \u003d new ComparableObjectSeries(\"s1\");assertEquals(0, s1.getItemCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 98,
+          "column": 9
+        },
+        "assert": "assertEquals(Integer.MAX_VALUE, s1.getMaximumItemCount());",
+        "slice": "ComparableObjectSeries s1 \u003d new ComparableObjectSeries(\"s1\");assertEquals(Integer.MAX_VALUE, s1.getMaximumItemCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 101,
+          "column": 9
+        },
+        "assert": "// try null key\nboolean pass \u003d false;try {\n    /*s1 \u003d */\n    new ComparableObjectSeries(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "// try null key\nboolean pass \u003d false;try {\n    /*s1 \u003d */\n    new ComparableObjectSeries(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 92,
+          "column": 9
+        },
+        "assert": "ComparableObjectSeries s1 \u003d new ComparableObjectSeries(\"s1\");assertEquals(\"s1\", s1.getKey());",
+        "slice": "ComparableObjectSeries s1 \u003d new ComparableObjectSeries(\"s1\");assertEquals(\"s1\", s1.getKey());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 94,
+          "column": 9
+        },
+        "assert": "assertNull(s1.getDescription());",
+        "slice": "ComparableObjectSeries s1 \u003d new ComparableObjectSeries(\"s1\");assertNull(s1.getDescription());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 95,
+          "column": 9
+        },
+        "assert": "assertTrue(s1.getAllowDuplicateXValues());",
+        "slice": "ComparableObjectSeries s1 \u003d new ComparableObjectSeries(\"s1\");assertTrue(s1.getAllowDuplicateXValues());"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.ComparableObjectSeriesTest.testEquals()",
+    "annotation": "@Test",
+    "code": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");assertTrue(s1.equals(s2));assertTrue(s2.equals(s1));// key\ns1 \u003d new MyComparableObjectSeries(\"B\");assertNotEquals(s1, s2);s2 \u003d new MyComparableObjectSeries(\"B\");assertTrue(s1.equals(s2));// autoSort\ns1 \u003d new MyComparableObjectSeries(\"B\", false, true);assertNotEquals(s1, s2);s2 \u003d new MyComparableObjectSeries(\"B\", false, true);assertTrue(s1.equals(s2));// allowDuplicateXValues\ns1 \u003d new MyComparableObjectSeries(\"B\", false, false);assertNotEquals(s1, s2);s2 \u003d new MyComparableObjectSeries(\"B\", false, false);assertTrue(s1.equals(s2));// add a value\ns1.add(new Integer(1), \"ABC\");assertNotEquals(s1, s2);s2.add(new Integer(1), \"ABC\");assertTrue(s1.equals(s2));// add another value\ns1.add(new Integer(0), \"DEF\");assertNotEquals(s1, s2);s2.add(new Integer(0), \"DEF\");assertTrue(s1.equals(s2));// remove an item\ns1.remove(new Integer(1));assertNotEquals(s1, s2);s2.remove(new Integer(1));assertTrue(s1.equals(s2));",
+    "offset": [
+      {
+        "line": 116,
+        "column": 39
+      },
+      {
+        "line": 117,
+        "column": 39
+      },
+      {
+        "line": 118,
+        "column": 9
+      },
+      {
+        "line": 118,
+        "column": 20
+      },
+      {
+        "line": 119,
+        "column": 9
+      },
+      {
+        "line": 119,
+        "column": 20
+      },
+      {
+        "line": 122,
+        "column": 14
+      },
+      {
+        "line": 123,
+        "column": 9
+      },
+      {
+        "line": 124,
+        "column": 14
+      },
+      {
+        "line": 125,
+        "column": 9
+      },
+      {
+        "line": 125,
+        "column": 20
+      },
+      {
+        "line": 128,
+        "column": 14
+      },
+      {
+        "line": 129,
+        "column": 9
+      },
+      {
+        "line": 130,
+        "column": 14
+      },
+      {
+        "line": 131,
+        "column": 9
+      },
+      {
+        "line": 131,
+        "column": 20
+      },
+      {
+        "line": 134,
+        "column": 14
+      },
+      {
+        "line": 135,
+        "column": 9
+      },
+      {
+        "line": 136,
+        "column": 14
+      },
+      {
+        "line": 137,
+        "column": 9
+      },
+      {
+        "line": 137,
+        "column": 20
+      },
+      {
+        "line": 140,
+        "column": 9
+      },
+      {
+        "line": 140,
+        "column": 16
+      },
+      {
+        "line": 141,
+        "column": 9
+      },
+      {
+        "line": 142,
+        "column": 9
+      },
+      {
+        "line": 142,
+        "column": 16
+      },
+      {
+        "line": 143,
+        "column": 9
+      },
+      {
+        "line": 143,
+        "column": 20
+      },
+      {
+        "line": 146,
+        "column": 9
+      },
+      {
+        "line": 146,
+        "column": 16
+      },
+      {
+        "line": 147,
+        "column": 9
+      },
+      {
+        "line": 148,
+        "column": 9
+      },
+      {
+        "line": 148,
+        "column": 16
+      },
+      {
+        "line": 149,
+        "column": 9
+      },
+      {
+        "line": 149,
+        "column": 20
+      },
+      {
+        "line": 152,
+        "column": 9
+      },
+      {
+        "line": 152,
+        "column": 19
+      },
+      {
+        "line": 153,
+        "column": 9
+      },
+      {
+        "line": 154,
+        "column": 9
+      },
+      {
+        "line": 154,
+        "column": 19
+      },
+      {
+        "line": 155,
+        "column": 9
+      },
+      {
+        "line": 155,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 128,
+          "column": 9
+        },
+        "assert": "// autoSort\ns1 \u003d new MyComparableObjectSeries(\"B\", false, true);assertNotEquals(s1, s2);",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");// key\ns1 \u003d new MyComparableObjectSeries(\"B\");s2 \u003d new MyComparableObjectSeries(\"B\");// autoSort\ns1 \u003d new MyComparableObjectSeries(\"B\", false, true);assertNotEquals(s1, s2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 130,
+          "column": 9
+        },
+        "assert": "s2 \u003d new MyComparableObjectSeries(\"B\", false, true);assertTrue(s1.equals(s2));",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");// key\ns1 \u003d new MyComparableObjectSeries(\"B\");s2 \u003d new MyComparableObjectSeries(\"B\");// autoSort\ns1 \u003d new MyComparableObjectSeries(\"B\", false, true);s2 \u003d new MyComparableObjectSeries(\"B\", false, true);assertTrue(s1.equals(s2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 134,
+          "column": 9
+        },
+        "assert": "// allowDuplicateXValues\ns1 \u003d new MyComparableObjectSeries(\"B\", false, false);assertNotEquals(s1, s2);",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");// key\ns1 \u003d new MyComparableObjectSeries(\"B\");s2 \u003d new MyComparableObjectSeries(\"B\");// autoSort\ns1 \u003d new MyComparableObjectSeries(\"B\", false, true);s2 \u003d new MyComparableObjectSeries(\"B\", false, true);// allowDuplicateXValues\ns1 \u003d new MyComparableObjectSeries(\"B\", false, false);assertNotEquals(s1, s2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 136,
+          "column": 9
+        },
+        "assert": "s2 \u003d new MyComparableObjectSeries(\"B\", false, false);assertTrue(s1.equals(s2));",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");// key\ns1 \u003d new MyComparableObjectSeries(\"B\");s2 \u003d new MyComparableObjectSeries(\"B\");// autoSort\ns1 \u003d new MyComparableObjectSeries(\"B\", false, true);s2 \u003d new MyComparableObjectSeries(\"B\", false, true);// allowDuplicateXValues\ns1 \u003d new MyComparableObjectSeries(\"B\", false, false);s2 \u003d new MyComparableObjectSeries(\"B\", false, false);assertTrue(s1.equals(s2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 140,
+          "column": 9
+        },
+        "assert": "// add a value\ns1.add(new Integer(1), \"ABC\");assertNotEquals(s1, s2);",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");// key\ns1 \u003d new MyComparableObjectSeries(\"B\");s2 \u003d new MyComparableObjectSeries(\"B\");// autoSort\ns1 \u003d new MyComparableObjectSeries(\"B\", false, true);s2 \u003d new MyComparableObjectSeries(\"B\", false, true);// allowDuplicateXValues\ns1 \u003d new MyComparableObjectSeries(\"B\", false, false);s2 \u003d new MyComparableObjectSeries(\"B\", false, false);// add a value\ns1.add(new Integer(1), \"ABC\");assertNotEquals(s1, s2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 142,
+          "column": 9
+        },
+        "assert": "s2.add(new Integer(1), \"ABC\");assertTrue(s1.equals(s2));",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");// key\ns1 \u003d new MyComparableObjectSeries(\"B\");s2 \u003d new MyComparableObjectSeries(\"B\");// autoSort\ns1 \u003d new MyComparableObjectSeries(\"B\", false, true);s2 \u003d new MyComparableObjectSeries(\"B\", false, true);// allowDuplicateXValues\ns1 \u003d new MyComparableObjectSeries(\"B\", false, false);s2 \u003d new MyComparableObjectSeries(\"B\", false, false);// add a value\ns1.add(new Integer(1), \"ABC\");s2.add(new Integer(1), \"ABC\");assertTrue(s1.equals(s2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 146,
+          "column": 9
+        },
+        "assert": "// add another value\ns1.add(new Integer(0), \"DEF\");assertNotEquals(s1, s2);",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");// key\ns1 \u003d new MyComparableObjectSeries(\"B\");s2 \u003d new MyComparableObjectSeries(\"B\");// autoSort\ns1 \u003d new MyComparableObjectSeries(\"B\", false, true);s2 \u003d new MyComparableObjectSeries(\"B\", false, true);// allowDuplicateXValues\ns1 \u003d new MyComparableObjectSeries(\"B\", false, false);s2 \u003d new MyComparableObjectSeries(\"B\", false, false);// add a value\ns1.add(new Integer(1), \"ABC\");s2.add(new Integer(1), \"ABC\");// add another value\ns1.add(new Integer(0), \"DEF\");assertNotEquals(s1, s2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 116,
+          "column": 9
+        },
+        "assert": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");assertTrue(s1.equals(s2));",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");assertTrue(s1.equals(s2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 148,
+          "column": 9
+        },
+        "assert": "s2.add(new Integer(0), \"DEF\");assertTrue(s1.equals(s2));",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");// key\ns1 \u003d new MyComparableObjectSeries(\"B\");s2 \u003d new MyComparableObjectSeries(\"B\");// autoSort\ns1 \u003d new MyComparableObjectSeries(\"B\", false, true);s2 \u003d new MyComparableObjectSeries(\"B\", false, true);// allowDuplicateXValues\ns1 \u003d new MyComparableObjectSeries(\"B\", false, false);s2 \u003d new MyComparableObjectSeries(\"B\", false, false);// add a value\ns1.add(new Integer(1), \"ABC\");s2.add(new Integer(1), \"ABC\");// add another value\ns1.add(new Integer(0), \"DEF\");s2.add(new Integer(0), \"DEF\");assertTrue(s1.equals(s2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 119,
+          "column": 9
+        },
+        "assert": "assertTrue(s2.equals(s1));",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");assertTrue(s2.equals(s1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 152,
+          "column": 9
+        },
+        "assert": "// remove an item\ns1.remove(new Integer(1));assertNotEquals(s1, s2);",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");// key\ns1 \u003d new MyComparableObjectSeries(\"B\");s2 \u003d new MyComparableObjectSeries(\"B\");// autoSort\ns1 \u003d new MyComparableObjectSeries(\"B\", false, true);s2 \u003d new MyComparableObjectSeries(\"B\", false, true);// allowDuplicateXValues\ns1 \u003d new MyComparableObjectSeries(\"B\", false, false);s2 \u003d new MyComparableObjectSeries(\"B\", false, false);// add a value\ns1.add(new Integer(1), \"ABC\");s2.add(new Integer(1), \"ABC\");// add another value\ns1.add(new Integer(0), \"DEF\");s2.add(new Integer(0), \"DEF\");// remove an item\ns1.remove(new Integer(1));assertNotEquals(s1, s2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 122,
+          "column": 9
+        },
+        "assert": "// key\ns1 \u003d new MyComparableObjectSeries(\"B\");assertNotEquals(s1, s2);",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");// key\ns1 \u003d new MyComparableObjectSeries(\"B\");assertNotEquals(s1, s2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 154,
+          "column": 9
+        },
+        "assert": "s2.remove(new Integer(1));assertTrue(s1.equals(s2));",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");// key\ns1 \u003d new MyComparableObjectSeries(\"B\");s2 \u003d new MyComparableObjectSeries(\"B\");// autoSort\ns1 \u003d new MyComparableObjectSeries(\"B\", false, true);s2 \u003d new MyComparableObjectSeries(\"B\", false, true);// allowDuplicateXValues\ns1 \u003d new MyComparableObjectSeries(\"B\", false, false);s2 \u003d new MyComparableObjectSeries(\"B\", false, false);// add a value\ns1.add(new Integer(1), \"ABC\");s2.add(new Integer(1), \"ABC\");// add another value\ns1.add(new Integer(0), \"DEF\");s2.add(new Integer(0), \"DEF\");// remove an item\ns1.remove(new Integer(1));s2.remove(new Integer(1));assertTrue(s1.equals(s2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 124,
+          "column": 9
+        },
+        "assert": "s2 \u003d new MyComparableObjectSeries(\"B\");assertTrue(s1.equals(s2));",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"A\");// key\ns1 \u003d new MyComparableObjectSeries(\"B\");s2 \u003d new MyComparableObjectSeries(\"B\");assertTrue(s1.equals(s2));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.ComparableObjectSeriesTest.testCloning()",
+    "annotation": "@Test",
+    "code": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");s1.add(new Integer(1), \"ABC\");MyComparableObjectSeries s2 \u003d (MyComparableObjectSeries) s1.clone();assertTrue(s1 !\u003d s2);assertTrue(s1.getClass() \u003d\u003d s2.getClass());assertTrue(s1.equals(s2));",
+    "offset": [
+      {
+        "line": 163,
+        "column": 39
+      },
+      {
+        "line": 164,
+        "column": 9
+      },
+      {
+        "line": 164,
+        "column": 16
+      },
+      {
+        "line": 165,
+        "column": 66
+      },
+      {
+        "line": 166,
+        "column": 9
+      },
+      {
+        "line": 167,
+        "column": 9
+      },
+      {
+        "line": 167,
+        "column": 20
+      },
+      {
+        "line": 167,
+        "column": 37
+      },
+      {
+        "line": 168,
+        "column": 9
+      },
+      {
+        "line": 168,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 163,
+          "column": 9
+        },
+        "assert": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");s1.add(new Integer(1), \"ABC\");MyComparableObjectSeries s2 \u003d (MyComparableObjectSeries) s1.clone();assertTrue(s1 !\u003d s2);",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");s1.add(new Integer(1), \"ABC\");MyComparableObjectSeries s2 \u003d (MyComparableObjectSeries) s1.clone();assertTrue(s1 !\u003d s2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 167,
+          "column": 9
+        },
+        "assert": "assertTrue(s1.getClass() \u003d\u003d s2.getClass());",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");s1.add(new Integer(1), \"ABC\");MyComparableObjectSeries s2 \u003d (MyComparableObjectSeries) s1.clone();assertTrue(s1.getClass() \u003d\u003d s2.getClass());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 168,
+          "column": 9
+        },
+        "assert": "assertTrue(s1.equals(s2));",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");s1.add(new Integer(1), \"ABC\");MyComparableObjectSeries s2 \u003d (MyComparableObjectSeries) s1.clone();assertTrue(s1.equals(s2));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.ComparableObjectSeriesTest.testSerialization()",
+    "annotation": "@Test",
+    "code": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");s1.add(new Integer(1), \"ABC\");MyComparableObjectSeries s2 \u003d (MyComparableObjectSeries) TestUtilities.serialised(s1);assertEquals(s1, s2);",
+    "offset": [
+      {
+        "line": 176,
+        "column": 39
+      },
+      {
+        "line": 177,
+        "column": 9
+      },
+      {
+        "line": 177,
+        "column": 16
+      },
+      {
+        "line": 179,
+        "column": 17
+      },
+      {
+        "line": 180,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 176,
+          "column": 9
+        },
+        "assert": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");s1.add(new Integer(1), \"ABC\");MyComparableObjectSeries s2 \u003d (MyComparableObjectSeries) TestUtilities.serialised(s1);assertEquals(s1, s2);",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"A\");s1.add(new Integer(1), \"ABC\");MyComparableObjectSeries s2 \u003d (MyComparableObjectSeries) TestUtilities.serialised(s1);assertEquals(s1, s2);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.ComparableObjectSeriesTest.testHashCode()",
+    "annotation": "@Test",
+    "code": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"Test\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"Test\");assertEquals(s1, s2);assertEquals(s1.hashCode(), s2.hashCode());s1.add(\"A\", \"1\");s2.add(\"A\", \"1\");assertEquals(s1, s2);assertEquals(s1.hashCode(), s2.hashCode());s1.add(\"B\", null);s2.add(\"B\", null);assertEquals(s1, s2);assertEquals(s1.hashCode(), s2.hashCode());s1.add(\"C\", \"3\");s2.add(\"C\", \"3\");assertEquals(s1, s2);assertEquals(s1.hashCode(), s2.hashCode());s1.add(\"D\", \"4\");s2.add(\"D\", \"4\");assertEquals(s1, s2);assertEquals(s1.hashCode(), s2.hashCode());",
+    "offset": [
+      {
+        "line": 188,
+        "column": 39
+      },
+      {
+        "line": 189,
+        "column": 39
+      },
+      {
+        "line": 190,
+        "column": 9
+      },
+      {
+        "line": 191,
+        "column": 9
+      },
+      {
+        "line": 191,
+        "column": 22
+      },
+      {
+        "line": 191,
+        "column": 37
+      },
+      {
+        "line": 193,
+        "column": 9
+      },
+      {
+        "line": 194,
+        "column": 9
+      },
+      {
+        "line": 195,
+        "column": 9
+      },
+      {
+        "line": 196,
+        "column": 9
+      },
+      {
+        "line": 196,
+        "column": 22
+      },
+      {
+        "line": 196,
+        "column": 37
+      },
+      {
+        "line": 198,
+        "column": 9
+      },
+      {
+        "line": 199,
+        "column": 9
+      },
+      {
+        "line": 200,
+        "column": 9
+      },
+      {
+        "line": 201,
+        "column": 9
+      },
+      {
+        "line": 201,
+        "column": 22
+      },
+      {
+        "line": 201,
+        "column": 37
+      },
+      {
+        "line": 203,
+        "column": 9
+      },
+      {
+        "line": 204,
+        "column": 9
+      },
+      {
+        "line": 205,
+        "column": 9
+      },
+      {
+        "line": 206,
+        "column": 9
+      },
+      {
+        "line": 206,
+        "column": 22
+      },
+      {
+        "line": 206,
+        "column": 37
+      },
+      {
+        "line": 208,
+        "column": 9
+      },
+      {
+        "line": 209,
+        "column": 9
+      },
+      {
+        "line": 210,
+        "column": 9
+      },
+      {
+        "line": 211,
+        "column": 9
+      },
+      {
+        "line": 211,
+        "column": 22
+      },
+      {
+        "line": 211,
+        "column": 37
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 208,
+          "column": 9
+        },
+        "assert": "s1.add(\"D\", \"4\");s2.add(\"D\", \"4\");assertEquals(s1, s2);",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"Test\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"Test\");s1.add(\"A\", \"1\");s2.add(\"A\", \"1\");s1.add(\"B\", null);s2.add(\"B\", null);s1.add(\"C\", \"3\");s2.add(\"C\", \"3\");s1.add(\"D\", \"4\");s2.add(\"D\", \"4\");assertEquals(s1, s2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 193,
+          "column": 9
+        },
+        "assert": "s1.add(\"A\", \"1\");s2.add(\"A\", \"1\");assertEquals(s1, s2);",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"Test\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"Test\");s1.add(\"A\", \"1\");s2.add(\"A\", \"1\");assertEquals(s1, s2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 211,
+          "column": 9
+        },
+        "assert": "assertEquals(s1.hashCode(), s2.hashCode());",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"Test\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"Test\");s1.add(\"A\", \"1\");s2.add(\"A\", \"1\");s1.add(\"B\", null);s2.add(\"B\", null);s1.add(\"C\", \"3\");s2.add(\"C\", \"3\");s1.add(\"D\", \"4\");s2.add(\"D\", \"4\");assertEquals(s1.hashCode(), s2.hashCode());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 196,
+          "column": 9
+        },
+        "assert": "assertEquals(s1.hashCode(), s2.hashCode());",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"Test\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"Test\");s1.add(\"A\", \"1\");s2.add(\"A\", \"1\");assertEquals(s1.hashCode(), s2.hashCode());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 198,
+          "column": 9
+        },
+        "assert": "s1.add(\"B\", null);s2.add(\"B\", null);assertEquals(s1, s2);",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"Test\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"Test\");s1.add(\"A\", \"1\");s2.add(\"A\", \"1\");s1.add(\"B\", null);s2.add(\"B\", null);assertEquals(s1, s2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 201,
+          "column": 9
+        },
+        "assert": "assertEquals(s1.hashCode(), s2.hashCode());",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"Test\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"Test\");s1.add(\"A\", \"1\");s2.add(\"A\", \"1\");s1.add(\"B\", null);s2.add(\"B\", null);assertEquals(s1.hashCode(), s2.hashCode());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 203,
+          "column": 9
+        },
+        "assert": "s1.add(\"C\", \"3\");s2.add(\"C\", \"3\");assertEquals(s1, s2);",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"Test\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"Test\");s1.add(\"A\", \"1\");s2.add(\"A\", \"1\");s1.add(\"B\", null);s2.add(\"B\", null);s1.add(\"C\", \"3\");s2.add(\"C\", \"3\");assertEquals(s1, s2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 188,
+          "column": 9
+        },
+        "assert": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"Test\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"Test\");assertEquals(s1, s2);",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"Test\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"Test\");assertEquals(s1, s2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 206,
+          "column": 9
+        },
+        "assert": "assertEquals(s1.hashCode(), s2.hashCode());",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"Test\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"Test\");s1.add(\"A\", \"1\");s2.add(\"A\", \"1\");s1.add(\"B\", null);s2.add(\"B\", null);s1.add(\"C\", \"3\");s2.add(\"C\", \"3\");assertEquals(s1.hashCode(), s2.hashCode());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 191,
+          "column": 9
+        },
+        "assert": "assertEquals(s1.hashCode(), s2.hashCode());",
+        "slice": "MyComparableObjectSeries s1 \u003d new MyComparableObjectSeries(\"Test\");MyComparableObjectSeries s2 \u003d new MyComparableObjectSeries(\"Test\");assertEquals(s1.hashCode(), s2.hashCode());"
+      }
+    ]
+  }
+]

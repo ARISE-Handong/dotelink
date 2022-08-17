@@ -1,0 +1,174 @@
+[
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.Strlen.Strlen(int...)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eStrlen\u003c/tt\u003e processor, which ensures that the input String has a length equal to any of the\n\t * supplied lengths.\n\t * \n\t * @param requiredLengths\n\t *            one or more required lengths\n\t * @throws NullPointerException\n\t *             if requiredLengths is null\n\t * @throws IllegalArgumentException\n\t *             if requiredLengths is empty or contains a negative length\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eStrlen\u003c/tt\u003e processor, which ensures that the input String has a length equal to any of the supplied lengths.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 41,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if requiredLengths is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 46,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if requiredLengths is empty or contains a negative length",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 48,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.Strlen.checkAndAddLengths(int...)",
+    "comment": "\n\t * Adds each required length, ensuring it isn\u0027t negative.\n\t * \n\t * @param requiredLengths\n\t *            one or more required lengths\n\t * @throws IllegalArgumentException\n\t *             if a supplied length is negative\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Adds each required length, ensuring it isn\u0027t negative.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 112,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if a supplied length is negative",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 116,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.Strlen.Strlen(int[], org.supercsv.cellprocessor.ift.CellProcessor)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eStrlen\u003c/tt\u003e processor, which ensures that the input String has a length equal to any of the\n\t * supplied lengths, then calls the next processor in the chain.\n\t * \n\t * @param requiredLengths\n\t *            one or more required lengths\n\t * @param next\n\t *            the next processor in the chain\n\t * @throws NullPointerException\n\t *             if requiredLengths or next is null\n\t * @throws IllegalArgumentException\n\t *             if requiredLengths is empty or contains a negative length\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eStrlen\u003c/tt\u003e processor, which ensures that the input String has a length equal to any of the supplied lengths, then calls the next processor in the chain.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 75,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if requiredLengths or next is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 82,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if requiredLengths is empty or contains a negative length",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 84,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.Strlen.execute(java.lang.Object, org.supercsv.util.CsvContext)",
+    "comment": "\n\t * {@inheritDoc}\n\t * \n\t * @throws SuperCsvCellProcessorException\n\t *             if value is null\n\t * @throws SuperCsvConstraintViolationException\n\t *             if the length of value isn\u0027t one of the required lengths\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "{@inheritDoc}",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 130,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws SuperCsvCellProcessorException if value is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 132,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws SuperCsvConstraintViolationException if the length of value isn\u0027t one of the required lengths",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 134,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.Strlen.checkPreconditions(int...)",
+    "comment": "\n\t * Checks the preconditions for creating a new Strlen processor.\n\t * \n\t * @param requiredLengths\n\t *            one or more required lengths\n\t * @throws NullPointerException\n\t *             if requiredLengths is null\n\t * @throws IllegalArgumentException\n\t *             if requiredLengths is empty\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Checks the preconditions for creating a new Strlen processor.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 94,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if requiredLengths is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 98,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if requiredLengths is empty",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 100,
+          "column": 5
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.supercsv.cellprocessor.constraint.Strlen.Strlen(int, org.supercsv.cellprocessor.ift.CellProcessor)",
+    "comment": "\n\t * Constructs a new \u003ctt\u003eStrlen\u003c/tt\u003e processor, which ensures that the input String has a length equal to the\n\t * supplied length, then calls the next processor in the chain.\n\t * \n\t * @param requiredLength\n\t *            the required length\n\t * @param next\n\t *            the next processor in the chain\n\t * @throws NullPointerException\n\t *             if next is null\n\t * @throws IllegalArgumentException\n\t *             if requiredLength is negative\n\t ",
+    "sentences": [
+      {
+        "sentenceText": "Constructs a new \u003ctt\u003eStrlen\u003c/tt\u003e processor, which ensures that the input String has a length equal to the supplied length, then calls the next processor in the chain.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 58,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if next is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 65,
+          "column": 5
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if requiredLength is negative",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 67,
+          "column": 5
+        }
+      }
+    ]
+  }
+]

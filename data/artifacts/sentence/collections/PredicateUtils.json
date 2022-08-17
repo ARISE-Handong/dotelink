@@ -1,0 +1,1110 @@
+[
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.orPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "comment": "\r\n     * Create a new Predicate that returns true if either of the specified\r\n     * predicates are true.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicate1  the first predicate, may not be null\r\n     * @param predicate2  the second predicate, may not be null\r\n     * @return the \u003ccode\u003eor\u003c/code\u003e predicate\r\n     * @throws NullPointerException if either predicate is null\r\n     * @see OrPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Predicate that returns true if either of the specified predicates are true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 293,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the \u003ccode\u003eor\u003c/code\u003e predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 299,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 300,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.transformedPredicate(org.apache.commons.collections4.Transformer\u003c? super T, ? extends T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "comment": "\r\n     * Creates a predicate that transforms the input object before passing it\r\n     * to the predicate.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param transformer  the transformer to call first\r\n     * @param predicate  the predicate to call with the result of the transform\r\n     * @return the predicate\r\n     * @throws NullPointerException if the transformer or the predicate is null\r\n     * @see TransformedPredicate\r\n     * @since 3.1\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a predicate that transforms the input object before passing it to the predicate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 523,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 529,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the transformer or the predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 530,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.onePredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "comment": "\r\n     * Create a new Predicate that returns true if only one of the specified\r\n     * predicates are true. The predicates are checked in iterator order.\r\n     * If the collection of predicates is empty, then this predicate returns false.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicates  a collection of predicates to check, may not be null\r\n     * @return the \u003ccode\u003eone\u003c/code\u003e predicate\r\n     * @throws NullPointerException if the predicates collection is null\r\n     * @throws NullPointerException if any predicate in the collection is null\r\n     * @see OnePredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Predicate that returns true if only one of the specified predicates are true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 375,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The predicates are checked in iterator order.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 376,
+          "column": 29
+        }
+      },
+      {
+        "sentenceText": "If the collection of predicates is empty, then this predicate returns false.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 377,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the \u003ccode\u003eone\u003c/code\u003e predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 381,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the predicates collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 382,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any predicate in the collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 383,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.PredicateUtils()",
+    "comment": "\r\n     * This class is not normally instantiated.\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "This class is not normally instantiated.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 74,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nullPredicate()",
+    "comment": "\r\n     * Gets a Predicate that checks if the input object passed in is null.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @return the predicate\r\n     * @see NullPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a Predicate that checks if the input object passed in is null.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 116,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 119,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.instanceofPredicate(java.lang.Class\u003c?\u003e)",
+    "comment": "\r\n     * Creates a Predicate that checks if the object passed in is of\r\n     * a particular type, using instanceof. A \u003ccode\u003enull\u003c/code\u003e input\r\n     * object will return \u003ccode\u003efalse\u003c/code\u003e.\r\n     *\r\n     * @param type  the type to check for, may not be null\r\n     * @return the predicate\r\n     * @throws NullPointerException if the class is null\r\n     * @see InstanceofPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a Predicate that checks if the object passed in is of a particular type, using instanceof.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 164,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "A \u003ccode\u003enull\u003c/code\u003e input object will return \u003ccode\u003efalse\u003c/code\u003e.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 165,
+          "column": 45
+        }
+      },
+      {
+        "sentenceText": "@return the predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 169,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the class is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 170,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nullIsExceptionPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "comment": "\r\n     * Gets a Predicate that throws an exception if the input object is null,\r\n     * otherwise it calls the specified Predicate. This allows null handling\r\n     * behaviour to be added to Predicates that don\u0027t support nulls.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicate  the predicate to wrap, may not be null\r\n     * @return the predicate\r\n     * @throws NullPointerException if the predicate is null.\r\n     * @see NullIsExceptionPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a Predicate that throws an exception if the input object is null, otherwise it calls the specified Predicate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 476,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This allows null handling behaviour to be added to Predicates that don\u0027t support nulls.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 477,
+          "column": 52
+        }
+      },
+      {
+        "sentenceText": "@return the predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 482,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the predicate is null.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 483,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.neitherPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "comment": "\r\n     * Create a new Predicate that returns true if neither of the specified\r\n     * predicates are true.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicate1  the first predicate, may not be null\r\n     * @param predicate2  the second predicate, may not be null\r\n     * @return the \u003ccode\u003eneither\u003c/code\u003e predicate\r\n     * @throws NullPointerException if either predicate is null\r\n     * @see NonePredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Predicate that returns true if neither of the specified predicates are true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 391,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the \u003ccode\u003eneither\u003c/code\u003e predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 397,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 398,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.truePredicate()",
+    "comment": "\r\n     * Gets a Predicate that always returns true.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @return the predicate\r\n     * @see TruePredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a Predicate that always returns true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 94,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 97,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.onePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "comment": "\r\n     * Create a new Predicate that returns true if only one of the specified\r\n     * predicates are true.\r\n     * If the array of predicates is empty, then this predicate returns false.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicates  an array of predicates to check, may not be null\r\n     * @return the \u003ccode\u003eone\u003c/code\u003e predicate\r\n     * @throws NullPointerException if the predicates array is null\r\n     * @throws NullPointerException if any predicate in the array is null\r\n     * @see OnePredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Predicate that returns true if only one of the specified predicates are true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 359,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the array of predicates is empty, then this predicate returns false.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 361,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the \u003ccode\u003eone\u003c/code\u003e predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 365,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the predicates array is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 366,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any predicate in the array is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 367,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.falsePredicate()",
+    "comment": "\r\n     * Gets a Predicate that always returns false.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @return the predicate\r\n     * @see FalsePredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a Predicate that always returns false.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 105,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 108,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.allPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "comment": "\r\n     * Create a new Predicate that returns true only if all of the specified\r\n     * predicates are true.\r\n     * If the array of predicates is empty, then this predicate returns true.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicates  an array of predicates to check, may not be null\r\n     * @return the \u003ccode\u003eall\u003c/code\u003e predicate\r\n     * @throws NullPointerException if the predicates array is null\r\n     * @throws NullPointerException if any predicate in the array is null\r\n     * @see AllPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Predicate that returns true only if all of the specified predicates are true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 261,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the array of predicates is empty, then this predicate returns true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 263,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the \u003ccode\u003eall\u003c/code\u003e predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 267,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the predicates array is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 268,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any predicate in the array is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 269,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.identityPredicate(T)",
+    "comment": "\r\n     * Creates a Predicate that checks if the input object is equal to the\r\n     * specified object by identity.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param value  the value to compare against\r\n     * @return the predicate\r\n     * @see IdentityPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a Predicate that checks if the input object is equal to the specified object by identity.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 151,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 156,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nullIsTruePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "comment": "\r\n     * Gets a Predicate that returns true if the input object is null, otherwise\r\n     * it calls the specified Predicate. This allows null handling behaviour to\r\n     * be added to Predicates that don\u0027t support nulls.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicate  the predicate to wrap, may not be null\r\n     * @return the predicate\r\n     * @throws NullPointerException if the predicate is null.\r\n     * @see NullIsTruePredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a Predicate that returns true if the input object is null, otherwise it calls the specified Predicate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 506,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This allows null handling behaviour to be added to Predicates that don\u0027t support nulls.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 507,
+          "column": 42
+        }
+      },
+      {
+        "sentenceText": "@return the predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 512,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the predicate is null.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 513,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.notNullPredicate()",
+    "comment": "\r\n     * Gets a Predicate that checks if the input object passed in is not null.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @return the predicate\r\n     * @see NotNullPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a Predicate that checks if the input object passed in is not null.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 127,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 130,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.invokerPredicate(java.lang.String)",
+    "comment": "\r\n     * Creates a Predicate that invokes a method on the input object.\r\n     * The method must return either a boolean or a non-null Boolean,\r\n     * and have no parameters. If the input object is null, a\r\n     * PredicateException is thrown.\r\n     * \u003cp\u003e\r\n     * For example, \u003ccode\u003ePredicateUtils.invokerPredicate(\"isEmpty\");\u003c/code\u003e\r\n     * will call the \u003ccode\u003eisEmpty\u003c/code\u003e method on the input object to\r\n     * determine the predicate result.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param methodName  the method name to call on the input object, may not be null\r\n     * @return the predicate\r\n     * @throws NullPointerException if the methodName is null.\r\n     * @see InvokerTransformer\r\n     * @see TransformerPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a Predicate that invokes a method on the input object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 194,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The method must return either a boolean or a non-null Boolean, and have no parameters.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 195,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the input object is null, a PredicateException is thrown.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 196,
+          "column": 32
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e For example, \u003ccode\u003ePredicateUtils.invokerPredicate(\"isEmpty\");\u003c/code\u003e will call the \u003ccode\u003eisEmpty\u003c/code\u003e method on the input object to determine the predicate result.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 198,
+          "column": 32
+        }
+      },
+      {
+        "sentenceText": "@return the predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 205,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the methodName is null.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 206,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.anyPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "comment": "\r\n     * Create a new Predicate that returns true if any of the specified\r\n     * predicates are true.\r\n     * If the array of predicates is empty, then this predicate returns false.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicates  an array of predicates to check, may not be null\r\n     * @return the \u003ccode\u003eany\u003c/code\u003e predicate\r\n     * @throws NullPointerException if the predicates array is null\r\n     * @throws NullPointerException if any predicate in the array is null\r\n     * @see AnyPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Predicate that returns true if any of the specified predicates are true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 309,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the array of predicates is empty, then this predicate returns false.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 311,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the \u003ccode\u003eany\u003c/code\u003e predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 315,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the predicates array is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 316,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any predicate in the array is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 317,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.allPredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "comment": "\r\n     * Create a new Predicate that returns true only if all of the specified\r\n     * predicates are true. The predicates are checked in iterator order.\r\n     * If the collection of predicates is empty, then this predicate returns true.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicates  a collection of predicates to check, may not be null\r\n     * @return the \u003ccode\u003eall\u003c/code\u003e predicate\r\n     * @throws NullPointerException if the predicates collection is null\r\n     * @throws NullPointerException if any predicate in the collection is null\r\n     * @see AllPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Predicate that returns true only if all of the specified predicates are true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 277,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The predicates are checked in iterator order.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 278,
+          "column": 29
+        }
+      },
+      {
+        "sentenceText": "If the collection of predicates is empty, then this predicate returns true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 279,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the \u003ccode\u003eall\u003c/code\u003e predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 283,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the predicates collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 284,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any predicate in the collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 285,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.notPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "comment": "\r\n     * Create a new Predicate that returns true if the specified predicate\r\n     * returns false and vice versa.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicate  the predicate to not\r\n     * @return the \u003ccode\u003enot\u003c/code\u003e predicate\r\n     * @throws NullPointerException if the predicate is null\r\n     * @see NotPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Predicate that returns true if the specified predicate returns false and vice versa.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 441,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the \u003ccode\u003enot\u003c/code\u003e predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 446,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 447,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.uniquePredicate()",
+    "comment": "\r\n     * Creates a Predicate that returns true the first time an object is\r\n     * encountered, and false if the same object is received\r\n     * again. The comparison is by equals(). A \u003ccode\u003enull\u003c/code\u003e input object\r\n     * is accepted and will return true the first time, and false subsequently\r\n     * as well.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @return the predicate\r\n     * @see UniquePredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a Predicate that returns true the first time an object is encountered, and false if the same object is received again.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 178,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The comparison is by equals().",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 180,
+          "column": 15
+        }
+      },
+      {
+        "sentenceText": "A \u003ccode\u003enull\u003c/code\u003e input object is accepted and will return true the first time, and false subsequently as well.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 180,
+          "column": 15
+        }
+      },
+      {
+        "sentenceText": "@return the predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 185,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.andPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "comment": "\r\n     * Create a new Predicate that returns true only if both of the specified\r\n     * predicates are true.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicate1  the first predicate, may not be null\r\n     * @param predicate2  the second predicate, may not be null\r\n     * @return the \u003ccode\u003eand\u003c/code\u003e predicate\r\n     * @throws NullPointerException if either predicate is null\r\n     * @see AndPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Predicate that returns true only if both of the specified predicates are true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 245,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the \u003ccode\u003eand\u003c/code\u003e predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 251,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 252,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nullIsFalsePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "comment": "\r\n     * Gets a Predicate that returns false if the input object is null, otherwise\r\n     * it calls the specified Predicate. This allows null handling behaviour to\r\n     * be added to Predicates that don\u0027t support nulls.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicate  the predicate to wrap, may not be null\r\n     * @return the predicate\r\n     * @throws NullPointerException if the predicate is null.\r\n     * @see NullIsFalsePredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a Predicate that returns false if the input object is null, otherwise it calls the specified Predicate.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 491,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This allows null handling behaviour to be added to Predicates that don\u0027t support nulls.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 492,
+          "column": 42
+        }
+      },
+      {
+        "sentenceText": "@return the predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 497,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the predicate is null.",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 498,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.equalPredicate(T)",
+    "comment": "\r\n     * Creates a Predicate that checks if the input object is equal to the\r\n     * specified object using equals().\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param value  the value to compare against\r\n     * @return the predicate\r\n     * @see EqualPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a Predicate that checks if the input object is equal to the specified object using equals().",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 138,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 143,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.asPredicate(org.apache.commons.collections4.Transformer\u003c? super T, java.lang.Boolean\u003e)",
+    "comment": "\r\n     * Create a new Predicate that wraps a Transformer. The Transformer must\r\n     * return either Boolean.TRUE or Boolean.FALSE otherwise a PredicateException\r\n     * will be thrown.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param transformer  the transformer to wrap, may not be null\r\n     * @return the transformer wrapping predicate\r\n     * @throws NullPointerException if the transformer is null\r\n     * @see TransformerPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Predicate that wraps a Transformer.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 458,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The Transformer must return either Boolean.TRUE or Boolean.FALSE otherwise a PredicateException will be thrown.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 458,
+          "column": 57
+        }
+      },
+      {
+        "sentenceText": "@return the transformer wrapping predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 464,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the transformer is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 465,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.anyPredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "comment": "\r\n     * Create a new Predicate that returns true if any of the specified\r\n     * predicates are true. The predicates are checked in iterator order.\r\n     * If the collection of predicates is empty, then this predicate returns false.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicates  a collection of predicates to check, may not be null\r\n     * @return the \u003ccode\u003eany\u003c/code\u003e predicate\r\n     * @throws NullPointerException if the predicates collection is null\r\n     * @throws NullPointerException if any predicate in the collection is null\r\n     * @see AnyPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Predicate that returns true if any of the specified predicates are true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 325,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The predicates are checked in iterator order.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 326,
+          "column": 29
+        }
+      },
+      {
+        "sentenceText": "If the collection of predicates is empty, then this predicate returns false.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 327,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the \u003ccode\u003eany\u003c/code\u003e predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 331,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the predicates collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 332,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any predicate in the collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 333,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nonePredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e...)",
+    "comment": "\r\n     * Create a new Predicate that returns true if none of the specified\r\n     * predicates are true.\r\n     * If the array of predicates is empty, then this predicate returns true.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicates  an array of predicates to check, may not be null\r\n     * @return the \u003ccode\u003enone\u003c/code\u003e predicate\r\n     * @throws NullPointerException if the predicates array is null\r\n     * @throws NullPointerException if any predicate in the array is null\r\n     * @see NonePredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Predicate that returns true if none of the specified predicates are true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 409,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the array of predicates is empty, then this predicate returns true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 411,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the \u003ccode\u003enone\u003c/code\u003e predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 415,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the predicates array is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 416,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any predicate in the array is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 417,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.exceptionPredicate()",
+    "comment": "\r\n     * Gets a Predicate that always throws an exception.\r\n     * This could be useful during testing as a placeholder.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @return the predicate\r\n     * @see ExceptionPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Gets a Predicate that always throws an exception.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 82,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "This could be useful during testing as a placeholder.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 83,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 86,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.eitherPredicate(org.apache.commons.collections4.Predicate\u003c? super T\u003e, org.apache.commons.collections4.Predicate\u003c? super T\u003e)",
+    "comment": "\r\n     * Create a new Predicate that returns true if one, but not both, of the\r\n     * specified predicates are true. XOR\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicate1  the first predicate, may not be null\r\n     * @param predicate2  the second predicate, may not be null\r\n     * @return the \u003ccode\u003eeither\u003c/code\u003e predicate\r\n     * @throws NullPointerException if either predicate is null\r\n     * @see OnePredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Predicate that returns true if one, but not both, of the specified predicates are true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 341,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "XOR",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 342,
+          "column": 39
+        }
+      },
+      {
+        "sentenceText": "@return the \u003ccode\u003eeither\u003c/code\u003e predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 347,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if either predicate is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 348,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.invokerPredicate(java.lang.String, java.lang.Class\u003c?\u003e[], java.lang.Object[])",
+    "comment": "\r\n     * Creates a Predicate that invokes a method on the input object.\r\n     * The method must return either a boolean or a non-null Boolean,\r\n     * and have no parameters. If the input object is null, a\r\n     * PredicateException is thrown.\r\n     * \u003cp\u003e\r\n     * For example, \u003ccode\u003ePredicateUtils.invokerPredicate(\"isEmpty\");\u003c/code\u003e\r\n     * will call the \u003ccode\u003eisEmpty\u003c/code\u003e method on the input object to\r\n     * determine the predicate result.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param methodName  the method name to call on the input object, may not be null\r\n     * @param paramTypes  the parameter types\r\n     * @param args  the arguments\r\n     * @return the predicate\r\n     * @throws NullPointerException if the method name is null\r\n     * @throws IllegalArgumentException if the paramTypes and args don\u0027t match\r\n     * @see InvokerTransformer\r\n     * @see TransformerPredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Creates a Predicate that invokes a method on the input object.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 216,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The method must return either a boolean or a non-null Boolean, and have no parameters.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 217,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "If the input object is null, a PredicateException is thrown.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 218,
+          "column": 32
+        }
+      },
+      {
+        "sentenceText": "\u003cp\u003e For example, \u003ccode\u003ePredicateUtils.invokerPredicate(\"isEmpty\");\u003c/code\u003e will call the \u003ccode\u003eisEmpty\u003c/code\u003e method on the input object to determine the predicate result.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 220,
+          "column": 32
+        }
+      },
+      {
+        "sentenceText": "@return the predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 229,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the method name is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 230,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws IllegalArgumentException if the paramTypes and args don\u0027t match",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 231,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "productionMethod": "org.apache.commons.collections4.PredicateUtils.nonePredicate(java.util.Collection\u003c? extends org.apache.commons.collections4.Predicate\u003c? super T\u003e\u003e)",
+    "comment": "\r\n     * Create a new Predicate that returns true if none of the specified\r\n     * predicates are true. The predicates are checked in iterator order.\r\n     * If the collection of predicates is empty, then this predicate returns true.\r\n     *\r\n     * @param \u003cT\u003e  the type that the predicate queries\r\n     * @param predicates  a collection of predicates to check, may not be null\r\n     * @return the \u003ccode\u003enone\u003c/code\u003e predicate\r\n     * @throws NullPointerException if the predicates collection is null\r\n     * @throws NullPointerException if any predicate in the collection is null\r\n     * @see NonePredicate\r\n     ",
+    "sentences": [
+      {
+        "sentenceText": "Create a new Predicate that returns true if none of the specified predicates are true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 425,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "The predicates are checked in iterator order.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 426,
+          "column": 29
+        }
+      },
+      {
+        "sentenceText": "If the collection of predicates is empty, then this predicate returns true.",
+        "tagType": "",
+        "sentenceLocation": {
+          "line": 427,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@return the \u003ccode\u003enone\u003c/code\u003e predicate",
+        "tagType": "return",
+        "sentenceLocation": {
+          "line": 431,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if the predicates collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 432,
+          "column": 8
+        }
+      },
+      {
+        "sentenceText": "@throws NullPointerException if any predicate in the collection is null",
+        "tagType": "throws",
+        "sentenceLocation": {
+          "line": 433,
+          "column": 8
+        }
+      }
+    ]
+  }
+]

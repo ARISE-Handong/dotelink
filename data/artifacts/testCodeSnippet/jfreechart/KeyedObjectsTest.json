@@ -1,0 +1,1220 @@
+[
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjectsTest.testCloning()",
+    "annotation": "@Test",
+    "code": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"V1\", new Integer(1));ko1.addObject(\"V2\", null);ko1.addObject(\"V3\", new Integer(3));KeyedObjects ko2 \u003d (KeyedObjects) ko1.clone();assertTrue(ko1 !\u003d ko2);assertTrue(ko1.getClass() \u003d\u003d ko2.getClass());assertTrue(ko1.equals(ko2));",
+    "offset": [
+      {
+        "line": 65,
+        "column": 28
+      },
+      {
+        "line": 66,
+        "column": 9
+      },
+      {
+        "line": 66,
+        "column": 29
+      },
+      {
+        "line": 67,
+        "column": 9
+      },
+      {
+        "line": 68,
+        "column": 9
+      },
+      {
+        "line": 68,
+        "column": 29
+      },
+      {
+        "line": 69,
+        "column": 43
+      },
+      {
+        "line": 70,
+        "column": 9
+      },
+      {
+        "line": 71,
+        "column": 9
+      },
+      {
+        "line": 71,
+        "column": 20
+      },
+      {
+        "line": 71,
+        "column": 38
+      },
+      {
+        "line": 72,
+        "column": 9
+      },
+      {
+        "line": 72,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 65,
+          "column": 9
+        },
+        "assert": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"V1\", new Integer(1));ko1.addObject(\"V2\", null);ko1.addObject(\"V3\", new Integer(3));KeyedObjects ko2 \u003d (KeyedObjects) ko1.clone();assertTrue(ko1 !\u003d ko2);",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"V1\", new Integer(1));ko1.addObject(\"V2\", null);ko1.addObject(\"V3\", new Integer(3));KeyedObjects ko2 \u003d (KeyedObjects) ko1.clone();assertTrue(ko1 !\u003d ko2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 71,
+          "column": 9
+        },
+        "assert": "assertTrue(ko1.getClass() \u003d\u003d ko2.getClass());",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"V1\", new Integer(1));ko1.addObject(\"V2\", null);ko1.addObject(\"V3\", new Integer(3));KeyedObjects ko2 \u003d (KeyedObjects) ko1.clone();assertTrue(ko1.getClass() \u003d\u003d ko2.getClass());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 72,
+          "column": 9
+        },
+        "assert": "assertTrue(ko1.equals(ko2));",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"V1\", new Integer(1));ko1.addObject(\"V2\", null);ko1.addObject(\"V3\", new Integer(3));KeyedObjects ko2 \u003d (KeyedObjects) ko1.clone();assertTrue(ko1.equals(ko2));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjectsTest.testCloning2()",
+    "annotation": "@Test",
+    "code": "// case 1 - object is mutable but not PublicCloneable\nObject obj1 \u003d new ArrayList();KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);KeyedObjects ko2 \u003d (KeyedObjects) ko1.clone();assertTrue(ko1 !\u003d ko2);assertTrue(ko1.getClass() \u003d\u003d ko2.getClass());assertTrue(ko1.equals(ko2));// the clone contains a reference to the original object\nassertTrue(ko2.getObject(\"K1\") \u003d\u003d obj1);// CASE 2 - object is mutable AND PublicCloneable\nobj1 \u003d new DefaultPieDataset();ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);ko2 \u003d (KeyedObjects) ko1.clone();assertTrue(ko1 !\u003d ko2);assertTrue(ko1.getClass() \u003d\u003d ko2.getClass());assertTrue(ko1.equals(ko2));// the clone contains a reference to a CLONE of the original object\nassertTrue(ko2.getObject(\"K1\") !\u003d obj1);",
+    "offset": [
+      {
+        "line": 81,
+        "column": 23
+      },
+      {
+        "line": 82,
+        "column": 28
+      },
+      {
+        "line": 83,
+        "column": 9
+      },
+      {
+        "line": 84,
+        "column": 43
+      },
+      {
+        "line": 85,
+        "column": 9
+      },
+      {
+        "line": 86,
+        "column": 9
+      },
+      {
+        "line": 86,
+        "column": 20
+      },
+      {
+        "line": 86,
+        "column": 38
+      },
+      {
+        "line": 87,
+        "column": 9
+      },
+      {
+        "line": 87,
+        "column": 20
+      },
+      {
+        "line": 90,
+        "column": 9
+      },
+      {
+        "line": 90,
+        "column": 20
+      },
+      {
+        "line": 93,
+        "column": 16
+      },
+      {
+        "line": 94,
+        "column": 15
+      },
+      {
+        "line": 95,
+        "column": 9
+      },
+      {
+        "line": 96,
+        "column": 30
+      },
+      {
+        "line": 97,
+        "column": 9
+      },
+      {
+        "line": 98,
+        "column": 9
+      },
+      {
+        "line": 98,
+        "column": 20
+      },
+      {
+        "line": 98,
+        "column": 38
+      },
+      {
+        "line": 99,
+        "column": 9
+      },
+      {
+        "line": 99,
+        "column": 20
+      },
+      {
+        "line": 102,
+        "column": 9
+      },
+      {
+        "line": 102,
+        "column": 20
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 81,
+          "column": 9
+        },
+        "assert": "// case 1 - object is mutable but not PublicCloneable\nObject obj1 \u003d new ArrayList();KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);KeyedObjects ko2 \u003d (KeyedObjects) ko1.clone();assertTrue(ko1 !\u003d ko2);",
+        "slice": "// case 1 - object is mutable but not PublicCloneable\nObject obj1 \u003d new ArrayList();KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);KeyedObjects ko2 \u003d (KeyedObjects) ko1.clone();assertTrue(ko1 !\u003d ko2);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 98,
+          "column": 9
+        },
+        "assert": "assertTrue(ko1.getClass() \u003d\u003d ko2.getClass());",
+        "slice": "// case 1 - object is mutable but not PublicCloneable\nObject obj1 \u003d new ArrayList();KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);KeyedObjects ko2 \u003d (KeyedObjects) ko1.clone();// CASE 2 - object is mutable AND PublicCloneable\nobj1 \u003d new DefaultPieDataset();ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);ko2 \u003d (KeyedObjects) ko1.clone();assertTrue(ko1.getClass() \u003d\u003d ko2.getClass());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 99,
+          "column": 9
+        },
+        "assert": "assertTrue(ko1.equals(ko2));",
+        "slice": "// case 1 - object is mutable but not PublicCloneable\nObject obj1 \u003d new ArrayList();KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);KeyedObjects ko2 \u003d (KeyedObjects) ko1.clone();// CASE 2 - object is mutable AND PublicCloneable\nobj1 \u003d new DefaultPieDataset();ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);ko2 \u003d (KeyedObjects) ko1.clone();assertTrue(ko1.equals(ko2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 86,
+          "column": 9
+        },
+        "assert": "assertTrue(ko1.getClass() \u003d\u003d ko2.getClass());",
+        "slice": "// case 1 - object is mutable but not PublicCloneable\nObject obj1 \u003d new ArrayList();KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);KeyedObjects ko2 \u003d (KeyedObjects) ko1.clone();assertTrue(ko1.getClass() \u003d\u003d ko2.getClass());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 102,
+          "column": 9
+        },
+        "assert": "// the clone contains a reference to a CLONE of the original object\nassertTrue(ko2.getObject(\"K1\") !\u003d obj1);",
+        "slice": "// case 1 - object is mutable but not PublicCloneable\nObject obj1 \u003d new ArrayList();KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);KeyedObjects ko2 \u003d (KeyedObjects) ko1.clone();// CASE 2 - object is mutable AND PublicCloneable\nobj1 \u003d new DefaultPieDataset();ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);ko2 \u003d (KeyedObjects) ko1.clone();// the clone contains a reference to a CLONE of the original object\nassertTrue(ko2.getObject(\"K1\") !\u003d obj1);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 87,
+          "column": 9
+        },
+        "assert": "assertTrue(ko1.equals(ko2));",
+        "slice": "// case 1 - object is mutable but not PublicCloneable\nObject obj1 \u003d new ArrayList();KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);KeyedObjects ko2 \u003d (KeyedObjects) ko1.clone();assertTrue(ko1.equals(ko2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 90,
+          "column": 9
+        },
+        "assert": "// the clone contains a reference to the original object\nassertTrue(ko2.getObject(\"K1\") \u003d\u003d obj1);",
+        "slice": "// case 1 - object is mutable but not PublicCloneable\nObject obj1 \u003d new ArrayList();KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);KeyedObjects ko2 \u003d (KeyedObjects) ko1.clone();// the clone contains a reference to the original object\nassertTrue(ko2.getObject(\"K1\") \u003d\u003d obj1);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 93,
+          "column": 9
+        },
+        "assert": "// CASE 2 - object is mutable AND PublicCloneable\nobj1 \u003d new DefaultPieDataset();ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);ko2 \u003d (KeyedObjects) ko1.clone();assertTrue(ko1 !\u003d ko2);",
+        "slice": "// case 1 - object is mutable but not PublicCloneable\nObject obj1 \u003d new ArrayList();KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);KeyedObjects ko2 \u003d (KeyedObjects) ko1.clone();// CASE 2 - object is mutable AND PublicCloneable\nobj1 \u003d new DefaultPieDataset();ko1 \u003d new KeyedObjects();ko1.addObject(\"K1\", obj1);ko2 \u003d (KeyedObjects) ko1.clone();assertTrue(ko1 !\u003d ko2);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjectsTest.testInsertAndRetrieve()",
+    "annotation": "@Test",
+    "code": "KeyedObjects data \u003d new KeyedObjects();data.addObject(\"A\", new Double(1.0));data.addObject(\"B\", new Double(2.0));data.addObject(\"C\", new Double(3.0));data.addObject(\"D\", null);// check key order\nassertEquals(data.getKey(0), \"A\");assertEquals(data.getKey(1), \"B\");assertEquals(data.getKey(2), \"C\");assertEquals(data.getKey(3), \"D\");// check retrieve value by key\nassertEquals(data.getObject(\"A\"), new Double(1.0));assertEquals(data.getObject(\"B\"), new Double(2.0));assertEquals(data.getObject(\"C\"), new Double(3.0));assertEquals(data.getObject(\"D\"), null);boolean pass \u003d false;try {\n    data.getObject(\"Not a key\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);// check retrieve value by index\nassertEquals(data.getObject(0), new Double(1.0));assertEquals(data.getObject(1), new Double(2.0));assertEquals(data.getObject(2), new Double(3.0));assertEquals(data.getObject(3), null);",
+    "offset": [
+      {
+        "line": 111,
+        "column": 29
+      },
+      {
+        "line": 112,
+        "column": 9
+      },
+      {
+        "line": 112,
+        "column": 29
+      },
+      {
+        "line": 113,
+        "column": 9
+      },
+      {
+        "line": 113,
+        "column": 29
+      },
+      {
+        "line": 114,
+        "column": 9
+      },
+      {
+        "line": 114,
+        "column": 29
+      },
+      {
+        "line": 115,
+        "column": 9
+      },
+      {
+        "line": 118,
+        "column": 9
+      },
+      {
+        "line": 118,
+        "column": 22
+      },
+      {
+        "line": 119,
+        "column": 9
+      },
+      {
+        "line": 119,
+        "column": 22
+      },
+      {
+        "line": 120,
+        "column": 9
+      },
+      {
+        "line": 120,
+        "column": 22
+      },
+      {
+        "line": 121,
+        "column": 9
+      },
+      {
+        "line": 121,
+        "column": 22
+      },
+      {
+        "line": 124,
+        "column": 9
+      },
+      {
+        "line": 124,
+        "column": 22
+      },
+      {
+        "line": 124,
+        "column": 43
+      },
+      {
+        "line": 125,
+        "column": 9
+      },
+      {
+        "line": 125,
+        "column": 22
+      },
+      {
+        "line": 125,
+        "column": 43
+      },
+      {
+        "line": 126,
+        "column": 9
+      },
+      {
+        "line": 126,
+        "column": 22
+      },
+      {
+        "line": 126,
+        "column": 43
+      },
+      {
+        "line": 127,
+        "column": 9
+      },
+      {
+        "line": 127,
+        "column": 22
+      },
+      {
+        "line": 131,
+        "column": 13
+      },
+      {
+        "line": 136,
+        "column": 9
+      },
+      {
+        "line": 139,
+        "column": 9
+      },
+      {
+        "line": 139,
+        "column": 22
+      },
+      {
+        "line": 139,
+        "column": 41
+      },
+      {
+        "line": 140,
+        "column": 9
+      },
+      {
+        "line": 140,
+        "column": 22
+      },
+      {
+        "line": 140,
+        "column": 41
+      },
+      {
+        "line": 141,
+        "column": 9
+      },
+      {
+        "line": 141,
+        "column": 22
+      },
+      {
+        "line": 141,
+        "column": 41
+      },
+      {
+        "line": 142,
+        "column": 9
+      },
+      {
+        "line": 142,
+        "column": 22
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 129,
+          "column": 9
+        },
+        "assert": "boolean pass \u003d false;try {\n    data.getObject(\"Not a key\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects data \u003d new KeyedObjects();data.addObject(\"A\", new Double(1.0));data.addObject(\"B\", new Double(2.0));data.addObject(\"C\", new Double(3.0));data.addObject(\"D\", null);boolean pass \u003d false;try {\n    data.getObject(\"Not a key\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 139,
+          "column": 9
+        },
+        "assert": "// check retrieve value by index\nassertEquals(data.getObject(0), new Double(1.0));",
+        "slice": "KeyedObjects data \u003d new KeyedObjects();data.addObject(\"A\", new Double(1.0));data.addObject(\"B\", new Double(2.0));data.addObject(\"C\", new Double(3.0));data.addObject(\"D\", null);boolean pass \u003d false;try {\n    data.getObject(\"Not a key\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}// check retrieve value by index\nassertEquals(data.getObject(0), new Double(1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 140,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getObject(1), new Double(2.0));",
+        "slice": "KeyedObjects data \u003d new KeyedObjects();data.addObject(\"A\", new Double(1.0));data.addObject(\"B\", new Double(2.0));data.addObject(\"C\", new Double(3.0));data.addObject(\"D\", null);boolean pass \u003d false;try {\n    data.getObject(\"Not a key\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertEquals(data.getObject(1), new Double(2.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 141,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getObject(2), new Double(3.0));",
+        "slice": "KeyedObjects data \u003d new KeyedObjects();data.addObject(\"A\", new Double(1.0));data.addObject(\"B\", new Double(2.0));data.addObject(\"C\", new Double(3.0));data.addObject(\"D\", null);boolean pass \u003d false;try {\n    data.getObject(\"Not a key\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertEquals(data.getObject(2), new Double(3.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 142,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getObject(3), null);",
+        "slice": "KeyedObjects data \u003d new KeyedObjects();data.addObject(\"A\", new Double(1.0));data.addObject(\"B\", new Double(2.0));data.addObject(\"C\", new Double(3.0));data.addObject(\"D\", null);boolean pass \u003d false;try {\n    data.getObject(\"Not a key\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertEquals(data.getObject(3), null);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 111,
+          "column": 9
+        },
+        "assert": "KeyedObjects data \u003d new KeyedObjects();data.addObject(\"A\", new Double(1.0));data.addObject(\"B\", new Double(2.0));data.addObject(\"C\", new Double(3.0));data.addObject(\"D\", null);// check key order\nassertEquals(data.getKey(0), \"A\");",
+        "slice": "KeyedObjects data \u003d new KeyedObjects();data.addObject(\"A\", new Double(1.0));data.addObject(\"B\", new Double(2.0));data.addObject(\"C\", new Double(3.0));data.addObject(\"D\", null);// check key order\nassertEquals(data.getKey(0), \"A\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 119,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(1), \"B\");",
+        "slice": "KeyedObjects data \u003d new KeyedObjects();data.addObject(\"A\", new Double(1.0));data.addObject(\"B\", new Double(2.0));data.addObject(\"C\", new Double(3.0));data.addObject(\"D\", null);assertEquals(data.getKey(1), \"B\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 120,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(2), \"C\");",
+        "slice": "KeyedObjects data \u003d new KeyedObjects();data.addObject(\"A\", new Double(1.0));data.addObject(\"B\", new Double(2.0));data.addObject(\"C\", new Double(3.0));data.addObject(\"D\", null);assertEquals(data.getKey(2), \"C\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 121,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getKey(3), \"D\");",
+        "slice": "KeyedObjects data \u003d new KeyedObjects();data.addObject(\"A\", new Double(1.0));data.addObject(\"B\", new Double(2.0));data.addObject(\"C\", new Double(3.0));data.addObject(\"D\", null);assertEquals(data.getKey(3), \"D\");"
+      },
+      {
+        "testCodeLocation": {
+          "line": 124,
+          "column": 9
+        },
+        "assert": "// check retrieve value by key\nassertEquals(data.getObject(\"A\"), new Double(1.0));",
+        "slice": "KeyedObjects data \u003d new KeyedObjects();data.addObject(\"A\", new Double(1.0));data.addObject(\"B\", new Double(2.0));data.addObject(\"C\", new Double(3.0));data.addObject(\"D\", null);// check retrieve value by key\nassertEquals(data.getObject(\"A\"), new Double(1.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 125,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getObject(\"B\"), new Double(2.0));",
+        "slice": "KeyedObjects data \u003d new KeyedObjects();data.addObject(\"A\", new Double(1.0));data.addObject(\"B\", new Double(2.0));data.addObject(\"C\", new Double(3.0));data.addObject(\"D\", null);assertEquals(data.getObject(\"B\"), new Double(2.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 126,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getObject(\"C\"), new Double(3.0));",
+        "slice": "KeyedObjects data \u003d new KeyedObjects();data.addObject(\"A\", new Double(1.0));data.addObject(\"B\", new Double(2.0));data.addObject(\"C\", new Double(3.0));data.addObject(\"D\", null);assertEquals(data.getObject(\"C\"), new Double(3.0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 127,
+          "column": 9
+        },
+        "assert": "assertEquals(data.getObject(\"D\"), null);",
+        "slice": "KeyedObjects data \u003d new KeyedObjects();data.addObject(\"A\", new Double(1.0));data.addObject(\"B\", new Double(2.0));data.addObject(\"C\", new Double(3.0));data.addObject(\"D\", null);assertEquals(data.getObject(\"D\"), null);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjectsTest.testSerialization()",
+    "annotation": "@Test",
+    "code": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");KeyedObjects ko2 \u003d (KeyedObjects) TestUtilities.serialised(ko1);assertEquals(ko1, ko2);",
+    "offset": [
+      {
+        "line": 151,
+        "column": 28
+      },
+      {
+        "line": 152,
+        "column": 9
+      },
+      {
+        "line": 153,
+        "column": 9
+      },
+      {
+        "line": 154,
+        "column": 9
+      },
+      {
+        "line": 155,
+        "column": 43
+      },
+      {
+        "line": 156,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 151,
+          "column": 9
+        },
+        "assert": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");KeyedObjects ko2 \u003d (KeyedObjects) TestUtilities.serialised(ko1);assertEquals(ko1, ko2);",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");KeyedObjects ko2 \u003d (KeyedObjects) TestUtilities.serialised(ko1);assertEquals(ko1, ko2);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjectsTest.testGetObject()",
+    "annotation": "@Test",
+    "code": "// retrieve an item\nKeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");assertEquals(\"Object 1\", ko1.getObject(0));assertNull(ko1.getObject(1));assertEquals(\"Object 2\", ko1.getObject(2));// request with a negative index\nboolean pass \u003d false;try {\n    ko1.getObject(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);// request width index \u003d\u003d itemCount\npass \u003d false;try {\n    ko1.getObject(3);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 165,
+        "column": 28
+      },
+      {
+        "line": 166,
+        "column": 9
+      },
+      {
+        "line": 167,
+        "column": 9
+      },
+      {
+        "line": 168,
+        "column": 9
+      },
+      {
+        "line": 169,
+        "column": 9
+      },
+      {
+        "line": 169,
+        "column": 34
+      },
+      {
+        "line": 170,
+        "column": 9
+      },
+      {
+        "line": 170,
+        "column": 20
+      },
+      {
+        "line": 171,
+        "column": 9
+      },
+      {
+        "line": 171,
+        "column": 34
+      },
+      {
+        "line": 176,
+        "column": 13
+      },
+      {
+        "line": 181,
+        "column": 9
+      },
+      {
+        "line": 186,
+        "column": 13
+      },
+      {
+        "line": 191,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 165,
+          "column": 9
+        },
+        "assert": "// retrieve an item\nKeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");assertEquals(\"Object 1\", ko1.getObject(0));",
+        "slice": "// retrieve an item\nKeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");assertEquals(\"Object 1\", ko1.getObject(0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 184,
+          "column": 9
+        },
+        "assert": "// request width index \u003d\u003d itemCount\npass \u003d false;try {\n    ko1.getObject(3);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "// retrieve an item\nKeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");// request with a negative index\nboolean pass \u003d false;try {\n    ko1.getObject(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}// request width index \u003d\u003d itemCount\npass \u003d false;try {\n    ko1.getObject(3);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 170,
+          "column": 9
+        },
+        "assert": "assertNull(ko1.getObject(1));",
+        "slice": "// retrieve an item\nKeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");assertNull(ko1.getObject(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 171,
+          "column": 9
+        },
+        "assert": "assertEquals(\"Object 2\", ko1.getObject(2));",
+        "slice": "// retrieve an item\nKeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");assertEquals(\"Object 2\", ko1.getObject(2));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 174,
+          "column": 9
+        },
+        "assert": "// request with a negative index\nboolean pass \u003d false;try {\n    ko1.getObject(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "// retrieve an item\nKeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");// request with a negative index\nboolean pass \u003d false;try {\n    ko1.getObject(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjectsTest.testGetKey()",
+    "annotation": "@Test",
+    "code": "// retrieve an item\nKeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");assertEquals(\"Key 1\", ko1.getKey(0));assertEquals(\"Key 2\", ko1.getKey(1));assertEquals(\"Key 3\", ko1.getKey(2));// request with a negative index\nboolean pass \u003d false;try {\n    ko1.getKey(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);// request width index \u003d\u003d itemCount\npass \u003d false;try {\n    ko1.getKey(3);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 200,
+        "column": 28
+      },
+      {
+        "line": 201,
+        "column": 9
+      },
+      {
+        "line": 202,
+        "column": 9
+      },
+      {
+        "line": 203,
+        "column": 9
+      },
+      {
+        "line": 204,
+        "column": 9
+      },
+      {
+        "line": 204,
+        "column": 31
+      },
+      {
+        "line": 205,
+        "column": 9
+      },
+      {
+        "line": 205,
+        "column": 31
+      },
+      {
+        "line": 206,
+        "column": 9
+      },
+      {
+        "line": 206,
+        "column": 31
+      },
+      {
+        "line": 211,
+        "column": 13
+      },
+      {
+        "line": 216,
+        "column": 9
+      },
+      {
+        "line": 221,
+        "column": 13
+      },
+      {
+        "line": 226,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 209,
+          "column": 9
+        },
+        "assert": "// request with a negative index\nboolean pass \u003d false;try {\n    ko1.getKey(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "// retrieve an item\nKeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");// request with a negative index\nboolean pass \u003d false;try {\n    ko1.getKey(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 200,
+          "column": 9
+        },
+        "assert": "// retrieve an item\nKeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");assertEquals(\"Key 1\", ko1.getKey(0));",
+        "slice": "// retrieve an item\nKeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");assertEquals(\"Key 1\", ko1.getKey(0));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 219,
+          "column": 9
+        },
+        "assert": "// request width index \u003d\u003d itemCount\npass \u003d false;try {\n    ko1.getKey(3);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "// retrieve an item\nKeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");// request with a negative index\nboolean pass \u003d false;try {\n    ko1.getKey(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}// request width index \u003d\u003d itemCount\npass \u003d false;try {\n    ko1.getKey(3);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 205,
+          "column": 9
+        },
+        "assert": "assertEquals(\"Key 2\", ko1.getKey(1));",
+        "slice": "// retrieve an item\nKeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");assertEquals(\"Key 2\", ko1.getKey(1));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 206,
+          "column": 9
+        },
+        "assert": "assertEquals(\"Key 3\", ko1.getKey(2));",
+        "slice": "// retrieve an item\nKeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");assertEquals(\"Key 3\", ko1.getKey(2));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjectsTest.testGetIndex()",
+    "annotation": "@Test",
+    "code": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");assertEquals(0, ko1.getIndex(\"Key 1\"));assertEquals(1, ko1.getIndex(\"Key 2\"));assertEquals(2, ko1.getIndex(\"Key 3\"));// check null argument\nboolean pass \u003d false;try {\n    ko1.getIndex(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 234,
+        "column": 28
+      },
+      {
+        "line": 235,
+        "column": 9
+      },
+      {
+        "line": 236,
+        "column": 9
+      },
+      {
+        "line": 237,
+        "column": 9
+      },
+      {
+        "line": 238,
+        "column": 9
+      },
+      {
+        "line": 238,
+        "column": 25
+      },
+      {
+        "line": 239,
+        "column": 9
+      },
+      {
+        "line": 239,
+        "column": 25
+      },
+      {
+        "line": 240,
+        "column": 9
+      },
+      {
+        "line": 240,
+        "column": 25
+      },
+      {
+        "line": 245,
+        "column": 13
+      },
+      {
+        "line": 250,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 240,
+          "column": 9
+        },
+        "assert": "assertEquals(2, ko1.getIndex(\"Key 3\"));",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");assertEquals(2, ko1.getIndex(\"Key 3\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 243,
+          "column": 9
+        },
+        "assert": "// check null argument\nboolean pass \u003d false;try {\n    ko1.getIndex(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");// check null argument\nboolean pass \u003d false;try {\n    ko1.getIndex(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 234,
+          "column": 9
+        },
+        "assert": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");assertEquals(0, ko1.getIndex(\"Key 1\"));",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");assertEquals(0, ko1.getIndex(\"Key 1\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 239,
+          "column": 9
+        },
+        "assert": "assertEquals(1, ko1.getIndex(\"Key 2\"));",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.addObject(\"Key 1\", \"Object 1\");ko1.addObject(\"Key 2\", null);ko1.addObject(\"Key 3\", \"Object 2\");assertEquals(1, ko1.getIndex(\"Key 2\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjectsTest.testSetObject()",
+    "annotation": "@Test",
+    "code": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");assertEquals(\"Object 1\", ko1.getObject(\"Key 1\"));assertEquals(null, ko1.getObject(\"Key 2\"));assertEquals(\"Object 2\", ko1.getObject(\"Key 3\"));// replace an existing value\nko1.setObject(\"Key 2\", \"AAA\");ko1.setObject(\"Key 3\", \"BBB\");assertEquals(\"AAA\", ko1.getObject(\"Key 2\"));assertEquals(\"BBB\", ko1.getObject(\"Key 3\"));// try a null key - should throw an exception\nboolean pass \u003d false;try {\n    ko1.setObject(null, \"XX\");\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 258,
+        "column": 28
+      },
+      {
+        "line": 259,
+        "column": 9
+      },
+      {
+        "line": 260,
+        "column": 9
+      },
+      {
+        "line": 261,
+        "column": 9
+      },
+      {
+        "line": 263,
+        "column": 9
+      },
+      {
+        "line": 263,
+        "column": 34
+      },
+      {
+        "line": 264,
+        "column": 9
+      },
+      {
+        "line": 264,
+        "column": 28
+      },
+      {
+        "line": 265,
+        "column": 9
+      },
+      {
+        "line": 265,
+        "column": 34
+      },
+      {
+        "line": 268,
+        "column": 9
+      },
+      {
+        "line": 269,
+        "column": 9
+      },
+      {
+        "line": 270,
+        "column": 9
+      },
+      {
+        "line": 270,
+        "column": 29
+      },
+      {
+        "line": 271,
+        "column": 9
+      },
+      {
+        "line": 271,
+        "column": 29
+      },
+      {
+        "line": 276,
+        "column": 13
+      },
+      {
+        "line": 281,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 258,
+          "column": 9
+        },
+        "assert": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");assertEquals(\"Object 1\", ko1.getObject(\"Key 1\"));",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");assertEquals(\"Object 1\", ko1.getObject(\"Key 1\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 274,
+          "column": 9
+        },
+        "assert": "// try a null key - should throw an exception\nboolean pass \u003d false;try {\n    ko1.setObject(null, \"XX\");\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");// replace an existing value\nko1.setObject(\"Key 2\", \"AAA\");ko1.setObject(\"Key 3\", \"BBB\");// try a null key - should throw an exception\nboolean pass \u003d false;try {\n    ko1.setObject(null, \"XX\");\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 264,
+          "column": 9
+        },
+        "assert": "assertEquals(null, ko1.getObject(\"Key 2\"));",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");assertEquals(null, ko1.getObject(\"Key 2\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 265,
+          "column": 9
+        },
+        "assert": "assertEquals(\"Object 2\", ko1.getObject(\"Key 3\"));",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");assertEquals(\"Object 2\", ko1.getObject(\"Key 3\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 268,
+          "column": 9
+        },
+        "assert": "// replace an existing value\nko1.setObject(\"Key 2\", \"AAA\");ko1.setObject(\"Key 3\", \"BBB\");assertEquals(\"AAA\", ko1.getObject(\"Key 2\"));",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");// replace an existing value\nko1.setObject(\"Key 2\", \"AAA\");ko1.setObject(\"Key 3\", \"BBB\");assertEquals(\"AAA\", ko1.getObject(\"Key 2\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 271,
+          "column": 9
+        },
+        "assert": "assertEquals(\"BBB\", ko1.getObject(\"Key 3\"));",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");// replace an existing value\nko1.setObject(\"Key 2\", \"AAA\");ko1.setObject(\"Key 3\", \"BBB\");assertEquals(\"BBB\", ko1.getObject(\"Key 3\"));"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjectsTest.testRemoveValue()",
+    "annotation": "@Test",
+    "code": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");ko1.removeValue(1);assertEquals(2, ko1.getItemCount());assertEquals(1, ko1.getIndex(\"Key 3\"));ko1.removeValue(\"Key 1\");assertEquals(1, ko1.getItemCount());assertEquals(0, ko1.getIndex(\"Key 3\"));// try unknown key\nboolean pass \u003d false;try {\n    ko1.removeValue(\"UNKNOWN\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);// try null argument\npass \u003d false;try {\n    ko1.removeValue(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 289,
+        "column": 28
+      },
+      {
+        "line": 290,
+        "column": 9
+      },
+      {
+        "line": 291,
+        "column": 9
+      },
+      {
+        "line": 292,
+        "column": 9
+      },
+      {
+        "line": 294,
+        "column": 9
+      },
+      {
+        "line": 295,
+        "column": 9
+      },
+      {
+        "line": 295,
+        "column": 25
+      },
+      {
+        "line": 296,
+        "column": 9
+      },
+      {
+        "line": 296,
+        "column": 25
+      },
+      {
+        "line": 298,
+        "column": 9
+      },
+      {
+        "line": 299,
+        "column": 9
+      },
+      {
+        "line": 299,
+        "column": 25
+      },
+      {
+        "line": 300,
+        "column": 9
+      },
+      {
+        "line": 300,
+        "column": 25
+      },
+      {
+        "line": 305,
+        "column": 13
+      },
+      {
+        "line": 310,
+        "column": 9
+      },
+      {
+        "line": 315,
+        "column": 13
+      },
+      {
+        "line": 320,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 289,
+          "column": 9
+        },
+        "assert": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");ko1.removeValue(1);assertEquals(2, ko1.getItemCount());",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");ko1.removeValue(1);assertEquals(2, ko1.getItemCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 296,
+          "column": 9
+        },
+        "assert": "assertEquals(1, ko1.getIndex(\"Key 3\"));",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");ko1.removeValue(1);assertEquals(1, ko1.getIndex(\"Key 3\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 313,
+          "column": 9
+        },
+        "assert": "// try null argument\npass \u003d false;try {\n    ko1.removeValue(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");ko1.removeValue(1);ko1.removeValue(\"Key 1\");// try unknown key\nboolean pass \u003d false;try {\n    ko1.removeValue(\"UNKNOWN\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}// try null argument\npass \u003d false;try {\n    ko1.removeValue(null);\n} catch (IllegalArgumentException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 298,
+          "column": 9
+        },
+        "assert": "ko1.removeValue(\"Key 1\");assertEquals(1, ko1.getItemCount());",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");ko1.removeValue(1);ko1.removeValue(\"Key 1\");assertEquals(1, ko1.getItemCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 300,
+          "column": 9
+        },
+        "assert": "assertEquals(0, ko1.getIndex(\"Key 3\"));",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");ko1.removeValue(1);ko1.removeValue(\"Key 1\");assertEquals(0, ko1.getIndex(\"Key 3\"));"
+      },
+      {
+        "testCodeLocation": {
+          "line": 303,
+          "column": 9
+        },
+        "assert": "// try unknown key\nboolean pass \u003d false;try {\n    ko1.removeValue(\"UNKNOWN\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");ko1.removeValue(1);ko1.removeValue(\"Key 1\");// try unknown key\nboolean pass \u003d false;try {\n    ko1.removeValue(\"UNKNOWN\");\n} catch (UnknownKeyException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      }
+    ]
+  },
+  {
+    "unitTestMethod": "org.jfree.data.KeyedObjectsTest.testRemoveValueInt()",
+    "annotation": "@Test",
+    "code": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");ko1.removeValue(1);assertEquals(2, ko1.getItemCount());assertEquals(1, ko1.getIndex(\"Key 3\"));// try negative key index\nboolean pass \u003d false;try {\n    ko1.removeValue(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);// try key index \u003d\u003d itemCount\npass \u003d false;try {\n    ko1.removeValue(2);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+    "offset": [
+      {
+        "line": 328,
+        "column": 28
+      },
+      {
+        "line": 329,
+        "column": 9
+      },
+      {
+        "line": 330,
+        "column": 9
+      },
+      {
+        "line": 331,
+        "column": 9
+      },
+      {
+        "line": 333,
+        "column": 9
+      },
+      {
+        "line": 334,
+        "column": 9
+      },
+      {
+        "line": 334,
+        "column": 25
+      },
+      {
+        "line": 335,
+        "column": 9
+      },
+      {
+        "line": 335,
+        "column": 25
+      },
+      {
+        "line": 341,
+        "column": 13
+      },
+      {
+        "line": 346,
+        "column": 9
+      },
+      {
+        "line": 351,
+        "column": 13
+      },
+      {
+        "line": 356,
+        "column": 9
+      }
+    ],
+    "testCodeRegion": [
+      {
+        "testCodeLocation": {
+          "line": 339,
+          "column": 9
+        },
+        "assert": "// try negative key index\nboolean pass \u003d false;try {\n    ko1.removeValue(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");ko1.removeValue(1);// try negative key index\nboolean pass \u003d false;try {\n    ko1.removeValue(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 328,
+          "column": 9
+        },
+        "assert": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");ko1.removeValue(1);assertEquals(2, ko1.getItemCount());",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");ko1.removeValue(1);assertEquals(2, ko1.getItemCount());"
+      },
+      {
+        "testCodeLocation": {
+          "line": 349,
+          "column": 9
+        },
+        "assert": "// try key index \u003d\u003d itemCount\npass \u003d false;try {\n    ko1.removeValue(2);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");ko1.removeValue(1);// try negative key index\nboolean pass \u003d false;try {\n    ko1.removeValue(-1);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}// try key index \u003d\u003d itemCount\npass \u003d false;try {\n    ko1.removeValue(2);\n} catch (IndexOutOfBoundsException e) {\n    pass \u003d true;\n}assertTrue(pass);"
+      },
+      {
+        "testCodeLocation": {
+          "line": 335,
+          "column": 9
+        },
+        "assert": "assertEquals(1, ko1.getIndex(\"Key 3\"));",
+        "slice": "KeyedObjects ko1 \u003d new KeyedObjects();ko1.setObject(\"Key 1\", \"Object 1\");ko1.setObject(\"Key 2\", null);ko1.setObject(\"Key 3\", \"Object 2\");ko1.removeValue(1);assertEquals(1, ko1.getIndex(\"Key 3\"));"
+      }
+    ]
+  }
+]
