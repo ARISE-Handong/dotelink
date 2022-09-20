@@ -11,8 +11,8 @@ Before running DoTeLink, download all dependency files as jar in the target proj
 
 After downloading the dependency files as a jar, run the command:  
 
-    mvn exec:java -Dexec.mainClass=org.DoTeLink.Main \ 
-                  -Dexec.args="--production_class ./jfreechart-1.0.19/Range.java \ 
-                               --test_class ./jfreechart-1.0.19/RangeTest.java \ 
+    mvn exec:java -Dexec.mainClass=org.DoTeLink.Main \
+                  -Dexec.args="--production_class ./jfreechart-1.0.19/source/org/jfree/data/Range.java \
+                               --test_class ./jfreechart-1.0.19/tests/org/jfree/data/RangeTest.java \
                                --project_dir ./jfreechart-1.0.19"
 
