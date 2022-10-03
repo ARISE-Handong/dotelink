@@ -11,11 +11,13 @@ public class Link {
 	private String productionMethodName;
 	private String testMethodName;
 	private List<Map<Document, Document>> links;
+	private List<Double> similarity; // debugging
 
 	public Link(String productionMethodName, String testMethodName) {
 		this.productionMethodName = productionMethodName;
 		this.testMethodName = testMethodName;
 		this.links = new ArrayList<>();
+		this.similarity = new ArrayList<>();
 	}
 
 	public boolean hasMethodRelation(String productionMethodName, String testMethodName) {
@@ -34,6 +36,13 @@ public class Link {
 		return false;
 	}
 
+	public void addLink(Document sentence, Document testCodeSnippet, double similarity) {
+		Map<Document, Document> _link = new HashMap<>();
+		_link.put(sentence, testCodeSnippet);
+		this.links.add(_link);
+		this.similarity.add(similarity);
+	}
+
 	public void addAllLinks(List<Map<Document, Document>> links) {
 		this.links.addAll(links);
 	}
@@ -42,6 +51,10 @@ public class Link {
 		Map<Document, Document> _link = new HashMap<>();
 		_link.put(sentence, testCodeSnippet);
 		this.links.add(_link);
+	}
+
+	public List<Double> getSimilarity() {
+		return this.similarity;
 	}
 
 	public String getProductionMethodName() {
