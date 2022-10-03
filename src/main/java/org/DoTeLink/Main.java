@@ -1,6 +1,7 @@
 package org.DoTeLink;
 
 import org.DoTeLink.segmentation.*;
+import org.DoTeLink.inference.*;
 import org.DoTeLink.util.JSSTypeSolver;
 
 import java.util.List;
@@ -38,9 +39,20 @@ public class Main {
 		CompilationUnit testCodeCu = JSSTypeSolver.getCu(typeSolver, testClazzName);
 		JsonArray jSegTestMethods = TestCodeSegmentation.segregate(testCodeCu);
 
+		/* inference module */
+		CompilationUnit testCodeCu2 = JSSTypeSolver.getCu(typeSolver, testClazzName);
+		JsonArray jMethodAllLinks = MethodAll.relate(jSegProductionMethods, jSegTestMethods, testCodeCu2);
+		JsonArray jMethodOneLinks = MethodOne.relate(jSegProductionMethods, jSegTestMethods, testCodeCu2);
+		JsonArray jMethodBestLinks = MethodBest.relate(jSegProductionMethods, jSegTestMethods, testCodeCu2);
+		JsonArray jDoTeLinks = DoTeLink.relate(jSegProductionMethods, jSegTestMethods, testCodeCu2);
+
 		/* write each output */
 		WriteToFile(jSegProductionMethods, productionClazzName, "output/sentence");
 		WriteToFile(jSegTestMethods, testClazzName, "output/testCodeSnippet");
+		WriteToFile(jMethodAllLinks, productionClazzName, "output/link/methodAll");
+		WriteToFile(jMethodOneLinks, productionClazzName, "output/link/methodOne");
+		WriteToFile(jMethodBestLinks, productionClazzName, "output/link/methodBest");
+		WriteToFile(jDoTeLinks, productionClazzName, "output/link/dotelink");
 	}
 
 	private static CommandLine GetCommandLineArguments(String[] args) {
